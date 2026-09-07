@@ -53,8 +53,10 @@
       "scope": "detail_page"
     },
     "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
-    "format": "online",
-    "area": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -70,18 +72,17 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:32:09.149Z",
+    "updated_at": "2026-09-07T15:39:11.023Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://www.sejuku.net/",
     "review_flags": [
-      "format_unconfirmed",
       "detail_page_crawled",
       "price_scope_limited"
     ],
-    "detail_page_url": "https://www.sejuku.net/courses/career/",
-    "area_source": "top_page"
+    "detail_page_url": "https://www.sejuku.net/corp/company?cid=header_corp",
+    "area_source": "detail_page"
   },
   {
     "id": "techacademy",
