@@ -16,5 +16,14 @@
       "potepan",
       "coachtech"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "daily-trial",
+      "sejuku-2",
+      "internetacademy"
+    ]
   }
 ]

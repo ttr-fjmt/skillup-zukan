@@ -597,5 +597,177 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://coachtech.site/"
+  },
+  {
+    "id": "daily-trial",
+    "school_name": "デイトラ Webデザインコース",
+    "official_name": null,
+    "description": "Webデザインを仕事にする本格的なスキルを習得するオンライン講座。デザイン研究所による「理論×言語化×実践」カリキュラムで、実務レベルのスキルを身につけます。現役デザイナーからの丁寧な添削フィードバック、Figmaの学習、実案件につながるデザインコンペなど、転職やフリーランス、副業での活躍を支援する環境が整っています。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "UI/UXデザイナー"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "デザイン研究所による理論と言語化カリキュラム",
+      "現役デザイナーからの添削フィードバック",
+      "実案件につながるデイトラデザインコンペを開催",
+      "ステップ形式で未経験からスキル習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://daily-trial.com/web_design/",
+    "cta_url": "https://daily-trial.com/web_design/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-daily-trial",
+    "created_at": "2026-09-07T23:34:53.003Z",
+    "updated_at": "2026-09-07T23:34:53.003Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://daily-trial.com/web_design/"
+  },
+  {
+    "id": "sejuku-2",
+    "school_name": "侍エンジニア",
+    "official_name": null,
+    "description": "専属現役エンジニアによる完全オリジナルカリキュラムと徹底したサポート体制で、プログラミング学習の継続を実現。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "専属マンツーマンレッスンと完全オリジナルカリキュラム",
+      "講師・学習コーチ・キャリアアドバイザーによる徹底したサポート",
+      "700名以上の講師が対応するQ&A掲示板による質問対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.sejuku.net/courses/expert/",
+    "official_url": "https://www.sejuku.net/",
+    "cta_url": "https://www.sejuku.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sejuku-2",
+    "created_at": "2026-09-07T23:35:12.318Z",
+    "updated_at": "2026-09-07T23:35:12.318Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.sejuku.net/"
+  },
+  {
+    "id": "internetacademy",
+    "school_name": "インターネット・アカデミー",
+    "official_name": null,
+    "description": "Web制作・開発会社のノウハウを活かし、プログラミング、Webデザイン、AI・データ分析、Webマーケティング等を幅広く提供。ライブ授業、マンツーマン授業、オンデマンド授業を自由に組み合わせて学習でき、プロの講師からの直接指導と充実したサポート体制で実践的スキル習得が可能。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "uiux",
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "プログラマー",
+      "UI/UXデザイナー",
+      "データストラテジスト"
+    ],
+    "price": {
+      "display": "671,297円",
+      "min_yen": 671297,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ビジネス改善実践コース",
+        "amount": 671297,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "ライブ授業、マンツーマン授業、オンデマンド授業の3つの学習スタイルを自由に組み合わせて受講可能",
+      "プロの目線でのサイトチェックと就・転職用ポートフォリオ作成サポート",
+      "オンライン質問対応でサポート時間内に講師がリアルタイム対応",
+      "ラーニングスペース利用で最新の制作環境で予習・復習・作品作成が可能",
+      "W3Cメンバースクール、Adobe等複数の業界団体認定校"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://www.internetacademy.jp/contents/access.html",
+    "official_url": "https://www.internetacademy.jp/",
+    "cta_url": "https://www.internetacademy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-internetacademy",
+    "created_at": "2026-09-07T23:35:29.751Z",
+    "updated_at": "2026-09-07T23:35:29.751Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.internetacademy.jp/"
   }
 ]

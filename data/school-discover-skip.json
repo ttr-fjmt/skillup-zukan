@@ -26,5 +26,12 @@
     "genre": "programming",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-07T20:09:15.800Z"
+  },
+  "ヒューマンアカデミー Webデザイン講座": {
+    "name": "ヒューマンアカデミー Webデザイン講座",
+    "website": "https://haa.athuman.com/",
+    "genre": "webdesign",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-07T23:34:43.774Z"
   }
 }
