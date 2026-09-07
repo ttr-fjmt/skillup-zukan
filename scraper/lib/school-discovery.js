@@ -485,9 +485,16 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
           items: { type: 'string' },
           maxItems: 5,
           description:
-            'ページ本文に実際に記載されている具体的な特徴を3〜5件、各20〜35字程度の短い文で抽出する。' +
-            'descriptionの単なる分割ではなく、別々の具体的な事実（学習形式、サポート内容、教材、' +
-            '保証制度等）をそれぞれ書くこと。本文から具体的な特徴を読み取れない場合は空配列 []。',
+            'ページ本文に実際に記載されている客観的な事実を3〜5件、各20〜35字程度の短い文で抽出する。' +
+            'descriptionの単なる分割ではなく、別々の事実をそれぞれ書くこと。\n' +
+            '含めてよいもの: カリキュラム内容、サポート形態、受講形式、講師の属性、教材・学習環境。\n' +
+            '除外するもの（本文に書かれていても features には入れない）:\n' +
+            '- 検証不能な統計的数値主張（「転職成功率99%」「継続率97.9%」「満足度98%」等）\n' +
+            '- 金銭的コミットメント文言（「転職保証」「案件保証」「返金保証」「全額返金」等）\n' +
+            '- 最上級・優位性の主張（「業界No.1」「日本初」等）\n' +
+            'これらは各校の営業文言であり、こちらで真偽を検証できないため、中立的な特徴としては扱わない。' +
+            '除外した結果3件未満になっても構わない。無理に水増しせず、客観的事実だけを残すこと。' +
+            '本文から具体的な特徴を読み取れない場合は空配列 []。',
         },
       },
       required: [
@@ -586,6 +593,130 @@ function verifyOfficialName(officialName, pageText) {
   return null;
 }
 
+/**
+ * features から、検証不能な統計的数値主張と金銭的コミットメント文言を落とす。
+ *
+ * これらは各校の営業文言であり、抽出としては正しくても（本文に実際に書かれている）、
+ * 図鑑側が中立的な「特徴」として並べるのには適さない。数値の真偽をこちらで検証する
+ * 手段が無く、並べた時点で図鑑がその主張を保証しているように読めてしまうため。
+ *
+ * features に残すのは客観的な事実（カリキュラム、サポート形態、受講形式、講師属性、教材）に限る。
+ * プロンプト側でも同じ方針を指示しているが、official_name の件で「指示だけでは漏れる」ことが
+ * 分かったため、機械的にも落とす。
+ */
+const EXCLUDED_FEATURE_PATTERNS = [
+  // 「転職成功率99%」「継続率97.9%」「満足度98%」等の、検証不能な統計的数値主張。
+  /(成功率|継続率|満足度|達成率|定着率|内定率|就職率|転職率|合格率|離職率)/,
+  // 率の語が無くても、パーセンテージ付きの主張は実質的に同じ性質のものとして落とす。
+  /[0-9０-９][0-9０-９.,]*\s*[%％]/,
+  // 「転職保証」「案件保証」「返金保証」等の金銭的コミットメント文言（条件付きが通例で、
+  // 条件を併記せずに1行で並べると誤解を招く）。
+  /保証|返金|全額|キャッシュバック/,
+  // 「業界No.1」「日本初」等の最上級・優位性の主張。
+  /No\.?\s*1|ナンバーワン|業界初|日本初|日本一|最大手|唯一/i,
+];
+
+function filterFeatures(features) {
+  const kept = [];
+  for (const feature of features) {
+    const pattern = EXCLUDED_FEATURE_PATTERNS.find(p => p.test(feature));
+    if (pattern) {
+      console.warn(`  features から除外しました（誇張・検証不能な主張）: "${feature}"`);
+      continue;
+    }
+    kept.push(feature);
+  }
+  return kept;
+}
+
+/** 「完全オンライン」相当の、受講形式をオンラインと確定できる明示的な記述。 */
+const ONLINE_ONLY_PATTERNS = [
+  /完全オンライン/, /フルオンライン/, /オンライン完結/, /オンラインで完結/,
+  /すべてオンライン/, /全てオンライン/, /オンラインのみ/, /オンラインに?特化/,
+];
+
+/** 通学拠点の存在を示唆するキーワード。1つでもあれば、オンライン確定にはしない。 */
+const CAMPUS_PATTERNS = [/教室/, /校舎/, /通学/, /来校/, /スクール所在地/, /対面(授業|レッスン|指導)/];
+
+/**
+ * 受講形式（format / area）の確定。
+ *
+ * 以前は「offline/both なのに area が空なら問答無用で online に丸める」としていたが、
+ * これだと通学拠点を持つスクールを黙ってオンライン専用として掲載してしまう
+ * （都道府県フィルターに直接効くため、利用者が通学先を探せなくなる）。
+ *
+ * 変更後:
+ *   - area が取れていて offline/both なら、そのまま採用（矛盾なし）
+ *   - 本文に「完全オンライン」等の明示的記述があればオンラインと確定
+ *   - それ以外は online として掲載しつつ format_unconfirmed を立て、
+ *     人が後から見直せるようにする（承認フェーズが無いため、掲載は止めない）
+ *
+ * 戻り値: { format, area, flags }
+ */
+function classifyFormat(aiFormat, area, pageText) {
+  const text = String(pageText || '');
+
+  if (area.length > 0 && (aiFormat === 'offline' || aiFormat === 'both')) {
+    return { format: aiFormat, area, flags: [] };
+  }
+
+  const flags = [];
+
+  if (aiFormat === 'offline' || aiFormat === 'both') {
+    console.warn(
+      `  format="${aiFormat}" だが area が空のため online として掲載し、format_unconfirmed を立てました` +
+        '（通学拠点の都道府県を確認してください）。'
+    );
+    flags.push('format_unconfirmed');
+  } else if (!ONLINE_ONLY_PATTERNS.some(p => p.test(text))) {
+    // オンライン専用と言い切れる根拠が本文に無い。通学の手がかりがあればなおさら。
+    const campus = CAMPUS_PATTERNS.some(p => p.test(text));
+    console.warn(
+      '  本文に「完全オンライン」等の明示的記述が無いため format_unconfirmed を立てました' +
+        (campus ? '（通学を示唆するキーワードあり）。' : '。')
+    );
+    flags.push('format_unconfirmed');
+  }
+
+  return { format: 'online', area: [], flags };
+}
+
+/**
+ * official_name が「ページ本文に実際に書かれていた表記」かどうかを機械的に照合する。
+ *
+ * プロンプトで禁止するだけでは足りないことが実運用で分かったため（初回の本番実行で、
+ * フッターの "© 2026 Brewus,Inc." から「株式会社Brewus」を合成する誤りが3件中3件で
+ * 発生した。正しくは「株式会社ブリューアス」）、verifyCandidate() がスクール名の実在を
+ * ページ本文で照合するのと同じやり方で、AIの出力を本文と突き合わせる。
+ */
+
+/** 給付金対象であることを示す文言のバリエーション（表記ゆれが多いため広めに取る）。 */
+const SUBSIDY_PATTERNS = [
+  /教育訓練給付/, /給付金/, /給付制度/, /補助金/, /助成金/, /リスキリング/,
+  /専門実践/, /特定一般教育訓練/, /厚生労働省?\s*(指定|認定)/, /経済産業省/,
+];
+
+/**
+ * subsidy_eligible の裏取り。
+ *
+ * official_name と同じ「本文に根拠が無いのに生成される」問題が起きていないかを機械的に見る。
+ * ただし給付金対象であることの言い回しは「教育訓練給付金対象」「給付金で最大80%OFF」
+ * 「リスキリング支援事業対象」等バリエーションが多く、単純な文字列一致では拾いきれない。
+ * そのため「本文に給付金関連のキーワードが一つも見つからなければ false に倒す」という
+ * 粗い判定にとどめる（キーワードがあれば、その文脈の妥当性まではAIの判断を尊重する）。
+ *
+ * pageText が無い場合は判定をスキップする。
+ */
+function verifySubsidyClaim(subsidyEligible, pageText) {
+  if (!subsidyEligible) return false;
+  if (!pageText) return true;
+
+  if (SUBSIDY_PATTERNS.some(p => p.test(pageText))) return true;
+
+  console.warn('  subsidy_eligible=true だが、本文に給付金関連の記述が見当たらないため false にしました。');
+  return false;
+}
+
 function normalizeStructuredFields(raw, genreHint, pageText) {
   const result = { ...raw };
 
@@ -615,24 +746,20 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
     result.format = 'online';
   }
 
-  result.area = keepEnum(result.area, PREFECTURES);
-  // format と area の矛盾（online なのに都道府県がある / 通学なのに空）を解消する。
-  // スキーマ側でも弾かれるが、ここで直しておかないと候補が丸ごと落ちてしまうため。
-  if (result.format === 'online') {
-    result.area = [];
-  } else if (result.area.length === 0) {
-    console.warn(`  format="${result.format}" だが area が空のため、format を "online" に丸めました。`);
-    result.format = 'online';
-  }
+  // 受講形式は classifyFormat が確定させる（オンライン確定・要確認の判定を含む）。
+  const classified = classifyFormat(result.format, keepEnum(result.area, PREFECTURES), pageText);
+  result.format = classified.format;
+  result.area = classified.area;
+  result.review_flags = classified.flags;
 
   result.career_paths = (Array.isArray(result.career_paths) ? result.career_paths : [])
     .filter(s => typeof s === 'string' && s.trim())
     .slice(0, 8);
-  result.features = (Array.isArray(result.features) ? result.features : [])
-    .filter(s => typeof s === 'string' && s.trim())
-    .slice(0, 5);
+  result.features = filterFeatures(
+    (Array.isArray(result.features) ? result.features : []).filter(s => typeof s === 'string' && s.trim())
+  ).slice(0, 5);
 
-  result.subsidy_eligible = result.subsidy_eligible === true;
+  result.subsidy_eligible = verifySubsidyClaim(result.subsidy_eligible === true, pageText);
   result.career_support = result.career_support === true;
 
   result.price_min_yen =
@@ -659,6 +786,10 @@ module.exports = {
   candidateRootUrls,
   verifyCandidate,
   verifyOfficialName,
+  verifySubsidyClaim,
+  filterFeatures,
+  classifyFormat,
+  EXCLUDED_FEATURE_PATTERNS,
   collectVerifiedCandidates,
   discoverCandidates,
   buildDiscoveredSchoolFields,

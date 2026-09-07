@@ -34,8 +34,7 @@
       "専属マンツーマンレッスンによる完全オリジナルカリキュラム",
       "学習コーチとキャリアアドバイザーによるサポート",
       "700名以上の講師が対応するQ&A掲示板",
-      "独自開発の学習管理システムで進捗管理",
-      "転職保証コースで転職成功率99%"
+      "独自開発の学習管理システムで進捗管理"
     ],
     "review_summary": null,
     "review_source_urls": [],
@@ -44,11 +43,14 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T14:44:24.268Z",
+    "updated_at": "2026-09-07T15:01:18.596Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
-    "verified_url": "https://www.sejuku.net/"
+    "verified_url": "https://www.sejuku.net/",
+    "review_flags": [
+      "format_unconfirmed"
+    ]
   },
   {
     "id": "techacademy",
@@ -82,10 +84,7 @@
     "career_support": true,
     "features": [
       "現役エンジニアによるマンツーマンメンタリング",
-      "転職保証制度付きコースあり（条件あり）",
-      "副業案件保証5万円分",
-      "24時間チャット質問サポート",
-      "返金保証制度"
+      "24時間チャット質問サポート"
     ],
     "review_summary": null,
     "review_source_urls": [],
@@ -94,11 +93,12 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T14:50:23.615Z",
+    "updated_at": "2026-09-07T15:01:18.895Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
-    "verified_url": "https://techacademy.jp/"
+    "verified_url": "https://techacademy.jp/",
+    "review_flags": []
   },
   {
     "id": "tech-camp",
@@ -142,10 +142,11 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T14:50:23.616Z",
+    "updated_at": "2026-09-07T15:01:19.506Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
-    "verified_url": "https://tech-camp.in/"
+    "verified_url": "https://tech-camp.in/",
+    "review_flags": []
   }
 ]

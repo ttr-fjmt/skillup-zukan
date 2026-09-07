@@ -97,6 +97,8 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     features: ai.features,
     review_summary: null,
     review_source_urls: [],
+    // 自動抽出の確度が低い箇所の目印（classifyFormat 等が立てる）。UI表示には使わない。
+    review_flags: ai.review_flags || [],
     official_url: officialUrl,
     cta_url: officialUrl,
     cta_type: 'direct',

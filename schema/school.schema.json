@@ -361,6 +361,17 @@
       "description": "二段階検証で実際にHTTPアクセスできたURL（official_url と異なる場合がある）。",
       "format": "uri",
       "pattern": "^https?://"
+    },
+    "review_flags": {
+      "type": "array",
+      "description": "自動抽出の確度が低い箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。",
+      "items": {
+        "type": "string",
+        "enum": [
+          "format_unconfirmed"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "allOf": [
