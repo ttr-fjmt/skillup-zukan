@@ -35,7 +35,7 @@ const {
   NOT_DISCLOSED_TEXT,
 } = require('./schema');
 const { queriesForGenre } = require('./discovery-queries');
-const { verifyPlans, buildPriceFromPlans } = require('./price-detail');
+const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-detail');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -477,15 +477,16 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
                   '求めた値は入れないこと。',
               },
             },
-            required: ['label', 'amount'],
+              duration: {
+                type: ['string', 'null'],
+                description:
+                  'そのプランの受講期間。ページ本文の表記をそのまま使う（例: "16週間", "約6ヶ月"）。' +
+                  '記載が無ければ null。単位を換算したり自分で計算した値を入れないこと。' +
+                  'キャンペーンの申込期限・支払期限は受講期間ではないので入れないこと。',
+              },
+            required: ['label', 'amount', 'duration'],
             additionalProperties: false,
           },
-        },
-        duration: {
-          type: 'string',
-          description:
-            '受講期間の表示用文字列（例: "標準3ヶ月", "4〜24週間から選択"）。' +
-            `本文に記載が無ければ「${NOT_DISCLOSED_TEXT}」を返すこと。`,
         },
         format: {
           type: 'string',
@@ -532,7 +533,7 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
       },
       required: [
         'school_name', 'official_name', 'description', 'skill_genre', 'purpose', 'target_level',
-        'career_paths', 'price_plans', 'duration', 'format', 'area',
+        'career_paths', 'price_plans', 'format', 'area',
         'subsidy_eligible', 'career_support', 'features',
       ],
       additionalProperties: false,
@@ -831,9 +832,9 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
   result.career_support = result.career_support === true;
 
   // display / min_yen はAIに書かせず、本文照合を通ったプランから機械生成する。
-  result.price = buildPriceFromPlans(verifyPlans(result.price_plans, pageText), 'top_page');
+  result.plans = normalizePlans(verifyPlans(result.price_plans, pageText));
+  result.price = buildPriceFromPlans(result.plans, 'top_page');
   delete result.price_plans;
-  result.duration = String(result.duration || '').trim() || NOT_DISCLOSED_TEXT;
   result.description = stripExaggeratedSentences(result.description);
   result.official_name = verifyOfficialName(String(result.official_name || '').trim() || null, pageText);
   result.school_name = String(result.school_name || '').trim();

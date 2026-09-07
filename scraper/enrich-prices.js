@@ -46,7 +46,7 @@ const DRY_RUN = Boolean(process.env.ENRICH_DRY_RUN);
 function needsEnrichment(school) {
   if (!school.price) return true;
   if (school.price.min_yen === null) return true;
-  return !Array.isArray(school.price.plans) || school.price.plans.length === 0;
+  return !Array.isArray(school.plans) || school.plans.length === 0;
 }
 
 /**
@@ -76,21 +76,21 @@ function pageTextFrom(html) {
  * 当時の金額がどこから来たかを detail_page_url の有無で判断し、同じページから取り直す。
  */
 async function migrateExistingPrice(school, homepageHtml, anthropic) {
-  if (school.detail_page_url) {
+  if (school.price_detail_url) {
     let pageText;
     try {
       await politeDelay();
-      pageText = await fetchDetailPage(school.detail_page_url);
+      pageText = await fetchDetailPage(school.price_detail_url);
     } catch (err) {
       console.warn(`  詳細ページの再取得に失敗しました: ${err.message}`);
       return null;
     }
-    const price = await extractPriceFromPage(school.school_name, school.detail_page_url, pageText, anthropic, 'detail_page');
-    return price.min_yen === null ? null : price;
+    const extracted = await extractPriceFromPage(school.school_name, school.price_detail_url, pageText, anthropic, 'detail_page');
+    return extracted.price.min_yen === null ? null : extracted;
   }
 
-  const price = await extractPriceFromPage(school.school_name, school.official_url, pageTextFrom(homepageHtml), anthropic, 'top_page');
-  return price.min_yen === null ? null : price;
+  const extracted = await extractPriceFromPage(school.school_name, school.official_url, pageTextFrom(homepageHtml), anthropic, 'top_page');
+  return extracted.price.min_yen === null ? null : extracted;
 }
 
 /**
@@ -99,7 +99,9 @@ async function migrateExistingPrice(school, homepageHtml, anthropic) {
  */
 function applyScopeFlags(school, price) {
   const flags = new Set(school.review_flags || []);
-  if (price.scope === 'detail_page') flags.add('price_scope_limited');
+  // 金額が1件も取れていないレコードに「他にもっと安いプランがあるかも」という注記を
+  // 付けても意味が無いので、金額があるときだけ立てる。
+  if (price.scope === 'detail_page' && price.min_yen !== null) flags.add('price_scope_limited');
   else flags.delete('price_scope_limited');
   school.review_flags = [...flags];
 }
@@ -135,12 +137,15 @@ async function main() {
     if (school.price && school.price.min_yen !== null) {
       const migrated = await migrateExistingPrice(school, html, anthropic);
       if (migrated) {
+        const withDuration = migrated.plans.filter(p => p.duration !== null).length;
         console.log(
-          `  price(移行): 「${school.price.display}」 -> 「${migrated.display}」 ` +
-            `(min_yen=${migrated.min_yen}, plans=${migrated.plans.length}件, scope=${migrated.scope})`
+          `  price(移行): 「${school.price.display}」 -> 「${migrated.price.display}」 ` +
+            `(min_yen=${migrated.price.min_yen}, plans=${migrated.plans.length}件` +
+            `（うち期間あり ${withDuration}件）, scope=${migrated.price.scope})`
         );
-        school.price = migrated;
-        applyScopeFlags(school, migrated);
+        school.price = migrated.price;
+        school.plans = migrated.plans;
+        applyScopeFlags(school, migrated.price);
         school.updated_at = new Date().toISOString();
         updated += 1;
       } else {
@@ -152,17 +157,20 @@ async function main() {
     const enrichment = await enrichPriceFromDetailPage(school.school_name, html, school.official_url, anthropic);
 
     if (enrichment.detailPageUrl) {
-      school.detail_page_url = enrichment.detailPageUrl;
+      school.price_detail_url = enrichment.detailPageUrl;
       const flags = new Set([...(school.review_flags || []), ...enrichment.flags]);
       school.review_flags = [...flags];
     }
 
     if (enrichment.price && enrichment.price.min_yen !== null) {
+      const plans = enrichment.plans || [];
       console.log(
         `  price: null -> 「${enrichment.price.display}」 ` +
-          `(min_yen=${enrichment.price.min_yen}, plans=${enrichment.price.plans.length}件, scope=${enrichment.price.scope})`
+          `(min_yen=${enrichment.price.min_yen}, plans=${plans.length}件` +
+          `（うち期間あり ${plans.filter(p => p.duration !== null).length}件）, scope=${enrichment.price.scope})`
       );
       school.price = enrichment.price;
+      school.plans = enrichment.plans || [];
       applyScopeFlags(school, enrichment.price);
       school.updated_at = new Date().toISOString();
       updated += 1;
@@ -183,13 +191,14 @@ async function main() {
   // writeSchools() のスキーマ検証で実行全体が落ちる。対象外だったレコードも含め、
   // 形だけは必ず新フォーマットに揃えてから書き込む（金額そのものは触らない）。
   for (const school of schools) {
-    if (school.price && Array.isArray(school.price.plans) && school.price.scope) continue;
-    const scope = school.detail_page_url && school.price && school.price.min_yen !== null ? 'detail_page' : 'top_page';
+    if (!Array.isArray(school.plans)) school.plans = [];
+    if (school.price && school.price.scope && !('plans' in school.price)) continue;
     school.price = {
       display: school.price ? school.price.display : NOT_DISCLOSED_TEXT,
       min_yen: school.price ? school.price.min_yen : null,
-      plans: [],
-      scope,
+      // scope は price_detail_url の有無から導出する（1フィールド1責務にした結果、
+      // 「どこまで見たか」は URL の有無そのもので表せる）。
+      scope: school.price_detail_url ? 'detail_page' : 'top_page',
     };
     applyScopeFlags(school, school.price);
   }

@@ -14,7 +14,6 @@
     "target_level",
     "career_paths",
     "price",
-    "duration",
     "format",
     "area",
     "subsidy_eligible",
@@ -28,7 +27,8 @@
     "created_at",
     "updated_at",
     "status",
-    "area_source"
+    "area_source",
+    "plans"
   ],
   "properties": {
     "id": {
@@ -120,7 +120,6 @@
       "required": [
         "display",
         "min_yen",
-        "plans",
         "scope"
       ],
       "properties": {
@@ -135,33 +134,8 @@
             "integer",
             "null"
           ],
-          "description": "ソート・フィルター用の最低価格（円）。plans の amount の最小値を機械的に求めたもの。金額が取れなければ null（0で埋めない）。【注意】scope=detail_page のレコードは、巡回した1ページ内での最小値にすぎず、そのスクール全体の最安値とは限らない（他コースにより安いプランが存在しうる）。ソート・フィルターで使う際は参考値として扱うこと。",
+          "description": "ソート・フィルター用の最低価格（円）。plans[].amount の最小値を機械的に求めたもの。金額が取れなければ null（0で埋めない）。【注意】scope=\"detail_page\" のレコードは、巡回した1ページ内での最小値にすぎず、そのスクール全体の最安値とは限らない。ソート・フィルターでは参考値として扱うこと。",
           "minimum": 0
-        },
-        "plans": {
-          "type": "array",
-          "description": "ページ本文に記載されていたプラン名と金額のペア。display と min_yen はここから機械生成する。金額を確認できなかった場合は空配列。",
-          "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "label",
-              "amount"
-            ],
-            "properties": {
-              "label": {
-                "type": "string",
-                "minLength": 1,
-                "maxLength": 80,
-                "description": "プラン・コース名（ページ本文の表記をそのまま）。"
-              },
-              "amount": {
-                "type": "integer",
-                "minimum": 0,
-                "description": "そのプランの金額（円、カンマを除いた整数）。"
-              }
-            }
-          }
         },
         "scope": {
           "type": "string",
@@ -169,15 +143,10 @@
             "top_page",
             "detail_page"
           ],
-          "description": "金額をどこから取得したか。top_page=トップページのみで取得できた。detail_page=フォールバックで詳細ページを巡回して取得した（その1ページ内の情報に限られる）。金額を取得できなかった場合は top_page とする。"
+          "description": "金額をどこから取得したか。price_detail_url の有無から導出する。top_page=トップページのみ。detail_page=フォールバックで詳細ページを巡回した（その1ページ内の情報に限られる）。"
         }
-      }
-    },
-    "duration": {
-      "type": "string",
-      "description": "表示用文字列（例: \"標準3ヶ月\"）。読み取れない場合は非公開を示す定型文。",
-      "minLength": 1,
-      "maxLength": 120
+      },
+      "description": "plans から導出される表示用オブジェクト。値そのものは plans が持つ。"
     },
     "format": {
       "type": "string",
@@ -400,7 +369,7 @@
     },
     "review_flags": {
       "type": "array",
-      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=トップページで price を取得できず、詳細ページを1回巡回した（detail_page_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。 area_unconfirmed=校舎ページまで見たが、都道府県も「オンライン専用」の明記も確認できなかった。",
+      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=フォールバックで詳細ページを1回巡回した（price_detail_url / area_detail_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。 area_unconfirmed=校舎ページまで見たが、都道府県も「オンライン専用」の明記も確認できなかった。",
       "items": {
         "type": "string",
         "enum": [
@@ -412,12 +381,6 @@
       },
       "uniqueItems": true
     },
-    "detail_page_url": {
-      "type": "string",
-      "description": "料金のフォールバック巡回で参照した詳細ページのURL（社内参考情報。後から抽出結果を検証するために残す）。",
-      "format": "uri",
-      "pattern": "^https?://"
-    },
     "area_source": {
       "type": "string",
       "enum": [
@@ -425,6 +388,55 @@
         "detail_page"
       ],
       "description": "area をどこから取得したか。top_page=トップページのみで判断した。detail_page=フォールバックで校舎一覧・アクセスページを巡回して判断した。price.scope と同じ考え方で、確度の目安として残す（社内参考情報。UI表示には使用しない）。"
+    },
+    "plans": {
+      "type": "array",
+      "description": "ページ本文に記載されているプラン・コースの一覧。1プラン＝1期間＋1金額のセットで、price.display / price.min_yen はここから機械生成する。期間はスクール全体の代表値を持たない（「最短」を代表値にすると、キャンペーンの申込期限のような無関係な期間や、性質の違う短期集中コースの期間を掲げてしまうため）。金額・期間を確認できなかった場合は空配列。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "amount",
+          "duration"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "プラン・コース名（ページ本文の表記をそのまま）。"
+          },
+          "amount": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "description": "そのプランの金額（円、カンマを除いた整数）。本文に記載が無ければ null。"
+          },
+          "duration": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 60,
+            "description": "そのプランの受講期間（例: \"16週間\", \"約6ヶ月\"）。本文の表記をそのまま。記載が無ければ null。"
+          }
+        }
+      }
+    },
+    "price_detail_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "料金のフォールバック巡回で参照した詳細ページのURL（社内参考情報）。price.scope の導出元。"
+    },
+    "area_detail_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "description": "開催エリアのフォールバック巡回で参照した詳細ページのURL（社内参考情報）。area_source の導出元。"
     }
   },
   "allOf": [

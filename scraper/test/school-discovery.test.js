@@ -292,7 +292,7 @@ test('normalizeStructuredFields: price は plans から組み立てられ、本�
   const pageText = '標準コースは198,000円、短期コースは98,000円です。';
 
   const ok = discovery.normalizeStructuredFields(
-    { ...base, price_plans: [{ label: '標準コース', amount: 198000 }, { label: '短期コース', amount: 98000 }] },
+    { ...base, price_plans: [{ label: '標準コース', amount: 198000, duration: null }, { label: '短期コース', amount: 98000, duration: null }] },
     'programming',
     pageText
   );
@@ -302,12 +302,12 @@ test('normalizeStructuredFields: price は plans から組み立てられ、本�
 
   // 本文に無い金額（AIが作った値）はプランごと落ち、結果として price は空になる。
   const bogus = discovery.normalizeStructuredFields(
-    { ...base, price_plans: [{ label: '架空プラン', amount: 555555 }] },
+    { ...base, price_plans: [{ label: '架空プラン', amount: 555555, duration: null }] },
     'programming',
     pageText
   );
   assert.strictEqual(bogus.price.min_yen, null);
-  assert.deepStrictEqual(bogus.price.plans, []);
+  assert.deepStrictEqual(bogus.plans, [], '本文に無い金額のプランが残っている');
 });
 
 test('照合キーは2文字未満の断片を作らない（どんなページにも偶然一致するのを防ぐ）', () => {

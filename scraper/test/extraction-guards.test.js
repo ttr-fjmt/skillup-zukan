@@ -224,3 +224,58 @@ test('掲載中のレコードで format=online なら area は空', () => {
     if (school.format === 'online') assert.deepStrictEqual(school.area, [], school.id);
   }
 });
+
+// ---- plans（トップレベル）と price（導出）の関係 ----
+
+test('verifyPlans: 本文に無い期間は落とす（単位換算・言い換えを採用しない）', () => {
+  const { verifyPlans } = require('../lib/price-detail');
+  // 本文は「6ヶ月(182日)」。AIが「約6ヶ月」と言い換えた場合は採用しない。
+  assert.deepStrictEqual(
+    verifyPlans([{ label: '夜間・休日', amount: null, duration: '約6ヶ月' }], '夜間休日スタイルの場合6ヶ月(182日)'),
+    []
+  );
+  assert.deepStrictEqual(
+    verifyPlans([{ label: '夜間・休日', amount: null, duration: '6ヶ月' }], '夜間休日スタイルの場合6ヶ月(182日)'),
+    [{ label: '夜間・休日', amount: null, duration: '6ヶ月' }]
+  );
+});
+
+test('verifyPlans: 金額が無くても期間が取れていればプランとして残す', () => {
+  const { verifyPlans } = require('../lib/price-detail');
+  const kept = verifyPlans([{ label: 'Webエンジニア転職保証', amount: null, duration: '6ヶ月' }], '約6ヶ月でWebエンジニア転職を目指す');
+  assert.strictEqual(kept.length, 1);
+  assert.strictEqual(kept[0].amount, null);
+});
+
+test('掲載中のレコードは duration（スクール代表値）を持たない', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    assert.ok(!('duration' in school), `${school.id}: 廃止した duration が残っている`);
+    assert.ok(Array.isArray(school.plans), `${school.id}: plans がトップレベルに無い`);
+  }
+});
+
+test('掲載中のレコードの price は plans から導出した値と一致する', () => {
+  const { buildPriceFromPlans } = require('../lib/price-detail');
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    const derived = buildPriceFromPlans(school.plans, school.price.scope);
+    assert.strictEqual(school.price.min_yen, derived.min_yen, `${school.id}: min_yen が plans と食い違っている`);
+    assert.strictEqual(school.price.display, derived.display, `${school.id}: display が plans と食い違っている`);
+  }
+});
+
+test('掲載中のレコードの price.scope は price_detail_url の有無と整合する', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    const expected = school.price_detail_url ? 'detail_page' : 'top_page';
+    assert.strictEqual(school.price.scope, expected, `${school.id}: scope と price_detail_url が食い違っている`);
+  }
+});
+
+test('掲載中のレコードは廃止した detail_page_url を持たない（用途別に分離済み）', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    assert.ok(!('detail_page_url' in school), `${school.id}: 分離前の detail_page_url が残っている`);
+  }
+});

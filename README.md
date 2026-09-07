@@ -83,7 +83,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（164件）
+npm test                                   # ユニットテスト（241件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -142,6 +142,7 @@ data/discovery-log/2026-09-07.json
 | --- | --- |
 | `verifyOfficialName()` | `official_name` がページ本文に一字一句無ければ `null` に落とす |
 | `verifySubsidyClaim()` | 本文に給付金関連のキーワードが一つも無ければ `subsidy_eligible` を `false` に倒す |
+| `verifyPlans()` | plans の金額・期間がページ本文に無ければ、その項目を null にする |
 | `filterFeatures()` | `features` から検証不能な統計的数値主張・金銭的コミットメント文言・最上級の主張を除外する |
 | `stripExaggeratedSentences()` | `description` から同じ基準で該当する**文**を落とす（散文なので文単位） |
 | `classifyFormat()` | 受講形式を確定し、確定できなければ `review_flags: ["format_unconfirmed"]` を立てる |
@@ -158,6 +159,27 @@ data/discovery-log/2026-09-07.json
 
 `review_flags` は社内参考情報で、UI表示には使わない。`subsidy_eligible` の裏取りは、給付金対象であることの言い回しが多様（「教育訓練給付金対象」「給付金で最大80%OFF」「リスキリング支援事業対象」等）なため、**キーワードが一つも無ければ `false` に倒す**という粗い判定にとどめてある。キーワードがあれば、その文脈の妥当性まではAIの判断を尊重する。
 
+## 価格と期間: plans が事実、price は導出
+
+`plans[]` がレコードの事実で、`price` はそこから機械的に導出される表示用オブジェクト。
+
+```json
+"plans": [
+  { "label": "集中8週間プラン", "amount": 475200, "duration": "8週間" },
+  { "label": "16週間プラン",   "amount": 567600, "duration": "16週間" }
+],
+"price": { "display": "475,200円〜", "min_yen": 475200, "scope": "detail_page" }
+```
+
+- **期間はプラン単位でのみ持つ。** スクール全体の代表 `duration` は持たない。実データを調べた結果、期間は「1プラン＝1期間＝1金額」のセットで、スクール全体の目安値という概念が存在しなかった（`tech-camp` の旧 `duration`「短期集中スタイル：10週間 / 夜間・休日スタイル：約6ヶ月」は plans を散文で書き直しただけだった）
+- **「最短」を代表値にしない。** `sejuku` の料金ページには「無料カウンセリング実施後2週間以内のご入会」というキャンペーンの申込期限があり、素朴に最短を取ると受講期間として `2週間` を掲げてしまう。`min_yen` が割引価格になった件と同じ轍
+- `amount` / `duration` はどちらも `null` を許す（金額だけ・期間だけ載っているページがあるため）。両方 null のプランは名前だけ残っても使い道が無いので落とす
+- `price.display` / `price.min_yen` は `plans` から機械生成し、AIには書かせない
+
+### 巡回した詳細ページのURL
+
+`price_detail_url` と `area_detail_url` は用途別に分けてある。1つの `detail_page_url` を price と area で共有していた時期があり、後から走った area 巡回が price の出所（`/courses/career/`）を会社概要ページのURLで上書きしてしまった。`price.scope` はこの `price_detail_url` の有無から導出する。
+
 ## 診断ウィザード
 
 質問は `lib/wizard-questions.js`、スコアリングは `lib/match.js`。
@@ -173,7 +195,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（102件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（241件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

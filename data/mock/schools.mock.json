@@ -19,19 +19,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -89,15 +90,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -149,19 +150,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -207,19 +209,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -227,6 +230,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-programming-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -275,10 +283,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -322,19 +329,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -392,15 +400,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -452,19 +460,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -510,19 +519,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -530,6 +540,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-webdesign-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -578,10 +593,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -624,19 +638,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -694,15 +709,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -754,19 +769,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -812,19 +828,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -832,6 +849,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-uiux-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -880,10 +902,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -926,19 +947,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -996,15 +1018,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1056,19 +1078,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -1114,19 +1137,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -1134,6 +1158,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-video-editing-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1182,10 +1211,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1228,19 +1256,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1298,15 +1327,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1358,19 +1387,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -1416,19 +1446,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -1436,6 +1467,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-web-marketing-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1484,10 +1520,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1530,19 +1565,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1600,15 +1636,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1660,19 +1696,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -1718,19 +1755,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -1738,6 +1776,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-genai-dx-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1786,10 +1829,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1832,19 +1874,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1902,15 +1945,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1962,19 +2005,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -2020,19 +2064,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -2040,6 +2085,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-language-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -2088,10 +2138,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -2134,19 +2183,20 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "plans": [
-        {
-          "label": "月額プラン",
-          "amount": 9800
-        },
-        {
-          "label": "年額プラン",
-          "amount": 98000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準3ヶ月",
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 9800,
+        "duration": "1ヶ月"
+      },
+      {
+        "label": "年額プラン",
+        "amount": 98000,
+        "duration": "12ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -2204,15 +2254,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 198000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "4〜24週間から選択",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 198000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -2264,19 +2314,20 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "plans": [
-        {
-          "label": "標準コース",
-          "amount": 348000
-        },
-        {
-          "label": "短期コース",
-          "amount": 248000
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "標準6ヶ月（週2回）",
+    "plans": [
+      {
+        "label": "標準コース",
+        "amount": 348000,
+        "duration": "6ヶ月"
+      },
+      {
+        "label": "短期コース",
+        "amount": 248000,
+        "duration": "3ヶ月"
+      }
+    ],
     "format": "offline",
     "area": [
       "東京都"
@@ -2322,19 +2373,20 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "plans": [
-        {
-          "label": "4週間プラン",
-          "amount": 89000
-        },
-        {
-          "label": "8週間プラン",
-          "amount": 149000
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "最短1ヶ月",
+    "plans": [
+      {
+        "label": "4週間プラン",
+        "amount": 89000,
+        "duration": "4週間"
+      },
+      {
+        "label": "8週間プラン",
+        "amount": 149000,
+        "duration": "8週間"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -2342,6 +2394,11 @@
       "愛知県"
     ],
     "area_source": "top_page",
+    "price_detail_url": "https://mock-certification-4.example.com/price",
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -2390,10 +2447,9 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
       "scope": "top_page"
     },
-    "duration": "通い放題（期間の定めなし）",
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",

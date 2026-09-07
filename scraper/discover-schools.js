@@ -91,7 +91,7 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     target_level: ai.target_level,
     career_paths: ai.career_paths,
     price: ai.price,
-    duration: ai.duration,
+    plans: ai.plans || [],
     format: ai.format,
     area: ai.area,
     area_source: ai.area_source || 'top_page',
@@ -102,7 +102,8 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     review_source_urls: [],
     // 自動抽出の確度が低い箇所の目印（classifyFormat 等が立てる）。UI表示には使わない。
     review_flags: ai.review_flags || [],
-    ...(ai.detail_page_url ? { detail_page_url: ai.detail_page_url } : {}),
+    ...(ai.price_detail_url ? { price_detail_url: ai.price_detail_url } : {}),
+    ...(ai.area_detail_url ? { area_detail_url: ai.area_detail_url } : {}),
     official_url: officialUrl,
     cta_url: officialUrl,
     cta_type: 'direct',
@@ -217,10 +218,11 @@ async function main() {
         );
         if (enrichment.price && enrichment.price.min_yen !== null) {
           ai.price = enrichment.price;
+          ai.plans = enrichment.plans || [];
           // 詳細ページ1枚から得た価格は、そのスクール全体の最安値とは限らない。
           ai.review_flags = [...(ai.review_flags || []), 'price_scope_limited'];
         }
-        if (enrichment.detailPageUrl) ai.detail_page_url = enrichment.detailPageUrl;
+        if (enrichment.detailPageUrl) ai.price_detail_url = enrichment.detailPageUrl;
         ai.review_flags = [...(ai.review_flags || []), ...enrichment.flags];
       }
 
@@ -236,6 +238,7 @@ async function main() {
         ai.area = areaResult.area;
         ai.format = areaResult.format;
         ai.area_source = areaResult.areaSource;
+        if (areaResult.detailPageUrl) ai.area_detail_url = areaResult.detailPageUrl;
         // 確定できたなら format_unconfirmed は不要。できなければ area_unconfirmed に置き換える。
         const flags = new Set((ai.review_flags || []).filter(f => f !== 'format_unconfirmed'));
         for (const flag of areaResult.flags) flags.add(flag);

@@ -87,10 +87,10 @@ test('extractPageLinks: javascript: や mailto: のリンクは候補にしな�
 
 test('verifyPlans: 本文にある金額のプランだけを残す（カンマの有無は無視）', () => {
   const plans = [
-    { label: '集中8週間プラン', amount: 475200 },
-    { label: '16週間プラン', amount: 567600 },
+    { label: '集中8週間プラン', amount: 475200, duration: '8週間' },
+    { label: '16週間プラン', amount: 567600, duration: '16週間' },
   ];
-  const pageText = '集中8週間プラン ¥475,200 / 16週間プラン ¥567,600';
+  const pageText = '集中8週間プラン(8週間) ¥475,200 / 16週間プラン(16週間) ¥567,600';
   assert.deepStrictEqual(priceDetail.verifyPlans(plans, pageText), plans);
 });
 
@@ -125,7 +125,6 @@ test('buildPriceFromPlans: 複数プランなら最安値に「〜」を付け�
   assert.strictEqual(r.display, '475,200円〜');
   assert.strictEqual(r.min_yen, 475200);
   assert.strictEqual(r.scope, 'detail_page');
-  assert.strictEqual(r.plans.length, 2);
 });
 
 test('buildPriceFromPlans: プランが1件なら「〜」を付けない', () => {
@@ -136,7 +135,7 @@ test('buildPriceFromPlans: プランが1件なら「〜」を付けない', () =
 
 test('buildPriceFromPlans: プランが空なら定型文と null', () => {
   const r = priceDetail.buildPriceFromPlans([], 'top_page');
-  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, plans: [], scope: 'top_page' });
+  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'top_page' });
 });
 
 // ---- 割引価格の除外（回帰） ----
@@ -169,11 +168,9 @@ test('割引/通常が併記されていても、通常価格のみが採用さ�
   const price = priceDetail.buildPriceFromPlans(verified, 'detail_page');
   assert.strictEqual(price.min_yen, 475200, 'min_yen が割引価格になっている');
   assert.strictEqual(price.display, '475,200円〜');
-  assert.strictEqual(price.plans.length, 3, '同名プランが重複して残っている');
-  assert.deepStrictEqual(
-    price.plans.map(p => p.amount).sort((a, b) => a - b),
-    [475200, 567600, 778800]
-  );
+  const merged = priceDetail.normalizePlans(verified);
+  assert.strictEqual(merged.length, 3, '同名プランが重複して残っている');
+  assert.deepStrictEqual(merged.map(x => x.amount).sort((a, b) => a - b), [475200, 567600, 778800]);
 });
 
 test('dropDiscountedDuplicates: 期間・内容が違うプランは別エントリとして残す', () => {
@@ -182,18 +179,14 @@ test('dropDiscountedDuplicates: 期間・内容が違うプランは別エント
     { label: '24週間プラン', amount: 778800 },
     { label: '集中8週間プラン', amount: 475200 },
   ];
-  const price = priceDetail.buildPriceFromPlans(plans, 'detail_page');
-  assert.strictEqual(price.plans.length, 3, 'ラベルが異なるプランまで畳んでいる');
-  assert.strictEqual(price.min_yen, 475200);
+  assert.strictEqual(priceDetail.normalizePlans(plans).length, 3, 'ラベルが異なるプランまで畳んでいる');
+  assert.strictEqual(priceDetail.buildPriceFromPlans(plans, 'detail_page').min_yen, 475200);
 });
 
 test('dropDiscountedDuplicates: 前後の空白だけが違うラベルは同一プランとして扱う', () => {
-  const price = priceDetail.buildPriceFromPlans(
-    [{ label: '標準コース', amount: 300000 }, { label: ' 標準コース ', amount: 240000 }],
-    'top_page'
-  );
-  assert.strictEqual(price.plans.length, 1);
-  assert.strictEqual(price.min_yen, 300000);
+  const input = [{ label: '標準コース', amount: 300000 }, { label: ' 標準コース ', amount: 240000 }];
+  assert.strictEqual(priceDetail.normalizePlans(input).length, 1);
+  assert.strictEqual(priceDetail.buildPriceFromPlans(input, 'top_page').min_yen, 300000);
 });
 
 test('抽出プロンプトに割引価格の除外指示が含まれている', () => {
@@ -217,11 +210,12 @@ test('enrichPriceFromDetailPage: 詳細ページから料金を取得し、フ�
     {
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       fetchDetailPage: async () => { fetchCount += 1; return '受講料は一括298,000円（税込）です。'; },
-      extractPriceFromPage: async (name, url, pageText) =>
-        priceDetail.buildPriceFromPlans(
-          priceDetail.verifyPlans([{ label: '標準コース', amount: 298000 }], pageText),
-          'detail_page'
-        ),
+      extractPriceFromPage: async (name, url, pageText) => {
+        const plans = priceDetail.normalizePlans(
+          priceDetail.verifyPlans([{ label: '標準コース', amount: 298000, duration: null }], pageText)
+        );
+        return { plans, price: priceDetail.buildPriceFromPlans(plans, 'detail_page') };
+      },
     },
     async () => {
       const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
@@ -242,7 +236,7 @@ test('enrichPriceFromDetailPage: 1校につきHTTPリクエストは最大1回�
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       // 辿った先がまた一覧ページで、料金が書かれていなかったケース。
       fetchDetailPage: async () => { fetchCount += 1; return '<a href="/price/detail">詳しい料金はこちら</a>'; },
-      extractPriceFromPage: async () => priceDetail.buildPriceFromPlans([], 'detail_page'),
+      extractPriceFromPage: async () => ({ plans: [], price: priceDetail.buildPriceFromPlans([], 'detail_page') }),
     },
     async () => {
       await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
@@ -256,7 +250,7 @@ test('enrichPriceFromDetailPage: 詳細ページでも取れなければ null �
     {
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       fetchDetailPage: async () => '料金は個別にご案内しています。',
-      extractPriceFromPage: async () => ({ display: NOT_DISCLOSED_TEXT, min_yen: null }),
+      extractPriceFromPage: async () => ({ plans: [], price: { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'detail_page' } }),
     },
     async () => {
       const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
@@ -276,7 +270,7 @@ test('enrichPriceFromDetailPage: リンクを選べなければHTTPリクエス�
     },
     async () => {
       const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
-      assert.deepStrictEqual(r, { price: null, detailPageUrl: null, flags: [] });
+      assert.deepStrictEqual(r, { price: null, plans: null, detailPageUrl: null, flags: [] });
       assert.strictEqual(fetchCount, 0);
     }
   );
@@ -299,7 +293,7 @@ test('enrichPriceFromDetailPage: 詳細ページの取得に失敗しても再�
 });
 
 test('enrichPriceFromDetailPage: HTMLが無い/リンクが無い場合は何もしない', async () => {
-  const empty = { price: null, detailPageUrl: null, flags: [] };
+  const empty = { price: null, plans: null, detailPageUrl: null, flags: [] };
   assert.deepStrictEqual(await priceDetail.enrichPriceFromDetailPage('サンプル', null, 'https://example.com/', {}), empty);
   assert.deepStrictEqual(
     await priceDetail.enrichPriceFromDetailPage('サンプル', '<html><body>リンクなし</body></html>', 'https://example.com/', {}),

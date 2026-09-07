@@ -59,14 +59,12 @@ const CAREER_PATHS = {
 
 // display / min_yen は buildPriceFromPlans が plans から機械生成する（実データと同じ経路）。
 const PRICE_PLANS = [
-  [{ label: '月額プラン', amount: 9800 }, { label: '年額プラン', amount: 98000 }],
-  [{ label: '標準コース', amount: 198000 }],
-  [{ label: '標準コース', amount: 348000 }, { label: '短期コース', amount: 248000 }],
-  [{ label: '4週間プラン', amount: 89000 }, { label: '8週間プラン', amount: 149000 }],
-  [], // 金額の記載が無いケース
+  [{ label: '月額プラン', amount: 9800, duration: '1ヶ月' }, { label: '年額プラン', amount: 98000, duration: '12ヶ月' }],
+  [{ label: '標準コース', amount: 198000, duration: '3ヶ月' }],
+  [{ label: '標準コース', amount: 348000, duration: '6ヶ月' }, { label: '短期コース', amount: 248000, duration: '3ヶ月' }],
+  [{ label: '4週間プラン', amount: 89000, duration: '4週間' }, { label: '8週間プラン', amount: 149000, duration: '8週間' }],
+  [], // 金額・期間の記載が無いケース
 ];
-
-const DURATIONS = ['標準3ヶ月', '4〜24週間から選択', '標準6ヶ月（週2回）', '最短1ヶ月', '通い放題（期間の定めなし）'];
 
 /**
  * purpose[] は GENRE_PURPOSE_ORDER の上位から取る（そのジャンルで自然な目的が付く）。
@@ -86,7 +84,8 @@ function buildMockSchool(genre, variantIndex) {
   const url = `https://mock-${genre.replace(/_/g, '-')}-${n}.example.com/`;
 
   const area = variant.areaIndex === null ? [] : AREA_SETS[variant.areaIndex];
-  const price = buildPriceFromPlans(PRICE_PLANS[variantIndex], variantIndex === 3 ? 'detail_page' : 'top_page');
+  const plans = PRICE_PLANS[variantIndex];
+  const price = buildPriceFromPlans(plans, variantIndex === 3 ? 'detail_page' : 'top_page');
 
   const school = {
     id,
@@ -101,10 +100,14 @@ function buildMockSchool(genre, variantIndex) {
     target_level: LEVEL[variant.levelIndex],
     career_paths: CAREER_PATHS[genre].slice(0, 2 + (variantIndex % 2)),
     price,
-    duration: DURATIONS[variantIndex],
+    plans,
     format: variant.format,
     area,
     area_source: 'top_page',
+    // variant4 だけ「詳細ページ巡回で価格を取った」状態を再現する（scope とフラグの確認用）。
+    ...(variantIndex === 3
+      ? { price_detail_url: `${url}price`, review_flags: ['detail_page_crawled', 'price_scope_limited'] }
+      : {}),
     subsidy_eligible: variant.subsidy,
     career_support: variant.careerSupport,
     features: [

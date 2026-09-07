@@ -87,7 +87,7 @@ async function main() {
     school.area = result.area;
     school.format = result.format;
     school.area_source = result.areaSource;
-    if (result.detailPageUrl) school.detail_page_url = result.detailPageUrl;
+    if (result.detailPageUrl) school.area_detail_url = result.detailPageUrl;
 
     // 確定できたら format_unconfirmed は落とす。できなければ area_unconfirmed に置き換える。
     const flags = new Set((school.review_flags || []).filter(f => f !== 'format_unconfirmed' && f !== 'area_unconfirmed'));

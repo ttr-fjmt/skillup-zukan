@@ -73,17 +73,30 @@ test('review_summary は null なら通る（未収集の状態）', () => {
 });
 
 test('price.min_yen は null を許すが、文字列は弾く', () => {
-  const base = { plans: [], scope: 'top_page' };
+  const base = { scope: 'top_page' };
   assert.strictEqual(validateSchool(validSchool({ price: { ...base, display: '要問い合わせ', min_yen: null } })).ok, true);
   assert.strictEqual(validateSchool(validSchool({ price: { ...base, display: '198,000円', min_yen: '198000' } })).ok, false);
 });
 
-test('price.plans / price.scope は必須で、未知の scope は弾く', () => {
+test('price.scope は必須で、未知の scope は弾く', () => {
   assert.strictEqual(validateSchool(validSchool({ price: { display: '198,000円', min_yen: 198000 } })).ok, false);
   assert.strictEqual(
-    validateSchool(validSchool({ price: { display: '198,000円', min_yen: 198000, plans: [{ label: 'A', amount: 198000 }], scope: 'guess' } })).ok,
+    validateSchool(validSchool({ price: { display: '198,000円', min_yen: 198000, scope: 'guess' } })).ok,
     false
   );
+});
+
+test('plans はトップレベルで必須。金額・期間は null を許すが label は必須', () => {
+  const school = validSchool();
+  delete school.plans;
+  assert.strictEqual(validateSchool(school).ok, false);
+
+  assert.strictEqual(validateSchool(validSchool({ plans: [{ label: 'A', amount: null, duration: null }] })).ok, true);
+  assert.strictEqual(validateSchool(validSchool({ plans: [{ amount: 1000, duration: '1ヶ月' }] })).ok, false);
+});
+
+test('廃止した duration（スクール代表値）は弾かれる', () => {
+  assert.strictEqual(validateSchool(validSchool({ duration: '標準3ヶ月' })).ok, false);
 });
 
 test('id が slug 形式でない場合は弾かれる', () => {

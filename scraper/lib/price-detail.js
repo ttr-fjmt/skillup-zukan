@@ -159,17 +159,29 @@ async function choosePriceDetailLink(links, schoolName, anthropic) {
  * 月額のような「計算で出しただけで本文には無い数字」はここで消える。
  */
 function verifyPlans(plans, pageText) {
-  const compact = String(pageText || '').replace(/[,，\s　]/g, '');
+  const strip = str => String(str).replace(/[,，\s　]/g, '');
+  const compact = strip(pageText || '');
 
-  return (Array.isArray(plans) ? plans : []).filter(plan => {
-    if (!plan || typeof plan.label !== 'string' || !plan.label.trim()) return false;
-    if (!Number.isInteger(plan.amount) || plan.amount < 0) return false;
+  return (Array.isArray(plans) ? plans : []).flatMap(plan => {
+    if (!plan || typeof plan.label !== 'string' || !plan.label.trim()) return [];
 
-    if (!compact.includes(String(plan.amount))) {
-      console.warn(`  プラン「${plan.label}」の ${plan.amount}円 はページ本文に見当たらないため除外しました。`);
-      return false;
+    // 金額は「記載が無い」こともあるため null を許す。非nullなら本文に実在すること。
+    let amount = Number.isInteger(plan.amount) && plan.amount >= 0 ? plan.amount : null;
+    if (amount !== null && !compact.includes(String(amount))) {
+      console.warn(`  プラン「${plan.label}」の ${amount}円 はページ本文に見当たらないため除外しました。`);
+      amount = null;
     }
-    return true;
+
+    // 期間も同じ扱い。本文に無い期間（AIが言い換えた・単位を換算した値）は採用しない。
+    let duration = typeof plan.duration === 'string' && plan.duration.trim() ? plan.duration.trim() : null;
+    if (duration !== null && !compact.includes(strip(duration))) {
+      console.warn(`  プラン「${plan.label}」の期間「${duration}」はページ本文に見当たらないため除外しました。`);
+      duration = null;
+    }
+
+    // 金額も期間も取れないプランは、名前だけ残っても使い道が無いので落とす。
+    if (amount === null && duration === null) return [];
+    return [{ label: plan.label.trim().slice(0, 80), amount, duration }];
   });
 }
 
@@ -195,12 +207,21 @@ function dropDiscountedDuplicates(plans) {
     const key = plan.label.trim();
     const existing = byLabel.get(key);
     if (!existing) {
-      byLabel.set(key, plan);
+      byLabel.set(key, { ...plan });
+      continue;
+    }
+
+    // 期間は片方にしか入っていないことがあるので、非nullの方を拾って統合する。
+    if (existing.duration === null && plan.duration !== null) existing.duration = plan.duration;
+
+    if (plan.amount === null) continue;
+    if (existing.amount === null) {
+      existing.amount = plan.amount;
       continue;
     }
     if (plan.amount > existing.amount) {
       console.warn(`  プラン「${key}」に複数の金額があるため、割引前とみなして ${plan.amount}円 を採用しました（${existing.amount}円 を除外）。`);
-      byLabel.set(key, plan);
+      existing.amount = plan.amount;
     } else if (plan.amount < existing.amount) {
       console.warn(`  プラン「${key}」の ${plan.amount}円 は割引後価格とみなして除外しました（${existing.amount}円 を採用）。`);
     }
@@ -219,24 +240,50 @@ function dropDiscountedDuplicates(plans) {
  * ロケールは 'en-US' を明示する。既定ロケールに任せると、実行環境によっては
  * 桁区切りが "657.800" のようになりうるため。日本語表記としての結果は同じ。
  */
-function buildPriceFromPlans(plans, scope = 'top_page') {
-  const valid = dropDiscountedDuplicates(
-    (Array.isArray(plans) ? plans : []).filter(
-      p => p && typeof p.label === 'string' && p.label.trim() && Number.isInteger(p.amount) && p.amount >= 0
-    )
+/**
+ * plans を正規化する（重複の畳み込みまで）。plans はレコードの事実そのもので、
+ * price はここから導出される表示用の見え方、という関係にする。
+ */
+function normalizePlans(plans) {
+  return dropDiscountedDuplicates(
+    (Array.isArray(plans) ? plans : [])
+      .filter(p => p && typeof p.label === 'string' && p.label.trim())
+      .map(p => ({
+        label: p.label.trim().slice(0, 80),
+        amount: Number.isInteger(p.amount) && p.amount >= 0 ? p.amount : null,
+        duration: typeof p.duration === 'string' && p.duration.trim() ? p.duration.trim().slice(0, 60) : null,
+      }))
   );
+}
 
-  if (valid.length === 0) {
-    return { display: NOT_DISCLOSED_TEXT, min_yen: null, plans: [], scope };
+/**
+ * plans から price（表示用）を機械的に組み立てる。
+ *
+ * display をAIの自由記述にすると、プランの羅列がそのまま入ったり、要約の仕方が
+ * スクールごとにバラついたりする（実際に102字のプラン羅列が入った）。表示文字列は
+ * 常に同じ規則で組み立てる。
+ *
+ * 期間側に同種の代表値（「最短◯週間」等）は作らない。sejuku の料金ページには
+ * 「無料カウンセリング実施後2週間以内のご入会」というキャンペーンの申込期限があり、
+ * 素朴に最短を代表値にすると受講期間として 2週間 を掲げてしまう。期間はプラン単位で
+ * 持ち、代表値はUI側で必要になったときに改めて設計する。
+ *
+ * ロケールは 'en-US' を明示する。既定ロケールに任せると、実行環境によっては
+ * 桁区切りが "657.800" のようになりうるため。日本語表記としての結果は同じ。
+ */
+function buildPriceFromPlans(plans, scope = 'top_page') {
+  const priced = normalizePlans(plans).filter(p => p.amount !== null);
+
+  if (priced.length === 0) {
+    return { display: NOT_DISCLOSED_TEXT, min_yen: null, scope };
   }
 
-  const min = Math.min(...valid.map(p => p.amount));
+  const min = Math.min(...priced.map(p => p.amount));
   const formatted = min.toLocaleString('en-US');
   return {
-    // プランが1件だけなら「〜」を付けない（幅が無いのに幅があるように見せない）。
-    display: valid.length === 1 ? `${formatted}円` : `${formatted}円〜`,
+    // 金額のあるプランが1件だけなら「〜」を付けない（幅が無いのに幅があるように見せない）。
+    display: priced.length === 1 ? `${formatted}円` : `${formatted}円〜`,
     min_yen: min,
-    plans: valid.map(p => ({ label: p.label.trim().slice(0, 80), amount: p.amount })),
     scope,
   };
 }
@@ -277,7 +324,14 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
                   '入れないこと。割引後と通常価格が併記されている場合は通常価格（割引前）を使う。',
               },
             },
-            required: ['label', 'amount'],
+              duration: {
+                type: ['string', 'null'],
+                description:
+                  'そのプランの受講期間。ページ本文の表記をそのまま使う（例: "16週間", "約6ヶ月"）。' +
+                  '期間の記載が無ければ null。単位を換算したり、自分で計算した値を入れないこと。' +
+                  'キャンペーンの申込期限・支払期限は受講期間ではないので入れないこと。',
+              },
+            required: ['label', 'amount', 'duration'],
             additionalProperties: false,
           },
         },
@@ -318,10 +372,12 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
   );
 
   const toolUse = msg.content.find(b => b.type === 'tool_use');
-  if (!toolUse) return buildPriceFromPlans([], scope);
+  if (!toolUse) return { plans: [], price: buildPriceFromPlans([], scope) };
 
   // 本文照合を通ったプランだけから display / min_yen を機械生成する。
-  return buildPriceFromPlans(verifyPlans(toolUse.input.plans, pageText), scope);
+  // plans が事実、price はそこから導出される見え方。両方返す。
+  const plans = normalizePlans(verifyPlans(toolUse.input.plans, pageText));
+  return { plans, price: buildPriceFromPlans(plans, scope) };
 }
 
 /** 詳細ページを1回だけ取得する（HTTP検証と同じUA・ポライトウェイトを流用）。 */
@@ -343,7 +399,7 @@ async function fetchDetailPage(url) {
  *   price は取得できなければ { display: 定型文, min_yen: null } のまま返す（合成しない）。
  */
 async function enrichPriceFromDetailPage(schoolName, html, verifiedUrl, anthropic) {
-  const empty = { price: null, detailPageUrl: null, flags: [] };
+  const empty = { price: null, plans: null, detailPageUrl: null, flags: [] };
   if (!html) return empty;
 
   const links = extractPageLinks(html, verifiedUrl);
@@ -366,18 +422,18 @@ async function enrichPriceFromDetailPage(schoolName, html, verifiedUrl, anthropi
     pageText = await module.exports.fetchDetailPage(chosen.url);
   } catch (err) {
     console.warn(`  詳細ページの取得に失敗しました（再試行しません）: ${err.message}`);
-    return { price: null, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
+    return { price: null, plans: null, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
   }
 
-  let price;
+  let extracted;
   try {
-    price = await module.exports.extractPriceFromPage(schoolName, chosen.url, pageText, anthropic);
+    extracted = await module.exports.extractPriceFromPage(schoolName, chosen.url, pageText, anthropic);
   } catch (err) {
     console.warn(`  詳細ページからの料金抽出に失敗しました: ${err.message}`);
-    return { price: null, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
+    return { price: null, plans: null, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
   }
 
-  return { price, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
+  return { price: extracted.price, plans: extracted.plans, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
 }
 
 module.exports = {
@@ -388,6 +444,7 @@ module.exports = {
   choosePriceDetailLink,
   verifyPlans,
   buildPriceFromPlans,
+  normalizePlans,
   extractPriceFromPage,
   fetchDetailPage,
   fetchWithVerifyUA,

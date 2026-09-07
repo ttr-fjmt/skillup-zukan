@@ -24,35 +24,8 @@
     "price": {
       "display": "475,200円〜",
       "min_yen": 475200,
-      "plans": [
-        {
-          "label": "16週間プラン",
-          "amount": 567600
-        },
-        {
-          "label": "24週間プラン",
-          "amount": 778800
-        },
-        {
-          "label": "36週間プラン",
-          "amount": 1056000
-        },
-        {
-          "label": "集中8週間プラン",
-          "amount": 475200
-        },
-        {
-          "label": "集中12週間プラン",
-          "amount": 653400
-        },
-        {
-          "label": "集中18週間プラン",
-          "amount": 884400
-        }
-      ],
       "scope": "detail_page"
     },
-    "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
     "format": "online",
     "area": [],
     "subsidy_eligible": true,
@@ -70,7 +43,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:43:39.735Z",
+    "updated_at": "2026-09-07T15:54:39.006Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -80,8 +53,40 @@
       "price_scope_limited",
       "area_unconfirmed"
     ],
-    "detail_page_url": "https://www.sejuku.net/corp/company?cid=header_corp",
-    "area_source": "top_page"
+    "area_source": "top_page",
+    "plans": [
+      {
+        "label": "16週間プラン",
+        "amount": 567600,
+        "duration": "16週間"
+      },
+      {
+        "label": "24週間プラン",
+        "amount": 778800,
+        "duration": "24週間"
+      },
+      {
+        "label": "36週間プラン",
+        "amount": 1056000,
+        "duration": "36週間"
+      },
+      {
+        "label": "集中8週間プラン",
+        "amount": 475200,
+        "duration": "8週間"
+      },
+      {
+        "label": "集中12週間プラン",
+        "amount": 653400,
+        "duration": "12週間"
+      },
+      {
+        "label": "集中18週間プラン",
+        "amount": 884400,
+        "duration": "18週間"
+      }
+    ],
+    "price_detail_url": "https://www.sejuku.net/courses/career/"
   },
   {
     "id": "techacademy",
@@ -107,10 +112,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "plans": [],
-      "scope": "top_page"
+      "scope": "detail_page"
     },
-    "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
     "format": "online",
     "area": [],
     "subsidy_eligible": true,
@@ -126,7 +129,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T15:25:33.427Z",
+    "updated_at": "2026-09-07T15:54:39.088Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -134,8 +137,9 @@
     "review_flags": [
       "detail_page_crawled"
     ],
-    "detail_page_url": "https://techacademy.jp/course",
-    "area_source": "top_page"
+    "area_source": "top_page",
+    "plans": [],
+    "price_detail_url": "https://techacademy.jp/course"
   },
   {
     "id": "tech-camp",
@@ -159,19 +163,8 @@
     "price": {
       "display": "657,800円〜",
       "min_yen": 657800,
-      "plans": [
-        {
-          "label": "短期集中スタイル✕オンラインプラン",
-          "amount": 657800
-        },
-        {
-          "label": "夜間・休日スタイル✕オンラインプラン",
-          "amount": 877800
-        }
-      ],
       "scope": "top_page"
     },
-    "duration": "短期集中スタイル：10週間 / 夜間・休日スタイル：約6ヶ月",
     "format": "online",
     "area": [],
     "subsidy_eligible": true,
@@ -190,12 +183,24 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T15:25:41.868Z",
+    "updated_at": "2026-09-07T15:54:39.088Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://tech-camp.in/",
     "review_flags": [],
-    "area_source": "top_page"
+    "area_source": "top_page",
+    "plans": [
+      {
+        "label": "短期集中スタイル✕オンラインプラン",
+        "amount": 657800,
+        "duration": "10週間"
+      },
+      {
+        "label": "夜間・休日スタイル✕オンラインプラン",
+        "amount": 877800,
+        "duration": "6ヶ月"
+      }
+    ]
   }
 ]
