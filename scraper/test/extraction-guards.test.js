@@ -136,7 +136,7 @@ test('掲載中のレコードの description に、誇張・実績訴求が残�
 // ---- 受講形式の確定 ----
 
 test('classifyFormat: area が取れている通学系はそのまま採用する', () => {
-  const r = classifyFormat('both', ['東京都', '大阪府'], '教室は渋谷にあります');
+  const r = classifyFormat('both', ['東京都', '大阪府'], '教室は東京都渋谷区と大阪府梅田にあります');
   assert.deepStrictEqual(r, { format: 'both', area: ['東京都', '大阪府'], flags: [], areaSource: 'top_page' });
 });
 
@@ -277,5 +277,66 @@ test('掲載中のレコードは廃止した detail_page_url を持たない（
   const schools = require('../../data/schools.json');
   for (const school of schools) {
     assert.ok(!('detail_page_url' in school), `${school.id}: 分離前の detail_page_url が残っている`);
+  }
+});
+
+// ---- career_paths / area の合成防止（video_editing ジャンルで発覚） ----
+
+test('verifyCareerPaths: 本文に無い職種名は落とす（一般知識からの補完を防ぐ）', () => {
+  const { verifyCareerPaths } = require('../lib/school-discovery');
+  // デジタルハリウッドの実例。7件中3件が本文に無かった。
+  const pageText = 'Webデザイナー、動画クリエイター、デジタルアーティスト、3DCGデザイナーを目指せます。';
+  const kept = verifyCareerPaths(
+    ['フリーランスクリエイター', 'Webデザイナー', '動画クリエイター', 'デジタルアーティスト', 'CG/VFXアーティスト', '3DCGデザイナー', 'UI/UXデザイナー'],
+    pageText
+  );
+  assert.deepStrictEqual(kept, ['Webデザイナー', '動画クリエイター', 'デジタルアーティスト', '3DCGデザイナー']);
+});
+
+test('verifyCareerPaths: 中黒・スラッシュ・全角空白の違いは無視して照合する', () => {
+  const { verifyCareerPaths } = require('../lib/school-discovery');
+  assert.deepStrictEqual(verifyCareerPaths(['UI/UXデザイナー'], 'UIUXデザイナーを目指す'), ['UI/UXデザイナー']);
+  assert.deepStrictEqual(verifyCareerPaths(['Web デザイナー'], 'Webデザイナー募集'), ['Web デザイナー']);
+});
+
+test('classifyFormat: AIが挙げた都道府県も本文照合を通す（トップページ経路の穴を塞ぐ）', () => {
+  // 全国展開しているスクールで、AIが本文に無い県まで補完した実例。
+  const pageText = '全国の校舎で学べます。東京校、大阪校、福岡校を展開。';
+  const r = classifyFormat('both', ['東京都', '大阪府', '福岡県', '沖縄県', '香川県'], pageText);
+  assert.deepStrictEqual(r.area, ['東京都', '大阪府', '福岡県'], '本文に無い県が残っている');
+  assert.strictEqual(r.format, 'both');
+});
+
+test('classifyFormat: 都道府県が全部落ちたら通学系を名乗らせない', () => {
+  const r = classifyFormat('both', ['沖縄県', '香川県'], 'オンラインで学べるスクールです。');
+  assert.deepStrictEqual(r.area, []);
+  assert.strictEqual(r.format, 'online');
+  assert.deepStrictEqual(r.flags, ['format_unconfirmed']);
+});
+
+test('掲載中のレコードの career_paths / area に、本文に無い値が残っていない', () => {
+  // ページ本文はここでは取れないので、形式面（重複・空文字）だけ確認する。
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    assert.deepStrictEqual([...new Set(school.career_paths)], school.career_paths, `${school.id}: career_paths が重複`);
+    assert.ok(school.career_paths.every(c => c.trim()), `${school.id}: career_paths に空文字`);
+  }
+});
+
+test('id はサブドメインではなく登録可能ドメインから作る（school が量産されない）', () => {
+  const { domainSlug } = require('../lib/school-id');
+  assert.strictEqual(domainSlug('https://school.dhw.co.jp/'), 'dhw');
+  assert.strictEqual(domainSlug('https://school.vook.vc/'), 'vook');
+  assert.strictEqual(domainSlug('https://www.sejuku.net/'), 'sejuku');
+  assert.strictEqual(domainSlug('https://techacademy.jp/'), 'techacademy');
+  assert.strictEqual(domainSlug('https://tech-camp.in/'), 'tech-camp');
+});
+
+test('掲載中のレコードに、汎用サブドメイン由来の id が残っていない', () => {
+  const schools = require('../../data/schools.json');
+  const generic = ['school', 'schools', 'www', 'lp', 'course', 'courses', 'info', 'site'];
+  for (const school of schools) {
+    const base = school.id.replace(/-\d+$/, '');
+    assert.ok(!generic.includes(base), `${school.id}: 汎用サブドメイン由来の id`);
   }
 });

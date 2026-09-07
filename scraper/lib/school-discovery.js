@@ -36,6 +36,8 @@ const {
 } = require('./schema');
 const { queriesForGenre } = require('./discovery-queries');
 const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-detail');
+// 都道府県の照合ロジックは area フォールバックと共有する（同じ基準で判定するため）。
+const { verifyPrefectures, filterToCampusPrefectures } = require('./area-detail');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -697,6 +699,30 @@ function stripExaggeratedSentences(description) {
   return kept.join('') || NOT_DISCLOSED_TEXT;
 }
 
+/**
+ * career_paths を本文照合する。
+ *
+ * 動画編集ジャンルの初回実行で、デジタルハリウッドの career_paths 7件のうち3件
+ * （「フリーランスクリエイター」「CG/VFXアーティスト」「UI/UXデザイナー」）が
+ * 本文に存在しなかった。「クリエイター系スクールならこういう職種だろう」という
+ * 一般知識からの補完で、そのスクールについての事実ではない。
+ *
+ * 職種名は診断結果や詳細ページで「このスクールで目指せる職種」として出るため、
+ * 書かれていないものを並べると事実と異なる訴求になる。表記ゆれ（全角/半角、
+ * 中黒、スペース）は無視して照合する。
+ */
+function verifyCareerPaths(paths, pageText) {
+  const strip = str => String(str).replace(/[\s　・･/／]/g, '').toLowerCase();
+  const compact = strip(pageText || '');
+
+  return (Array.isArray(paths) ? paths : []).filter(path => {
+    if (typeof path !== 'string' || !path.trim()) return false;
+    if (compact.includes(strip(path))) return true;
+    console.warn(`  career_paths「${path}」はページ本文に見当たらないため除外しました。`);
+    return false;
+  });
+}
+
 /** 「完全オンライン」相当の、受講形式をオンラインと確定できる明示的な記述。 */
 const ONLINE_ONLY_PATTERNS = [
   /完全オンライン/, /フルオンライン/, /オンライン完結/, /オンラインで完結/,
@@ -724,9 +750,16 @@ const CAMPUS_PATTERNS = [/教室/, /校舎/, /通学/, /来校/, /スクール�
 function classifyFormat(aiFormat, area, pageText) {
   const text = String(pageText || '');
 
-  if (area.length > 0 && (aiFormat === 'offline' || aiFormat === 'both')) {
-    return { format: aiFormat, area, flags: [], areaSource: 'top_page' };
+  // 都道府県も本文照合を通す。動画編集ジャンルの初回実行で、AIが24件の都道府県を
+  // 挙げたうち11件が本文に存在しなかった（全国展開しているスクールなので「他にもある
+  // だろう」と補完したとみられる）。area は都道府県フィルターに直結するため、
+  // 存在しない校舎を案内しないよう、フォールバック側と同じガードをここでも通す。
+  const verifiedArea = filterToCampusPrefectures(verifyPrefectures(area, text), text);
+
+  if (verifiedArea.length > 0 && (aiFormat === 'offline' || aiFormat === 'both')) {
+    return { format: aiFormat, area: verifiedArea, flags: [], areaSource: 'top_page' };
   }
+  area = verifiedArea;
 
   const flags = [];
 
@@ -821,9 +854,7 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
   result.review_flags = classified.flags;
   result.area_source = classified.areaSource;
 
-  result.career_paths = (Array.isArray(result.career_paths) ? result.career_paths : [])
-    .filter(s => typeof s === 'string' && s.trim())
-    .slice(0, 8);
+  result.career_paths = verifyCareerPaths(result.career_paths, pageText).slice(0, 8);
   result.features = filterFeatures(
     (Array.isArray(result.features) ? result.features : []).filter(s => typeof s === 'string' && s.trim())
   ).slice(0, 5);
@@ -855,6 +886,7 @@ module.exports = {
   candidateRootUrls,
   verifyCandidate,
   verifyOfficialName,
+  verifyCareerPaths,
   verifySubsidyClaim,
   filterFeatures,
   stripExaggeratedSentences,

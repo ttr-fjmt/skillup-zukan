@@ -14,9 +14,12 @@
 
 const crypto = require('crypto');
 
-/** co.jp / ne.jp のような属性ラベルは識別に寄与しないため、slug化の対象から外す。 */
-const IGNORED_LABELS = new Set([
-  'www', 'com', 'net', 'org', 'jp', 'co', 'ne', 'or', 'ac', 'go', 'io', 'app', 'site', 'tokyo',
+/**
+ * co.jp / ne.jp のような属性ラベル（第2レベルドメイン）。TLDを落としたあとに
+ * これが末尾に来ていたら、それも落として「登録可能ドメインのラベル」を得る。
+ */
+const SECOND_LEVEL_LABELS = new Set([
+  'co', 'ne', 'or', 'ac', 'go', 'ed', 'gr', 'lg', 'com', 'net', 'org', 'gov', 'edu',
 ]);
 
 /** 任意の文字列を、[a-z0-9-] のみからなるslug断片に正規化する（使えない文字は区切りに潰す）。 */
@@ -29,8 +32,20 @@ function slugify(input) {
 }
 
 /**
- * URLのホスト名から、識別に使えるラベル（属性ラベル・wwwを除いた最も左のもの）を選ぶ。
- * 例: "www.example-school.co.jp" → "example-school"、"schoo.jp" → "schoo"。
+ * URLのホスト名から、識別に使えるラベル（登録可能ドメインのラベル）を選ぶ。
+ *
+ * 以前は「左端のラベル」を採っていたが、動画編集ジャンルの初回実行で
+ * school.dhw.co.jp と school.vook.vc が両方とも id="school" になった
+ * （2件目は衝突回避で "school-2"）。サブドメインは "school" "www" "lp" 等の
+ * 汎用語であることが多く、識別子にならない。
+ *
+ * そこで右から数える方式にする。TLDを落とし、続けて属性ラベル（co/ne/or等）が
+ * 来ていればそれも落として、残った末尾のラベルを使う。
+ *   school.dhw.co.jp   → dhw
+ *   school.vook.vc     → vook
+ *   www.sejuku.net     → sejuku
+ *   techacademy.jp     → techacademy
+ *   tech-camp.in       → tech-camp
  */
 function domainSlug(url) {
   let host;
@@ -39,9 +54,15 @@ function domainSlug(url) {
   } catch {
     return '';
   }
-  const labels = host.split('.').filter(l => l && !IGNORED_LABELS.has(l));
-  if (labels.length === 0) return '';
-  return slugify(labels[0]);
+
+  const labels = host.split('.').filter(Boolean);
+  if (labels.length <= 1) return slugify(labels[0] || '');
+
+  labels.pop(); // TLD
+  if (labels.length > 1 && SECOND_LEVEL_LABELS.has(labels[labels.length - 1])) {
+    labels.pop(); // co.jp 等の属性ラベル
+  }
+  return slugify(labels[labels.length - 1] || '');
 }
 
 /**

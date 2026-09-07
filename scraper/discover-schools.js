@@ -222,7 +222,12 @@ async function main() {
           // 詳細ページ1枚から得た価格は、そのスクール全体の最安値とは限らない。
           ai.review_flags = [...(ai.review_flags || []), 'price_scope_limited'];
         }
-        if (enrichment.detailPageUrl) ai.price_detail_url = enrichment.detailPageUrl;
+        if (enrichment.detailPageUrl) {
+          ai.price_detail_url = enrichment.detailPageUrl;
+          // 金額が取れなくても「詳細ページまで見た」ことは scope に反映する
+          // （scope は price_detail_url の有無から導出する、という約束を保つ）。
+          ai.price = { ...ai.price, scope: 'detail_page' };
+        }
         ai.review_flags = [...(ai.review_flags || []), ...enrichment.flags];
       }
 
