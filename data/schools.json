@@ -22,8 +22,8 @@
       "フリーランスエンジニア"
     ],
     "price": {
-      "display": "456,390円〜",
-      "min_yen": 456390,
+      "display": "475,200円〜",
+      "min_yen": 475200,
       "plans": [
         {
           "label": "16週間プラン",
@@ -48,34 +48,6 @@
         {
           "label": "集中18週間プラン",
           "amount": 884400
-        },
-        {
-          "label": "16週間プラン",
-          "amount": 544170
-        },
-        {
-          "label": "24週間プラン",
-          "amount": 744810
-        },
-        {
-          "label": "36週間プラン",
-          "amount": 1008150
-        },
-        {
-          "label": "集中8週間プラン",
-          "amount": 456390
-        },
-        {
-          "label": "集中12週間プラン",
-          "amount": 625680
-        },
-        {
-          "label": "集中18週間プラン",
-          "amount": 845130
-        },
-        {
-          "label": "24週間プラン",
-          "amount": 649000
         }
       ],
       "scope": "detail_page"
@@ -98,7 +70,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:25:22.542Z",
+    "updated_at": "2026-09-07T15:32:09.149Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
