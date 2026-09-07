@@ -89,6 +89,72 @@ test('verifyPrefectures: 未知の値・重複は取り除く', () => {
   assert.deepStrictEqual(areaDetail.verifyPrefectures(['東京', '東京都', '東京都'], '東京校'), ['東京都']);
 });
 
+// ---- 本社所在地の誤認防止（回帰） ----
+
+/**
+ * sejuku の会社概要ページの実際の内容。AIがここの「所在地 東京都港区…」を通学拠点として
+ * 返してきて、オンライン専用スクールが format=offline / area=["東京都"] になった。
+ * 「校舎」「教室」「通学」はこのページに一度も出てこない。
+ */
+const COMPANY_PAGE_TEXT =
+  '会社概要 会社情報 会社名株式会社SAMURAI ' +
+  '所在地〒105-0001 東京都港区虎ノ門一丁目3番1号 東京虎ノ門グローバルスクエア ' +
+  '代表者代表取締役社長 設立2015年3月19日 事業概要プログラミング学習サービス ' +
+  'アクセス 住所 最寄り駅 JR「虎ノ門駅」より徒歩1分';
+
+test('本社所在地しか無いページの都道府県は通学拠点として採用しない（回帰）', () => {
+  // 本文に「東京都」は実在するので verifyPrefectures は通ってしまう。
+  assert.deepStrictEqual(areaDetail.verifyPrefectures(['東京都'], COMPANY_PAGE_TEXT), ['東京都']);
+  // 通学拠点の根拠が無いので、ここで落ちる。
+  assert.deepStrictEqual(areaDetail.filterToCampusPrefectures(['東京都'], COMPANY_PAGE_TEXT), []);
+});
+
+test('hasCampusEvidence: 校舎・教室・通学の語があれば根拠として認める', () => {
+  assert.strictEqual(areaDetail.hasCampusEvidence('東京都', '渋谷校舎で受講できます'), true);
+  assert.strictEqual(areaDetail.hasCampusEvidence('東京都', '通学プランをご用意しています'), true);
+  assert.strictEqual(areaDetail.hasCampusEvidence('大阪府', '梅田教室のご案内'), true);
+});
+
+test('hasCampusEvidence: 都道府県名を冠した拠点表記も根拠として認める', () => {
+  // 「校舎」等の語が無くても「東京校」のような表記があれば拠点と認める。
+  assert.strictEqual(areaDetail.hasCampusEvidence('東京都', '東京校 / 大阪校 / 名古屋校'), true);
+  assert.strictEqual(areaDetail.hasCampusEvidence('大阪府', '東京校 / 大阪校'), true);
+  assert.strictEqual(areaDetail.hasCampusEvidence('沖縄県', '東京校 / 大阪校'), false);
+});
+
+test('hasCampusEvidence: 本社住所だけのページは根拠として認めない', () => {
+  assert.strictEqual(areaDetail.hasCampusEvidence('東京都', COMPANY_PAGE_TEXT), false);
+});
+
+test('extractAreaFromPage 相当の流れで、本社住所は area に入らない', async () => {
+  await withStubs(
+    {
+      chooseAreaDetailLink: async () => ({ url: 'https://example.com/company', text: '会社概要' }),
+      fetchDetailPage: async () => COMPANY_PAGE_TEXT,
+      // AIが本社所在地を返してきた場合を再現する（実際にそうなった）。
+      extractAreaFromPage: async (name, url, pageText) => ({
+        prefectures: areaDetail.filterToCampusPrefectures(
+          areaDetail.verifyPrefectures(['東京都'], pageText),
+          pageText
+        ),
+        online_only: false,
+        has_online_courses: true,
+      }),
+    },
+    async () => {
+      const r = await areaDetail.enrichAreaFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
+      assert.deepStrictEqual(r.area, [], '本社所在地を通学拠点として採用している');
+      assert.strictEqual(r.format, 'online');
+      assert.deepStrictEqual(r.flags, ['area_unconfirmed']);
+    }
+  );
+});
+
+test('リンク選定プロンプトで「会社概要」を選ばないよう指示している', () => {
+  const source = require('fs').readFileSync(require.resolve('../lib/area-detail'), 'utf8');
+  assert.match(source, /「会社概要」「企業情報」は選ばないこと/);
+});
+
 // ---- フォールバック全体 ----
 
 const stubExtract = result => async () => result;

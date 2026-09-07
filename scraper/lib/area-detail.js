@@ -64,6 +64,43 @@ function verifyPrefectures(names, pageText) {
   return [...new Set(kept)];
 }
 
+/**
+ * 「その都道府県に通学拠点がある」と読める根拠がページ本文にあるかを機械的に確かめる。
+ *
+ * 実運用で、AIが会社概要ページの本社所在地（「所在地〒105-0001 東京都港区虎ノ門…」）を
+ * 通学拠点として返してきた。ツール定義に「本社の所在地しか書かれていない場合は含めない」
+ * と書いてあっても守られなかったため、機械的にも確かめる。
+ *
+ * 本社住所を校舎と誤認すると、オンライン専用スクールが format=offline になり、
+ * オンライン希望者の検索結果から消え、かつ通学希望者には存在しない校舎が案内される。
+ * 取りこぼし（本当は校舎があるのに未確認になる）より、こちらの誤りの方が実害が大きい。
+ *
+ * 根拠として認めるのは次のいずれか:
+ *   - ページ全体に校舎・教室の存在を示す語がある（校舎／教室／通学／受講会場／開講）
+ *   - その都道府県名を冠した拠点表記がある（例: 「東京校」「大阪教室」）
+ */
+const CAMPUS_EVIDENCE_PATTERNS = [/校舎/, /教室/, /通学/, /受講会場/, /開講/, /スクール一覧/];
+
+function hasCampusEvidence(prefecture, pageText) {
+  const text = String(pageText || '');
+  if (CAMPUS_EVIDENCE_PATTERNS.some(p => p.test(text))) return true;
+
+  const base = prefecture === '北海道' ? prefecture : prefecture.replace(/[都府県]$/, '');
+  return new RegExp(`${base}(校|教室|校舎|スクール|ラボ)`).test(text);
+}
+
+/** 通学拠点の根拠が無い都道府県を落とす（本社所在地だけのページ対策）。 */
+function filterToCampusPrefectures(prefectures, pageText) {
+  return prefectures.filter(p => {
+    if (hasCampusEvidence(p, pageText)) return true;
+    console.warn(
+      `  都道府県「${p}」は通学拠点の根拠が本文に無いため除外しました` +
+        '（本社所在地のみのページの可能性）。'
+    );
+    return false;
+  });
+}
+
 /** 校舎一覧・アクセス情報のページを1つだけAIに選ばせる。確信が持てなければ null。 */
 async function chooseAreaDetailLink(links, schoolName, anthropic) {
   if (links.length === 0) return null;
@@ -102,7 +139,8 @@ async function chooseAreaDetailLink(links, schoolName, anthropic) {
         'ページを1つだけ選んでください。\n\n' +
         '選ぶ際の優先順位:\n' +
         '- 「校舎」「教室一覧」「スクール一覧」「拠点」「アクセス」「所在地」を含むリンクを最優先\n' +
-        '- 次に「会社概要」（本社所在地しか無い可能性はあるが、手がかりにはなる）\n' +
+        '- 「会社概要」「企業情報」は選ばないこと。運営会社の本社所在地しか載っておらず、' +
+        'それを通学拠点と取り違える原因になる\n' +
         '- 「料金」「コース」「よくある質問」は所在地が載っている可能性が低いので選ばない\n' +
         '- 一覧に適切なものが無ければ、無理に選ばず null を返すこと\n\n' +
         `リンク一覧:\n${linkList}`,
@@ -174,6 +212,8 @@ async function extractAreaFromPage(schoolName, detailUrl, pageText, anthropic) {
         '- 本文に書かれていない都道府県を推測・補完しないこと。全国展開していそうだから、' +
         'といった理由で都道府県を足さないこと。\n' +
         '- 「オンライン校」「オンライン教室」は通学拠点ではないので prefectures に含めないこと。\n' +
+        '- 会社概要の「所在地」「本社」「アクセス」は、運営会社のオフィスであって受講会場とは' +
+        '限らない。そこで受講できると本文から読み取れない限り prefectures に含めないこと。\n' +
         '- 所在地が読み取れなければ、正直に prefectures を空配列 [] にすること。',
     }],
   });
@@ -190,7 +230,7 @@ async function extractAreaFromPage(schoolName, detailUrl, pageText, anthropic) {
   if (!toolUse) return { prefectures: [], online_only: false, has_online_courses: true };
 
   return {
-    prefectures: verifyPrefectures(toolUse.input.prefectures, pageText),
+    prefectures: filterToCampusPrefectures(verifyPrefectures(toolUse.input.prefectures, pageText), pageText),
     online_only: toolUse.input.online_only === true,
     has_online_courses: toolUse.input.has_online_courses !== false,
   };
@@ -291,6 +331,8 @@ module.exports = {
   AREA_LINK_HINTS,
   ONLINE_ONLY_PATTERNS,
   verifyPrefectures,
+  hasCampusEvidence,
+  filterToCampusPrefectures,
   chooseAreaDetailLink,
   extractAreaFromPage,
   fetchDetailPage,
