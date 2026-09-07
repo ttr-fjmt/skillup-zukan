@@ -1091,5 +1091,109 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
     "verified_url": "https://with-marke.com/"
+  },
+  {
+    "id": "ipa",
+    "school_name": "マナビDX",
+    "official_name": null,
+    "description": "経済産業省と独立行政法人情報処理推進機構（IPA）が運営するデジタル人材育成プラットフォーム。デジタルスキル標準（DSS）などのスキル標準への対応を審査し合格した講座のみを掲載。デジタルリテラシーから実践レベルまで幅広い講座を提供し、リスキリングに対応。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "デジタルスキル標準対応の厳選講座を掲載",
+      "リテラシー講座と実践講座の両方を提供",
+      "初学者向けから実践レベルまで幅広い講座ラインアップ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://manabi-dx.ipa.go.jp/studyplan",
+    "official_url": "https://manabi-dx.ipa.go.jp/",
+    "cta_url": "https://manabi-dx.ipa.go.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ipa",
+    "created_at": "2026-09-07T23:54:40.919Z",
+    "updated_at": "2026-09-07T23:54:40.919Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://manabi-dx.ipa.go.jp/"
+  },
+  {
+    "id": "street-academy",
+    "school_name": "ストアカ（Street Academy）",
+    "official_name": null,
+    "description": "ストアカは、都度払いで気軽に利用できる日本最大級の習いごと検索サービスです。入会金・登録料無料で、36,994以上のオンライン講座と22,303以上の対面講座を提供。料理、英会話、動画編集、Webデザイン、占い、ビジネススキル、子どもの習い事など幅広いジャンルの講座を扱っています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "web_marketing",
+      "genai_dx",
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オンラインと対面の両方の受講形式に対応",
+      "入会金・登録料が無料で気軽に始められる",
+      "36,000以上の講座から自由に選択可能",
+      "先生との直接学習または自分のペースでの学習を選択可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.street-academy.com/fee",
+    "area_detail_url": "https://www.street-academy.com/zenkoku/all",
+    "official_url": "https://www.street-academy.com/",
+    "cta_url": "https://www.street-academy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-street-academy",
+    "created_at": "2026-09-07T23:55:07.983Z",
+    "updated_at": "2026-09-07T23:55:07.983Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.street-academy.com/"
   }
 ]

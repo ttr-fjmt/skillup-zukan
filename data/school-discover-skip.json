@@ -47,5 +47,26 @@
     "genre": "web_marketing",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-07T23:52:07.559Z"
+  },
+  "インソース 生成AI・DX研修": {
+    "name": "インソース 生成AI・DX研修",
+    "website": "https://www.insource.co.jp/bup/middle_ai.html",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-07T23:54:24.539Z"
+  },
+  "アビバ（AVIVA）ChatGPT講座": {
+    "name": "アビバ（AVIVA）ChatGPT講座",
+    "website": "https://www.aviva.co.jp/lp/chatgpt/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-07T23:54:24.539Z"
+  },
+  "SIGNATE Cloud DXリテラシー人材育成プログラム": {
+    "name": "SIGNATE Cloud DXリテラシー人材育成プログラム",
+    "website": "https://cloud.signate.jp/certification-programs/dx-literacy",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-07T23:54:24.539Z"
   }
 }
