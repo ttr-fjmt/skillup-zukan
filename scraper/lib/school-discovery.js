@@ -226,7 +226,9 @@ async function tryUrlsForMatch(urls, nameCores) {
       const rawBodyText = $('body').text();
       const matchText = `${titleText} ${rawBodyText}`.replace(/[\s　]+/g, '');
       const matched = nameCores.some(core => matchText.includes(core));
-      return { matched, url, pageText: buildPageText(rawBodyText) };
+      // html も返すのは、料金の詳細ページを探すためのリンク抽出に使うため
+      // （同じページをもう一度取得しに行かないで済むようにする）。
+      return { matched, url, html, pageText: buildPageText(rawBodyText) };
     } catch (err) {
       lastError = err;
     }
@@ -240,6 +242,7 @@ function verificationResult(attempt) {
         ok: true,
         verifiedUrl: attempt.url,
         pageText: attempt.pageText,
+        html: attempt.html,
         thinContent: attempt.pageText.length < MIN_CONTENT_LENGTH,
       }
     : { ok: false, reason: 'name_mismatch' };
@@ -303,6 +306,7 @@ async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, max
         candidate,
         genre,
         pageText: verification.pageText,
+        html: verification.html,
         verifiedUrl: verification.verifiedUrl,
         thinContent: verification.thinContent,
       });

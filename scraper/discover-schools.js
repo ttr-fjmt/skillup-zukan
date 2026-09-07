@@ -34,6 +34,7 @@ const { GENRE, GENRE_LABELS } = require('./lib/schema');
 const { buildSchoolId, buildClickTrackingId } = require('./lib/school-id');
 const { validateSchool } = require('./lib/validate');
 const { writeDiscoveryLog } = require('./lib/discovery-log');
+const { enrichPriceFromDetailPage } = require('./lib/price-detail');
 const {
   SCHOOLS_PATH,
   SKIP_PATH,
@@ -99,6 +100,7 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     review_source_urls: [],
     // 自動抽出の確度が低い箇所の目印（classifyFormat 等が立てる）。UI表示には使わない。
     review_flags: ai.review_flags || [],
+    ...(ai.detail_page_url ? { detail_page_url: ai.detail_page_url } : {}),
     official_url: officialUrl,
     cta_url: officialUrl,
     cta_type: 'direct',
@@ -189,7 +191,7 @@ async function main() {
     const anthropic = getAnthropicClient();
     const existingIds = new Set(schools.map(s => s.id));
 
-    for (const { candidate, genre, pageText, verifiedUrl, thinContent } of verified) {
+    for (const { candidate, genre, pageText, html, verifiedUrl, thinContent } of verified) {
       console.log(`Structuring verified candidate: ${candidate.name} <${candidate.website}>${thinContent ? ' (thin content)' : ''}`);
 
       let ai;
@@ -200,6 +202,23 @@ async function main() {
         // スキップリストに入れず、次回の実行で再試行する。
         console.warn(`  Structuring failed for ${candidate.name}: ${err.message}. Will retry next run.`);
         continue;
+      }
+
+      // トップページで料金を取得できなかった場合だけ、詳細ページを1回だけ見に行く
+      // （全校で下層ページを辿ると無駄なリクエストになるため、フォールバックに留める）。
+      if (ai.price_min_yen === null) {
+        const enrichment = await enrichPriceFromDetailPage(
+          ai.school_name || candidate.name,
+          html,
+          verifiedUrl || candidate.website,
+          anthropic
+        );
+        if (enrichment.price) {
+          ai.price_display = enrichment.price.display;
+          ai.price_min_yen = enrichment.price.min_yen;
+        }
+        if (enrichment.detailPageUrl) ai.detail_page_url = enrichment.detailPageUrl;
+        ai.review_flags = [...(ai.review_flags || []), ...enrichment.flags];
       }
 
       const id = buildSchoolId(ai.school_name || candidate.name, verifiedUrl || candidate.website, existingIds);
