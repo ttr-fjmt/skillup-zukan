@@ -85,7 +85,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（259件）
+npm test                                   # ユニットテスト（264件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -210,7 +210,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（259件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（264件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

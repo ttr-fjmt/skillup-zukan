@@ -165,7 +165,8 @@ async function main() {
       `${schools.length} listed + ${Object.keys(skipList).length} skip-listed)...`
   );
 
-  const { verified, skipped, perGenre } = await discoverCandidates(genres, excludeNames, MAX_PER_RUN);
+  const excludeUrls = schools.map(s => s.official_url).filter(Boolean);
+  const { verified, skipped, perGenre } = await discoverCandidates(genres, excludeNames, MAX_PER_RUN, excludeUrls);
   const totalFound = perGenre.reduce((sum, g) => sum + g.found, 0);
   console.log(
     `AI proposed ${totalFound} candidate(s) via web_search across ${perGenre.length} genre(s), ` +

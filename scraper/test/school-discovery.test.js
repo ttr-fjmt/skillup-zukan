@@ -314,3 +314,50 @@ test('照合キーは2文字未満の断片を作らない（どんなページ�
   assert.deepStrictEqual(candidateNameCores('株式会社A'), []);
   assert.ok(candidateNameCores('株式会社AB').every(core => core.length >= 2));
 });
+
+test('normalizedHost: www. のみ無視してホスト名を返す', () => {
+  assert.strictEqual(discovery.normalizedHost('https://www.sejuku.net/'), 'sejuku.net');
+  assert.strictEqual(discovery.normalizedHost('https://sejuku.net/courses/'), 'sejuku.net');
+  // サブドメインは別サイトとして扱う（別ブランドを運営している場合を潰さないため）。
+  assert.strictEqual(discovery.normalizedHost('https://school.dhw.co.jp/'), 'school.dhw.co.jp');
+  assert.strictEqual(discovery.normalizedHost('not a url'), '');
+});
+
+test('discoverCandidates: 既存掲載と同じサイトの候補は、別名でもスキップする（重複防止）', async () => {
+  // webdesign ジャンルで「侍エンジニア」が既存の「SAMURAI ENGINEER」（同じ sejuku.net）
+  // とは別物として掲載され、同一サイトのレコードが2件できた実例。
+  let fetchCount = 0;
+  await withStubs(
+    {
+      searchGenreCandidates: async () => [{ name: '侍エンジニア', website: 'https://www.sejuku.net/' }],
+      fetchWithVerifyUA: async () => {
+        fetchCount += 1;
+        return pageWith('侍エンジニア', '侍エンジニアのページです。'.repeat(20));
+      },
+    },
+    async () => {
+      const { verified, perGenre } = await discovery.discoverCandidates(
+        ['webdesign'],
+        ['SAMURAI ENGINEER'],
+        10,
+        ['https://sejuku.net/']
+      );
+      assert.deepStrictEqual(verified, [], '同一サイトの候補が掲載されている');
+      assert.strictEqual(perGenre[0].found, 0);
+      assert.strictEqual(fetchCount, 0, '重複候補にHTTPリクエストを送っている');
+    }
+  );
+});
+
+test('discoverCandidates: 別サイトなら名前が似ていても通す', async () => {
+  await withStubs(
+    {
+      searchGenreCandidates: async () => [{ name: '別スクール', website: 'https://other.example.com/' }],
+      fetchWithVerifyUA: async () => pageWith('別スクール', '別スクールのページです。'.repeat(20)),
+    },
+    async () => {
+      const { verified } = await discovery.discoverCandidates(['webdesign'], [], 10, ['https://sejuku.net/']);
+      assert.strictEqual(verified.length, 1);
+    }
+  );
+});

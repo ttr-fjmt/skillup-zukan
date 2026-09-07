@@ -73,9 +73,18 @@ function recheckSchool(school, pageText) {
   const changes = [];
   const compact = pageText.replace(/[,，\s　]/g, '');
 
+  // official_name は本文照合の対象にしない。
+  //
+  // 正式名称の根拠は「会社概要」ページにあることが多く（株式会社SAMURAI は /corp/、
+  // 株式会社ブリューアス は /company）、このスクリプトが取得する official_url /
+  // price_detail_url / area_detail_url には含まれない。ここで照合すると、根拠ページを
+  // 見ていないだけなのに「本文に無い」と判定して、確認済みの値を消してしまう
+  // （実際に2件消してしまい、復元した）。
+  //
+  // ただし「英語表記のみなら null」はページ本文を必要としない判定なので、これだけは行う。
   const beforeName = school.official_name;
-  school.official_name = verifyOfficialName(school.official_name, pageText);
-  if (beforeName !== school.official_name) changes.push(`official_name ${JSON.stringify(beforeName)} → null`);
+  school.official_name = verifyOfficialName(school.official_name, null);
+  if (beforeName !== school.official_name) changes.push(`official_name ${JSON.stringify(beforeName)} → null（英語表記のみ）`);
 
   const beforePaths = [...school.career_paths];
   school.career_paths = verifyCareerPaths(school.career_paths, pageText);

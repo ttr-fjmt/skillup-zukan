@@ -448,3 +448,27 @@ test('recheckSchool: 本文にある値は落とさない（取りこぼしを�
   assert.deepStrictEqual(changes, []);
   assert.strictEqual(school.official_name, '株式会社サンプル');
 });
+
+test('recheckSchool: official_name は本文照合で消さない（根拠ページが取得範囲外のため）', () => {
+  const { recheckSchool } = require('../recheck-guards');
+  // 正式名称の根拠は会社概要ページにあり、official_url の本文には無いのが普通。
+  // ここで照合すると、確認済みの値を「本文に無い」と誤判定して消してしまう。
+  const school = {
+    id: 'z', school_name: 'テスト', official_name: '株式会社サンプル',
+    career_paths: [], area: [], format: 'online',
+    plans: [], price: { display: '', min_yen: null, scope: 'top_page', kind: null }, review_flags: [],
+  };
+  recheckSchool(school, 'スクールのトップページ本文。会社名の記載は無い。');
+  assert.strictEqual(school.official_name, '株式会社サンプル', '確認済みの正式名称を消している');
+});
+
+test('recheckSchool: 英語表記のみの official_name は本文が無くても落とす', () => {
+  const { recheckSchool } = require('../recheck-guards');
+  const school = {
+    id: 'z2', school_name: 'テスト', official_name: 'Example Co., Ltd.',
+    career_paths: [], area: [], format: 'online',
+    plans: [], price: { display: '', min_yen: null, scope: 'top_page', kind: null }, review_flags: [],
+  };
+  recheckSchool(school, 'トップページ本文');
+  assert.strictEqual(school.official_name, null);
+});

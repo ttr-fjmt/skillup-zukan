@@ -283,19 +283,43 @@ async function verifyCandidate(candidate) {
 }
 
 /**
+ * 重複判定用に、URLからホスト名を取り出す（www. のみ無視する）。
+ *
+ * 登録可能ドメイン（dhw.co.jp）まで丸めるとサブドメインで別ブランドを運営している
+ * ケースまで同一視してしまうため、実際に起きた誤り（同じ www.sejuku.net が
+ * 「SAMURAI ENGINEER」と「侍エンジニア」の2件になった）を防げる最小限に留める。
+ */
+function normalizedHost(url) {
+  try {
+    const raw = String(url).includes('://') ? url : `https://${url}`;
+    return new URL(raw).hostname.toLowerCase().replace(/^www\./, '');
+  } catch {
+    return '';
+  }
+}
+/**
  * 1回の検索呼び出しで見つかった候補群を、既存の除外セットと突き合わせて重複を除き、
  * maxCandidates上限まで verifyCandidate() まで通す共通処理。
  * verified/skipped/perGenre へは呼び出し元の配列へ直接pushする。
  */
-async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, maxCandidates, verified, skipped, perGenre) {
+async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, maxCandidates, verified, skipped, perGenre, excludeHosts = new Set()) {
   let found = 0;
   let listed = 0;
   let skippedInGenre = 0;
 
   for (const candidate of rawCandidates) {
     const core = schoolNameCore(candidate.name);
-    if (excludeCores.has(core)) continue; // 既存掲載・他ジャンルとの重複
+    if (excludeCores.has(core)) continue; // 既存掲載・他ジャンルとの重複（名前による判定）
+    // 同じサイトが別名で再発見されることがある。webdesign ジャンルで「侍エンジニア」が
+    // 既存の「SAMURAI ENGINEER」（同じ sejuku.net）とは別物として掲載され、同一サイトの
+    // レコードが2件できた。名前は表記が変わりうるので、ドメインでも重複を弾く。
+    const host = normalizedHost(candidate.website);
+    if (host && excludeHosts.has(host)) {
+      console.log(`school-discovery: [${GENRE_LABELS[genre] || genre}] ${candidate.name} は既存掲載と同じサイト(${host})のためスキップします。`);
+      continue;
+    }
     excludeCores.add(core);
+    if (host) excludeHosts.add(host);
     found += 1;
 
     if (verified.length >= maxCandidates) {
@@ -339,8 +363,9 @@ async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, max
  * genres は「まず1ジャンルだけ試す」運用（既存2サイトと同じく、いきなり全ジャンルを
  * 回さない）ができるよう、呼び出し側から明示的に渡す。
  */
-async function discoverCandidates(genres, excludeNames, maxCandidates) {
+async function discoverCandidates(genres, excludeNames, maxCandidates, excludeUrls = []) {
   const excludeCores = new Set((excludeNames || []).map(n => schoolNameCore(n)));
+  const excludeHosts = new Set((excludeUrls || []).map(u => normalizedHost(u)).filter(Boolean));
   const verified = [];
   const skipped = [];
   const perGenre = [];
@@ -360,7 +385,7 @@ async function discoverCandidates(genres, excludeNames, maxCandidates) {
       continue;
     }
 
-    await collectVerifiedCandidates(rawCandidates, genre, excludeCores, maxCandidates, verified, skipped, perGenre);
+    await collectVerifiedCandidates(rawCandidates, genre, excludeCores, maxCandidates, verified, skipped, perGenre, excludeHosts);
   }
 
   return { verified, skipped, perGenre };
@@ -920,6 +945,7 @@ module.exports = {
   classifyFormat,
   EXCLUDED_FEATURE_PATTERNS,
   collectVerifiedCandidates,
+  normalizedHost,
   discoverCandidates,
   buildDiscoveredSchoolFields,
   normalizeStructuredFields,
