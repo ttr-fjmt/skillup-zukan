@@ -44,7 +44,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T16:11:09.578Z",
+    "updated_at": "2026-09-07T22:36:50.676Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -191,7 +191,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T16:11:10.573Z",
+    "updated_at": "2026-09-07T22:36:51.996Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -345,7 +345,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-vook",
     "created_at": "2026-09-07T16:02:58.050Z",
-    "updated_at": "2026-09-07T22:18:28.198Z",
+    "updated_at": "2026-09-07T22:36:53.171Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -372,7 +372,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -408,7 +409,7 @@
   {
     "id": "codecamp",
     "school_name": "CodeCamp",
-    "official_name": "CodeCamp Co., Ltd.",
+    "official_name": null,
     "description": "2012年創業、13年以上IT人材育成をリード。現役エンジニアがマンツーマンで指導し、企業・法人の研修で提供している実践的で体系化されたプログラミングのカリキュラムを個人でも学べます。上場ITコンサルティングファーム「フューチャー株式会社」グループの一員として、実務で求められるプロセスを体系化。マンツーマンレッスン、学習サポーター、AIチャットボット、コミュニティ&コードレビューなど多層的なサポート体制で、初心者でも挫折させない学習環境を提供。",
     "skill_genre": [
       "programming",
@@ -424,18 +425,21 @@
     "price": {
       "display": "317,900円〜",
       "min_yen": 317900,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "2ヶ月",
         "amount": 317900,
-        "duration": "2ヶ月"
+        "duration": "2ヶ月",
+        "kind": "total"
       },
       {
         "label": "10週間",
         "amount": 657800,
-        "duration": "10週間"
+        "duration": "10週間",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -463,7 +467,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-codecamp",
     "created_at": "2026-09-07T20:09:53.295Z",
-    "updated_at": "2026-09-07T20:09:53.295Z",
+    "updated_at": "2026-09-07T22:39:29.688Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -472,7 +476,7 @@
   {
     "id": "potepan",
     "school_name": "ポテパンキャンプ",
-    "official_name": "POTEPAN.INC",
+    "official_name": null,
     "description": "卒業生の多くがWebエンジニアに転職成功している実績豊富なプログラミングスクール。優秀なレビュアー陣と実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能。",
     "skill_genre": [
       "programming"
@@ -487,7 +491,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -510,7 +515,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-potepan",
     "created_at": "2026-09-07T20:09:59.175Z",
-    "updated_at": "2026-09-07T20:09:59.175Z",
+    "updated_at": "2026-09-07T22:39:29.689Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -538,28 +543,33 @@
     "price": {
       "display": "429,000円〜",
       "min_yen": 429000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "3ヶ月プラン",
         "amount": 429000,
-        "duration": "90日間"
+        "duration": "90日間",
+        "kind": "total"
       },
       {
         "label": "6ヶ月プラン",
         "amount": 660000,
-        "duration": "180日間"
+        "duration": "180日間",
+        "kind": "total"
       },
       {
         "label": "9ヶ月プラン",
         "amount": 858000,
-        "duration": "270日間"
+        "duration": "270日間",
+        "kind": "total"
       },
       {
         "label": "12ヶ月プラン",
         "amount": 1089000,
-        "duration": "360日間"
+        "duration": "360日間",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -582,7 +592,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-coachtech",
     "created_at": "2026-09-07T20:10:06.582Z",
-    "updated_at": "2026-09-07T20:10:06.582Z",
+    "updated_at": "2026-09-07T22:36:54.618Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",

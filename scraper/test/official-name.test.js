@@ -97,3 +97,16 @@ test('掲載中のレコードの official_name に、英語の法人格表記�
     );
   }
 });
+
+test('英語の法人格のみの社名は null にする（日次cronが入れた2件で発覚）', () => {
+  // 本文に実在する英語表記はページ照合を通ってしまうため、機械的にも落とす。
+  assert.strictEqual(verifyOfficialName('CodeCamp Co., Ltd.', 'CodeCamp Co., Ltd.'), null);
+  assert.strictEqual(verifyOfficialName('POTEPAN.INC', 'POTEPAN.INC'), null);
+  assert.strictEqual(verifyOfficialName('Brewus, Inc.', 'Brewus, Inc.'), null);
+  assert.strictEqual(verifyOfficialName('Example LLC', 'Example LLC'), null);
+});
+
+test('日本語の法人格を伴う社名は、英字を含んでいても残す', () => {
+  assert.strictEqual(verifyOfficialName('株式会社SAMURAI', '会社名 株式会社SAMURAI'), '株式会社SAMURAI');
+  assert.strictEqual(verifyOfficialName('株式会社ブリューアス', '会社名 株式会社ブリューアス'), '株式会社ブリューアス');
+});

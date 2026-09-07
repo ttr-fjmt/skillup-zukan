@@ -624,8 +624,26 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
  * ついての誤情報になるため、取りこぼし（本当は正しいのに null になる）の方を許容する。
  * pageText が無い場合（呼び出し側が渡していない場合）は照合をスキップする。
  */
+/**
+ * 英語の法人格だけで書かれた社名（"CodeCamp Co., Ltd." "POTEPAN.INC" 等）。
+ *
+ * 「英語表記しか確認できない場合は null」というルールはプロンプトに書いてあったが、
+ * 機械的な担保が無く、本文に実在する英語表記はそのまま通っていた（日次cronが入れた
+ * 2件で発覚）。日本語の正式名称と英語表記が混在すると表記が揃わないため、
+ * 日本語の法人格を伴わない英語社名は採用しない。
+ */
+const ENGLISH_LEGAL_SUFFIX = /(Inc|Co\.,?\s*Ltd|Company|Corp(oration)?|LLC|LLP|Ltd|K\.?K)\.?$/i;
+const JAPANESE_LEGAL_FORM = /(株式会社|有限会社|合同会社|合名会社|合資会社|一般社団法人|学校法人)/;
+
 function verifyOfficialName(officialName, pageText) {
   if (!officialName) return null;
+
+  const trimmed = String(officialName).trim();
+  if (!JAPANESE_LEGAL_FORM.test(trimmed) && ENGLISH_LEGAL_SUFFIX.test(trimmed.replace(/[.\s]+$/, ''))) {
+    console.warn(`  official_name "${trimmed}" は英語表記のみのため null にしました（日本語の正式名称が確認できていない）。`);
+    return null;
+  }
+
   if (!pageText) return officialName;
 
   const compact = str => String(str).replace(/[\s　]+/g, '');
