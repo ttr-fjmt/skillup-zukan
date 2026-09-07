@@ -23,7 +23,9 @@
     ],
     "price": {
       "display": "16週間プラン¥567,600、24週間プラン¥778,800、36週間プラン¥1,056,000、集中8週間プラン¥475,200、集中12週間プラン¥653,400、集中18週間プラン¥884,400",
-      "min_yen": 475200
+      "min_yen": 475200,
+      "plans": [],
+      "scope": "detail_page"
     },
     "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
     "format": "online",
@@ -50,7 +52,8 @@
     "verified_url": "https://www.sejuku.net/",
     "review_flags": [
       "format_unconfirmed",
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "detail_page_url": "https://www.sejuku.net/courses/career/"
   },
@@ -77,7 +80,9 @@
     ],
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
-      "min_yen": null
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
     "format": "online",
@@ -126,7 +131,9 @@
     ],
     "price": {
       "display": "短期集中スタイル：657,800円（税込）/ 夜間・休日スタイル：877,800円（税込）",
-      "min_yen": 657800
+      "min_yen": 657800,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "短期集中スタイル：10週間 / 夜間・休日スタイル：約6ヶ月",
     "format": "online",

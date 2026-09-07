@@ -31,6 +31,7 @@ const {
   DETAIL_TEXT_MAX_CHARS,
 } = require('./lib/price-detail');
 const { politeDelay } = require('./lib/http');
+const { NOT_DISCLOSED_TEXT } = require('./lib/schema');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
 
 const MAX_PER_RUN = Number(process.env.ENRICH_MAX_PER_RUN || 20);
@@ -170,6 +171,21 @@ async function main() {
   if (DRY_RUN) {
     console.log('\n[DRY RUN] 書き込みをスキップしました。');
     return;
+  }
+
+  // 移行できなかったレコードが旧フォーマット（plans / scope 無し）のまま残ると、
+  // writeSchools() のスキーマ検証で実行全体が落ちる。対象外だったレコードも含め、
+  // 形だけは必ず新フォーマットに揃えてから書き込む（金額そのものは触らない）。
+  for (const school of schools) {
+    if (school.price && Array.isArray(school.price.plans) && school.price.scope) continue;
+    const scope = school.detail_page_url && school.price && school.price.min_yen !== null ? 'detail_page' : 'top_page';
+    school.price = {
+      display: school.price ? school.price.display : NOT_DISCLOSED_TEXT,
+      min_yen: school.price ? school.price.min_yen : null,
+      plans: [],
+      scope,
+    };
+    applyScopeFlags(school, school.price);
   }
 
   writeSchools(schools);
