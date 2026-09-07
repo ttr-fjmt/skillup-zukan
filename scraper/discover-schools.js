@@ -111,7 +111,38 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
   };
 }
 
+/**
+ * 実行開始時点で1回だけ、ANTHROPIC_API_KEY の設定を確認する。
+ *
+ * discoverCandidates() はジャンル単位で例外を握りつぶす（1ジャンルの一時的な失敗で
+ * 実行全体を落とさないため）。この設計自体は正しいが、APIキー未設定は一時的な失敗では
+ * なく設定ミスであり、同じ経路で握りつぶすと「found=0, listed=0 で正常終了」という
+ * 静かな成功になってしまう。日次cronでそれが起きると、毎朝グリーンのまま何も収集
+ * されない状態が続き、気づくのが遅れる。
+ *
+ * そのため、ジャンルごとの検索呼び出しに入る前にここで確実に落とす。
+ * ジャンル単位の try/catch 側には手を入れない（一時的な失敗の扱いはそのままでよい）。
+ */
+function assertApiKeyConfigured() {
+  if (process.env.ANTHROPIC_API_KEY) return;
+
+  const message = 'ANTHROPIC_API_KEY is not set. Aborting before any per-genre search calls.';
+  // "::error::" は GitHub Actions のログでエラー注釈として赤く表示される。
+  console.error(`::error::${message}`);
+  console.error(
+    'ワークフローで実行している場合は、リポジトリの Actions secrets に設定してください:\n' +
+      '  gh secret set ANTHROPIC_API_KEY --repo <owner>/<repo>'
+  );
+
+  const err = new Error(message);
+  // 下のCLIハンドラで、スタックトレースを重ねて出さないための目印。
+  err.preflight = true;
+  throw err;
+}
+
 async function main() {
+  assertApiKeyConfigured();
+
   const genres = targetGenres();
   const schools = readSchools();
   const skipList = readSkipList();
@@ -225,9 +256,11 @@ async function main() {
 
 if (require.main === module) {
   main().catch(err => {
-    console.error(err);
+    // 事前チェック（assertApiKeyConfigured）は既に読みやすいメッセージを出しているので、
+    // スタックトレースを重ねない。それ以外は原因調査のためそのまま出す。
+    if (!err.preflight) console.error(err);
     process.exit(1);
   });
 }
 
-module.exports = { main, targetGenres, assembleDiscoveredSchool, MAX_PER_RUN };
+module.exports = { main, assertApiKeyConfigured, targetGenres, assembleDiscoveredSchool, MAX_PER_RUN };
