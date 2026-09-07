@@ -22,9 +22,62 @@
       "フリーランスエンジニア"
     ],
     "price": {
-      "display": "16週間プラン¥567,600、24週間プラン¥778,800、36週間プラン¥1,056,000、集中8週間プラン¥475,200、集中12週間プラン¥653,400、集中18週間プラン¥884,400",
-      "min_yen": 475200,
-      "plans": [],
+      "display": "456,390円〜",
+      "min_yen": 456390,
+      "plans": [
+        {
+          "label": "16週間プラン",
+          "amount": 567600
+        },
+        {
+          "label": "24週間プラン",
+          "amount": 778800
+        },
+        {
+          "label": "36週間プラン",
+          "amount": 1056000
+        },
+        {
+          "label": "集中8週間プラン",
+          "amount": 475200
+        },
+        {
+          "label": "集中12週間プラン",
+          "amount": 653400
+        },
+        {
+          "label": "集中18週間プラン",
+          "amount": 884400
+        },
+        {
+          "label": "16週間プラン",
+          "amount": 544170
+        },
+        {
+          "label": "24週間プラン",
+          "amount": 744810
+        },
+        {
+          "label": "36週間プラン",
+          "amount": 1008150
+        },
+        {
+          "label": "集中8週間プラン",
+          "amount": 456390
+        },
+        {
+          "label": "集中12週間プラン",
+          "amount": 625680
+        },
+        {
+          "label": "集中18週間プラン",
+          "amount": 845130
+        },
+        {
+          "label": "24週間プラン",
+          "amount": 649000
+        }
+      ],
       "scope": "detail_page"
     },
     "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
@@ -45,7 +98,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:15:15.756Z",
+    "updated_at": "2026-09-07T15:25:22.542Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -100,7 +153,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T15:15:28.589Z",
+    "updated_at": "2026-09-07T15:25:33.427Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -130,9 +183,18 @@
       "フリーランスエンジニア"
     ],
     "price": {
-      "display": "短期集中スタイル：657,800円（税込）/ 夜間・休日スタイル：877,800円（税込）",
+      "display": "657,800円〜",
       "min_yen": 657800,
-      "plans": [],
+      "plans": [
+        {
+          "label": "短期集中スタイル✕オンラインプラン",
+          "amount": 657800
+        },
+        {
+          "label": "夜間・休日スタイル✕オンラインプラン",
+          "amount": 877800
+        }
+      ],
       "scope": "top_page"
     },
     "duration": "短期集中スタイル：10週間 / 夜間・休日スタイル：約6ヶ月",
@@ -154,7 +216,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T15:01:19.506Z",
+    "updated_at": "2026-09-07T15:25:41.868Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
