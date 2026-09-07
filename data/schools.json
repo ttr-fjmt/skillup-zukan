@@ -243,23 +243,32 @@
       "kind": null
     },
     "plans": [],
-    "format": "both",
+    "format": "offline",
     "area": [
       "北海道",
       "青森県",
+      "宮城県",
       "福島県",
       "東京都",
+      "栃木県",
+      "埼玉県",
       "千葉県",
+      "神奈川県",
       "新潟県",
+      "長野県",
       "静岡県",
-      "京都府",
+      "愛知県",
       "大阪府",
+      "兵庫県",
+      "京都府",
+      "鳥取県",
       "広島県",
+      "香川県",
       "福岡県",
       "熊本県",
-      "鹿児島県"
+      "長崎県"
     ],
-    "area_source": "top_page",
+    "area_source": "detail_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -279,11 +288,12 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dhw",
     "created_at": "2026-09-07T16:02:45.061Z",
-    "updated_at": "2026-09-07T16:06:30.604Z",
+    "updated_at": "2026-09-07T23:48:46.622Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
-    "verified_url": "https://school.dhw.co.jp/"
+    "verified_url": "https://school.dhw.co.jp/",
+    "area_detail_url": "https://school.dhw.co.jp/school/"
   },
   {
     "id": "vook",
@@ -401,7 +411,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-runteq",
     "created_at": "2026-09-07T20:09:35.608Z",
-    "updated_at": "2026-09-07T20:09:35.608Z",
+    "updated_at": "2026-09-07T23:48:57.876Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -468,7 +478,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-codecamp",
     "created_at": "2026-09-07T20:09:53.295Z",
-    "updated_at": "2026-09-07T22:39:29.688Z",
+    "updated_at": "2026-09-07T23:49:05.090Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -750,7 +760,7 @@
     "area": [
       "東京都"
     ],
-    "area_source": "top_page",
+    "area_source": "detail_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -770,11 +780,12 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-09-07T23:45:37.773Z",
+    "updated_at": "2026-09-07T23:49:31.602Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
-    "verified_url": "https://www.tokyo-designplex.com/"
+    "verified_url": "https://www.tokyo-designplex.com/",
+    "area_detail_url": "https://www.tokyo-designplex.com/access/"
   },
   {
     "id": "winschool",
@@ -803,12 +814,8 @@
       "kind": null
     },
     "plans": [],
-    "format": "both",
-    "area": [
-      "北海道",
-      "千葉県",
-      "鹿児島県"
-    ],
+    "format": "online",
+    "area": [],
     "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
@@ -822,7 +829,8 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "area_unconfirmed"
     ],
     "price_detail_url": "https://www.winschool.jp/info/payment.html",
     "official_url": "https://www.winschool.jp/",
@@ -830,7 +838,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-09-07T23:45:54.336Z",
+    "updated_at": "2026-09-07T23:49:39.050Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
