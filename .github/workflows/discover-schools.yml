@@ -21,6 +21,16 @@ on:
         type: string
         default: "20"
 
+# run ブロックの既定シェルを bash に固定する。
+# 指定しない場合の既定は "bash -e {0}" で pipefail が無効なため、
+#   node script.js | tail -5
+# のようにパイプを書くと、左側が失敗しても終了コードが tail のもの(0)になり、
+# 失敗が握りつぶされてワークフローがグリーンのまま進んでしまう。
+# "shell: bash" は "bash --noprofile --norc -eo pipefail {0}" になり、pipefail が有効になる。
+defaults:
+  run:
+    shell: bash
+
 permissions:
   contents: write
 
