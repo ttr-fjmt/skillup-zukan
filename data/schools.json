@@ -53,7 +53,7 @@
   {
     "id": "techacademy",
     "school_name": "TechAcademy",
-    "official_name": "株式会社Brewus",
+    "official_name": "株式会社ブリューアス",
     "description": "現役エンジニアから学ぶオンラインに特化したプログラミングスクール。実務経験3年以上の現役エンジニアによるマンツーマンサポートで、Webエンジニア転職、副業、フリーランスなど多様なキャリアパスに対応。900社以上の提携企業から10万人以上の受講生を輩出。",
     "skill_genre": [
       "programming",
@@ -94,7 +94,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T14:44:30.601Z",
+    "updated_at": "2026-09-07T14:50:23.615Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -103,7 +103,7 @@
   {
     "id": "tech-camp",
     "school_name": "TECH CAMP（テックキャンプ）",
-    "official_name": "div, Inc.",
+    "official_name": null,
     "description": "生成AIとプログラミングスキルの習得に加え、ソフトウェア会社での最大1ヶ月間の実務プロジェクト参加を通じて、企業が即座に採用したい人材を育成するスクール。AIを活用した課題解決力と企画・設計思考を重視し、初心者向けの充実したサポート体制を備えている。短期集中（10週間）または夜間・休日（約6ヶ月）の2つの学習スタイルを提供。",
     "skill_genre": [
       "programming",
@@ -142,7 +142,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T14:44:36.765Z",
+    "updated_at": "2026-09-07T14:50:23.616Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",

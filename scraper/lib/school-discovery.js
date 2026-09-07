@@ -384,7 +384,18 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
         },
         official_name: {
           type: ['string', 'null'],
-          description: '運営会社の正式名称（例: "株式会社〇〇"）。本文から読み取れなければ null。',
+          description:
+            '運営会社の正式名称。ページ本文に書かれている表記を一字一句そのまま抜き出すこと。' +
+            '「会社名」「商号」「運営会社」等の項目として明示されている場合のみ回答し、' +
+            'それが無ければ null とする。\n' +
+            '禁止事項:\n' +
+            '- 英語表記（"Foo, Inc." "Foo Co., Ltd." 等）しか見つからない場合に、' +
+            '「株式会社Foo」のような日本語の法人格を補って合成すること。' +
+            'この場合は必ず null を返す（英語表記をそのまま返すのも不可）。\n' +
+            '- フッターの著作権表記（"© 2026 Foo, Inc." 等）を運営会社名の根拠に使うこと。' +
+            '著作権表記はサービス名やブランド名であることが多く、法人の正式名称とは限らない。\n' +
+            '- カタカナ⇔英字の変換、法人格の位置（前株・後株）の推測、実在の企業名の記憶からの補完。\n' +
+            '正式名称は誤ると実在の法人についての誤情報になるため、少しでも不確かなら null を選ぶこと。',
         },
         description: {
           type: 'string',
@@ -519,6 +530,10 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
         '存在しない情報を推測で埋めないこと。\n' +
         '- 特に subsidy_eligible（給付金対象）と career_support（転職支援）は、本文に明記が' +
         'ある場合のみ true にすること。誤って true にすると、事実と異なる訴求になります。\n' +
+        '- official_name は、本文に「会社名」「商号」等として明示された表記のみを一字一句そのまま' +
+        '使うこと。フッターの著作権表記（"© 2026 Foo, Inc."）から会社名を推測してはならず、' +
+        '英語表記しか無い場合に「株式会社Foo」のような日本語の法人格を補うことは禁止です' +
+        '（この場合は null）。実在の法人についての誤情報になります。\n' +
         '- 誇張的な断定表現（業界No.1、必ず転職できる、等）は使わないこと。\n' +
         '- skill_genre / purpose / target_level / format / area は、ツール定義に列挙された' +
         '文字列以外を絶対に使わないこと（新しい値を作らない）。\n' +
@@ -536,7 +551,7 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
   const toolUse = msg.content.find(b => b.type === 'tool_use');
   if (!toolUse) throw new Error('AI response did not include a tool_use block');
 
-  return normalizeStructuredFields(toolUse.input, genreHint);
+  return normalizeStructuredFields(toolUse.input, genreHint, pageText);
 }
 
 /**
@@ -545,7 +560,33 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
  * カテゴリーを「その他」にクランプしていたのと同じ防御を、増えたフィールド分行う）。
  * ここを通したうえで、最終的な採否は lib/validate.js のJSON Schema検証が決める。
  */
-function normalizeStructuredFields(raw, genreHint) {
+/**
+ * official_name が「ページ本文に実際に書かれていた表記」かどうかを機械的に照合する。
+ *
+ * プロンプトで禁止するだけでは足りないことが実運用で分かったため（初回の本番実行で、
+ * フッターの "© 2026 Brewus,Inc." から「株式会社Brewus」を合成する誤りが3件中3件で
+ * 発生した。正しくは「株式会社ブリューアス」）、verifyCandidate() がスクール名の実在を
+ * ページ本文で照合するのと同じやり方で、AIの出力を本文と突き合わせる。
+ *
+ * 本文に一字一句そのまま含まれていなければ null に落とす。正式名称は誤ると実在の法人に
+ * ついての誤情報になるため、取りこぼし（本当は正しいのに null になる）の方を許容する。
+ * pageText が無い場合（呼び出し側が渡していない場合）は照合をスキップする。
+ */
+function verifyOfficialName(officialName, pageText) {
+  if (!officialName) return null;
+  if (!pageText) return officialName;
+
+  const compact = str => String(str).replace(/[\s　]+/g, '');
+  if (compact(pageText).includes(compact(officialName))) return officialName;
+
+  console.warn(
+    `  official_name "${officialName}" はページ本文に見当たらないため null にしました` +
+      '（著作権表記等からの合成の可能性）。'
+  );
+  return null;
+}
+
+function normalizeStructuredFields(raw, genreHint, pageText) {
   const result = { ...raw };
 
   const keepEnum = (values, allowed) =>
@@ -599,7 +640,7 @@ function normalizeStructuredFields(raw, genreHint) {
   result.price_display = String(result.price_display || '').trim() || NOT_DISCLOSED_TEXT;
   result.duration = String(result.duration || '').trim() || NOT_DISCLOSED_TEXT;
   result.description = String(result.description || '').trim() || NOT_DISCLOSED_TEXT;
-  result.official_name = String(result.official_name || '').trim() || null;
+  result.official_name = verifyOfficialName(String(result.official_name || '').trim() || null, pageText);
   result.school_name = String(result.school_name || '').trim();
 
   return result;
@@ -617,6 +658,7 @@ module.exports = {
   candidateFetchUrls,
   candidateRootUrls,
   verifyCandidate,
+  verifyOfficialName,
   collectVerifiedCandidates,
   discoverCandidates,
   buildDiscoveredSchoolFields,
