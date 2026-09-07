@@ -1,0 +1,24 @@
+{
+  "name": "skillup-zukan-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "スキルアップ図鑑: 講座・スクールの発見/実在照合パイプライン、口コミ要約パイプライン、診断ウィザードのマッチングロジック",
+  "main": "discover-schools.js",
+  "scripts": {
+    "discover": "node discover-schools.js",
+    "reverify-skips": "node reverify-old-skips.js",
+    "summarize-reviews": "node summarize-reviews.js",
+    "validate": "node validate-schools.js",
+    "test": "node --test \"test/*.test.js\"",
+    "generate-mock": "node generate-mock-schools.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "cheerio": "^1.0.0"
+  }
+}

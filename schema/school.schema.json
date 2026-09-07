@@ -1,0 +1,410 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://skillup-zukan.net/schema/school.schema.json",
+  "title": "School",
+  "description": "スキルアップ図鑑に掲載する講座・スクール1件分のレコード。enum値は scraper/lib/schema.js のマスタと必ず一致させること。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "school_name",
+    "description",
+    "skill_genre",
+    "purpose",
+    "target_level",
+    "career_paths",
+    "price",
+    "duration",
+    "format",
+    "area",
+    "subsidy_eligible",
+    "career_support",
+    "features",
+    "review_summary",
+    "official_url",
+    "cta_url",
+    "cta_type",
+    "click_tracking_id",
+    "created_at",
+    "updated_at",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "slug形式のユニークID。公式サイトのドメインから導出する（衝突時は -2, -3 のサフィックスを付与）。",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 64
+    },
+    "school_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "official_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "運営会社の正式名称（任意）。公式サイトから読み取れない場合は null。",
+      "maxLength": 160
+    },
+    "description": {
+      "type": "string",
+      "description": "概要文（100〜200字程度）。公式サイト本文の抽出・要約であること（原文転載・創作は禁止）。",
+      "minLength": 1,
+      "maxLength": 400
+    },
+    "skill_genre": {
+      "type": "array",
+      "description": "GENREのいずれか、複数可。",
+      "items": {
+        "type": "string",
+        "enum": [
+          "programming",
+          "webdesign",
+          "uiux",
+          "video_editing",
+          "web_marketing",
+          "genai_dx",
+          "language",
+          "certification"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "purpose": {
+      "type": "array",
+      "description": "PURPOSEのいずれか、複数可。",
+      "items": {
+        "type": "string",
+        "enum": [
+          "career_change",
+          "side_job",
+          "freelance",
+          "current_job_skillup",
+          "certification_itself",
+          "hobby"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "target_level": {
+      "type": "string",
+      "description": "LEVELのいずれか、単一。",
+      "enum": [
+        "beginner",
+        "novice",
+        "experienced",
+        "advanced"
+      ]
+    },
+    "career_paths": {
+      "type": "array",
+      "description": "自由記述の職種名配列（例: \"フロントエンドエンジニア\"）。読み取れない場合は空配列。",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 60
+      },
+      "uniqueItems": true
+    },
+    "price": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "display",
+        "min_yen"
+      ],
+      "properties": {
+        "display": {
+          "type": "string",
+          "description": "表示用文字列（例: \"月額9,800円〜\"）。読み取れない場合は非公開を示す定型文。",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "min_yen": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "ソート・フィルター用の最低価格（円）。読み取れない場合は null（0で埋めないこと）。",
+          "minimum": 0
+        }
+      }
+    },
+    "duration": {
+      "type": "string",
+      "description": "表示用文字列（例: \"標準3ヶ月\"）。読み取れない場合は非公開を示す定型文。",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "online",
+        "offline",
+        "both"
+      ]
+    },
+    "area": {
+      "type": "array",
+      "description": "都道府県配列。format=online のみの場合は空配列。",
+      "items": {
+        "type": "string",
+        "enum": [
+          "北海道",
+          "青森県",
+          "岩手県",
+          "宮城県",
+          "秋田県",
+          "山形県",
+          "福島県",
+          "茨城県",
+          "栃木県",
+          "群馬県",
+          "埼玉県",
+          "千葉県",
+          "東京都",
+          "神奈川県",
+          "新潟県",
+          "富山県",
+          "石川県",
+          "福井県",
+          "山梨県",
+          "長野県",
+          "岐阜県",
+          "静岡県",
+          "愛知県",
+          "三重県",
+          "滋賀県",
+          "京都府",
+          "大阪府",
+          "兵庫県",
+          "奈良県",
+          "和歌山県",
+          "鳥取県",
+          "島根県",
+          "岡山県",
+          "広島県",
+          "山口県",
+          "徳島県",
+          "香川県",
+          "愛媛県",
+          "高知県",
+          "福岡県",
+          "佐賀県",
+          "長崎県",
+          "熊本県",
+          "大分県",
+          "宮崎県",
+          "鹿児島県",
+          "沖縄県"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "subsidy_eligible": {
+      "type": "boolean",
+      "description": "教育訓練給付金等の対象講座を持つか。公式サイトに明記が無い場合は false（不明を true にしないこと）。"
+    },
+    "career_support": {
+      "type": "boolean"
+    },
+    "features": {
+      "type": "array",
+      "description": "特徴バレット（3〜5個目安）。公式サイト本文に実際に記載がある内容のみ。無ければ空配列。",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80
+      },
+      "maxItems": 8
+    },
+    "review_summary": {
+      "description": "口コミ要約。未収集の場合は null。",
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text",
+            "sources"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "description": "自社の言葉による要約文。原文転載・個別口コミの言い換えは禁止。",
+              "minLength": 1,
+              "maxLength": 600
+            },
+            "sources": {
+              "type": "array",
+              "description": "出典。表示時は必ず出典名＋直リンクとセットで出すため、最低1件必要。",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "source_name",
+                  "source_url",
+                  "fetched_at"
+                ],
+                "properties": {
+                  "source_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 60
+                  },
+                  "source_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https?://"
+                  },
+                  "fetched_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "review_source_urls": {
+      "type": "array",
+      "description": "口コミ要約パイプラインが週次で巡回する口コミページURL。人力またはクエリで特定して保持する（掲載レコードの一部ではなく、パイプラインの入力）。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_name",
+          "source_url"
+        ],
+        "properties": {
+          "source_name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          }
+        }
+      }
+    },
+    "official_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "cta_url": {
+      "type": "string",
+      "description": "アフィリエイトリンク、または official_url と同一。",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "cta_type": {
+      "type": "string",
+      "enum": [
+        "affiliate",
+        "direct"
+      ]
+    },
+    "click_tracking_id": {
+      "type": "string",
+      "description": "CTAクリック計測用のユニークID（click-{id} 形式）。",
+      "pattern": "^click-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "description": "active=掲載中（二段階検証を通過した時点でここに入る） / skipped=掲載しない。",
+      "enum": [
+        "active",
+        "skipped"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "description": "レコードの出所。ai-discovered=発見パイプライン、a8=A8インポート、manual=手動、mock=動作確認用のモック。",
+      "enum": [
+        "ai-discovered",
+        "a8",
+        "manual",
+        "mock"
+      ]
+    },
+    "source_note": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "verified_url": {
+      "type": "string",
+      "description": "二段階検証で実際にHTTPアクセスできたURL（official_url と異なる場合がある）。",
+      "format": "uri",
+      "pattern": "^https?://"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "format": {
+            "const": "online"
+          }
+        },
+        "required": [
+          "format"
+        ]
+      },
+      "then": {
+        "properties": {
+          "area": {
+            "maxItems": 0
+          }
+        },
+        "description": "format=online の場合、area は空配列でなければならない。"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "format": {
+            "enum": [
+              "offline",
+              "both"
+            ]
+          }
+        },
+        "required": [
+          "format"
+        ]
+      },
+      "then": {
+        "properties": {
+          "area": {
+            "minItems": 1
+          }
+        },
+        "description": "通学を含む場合、対応都道府県が最低1件必要（診断ウィザードの都道府県フィルターが機能しなくなるため）。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2043 @@
+[
+  {
+    "id": "mock-programming-1",
+    "school_name": "【モック】プログラミング・エンジニアスクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。プログラミング・エンジニアをオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "フロントエンドエンジニア"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "プログラミング・エンジニアの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-programming-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-programming-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-programming-1.example.com/",
+    "cta_url": "https://mock-programming-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-programming-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-programming-2",
+    "school_name": "【モック】プログラミング・エンジニアスクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。プログラミング・エンジニアをオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "Webエンジニア",
+      "フロントエンドエンジニア",
+      "バックエンドエンジニア"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "プログラミング・エンジニアの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-programming-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-programming-2.example.com/",
+    "cta_url": "https://mock-programming-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-programming-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-programming-3",
+    "school_name": "【モック】プログラミング・エンジニアスクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。プログラミング・エンジニアを通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "フロントエンドエンジニア"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "プログラミング・エンジニアの基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-programming-3.example.com/",
+    "cta_url": "https://mock-programming-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-programming-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-programming-4",
+    "school_name": "【モック】プログラミング・エンジニアスクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。プログラミング・エンジニアをハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "Webエンジニア",
+      "フロントエンドエンジニア",
+      "バックエンドエンジニア"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "プログラミング・エンジニアの基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-programming-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-programming-4.example.com/",
+    "cta_url": "https://mock-programming-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-programming-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-programming-5",
+    "school_name": "【モック】プログラミング・エンジニアスクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。プログラミング・エンジニアを実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "Webエンジニア",
+      "フロントエンドエンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プログラミング・エンジニアの基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-programming-5.example.com/",
+    "cta_url": "https://mock-programming-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-programming-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "skipped",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）（status=skipped が診断結果に出ないことの確認用）"
+  },
+  {
+    "id": "mock-webdesign-1",
+    "school_name": "【モック】Webデザインスクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。Webデザインをオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "webdesign",
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "Webデザインの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-webdesign-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-webdesign-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-webdesign-1.example.com/",
+    "cta_url": "https://mock-webdesign-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-webdesign-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）（skill_genre 複数一致の加点確認用）"
+  },
+  {
+    "id": "mock-webdesign-2",
+    "school_name": "【モック】Webデザインスクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。Webデザインをオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー",
+      "バナー制作"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "Webデザインの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-webdesign-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-webdesign-2.example.com/",
+    "cta_url": "https://mock-webdesign-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-webdesign-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-webdesign-3",
+    "school_name": "【モック】Webデザインスクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。Webデザインを通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "Webデザインの基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-webdesign-3.example.com/",
+    "cta_url": "https://mock-webdesign-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-webdesign-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-webdesign-4",
+    "school_name": "【モック】Webデザインスクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。Webデザインをハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー",
+      "バナー制作"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "Webデザインの基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-webdesign-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-webdesign-4.example.com/",
+    "cta_url": "https://mock-webdesign-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-webdesign-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-webdesign-5",
+    "school_name": "【モック】Webデザインスクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。Webデザインを実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Webデザインの基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-webdesign-5.example.com/",
+    "cta_url": "https://mock-webdesign-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-webdesign-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-uiux-1",
+    "school_name": "【モック】UI/UXデザインスクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。UI/UXデザインをオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "UIデザイナー",
+      "UXリサーチャー"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "UI/UXデザインの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-uiux-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-uiux-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-uiux-1.example.com/",
+    "cta_url": "https://mock-uiux-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-uiux-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-uiux-2",
+    "school_name": "【モック】UI/UXデザインスクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。UI/UXデザインをオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "UIデザイナー",
+      "UXリサーチャー",
+      "プロダクトデザイナー"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "UI/UXデザインの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-uiux-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-uiux-2.example.com/",
+    "cta_url": "https://mock-uiux-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-uiux-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-uiux-3",
+    "school_name": "【モック】UI/UXデザインスクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。UI/UXデザインを通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "UIデザイナー",
+      "UXリサーチャー"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "UI/UXデザインの基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-uiux-3.example.com/",
+    "cta_url": "https://mock-uiux-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-uiux-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-uiux-4",
+    "school_name": "【モック】UI/UXデザインスクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。UI/UXデザインをハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "UIデザイナー",
+      "UXリサーチャー",
+      "プロダクトデザイナー"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "UI/UXデザインの基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-uiux-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-uiux-4.example.com/",
+    "cta_url": "https://mock-uiux-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-uiux-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-uiux-5",
+    "school_name": "【モック】UI/UXデザインスクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。UI/UXデザインを実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "UIデザイナー",
+      "UXリサーチャー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "UI/UXデザインの基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-uiux-5.example.com/",
+    "cta_url": "https://mock-uiux-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-uiux-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-video-editing-1",
+    "school_name": "【モック】動画編集スクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。動画編集をオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画編集者",
+      "映像クリエイター"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "動画編集の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-video-editing-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-video-editing-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-video-editing-1.example.com/",
+    "cta_url": "https://mock-video-editing-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-video-editing-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-video-editing-2",
+    "school_name": "【モック】動画編集スクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。動画編集をオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "動画編集者",
+      "映像クリエイター",
+      "YouTube運用担当"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "動画編集の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-video-editing-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-video-editing-2.example.com/",
+    "cta_url": "https://mock-video-editing-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-video-editing-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-video-editing-3",
+    "school_name": "【モック】動画編集スクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。動画編集を通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画編集者",
+      "映像クリエイター"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "動画編集の基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-video-editing-3.example.com/",
+    "cta_url": "https://mock-video-editing-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-video-editing-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-video-editing-4",
+    "school_name": "【モック】動画編集スクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。動画編集をハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "動画編集者",
+      "映像クリエイター",
+      "YouTube運用担当"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "動画編集の基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-video-editing-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-video-editing-4.example.com/",
+    "cta_url": "https://mock-video-editing-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-video-editing-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-video-editing-5",
+    "school_name": "【モック】動画編集スクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。動画編集を実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "動画編集者",
+      "映像クリエイター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "動画編集の基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-video-editing-5.example.com/",
+    "cta_url": "https://mock-video-editing-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-video-editing-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-web-marketing-1",
+    "school_name": "【モック】Webマーケティングスクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。Webマーケティングをオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター",
+      "広告運用担当"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "Webマーケティングの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-web-marketing-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-web-marketing-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-web-marketing-1.example.com/",
+    "cta_url": "https://mock-web-marketing-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-web-marketing-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-web-marketing-2",
+    "school_name": "【モック】Webマーケティングスクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。Webマーケティングをオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "Webマーケター",
+      "広告運用担当",
+      "SEO担当"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "Webマーケティングの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-web-marketing-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-web-marketing-2.example.com/",
+    "cta_url": "https://mock-web-marketing-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-web-marketing-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-web-marketing-3",
+    "school_name": "【モック】Webマーケティングスクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。Webマーケティングを通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター",
+      "広告運用担当"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "Webマーケティングの基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-web-marketing-3.example.com/",
+    "cta_url": "https://mock-web-marketing-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-web-marketing-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-web-marketing-4",
+    "school_name": "【モック】Webマーケティングスクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。Webマーケティングをハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "Webマーケター",
+      "広告運用担当",
+      "SEO担当"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "Webマーケティングの基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-web-marketing-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-web-marketing-4.example.com/",
+    "cta_url": "https://mock-web-marketing-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-web-marketing-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-web-marketing-5",
+    "school_name": "【モック】Webマーケティングスクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。Webマーケティングを実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "Webマーケター",
+      "広告運用担当"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Webマーケティングの基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-web-marketing-5.example.com/",
+    "cta_url": "https://mock-web-marketing-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-web-marketing-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-genai-dx-1",
+    "school_name": "【モック】生成AI・DXリテラシースクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。生成AI・DXリテラシーをオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "DX推進担当",
+      "生成AI活用リード"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "生成AI・DXリテラシーの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-genai-dx-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-genai-dx-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-genai-dx-1.example.com/",
+    "cta_url": "https://mock-genai-dx-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-genai-dx-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-genai-dx-2",
+    "school_name": "【モック】生成AI・DXリテラシースクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。生成AI・DXリテラシーをオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "hobby"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "DX推進担当",
+      "生成AI活用リード",
+      "データ利活用担当"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "生成AI・DXリテラシーの基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-genai-dx-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-genai-dx-2.example.com/",
+    "cta_url": "https://mock-genai-dx-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-genai-dx-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-genai-dx-3",
+    "school_name": "【モック】生成AI・DXリテラシースクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。生成AI・DXリテラシーを通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "hobby",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "DX推進担当",
+      "生成AI活用リード"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "生成AI・DXリテラシーの基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-genai-dx-3.example.com/",
+    "cta_url": "https://mock-genai-dx-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-genai-dx-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-genai-dx-4",
+    "school_name": "【モック】生成AI・DXリテラシースクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。生成AI・DXリテラシーをハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "DX推進担当",
+      "生成AI活用リード",
+      "データ利活用担当"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "生成AI・DXリテラシーの基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-genai-dx-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-genai-dx-4.example.com/",
+    "cta_url": "https://mock-genai-dx-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-genai-dx-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-genai-dx-5",
+    "school_name": "【モック】生成AI・DXリテラシースクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。生成AI・DXリテラシーを実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "hobby"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "DX推進担当",
+      "生成AI活用リード"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "生成AI・DXリテラシーの基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-genai-dx-5.example.com/",
+    "cta_url": "https://mock-genai-dx-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-genai-dx-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-language-1",
+    "school_name": "【モック】語学スクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。語学をオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "海外営業",
+      "通訳・翻訳アシスタント"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "語学の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-language-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-language-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-language-1.example.com/",
+    "cta_url": "https://mock-language-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-language-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-language-2",
+    "school_name": "【モック】語学スクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。語学をオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "海外営業",
+      "通訳・翻訳アシスタント",
+      "外資系企業スタッフ"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "語学の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-language-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-language-2.example.com/",
+    "cta_url": "https://mock-language-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-language-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-language-3",
+    "school_name": "【モック】語学スクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。語学を通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "海外営業",
+      "通訳・翻訳アシスタント"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "語学の基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-language-3.example.com/",
+    "cta_url": "https://mock-language-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-language-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-language-4",
+    "school_name": "【モック】語学スクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。語学をハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "海外営業",
+      "通訳・翻訳アシスタント",
+      "外資系企業スタッフ"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "語学の基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-language-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-language-4.example.com/",
+    "cta_url": "https://mock-language-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-language-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-language-5",
+    "school_name": "【モック】語学スクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。語学を実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "海外営業",
+      "通訳・翻訳アシスタント"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "語学の基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-language-5.example.com/",
+    "cta_url": "https://mock-language-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-language-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "skipped",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）（status=skipped が診断結果に出ないことの確認用）"
+  },
+  {
+    "id": "mock-certification-1",
+    "school_name": "【モック】資格スクール オンライン集中",
+    "official_name": "架空株式会社モック1",
+    "description": "動作確認用の架空データです。資格をオンライン集中形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "経理・財務",
+      "不動産営業"
+    ],
+    "price": {
+      "display": "月額9,800円〜（サブスク型）",
+      "min_yen": 9800
+    },
+    "duration": "標準3ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "資格の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン集中での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-certification-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        },
+        {
+          "source_name": "モック出典2",
+          "source_url": "https://mock-review-2.example.com/mock-certification-1",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-certification-1.example.com/",
+    "cta_url": "https://mock-certification-1.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-certification-1",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-certification-2",
+    "school_name": "【モック】資格スクール オンライン夜間",
+    "official_name": "架空株式会社モック2",
+    "description": "動作確認用の架空データです。資格をオンライン夜間形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "経理・財務",
+      "不動産営業",
+      "総務・法務"
+    ],
+    "price": {
+      "display": "一括198,000円（税込）",
+      "min_yen": 198000
+    },
+    "duration": "4〜24週間から選択",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "資格の基礎から実践までを段階的に扱う想定のモック",
+      "オンライン夜間での受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-certification-2",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-certification-2.example.com/",
+    "cta_url": "https://mock-certification-2.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-certification-2",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-certification-3",
+    "school_name": "【モック】資格スクール 通学教室",
+    "official_name": "架空株式会社モック3",
+    "description": "動作確認用の架空データです。資格を通学教室形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "経理・財務",
+      "不動産営業"
+    ],
+    "price": {
+      "display": "一括348,000円（税込・分割可）",
+      "min_yen": 348000
+    },
+    "duration": "標準6ヶ月（週2回）",
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "資格の基礎から実践までを段階的に扱う想定のモック",
+      "通学教室での受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-certification-3.example.com/",
+    "cta_url": "https://mock-certification-3.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-certification-3",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-certification-4",
+    "school_name": "【モック】資格スクール ハイブリッド",
+    "official_name": "架空株式会社モック4",
+    "description": "動作確認用の架空データです。資格をハイブリッド形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "career_change"
+    ],
+    "target_level": "experienced",
+    "career_paths": [
+      "経理・財務",
+      "不動産営業",
+      "総務・法務"
+    ],
+    "price": {
+      "display": "4週間プラン 89,000円〜",
+      "min_yen": 89000
+    },
+    "duration": "最短1ヶ月",
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "愛知県"
+    ],
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "資格の基礎から実践までを段階的に扱う想定のモック",
+      "ハイブリッドでの受講を想定したモック",
+      "キャリア相談ありの想定のモック"
+    ],
+    "review_summary": {
+      "text": "これは動作確認用の架空の要約文です。実在の口コミに基づくものではなく、タイブレーク（口コミ件数の多い方を優先）の挙動を確認するために入れています。",
+      "sources": [
+        {
+          "source_name": "モック出典1",
+          "source_url": "https://mock-review-1.example.com/mock-certification-4",
+          "fetched_at": "2026-02-20T09:00:00.000Z"
+        }
+      ]
+    },
+    "review_source_urls": [],
+    "official_url": "https://mock-certification-4.example.com/",
+    "cta_url": "https://mock-certification-4.example.com/?utm_source=skillup-zukan",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-mock-certification-4",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  },
+  {
+    "id": "mock-certification-5",
+    "school_name": "【モック】資格スクール 実践ゼミ",
+    "official_name": "架空株式会社モック5",
+    "description": "動作確認用の架空データです。資格を実践ゼミ形式で学ぶ想定のモックレコードで、実在するスクールの情報ではありません。スキーマ検証と診断ウィザードのスコアリングを試すためだけに使います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "advanced",
+    "career_paths": [
+      "経理・財務",
+      "不動産営業"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null
+    },
+    "duration": "通い放題（期間の定めなし）",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "資格の基礎から実践までを段階的に扱う想定のモック",
+      "実践ゼミでの受講を想定したモック",
+      "学習サポートのみの想定のモック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://mock-certification-5.example.com/",
+    "cta_url": "https://mock-certification-5.example.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mock-certification-5",
+    "created_at": "2026-01-15T09:00:00.000Z",
+    "updated_at": "2026-03-01T09:00:00.000Z",
+    "status": "active",
+    "source": "mock",
+    "source_note": "動作確認用の架空データ（実在のスクールではありません）"
+  }
+]

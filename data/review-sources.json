@@ -1,0 +1,39 @@
+{
+  "_note": [
+    "口コミ要約パイプライン(scraper/summarize-reviews.js)が巡回してよい口コミサイトの許可リスト。",
+    "ここに書かれた各サイトについて、robots.txt と利用規約(自動アクセス・クローリングに関する規定)を",
+    "人力で確認するまで enabled は false のままにすること。Claude Code はこの確認作業を代行していない。",
+    "確認手順は README.md の「口コミ要約パイプラインを有効化する前に」を参照。",
+    "enabled=true にする際は、robots_txt_ok / terms_ok / checked_by_human_at を必ず同時に埋めること",
+    "(3つが揃っていないホストへのリクエストは lib/review-sources.js が実行時に拒否する)。"
+  ],
+  "sources": [
+    {
+      "source_name": "コエテコキャンパス",
+      "host": "coeteco.jp",
+      "enabled": false,
+      "robots_txt_ok": null,
+      "terms_ok": null,
+      "checked_by_human_at": null,
+      "note": "未確認。https://coeteco.jp/robots.txt と利用規約を人力で確認すること。"
+    },
+    {
+      "source_name": "マナビット",
+      "host": "manab-it.com",
+      "enabled": false,
+      "robots_txt_ok": null,
+      "terms_ok": null,
+      "checked_by_human_at": null,
+      "note": "未確認。https://manab-it.com/robots.txt と利用規約を人力で確認すること。"
+    },
+    {
+      "source_name": "リスキリング.jp",
+      "host": "xn--nckgz9qc8c.jp",
+      "enabled": false,
+      "robots_txt_ok": null,
+      "terms_ok": null,
+      "checked_by_human_at": null,
+      "note": "未確認。https://xn--nckgz9qc8c.jp/robots.txt と利用規約を人力で確認すること。"
+    }
+  ]
+}

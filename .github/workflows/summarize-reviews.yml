@@ -1,0 +1,75 @@
+name: Summarize school reviews (weekly)
+
+# 【重要】このワークフローには意図的に schedule (cron) を設定していない。
+#
+# 口コミサイトへの自動アクセスは、対象各サイトの robots.txt と利用規約を人力で
+# 確認したうえでなければ始められない（data/review-sources.json 参照）。確認が
+# 済むまでは workflow_dispatch による手動実行のみとし、確認が完了して
+# data/review-sources.json の enabled / robots_txt_ok / terms_ok /
+# checked_by_human_at を埋めてから、下の schedule ブロックのコメントを外すこと。
+#
+# なお summarize-reviews.js 自体も fail-closed で、確認が済んでいないホストには
+# 1度もHTTPリクエストを送らない（誤って実行しても何も起きない）。
+#
+# on:
+#   schedule:
+#     # 毎週火曜 19:00 UTC(月) = 日本時間(JST) 火曜 4:00
+#     - cron: "0 19 * * 1"
+
+on:
+  workflow_dispatch:
+    inputs:
+      only_school_id:
+        description: "1校だけテスト実行する場合のスクールID（空欄なら対象全件）"
+        required: false
+        type: string
+      max_per_run:
+        description: "1回の実行で要約を更新する学校数の上限（既定20）"
+        required: false
+        type: string
+        default: "20"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      - name: Summarize reviews (skips every source that is not human-confirmed)
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REVIEW_ONLY_SCHOOL_ID: ${{ github.event.inputs.only_school_id }}
+          REVIEW_MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '20' }}
+        run: node summarize-reviews.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/schools.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update review summaries ($(date -u +%Y-%m-%d))"
+          git push

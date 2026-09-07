@@ -1,0 +1,60 @@
+name: Re-verify old skip-listed candidates (weekly)
+
+# discover-schools.js がスキップリストに落とした候補のうち、記録から一定期間
+# 経過したものを再検証し、通ったものをスキップリストから外す（レスキュー）。
+# 掲載自体は行わない。次回の discover-schools.js が候補として拾い直す。
+
+on:
+  schedule:
+    # 毎週月曜 19:00 UTC(日) = 日本時間(JST) 月曜 4:00
+    - cron: "0 19 * * 0"
+  workflow_dispatch:
+    inputs:
+      after_days:
+        description: "この日数を過ぎた記録を再検証の対象にする（既定30日）"
+        required: false
+        type: string
+        default: "30"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  reverify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      - name: Re-verify skip-listed candidates
+        working-directory: scraper
+        env:
+          REVERIFY_AFTER_DAYS: ${{ github.event.inputs.after_days || '30' }}
+        run: node reverify-old-skips.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f data/school-discover-skip.json ] && git add data/school-discover-skip.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: re-verify skip-listed school candidates ($(date -u +%Y-%m-%d))"
+          git push
