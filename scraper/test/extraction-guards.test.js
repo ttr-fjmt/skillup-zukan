@@ -11,7 +11,13 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-const { filterFeatures, classifyFormat, verifySubsidyClaim } = require('../lib/school-discovery');
+const {
+  filterFeatures,
+  stripExaggeratedSentences,
+  classifyFormat,
+  verifySubsidyClaim,
+} = require('../lib/school-discovery');
+const { NOT_DISCLOSED_TEXT } = require('../lib/schema');
 
 // ---- features の誇張表現除外 ----
 
@@ -64,6 +70,67 @@ test('filterFeatures: 実際に掲載されていた誇張表現（回帰）', (
   // 初回の本番実行で features に入っていたもの。
   const actual = ['転職保証コースで転職成功率99%', '副業案件保証5万円分', '返金保証制度', '転職保証制度付きコースあり（条件あり）'];
   assert.deepStrictEqual(filterFeatures(actual), []);
+});
+
+// ---- description の誇張表現除外（features と同じ基準を文単位で適用する） ----
+
+test('stripExaggeratedSentences: 統計値を含む文を落とし、残りは自然な文章として残る', () => {
+  const input =
+    '2013年の創業以来、専任講師によるマンツーマンレッスンを提供。' +
+    '受講生の継続率は97.9%で、初心者から実践的なスキル習得まで支援。' +
+    '転職やフリーランスなど多様なキャリアパスに対応。';
+  assert.strictEqual(
+    stripExaggeratedSentences(input),
+    '2013年の創業以来、専任講師によるマンツーマンレッスンを提供。転職やフリーランスなど多様なキャリアパスに対応。'
+  );
+});
+
+test('stripExaggeratedSentences: 実績訴求の文を落とす（%も率も含まない形）', () => {
+  const input = '現役エンジニアから学ぶスクール。900社以上の提携企業から10万人以上の受講生を輩出。';
+  assert.strictEqual(stripExaggeratedSentences(input), '現役エンジニアから学ぶスクール。');
+});
+
+test('stripExaggeratedSentences: 最上級の主張を含む文を落とす', () => {
+  assert.strictEqual(
+    stripExaggeratedSentences('日本初のマンツーマン専門スクール。オンラインで受講できる。'),
+    'オンラインで受講できる。'
+  );
+});
+
+test('stripExaggeratedSentences: 客観的事実だけの文章はそのまま残す', () => {
+  const input =
+    '生成AIとプログラミングスキルの習得に加え、実務プロジェクト参加を通じて人材を育成するスクール。' +
+    '短期集中（10週間）または夜間・休日（約6ヶ月）の2つの学習スタイルを提供。';
+  assert.strictEqual(stripExaggeratedSentences(input), input);
+});
+
+test('stripExaggeratedSentences: 全文が落ちた場合は定型文にする', () => {
+  assert.strictEqual(stripExaggeratedSentences('継続率97.9%を達成。転職成功率99%。'), NOT_DISCLOSED_TEXT);
+  assert.strictEqual(stripExaggeratedSentences(''), NOT_DISCLOSED_TEXT);
+  assert.strictEqual(stripExaggeratedSentences(null), NOT_DISCLOSED_TEXT);
+});
+
+test('stripExaggeratedSentences: 短くなること自体は許容する（水増ししない）', () => {
+  const result = stripExaggeratedSentences('オンライン専用。継続率97.9%。10万人以上の受講生を輩出。');
+  assert.strictEqual(result, 'オンライン専用。');
+});
+
+test('実績訴求のパターンは、講師属性・体制の説明を巻き込まない', () => {
+  // 「700名以上の講師が対応する」は数を数えているが、成果や規模の誇示ではなく体制の説明。
+  const feature = '700名以上の講師が対応するQ&A掲示板';
+  assert.deepStrictEqual(filterFeatures([feature]), [feature]);
+  assert.strictEqual(stripExaggeratedSentences(`${feature}。`), `${feature}。`);
+});
+
+test('掲載中のレコードの description に、誇張・実績訴求が残っていない', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    assert.strictEqual(
+      stripExaggeratedSentences(school.description),
+      school.description,
+      `${school.id}: description に除外対象が残っています`
+    );
+  }
 });
 
 // ---- 受講形式の確定 ----

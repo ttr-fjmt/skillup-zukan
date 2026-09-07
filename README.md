@@ -83,7 +83,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（102件）
+npm test                                   # ユニットテスト（164件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -143,7 +143,10 @@ data/discovery-log/2026-09-07.json
 | `verifyOfficialName()` | `official_name` がページ本文に一字一句無ければ `null` に落とす |
 | `verifySubsidyClaim()` | 本文に給付金関連のキーワードが一つも無ければ `subsidy_eligible` を `false` に倒す |
 | `filterFeatures()` | `features` から検証不能な統計的数値主張・金銭的コミットメント文言・最上級の主張を除外する |
+| `stripExaggeratedSentences()` | `description` から同じ基準で該当する**文**を落とす（散文なので文単位） |
 | `classifyFormat()` | 受講形式を確定し、確定できなければ `review_flags: ["format_unconfirmed"]` を立てる |
+
+`description` にも `features` と同じ基準を適用する。散文なので該当する文ごと落とし、残りは自然な文章として成立させる（日本語の文は「。」で区切れば単体で意味が通る）。短くなること自体は問題としないが、除外で客観的事実まで巻き込まれた場合は、カリキュラム内容・受講形式等の事実で補う。
 
 `filterFeatures()` が落とすのは、「転職成功率99%」のような検証不能な統計、「転職保証」「返金保証」のような金銭的コミットメント、「業界No.1」のような最上級の主張。いずれも本文に実際に書かれてはいるが、真偽をこちらで検証できず、図鑑が中立的な「特徴」として並べるとその主張を保証しているように読める。**除外の結果 `features` が0〜2件になっても水増ししない。** 残すのは客観的事実（カリキュラム、サポート形態、受講形式、講師属性、教材）に限る。
 

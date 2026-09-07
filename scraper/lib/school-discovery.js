@@ -400,8 +400,16 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
         description: {
           type: 'string',
           description:
-            '100〜200字程度の概要文。本文の抽出・要約であること。原文の丸写しはしないこと。' +
-            '本文から具体的な内容が読み取れない場合のみ、定型文を返すこと。',
+            '100〜200字程度の概要文。本文の抽出・要約であること。原文の丸写しはしないこと。\n' +
+            'features と同じ基準を適用する。次のものは本文に書かれていても description に含めない:\n' +
+            '- 検証不能な統計的数値主張（「継続率97.9%」「満足度98%」「転職成功率99%」等）\n' +
+            '- 実績訴求（「10万人以上の受講生を輩出」「導入企業900社以上」等）\n' +
+            '- 最上級・優位性の主張（「日本初」「業界No.1」等）\n' +
+            '- 金銭的コミットメント文言（「転職保証」「返金保証」等）\n' +
+            'これらを除いたうえで、カリキュラム内容・受講形式・サポート形態・講師の属性・' +
+            '対象者といった客観的事実で構成すること。該当する事実が少なければ短くてよい' +
+            '（100字を下回っても構わない）。無理に文字数を埋めたり、本文に無い内容を' +
+            '足したりしないこと。本文から具体的な内容が読み取れない場合のみ、定型文を返すこと。',
         },
         skill_genre: {
           type: 'array',
@@ -614,6 +622,11 @@ const EXCLUDED_FEATURE_PATTERNS = [
   /保証|返金|全額|キャッシュバック/,
   // 「業界No.1」「日本初」等の最上級・優位性の主張。
   /No\.?\s*1|ナンバーワン|業界初|日本初|日本一|最大手|唯一/i,
+  // 「10万人以上の受講生を輩出」「導入実績900社」等の規模・実績訴求。
+  // 数を数えること自体は禁じない（「700名以上の講師が対応する」のような講師属性・体制の
+  // 説明は客観的事実として残す）。落とすのは、輩出数・導入数のような成果や規模の誇示。
+  /輩出|突破|導入実績|導入社数|累計\s*[0-9０-９]/,
+  /[0-9０-９][0-9０-９,，.]*\s*[万千]?\s*[人名社件]\s*以上の?\s*(受講生|受講者|卒業生|修了生|利用者|会員|企業)/,
 ];
 
 function filterFeatures(features) {
@@ -627,6 +640,35 @@ function filterFeatures(features) {
     kept.push(feature);
   }
   return kept;
+}
+
+/**
+ * description（散文）から、features と同じ基準で誇張・検証不能な主張を落とす。
+ *
+ * features は箇条書きなので該当項目をそのまま捨てればよいが、description は文章なので
+ * 文単位で落とす。日本語の文は「。」で区切れば単体で意味が通るため、該当文を除いても
+ * 残りは自然な文章として成立する。
+ *
+ * 落とした結果が短くなること自体は問題としない（水増ししない、というfeaturesと同じ方針）。
+ * ただし全文が落ちて空になった場合だけは、定型文に置き換える（説明が消えたまま
+ * 掲載されるより、確認できなかったと明示する方がよい）。
+ */
+function stripExaggeratedSentences(description) {
+  const text = String(description || '').trim();
+  if (!text) return NOT_DISCLOSED_TEXT;
+
+  // 「。」を残したまま分割する（末尾に「。」が無い最後の文も拾う）。
+  const sentences = text.split(/(?<=。)/).map(s => s.trim()).filter(Boolean);
+  const kept = sentences.filter(sentence => {
+    const pattern = EXCLUDED_FEATURE_PATTERNS.find(p => p.test(sentence));
+    if (pattern) {
+      console.warn(`  description から除外しました（誇張・検証不能な主張）: "${sentence}"`);
+      return false;
+    }
+    return true;
+  });
+
+  return kept.join('') || NOT_DISCLOSED_TEXT;
 }
 
 /** 「完全オンライン」相当の、受講形式をオンラインと確定できる明示的な記述。 */
@@ -766,7 +808,7 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
     Number.isInteger(result.price_min_yen) && result.price_min_yen >= 0 ? result.price_min_yen : null;
   result.price_display = String(result.price_display || '').trim() || NOT_DISCLOSED_TEXT;
   result.duration = String(result.duration || '').trim() || NOT_DISCLOSED_TEXT;
-  result.description = String(result.description || '').trim() || NOT_DISCLOSED_TEXT;
+  result.description = stripExaggeratedSentences(result.description);
   result.official_name = verifyOfficialName(String(result.official_name || '').trim() || null, pageText);
   result.school_name = String(result.school_name || '').trim();
 
@@ -788,6 +830,7 @@ module.exports = {
   verifyOfficialName,
   verifySubsidyClaim,
   filterFeatures,
+  stripExaggeratedSentences,
   classifyFormat,
   EXCLUDED_FEATURE_PATTERNS,
   collectVerifiedCandidates,

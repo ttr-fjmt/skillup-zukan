@@ -3,7 +3,7 @@
     "id": "sejuku",
     "school_name": "SAMURAI ENGINEER",
     "official_name": "株式会社SAMURAI",
-    "description": "日本初のマンツーマン専門プログラミングスクール。2013年の創業以来、専任講師による完全オリジナルなマンツーマンレッスンを提供。受講生の継続率は97.9%で、独自開発の学習管理システムと徹底したサポート体制により、初心者から実践的なスキル習得まで支援。転職やフリーランス、副業など多様なキャリアパスに対応。",
+    "description": "2013年の創業以来、専任講師による完全オリジナルなマンツーマンレッスンを提供。転職やフリーランス、副業など多様なキャリアパスに対応し、資格対策・生成AI活用・データサイエンスなど目的別のコースを揃える。カリキュラムを個別に組むオーダーメイドコースや、教育訓練給付金の対象コースもある。",
     "skill_genre": [
       "programming",
       "genai_dx"
@@ -43,7 +43,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:01:18.596Z",
+    "updated_at": "2026-09-07T15:06:45.242Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -56,7 +56,7 @@
     "id": "techacademy",
     "school_name": "TechAcademy",
     "official_name": "株式会社ブリューアス",
-    "description": "現役エンジニアから学ぶオンラインに特化したプログラミングスクール。実務経験3年以上の現役エンジニアによるマンツーマンサポートで、Webエンジニア転職、副業、フリーランスなど多様なキャリアパスに対応。900社以上の提携企業から10万人以上の受講生を輩出。",
+    "description": "現役エンジニアから学ぶ、オンラインに特化したプログラミングスクール。実務経験3年以上の現役エンジニアがマンツーマンで担当し、Web制作・フロントエンド・Java・Python・データサイエンスなど目的別のコースを用意する。受講期間はライフスタイルに合わせて選べ、教育訓練給付金の対象コースもある。",
     "skill_genre": [
       "programming",
       "webdesign"
@@ -93,7 +93,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T15:01:18.895Z",
+    "updated_at": "2026-09-07T15:06:45.249Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
