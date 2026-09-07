@@ -83,7 +83,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（241件）
+npm test                                   # ユニットテスト（254件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -143,6 +143,8 @@ data/discovery-log/2026-09-07.json
 | `verifyOfficialName()` | `official_name` がページ本文に一字一句無ければ `null` に落とす |
 | `verifySubsidyClaim()` | 本文に給付金関連のキーワードが一つも無ければ `subsidy_eligible` を `false` に倒す |
 | `verifyPlans()` | plans の金額・期間がページ本文に無ければ、その項目を null にする |
+| `verifyCareerPaths()` | `career_paths` の職種名がページ本文に無ければ落とす |
+| `verifyPrefectures()` / `filterToCampusPrefectures()` | `area` の都道府県が本文に無い、または通学拠点の根拠が無ければ落とす（トップページ経路・フォールバック経路の両方で通す） |
 | `filterFeatures()` | `features` から検証不能な統計的数値主張・金銭的コミットメント文言・最上級の主張を除外する |
 | `stripExaggeratedSentences()` | `description` から同じ基準で該当する**文**を落とす（散文なので文単位） |
 | `classifyFormat()` | 受講形式を確定し、確定できなければ `review_flags: ["format_unconfirmed"]` を立てる |
@@ -176,6 +178,16 @@ data/discovery-log/2026-09-07.json
 - `amount` / `duration` はどちらも `null` を許す（金額だけ・期間だけ載っているページがあるため）。両方 null のプランは名前だけ残っても使い道が無いので落とす
 - `price.display` / `price.min_yen` は `plans` から機械生成し、AIには書かせない
 
+### 金額の種別（kind）
+
+`plans[].kind` は `total`（一括・総額）/ `monthly`（月額）/ `enrollment`（入学金）。`price.min_yen` は**同じ種別の中でのみ**求める（`total` を優先し、無ければ `monthly`）。入学金は受講料そのものではないので `min_yen` には使わない。種別を判定できなかったプランも使わない。
+
+混ぜてはいけない理由は Vook school の実例。月額39,600円（別途入学金139,700円）を、sejuku の一括475,200円と同じ `min_yen` 軸に並べると、桁の違うものが同列に見えてしまう。月額の場合は `display` も「月額39,600円〜」とし、数字だけで一括料金と見分けが付かない状態を避ける。
+
+`price.kind` に、その `min_yen` がどちらの種別かを持たせてある。**価格ソートは同じ `kind` 同士で行うこと。**
+
+ に、その  がどちらの種別かを持たせてある。**価格ソートは同じ  同士で行うこと。**
+
 ### 巡回した詳細ページのURL
 
 `price_detail_url` と `area_detail_url` は用途別に分けてある。1つの `detail_page_url` を price と area で共有していた時期があり、後から走った area 巡回が price の出所（`/courses/career/`）を会社概要ページのURLで上書きしてしまった。`price.scope` はこの `price_detail_url` の有無から導出する。
@@ -195,7 +207,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（241件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（254件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

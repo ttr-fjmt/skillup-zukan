@@ -87,8 +87,8 @@ test('extractPageLinks: javascript: や mailto: のリンクは候補にしな�
 
 test('verifyPlans: 本文にある金額のプランだけを残す（カンマの有無は無視）', () => {
   const plans = [
-    { label: '集中8週間プラン', amount: 475200, duration: '8週間' },
-    { label: '16週間プラン', amount: 567600, duration: '16週間' },
+    { label: '集中8週間プラン', amount: 475200, duration: '8週間', kind: 'total' },
+    { label: '16週間プラン', amount: 567600, duration: '16週間', kind: 'total' },
   ];
   const pageText = '集中8週間プラン(8週間) ¥475,200 / 16週間プラン(16週間) ¥567,600';
   assert.deepStrictEqual(priceDetail.verifyPlans(plans, pageText), plans);
@@ -96,8 +96,8 @@ test('verifyPlans: 本文にある金額のプランだけを残す（カンマ�
 
 test('verifyPlans: 本文に無い金額のプランは落とす（根拠不明の金額を残さない）', () => {
   const plans = [
-    { label: '実在プラン', amount: 298000 },
-    { label: '架空プラン', amount: 999999 },
+    { label: '実在プラン', amount: 298000, kind: 'total' },
+    { label: '架空プラン', amount: 999999, kind: 'total' },
   ];
   const kept = priceDetail.verifyPlans(plans, '受講料は298,000円です。');
   assert.deepStrictEqual(kept.map(p => p.label), ['実在プラン']);
@@ -105,13 +105,13 @@ test('verifyPlans: 本文に無い金額のプランは落とす（根拠不明�
 
 test('verifyPlans: AIが割り算して作った月額は本文に無いので落ちる', () => {
   // 本文には総額 657,800円 しか無く、月額 54,816 は書かれていない。
-  const kept = priceDetail.verifyPlans([{ label: '月額', amount: 54816 }], '一括657,800円（税込）');
+  const kept = priceDetail.verifyPlans([{ label: '月額', amount: 54816, kind: 'total' }], '一括657,800円（税込）');
   assert.deepStrictEqual(kept, []);
 });
 
 test('verifyPlans: label が空・amount が整数でないプランは落とす', () => {
   const kept = priceDetail.verifyPlans(
-    [{ label: '', amount: 1000 }, { label: 'A', amount: '1000' }, { label: 'B', amount: -1 }],
+    [{ label: '', amount: 1000, kind: 'total' }, { label: 'A', amount: '1000' }, { label: 'B', amount: -1 }],
     '1000円 -1円'
   );
   assert.deepStrictEqual(kept, []);
@@ -119,7 +119,7 @@ test('verifyPlans: label が空・amount が整数でないプランは落とす
 
 test('buildPriceFromPlans: 複数プランなら最安値に「〜」を付ける', () => {
   const r = priceDetail.buildPriceFromPlans(
-    [{ label: '16週間', amount: 567600 }, { label: '集中8週間', amount: 475200 }],
+    [{ label: '16週間', amount: 567600, kind: 'total' }, { label: '集中8週間', amount: 475200, kind: 'total' }],
     'detail_page'
   );
   assert.strictEqual(r.display, '475,200円〜');
@@ -128,14 +128,14 @@ test('buildPriceFromPlans: 複数プランなら最安値に「〜」を付け�
 });
 
 test('buildPriceFromPlans: プランが1件なら「〜」を付けない', () => {
-  const r = priceDetail.buildPriceFromPlans([{ label: '標準コース', amount: 657800 }], 'top_page');
+  const r = priceDetail.buildPriceFromPlans([{ label: '標準コース', amount: 657800, kind: 'total' }], 'top_page');
   assert.strictEqual(r.display, '657,800円');
   assert.strictEqual(r.min_yen, 657800);
 });
 
 test('buildPriceFromPlans: プランが空なら定型文と null', () => {
   const r = priceDetail.buildPriceFromPlans([], 'top_page');
-  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'top_page' });
+  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'top_page', kind: null });
 });
 
 // ---- 割引価格の除外（回帰） ----
@@ -154,12 +154,12 @@ const DISCOUNT_PAGE_TEXT = `
 test('割引/通常が併記されていても、通常価格のみが採用される（回帰: min_yen が割引価格にならない）', () => {
   // AIが両方を別エントリとして返してきた場合を想定する（実際にそうなった）。
   const aiPlans = [
-    { label: '16週間プラン', amount: 567600 },
-    { label: '16週間プラン', amount: 544170 },
-    { label: '24週間プラン', amount: 778800 },
-    { label: '24週間プラン', amount: 744810 },
-    { label: '集中8週間プラン', amount: 475200 },
-    { label: '集中8週間プラン', amount: 456390 },
+    { label: '16週間プラン', amount: 567600, kind: 'total' },
+    { label: '16週間プラン', amount: 544170, kind: 'total' },
+    { label: '24週間プラン', amount: 778800, kind: 'total' },
+    { label: '24週間プラン', amount: 744810, kind: 'total' },
+    { label: '集中8週間プラン', amount: 475200, kind: 'total' },
+    { label: '集中8週間プラン', amount: 456390, kind: 'total' },
   ];
 
   const verified = priceDetail.verifyPlans(aiPlans, DISCOUNT_PAGE_TEXT);
@@ -175,16 +175,16 @@ test('割引/通常が併記されていても、通常価格のみが採用さ�
 
 test('dropDiscountedDuplicates: 期間・内容が違うプランは別エントリとして残す', () => {
   const plans = [
-    { label: '16週間プラン', amount: 567600 },
-    { label: '24週間プラン', amount: 778800 },
-    { label: '集中8週間プラン', amount: 475200 },
+    { label: '16週間プラン', amount: 567600, kind: 'total' },
+    { label: '24週間プラン', amount: 778800, kind: 'total' },
+    { label: '集中8週間プラン', amount: 475200, kind: 'total' },
   ];
   assert.strictEqual(priceDetail.normalizePlans(plans).length, 3, 'ラベルが異なるプランまで畳んでいる');
   assert.strictEqual(priceDetail.buildPriceFromPlans(plans, 'detail_page').min_yen, 475200);
 });
 
 test('dropDiscountedDuplicates: 前後の空白だけが違うラベルは同一プランとして扱う', () => {
-  const input = [{ label: '標準コース', amount: 300000 }, { label: ' 標準コース ', amount: 240000 }];
+  const input = [{ label: '標準コース', amount: 300000, kind: 'total' }, { label: ' 標準コース ', amount: 240000, kind: 'total' }];
   assert.strictEqual(priceDetail.normalizePlans(input).length, 1);
   assert.strictEqual(priceDetail.buildPriceFromPlans(input, 'top_page').min_yen, 300000);
 });
@@ -199,7 +199,7 @@ test('抽出プロンプトに割引価格の除外指示が含まれている',
 
 test('buildPriceFromPlans: 桁区切りは実行環境のロケールに依存しない', () => {
   // 既定ロケールに任せると環境によっては "657.800" になりうるため 'en-US' を明示している。
-  assert.strictEqual(priceDetail.buildPriceFromPlans([{ label: 'A', amount: 1234567 }]).display, '1,234,567円');
+  assert.strictEqual(priceDetail.buildPriceFromPlans([{ label: 'A', amount: 1234567, kind: 'total' }]).display, '1,234,567円');
 });
 
 // ---- フォールバック全体 ----
@@ -212,7 +212,7 @@ test('enrichPriceFromDetailPage: 詳細ページから料金を取得し、フ�
       fetchDetailPage: async () => { fetchCount += 1; return '受講料は一括298,000円（税込）です。'; },
       extractPriceFromPage: async (name, url, pageText) => {
         const plans = priceDetail.normalizePlans(
-          priceDetail.verifyPlans([{ label: '標準コース', amount: 298000, duration: null }], pageText)
+          priceDetail.verifyPlans([{ label: '標準コース', amount: 298000, duration: null, kind: 'total' }], pageText)
         );
         return { plans, price: priceDetail.buildPriceFromPlans(plans, 'detail_page') };
       },

@@ -181,7 +181,8 @@ function verifyPlans(plans, pageText) {
 
     // 金額も期間も取れないプランは、名前だけ残っても使い道が無いので落とす。
     if (amount === null && duration === null) return [];
-    return [{ label: plan.label.trim().slice(0, 80), amount, duration }];
+    const kind = ['total', 'monthly', 'enrollment'].includes(plan.kind) ? plan.kind : null;
+    return [{ label: plan.label.trim().slice(0, 80), amount, duration, kind }];
   });
 }
 
@@ -204,7 +205,10 @@ function dropDiscountedDuplicates(plans) {
   const byLabel = new Map();
 
   for (const plan of plans) {
-    const key = plan.label.trim();
+    // 畳み込みのキーは「ラベル＋種別」。同じプラン名で入学金と月額が別々に載っている
+    // ことがあり（Vook のマスタープランは入学金139,700円＋月額39,600円）、ラベルだけを
+    // キーにすると、安い方を割引価格と誤認して片方を捨ててしまう。
+    const key = `${plan.label.trim()} ${plan.kind || ''}`;
     const existing = byLabel.get(key);
     if (!existing) {
       byLabel.set(key, { ...plan });
@@ -252,6 +256,7 @@ function normalizePlans(plans) {
         label: p.label.trim().slice(0, 80),
         amount: Number.isInteger(p.amount) && p.amount >= 0 ? p.amount : null,
         duration: typeof p.duration === 'string' && p.duration.trim() ? p.duration.trim().slice(0, 60) : null,
+        kind: ['total', 'monthly', 'enrollment'].includes(p.kind) ? p.kind : null,
       }))
   );
 }
@@ -274,17 +279,33 @@ function normalizePlans(plans) {
 function buildPriceFromPlans(plans, scope = 'top_page') {
   const priced = normalizePlans(plans).filter(p => p.amount !== null);
 
-  if (priced.length === 0) {
-    return { display: NOT_DISCLOSED_TEXT, min_yen: null, scope };
+  // 種別の違う金額を同じ数値軸に並べない。Vook は月額39,600円（別途入学金139,700円）、
+  // sejuku は一括475,200円で、これを同じ min_yen として比べると桁の違うものが同列に見える。
+  // total を優先し、無ければ monthly を使う。enrollment（入学金）は受講料そのものでは
+  // ないので min_yen には使わない。kind を判定できなかったプランも使わない。
+  const kind = ['total', 'monthly'].find(k => priced.some(p => p.kind === k)) || null;
+  const usable = kind === null ? [] : priced.filter(p => p.kind === kind);
+
+  if (usable.length === 0) {
+    if (priced.length > 0) {
+      console.warn(
+        `  金額はあるが min_yen に使える種別（total / monthly）がないため null にしました` +
+          `（種別: ${[...new Set(priced.map(p => p.kind))].join(', ')}）。`
+      );
+    }
+    return { display: NOT_DISCLOSED_TEXT, min_yen: null, scope, kind: null };
   }
 
-  const min = Math.min(...priced.map(p => p.amount));
+  const min = Math.min(...usable.map(p => p.amount));
   const formatted = min.toLocaleString('en-US');
+  // 月額であることを表示文字列にも出す。数字だけだと一括料金と見分けが付かない。
+  const prefix = kind === 'monthly' ? '月額' : '';
   return {
     // 金額のあるプランが1件だけなら「〜」を付けない（幅が無いのに幅があるように見せない）。
-    display: priced.length === 1 ? `${formatted}円` : `${formatted}円〜`,
+    display: usable.length === 1 ? `${prefix}${formatted}円` : `${prefix}${formatted}円〜`,
     min_yen: min,
     scope,
+    kind,
   };
 }
 
@@ -331,7 +352,16 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
                   '期間の記載が無ければ null。単位を換算したり、自分で計算した値を入れないこと。' +
                   'キャンペーンの申込期限・支払期限は受講期間ではないので入れないこと。',
               },
-            required: ['label', 'amount', 'duration'],
+              kind: {
+                type: ['string', 'null'],
+                enum: ['total', 'monthly', 'enrollment', null],
+                description:
+                  'その金額の種別。total=一括・総額、monthly=月額、enrollment=入学金。' +
+                  '本文の「月額」「入学金」「一括」等の表記から判定すること。' +
+                  '同じプランに入学金と月額の両方が書かれている場合は、それぞれ別のエントリとして' +
+                  'kind を変えて返すこと（片方を捨てない）。判定できなければ null。',
+              },
+            required: ['label', 'amount', 'duration', 'kind'],
             additionalProperties: false,
           },
         },
@@ -356,6 +386,8 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
         '- 分割払いの月額と総額が併記されている場合、本文に数字として書かれている値だけを' +
         '使うこと（自分で割り算して求めた値を入れない）。\n' +
         '- 表示用の文章・要約は作らないこと。プラン名と金額のペアだけを返せばよい。\n' +
+        '- 金額には必ず kind（total=一括/総額、monthly=月額、enrollment=入学金）を付けること。' +
+        '「月額◯◯円」と「入学金◯◯円」が併記されている場合は、両方を別エントリとして返すこと。\n' +
         '- 割引後価格（キャンペーン価格・早割・期間限定価格）は plans に含めないこと。' +
         '同じプランの通常価格と割引後価格が両方載っている場合は、通常価格だけを返すこと。' +
         'label を変えて別プランとして並べるのも不可。\n' +

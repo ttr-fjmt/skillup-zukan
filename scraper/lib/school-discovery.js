@@ -486,7 +486,16 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
                   '記載が無ければ null。単位を換算したり自分で計算した値を入れないこと。' +
                   'キャンペーンの申込期限・支払期限は受講期間ではないので入れないこと。',
               },
-            required: ['label', 'amount', 'duration'],
+              kind: {
+                type: ['string', 'null'],
+                enum: ['total', 'monthly', 'enrollment', null],
+                description:
+                  'その金額の種別。total=一括・総額、monthly=月額、enrollment=入学金。' +
+                  '本文の「月額」「入学金」「一括」等の表記から判定すること。' +
+                  '同じプランに入学金と月額の両方が書かれている場合は、それぞれ別のエントリとして' +
+                  'kind を変えて返すこと（片方を捨てない）。判定できなければ null。',
+              },
+            required: ['label', 'amount', 'duration', 'kind'],
             additionalProperties: false,
           },
         },

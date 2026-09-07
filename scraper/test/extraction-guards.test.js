@@ -231,12 +231,12 @@ test('verifyPlans: 本文に無い期間は落とす（単位換算・言い換�
   const { verifyPlans } = require('../lib/price-detail');
   // 本文は「6ヶ月(182日)」。AIが「約6ヶ月」と言い換えた場合は採用しない。
   assert.deepStrictEqual(
-    verifyPlans([{ label: '夜間・休日', amount: null, duration: '約6ヶ月' }], '夜間休日スタイルの場合6ヶ月(182日)'),
+    verifyPlans([{ label: '夜間・休日', amount: null, duration: '約6ヶ月', kind: null }], '夜間休日スタイルの場合6ヶ月(182日)'),
     []
   );
   assert.deepStrictEqual(
-    verifyPlans([{ label: '夜間・休日', amount: null, duration: '6ヶ月' }], '夜間休日スタイルの場合6ヶ月(182日)'),
-    [{ label: '夜間・休日', amount: null, duration: '6ヶ月' }]
+    verifyPlans([{ label: '夜間・休日', amount: null, duration: '6ヶ月', kind: null }], '夜間休日スタイルの場合6ヶ月(182日)'),
+    [{ label: '夜間・休日', amount: null, duration: '6ヶ月', kind: null }]
   );
 });
 
@@ -338,5 +338,70 @@ test('掲載中のレコードに、汎用サブドメイン由来の id が残�
   for (const school of schools) {
     const base = school.id.replace(/-\d+$/, '');
     assert.ok(!generic.includes(base), `${school.id}: 汎用サブドメイン由来の id`);
+  }
+});
+
+// ---- 金額の種別（kind）: 月額と総額を同じ軸で比べない ----
+
+test('buildPriceFromPlans: total があれば total だけで min_yen を求める', () => {
+  const { buildPriceFromPlans } = require('../lib/price-detail');
+  const r = buildPriceFromPlans(
+    [
+      { label: 'A', amount: 475200, duration: null, kind: 'total' },
+      { label: 'B', amount: 9800, duration: null, kind: 'monthly' },
+      { label: 'C', amount: 50000, duration: null, kind: 'enrollment' },
+    ],
+    'top_page'
+  );
+  assert.strictEqual(r.min_yen, 475200, '月額や入学金と混ぜて最小値を取っている');
+  assert.strictEqual(r.kind, 'total');
+  assert.strictEqual(r.display, '475,200円');
+});
+
+test('buildPriceFromPlans: total が無ければ monthly を使い、月額と分かる表示にする', () => {
+  const { buildPriceFromPlans } = require('../lib/price-detail');
+  // Vook の実例（入学金139,700円＋月額39,600円）。
+  const r = buildPriceFromPlans(
+    [
+      { label: 'エントリー', amount: 74800, duration: null, kind: 'monthly' },
+      { label: 'マスター', amount: 139700, duration: null, kind: 'enrollment' },
+      { label: 'マスター', amount: 39600, duration: null, kind: 'monthly' },
+    ],
+    'detail_page'
+  );
+  assert.strictEqual(r.min_yen, 39600);
+  assert.strictEqual(r.kind, 'monthly');
+  assert.strictEqual(r.display, '月額39,600円〜', '月額であることが表示から分からない');
+});
+
+test('buildPriceFromPlans: 入学金しか無い場合は min_yen を出さない（受講料ではない）', () => {
+  const { buildPriceFromPlans } = require('../lib/price-detail');
+  const r = buildPriceFromPlans([{ label: 'A', amount: 50000, duration: null, kind: 'enrollment' }], 'top_page');
+  assert.strictEqual(r.min_yen, null);
+  assert.strictEqual(r.kind, null);
+});
+
+test('buildPriceFromPlans: kind を判定できないプランは min_yen に使わない', () => {
+  const { buildPriceFromPlans } = require('../lib/price-detail');
+  const r = buildPriceFromPlans([{ label: 'A', amount: 100000, duration: null, kind: null }], 'top_page');
+  assert.strictEqual(r.min_yen, null);
+});
+
+test('normalizePlans: 同じプラン名でも入学金と月額は別エントリとして残す', () => {
+  const { normalizePlans } = require('../lib/price-detail');
+  const kept = normalizePlans([
+    { label: 'マスタープラン', amount: 139700, kind: 'enrollment' },
+    { label: 'マスタープラン', amount: 39600, kind: 'monthly' },
+  ]);
+  assert.strictEqual(kept.length, 2, '片方を割引価格と誤認して捨てている');
+});
+
+test('掲載中のレコードの price.kind は plans の種別と整合する', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    if (school.price.min_yen === null) continue;
+    const usable = school.plans.filter(p => p.kind === school.price.kind && p.amount !== null);
+    assert.ok(usable.length > 0, `${school.id}: price.kind に対応する plans が無い`);
+    assert.strictEqual(school.price.min_yen, Math.min(...usable.map(p => p.amount)), `${school.id}: min_yen が種別内の最小値でない`);
   }
 });

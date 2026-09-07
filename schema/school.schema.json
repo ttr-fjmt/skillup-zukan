@@ -120,7 +120,8 @@
       "required": [
         "display",
         "min_yen",
-        "scope"
+        "scope",
+        "kind"
       ],
       "properties": {
         "display": {
@@ -144,6 +145,18 @@
             "detail_page"
           ],
           "description": "金額をどこから取得したか。price_detail_url の有無から導出する。top_page=トップページのみ。detail_page=フォールバックで詳細ページを巡回した（その1ページ内の情報に限られる）。"
+        },
+        "kind": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "total",
+            "monthly",
+            null
+          ],
+          "description": "min_yen / display がどの種別の金額かを示す。total を優先し、無ければ monthly を使う。どちらも無ければ null。価格ソートは同じ kind 同士で行うこと。"
         }
       },
       "description": "plans から導出される表示用オブジェクト。値そのものは plans が持つ。"
@@ -391,14 +404,15 @@
     },
     "plans": {
       "type": "array",
-      "description": "ページ本文に記載されているプラン・コースの一覧。1プラン＝1期間＋1金額のセットで、price.display / price.min_yen はここから機械生成する。期間はスクール全体の代表値を持たない（「最短」を代表値にすると、キャンペーンの申込期限のような無関係な期間や、性質の違う短期集中コースの期間を掲げてしまうため）。金額・期間を確認できなかった場合は空配列。",
+      "description": "ページ本文に記載されているプラン・コースの一覧。1プラン＝1期間＋1金額のセットで、price.display / price.min_yen はここから機械生成する。期間はスクール全体の代表値を持たない（「最短」を代表値にすると、キャンペーンの申込期限のような無関係な期間や、性質の違う短期集中コースの期間を掲げてしまうため）。金額・期間を確認できなかった場合は空配列。 金額は種別（kind）が異なるものを混ぜて比較しない。月額制と一括制が同じ数値軸に並ぶと、桁の違うものが同列に見えてしまうため。",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": [
           "label",
           "amount",
-          "duration"
+          "duration",
+          "kind"
         ],
         "properties": {
           "label": {
@@ -422,6 +436,19 @@
             ],
             "maxLength": 60,
             "description": "そのプランの受講期間（例: \"16週間\", \"約6ヶ月\"）。本文の表記をそのまま。記載が無ければ null。"
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "total",
+              "monthly",
+              "enrollment",
+              null
+            ],
+            "description": "その金額の種別。total=一括・総額、monthly=月額、enrollment=入学金。本文の「月額」「入学金」「一括」等の表記から判定する。判定できなければ null。min_yen は同じ種別の中でのみ求める（月額と総額を比較・合算しない）。"
           }
         }
       }

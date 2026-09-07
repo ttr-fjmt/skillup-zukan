@@ -59,10 +59,10 @@ const CAREER_PATHS = {
 
 // display / min_yen は buildPriceFromPlans が plans から機械生成する（実データと同じ経路）。
 const PRICE_PLANS = [
-  [{ label: '月額プラン', amount: 9800, duration: '1ヶ月' }, { label: '年額プラン', amount: 98000, duration: '12ヶ月' }],
-  [{ label: '標準コース', amount: 198000, duration: '3ヶ月' }],
-  [{ label: '標準コース', amount: 348000, duration: '6ヶ月' }, { label: '短期コース', amount: 248000, duration: '3ヶ月' }],
-  [{ label: '4週間プラン', amount: 89000, duration: '4週間' }, { label: '8週間プラン', amount: 149000, duration: '8週間' }],
+  [{ label: '月額プラン', amount: 9800, duration: '1ヶ月', kind: 'total' }, { label: '年額プラン', amount: 98000, duration: '12ヶ月', kind: 'total' }],
+  [{ label: '標準コース', amount: 198000, duration: '3ヶ月', kind: 'total' }],
+  [{ label: '標準コース', amount: 348000, duration: '6ヶ月', kind: 'total' }, { label: '短期コース', amount: 248000, duration: '3ヶ月', kind: 'total' }],
+  [{ label: '4週間プラン', amount: 89000, duration: '4週間', kind: 'total' }, { label: '8週間プラン', amount: 149000, duration: '8週間', kind: 'total' }],
   [], // 金額・期間の記載が無いケース
 ];
 

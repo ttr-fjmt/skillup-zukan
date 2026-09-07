@@ -24,7 +24,8 @@
     "price": {
       "display": "475,200円〜",
       "min_yen": 475200,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "format": "online",
     "area": [],
@@ -43,7 +44,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:54:39.006Z",
+    "updated_at": "2026-09-07T16:11:09.578Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -58,32 +59,38 @@
       {
         "label": "16週間プラン",
         "amount": 567600,
-        "duration": "16週間"
+        "duration": "16週間",
+        "kind": "total"
       },
       {
         "label": "24週間プラン",
         "amount": 778800,
-        "duration": "24週間"
+        "duration": "24週間",
+        "kind": "total"
       },
       {
         "label": "36週間プラン",
         "amount": 1056000,
-        "duration": "36週間"
+        "duration": "36週間",
+        "kind": "total"
       },
       {
         "label": "集中8週間プラン",
         "amount": 475200,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       },
       {
         "label": "集中12週間プラン",
         "amount": 653400,
-        "duration": "12週間"
+        "duration": "12週間",
+        "kind": "total"
       },
       {
         "label": "集中18週間プラン",
         "amount": 884400,
-        "duration": "18週間"
+        "duration": "18週間",
+        "kind": "total"
       }
     ],
     "price_detail_url": "https://www.sejuku.net/courses/career/"
@@ -106,13 +113,13 @@
     "career_paths": [
       "Webエンジニア",
       "Webデザイナー",
-      "AIエンジニア",
-      "データサイエンティスト"
+      "AIエンジニア"
     ],
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": null
     },
     "format": "online",
     "area": [],
@@ -129,7 +136,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T15:54:39.088Z",
+    "updated_at": "2026-09-07T16:11:10.000Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -163,7 +170,8 @@
     "price": {
       "display": "657,800円〜",
       "min_yen": 657800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "format": "online",
     "area": [],
@@ -183,7 +191,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-camp",
     "created_at": "2026-09-07T14:44:36.765Z",
-    "updated_at": "2026-09-07T15:54:39.088Z",
+    "updated_at": "2026-09-07T16:11:10.573Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -194,12 +202,14 @@
       {
         "label": "短期集中スタイル✕オンラインプラン",
         "amount": 657800,
-        "duration": "10週間"
+        "duration": "10週間",
+        "kind": "total"
       },
       {
         "label": "夜間・休日スタイル✕オンラインプラン",
         "amount": 877800,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       }
     ]
   },
@@ -228,7 +238,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": null
     },
     "plans": [],
     "format": "both",
@@ -287,25 +298,29 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "39,600円〜",
+      "display": "月額39,600円〜",
       "min_yen": 39600,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "monthly"
     },
     "plans": [
       {
         "label": "エントリープラン",
         "amount": 74800,
-        "duration": null
+        "duration": null,
+        "kind": "monthly"
       },
       {
         "label": "マスタープラン",
         "amount": 39600,
-        "duration": null
+        "duration": null,
+        "kind": "monthly"
       },
       {
         "label": "マスタープランPro",
         "amount": 39600,
-        "duration": null
+        "duration": null,
+        "kind": "monthly"
       }
     ],
     "format": "online",
@@ -330,7 +345,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-vook",
     "created_at": "2026-09-07T16:02:58.050Z",
-    "updated_at": "2026-09-07T16:06:30.949Z",
+    "updated_at": "2026-09-07T22:18:28.198Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",

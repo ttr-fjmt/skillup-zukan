@@ -19,18 +19,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -90,13 +93,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -150,18 +155,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -209,18 +217,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -283,7 +294,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -329,18 +341,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -400,13 +415,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -460,18 +477,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -519,18 +539,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -593,7 +616,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -638,18 +662,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -709,13 +736,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -769,18 +798,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -828,18 +860,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -902,7 +937,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -947,18 +983,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1018,13 +1057,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1078,18 +1119,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -1137,18 +1181,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -1211,7 +1258,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -1256,18 +1304,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1327,13 +1378,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1387,18 +1440,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -1446,18 +1502,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -1520,7 +1579,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -1565,18 +1625,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1636,13 +1699,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1696,18 +1761,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -1755,18 +1823,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -1829,7 +1900,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -1874,18 +1946,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -1945,13 +2020,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -2005,18 +2082,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -2064,18 +2144,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -2138,7 +2221,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
@@ -2183,18 +2267,21 @@
     "price": {
       "display": "9,800円〜",
       "min_yen": 9800,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "月額プラン",
         "amount": 9800,
-        "duration": "1ヶ月"
+        "duration": "1ヶ月",
+        "kind": "total"
       },
       {
         "label": "年額プラン",
         "amount": 98000,
-        "duration": "12ヶ月"
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -2254,13 +2341,15 @@
     "price": {
       "display": "198,000円",
       "min_yen": 198000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 198000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -2314,18 +2403,21 @@
     "price": {
       "display": "248,000円〜",
       "min_yen": 248000,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "標準コース",
         "amount": 348000,
-        "duration": "6ヶ月"
+        "duration": "6ヶ月",
+        "kind": "total"
       },
       {
         "label": "短期コース",
         "amount": 248000,
-        "duration": "3ヶ月"
+        "duration": "3ヶ月",
+        "kind": "total"
       }
     ],
     "format": "offline",
@@ -2373,18 +2465,21 @@
     "price": {
       "display": "89,000円〜",
       "min_yen": 89000,
-      "scope": "detail_page"
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "4週間プラン",
         "amount": 89000,
-        "duration": "4週間"
+        "duration": "4週間",
+        "kind": "total"
       },
       {
         "label": "8週間プラン",
         "amount": 149000,
-        "duration": "8週間"
+        "duration": "8週間",
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -2447,7 +2542,8 @@
     "price": {
       "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
       "min_yen": null,
-      "scope": "top_page"
+      "scope": "top_page",
+      "kind": null
     },
     "plans": [],
     "format": "online",
