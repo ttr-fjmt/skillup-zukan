@@ -1,1 +1,151 @@
-[]
+[
+  {
+    "id": "sejuku",
+    "school_name": "SAMURAI ENGINEER",
+    "official_name": "株式会社SAMURAI",
+    "description": "日本初のマンツーマン専門プログラミングスクール。2013年の創業以来、専任講師による完全オリジナルなマンツーマンレッスンを提供。受講生の継続率は97.9%で、独自開発の学習管理システムと徹底したサポート体制により、初心者から実践的なスキル習得まで支援。転職やフリーランス、副業など多様なキャリアパスに対応。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "クラウドエンジニア",
+      "Webデザイナー",
+      "フリーランスエンジニア"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null
+    },
+    "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "専属マンツーマンレッスンによる完全オリジナルカリキュラム",
+      "学習コーチとキャリアアドバイザーによるサポート",
+      "700名以上の講師が対応するQ&A掲示板",
+      "独自開発の学習管理システムで進捗管理",
+      "転職保証コースで転職成功率99%"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://www.sejuku.net/",
+    "cta_url": "https://www.sejuku.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sejuku",
+    "created_at": "2026-09-07T14:44:24.268Z",
+    "updated_at": "2026-09-07T14:44:24.268Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://www.sejuku.net/"
+  },
+  {
+    "id": "techacademy",
+    "school_name": "TechAcademy",
+    "official_name": "株式会社Brewus",
+    "description": "現役エンジニアから学ぶオンラインに特化したプログラミングスクール。実務経験3年以上の現役エンジニアによるマンツーマンサポートで、Webエンジニア転職、副業、フリーランスなど多様なキャリアパスに対応。900社以上の提携企業から10万人以上の受講生を輩出。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "Webデザイナー",
+      "AIエンジニア",
+      "データサイエンティスト"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null
+    },
+    "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役エンジニアによるマンツーマンメンタリング",
+      "転職保証制度付きコースあり（条件あり）",
+      "副業案件保証5万円分",
+      "24時間チャット質問サポート",
+      "返金保証制度"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://techacademy.jp/",
+    "cta_url": "https://techacademy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-techacademy",
+    "created_at": "2026-09-07T14:44:30.601Z",
+    "updated_at": "2026-09-07T14:44:30.601Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://techacademy.jp/"
+  },
+  {
+    "id": "tech-camp",
+    "school_name": "TECH CAMP（テックキャンプ）",
+    "official_name": "div, Inc.",
+    "description": "生成AIとプログラミングスキルの習得に加え、ソフトウェア会社での最大1ヶ月間の実務プロジェクト参加を通じて、企業が即座に採用したい人材を育成するスクール。AIを活用した課題解決力と企画・設計思考を重視し、初心者向けの充実したサポート体制を備えている。短期集中（10週間）または夜間・休日（約6ヶ月）の2つの学習スタイルを提供。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ITエンジニア",
+      "フリーランスエンジニア"
+    ],
+    "price": {
+      "display": "短期集中スタイル：657,800円（税込）/ 夜間・休日スタイル：877,800円（税込）",
+      "min_yen": 657800
+    },
+    "duration": "短期集中スタイル：10週間 / 夜間・休日スタイル：約6ヶ月",
+    "format": "online",
+    "area": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "生成AIを活用したプログラミング学習",
+      "AIエージェント開発などのオリジナルアプリ開発が学習ゴール",
+      "ソフトウェア会社DIVXでの最大1ヶ月間の実務プロジェクト参加",
+      "3名のスタッフによる学習から転職活動まで徹底サポート",
+      "受講終了後1年間の追加カリキュラム（約200時間分）を無償提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "official_url": "https://tech-camp.in/",
+    "cta_url": "https://tech-camp.in/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tech-camp",
+    "created_at": "2026-09-07T14:44:36.765Z",
+    "updated_at": "2026-09-07T14:44:36.765Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://tech-camp.in/"
+  }
+]
