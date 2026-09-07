@@ -287,11 +287,27 @@ test('normalizeStructuredFields: 給付金・転職支援は true 以外をす�
   assert.strictEqual(result.career_support, false);
 });
 
-test('normalizeStructuredFields: price_min_yen は整数以外をすべて null にする', () => {
+test('normalizeStructuredFields: price は plans から組み立てられ、本文に無い金額は落ちる', () => {
   const base = { skill_genre: ['programming'], purpose: ['career_change'], target_level: 'beginner', format: 'online', area: [] };
-  assert.strictEqual(discovery.normalizeStructuredFields({ ...base, price_min_yen: '198000' }, 'programming').price_min_yen, null);
-  assert.strictEqual(discovery.normalizeStructuredFields({ ...base, price_min_yen: 198000.5 }, 'programming').price_min_yen, null);
-  assert.strictEqual(discovery.normalizeStructuredFields({ ...base, price_min_yen: 198000 }, 'programming').price_min_yen, 198000);
+  const pageText = '標準コースは198,000円、短期コースは98,000円です。';
+
+  const ok = discovery.normalizeStructuredFields(
+    { ...base, price_plans: [{ label: '標準コース', amount: 198000 }, { label: '短期コース', amount: 98000 }] },
+    'programming',
+    pageText
+  );
+  assert.strictEqual(ok.price.min_yen, 98000);
+  assert.strictEqual(ok.price.display, '98,000円〜');
+  assert.strictEqual(ok.price.scope, 'top_page');
+
+  // 本文に無い金額（AIが作った値）はプランごと落ち、結果として price は空になる。
+  const bogus = discovery.normalizeStructuredFields(
+    { ...base, price_plans: [{ label: '架空プラン', amount: 555555 }] },
+    'programming',
+    pageText
+  );
+  assert.strictEqual(bogus.price.min_yen, null);
+  assert.deepStrictEqual(bogus.price.plans, []);
 });
 
 test('照合キーは2文字未満の断片を作らない（どんなページにも偶然一致するのを防ぐ）', () => {

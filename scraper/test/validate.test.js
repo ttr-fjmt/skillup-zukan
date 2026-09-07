@@ -73,8 +73,17 @@ test('review_summary は null なら通る（未収集の状態）', () => {
 });
 
 test('price.min_yen は null を許すが、文字列は弾く', () => {
-  assert.strictEqual(validateSchool(validSchool({ price: { display: '要問い合わせ', min_yen: null } })).ok, true);
-  assert.strictEqual(validateSchool(validSchool({ price: { display: '198,000円', min_yen: '198000' } })).ok, false);
+  const base = { plans: [], scope: 'top_page' };
+  assert.strictEqual(validateSchool(validSchool({ price: { ...base, display: '要問い合わせ', min_yen: null } })).ok, true);
+  assert.strictEqual(validateSchool(validSchool({ price: { ...base, display: '198,000円', min_yen: '198000' } })).ok, false);
+});
+
+test('price.plans / price.scope は必須で、未知の scope は弾く', () => {
+  assert.strictEqual(validateSchool(validSchool({ price: { display: '198,000円', min_yen: 198000 } })).ok, false);
+  assert.strictEqual(
+    validateSchool(validSchool({ price: { display: '198,000円', min_yen: 198000, plans: [{ label: 'A', amount: 198000 }], scope: 'guess' } })).ok,
+    false
+  );
 });
 
 test('id が slug 形式でない場合は弾かれる', () => {

@@ -35,6 +35,7 @@ const {
   NOT_DISCLOSED_TEXT,
 } = require('./schema');
 const { queriesForGenre } = require('./discovery-queries');
+const { verifyPlans, buildPriceFromPlans } = require('./price-detail');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -448,17 +449,30 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
             'ページ本文に、受講後の想定進路・目指せる職種として実際に記載されている職種名' +
             '（例: "フロントエンドエンジニア", "動画クリエイター"）。記載が無ければ空配列 []。',
         },
-        price_display: {
-          type: 'string',
+        price_plans: {
+          type: 'array',
           description:
-            '料金の表示用文字列（例: "月額9,800円〜", "一括298,000円（税込）"）。' +
-            `本文に料金の記載が無ければ「${NOT_DISCLOSED_TEXT}」を返すこと（金額を推測しない）。`,
-        },
-        price_min_yen: {
-          type: ['integer', 'null'],
-          description:
-            'ソート・フィルター用の最低受講料金（円。税込表記があれば税込）。本文から数値が' +
-            '読み取れなければ null。0や仮の値で埋めないこと。',
+            'ページ本文に記載されているプラン・コースと、その金額の一覧。' +
+            '表示用の文章は作らないこと（display はこちらで機械的に組み立てる）。' +
+            '本文に金額の記載が無ければ空配列 [] を返すこと（金額を推測しない）。',
+          items: {
+            type: 'object',
+            properties: {
+              label: {
+                type: 'string',
+                description: 'プラン・コース名。ページ本文の表記をそのまま使う（例: "短期集中スタイル"）。',
+              },
+              amount: {
+                type: 'integer',
+                description:
+                  'そのプランの金額（円。税込表記があれば税込）。ページ本文に数字として書かれている値を、' +
+                  'カンマを除いた整数で返す（例: "657,800円" なら 657800）。自分で割り算・足し算して' +
+                  '求めた値は入れないこと。',
+              },
+            },
+            required: ['label', 'amount'],
+            additionalProperties: false,
+          },
         },
         duration: {
           type: 'string',
@@ -511,7 +525,7 @@ async function buildDiscoveredSchoolFields(candidate, pageText, anthropic, genre
       },
       required: [
         'school_name', 'official_name', 'description', 'skill_genre', 'purpose', 'target_level',
-        'career_paths', 'price_display', 'price_min_yen', 'duration', 'format', 'area',
+        'career_paths', 'price_plans', 'duration', 'format', 'area',
         'subsidy_eligible', 'career_support', 'features',
       ],
       additionalProperties: false,
@@ -808,9 +822,9 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
   result.subsidy_eligible = verifySubsidyClaim(result.subsidy_eligible === true, pageText);
   result.career_support = result.career_support === true;
 
-  result.price_min_yen =
-    Number.isInteger(result.price_min_yen) && result.price_min_yen >= 0 ? result.price_min_yen : null;
-  result.price_display = String(result.price_display || '').trim() || NOT_DISCLOSED_TEXT;
+  // display / min_yen はAIに書かせず、本文照合を通ったプランから機械生成する。
+  result.price = buildPriceFromPlans(verifyPlans(result.price_plans, pageText), 'top_page');
+  delete result.price_plans;
   result.duration = String(result.duration || '').trim() || NOT_DISCLOSED_TEXT;
   result.description = stripExaggeratedSentences(result.description);
   result.official_name = verifyOfficialName(String(result.official_name || '').trim() || null, pageText);

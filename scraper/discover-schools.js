@@ -89,7 +89,7 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     purpose: ai.purpose,
     target_level: ai.target_level,
     career_paths: ai.career_paths,
-    price: { display: ai.price_display, min_yen: ai.price_min_yen },
+    price: ai.price,
     duration: ai.duration,
     format: ai.format,
     area: ai.area,
@@ -206,16 +206,17 @@ async function main() {
 
       // トップページで料金を取得できなかった場合だけ、詳細ページを1回だけ見に行く
       // （全校で下層ページを辿ると無駄なリクエストになるため、フォールバックに留める）。
-      if (ai.price_min_yen === null) {
+      if (ai.price.min_yen === null) {
         const enrichment = await enrichPriceFromDetailPage(
           ai.school_name || candidate.name,
           html,
           verifiedUrl || candidate.website,
           anthropic
         );
-        if (enrichment.price) {
-          ai.price_display = enrichment.price.display;
-          ai.price_min_yen = enrichment.price.min_yen;
+        if (enrichment.price && enrichment.price.min_yen !== null) {
+          ai.price = enrichment.price;
+          // 詳細ページ1枚から得た価格は、そのスクール全体の最安値とは限らない。
+          ai.review_flags = [...(ai.review_flags || []), 'price_scope_limited'];
         }
         if (enrichment.detailPageUrl) ai.detail_page_url = enrichment.detailPageUrl;
         ai.review_flags = [...(ai.review_flags || []), ...enrichment.flags];

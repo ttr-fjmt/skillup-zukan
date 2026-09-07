@@ -85,25 +85,63 @@ test('extractPageLinks: javascript: や mailto: のリンクは候補にしな�
 
 // ---- 金額の裏取り ----
 
-test('verifyPriceClaim: 本文に金額があればそのまま採用する（カンマの有無は無視）', () => {
-  const r = priceDetail.verifyPriceClaim('一括657,800円（税込）', 657800, '受講料は 657,800円（税込）です。');
-  assert.deepStrictEqual(r, { display: '一括657,800円（税込）', min_yen: 657800 });
+test('verifyPlans: 本文にある金額のプランだけを残す（カンマの有無は無視）', () => {
+  const plans = [
+    { label: '集中8週間プラン', amount: 475200 },
+    { label: '16週間プラン', amount: 567600 },
+  ];
+  const pageText = '集中8週間プラン ¥475,200 / 16週間プラン ¥567,600';
+  assert.deepStrictEqual(priceDetail.verifyPlans(plans, pageText), plans);
 });
 
-test('verifyPriceClaim: 本文に無い金額は display ごと不採用にする（根拠不明の金額を残さない）', () => {
-  const r = priceDetail.verifyPriceClaim('一括298,000円', 298000, '料金についてはお問い合わせください。');
-  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null });
+test('verifyPlans: 本文に無い金額のプランは落とす（根拠不明の金額を残さない）', () => {
+  const plans = [
+    { label: '実在プラン', amount: 298000 },
+    { label: '架空プラン', amount: 999999 },
+  ];
+  const kept = priceDetail.verifyPlans(plans, '受講料は298,000円です。');
+  assert.deepStrictEqual(kept.map(p => p.label), ['実在プラン']);
 });
 
-test('verifyPriceClaim: min_yen が無ければ display だけ残す（金額を主張していない）', () => {
-  const r = priceDetail.verifyPriceClaim(NOT_DISCLOSED_TEXT, null, '本文');
-  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null });
-});
-
-test('verifyPriceClaim: AIが割り算して作った月額は本文に無いので落ちる', () => {
+test('verifyPlans: AIが割り算して作った月額は本文に無いので落ちる', () => {
   // 本文には総額 657,800円 しか無く、月額 54,816 は書かれていない。
-  const r = priceDetail.verifyPriceClaim('月額54,816円', 54816, '一括657,800円（税込）');
-  assert.strictEqual(r.min_yen, null);
+  const kept = priceDetail.verifyPlans([{ label: '月額', amount: 54816 }], '一括657,800円（税込）');
+  assert.deepStrictEqual(kept, []);
+});
+
+test('verifyPlans: label が空・amount が整数でないプランは落とす', () => {
+  const kept = priceDetail.verifyPlans(
+    [{ label: '', amount: 1000 }, { label: 'A', amount: '1000' }, { label: 'B', amount: -1 }],
+    '1000円 -1円'
+  );
+  assert.deepStrictEqual(kept, []);
+});
+
+test('buildPriceFromPlans: 複数プランなら最安値に「〜」を付ける', () => {
+  const r = priceDetail.buildPriceFromPlans(
+    [{ label: '16週間', amount: 567600 }, { label: '集中8週間', amount: 475200 }],
+    'detail_page'
+  );
+  assert.strictEqual(r.display, '475,200円〜');
+  assert.strictEqual(r.min_yen, 475200);
+  assert.strictEqual(r.scope, 'detail_page');
+  assert.strictEqual(r.plans.length, 2);
+});
+
+test('buildPriceFromPlans: プランが1件なら「〜」を付けない', () => {
+  const r = priceDetail.buildPriceFromPlans([{ label: '標準コース', amount: 657800 }], 'top_page');
+  assert.strictEqual(r.display, '657,800円');
+  assert.strictEqual(r.min_yen, 657800);
+});
+
+test('buildPriceFromPlans: プランが空なら定型文と null', () => {
+  const r = priceDetail.buildPriceFromPlans([], 'top_page');
+  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, plans: [], scope: 'top_page' });
+});
+
+test('buildPriceFromPlans: 桁区切りは実行環境のロケールに依存しない', () => {
+  // 既定ロケールに任せると環境によっては "657.800" になりうるため 'en-US' を明示している。
+  assert.strictEqual(priceDetail.buildPriceFromPlans([{ label: 'A', amount: 1234567 }]).display, '1,234,567円');
 });
 
 // ---- フォールバック全体 ----
@@ -115,11 +153,16 @@ test('enrichPriceFromDetailPage: 詳細ページから料金を取得し、フ�
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       fetchDetailPage: async () => { fetchCount += 1; return '受講料は一括298,000円（税込）です。'; },
       extractPriceFromPage: async (name, url, pageText) =>
-        priceDetail.verifyPriceClaim('一括298,000円（税込）', 298000, pageText),
+        priceDetail.buildPriceFromPlans(
+          priceDetail.verifyPlans([{ label: '標準コース', amount: 298000 }], pageText),
+          'detail_page'
+        ),
     },
     async () => {
       const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
-      assert.deepStrictEqual(r.price, { display: '一括298,000円（税込）', min_yen: 298000 });
+      assert.strictEqual(r.price.display, '298,000円');
+      assert.strictEqual(r.price.min_yen, 298000);
+      assert.strictEqual(r.price.scope, 'detail_page');
       assert.deepStrictEqual(r.flags, ['detail_page_crawled']);
       assert.strictEqual(r.detailPageUrl, 'https://example.com/price');
       assert.strictEqual(fetchCount, 1, 'HTTPリクエストが1回ではない');
@@ -134,7 +177,7 @@ test('enrichPriceFromDetailPage: 1校につきHTTPリクエストは最大1回�
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       // 辿った先がまた一覧ページで、料金が書かれていなかったケース。
       fetchDetailPage: async () => { fetchCount += 1; return '<a href="/price/detail">詳しい料金はこちら</a>'; },
-      extractPriceFromPage: async () => ({ display: NOT_DISCLOSED_TEXT, min_yen: null }),
+      extractPriceFromPage: async () => priceDetail.buildPriceFromPlans([], 'detail_page'),
     },
     async () => {
       await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});

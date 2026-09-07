@@ -22,21 +22,79 @@
 const path = require('path');
 
 const { getAnthropicClient } = require('./lib/school-discovery');
-const { enrichPriceFromDetailPage, fetchWithVerifyUA } = require('./lib/price-detail');
+const cheerio = require('cheerio');
+const {
+  enrichPriceFromDetailPage,
+  fetchWithVerifyUA,
+  fetchDetailPage,
+  extractPriceFromPage,
+  DETAIL_TEXT_MAX_CHARS,
+} = require('./lib/price-detail');
 const { politeDelay } = require('./lib/http');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
 
 const MAX_PER_RUN = Number(process.env.ENRICH_MAX_PER_RUN || 20);
 const DRY_RUN = Boolean(process.env.ENRICH_DRY_RUN);
 
-/** 対象は price.min_yen が null のレコードのみ（既に取れているものは触らない）。 */
+/**
+ * 対象は次のいずれか。
+ *   - price.min_yen が null（まだ金額を取れていない）
+ *   - price.plans が無い（display をAIに書かせていた旧フォーマットのままのレコード）
+ * 既に新フォーマットで金額が入っているレコードは触らない。
+ */
+function needsEnrichment(school) {
+  if (!school.price) return true;
+  if (school.price.min_yen === null) return true;
+  return !Array.isArray(school.price.plans) || school.price.plans.length === 0;
+}
+
 function selectTargets(schools) {
   const onlyId = (process.env.ENRICH_ONLY_SCHOOL_ID || '').trim();
   return schools
     .filter(s => s.status === 'active')
-    .filter(s => !s.price || s.price.min_yen === null)
+    .filter(needsEnrichment)
     .filter(s => !onlyId || s.id === onlyId)
     .slice(0, MAX_PER_RUN);
+}
+
+/** HTMLから本文テキストを取り出す（トップページからの再抽出用）。 */
+function pageTextFrom(html) {
+  const $ = cheerio.load(html);
+  $('script, style, noscript').remove();
+  return $('body').text().replace(/[ \t　]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim().slice(0, DETAIL_TEXT_MAX_CHARS);
+}
+
+/**
+ * 旧フォーマット（display がAIの自由記述、plans 無し）のレコードを新フォーマットへ移行する。
+ * 当時の金額がどこから来たかを detail_page_url の有無で判断し、同じページから取り直す。
+ */
+async function migrateExistingPrice(school, homepageHtml, anthropic) {
+  if (school.detail_page_url) {
+    let pageText;
+    try {
+      await politeDelay();
+      pageText = await fetchDetailPage(school.detail_page_url);
+    } catch (err) {
+      console.warn(`  詳細ページの再取得に失敗しました: ${err.message}`);
+      return null;
+    }
+    const price = await extractPriceFromPage(school.school_name, school.detail_page_url, pageText, anthropic, 'detail_page');
+    return price.min_yen === null ? null : price;
+  }
+
+  const price = await extractPriceFromPage(school.school_name, school.official_url, pageTextFrom(homepageHtml), anthropic, 'top_page');
+  return price.min_yen === null ? null : price;
+}
+
+/**
+ * 詳細ページ1枚から得た価格は、そのスクール全体の最安値とは限らない
+ * （他コースにより安いプランがありうる）。機械的に検出できる形で残す。
+ */
+function applyScopeFlags(school, price) {
+  const flags = new Set(school.review_flags || []);
+  if (price.scope === 'detail_page') flags.add('price_scope_limited');
+  else flags.delete('price_scope_limited');
+  school.review_flags = [...flags];
 }
 
 async function main() {
@@ -64,6 +122,26 @@ async function main() {
       continue;
     }
 
+    // 既に金額はあるが plans を持たない（display をAIに書かせていた旧フォーマットの）
+    // レコードは、当時と同じページから plans 形式で取り直す。新たにリンクを選び直すと
+    // 別のページの金額に置き換わってしまい、移行ではなく再収集になってしまうため。
+    if (school.price && school.price.min_yen !== null) {
+      const migrated = await migrateExistingPrice(school, html, anthropic);
+      if (migrated) {
+        console.log(
+          `  price(移行): 「${school.price.display}」 -> 「${migrated.display}」 ` +
+            `(min_yen=${migrated.min_yen}, plans=${migrated.plans.length}件, scope=${migrated.scope})`
+        );
+        school.price = migrated;
+        applyScopeFlags(school, migrated);
+        school.updated_at = new Date().toISOString();
+        updated += 1;
+      } else {
+        console.warn('  移行できませんでした（金額を再確認できず）。既存の値を据え置きます。');
+      }
+      continue;
+    }
+
     const enrichment = await enrichPriceFromDetailPage(school.school_name, html, school.official_url, anthropic);
 
     if (enrichment.detailPageUrl) {
@@ -73,8 +151,12 @@ async function main() {
     }
 
     if (enrichment.price && enrichment.price.min_yen !== null) {
-      console.log(`  price: null -> ${enrichment.price.min_yen}円 「${enrichment.price.display}」`);
-      school.price = { display: enrichment.price.display, min_yen: enrichment.price.min_yen };
+      console.log(
+        `  price: null -> 「${enrichment.price.display}」 ` +
+          `(min_yen=${enrichment.price.min_yen}, plans=${enrichment.price.plans.length}件, scope=${enrichment.price.scope})`
+      );
+      school.price = enrichment.price;
+      applyScopeFlags(school, enrichment.price);
       school.updated_at = new Date().toISOString();
       updated += 1;
     } else if (enrichment.detailPageUrl) {

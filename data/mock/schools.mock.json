@@ -17,8 +17,19 @@
       "フロントエンドエンジニア"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -75,8 +86,15 @@
       "バックエンドエンジニア"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -127,8 +145,19 @@
       "フロントエンドエンジニア"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -173,8 +202,19 @@
       "バックエンドエンジニア"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -229,8 +269,10 @@
       "フロントエンドエンジニア"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -273,8 +315,19 @@
       "コーダー"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -331,8 +384,15 @@
       "バナー制作"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -383,8 +443,19 @@
       "コーダー"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -429,8 +500,19 @@
       "バナー制作"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -485,8 +567,10 @@
       "コーダー"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -528,8 +612,19 @@
       "UXリサーチャー"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -586,8 +681,15 @@
       "プロダクトデザイナー"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -638,8 +740,19 @@
       "UXリサーチャー"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -684,8 +797,19 @@
       "プロダクトデザイナー"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -740,8 +864,10 @@
       "UXリサーチャー"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -783,8 +909,19 @@
       "映像クリエイター"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -841,8 +978,15 @@
       "YouTube運用担当"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -893,8 +1037,19 @@
       "映像クリエイター"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -939,8 +1094,19 @@
       "YouTube運用担当"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -995,8 +1161,10 @@
       "映像クリエイター"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -1038,8 +1206,19 @@
       "広告運用担当"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -1096,8 +1275,15 @@
       "SEO担当"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -1148,8 +1334,19 @@
       "広告運用担当"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -1194,8 +1391,19 @@
       "SEO担当"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -1250,8 +1458,10 @@
       "広告運用担当"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -1293,8 +1503,19 @@
       "生成AI活用リード"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -1351,8 +1572,15 @@
       "データ利活用担当"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -1403,8 +1631,19 @@
       "生成AI活用リード"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -1449,8 +1688,19 @@
       "データ利活用担当"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -1505,8 +1755,10 @@
       "生成AI活用リード"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -1548,8 +1800,19 @@
       "通訳・翻訳アシスタント"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -1606,8 +1869,15 @@
       "外資系企業スタッフ"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -1658,8 +1928,19 @@
       "通訳・翻訳アシスタント"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -1704,8 +1985,19 @@
       "外資系企業スタッフ"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -1760,8 +2052,10 @@
       "通訳・翻訳アシスタント"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
@@ -1803,8 +2097,19 @@
       "不動産営業"
     ],
     "price": {
-      "display": "月額9,800円〜（サブスク型）",
-      "min_yen": 9800
+      "display": "9,800円〜",
+      "min_yen": 9800,
+      "plans": [
+        {
+          "label": "月額プラン",
+          "amount": 9800
+        },
+        {
+          "label": "年額プラン",
+          "amount": 98000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準3ヶ月",
     "format": "online",
@@ -1861,8 +2166,15 @@
       "総務・法務"
     ],
     "price": {
-      "display": "一括198,000円（税込）",
-      "min_yen": 198000
+      "display": "198,000円",
+      "min_yen": 198000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 198000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "4〜24週間から選択",
     "format": "online",
@@ -1913,8 +2225,19 @@
       "不動産営業"
     ],
     "price": {
-      "display": "一括348,000円（税込・分割可）",
-      "min_yen": 348000
+      "display": "248,000円〜",
+      "min_yen": 248000,
+      "plans": [
+        {
+          "label": "標準コース",
+          "amount": 348000
+        },
+        {
+          "label": "短期コース",
+          "amount": 248000
+        }
+      ],
+      "scope": "top_page"
     },
     "duration": "標準6ヶ月（週2回）",
     "format": "offline",
@@ -1959,8 +2282,19 @@
       "総務・法務"
     ],
     "price": {
-      "display": "4週間プラン 89,000円〜",
-      "min_yen": 89000
+      "display": "89,000円〜",
+      "min_yen": 89000,
+      "plans": [
+        {
+          "label": "4週間プラン",
+          "amount": 89000
+        },
+        {
+          "label": "8週間プラン",
+          "amount": 149000
+        }
+      ],
+      "scope": "detail_page"
     },
     "duration": "最短1ヶ月",
     "format": "both",
@@ -2015,8 +2349,10 @@
       "不動産営業"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "plans": [],
+      "scope": "top_page"
     },
     "duration": "通い放題（期間の定めなし）",
     "format": "online",

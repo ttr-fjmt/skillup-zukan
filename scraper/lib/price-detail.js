@@ -152,53 +152,92 @@ async function choosePriceDetailLink(links, schoolName, anthropic) {
 }
 
 /**
- * AIが返した金額が、実際にページ本文に書かれているかを機械的に照合する。
- *
- * min_yen の数字が本文に見つからなければ、display ごと不採用にする
- * （display だけ残すと、根拠不明の金額が表示に出てしまうため）。
+ * AIが返したプランの金額が、実際にページ本文に書かれているかを1件ずつ機械的に照合する。
  * カンマ・空白の有無は無視して照合する（"657,800円" と 657800 を同一視する）。
+ *
+ * 本文に見つからない金額は、そのプランごと落とす。AIが分割払いから割り算して作った
+ * 月額のような「計算で出しただけで本文には無い数字」はここで消える。
  */
-function verifyPriceClaim(priceDisplay, priceMinYen, pageText) {
-  const display = String(priceDisplay || '').trim();
-
-  if (!Number.isInteger(priceMinYen) || priceMinYen < 0) {
-    return { display: display || NOT_DISCLOSED_TEXT, min_yen: null };
-  }
-
+function verifyPlans(plans, pageText) {
   const compact = String(pageText || '').replace(/[,，\s　]/g, '');
-  if (compact.includes(String(priceMinYen))) {
-    return { display: display || NOT_DISCLOSED_TEXT, min_yen: priceMinYen };
+
+  return (Array.isArray(plans) ? plans : []).filter(plan => {
+    if (!plan || typeof plan.label !== 'string' || !plan.label.trim()) return false;
+    if (!Number.isInteger(plan.amount) || plan.amount < 0) return false;
+
+    if (!compact.includes(String(plan.amount))) {
+      console.warn(`  プラン「${plan.label}」の ${plan.amount}円 はページ本文に見当たらないため除外しました。`);
+      return false;
+    }
+    return true;
+  });
+}
+
+/**
+ * plans から display と min_yen を機械的に組み立てる。
+ *
+ * display をAIの自由記述にすると、プランの羅列がそのまま入ったり、要約の仕方が
+ * スクールごとにバラついたりする（実際に102字のプラン羅列が入った）。表示文字列は
+ * 常に同じ規則で組み立てる。
+ *
+ * ロケールは 'en-US' を明示する。既定ロケールに任せると、実行環境によっては
+ * 桁区切りが "657.800" のようになりうるため。日本語表記としての結果は同じ。
+ */
+function buildPriceFromPlans(plans, scope = 'top_page') {
+  const valid = (Array.isArray(plans) ? plans : []).filter(
+    p => p && typeof p.label === 'string' && Number.isInteger(p.amount) && p.amount >= 0
+  );
+
+  if (valid.length === 0) {
+    return { display: NOT_DISCLOSED_TEXT, min_yen: null, plans: [], scope };
   }
 
-  console.warn(`  price ${priceMinYen}円 はページ本文に見当たらないため不採用にしました（合成の可能性）。`);
-  return { display: NOT_DISCLOSED_TEXT, min_yen: null };
+  const min = Math.min(...valid.map(p => p.amount));
+  const formatted = min.toLocaleString('en-US');
+  return {
+    // プランが1件だけなら「〜」を付けない（幅が無いのに幅があるように見せない）。
+    display: valid.length === 1 ? `${formatted}円` : `${formatted}円〜`,
+    min_yen: min,
+    plans: valid.map(p => ({ label: p.label.trim().slice(0, 80), amount: p.amount })),
+    scope,
+  };
 }
 
 /** 詳細ページの本文から料金を抽出する（tool-forced）。 */
-async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic) {
+async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, scope = 'detail_page') {
   const tool = {
     name: 'extract_price',
     description: '受講料金のページ本文から、表示用の料金文字列と、ソート用の最低金額を抽出する。',
     input_schema: {
       type: 'object',
       properties: {
-        price_display: {
-          type: 'string',
+        plans: {
+          type: 'array',
           description:
-            '料金の表示用文字列（例: "月額9,800円〜", "一括298,000円（税込）"）。' +
-            'ページ本文に書かれている金額をそのまま使うこと。' +
-            `本文に金額の記載が無ければ「${NOT_DISCLOSED_TEXT}」を返すこと（金額を推測・計算しない）。`,
-        },
-        price_min_yen: {
-          type: ['integer', 'null'],
-          description:
-            'ソート用の最低受講料金（円）。ページ本文に書かれている金額のうち最も安いものを、' +
-            'カンマを除いた整数で返す（例: "657,800円" なら 657800）。' +
-            '本文から金額を読み取れなければ null。0や仮の値で埋めないこと。' +
-            '割引後の価格と通常価格が併記されている場合は、通常価格（割引前）を使うこと。',
+            'ページ本文に記載されているプラン・コースと、その金額の一覧。' +
+            '表示用の文章は作らないこと（こちらで機械的に組み立てる）。' +
+            '金額の記載が読み取れない場合は空配列 [] を返すこと。',
+          items: {
+            type: 'object',
+            properties: {
+              label: {
+                type: 'string',
+                description: 'プラン・コース名。ページ本文の表記をそのまま使う（例: "集中8週間プラン"）。',
+              },
+              amount: {
+                type: 'integer',
+                description:
+                  'そのプランの金額（円）。ページ本文に数字として書かれている値を、カンマを除いた' +
+                  '整数で返す（例: "¥657,800" なら 657800）。自分で割り算・足し算して求めた値は' +
+                  '入れないこと。割引後と通常価格が併記されている場合は通常価格（割引前）を使う。',
+              },
+            },
+            required: ['label', 'amount'],
+            additionalProperties: false,
+          },
         },
       },
-      required: ['price_display', 'price_min_yen'],
+      required: ['plans'],
       additionalProperties: false,
     },
   };
@@ -212,13 +251,13 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic) 
       role: 'user',
       content:
         `スクール「${schoolName}」の料金ページ（${detailUrl}）の本文です。\n\n${pageText}\n\n` +
-        'この本文に実際に記載されている金額だけを使って extract_price を呼び出してください。\n' +
+        'この本文に実際に記載されているプランと金額だけを使って extract_price を呼び出してください。\n' +
         '厳守事項:\n' +
         '- 本文に書かれていない金額を創作・推測・計算しないこと。\n' +
-        '- 分割払いの月額と総額が併記されている場合、price_min_yen には実際に本文に' +
-        '数字として書かれている値を使うこと（自分で割り算して求めた値を入れない）。\n' +
-        `- 金額の記載が読み取れない場合は、正直に price_display を「${NOT_DISCLOSED_TEXT}」、` +
-        'price_min_yen を null にすること。',
+        '- 分割払いの月額と総額が併記されている場合、本文に数字として書かれている値だけを' +
+        '使うこと（自分で割り算して求めた値を入れない）。\n' +
+        '- 表示用の文章・要約は作らないこと。プラン名と金額のペアだけを返せばよい。\n' +
+        '- 金額の記載が読み取れない場合は、正直に plans を空配列 [] にすること。',
     }],
   });
 
@@ -231,9 +270,10 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic) 
   );
 
   const toolUse = msg.content.find(b => b.type === 'tool_use');
-  if (!toolUse) return { display: NOT_DISCLOSED_TEXT, min_yen: null };
+  if (!toolUse) return buildPriceFromPlans([], scope);
 
-  return verifyPriceClaim(toolUse.input.price_display, toolUse.input.price_min_yen, pageText);
+  // 本文照合を通ったプランだけから display / min_yen を機械生成する。
+  return buildPriceFromPlans(verifyPlans(toolUse.input.plans, pageText), scope);
 }
 
 /** 詳細ページを1回だけ取得する（HTTP検証と同じUA・ポライトウェイトを流用）。 */
@@ -298,7 +338,8 @@ module.exports = {
   DETAIL_TEXT_MAX_CHARS,
   extractPageLinks,
   choosePriceDetailLink,
-  verifyPriceClaim,
+  verifyPlans,
+  buildPriceFromPlans,
   extractPriceFromPage,
   fetchDetailPage,
   fetchWithVerifyUA,

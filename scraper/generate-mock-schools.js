@@ -21,6 +21,7 @@ const path = require('path');
 
 const { GENRE, PURPOSE, LEVEL, GENRE_LABELS, GENRE_PURPOSE_ORDER } = require('./lib/schema');
 const { buildClickTrackingId } = require('./lib/school-id');
+const { buildPriceFromPlans } = require('./lib/price-detail');
 const { validateSchools } = require('./lib/validate');
 
 const OUT_PATH = path.join(__dirname, '..', 'data', 'mock', 'schools.mock.json');
@@ -56,12 +57,13 @@ const CAREER_PATHS = {
   certification: ['経理・財務', '不動産営業', '総務・法務'],
 };
 
-const PRICES = [
-  { display: '月額9,800円〜（サブスク型）', min_yen: 9800 },
-  { display: '一括198,000円（税込）', min_yen: 198000 },
-  { display: '一括348,000円（税込・分割可）', min_yen: 348000 },
-  { display: '4週間プラン 89,000円〜', min_yen: 89000 },
-  { display: '要問い合わせ', min_yen: null },
+// display / min_yen は buildPriceFromPlans が plans から機械生成する（実データと同じ経路）。
+const PRICE_PLANS = [
+  [{ label: '月額プラン', amount: 9800 }, { label: '年額プラン', amount: 98000 }],
+  [{ label: '標準コース', amount: 198000 }],
+  [{ label: '標準コース', amount: 348000 }, { label: '短期コース', amount: 248000 }],
+  [{ label: '4週間プラン', amount: 89000 }, { label: '8週間プラン', amount: 149000 }],
+  [], // 金額の記載が無いケース
 ];
 
 const DURATIONS = ['標準3ヶ月', '4〜24週間から選択', '標準6ヶ月（週2回）', '最短1ヶ月', '通い放題（期間の定めなし）'];
@@ -84,7 +86,7 @@ function buildMockSchool(genre, variantIndex) {
   const url = `https://mock-${genre.replace(/_/g, '-')}-${n}.example.com/`;
 
   const area = variant.areaIndex === null ? [] : AREA_SETS[variant.areaIndex];
-  const price = PRICES[variantIndex];
+  const price = buildPriceFromPlans(PRICE_PLANS[variantIndex], variantIndex === 3 ? 'detail_page' : 'top_page');
 
   const school = {
     id,
