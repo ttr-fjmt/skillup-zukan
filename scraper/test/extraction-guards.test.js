@@ -405,3 +405,46 @@ test('掲載中のレコードの price.kind は plans の種別と整合する'
     assert.strictEqual(school.price.min_yen, Math.min(...usable.map(p => p.amount)), `${school.id}: min_yen が種別内の最小値でない`);
   }
 });
+
+// ---- recheck-guards.js（全レコードへのガード再適用） ----
+
+test('inferKind: 金額の直前で最も近い表記を採る（「入学金無料月額74,800円」を誤らない）', () => {
+  const { inferKind } = require('../recheck-guards');
+  assert.strictEqual(inferKind(74800, 'エントリープラン入学金無料月額74800円'), 'monthly');
+  assert.strictEqual(inferKind(139700, 'マスタープラン入学金139700円(税込)'), 'enrollment');
+  assert.strictEqual(inferKind(39600, '入学金139700円(税込)〜月額39600円'), 'monthly');
+  assert.strictEqual(inferKind(657800, '一括料金657800円(税込)'), 'total');
+  assert.strictEqual(inferKind(999999, '本文に無い金額'), null);
+});
+
+test('recheckSchool: 本文に無い値だけを落とし、新しい値は作らない', () => {
+  const { recheckSchool } = require('../recheck-guards');
+  const school = {
+    id: 'x', school_name: 'テスト', official_name: 'Example Co., Ltd.',
+    career_paths: ['Webデザイナー', '存在しない職種'],
+    area: ['東京都', '沖縄県'], format: 'both',
+    plans: [{ label: 'A', amount: 100000, duration: null, kind: null }],
+    price: { display: '', min_yen: null, scope: 'top_page', kind: null },
+    review_flags: [],
+  };
+  const changes = recheckSchool(school, '東京校の教室でWebデザイナーを目指せます。一括料金100,000円。');
+
+  assert.strictEqual(school.official_name, null, '英語表記のみの社名が残っている');
+  assert.deepStrictEqual(school.career_paths, ['Webデザイナー']);
+  assert.deepStrictEqual(school.area, ['東京都'], '本文に無い県が残っている');
+  assert.strictEqual(school.price.min_yen, 100000);
+  assert.strictEqual(school.price.kind, 'total');
+  assert.ok(changes.length >= 3);
+});
+
+test('recheckSchool: 本文にある値は落とさない（取りこぼしを作らない）', () => {
+  const { recheckSchool } = require('../recheck-guards');
+  const school = {
+    id: 'y', school_name: 'テスト', official_name: '株式会社サンプル',
+    career_paths: ['Webエンジニア'], area: [], format: 'online',
+    plans: [], price: { display: '', min_yen: null, scope: 'top_page', kind: null }, review_flags: [],
+  };
+  const changes = recheckSchool(school, '会社名 株式会社サンプル / Webエンジニアを目指すオンラインスクール');
+  assert.deepStrictEqual(changes, []);
+  assert.strictEqual(school.official_name, '株式会社サンプル');
+});
