@@ -40,14 +40,15 @@
     "school_name": {
       "type": "string",
       "minLength": 1,
-      "maxLength": 120
+      "maxLength": 120,
+      "description": "サービス名。UIに表示する名称はこれを使う（詳細ページの見出し、一覧のカード、診断結果、CTA周辺のすべて）。"
     },
     "official_name": {
       "type": [
         "string",
         "null"
       ],
-      "description": "運営会社の正式名称（任意）。公式サイトから読み取れない場合は null。",
+      "description": "運営会社の正式名称（社内参考情報。UI表示には使用しない。表示用の名称は school_name を使用する）。ページ本文に「会社名」「商号」等として明示された表記のみを一字一句入れる。英語表記しか確認できない場合や、著作権表記からの推測しかできない場合は null（誤ると実在の法人についての誤情報になるため、取りこぼしの方を許容する）。",
       "maxLength": 160
     },
     "description": {

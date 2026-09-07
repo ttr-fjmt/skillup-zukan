@@ -55,6 +55,19 @@ Claude API を使うスクリプト（`discover-schools.js` / `summarize-reviews
 
 実行時には、許可リストとは別に `lib/robots.js` による robots.txt の機械チェックも通す（二重の安全網。人力確認の代わりにはならない）。リクエスト間隔は最低2秒（`REVIEW_MIN_DELAY_MS`）。
 
+## 表示名の約束: `school_name` を使う
+
+UIに出すスクールの名称は、**必ず `school_name`（サービス名）**を使う。詳細ページの見出し・一覧のカード・診断結果・CTA周辺のいずれも同じ。
+
+`official_name`（運営会社の正式名称）は**社内参考情報で、UI表示には使わない**。理由は2つ。
+
+1. 利用者が探しているのはサービス名であって運営法人名ではない（「TechAcademy」を探す人は「株式会社ブリューアス」では見つけられない）
+2. `official_name` は公式サイト本文に明示されていた場合のみ入り、確認できなければ `null` になる。表示に使うと、同じ画面で名前が出る講座と出ない講座が混ざる
+
+`null` になるのは仕様どおりの正常な状態で、埋めるべき欠損ではない。`official_name` は運営元の照合や、同一法人が複数サービスを運営している場合の突き合わせに使う。
+
+この方針は `schema/school.schema.json` の `school_name` / `official_name` の description と、`scraper/lib/schema.js` 冒頭のコメントにも記載してある。
+
 ## 著作権まわりの設計
 
 口コミの原文は転載も1件ずつの言い換えもしない。`lib/review-summary.js` は次を構造として担保している。

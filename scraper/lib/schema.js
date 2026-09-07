@@ -11,6 +11,21 @@
  * JSON Schema（schema/school.schema.json）のenumはすべてここと一致させること。
  */
 
+/**
+ * 【表示名の約束】UIに出すスクールの名称は必ず school_name（サービス名）を使う。
+ *
+ * official_name（運営会社の正式名称）は社内参考情報であり、UI表示には使用しない。
+ * 理由は2つ:
+ *   1. 利用者が探しているのはサービス名であって運営法人名ではない
+ *      （「TechAcademy」を探す人は「株式会社ブリューアス」では見つけられない）。
+ *   2. official_name は公式サイト本文に明示されていた場合のみ入り、確認できなければ
+ *      null になる（lib/school-discovery.js の verifyOfficialName）。表示に使うと、
+ *      同じ画面で名前が出る講座と出ない講座が混ざることになる。
+ *
+ * 詳細ページの見出し・一覧のカード・診断結果・CTA周辺のいずれも school_name を使うこと。
+ * この方針は schema/school.schema.json の各 description にも記載してある。
+ */
+
 /** スキルジャンル。schema/school.schema.json の skill_genre[] のenumと一致させること。 */
 const GENRE = [
   'programming',   // プログラミング・エンジニア
