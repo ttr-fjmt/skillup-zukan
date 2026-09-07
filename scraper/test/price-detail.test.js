@@ -139,6 +139,71 @@ test('buildPriceFromPlans: プランが空なら定型文と null', () => {
   assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, plans: [], scope: 'top_page' });
 });
 
+// ---- 割引価格の除外（回帰） ----
+
+/**
+ * sejuku の実例を模した、通常価格と割引後価格が併記されたページ本文。
+ * 実際にこの構造で min_yen が割引価格（456,390円）になる誤りが起きた。
+ */
+const DISCOUNT_PAGE_TEXT = `
+転職コースの料金
+16週間プラン 通常 567,600円 → 期間限定キャンペーン価格 544,170円
+24週間プラン 通常 778,800円 → 期間限定キャンペーン価格 744,810円
+集中8週間プラン 通常 475,200円 → 期間限定キャンペーン価格 456,390円
+`;
+
+test('割引/通常が併記されていても、通常価格のみが採用される（回帰: min_yen が割引価格にならない）', () => {
+  // AIが両方を別エントリとして返してきた場合を想定する（実際にそうなった）。
+  const aiPlans = [
+    { label: '16週間プラン', amount: 567600 },
+    { label: '16週間プラン', amount: 544170 },
+    { label: '24週間プラン', amount: 778800 },
+    { label: '24週間プラン', amount: 744810 },
+    { label: '集中8週間プラン', amount: 475200 },
+    { label: '集中8週間プラン', amount: 456390 },
+  ];
+
+  const verified = priceDetail.verifyPlans(aiPlans, DISCOUNT_PAGE_TEXT);
+  assert.strictEqual(verified.length, 6, '本文に実在する金額はすべて照合を通る');
+
+  const price = priceDetail.buildPriceFromPlans(verified, 'detail_page');
+  assert.strictEqual(price.min_yen, 475200, 'min_yen が割引価格になっている');
+  assert.strictEqual(price.display, '475,200円〜');
+  assert.strictEqual(price.plans.length, 3, '同名プランが重複して残っている');
+  assert.deepStrictEqual(
+    price.plans.map(p => p.amount).sort((a, b) => a - b),
+    [475200, 567600, 778800]
+  );
+});
+
+test('dropDiscountedDuplicates: 期間・内容が違うプランは別エントリとして残す', () => {
+  const plans = [
+    { label: '16週間プラン', amount: 567600 },
+    { label: '24週間プラン', amount: 778800 },
+    { label: '集中8週間プラン', amount: 475200 },
+  ];
+  const price = priceDetail.buildPriceFromPlans(plans, 'detail_page');
+  assert.strictEqual(price.plans.length, 3, 'ラベルが異なるプランまで畳んでいる');
+  assert.strictEqual(price.min_yen, 475200);
+});
+
+test('dropDiscountedDuplicates: 前後の空白だけが違うラベルは同一プランとして扱う', () => {
+  const price = priceDetail.buildPriceFromPlans(
+    [{ label: '標準コース', amount: 300000 }, { label: ' 標準コース ', amount: 240000 }],
+    'top_page'
+  );
+  assert.strictEqual(price.plans.length, 1);
+  assert.strictEqual(price.min_yen, 300000);
+});
+
+test('抽出プロンプトに割引価格の除外指示が含まれている', () => {
+  // プロンプト側の指示と機械的なガードの二重で守る方針（official_name の件以降の原則）。
+  const source = require('fs').readFileSync(require.resolve('../lib/price-detail'), 'utf8');
+  assert.match(source, /割引後価格/);
+  assert.match(source, /キャンペーン価格/);
+  assert.match(source, /期間やカリキュラムが明確に異なるプランは/);
+});
+
 test('buildPriceFromPlans: 桁区切りは実行環境のロケールに依存しない', () => {
   // 既定ロケールに任せると環境によっては "657.800" になりうるため 'en-US' を明示している。
   assert.strictEqual(priceDetail.buildPriceFromPlans([{ label: 'A', amount: 1234567 }]).display, '1,234,567円');

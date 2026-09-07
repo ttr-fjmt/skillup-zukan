@@ -19,6 +19,11 @@ on:
         required: false
         type: string
         default: "20"
+      force:
+        description: "true にすると、既に price が入っているレコードも再抽出する（プロンプト修正後の反映用）"
+        required: false
+        type: boolean
+        default: false
       dry_run:
         description: "true にすると書き込まず結果だけ表示する"
         required: false
@@ -60,6 +65,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ENRICH_ONLY_SCHOOL_ID: ${{ github.event.inputs.only_school_id }}
           ENRICH_MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '20' }}
+          ENRICH_FORCE: ${{ github.event.inputs.force == 'true' && '1' || '' }}
           ENRICH_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
         run: node enrich-prices.js
 

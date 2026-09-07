@@ -49,11 +49,17 @@ function needsEnrichment(school) {
   return !Array.isArray(school.price.plans) || school.price.plans.length === 0;
 }
 
+/**
+ * ENRICH_FORCE=1 で needsEnrichment の判定を飛ばし、既に plans があるレコードも
+ * 対象に含める。抽出プロンプトを直したあと、その結果を既存レコードに反映し直すために使う
+ * （プロンプト修正のたびに手でデータを消す、という運用を避けるため）。
+ */
 function selectTargets(schools) {
   const onlyId = (process.env.ENRICH_ONLY_SCHOOL_ID || '').trim();
+  const force = Boolean(process.env.ENRICH_FORCE);
   return schools
     .filter(s => s.status === 'active')
-    .filter(needsEnrichment)
+    .filter(s => force || needsEnrichment(s))
     .filter(s => !onlyId || s.id === onlyId)
     .slice(0, MAX_PER_RUN);
 }

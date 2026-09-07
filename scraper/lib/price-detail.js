@@ -174,6 +174,42 @@ function verifyPlans(plans, pageText) {
 }
 
 /**
+ * 同一プラン名で複数の金額が挙がっている場合に、最も高い金額（＝通常価格）だけを残す。
+ *
+ * sejuku の実例で、同じ「集中8週間プラン」が通常価格 475,200円 と割引後 456,390円 の
+ * 2エントリとして列挙され、min_yen が割引価格になってしまった。プロンプトでも
+ * 「割引後価格は含めない」と指示しているが、official_name の件と同じく指示だけでは
+ * 漏れるため、機械的にも落とす。
+ *
+ * 【なぜ「高い方を残す」なのか】
+ * 割引後価格は必ず通常価格より安い。ラベルが同じである以上、内容の違いで区別する
+ * 手がかりはこちらには無いので、「同じ名前なら安い方がキャンペーン価格」と見なす。
+ * 本当に同名で内容の異なるプランが並んでいた場合は安い方を取りこぼすが、
+ * 割引価格を通常価格として掲げるより、この向きの誤りの方が安全と判断する。
+ * 期間・カリキュラムが違うプランはラベルが異なるため、ここでは影響を受けない。
+ */
+function dropDiscountedDuplicates(plans) {
+  const byLabel = new Map();
+
+  for (const plan of plans) {
+    const key = plan.label.trim();
+    const existing = byLabel.get(key);
+    if (!existing) {
+      byLabel.set(key, plan);
+      continue;
+    }
+    if (plan.amount > existing.amount) {
+      console.warn(`  プラン「${key}」に複数の金額があるため、割引前とみなして ${plan.amount}円 を採用しました（${existing.amount}円 を除外）。`);
+      byLabel.set(key, plan);
+    } else if (plan.amount < existing.amount) {
+      console.warn(`  プラン「${key}」の ${plan.amount}円 は割引後価格とみなして除外しました（${existing.amount}円 を採用）。`);
+    }
+  }
+
+  return [...byLabel.values()];
+}
+
+/**
  * plans から display と min_yen を機械的に組み立てる。
  *
  * display をAIの自由記述にすると、プランの羅列がそのまま入ったり、要約の仕方が
@@ -184,8 +220,10 @@ function verifyPlans(plans, pageText) {
  * 桁区切りが "657.800" のようになりうるため。日本語表記としての結果は同じ。
  */
 function buildPriceFromPlans(plans, scope = 'top_page') {
-  const valid = (Array.isArray(plans) ? plans : []).filter(
-    p => p && typeof p.label === 'string' && Number.isInteger(p.amount) && p.amount >= 0
+  const valid = dropDiscountedDuplicates(
+    (Array.isArray(plans) ? plans : []).filter(
+      p => p && typeof p.label === 'string' && p.label.trim() && Number.isInteger(p.amount) && p.amount >= 0
+    )
   );
 
   if (valid.length === 0) {
@@ -216,7 +254,14 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
           description:
             'ページ本文に記載されているプラン・コースと、その金額の一覧。' +
             '表示用の文章は作らないこと（こちらで機械的に組み立てる）。' +
-            '金額の記載が読み取れない場合は空配列 [] を返すこと。',
+            '金額の記載が読み取れない場合は空配列 [] を返すこと。\n' +
+            '同一のプラン（コース名・期間等が同じもの）について通常価格と割引後価格が併記されて' +
+            'いる場合は、通常価格のみを含めること。割引後価格は抽出対象から除外し、label を変えて' +
+            '別プランとして列挙しないこと。\n' +
+            '判断基準:\n' +
+            '- 「通常◯◯円 → キャンペーン価格△△円」のような表記 → 通常価格のみ採用\n' +
+            '- 「今なら□□円引き」「期間限定」「早割」「◯%OFF」等の文言が付随する金額 → 除外\n' +
+            '- 期間やカリキュラムが明確に異なるプランは、通常どおり別エントリとして残す',
           items: {
             type: 'object',
             properties: {
@@ -257,6 +302,9 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
         '- 分割払いの月額と総額が併記されている場合、本文に数字として書かれている値だけを' +
         '使うこと（自分で割り算して求めた値を入れない）。\n' +
         '- 表示用の文章・要約は作らないこと。プラン名と金額のペアだけを返せばよい。\n' +
+        '- 割引後価格（キャンペーン価格・早割・期間限定価格）は plans に含めないこと。' +
+        '同じプランの通常価格と割引後価格が両方載っている場合は、通常価格だけを返すこと。' +
+        'label を変えて別プランとして並べるのも不可。\n' +
         '- 金額の記載が読み取れない場合は、正直に plans を空配列 [] にすること。',
     }],
   });
