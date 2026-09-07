@@ -717,5 +717,175 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
     "verified_url": "https://www.internetacademy.jp/"
+  },
+  {
+    "id": "tokyo-designplex",
+    "school_name": "東京デザインプレックス研究所",
+    "official_name": null,
+    "description": "次代のデザイナーを育成するコンテンポラリーデザインの複合型教育機関。デジタルアート、スペースデザイン、UX/UI、コミュニケーションデザインなど複数領域を開講。トップクリエイター・現役デザイナーを講師に迎え、少人数制・実践形式の専門教育を提供。デザイン業界で抜群の就転職実績を保有。",
+    "skill_genre": [
+      "webdesign",
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "グラフィックデザイナー",
+      "Webデザイナー",
+      "空間デザイナー",
+      "UX/UIデザイナー",
+      "ブランディングディレクター"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "トップクリエイター・現役デザイナーが講師",
+      "少人数制・実践形式の専門教育プログラム",
+      "デザイン業界での抜群の就転職実績",
+      "TDPキャリアセンターによる就転職・フリーランスサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.tokyo-designplex.com/benefit/",
+    "official_url": "https://www.tokyo-designplex.com/",
+    "cta_url": "https://www.tokyo-designplex.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tokyo-designplex",
+    "created_at": "2026-09-07T23:45:37.773Z",
+    "updated_at": "2026-09-07T23:45:37.773Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.tokyo-designplex.com/"
+  },
+  {
+    "id": "winschool",
+    "school_name": "Winスクール",
+    "official_name": null,
+    "description": "Winスクールは全国展開するパソコン教室で、プロの講師による個別指導を提供しています。講座数300以上で、初心者から経験者まで対応した豊富なカリキュラムを用意。教室での受講とオンライン受講の両形式に対応しており、就職・転職サポートや卒業後のアフターフォローも充実しています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "web_marketing",
+      "genai_dx",
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "千葉県",
+      "鹿児島県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "プロの講師による個別指導を教室とオンラインで提供",
+      "少人数制で質問しやすい環境",
+      "300以上の豊富な講座ラインナップ",
+      "企業研修実績が豊富で実践的なカリキュラム",
+      "就職・転職時のキャリア相談と卒業後のアフターフォロー"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.winschool.jp/info/payment.html",
+    "official_url": "https://www.winschool.jp/",
+    "cta_url": "https://www.winschool.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-winschool",
+    "created_at": "2026-09-07T23:45:54.336Z",
+    "updated_at": "2026-09-07T23:45:54.336Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.winschool.jp/"
+  },
+  {
+    "id": "schoo",
+    "school_name": "Schoo",
+    "official_name": null,
+    "description": "生放送・双方向型のオンライン学習コミュニティ。9,000本以上の授業を19カテゴリで配信。生放送終了後30日間は無料視聴でき、コース第1回もすべて無料。クイズ形式や思考を問う授業設計が特徴。プログラミング、マーケティング、DX、ビジネススキルなど幅広いジャンルを網羅。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "uiux",
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "双方向型のライブ授業、コメント機能で授業が変化",
+      "思考力を鍛える問いかけ型の授業設計",
+      "19カテゴリ9,000本以上の豊富な授業ラインアップ",
+      "生放送終了後30日間無料視聴、コース第1回すべて無料",
+      "クイズ形式で学ぶスキマ時間学習機能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://schoo.jp/",
+    "cta_url": "https://schoo.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-schoo",
+    "created_at": "2026-09-07T23:46:05.928Z",
+    "updated_at": "2026-09-07T23:46:05.928Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://schoo.jp/"
   }
 ]

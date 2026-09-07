@@ -25,5 +25,14 @@
       "sejuku-2",
       "internetacademy"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "genre": "uiux",
+    "new_school_ids": [
+      "tokyo-designplex",
+      "winschool",
+      "schoo"
+    ]
   }
 ]
