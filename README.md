@@ -19,7 +19,8 @@ scraper/lib/discovery-log.js  日次の実行記録の書き出し
 scraper/lib/review-summary.js 口コミ要約パイプラインの中核
 scraper/lib/match.js          診断ウィザードのスコアリング
 scraper/recheck-guards.js     全レコードへのガード再適用（AI呼び出しなし）
-docs/DATA-QUALITY-POLICY.md   データ品質ポリシー（判断基準）
+DATA_QUALITY_POLICY.md        データ品質ポリシー（判断基準）
+PROJECT_CONTEXT.md            プロジェクト共通コンテキスト（図鑑シリーズ）
 scraper/discover-schools.js   日次ディスカバリーのエントリーポイント
 scraper/reverify-old-skips.js スキップリストのレスキュー（週次）
 scraper/summarize-reviews.js  口コミ要約バッチ（週次・人力確認が済むまで動かない）
