@@ -27,7 +27,8 @@
     "click_tracking_id",
     "created_at",
     "updated_at",
-    "status"
+    "status",
+    "area_source"
   ],
   "properties": {
     "id": {
@@ -399,13 +400,14 @@
     },
     "review_flags": {
       "type": "array",
-      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=トップページで price を取得できず、詳細ページを1回巡回した（detail_page_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。",
+      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=トップページで price を取得できず、詳細ページを1回巡回した（detail_page_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。 area_unconfirmed=校舎ページまで見たが、都道府県も「オンライン専用」の明記も確認できなかった。",
       "items": {
         "type": "string",
         "enum": [
           "format_unconfirmed",
           "detail_page_crawled",
-          "price_scope_limited"
+          "price_scope_limited",
+          "area_unconfirmed"
         ]
       },
       "uniqueItems": true
@@ -415,6 +417,14 @@
       "description": "料金のフォールバック巡回で参照した詳細ページのURL（社内参考情報。後から抽出結果を検証するために残す）。",
       "format": "uri",
       "pattern": "^https?://"
+    },
+    "area_source": {
+      "type": "string",
+      "enum": [
+        "top_page",
+        "detail_page"
+      ],
+      "description": "area をどこから取得したか。top_page=トップページのみで判断した。detail_page=フォールバックで校舎一覧・アクセスページを巡回して判断した。price.scope と同じ考え方で、確度の目安として残す（社内参考情報。UI表示には使用しない）。"
     }
   },
   "allOf": [

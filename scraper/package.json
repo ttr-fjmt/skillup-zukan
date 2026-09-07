@@ -11,7 +11,8 @@
     "validate": "node validate-schools.js",
     "test": "node --test \"test/*.test.js\"",
     "generate-mock": "node generate-mock-schools.js",
-    "enrich-prices": "node enrich-prices.js"
+    "enrich-prices": "node enrich-prices.js",
+    "enrich-areas": "node enrich-areas.js"
   },
   "engines": {
     "node": ">=22.12.0"

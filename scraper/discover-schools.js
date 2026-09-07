@@ -35,6 +35,7 @@ const { buildSchoolId, buildClickTrackingId } = require('./lib/school-id');
 const { validateSchool } = require('./lib/validate');
 const { writeDiscoveryLog } = require('./lib/discovery-log');
 const { enrichPriceFromDetailPage } = require('./lib/price-detail');
+const { enrichAreaFromDetailPage, needsAreaEnrichment } = require('./lib/area-detail');
 const {
   SCHOOLS_PATH,
   SKIP_PATH,
@@ -93,6 +94,7 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
     duration: ai.duration,
     format: ai.format,
     area: ai.area,
+    area_source: ai.area_source || 'top_page',
     subsidy_eligible: ai.subsidy_eligible,
     career_support: ai.career_support,
     features: ai.features,
@@ -220,6 +222,24 @@ async function main() {
         }
         if (enrichment.detailPageUrl) ai.detail_page_url = enrichment.detailPageUrl;
         ai.review_flags = [...(ai.review_flags || []), ...enrichment.flags];
+      }
+
+      // 受講形式を確定できなかった場合だけ、校舎一覧・アクセスページを1回だけ見に行く
+      // （price と同じフォールバック方式。全校一律では巡回しない）。
+      if (needsAreaEnrichment({ area: ai.area, review_flags: ai.review_flags }, pageText)) {
+        const areaResult = await enrichAreaFromDetailPage(
+          ai.school_name || candidate.name,
+          html,
+          verifiedUrl || candidate.website,
+          anthropic
+        );
+        ai.area = areaResult.area;
+        ai.format = areaResult.format;
+        ai.area_source = areaResult.areaSource;
+        // 確定できたなら format_unconfirmed は不要。できなければ area_unconfirmed に置き換える。
+        const flags = new Set((ai.review_flags || []).filter(f => f !== 'format_unconfirmed'));
+        for (const flag of areaResult.flags) flags.add(flag);
+        ai.review_flags = [...flags];
       }
 
       const id = buildSchoolId(ai.school_name || candidate.name, verifiedUrl || candidate.website, existingIds);

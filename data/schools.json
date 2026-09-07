@@ -80,7 +80,8 @@
       "detail_page_crawled",
       "price_scope_limited"
     ],
-    "detail_page_url": "https://www.sejuku.net/courses/career/"
+    "detail_page_url": "https://www.sejuku.net/courses/career/",
+    "area_source": "top_page"
   },
   {
     "id": "techacademy",
@@ -133,7 +134,8 @@
     "review_flags": [
       "detail_page_crawled"
     ],
-    "detail_page_url": "https://techacademy.jp/course"
+    "detail_page_url": "https://techacademy.jp/course",
+    "area_source": "top_page"
   },
   {
     "id": "tech-camp",
@@ -193,6 +195,7 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://tech-camp.in/",
-    "review_flags": []
+    "review_flags": [],
+    "area_source": "top_page"
   }
 ]

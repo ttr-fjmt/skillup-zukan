@@ -34,6 +34,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -99,6 +100,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -164,6 +166,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -223,6 +226,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -277,6 +281,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -332,6 +337,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -397,6 +403,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -462,6 +469,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -521,6 +529,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -575,6 +584,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -629,6 +639,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -694,6 +705,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -759,6 +771,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -818,6 +831,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -872,6 +886,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -926,6 +941,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -991,6 +1007,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1056,6 +1073,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -1115,6 +1133,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1169,6 +1188,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -1223,6 +1243,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -1288,6 +1309,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1353,6 +1375,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -1412,6 +1435,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1466,6 +1490,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -1520,6 +1545,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -1585,6 +1611,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1650,6 +1677,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -1709,6 +1737,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1763,6 +1792,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -1817,6 +1847,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -1882,6 +1913,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -1947,6 +1979,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -2006,6 +2039,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -2060,6 +2094,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [
@@ -2114,6 +2149,7 @@
     "duration": "標準3ヶ月",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": true,
     "features": [
@@ -2179,6 +2215,7 @@
     "duration": "4〜24週間から選択",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -2244,6 +2281,7 @@
     "area": [
       "東京都"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": true,
     "career_support": false,
     "features": [
@@ -2303,6 +2341,7 @@
       "大阪府",
       "愛知県"
     ],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": true,
     "features": [
@@ -2357,6 +2396,7 @@
     "duration": "通い放題（期間の定めなし）",
     "format": "online",
     "area": [],
+    "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
     "features": [

@@ -137,7 +137,12 @@ test('掲載中のレコードの description に、誇張・実績訴求が残�
 
 test('classifyFormat: area が取れている通学系はそのまま採用する', () => {
   const r = classifyFormat('both', ['東京都', '大阪府'], '教室は渋谷にあります');
-  assert.deepStrictEqual(r, { format: 'both', area: ['東京都', '大阪府'], flags: [] });
+  assert.deepStrictEqual(r, { format: 'both', area: ['東京都', '大阪府'], flags: [], areaSource: 'top_page' });
+});
+
+test('classifyFormat: トップページからの判断には area_source=top_page が付く', () => {
+  assert.strictEqual(classifyFormat('online', [], '完全オンライン').areaSource, 'top_page');
+  assert.strictEqual(classifyFormat('offline', [], '教室あり').areaSource, 'top_page');
 });
 
 test('classifyFormat: 「完全オンライン」等の明示があればオンライン確定（フラグ無し）', () => {

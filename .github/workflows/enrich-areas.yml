@@ -1,0 +1,82 @@
+name: Enrich missing areas (manual)
+
+# 既に掲載済みで受講形式を確定できていないレコードに、校舎ページ巡回だけを後から
+# 適用するバックフィル（enrich-prices.yml の area 版）。
+#
+# 新規レコードは discover-schools.js が発見時に巡回するため、日次で回すものではない。
+# schedule は設定せず手動実行のみとする。
+
+on:
+  workflow_dispatch:
+    inputs:
+      only_school_id:
+        description: "1校だけ試す場合のスクールID（空欄なら area が空の全件）"
+        required: false
+        type: string
+      max_per_run:
+        description: "1回の実行で処理する件数の上限（既定20）"
+        required: false
+        type: string
+        default: "20"
+      force:
+        description: "true にすると、受講形式が確定済みのレコードも再確認する"
+        required: false
+        type: boolean
+        default: false
+      dry_run:
+        description: "true にすると書き込まず結果だけ表示する"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  enrich-areas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      - name: Enrich areas via detail-page fallback
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ENRICH_ONLY_SCHOOL_ID: ${{ github.event.inputs.only_school_id }}
+          ENRICH_MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '20' }}
+          ENRICH_FORCE: ${{ github.event.inputs.force == 'true' && '1' || '' }}
+          ENRICH_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+        run: node enrich-areas.js
+
+      - name: Commit and push changes
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/schools.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: enrich missing areas via detail-page fallback ($(date -u +%Y-%m-%d))"
+          git push

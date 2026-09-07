@@ -104,6 +104,7 @@ function buildMockSchool(genre, variantIndex) {
     duration: DURATIONS[variantIndex],
     format: variant.format,
     area,
+    area_source: 'top_page',
     subsidy_eligible: variant.subsidy,
     career_support: variant.careerSupport,
     features: [

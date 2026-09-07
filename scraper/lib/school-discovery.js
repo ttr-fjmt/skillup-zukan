@@ -724,7 +724,7 @@ function classifyFormat(aiFormat, area, pageText) {
   const text = String(pageText || '');
 
   if (area.length > 0 && (aiFormat === 'offline' || aiFormat === 'both')) {
-    return { format: aiFormat, area, flags: [] };
+    return { format: aiFormat, area, flags: [], areaSource: 'top_page' };
   }
 
   const flags = [];
@@ -745,7 +745,7 @@ function classifyFormat(aiFormat, area, pageText) {
     flags.push('format_unconfirmed');
   }
 
-  return { format: 'online', area: [], flags };
+  return { format: 'online', area: [], flags, areaSource: 'top_page' };
 }
 
 /**
@@ -818,6 +818,7 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
   result.format = classified.format;
   result.area = classified.area;
   result.review_flags = classified.flags;
+  result.area_source = classified.areaSource;
 
   result.career_paths = (Array.isArray(result.career_paths) ? result.career_paths : [])
     .filter(s => typeof s === 'string' && s.trim())
