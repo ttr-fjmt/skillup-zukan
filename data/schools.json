@@ -335,5 +335,242 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
     "verified_url": "https://school.vook.vc/"
+  },
+  {
+    "id": "runteq",
+    "school_name": "RUNTEQ",
+    "official_name": null,
+    "description": "自社でWebサービスや受託開発を行う開発会社が運営する、約1,000時間・9ヶ月の実践型プログラミングスクール。開発現場のニーズをベースにした実践的なカリキュラム、AI駆動開発教材、Webアプリ開発やサービス立ち上げ・運用経験を特徴とする。課題解決型学習スタイル、AI学習パートナー、充実した学習環境を備え、転職後も現場で活躍できるエンジニアの育成を目指す。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "バックエンドエンジニア",
+      "フルスタックエンジニア",
+      "受託開発エンジニア"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page"
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "開発会社による実務ベースの1000時間実践的カリキュラム",
+      "AIを使ったアプリ開発とAIを開発パートナーとして使う2種類のAI教材",
+      "卒業後も利用可能な常時更新されるカリキュラム",
+      "AIを搭載した高度なポートフォリオ制作（Webアプリ開発・サービス立ち上げ・運用経験）",
+      "課題解決型学習スタイルと24時間対応のAI学習パートナー"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://runteq.jp/plan",
+    "official_url": "https://runteq.jp/",
+    "cta_url": "https://runteq.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-runteq",
+    "created_at": "2026-09-07T20:09:35.608Z",
+    "updated_at": "2026-09-07T20:09:35.608Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://runteq.jp/"
+  },
+  {
+    "id": "codecamp",
+    "school_name": "CodeCamp",
+    "official_name": "CodeCamp Co., Ltd.",
+    "description": "2012年創業、13年以上IT人材育成をリード。現役エンジニアがマンツーマンで指導し、企業・法人の研修で提供している実践的で体系化されたプログラミングのカリキュラムを個人でも学べます。上場ITコンサルティングファーム「フューチャー株式会社」グループの一員として、実務で求められるプロセスを体系化。マンツーマンレッスン、学習サポーター、AIチャットボット、コミュニティ&コードレビューなど多層的なサポート体制で、初心者でも挫折させない学習環境を提供。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "317,900円〜",
+      "min_yen": 317900,
+      "scope": "detail_page"
+    },
+    "plans": [
+      {
+        "label": "2ヶ月",
+        "amount": 317900,
+        "duration": "2ヶ月"
+      },
+      {
+        "label": "10週間",
+        "amount": 657800,
+        "duration": "10週間"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "現役プロ講師によるマンツーマンレッスン形式の指導",
+      "最新技術を反映したカリキュラムの継続アップデート",
+      "AIチャットボットによる24時間の質問対応",
+      "学習サポーターによる学習計画作成と進捗管理",
+      "コミュニティとコードレビューによる相互学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://codecamp.jp/personal",
+    "official_url": "https://codecamp.jp/",
+    "cta_url": "https://codecamp.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-codecamp",
+    "created_at": "2026-09-07T20:09:53.295Z",
+    "updated_at": "2026-09-07T20:09:53.295Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://codecamp.jp/"
+  },
+  {
+    "id": "potepan",
+    "school_name": "ポテパンキャンプ",
+    "official_name": "POTEPAN.INC",
+    "description": "卒業生の多くがWebエンジニアに転職成功している実績豊富なプログラミングスクール。優秀なレビュアー陣と実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "top_page"
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "転職を前提とした実践的なカリキュラム",
+      "優秀なレビュアー陣による個別指導",
+      "元エンジニアのエージェントによるキャリアサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://potepan.com/",
+    "cta_url": "https://potepan.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-potepan",
+    "created_at": "2026-09-07T20:09:59.175Z",
+    "updated_at": "2026-09-07T20:09:59.175Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://potepan.com/"
+  },
+  {
+    "id": "coachtech",
+    "school_name": "COACHTECH",
+    "official_name": null,
+    "description": "未経験からAI時代の設計スキルまで学べるWebアプリケーション開発スクール。3,000名以上の未経験者育成実績を持ち、大手企業のAI駆動開発を実践する開発会社が運営。リサーチ・企画から要件定義、設計、テスト・実装、リリース・運用まで体系的に習得。専属コーチによる学習サポート、AIとの組み合わせた学習、キャリアカウンセラーによる案件獲得支援が特徴。</description>\n<parameter name=\"skill_genre\">[\"programming\"]",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webアプリエンジニア",
+      "プロジェクトマネージャー",
+      "フリーランスエンジニア"
+    ],
+    "price": {
+      "display": "429,000円〜",
+      "min_yen": 429000,
+      "scope": "top_page"
+    },
+    "plans": [
+      {
+        "label": "3ヶ月プラン",
+        "amount": 429000,
+        "duration": "90日間"
+      },
+      {
+        "label": "6ヶ月プラン",
+        "amount": 660000,
+        "duration": "180日間"
+      },
+      {
+        "label": "9ヶ月プラン",
+        "amount": 858000,
+        "duration": "270日間"
+      },
+      {
+        "label": "12ヶ月プラン",
+        "amount": 1089000,
+        "duration": "360日間"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "専属コーチによる個別学習サポート",
+      "AI駆動開発の実践スキルを習得",
+      "大手企業の現場技術をカリキュラムに反映",
+      "設計・要件定義など上流工程を未経験から学習",
+      "キャリアカウンセラーによる案件獲得支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://coachtech.site/",
+    "cta_url": "https://coachtech.site/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-coachtech",
+    "created_at": "2026-09-07T20:10:06.582Z",
+    "updated_at": "2026-09-07T20:10:06.582Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://coachtech.site/"
   }
 ]

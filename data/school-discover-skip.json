@@ -19,5 +19,12 @@
     "genre": "video_editing",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-07T16:02:30.977Z"
+  },
+  "DMM WEBCAMP": {
+    "name": "DMM WEBCAMP",
+    "website": "https://web-camp.io",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-07T20:09:15.800Z"
   }
 }

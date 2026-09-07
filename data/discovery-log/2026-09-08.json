@@ -6,5 +6,15 @@
       "school",
       "school-2"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "genre": "programming",
+    "new_school_ids": [
+      "runteq",
+      "codecamp",
+      "potepan",
+      "coachtech"
+    ]
   }
 ]
