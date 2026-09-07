@@ -22,8 +22,8 @@
       "フリーランスエンジニア"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
-      "min_yen": null
+      "display": "16週間プラン¥567,600、24週間プラン¥778,800、36週間プラン¥1,056,000、集中8週間プラン¥475,200、集中12週間プラン¥653,400、集中18週間プラン¥884,400",
+      "min_yen": 475200
     },
     "duration": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
     "format": "online",
@@ -43,14 +43,16 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku",
     "created_at": "2026-09-07T14:44:24.268Z",
-    "updated_at": "2026-09-07T15:06:45.242Z",
+    "updated_at": "2026-09-07T15:15:15.756Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://www.sejuku.net/",
     "review_flags": [
-      "format_unconfirmed"
-    ]
+      "format_unconfirmed",
+      "detail_page_crawled"
+    ],
+    "detail_page_url": "https://www.sejuku.net/courses/career/"
   },
   {
     "id": "techacademy",
@@ -93,12 +95,15 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T15:06:45.249Z",
+    "updated_at": "2026-09-07T15:15:28.589Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://techacademy.jp/",
-    "review_flags": []
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "detail_page_url": "https://techacademy.jp/course"
   },
   {
     "id": "tech-camp",
