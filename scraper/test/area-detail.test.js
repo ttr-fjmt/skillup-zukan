@@ -290,3 +290,20 @@ test('chooseAreaDetailLink: AIが候補一覧に無いURLを返したら踏ま�
     null
   );
 });
+
+test('needsAreaEnrichment: 通学系でトップページ由来の area しか無ければ校舎ページを見に行く', () => {
+  // Winスクールの実例。AIが47都道府県を挙げ、トップページ本文で確認できた3件だけが残った。
+  // 嘘は無いが全国の教室のごく一部で、東京都で探す人に見つからない。
+  const school = { area: ['北海道', '千葉県', '鹿児島県'], format: 'both', area_source: 'top_page', review_flags: [] };
+  assert.strictEqual(areaDetail.needsAreaEnrichment(school, ''), true);
+});
+
+test('needsAreaEnrichment: 校舎ページで確定済み（detail_page）なら再度は見に行かない', () => {
+  const school = { area: ['東京都'], format: 'both', area_source: 'detail_page', review_flags: [] };
+  assert.strictEqual(areaDetail.needsAreaEnrichment(school, ''), false);
+});
+
+test('needsAreaEnrichment: オンライン専用は area があっても発動しない', () => {
+  const school = { area: [], format: 'online', area_source: 'top_page', review_flags: [] };
+  assert.strictEqual(areaDetail.needsAreaEnrichment(school, '完全オンライン'), false);
+});

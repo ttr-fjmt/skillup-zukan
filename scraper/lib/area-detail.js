@@ -241,7 +241,16 @@ async function extractAreaFromPage(schoolName, detailUrl, pageText, anthropic) {
  * price と同じく「取れていないときだけ」動かすための条件で、呼び出し側はこれを見て発動する。
  */
 function needsAreaEnrichment(school, pageText) {
-  if ((school.area || []).length > 0) return false;
+  // 通学系なのに、まだトップページしか見ていない場合は校舎ページを見に行く。
+  //
+  // Winスクールで、AIが47都道府県すべてを挙げ、ガードがトップページ本文で確認できた
+  // 3件だけを残した。嘘は無いが、全国に教室があるスクールの area が「北海道・千葉県・
+  // 鹿児島県」になり、東京都で通学先を探す人に見つからない。トップページは校舎の
+  // 一覧ページではないので、ここを根拠に確定させるべきではない。
+  if ((school.area || []).length > 0) {
+    return (school.format === 'offline' || school.format === 'both') && school.area_source !== 'detail_page';
+  }
+
   if ((school.review_flags || []).includes('format_unconfirmed')) return true;
   // 通学を示すキーワードが本文にあるのに area が空、というのも取りこぼしのサイン。
   return /教室|校舎|通学|来校|対面(授業|レッスン|指導)/.test(String(pageText || ''));

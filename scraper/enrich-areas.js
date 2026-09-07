@@ -44,7 +44,8 @@ function selectCandidates(schools) {
   const onlyId = (process.env.ENRICH_ONLY_SCHOOL_ID || '').trim();
   return schools
     .filter(s => s.status === 'active')
-    .filter(s => FORCE || (s.area || []).length === 0)
+    // area が入っていても、根拠がトップページだけの通学系は校舎ページを見に行く。
+    .filter(s => FORCE || (s.area || []).length === 0 || ((s.format === 'offline' || s.format === 'both') && s.area_source !== 'detail_page'))
     .filter(s => !onlyId || s.id === onlyId)
     .slice(0, MAX_PER_RUN);
 }
