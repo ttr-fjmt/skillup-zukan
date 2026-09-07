@@ -1,1 +1,23 @@
-{}
+{
+  "デジタルハリウッドSTUDIO by LIG（デジLIG）": {
+    "name": "デジタルハリウッドSTUDIO by LIG（デジLIG）",
+    "website": "https://dhw.liginc.co.jp/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-07T16:02:30.977Z"
+  },
+  "忍者CODE 動画編集コース": {
+    "name": "忍者CODE 動画編集コース",
+    "website": "https://ninjacode.work/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-07T16:02:30.977Z"
+  },
+  "ヒューマンアカデミー 動画クリエイター講座": {
+    "name": "ヒューマンアカデミー 動画クリエイター講座",
+    "website": "https://haa.athuman.com/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-07T16:02:30.977Z"
+  }
+}

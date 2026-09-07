@@ -202,5 +202,152 @@
         "duration": "6ヶ月"
       }
     ]
+  },
+  {
+    "id": "school",
+    "school_name": "デジタルハリウッド 専門スクール",
+    "official_name": null,
+    "description": "クリエイティブ業界を目指す初心者から経験者まで対象とした総合スクール。「動画クリエイター専攻」をはじめ、Webデザイナー、3DCGデザイナー、UI/UXデザイン、CG/VFX等、多様なコースを提供。全国の校舎とSTUDIOで通学可能。経済産業省のリスキリング支援事業対象講座も実施している。",
+    "skill_genre": [
+      "video_editing",
+      "webdesign",
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "フリーランスクリエイター",
+      "Webデザイナー",
+      "動画クリエイター",
+      "デジタルアーティスト",
+      "CG/VFXアーティスト",
+      "3DCGデザイナー",
+      "UI/UXデザイナー"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "top_page"
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "青森県",
+      "宮城県",
+      "福島県",
+      "東京都",
+      "神奈川県",
+      "埼玉県",
+      "千葉県",
+      "栃木県",
+      "群馬県",
+      "新潟県",
+      "長野県",
+      "静岡県",
+      "愛知県",
+      "京都府",
+      "大阪府",
+      "兵庫県",
+      "鳥取県",
+      "広島県",
+      "香川県",
+      "福岡県",
+      "熊本県",
+      "鹿児島県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "複数のコース選択肢と専攻分野を提供",
+      "全国に校舎とSTUDIOを展開",
+      "就職・転職サポート体制完備",
+      "経済産業省リスキリング支援事業の対象講座"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://school.dhw.co.jp/prospectus/",
+    "official_url": "https://school.dhw.co.jp/",
+    "cta_url": "https://school.dhw.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-school",
+    "created_at": "2026-09-07T16:02:45.061Z",
+    "updated_at": "2026-09-07T16:02:45.061Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://school.dhw.co.jp/"
+  },
+  {
+    "id": "school-2",
+    "school_name": "Vook school",
+    "official_name": null,
+    "description": "日本最大級の映像メディア「Vook」が運営する動画スクール。モーショングラフィックスコースとバーチャルプロダクションアカデミーの2つのコースを提供。第一線で活躍するクリエイターと共に制作した107項目のカリキュラムと56の実践課題を通じて、プロが認めるスキルを習得できる完全オンライン形式。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "39,600円〜",
+      "min_yen": 39600,
+      "scope": "detail_page"
+    },
+    "plans": [
+      {
+        "label": "エントリープラン",
+        "amount": 74800,
+        "duration": null
+      },
+      {
+        "label": "マスタープラン",
+        "amount": 39600,
+        "duration": null
+      },
+      {
+        "label": "マスタープランPro",
+        "amount": 39600,
+        "duration": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロの映像クリエイターが監修したカリキュラム",
+      "メンターによるチャットサポート・通話サポート",
+      "仕事やプライベートと両立可能な完全オンライン形式"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://school.vook.vc/motion-graphics/",
+    "official_url": "https://school.vook.vc/",
+    "cta_url": "https://school.vook.vc/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-school-2",
+    "created_at": "2026-09-07T16:02:58.050Z",
+    "updated_at": "2026-09-07T16:02:58.050Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://school.vook.vc/"
   }
 ]
