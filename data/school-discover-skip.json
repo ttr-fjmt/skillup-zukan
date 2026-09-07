@@ -33,5 +33,19 @@
     "genre": "webdesign",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-07T23:34:43.774Z"
+  },
+  "マケキャンbyDMM.com": {
+    "name": "マケキャンbyDMM.com",
+    "website": "https://makecam.web-camp.io/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-07T23:52:07.559Z"
+  },
+  "デジプロ": {
+    "name": "デジプロ",
+    "website": "https://digi-pro.jp/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-07T23:52:07.559Z"
   }
 }

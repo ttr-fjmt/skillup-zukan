@@ -895,5 +895,201 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
     "verified_url": "https://schoo.jp/"
+  },
+  {
+    "id": "shareway",
+    "school_name": "Wannabe Academy",
+    "official_name": null,
+    "description": "実務経験を積めるWebマーケティングスクール。未経験者を対象に、2ヶ月間の実在クライアントワークを含む実践的なカリキュラムを提供。週1回のオンライン授業と学習動画、マンツーマン補講受け放題で、基礎から実務スキルまでを習得。卒業後は約20,000件の求人情報から転職先紹介や副業案件紹介のサポートあり。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "実在するクライアントを相手にした2ヶ月の実務経験",
+      "週1回のオンライン授業と学習動画で自分のペースで学習",
+      "マンツーマン補講とチャット質問が無制限に利用可能",
+      "卒業後も交流会やバーチャルオフィスで同期と継続接続"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://shareway.jp/wannabe_web/curriculum/",
+    "official_url": "https://shareway.jp/wannabe_web/",
+    "cta_url": "https://shareway.jp/wannabe_web/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shareway",
+    "created_at": "2026-09-07T23:52:22.673Z",
+    "updated_at": "2026-09-07T23:52:22.673Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://shareway.jp/wannabe_web/"
+  },
+  {
+    "id": "webmarks",
+    "school_name": "WEBMARKS",
+    "official_name": null,
+    "description": "Webマーケティングとが中心のスクール。SEO、Web広告、GA4、データベース型SEOなど複数の講座を提供。個人向けスクールと法人向け研修の両方を展開。AI検索最適化やAI人材育成などの新サービスも展開。",
+    "skill_genre": [
+      "web_marketing",
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "385,000円",
+      "min_yen": 385000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "講座",
+        "amount": 385000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "複数のWebマーケティング講座を提供（SEO、Web広告、GA4、案件獲得講座など）",
+      "無料体験講座と無料カウンセリングを実施",
+      "卒業生の声や個人インタビューによる学習事例を公開",
+      "法人向けの企業研修とインハウスSEOスクールも提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://webmarks.co.jp/lp/mastercourse_lp03/",
+    "official_url": "https://webmarks.co.jp/",
+    "cta_url": "https://webmarks.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-webmarks",
+    "created_at": "2026-09-07T23:52:38.253Z",
+    "updated_at": "2026-09-07T23:52:38.253Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://webmarks.co.jp/"
+  },
+  {
+    "id": "with-marke",
+    "school_name": "Withマーケ",
+    "official_name": "株式会社グロースバリュ",
+    "description": "実務型カリキュラムを通じて、現場で即活躍できるWebマーケティングスキルと仕事獲得に使える実績を習得できるスクール。SEOライター、SEOマーケター、インスタクリエイター、インスタ運用の4つのコースが用意されており、受講期間中に実際のマーケティング現場での経験を積める。全コース共通で500本の動画コンテンツが付帯し、受講後のアフターサポートと毎週の勉強会で継続的な成長を支援する。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "SEOライター",
+      "SEOマーケター",
+      "インスタクリエイター",
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "SEOライターコース",
+        "amount": null,
+        "duration": "3ヶ月",
+        "kind": null
+      },
+      {
+        "label": "SEOマーケター即戦力コース",
+        "amount": null,
+        "duration": "6ヶ月",
+        "kind": null
+      },
+      {
+        "label": "インスタクリエイターコース",
+        "amount": null,
+        "duration": "2ヶ月",
+        "kind": null
+      },
+      {
+        "label": "インスタ運用即戦力コース",
+        "amount": null,
+        "duration": "6ヶ月",
+        "kind": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "実務型カリキュラムによるマーケティング現場での実務経験",
+      "実績構築（アカウント、投稿、記事など）が仕事獲得に活用可能",
+      "現役マーケター講師による個別面談サポート（2〜6ヶ月間）",
+      "専属学習メンターによる学習進捗管理",
+      "職務経歴書添削と面談対策サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://with-marke.com/",
+    "cta_url": "https://with-marke.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-with-marke",
+    "created_at": "2026-09-07T23:52:52.769Z",
+    "updated_at": "2026-09-07T23:52:52.769Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://with-marke.com/"
   }
 ]
