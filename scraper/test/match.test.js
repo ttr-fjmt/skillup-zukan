@@ -229,3 +229,68 @@ test('全ジャンル・全目的・全レベルの組み合わせを流して�
   }
   assert.strictEqual(checked, 8 * 6 * 4 * 3);
 });
+
+test('診断結果は、提携している講座を先に出す', () => {
+  // 商業上の理由による並べ替え。画面には必ず「PR」を出すこと（faq/privacy に記載）。
+  const base = {
+    status: 'active', purpose: ['career_change'], skill_genre: ['programming'],
+    target_level: 'beginner', format: 'online', area: [], subsidy_eligible: false,
+    career_support: false, review_summary: null,
+  };
+  const schools = [
+    { ...base, id: 'direct-high', school_name: '一致度の高い非提携', cta_type: 'direct' },
+    { ...base, id: 'aff', school_name: '提携', cta_type: 'affiliate' },
+    { ...base, id: 'direct-low', school_name: 'もう1件', cta_type: 'direct' },
+  ];
+  const answers = {
+    purpose: 'career_change', genres: ['programming'], level: 'beginner',
+    format: 'online', subsidy_preference: 'no_preference',
+  };
+  const result = matchSchools(answers, schools);
+  assert.strictEqual(result[0].id, 'aff', '提携が先頭に来ていない');
+});
+
+test('条件に合わない講座は、提携していても出さない', () => {
+  // 「提携だから」という理由だけで、回答条件に合わないものを混ぜてはいけない。
+  const answers = {
+    purpose: 'career_change', genres: ['programming'], level: 'beginner',
+    format: 'online', subsidy_preference: 'no_preference',
+  };
+  const schools = [
+    {
+      status: 'active', id: 'aff-language', school_name: '提携だが語学', cta_type: 'affiliate',
+      purpose: ['hobby'], skill_genre: ['language'], target_level: 'advanced',
+      format: 'offline', area: ['東京都'], subsidy_eligible: false, career_support: false,
+      review_summary: null,
+    },
+  ];
+  const result = matchSchools(answers, schools);
+  assert.ok(!result.some(r => r.id === 'aff-language'), '条件に合わない提携講座が出ている');
+});
+
+test('提携が無い場合の並びは、これまでどおり点数順', () => {
+  const base = {
+    status: 'active', cta_type: 'direct', purpose: ['career_change'],
+    target_level: 'beginner', format: 'online', area: [], subsidy_eligible: false,
+    career_support: false, review_summary: null,
+  };
+  const schools = [
+    { ...base, id: 'low', school_name: '一致少', skill_genre: ['programming'] },
+    { ...base, id: 'high', school_name: '一致多', skill_genre: ['programming', 'webdesign'] },
+  ];
+  const answers = {
+    purpose: 'career_change', genres: ['programming', 'webdesign'], level: 'beginner',
+    format: 'online', subsidy_preference: 'no_preference',
+  };
+  const result = matchSchools(answers, schools);
+  assert.strictEqual(result[0].id, 'high');
+});
+
+test('診断結果の画面に、提携を先に出していることの断りがある', () => {
+  // 並び順を商業的な理由で変えている以上、その場で伝わる必要がある。
+  const fs = require('fs');
+  const path = require('path');
+  const html = fs.readFileSync(path.join(__dirname, '..', '..', 'index.html'), 'utf8');
+  assert.match(html, /「PR」は当サイトが提携している講座で、先に表示しています/, '結果画面に断りがない');
+  assert.match(html, /affiliateBadges\(s, true\)/, '結果にPR表示が付いていない');
+});

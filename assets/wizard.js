@@ -562,10 +562,19 @@ function buildMatchReasons(components, limit = 2) {
 /**
  * 診断のメイン。上位 MAX_RESULTS 件を、match_score とマッチ理由付きで返す。
  *
- * 同点のタイブレークは指示書のとおり:
- *   1. 口コミ件数（出典数）が多い方
- *   2. cta_type === "affiliate" を優先
- * それでも決まらない場合は、入力配列の順序を保つ（実行のたびに順番が変わらないように）。
+ * 並び順:
+ *   1. 提携（cta_type === "affiliate"）している講座を先に出す
+ *   2. その中で match_score の高い順
+ *   3. 同点なら口コミ件数（出典数）が多い方
+ *   4. それでも決まらなければ入力配列の順序を保つ（実行のたびに順番が変わらないように）
+ *
+ * 【提携を先に出すことについて】
+ * 商業上の理由による並べ替えなので、画面には必ず「PR」を表示すること
+ * （2023年10月からのステマ規制。広告であることを隠すと景品表示法違反になる）。
+ * この扱いは faq.html と privacy.html にも書いてあるので、変えるときは合わせて直すこと。
+ *
+ * なお、回答条件で絞り込んだ候補（filterCandidates）の中だけで並べ替える。
+ * 条件に合わない講座を提携だからといって混ぜることはしない。
  */
 function matchSchools(answers, allSchools, limit = MAX_RESULTS) {
   const candidates = filterCandidates(answers, allSchools);
@@ -582,13 +591,13 @@ function matchSchools(answers, allSchools, limit = MAX_RESULTS) {
   });
 
   scored.sort((a, b) => {
+    const affiliateDiff = (b.cta_type === 'affiliate' ? 1 : 0) - (a.cta_type === 'affiliate' ? 1 : 0);
+    if (affiliateDiff !== 0) return affiliateDiff;
+
     if (b.match_score !== a.match_score) return b.match_score - a.match_score;
 
     const reviewDiff = reviewSourceCount(b) - reviewSourceCount(a);
     if (reviewDiff !== 0) return reviewDiff;
-
-    const affiliateDiff = (b.cta_type === 'affiliate' ? 1 : 0) - (a.cta_type === 'affiliate' ? 1 : 0);
-    if (affiliateDiff !== 0) return affiliateDiff;
 
     return a._index - b._index;
   });

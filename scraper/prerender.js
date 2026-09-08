@@ -73,6 +73,29 @@ function startStaticServer() {
  */
 const AD_HOST_PATTERN = /googlesyndication\.com|doubleclick\.net|googleadservices\.com|googletagmanager\.com|google-analytics\.com|google\.com\/recaptcha/;
 
+/**
+ * ファイル書き込みを数回まで再試行する。
+ *
+ * Windows では、ウイルス対策ソフトや検索インデックスが作りたてのフォルダ・ファイルを
+ * 掴んでいて、書き込みが一時的に UNKNOWN / EBUSY で落ちることがある
+ * （姉妹サイトの静的化でも、このサイトでも実際に発生した）。
+ * 1件の失敗で全体を止めたくないので、少し待って数回やり直す。
+ */
+function writeFileWithRetry(dirPath, filePath, data, attempts = 8) {
+  for (let i = 1; ; i += 1) {
+    try {
+      fs.mkdirSync(dirPath, { recursive: true });
+      fs.writeFileSync(filePath, data, 'utf8');
+      return;
+    } catch (err) {
+      const transient =
+        err.code === 'EBUSY' || err.code === 'UNKNOWN' || err.code === 'EPERM' || err.code === 'ENOENT';
+      if (!transient || i >= attempts) throw err;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 250 * i);
+    }
+  }
+}
+
 /** 1ページ分を描画して保存する。戻り値は保存したかどうか。 */
 async function renderPage(browser, urlPath, outDir) {
   const page = await browser.newPage();
@@ -99,8 +122,7 @@ async function renderPage(browser, urlPath, outDir) {
     // 実害が無いが、クローラーに見せたいのは保存時点の中身なのでそのまま保存する。
     html = html.replace(/<body([^>]*)data-ssg-ready="[^"]*"/, '<body$1');
 
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+    writeFileWithRetry(outDir, path.join(outDir, 'index.html'), html);
     return true;
   } catch (err) {
     console.warn(`  ${urlPath} の描画に失敗しました: ${err.message}`);

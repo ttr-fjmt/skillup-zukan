@@ -1037,6 +1037,8 @@ function renderResults() {
     ? results.map(function (s, i) {
         return '<div class="match-item" onclick="closeWizard();showDetail(\'' + esc(s.id) + '\')">' +
           '<span class="match-rank">' + (i + 1) + '位</span>' +
+          // 診断結果は提携している講座を先に出すので、広告であることを必ず添える。
+          affiliateBadges(s, true) +
           '<h4 style="margin:0 0 2px;font-size:16px">' + esc(s.school_name) + '</h4>' +
           '<div style="font-size:13px;color:var(--ink-sub)">' +
             (s.price.min_yen === null ? '要問い合わせ' : esc(s.price.display)) + '</div>' +
@@ -1049,7 +1051,9 @@ function renderResults() {
   document.getElementById('wizard').innerHTML =
     '<div class="wizard-head"><h3>あなたに合いそうな講座</h3>' +
       '<button class="wizard-close" onclick="closeWizard()" aria-label="閉じる">&times;</button></div>' +
-    '<p class="wizard-step">回答内容から、条件の合う順に並べています。</p>' +
+    // 提携している講座を先に出しているので、並び順の理由もその場で伝える。
+    '<p class="wizard-step">回答に合う講座の中から表示しています。' +
+      '「PR」は当サイトが提携している講座で、先に表示しています。</p>' +
     body +
     '<div class="wizard-actions"><button onclick="openWizard()">もう一度診断する</button></div>';
 }
