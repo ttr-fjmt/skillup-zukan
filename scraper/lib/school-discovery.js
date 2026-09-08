@@ -38,6 +38,7 @@ const { queriesForGenre } = require('./discovery-queries');
 const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-detail');
 // 都道府県の照合ロジックは area フォールバックと共有する（同じ基準で判定するため）。
 const { verifyPrefectures, filterToCampusPrefectures } = require('./area-detail');
+const { portalMarkers } = require('./portal-filter');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -110,6 +111,9 @@ const DISCOVERY_COMMON_RULES =
   '実在確認ができないスクールを創作しないこと\n' +
   '- 個人ブログ・まとめ記事・アフィリエイトサイトそのものではなく、講座を実際に' +
   '提供しているスクール/サービス自体を対象にすること\n' +
+  '- 他社・個人の講座を集めて掲載しているポータル・講座検索サイト・マーケットプレイスは' +
+  '対象外（例: 講座を検索するためのポータル、個人講師が講座を出品する場）。' +
+  '自社で講座を提供しているスクールだけを回答すること\n' +
   '- 大学・専門学校の正規課程（入学試験を要する学位課程）は対象外。社会人・学生が' +
   '任意に受講できる講座・スクール・オンライン学習サービスを対象にすること\n' +
   '- websiteには、まとめ記事からのアフィリエイトリンク・短縮URLではなく、' +
@@ -328,6 +332,21 @@ async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, max
     }
 
     const verification = await module.exports.verifyCandidate(candidate);
+
+    // 実在はしていても、他社の講座を集めたポータル・マーケットプレイスは掲載しない
+    // （講座ごとに料金も期間も違い、この図鑑の比較軸が埋まらないため）。
+    if (verification.ok) {
+      const markers = portalMarkers(verification.pageText);
+      if (markers.length > 0) {
+        console.log(
+          `school-discovery: [${GENRE_LABELS[genre] || genre}] ${candidate.name} は講座ポータル/マーケットプレイスとみなしてスキップします（該当語: ${markers.join('、')}）。`
+        );
+        skipped.push({ candidate, genre, reason: 'portal_or_marketplace' });
+        skippedInGenre += 1;
+        continue;
+      }
+    }
+
     if (verification.ok) {
       verified.push({
         candidate,
