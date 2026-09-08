@@ -146,3 +146,16 @@ test('ads.txt がサイト直下にあり、AdSense のパブリッシャーID�
   const publisher = client[1].replace('ca-', '');
   assert.strictEqual(adsTxt, `google.com, ${publisher}, DIRECT, f08c47fec0942fa0`);
 });
+
+test('問い合わせ先が、プライバシーポリシー・よくある質問・フッターに載っている', () => {
+  // 「運営者までご連絡ください」と書いてあるのに連絡手段が無い状態にしない。
+  // 掲載の取り下げ依頼を受け取れないと、掲載しているスクール側にも迷惑がかかる。
+  const contact = fs.readFileSync(path.join(ROOT, 'privacy.html'), 'utf8')
+    .match(/mailto:([^"]+)/);
+  assert.ok(contact, 'privacy.html に問い合わせ先が無い');
+
+  for (const file of ['privacy.html', 'faq.html', 'index.html']) {
+    const html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+    assert.ok(html.includes(`mailto:${contact[1]}`), `${file} に問い合わせ先が無い`);
+  }
+});
