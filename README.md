@@ -36,27 +36,25 @@ cd scraper && npm install
 
 Claude API を使うスクリプト（`discover-schools.js` / `summarize-reviews.js`）には `ANTHROPIC_API_KEY` が必要。
 
-## 口コミ要約パイプラインを有効化する前に（人力確認が必須）
+## 口コミ要約パイプライン（現在は停止中）
 
-`summarize-reviews.js` は **fail-closed** で設計してあり、`data/review-sources.json` の各サイトについて次の4つが揃っていないホストには**1度もHTTPリクエストを送らない**。
+**2026-09-08 時点の方針: 当面は口コミ無しで進める。** 3サイトを調査した結果、いずれも
+自動収集を見送ることにした。設定は `data/review-sources.json` で全件 `enabled: false` の
+ままで、パイプラインは1件もHTTPリクエストを送らない（fail-closed）。
 
-- `enabled: true`
-- `robots_txt_ok: true`
-- `terms_ok: true`
-- `checked_by_human_at: "YYYY-MM-DD"`
+| サイト | 調査結果 |
+| --- | --- |
+| コエテコキャンパス | `robots.txt` が `Disallow: /campus/reviews/*` を明示。口コミページを名指しで拒否 |
+| マナビット | 会員規約の禁止行為に「営利を目的とした行為」「商業目的での利用・複製」 |
+| リスキリング.jp | `robots.txt` に禁止なし、規約ページも見当たらず。ただし口コミは投稿者・運営者の著作物で、同種の比較サイト（競合）の中心コンテンツにあたるため見送り |
 
-この確認は自動化していない（コードが「たぶん大丈夫」と判断してよい種類の問題ではないため）。ブラウザで次を確認してから、上記4項目を手で埋めること。
+口コミ機能を再開する場合の選択肢は、各スクールから転載許可を得る／図鑑に投稿フォームを
+置いて自前で集める、のいずれか。他社サイトからの自動収集を再検討する場合は、上表の
+調査をやり直したうえで `enabled` / `robots_txt_ok` / `terms_ok` / `checked_by_human_at` を
+埋めること（4つ揃っていないホストへのリクエストは実行時に拒否される）。
 
-1. 各サイトの `/robots.txt`
-   - <https://coeteco.jp/robots.txt>
-   - <https://manab-it.com/robots.txt>
-   - <https://xn--nckgz9qc8c.jp/robots.txt>（リスキリング.jp）
-2. 各サイトの利用規約における、自動アクセス・クローリングに関する規定
-3. いずれかでブロックされているサイトは `enabled: false` のまま（対象から除外）
-
-確認が済んだら `.github/workflows/summarize-reviews.yml` の `schedule` ブロックのコメントを外して週次実行に切り替える。
-
-実行時には、許可リストとは別に `lib/robots.js` による robots.txt の機械チェックも通す（二重の安全網。人力確認の代わりにはならない）。リクエスト間隔は最低2秒（`REVIEW_MIN_DELAY_MS`）。
+実装自体は残してある（`lib/review-summary.js`）。原文は保存せず、複数件をまとめた
+「傾向」だけを要約し、必ず出典とセットで保存する設計。
 
 ## 表示名の約束: `school_name` を使う
 
@@ -86,7 +84,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（282件）
+npm test                                   # ユニットテスト（283件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -211,7 +209,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（282件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（283件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

@@ -482,7 +482,7 @@ async function enrichPriceFromDetailPage(schoolName, html, verifiedUrl, anthropi
   // 「コース一覧 → 各コースの詳細」という構造のサイトが多く、1階層目は各コースへの
   // リンク集で金額が載っていないことがある（techacademy の /course が実例）。
   // 深追いは1回限りで打ち切る（2階層目でも取れなければ諦める）。
-  const second = await module.exports.enrichPriceFromSecondLevel(schoolName, chosen, anthropic);
+  const second = await module.exports.enrichPriceFromSecondLevel(schoolName, chosen, anthropic, verifiedUrl);
   if (second) return second;
 
   return { price: extracted.price, plans: extracted.plans, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
@@ -498,7 +498,7 @@ async function enrichPriceFromDetailPage(schoolName, html, verifiedUrl, anthropi
  * 全校で無条件に走らせると1校あたりのリクエストが倍になるため、必ず
  * 「1階層目で金額が取れなかった場合だけ」呼ぶこと。
  */
-async function enrichPriceFromSecondLevel(schoolName, firstLevel, anthropic) {
+async function enrichPriceFromSecondLevel(schoolName, firstLevel, anthropic, homepageUrl) {
   let html;
   try {
     html = await module.exports.fetchDetailHtml(firstLevel.url);
@@ -507,8 +507,22 @@ async function enrichPriceFromSecondLevel(schoolName, firstLevel, anthropic) {
     return null;
   }
 
-  // 1階層目と同じページ・トップページには戻らないよう、自分自身は候補から外す。
-  const links = extractPageLinks(html, firstLevel.url).filter(l => l.url !== firstLevel.url);
+  // 既に読んだページには戻らない。1階層目自身に加えて、トップページとサイトのルートも
+  // 候補から外す（techacademy で2階層目にトップページが選ばれ、既に読んだページを
+  // もう一度取得する無駄打ちが起きた）。
+  const alreadySeen = new Set([firstLevel.url]);
+  for (const url of [homepageUrl, firstLevel.url]) {
+    if (!url) continue;
+    try {
+      const u = new URL(url);
+      alreadySeen.add(url);
+      alreadySeen.add(`${u.protocol}//${u.host}/`);
+    } catch {
+      // URLとして壊れていても、単に除外候補が増えないだけなので無視してよい。
+    }
+  }
+
+  const links = extractPageLinks(html, firstLevel.url).filter(l => !alreadySeen.has(l.url));
   if (links.length === 0) return null;
 
   let chosen;

@@ -441,3 +441,27 @@ test('2階層目: 自分自身へのリンクは候補にしない（同じペ�
     }
   );
 });
+
+test('2階層目: 既に読んだトップページ・サイトルートは候補にしない（無駄打ち防止）', async () => {
+  // techacademy で2階層目にトップページが選ばれ、既に読んだページを取り直す無駄が起きた。
+  let offered = [];
+  await withStubs(
+    {
+      choosePriceDetailLink: async links => { offered = links.map(l => l.url); return null; },
+      fetchDetailHtml: async () =>
+        '<a href="/">トップへ戻る</a><a href="https://example.com/">ホーム</a><a href="/course/basic">基礎コース</a>',
+      fetchDetailPage: async () => '金額なし',
+      extractPriceFromPage: async () => ({ plans: [], price: priceDetail.buildPriceFromPlans([], 'detail_page') }),
+    },
+    async () => {
+      await priceDetail.enrichPriceFromSecondLevel(
+        'サンプル',
+        { url: 'https://example.com/course', text: 'コース一覧' },
+        {},
+        'https://example.com/'
+      );
+      assert.ok(!offered.includes('https://example.com/'), 'トップページが候補に入っている');
+      assert.ok(offered.includes('https://example.com/course/basic'), '本来たどるべき下層ページが落ちている');
+    }
+  );
+});
