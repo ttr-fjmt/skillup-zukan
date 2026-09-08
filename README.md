@@ -251,14 +251,23 @@ data/discovery-log/2026-09-07.json
 稼いだかを分けて見たくなったら、AdSense でこのサイト専用の広告ユニットを作って
 `slots` を差し替える。サイト単位の売上は AdSense のサイト別レポートで分けて見られる。
 
-### 広告が出ないとき
+### 出せるようにする手順（`enabled` を開ける）
 
-AdSense の管理画面で `skillup-zukan.net` が「サイト」として追加され、審査を通って
-いるかを確認する。**未登録のうちは、IDが正しくても配信されない。**
+`ADSENSE.enabled` は既定で **`false`**。この状態では広告枠を一切描かず、
+AdSense のスクリプトも読み込まない。
 
-配信されなかった枠は自動で消える（AdSense が `ins` に付ける
-`data-ad-status="unfilled"` を見て、`.ad-slot` ごと非表示にしている）ので、
-「広告」の見出しと空白だけが残ることはない。
+`true` にするのは、**AdSense の管理画面で `skillup-zukan.net` を「サイト」として
+追加し、審査が通ってから**。未登録のまま `true` にすると、広告は1件も配信されない一方で
+枠の高さ（280px前後）だけが確保され、一覧の途中と最下部に空白が残る
+（公開直後に実際に発生した。`data-ad-status="unfilled"` の印すら付かない枠があり、
+CSSでは畳めなかった）。
+
+1. AdSense で `skillup-zukan.net` をサイトとして追加し、審査を通す
+2. `index.html` の `ADSENSE.enabled` を `true` にする
+3. `cd scraper && node prerender.js` で静的ページを作り直し、コミットする
+
+在庫が無くて配信されなかった枠は、AdSense が `ins` に付ける
+`data-ad-status="unfilled"` を見て `.ad-slot` ごと消している。
 
 ### 触るときの注意
 

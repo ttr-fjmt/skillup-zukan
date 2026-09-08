@@ -87,10 +87,15 @@ test('自動スクロールは「動きを減らす」設定を尊重する', ()
   assert.match(indexHtml, /prefers-reduced-motion: reduce/);
 });
 
-test('配信されなかった広告枠を畳む仕組みがある', () => {
-  // 未登録・在庫なしのときに280px前後の空白が残ったため、
-  // CSS（unfilledの印）とJS（印が付かないまま止まる場合）の両方で畳んでいる。
+test('広告は enabled スイッチが true のときだけ描かれる', () => {
+  // AdSense にサイト登録するまでは1件も配信されず、枠の高さ（280px前後）だけが
+  // 空白として残ってしまう。既定を false にして、審査が通ってから開ける。
+  assert.match(indexHtml, /enabled: (true|false),/, '広告の有効/無効スイッチが無い');
+  assert.match(indexHtml, /if \(!ADSENSE\.enabled\) return false;/,
+    'adsEnabled() がスイッチを見ていない');
+});
+
+test('配信されなかった広告枠は畳まれる', () => {
+  // 在庫が無いときに「広告」の見出しと空白だけが残らないようにする。
   assert.match(indexHtml, /data-ad-status="unfilled"/, 'unfilled を見るCSSが無い');
-  assert.match(indexHtml, /function watchAdSlot\(/, '配信されなかった枠を畳む処理が無い');
-  assert.match(indexHtml, /data-ad-status'\) === 'filled'/, '「配信済み」の判定が無い');
 });
