@@ -309,7 +309,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important}
 <header>
   <div class="header-inner">
     <h1 class="home-link" onclick="goHome()">スキルアップ<span class="mark">図鑑</span></h1>
-    <span class="count-badge" id="countBadge">43講座を掲載</span>
+    <span class="count-badge" id="countBadge">全国の講座を43件掲載中！</span>
     <span class="header-spacer"></span>
     <nav class="sister-links" aria-label="図鑑シリーズの姉妹サイト">
       <a class="to-agent" href="https://agent-zukan.net/" target="_blank" rel="noopener noreferrer">転職エージェント探すなら →</a>
@@ -422,7 +422,8 @@ function init() {
       renderRecommend();
       fillAdSlot(document.getElementById('adTop'), ADSENSE.slots.top);
       fillAdSlot(document.getElementById('adBottom'), ADSENSE.slots.bottom);
-      document.getElementById('countBadge').textContent = schools.length + '講座を掲載';
+      // 表記は3サイトで揃えている（転職エージェント図鑑・フリーランス案件図鑑と同じ形）。
+      document.getElementById('countBadge').textContent = '全国の講座を' + schools.length + '件掲載中！';
       route();
     })
     .catch(function () {

@@ -426,7 +426,8 @@ function init() {
       renderRecommend();
       fillAdSlot(document.getElementById('adTop'), ADSENSE.slots.top);
       fillAdSlot(document.getElementById('adBottom'), ADSENSE.slots.bottom);
-      document.getElementById('countBadge').textContent = schools.length + '講座を掲載';
+      // 表記は3サイトで揃えている（転職エージェント図鑑・フリーランス案件図鑑と同じ形）。
+      document.getElementById('countBadge').textContent = '全国の講座を' + schools.length + '件掲載中！';
       route();
     })
     .catch(function () {
