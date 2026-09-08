@@ -82,5 +82,47 @@
     "genre": "genai_dx",
     "reason": "portal_or_marketplace",
     "checkedAt": "2026-09-08T00:02:28.034Z"
+  },
+  "WorX MARKETING CLASS": {
+    "name": "WorX MARKETING CLASS",
+    "website": "https://worx.jp/lp/marketing-class/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "SAKIYOMIスクール": {
+    "name": "SAKIYOMIスクール",
+    "website": "https://www.sakiyomi.com/school",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "ferret+ Webマーケティング講座": {
+    "name": "ferret+ Webマーケティング講座",
+    "website": "https://ferret-plus.com/curriculums",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "Aidemy Premium": {
+    "name": "Aidemy Premium",
+    "website": "https://premium.aidemy.net/",
+    "genre": "genai_dx",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "LEC東京リーガルマインド（G検定対策講座）": {
+    "name": "LEC東京リーガルマインド（G検定対策講座）",
+    "website": "https://www.lec-jp.com/general/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "ProSkilll（G検定・E資格対策講座）": {
+    "name": "ProSkilll（G検定・E資格対策講座）",
+    "website": "https://proskilll.com/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T05:22:02.515Z"
   }
 }

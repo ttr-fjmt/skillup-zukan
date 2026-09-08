@@ -1595,5 +1595,1377 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
     "verified_url": "https://studying.jp/"
+  },
+  {
+    "id": "digital-hacks",
+    "school_name": "デジハク",
+    "official_name": null,
+    "description": "動画編集スクール。未経験向けに最適化されたカリキュラムで、Adobe Premiere Pro・After Effects・Photoshop・Illustratorを学習できます。受講期間中のマンツーマンサポート、チャット・面談による個別指導、ポートフォリオ制作支援、案件獲得・営業方法の実践的指導が特徴。サポート期間終了後も300本以上の動画教材の視聴可能。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "24時間チャットサポート（13時〜18時は即時返答）",
+      "受講期間終了後も300本以上の動画教材を何度でも視聴可能",
+      "毎月アップデートされる追加教材を継続提供",
+      "営業方法・ポートフォリオ制作・案件獲得の実践的講座をサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://digital-hacks.jp/",
+    "cta_url": "https://digital-hacks.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-digital-hacks",
+    "created_at": "2026-09-08T05:22:13.239Z",
+    "updated_at": "2026-09-08T05:22:13.239Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://digital-hacks.jp/"
+  },
+  {
+    "id": "studio-us",
+    "school_name": "STUDIO US",
+    "official_name": null,
+    "description": "国内トップクラスの教材数・受講生数を誇る動画編集オンラインスクール。未経験者でも期間無制限・質問無制限の無期限サポートにより、プロのクリエイターを目指せる。受講生5000名を超えるコミュニティネットワークを活かし、案件獲得から独立まで総合的にサポートする。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画クリエイター",
+      "映像クリエイター",
+      "SNSクリエイター",
+      "フリーランス",
+      "動画制作の社長",
+      "PRクリエイター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "受講期間無制限・質問無制限のサポート体制",
+      "5000名超のクリエイターコミュニティ",
+      "プロ講師によるマンツーマンレッスン・ZOOMサポート",
+      "独立企業との連携による案件紹介",
+      "スクール内コンペへの参加機会"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://studio-us.org/",
+    "cta_url": "https://studio-us.org/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-studio-us",
+    "created_at": "2026-09-08T05:22:21.478Z",
+    "updated_at": "2026-09-08T05:22:21.478Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://studio-us.org/"
+  },
+  {
+    "id": "chaptertwo-school",
+    "school_name": "ChapterTwo",
+    "official_name": "株式会社ChapterTwo",
+    "description": "副業・フリーランスとしての活動を徹底サポートするクリエイター育成スクール。動画編集やWebデザインの制作スキルだけでなく、営業スキルや実務スキル（契約書作成、メール営業等）を同時に学べます。高単価な仕事を獲得できるレベルを目指し、現役プロが学習をサポートします。",
+    "skill_genre": [
+      "video_editing",
+      "webdesign"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "220,000円",
+      "min_yen": 220000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "動画クリエイターコース",
+        "amount": 220000,
+        "duration": "12週間",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe年間契約費",
+        "amount": 3300,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "講師同伴システムで営業活動をサポート（サポート期間内に3回まで）",
+      "スクール側からの仕事発注により初心者も案件獲得が可能",
+      "制作スキルに加えて営業スキルや実務書類作成などを指導",
+      "サポート期間中は無制限でチャットやZOOMで質問可能",
+      "講座は終了後も永久に視聴可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://chaptertwo-school.com/movie/price/",
+    "official_url": "https://chaptertwo-school.com/",
+    "cta_url": "https://chaptertwo-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-chaptertwo-school",
+    "created_at": "2026-09-08T05:22:39.783Z",
+    "updated_at": "2026-09-08T05:22:39.783Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://chaptertwo-school.com/"
+  },
+  {
+    "id": "movieru",
+    "school_name": "むびるスクール",
+    "official_name": null,
+    "description": "動画制作サービス「むびる」「VideoWorks」が共同で運営する動画編集スクール。未経験から稼ぐことに特化しており、受注案件データを元にした実践的なカリキュラムを提供。卒業後は卒業生限定案件（年間1万件以上）を紹介され、営業不要で案件獲得が可能。現役プロによるマンツーマン指導と専属メンターによる学習サポート、24時間365日のチャットサポートなどを完備。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画クリエイター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "Premiere Pro 基礎コース",
+        "amount": null,
+        "duration": "4ヶ月",
+        "kind": null
+      },
+      {
+        "label": "Premiere Pro マスターコース",
+        "amount": null,
+        "duration": "5.5ヶ月",
+        "kind": null
+      },
+      {
+        "label": "After Effects 基礎コース",
+        "amount": null,
+        "duration": "5.5ヶ月",
+        "kind": null
+      },
+      {
+        "label": "After Effects マスターコース",
+        "amount": null,
+        "duration": "9.5ヶ月",
+        "kind": null
+      },
+      {
+        "label": "ショート動画 コース",
+        "amount": null,
+        "duration": "2.5ヶ月",
+        "kind": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役プロによるマンツーマン指導と専属メンターの双方のサポート",
+      "完全オンライン完結でいつでもどこでも学習可能",
+      "卒業生限定案件の紹介（年間1万件以上）と営業サポート不要な体制",
+      "企画構成力や営業スキルなど稼ぐための知識も習得",
+      "24時間365日のチャットサポートと週1回以上のリアルタイム授業"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://movieru.jp/page/school/top/",
+    "cta_url": "https://movieru.jp/page/school/top/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-movieru",
+    "created_at": "2026-09-08T05:22:50.605Z",
+    "updated_at": "2026-09-08T05:22:50.605Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://movieru.jp/page/school/top/"
+  },
+  {
+    "id": "editor-camp",
+    "school_name": "エディターキャンプ",
+    "official_name": "株式会社エディターキャンプ",
+    "description": "マンツーマンの個別指導による動画編集スクール。Premiere Pro等のAdobeソフトを使った実践的な編集スキルを習得できます。渋谷駅徒歩1分の撮影スタジオ併設教室で、オンラインとの併用受講も可能。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画編集者"
+    ],
+    "price": {
+      "display": "148,280円〜",
+      "min_yen": 148280,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "1ヶ月の短期集中講座",
+        "amount": 148280,
+        "duration": "30日",
+        "kind": "total"
+      },
+      {
+        "label": "1ヶ月の短期集中講座",
+        "amount": 3278,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "10週間 週1回",
+        "amount": 327800,
+        "duration": "10週間",
+        "kind": "total"
+      },
+      {
+        "label": "10週間 週1回",
+        "amount": 9680,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "3ヶ月間 週2回",
+        "amount": 657800,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "3ヶ月間 週2回",
+        "amount": 21780,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "入会金",
+        "amount": 0,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "マンツーマンの個別指導により挫折を防止",
+      "撮影スタジオ兼コワーキングスペース併設で実務環境を提供",
+      "チャット質問や画面共有でのオンラインサポート対応",
+      "講師常駐のオンライン自習室を毎日1時間開放"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://editor-camp.jp/tuition",
+    "official_url": "https://editor-camp.jp/",
+    "cta_url": "https://editor-camp.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-editor-camp",
+    "created_at": "2026-09-08T05:23:12.236Z",
+    "updated_at": "2026-09-08T05:23:12.236Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://editor-camp.jp/"
+  },
+  {
+    "id": "shelikes",
+    "school_name": "SHElikes",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing",
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://shelikes.jp/",
+    "cta_url": "https://shelikes.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shelikes",
+    "created_at": "2026-09-08T05:23:15.329Z",
+    "updated_at": "2026-09-08T05:23:15.329Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://shelikes.jp/"
+  },
+  {
+    "id": "stock-sun",
+    "school_name": "StockSun SEOラウンジPRO",
+    "official_name": "StockSun株式会社",
+    "description": "StockSun株式会社が運営するSEOスクール。コンサルタントによるSEO対策の実践的な講座を提供。検索エンジン最適化の知識とスキルを習得し、SEO業務の専門性を高めることを目的としている。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://stock-sun.com/fee/",
+    "area_detail_url": "https://stock-sun.com/school/",
+    "official_url": "https://stock-sun.com/",
+    "cta_url": "https://stock-sun.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-stock-sun",
+    "created_at": "2026-09-08T05:23:43.546Z",
+    "updated_at": "2026-09-08T05:23:43.546Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://stock-sun.com/"
+  },
+  {
+    "id": "snsmarketer",
+    "school_name": "SNSマーケター養成スクール",
+    "official_name": "株式会社SBMコンサルティング",
+    "description": "Instagram・YouTube・TikTokなどのSNS運用と動画編集（プレミアプロ）を学ぶ、完全オンラインのスクール。企画から撮影・編集・投稿まで、SNSマーケティング業務に必要な総合的なノウハウを習得できます。3ヶ月のカリキュラムで、未経験者もSNSマーケターやインフルエンサーとして活躍を目指します。月1回のZoomオンライン相談とチャットワークでのサポートあり。",
+    "skill_genre": [
+      "web_marketing",
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "SNSマーケター",
+      "インフルエンサー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "一括支払い",
+        "amount": null,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "完全オンライン学習で自宅から好きな時間に学習可能",
+      "月1回（全3回）のZoomオンライン個別相談とチャットワークサポート",
+      "動画編集（プレミアプロ）とSNS運用ノウハウを同時習得",
+      "講師は自身もインフルエンサーとして活動し、SNS運用代行の実績が豊富"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://snsmarketer.jp/",
+    "cta_url": "https://snsmarketer.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-snsmarketer",
+    "created_at": "2026-09-08T05:23:53.274Z",
+    "updated_at": "2026-09-08T05:23:53.274Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://snsmarketer.jp/"
+  },
+  {
+    "id": "break-marketing-program",
+    "school_name": "Break Marketing Program",
+    "official_name": "株式会社ブレイク",
+    "description": "初心者がつまずきやすい「挫折の壁」を壊し、現場で通用する力を最短距離で習得できるように設計した超実践型デジタルスキル講座。",
+    "skill_genre": [
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "18週間コース",
+        "amount": null,
+        "duration": "18週間",
+        "kind": null
+      },
+      {
+        "label": "12週間コース",
+        "amount": null,
+        "duration": "12週間",
+        "kind": null
+      },
+      {
+        "label": "24週間コース",
+        "amount": null,
+        "duration": "24週間",
+        "kind": null
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "マンツーマン+αの講師サポート体制で添削課題をクリアするまで次レベルへ進めない仕組み",
+      "SNS・動画・SEO・広告・営業・AI活用まで幅広いスキルを1講座で習得可能",
+      "実際にSEOサイトやランディングページ制作など現場の業務をそのまま学習課題として実践",
+      "現役Webマーケター講師陣によるメンター制度と転職キャリア支援専門チーム両方から徹底サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://break-marketing-program.jp/",
+    "cta_url": "https://break-marketing-program.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-break-marketing-program",
+    "created_at": "2026-09-08T05:24:04.248Z",
+    "updated_at": "2026-09-08T05:24:04.248Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://break-marketing-program.jp/"
+  },
+  {
+    "id": "skillupai",
+    "school_name": "スキルアップAI",
+    "official_name": null,
+    "description": "生成AI・AIエージェント開発から人材育成、組織定着までを支援するAI・DX人材育成プラットフォーム。リテラシーからエンジニア育成まで70以上の講座を展開。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "70以上の講座から最適な組み合わせを提案",
+      "対象別・課題別研修で実務直結型の学習",
+      "3〜4ヶ月の伴走支援で実データを使った課題解決型学習を提供",
+      "社内コミュニティ構築支援とコンペティションで組織への定着を支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.skillupai.com/personal/",
+    "official_url": "https://www.skillupai.com/",
+    "cta_url": "https://www.skillupai.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-skillupai",
+    "created_at": "2026-09-08T05:24:37.099Z",
+    "updated_at": "2026-09-08T05:24:37.099Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.skillupai.com/"
+  },
+  {
+    "id": "aiacademy",
+    "school_name": "AI Academy",
+    "official_name": null,
+    "description": "Pythonの基礎からデータサイエンス、機械学習、LLM開発まで学べるAI専門スクール。生成AIを使いこなして業務改善に取り組める力や、自らの手でAIシステムを実装・運用できるレベルを目指す。基礎から実践まで500種類以上のオリジナルテキストで学習できる。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AIエンジニア",
+      "データアナリスト"
+    ],
+    "price": {
+      "display": "19,800円〜",
+      "min_yen": 19800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "生成AI基礎コース 動画プラン",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI基礎コース 動画＋質問プラン",
+        "amount": 61800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース 動画プラン",
+        "amount": 34800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース 動画＋質問プラン",
+        "amount": 104800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース 個別指導プラン",
+        "amount": 600000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース 動画プラン",
+        "amount": 34800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース 動画＋質問プラン",
+        "amount": 104800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース 個別指導プラン",
+        "amount": 600000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "500種類以上のオリジナルテキスト教材",
+      "現役エンジニアによる24時間以内の質問対応",
+      "修了証明書（PDF）の授与",
+      "個別指導プランではコードレビューと学習プランの提案が付属",
+      "PCやスマートフォン、タブレット対応のマルチデバイス対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://aiacademy.jp/",
+    "cta_url": "https://aiacademy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-aiacademy",
+    "created_at": "2026-09-08T05:24:46.049Z",
+    "updated_at": "2026-09-08T05:24:46.049Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://aiacademy.jp/"
+  },
+  {
+    "id": "tech-mentor",
+    "school_name": "Tech Mentor",
+    "official_name": null,
+    "description": "未経験からエンジニア転職・フリーランスを目指すプログラミングスクール。受講者の目標に合わせて完全オーダーメイド学習を提供。Webエンジニア就職、Web制作/デザイン、AI駆動開発など複数コースを展開。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "Web制作フリーランス"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "専属メンターによるマンツーマン伴走支援",
+      "全コースでAI活用スキルを習得可能",
+      "卒業後1ヶ月単位で追加サポート利用可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://tech-mentor.dev/price",
+    "official_url": "https://tech-mentor.dev/",
+    "cta_url": "https://tech-mentor.dev/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tech-mentor",
+    "created_at": "2026-09-08T05:25:18.901Z",
+    "updated_at": "2026-09-08T05:25:18.901Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://tech-mentor.dev/"
+  },
+  {
+    "id": "agaroot",
+    "school_name": "アガルートアカデミー データサイエンス・G検定講座",
+    "official_name": "株式会社アガルート",
+    "description": "G検定（ジェネラリスト検定）とDS検定（データサイエンティスト検定）の合格を目指す講座。初学者や文系の方、忙しい社会人向けにAIの基礎からG検定合格レベルまで体系的にカバーします。プロ講師による質の高い講義、出るとこ優先の解説、オリジナルテキスト、豊富な演習問題が特徴です。",
+    "skill_genre": [
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "10,780円〜",
+      "min_yen": 10780,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "G検定対策講座（2024 #6改訂シラバス対応版）",
+        "amount": 27280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "DS検定対策講座（スキルチェックリストver.5対応版）",
+        "amount": 27280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース/動画プラン",
+        "amount": 38280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース/動画＋質問プラン",
+        "amount": 115280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI人材コース/個別指導プラン",
+        "amount": 660000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI基礎コース/動画プラン",
+        "amount": 21780,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI基礎コース/動画＋質問プラン",
+        "amount": 67980,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース/動画プラン",
+        "amount": 38280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース/動画＋質問プラン",
+        "amount": 115280,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI実践コース/個別指導プラン",
+        "amount": 660000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "DXリテラシー講座",
+        "amount": 10780,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AIパスポート試験/合格総合講義",
+        "amount": 10780,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オンライン講義と演習問題で体系的に学習",
+      "プロ講師による質の高い講義と出るとこ優先の解説",
+      "オリジナルテキストと豊富な総仕上げ問題",
+      "個別受講相談で学習プランをカスタマイズ可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.agaroot.jp/datascience/",
+    "cta_url": "https://www.agaroot.jp/datascience/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-agaroot",
+    "created_at": "2026-09-08T05:25:32.999Z",
+    "updated_at": "2026-09-08T05:25:32.999Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.agaroot.jp/datascience/"
+  },
+  {
+    "id": "study-ai",
+    "school_name": "Study-AI",
+    "official_name": null,
+    "description": "G検定やE資格などのJDLA認定資格対策講座を提供するプラットフォーム。AI実装検定A級対応の超AI入門講座、G検定対策講座、ディープラーニング講座など、初心者から応用まで段階的に学べるコースラインアップ。",
+    "skill_genre": [
+      "genai_dx",
+      "programming",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "G検定・E資格のJDLA認定プログラム対応",
+      "AI実装検定A級対応講座を提供",
+      "初心者向けの超AI入門講座から実践的なディープラーニング講座まで段階的に構成"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://study-ai.com/courses/",
+    "area_detail_url": "https://study-ai.com/school/",
+    "official_url": "https://study-ai.com/",
+    "cta_url": "https://study-ai.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-study-ai",
+    "created_at": "2026-09-08T05:26:08.821Z",
+    "updated_at": "2026-09-08T05:26:08.821Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://study-ai.com/"
+  },
+  {
+    "id": "ecc",
+    "school_name": "ECC外語学院",
+    "official_name": null,
+    "description": "60年以上の語学教育実績を持つECC外語学院は、「発信する力」を引き出すオリジナルカリキュラムで、コミュニケーション力の向上を目指す英会話スクール。国内140校以上のスクール網で、様々なレベルと目的別コースを展開している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "千葉県",
+      "埼玉県",
+      "栃木県",
+      "茨城県",
+      "福島県",
+      "愛知県",
+      "三重県",
+      "岐阜県",
+      "静岡県",
+      "大阪府",
+      "京都府",
+      "兵庫県",
+      "奈良県",
+      "和歌山県",
+      "滋賀県",
+      "福岡県",
+      "岡山県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "60年以上の語学教育実績に基づくオリジナルカリキュラム",
+      "外国人講師とバイリンガル講師による目的別レッスン",
+      "受講生一人ひとりに合わせたカウンセラーのサポート",
+      "国内140校以上のスクール網で通学可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.ecc.jp/cinfo/",
+    "official_url": "https://www.ecc.jp/",
+    "cta_url": "https://www.ecc.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ecc",
+    "created_at": "2026-09-08T05:26:34.277Z",
+    "updated_at": "2026-09-08T05:26:34.277Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.ecc.jp/"
+  },
+  {
+    "id": "kvillage",
+    "school_name": "K Village 韓国語",
+    "official_name": null,
+    "description": "全国35校でクラスレッスン、マンツーマンレッスン、ジュニア向けレッスン、オンラインレッスンなど複数の受講形式で韓国語を学べる教室。250名以上の日本語堪能な韓国語講師がおり、会話中心のレッスンを提供している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "4,400円〜",
+      "min_yen": 4400,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "クラスレッスン",
+        "amount": 550,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "クラスレッスン基本料金",
+        "amount": 3300,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "マンツーマンレッスン（デイタイム）",
+        "amount": 4400,
+        "duration": "1レッスン",
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスン（フルタイム）",
+        "amount": 5500,
+        "duration": "1レッスン",
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスン基本料金",
+        "amount": 3300,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "千葉県",
+      "埼玉県",
+      "岐阜県",
+      "京都府",
+      "大阪府",
+      "広島県",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1レッスン550円から利用可能な安価なクラスレッスン",
+      "マンツーマンレッスン4,400円で個別対応",
+      "オンラインレッスンで時間・場所に柔軟に対応",
+      "ジュニア向けレッスンと親子ペアレッスンの提供",
+      "250名以上の日本語堪能な講師による会話中心のレッスン"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://kvillage.jp/",
+    "cta_url": "https://kvillage.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kvillage",
+    "created_at": "2026-09-08T05:26:43.088Z",
+    "updated_at": "2026-09-08T05:26:43.088Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://kvillage.jp/"
+  },
+  {
+    "id": "berkeleyhouse",
+    "school_name": "バークレーハウス語学センター",
+    "official_name": null,
+    "description": "IELTS特化校として、IELTS対策講座、IELTS公式テストセンター（東京・名古屋）、留学手配を一括でサポート。TOEFL、TOEIC、英検など複数の資格試験対策も提供。受講生の要望や学習スタイルに応じてカリキュラムをカスタマイズしたプライベートレッスンを提供。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "IELTS公式テストセンターが東京・名古屋に開設",
+      "IELTS対策から本番試験受験までワンストップで対応",
+      "IELTS、TOEFL、TOEIC、英検など複数の資格試験対策",
+      "受講生ごとにカスタマイズされたプライベートレッスン"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://berkeleyhouse.co.jp/countermeasure/ielts/ieltscourse/",
+    "official_url": "https://berkeleyhouse.co.jp/",
+    "cta_url": "https://berkeleyhouse.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-berkeleyhouse",
+    "created_at": "2026-09-08T05:27:14.049Z",
+    "updated_at": "2026-09-08T05:27:14.049Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://berkeleyhouse.co.jp/"
+  },
+  {
+    "id": "arc-academy",
+    "school_name": "アークアカデミー",
+    "official_name": null,
+    "description": "日本語教師養成講座を提供する教育機関。文部科学省の「登録実践研修機関」および「登録日本語教員養成機関」として認定。基礎理論から教育実習まで一体的に履修する通学コース（6カ月）、eラーニングと通学を組み合わせたコース（9カ月推奨）、日本語教員試験合格者向けの実践研修コース（2カ月）、試験対策講座などを提供。就職支援室で求人紹介や個別相談、履歴書添削などのサポートを実施。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "日本語教師"
+    ],
+    "price": {
+      "display": "36,680円〜",
+      "min_yen": 36680,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "日本語教員養成コース+ 実践研修コース",
+        "amount": 638190,
+        "duration": "6か月",
+        "kind": "total"
+      },
+      {
+        "label": "日本語教員養成コース",
+        "amount": 22000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "日本語教員養成eラーニングコース+ 実践研修コース",
+        "amount": 500370,
+        "duration": "1年間",
+        "kind": "total"
+      },
+      {
+        "label": "日本語教員養成eラーニングコース",
+        "amount": 22000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "実践研修コース",
+        "amount": 126500,
+        "duration": "2か月",
+        "kind": "total"
+      },
+      {
+        "label": "実践研修コース",
+        "amount": 22000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "オプション講座 初級指導",
+        "amount": 36680,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "日本語教員試験対策講座",
+        "amount": 88000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "京都府",
+      "福井県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "文部科学省認定の登録実践研修機関・登録日本語教員養成機関",
+      "通学（6カ月）とeラーニング（9カ月推奨）の複数受講形式から選択可能",
+      "日本語教員試験対策講座も提供",
+      "就職支援室で200件以上の求人情報を取り扱い",
+      "職業紹介事業許可を取得済み（厚生労働省）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://yousei.arc-academy.net/price/",
+    "area_detail_url": "https://yousei.arc-academy.net/access",
+    "official_url": "https://yousei.arc-academy.net/",
+    "cta_url": "https://yousei.arc-academy.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-arc-academy",
+    "created_at": "2026-09-08T05:27:40.034Z",
+    "updated_at": "2026-09-08T05:27:40.034Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://yousei.arc-academy.net/"
+  },
+  {
+    "id": "kec",
+    "school_name": "KEC日本語学院",
+    "official_name": null,
+    "description": "文化庁届出受理講座（H29040727001）として国内でいち早く認可された日本語教師養成スクール。日本語教師養成講座420時間コースと日本語教員試験対策コースを提供。採用試験と同環境下の対面授業で実践力を養成し、就職後に活躍できる人材育成を目指す。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "日本語教師"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "京都府",
+      "兵庫県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "3年間の無料再履修制度で繰り返し受講可能",
+      "平日だけでなく土日夜間への振替授業に対応",
+      "日本語教員試験対策コースはオンラインで双方向授業を実施",
+      "卒業生同士が情報交換・課題共有して切磋琢磨できるコミュニティ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.jpns.kec.ne.jp/jyugyouryou.html",
+    "official_url": "https://www.jpns.kec.ne.jp/",
+    "cta_url": "https://www.jpns.kec.ne.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kec",
+    "created_at": "2026-09-08T05:28:09.748Z",
+    "updated_at": "2026-09-08T05:28:09.748Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.jpns.kec.ne.jp/"
+  },
+  {
+    "id": "simulacademy",
+    "school_name": "サイマル・アカデミー",
+    "official_name": null,
+    "description": "サイマル・インターナショナル傘下の通訳・翻訳専門スクール。英語と中国語コースを提供し、通訳者養成コース、翻訳者養成コース、英語強化コース、短期プログラムなどを展開。現役の経験豊富な通訳者・翻訳者が講師を務め、実践的なプロ育成カリキュラムが特徴。修了生は通訳・翻訳の第一線で活躍している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "通訳者",
+      "翻訳者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役通訳者・翻訳者による指導",
+      "実践的なプロ育成カリキュラム",
+      "サイマル・インターナショナルでのキャリアサポート体制",
+      "インターネット講座による場所時間の制約なない学習が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.simulacademy.com/course/",
+    "official_url": "https://www.simulacademy.com/",
+    "cta_url": "https://www.simulacademy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-simulacademy",
+    "created_at": "2026-09-08T05:28:37.189Z",
+    "updated_at": "2026-09-08T05:28:37.189Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.simulacademy.com/"
   }
 ]
