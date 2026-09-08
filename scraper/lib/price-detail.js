@@ -208,7 +208,8 @@ function dropDiscountedDuplicates(plans) {
     // 畳み込みのキーは「ラベル＋種別」。同じプラン名で入学金と月額が別々に載っている
     // ことがあり（Vook のマスタープランは入学金139,700円＋月額39,600円）、ラベルだけを
     // キーにすると、安い方を割引価格と誤認して片方を捨ててしまう。
-    const key = `${plan.label.trim()} ${plan.kind || ''}`;
+    const label = plan.label.trim();
+    const key = `${label} ${plan.kind || ''}`;
     const existing = byLabel.get(key);
     if (!existing) {
       byLabel.set(key, { ...plan });
@@ -224,10 +225,10 @@ function dropDiscountedDuplicates(plans) {
       continue;
     }
     if (plan.amount > existing.amount) {
-      console.warn(`  プラン「${key}」に複数の金額があるため、割引前とみなして ${plan.amount}円 を採用しました（${existing.amount}円 を除外）。`);
+      console.warn(`  プラン「${label}」に複数の金額があるため、割引前とみなして ${plan.amount}円 を採用しました（${existing.amount}円 を除外）。`);
       existing.amount = plan.amount;
     } else if (plan.amount < existing.amount) {
-      console.warn(`  プラン「${key}」の ${plan.amount}円 は割引後価格とみなして除外しました（${existing.amount}円 を採用）。`);
+      console.warn(`  プラン「${label}」の ${plan.amount}円 は割引後価格とみなして除外しました（${existing.amount}円 を採用）。`);
     }
   }
 
