@@ -488,6 +488,35 @@ function fillAdSlot(el, slotId) {
     'data-ad-slot="' + esc(slotId) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>';
   // 広告が出せなくても本体の表示は止めない。
   try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { /* noop */ }
+  watchAdSlot(el);
+}
+
+/**
+ * 広告が実際に配信されたときだけ枠を残す。
+ *
+ * AdSense は配信できなかった枠に data-ad-status="unfilled" を付けるので、
+ * 通常はCSSだけで畳める。ところがサイトが未登録などの状態では、その印が付かないまま
+ * 高さ（280px前後）だけ確保されて空白が残ることがある（公開直後に実際に発生した）。
+ * そこで、枠が画面に入ってから少し待っても「配信済み」にならなければ畳む。
+ *
+ * 画面に入るまで待つのは、AdSense が下のほうの枠を後回しに読み込むことがあるため。
+ * すぐ畳むと、本来は出せた広告まで消してしまう。
+ */
+function watchAdSlot(el) {
+  if (!el || typeof IntersectionObserver === 'undefined') return;
+  var io = new IntersectionObserver(function (entries) {
+    for (var i = 0; i < entries.length; i += 1) {
+      if (!entries[i].isIntersecting) continue;
+      io.disconnect();
+      setTimeout(function () {
+        var ins = el.querySelector('ins.adsbygoogle');
+        if (ins && ins.getAttribute('data-ad-status') === 'filled') return;
+        el.style.display = 'none';
+      }, 3500);
+      return;
+    }
+  }, { rootMargin: '200px' });
+  io.observe(el);
 }
 
 /* ── おすすめ講座（横スクロール） ───────────────────────
