@@ -68,6 +68,9 @@ function startStaticServer() {
 /** 1ページ分を描画して保存する。戻り値は保存したかどうか。 */
 async function renderPage(browser, urlPath, outDir) {
   const page = await browser.newPage();
+  // 静的化中であることをページ側に伝える。ロゴの読み込みを待ち切れずに
+  // 代替タイルへ切り替える処理（watchLogos）を、保存対象のHTMLに固定させないため。
+  await page.evaluateOnNewDocument(() => { window.__PRERENDER__ = true; });
   try {
     await page.goto(`http://localhost:${PORT}${urlPath}`, { waitUntil: 'networkidle0', timeout: NAV_TIMEOUT });
     await page.waitForSelector('body[data-ssg-ready]', { timeout: READY_TIMEOUT });
