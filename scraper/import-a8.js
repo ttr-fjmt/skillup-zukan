@@ -242,7 +242,9 @@ async function buildNewSchool(row, officialUrl, anthropic, existingIds) {
     created_at: now,
     updated_at: now,
     status: 'active',
-    source: 'a8-import',
+    // スキーマの許容値は ai-discovered / a8 / manual / mock。
+    // 'a8-import' と書いて14件すべてが弾かれたため、テストでも値を固定してある。
+    source: 'a8',
     source_note: '提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み',
     verified_url: verifiedUrl,
   };

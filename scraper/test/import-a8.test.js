@@ -67,3 +67,26 @@ test('取り込んだ講座は提携（affiliate）として記録される', ()
   assert.match(src, /cta_type: 'affiliate'/, '提携として記録していない');
   assert.match(src, /cta_type = 'affiliate'/, '既存レコードの更新で提携にしていない');
 });
+
+test('取り込んだ講座の source が、スキーマの許容値になっている', () => {
+  // 'a8-import' と書いたために14件すべてが弾かれた。値の取り違えは
+  // 実行して初めて分かる種類の間違いなので、ここで固定する。
+  const src = fs.readFileSync(path.join(__dirname, '..', 'import-a8.js'), 'utf8');
+  const schema = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'schema', 'school.schema.json'), 'utf8'));
+  const allowed = schema.properties.source.enum;
+
+  const used = [...src.matchAll(/^\s*source: '([^']+)',/gm)].map(m => m[1]);
+  assert.ok(used.length > 0, 'source を設定している箇所が見つからない');
+  for (const value of used) {
+    assert.ok(allowed.includes(value), `source: '${value}' はスキーマの許容値でない（${allowed.join(', ')}）`);
+  }
+});
+
+test('取り込んだ講座の status も、スキーマの許容値になっている', () => {
+  const src = fs.readFileSync(path.join(__dirname, '..', 'import-a8.js'), 'utf8');
+  const schema = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'schema', 'school.schema.json'), 'utf8'));
+  const used = [...src.matchAll(/^\s*status: '([^']+)',/gm)].map(m => m[1]);
+  for (const value of used) {
+    assert.ok(schema.properties.status.enum.includes(value), `status: '${value}' は許容値でない`);
+  }
+});
