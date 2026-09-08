@@ -17,9 +17,13 @@ const DEFAULT_PREVIEW = 4;
 /**
  * ジャンルごとの塊に分ける。
  *
- * 複数ジャンルを持つ講座は、そのすべての塊に出す。
- * トップのジャンル別件数（○件）と塊の件数がずれると、数え方を疑われるため
- * 「そのジャンルを含むか」という同じ条件で数える。
+ * 件数（items）は「そのジャンルを含むか」で数える。トップのジャンル別件数（○件）や
+ * ジャンル別ページと同じ条件にしておかないと、数え方を疑われるため。
+ *
+ * 一方、実際に出すカード（preview）は、複数ジャンルの講座を上の塊で出していれば
+ * 下の塊では出さない。同じ講座が1画面に2度3度出ると、掲載が重複しているように見える
+ * （実際にトップの32枚のうち8枚が同じ講座の再掲になっていた）。
+ * 件数と「すべて見る」の先は変わらないので、隠れた講座も必ずたどれる。
  *
  * @returns {{genre: string, items: object[], preview: object[], hidden: number}[]}
  *          該当が0件のジャンルは含めない。
@@ -28,10 +32,18 @@ function groupByGenre(schools, options) {
   const opts = options || {};
   const limit = opts.preview || DEFAULT_PREVIEW;
   const genres = opts.genres || GENRE;
+  // 同じ講座を2度出さないための控え。unique: false で従来どおり重複を許す。
+  const unique = opts.unique !== false;
+  const shown = new Set();
 
   return genres.map(genre => {
     const items = (schools || []).filter(s => (s.skill_genre || []).indexOf(genre) !== -1);
-    return { genre, items, preview: items.slice(0, limit), hidden: Math.max(0, items.length - limit) };
+    let preview = unique ? items.filter(s => !shown.has(s.id)).slice(0, limit) : items.slice(0, limit);
+    // 全部が上の塊で出ている場合でも、見出しだけの空の塊にはしない。
+    // 講座があるジャンルが空欄で並ぶほうが、1件重なるより分かりにくい。
+    if (preview.length === 0 && items.length > 0) preview = items.slice(0, 1);
+    preview.forEach(s => shown.add(s.id));
+    return { genre, items, preview, hidden: Math.max(0, items.length - preview.length) };
   }).filter(group => group.items.length > 0);
 }
 

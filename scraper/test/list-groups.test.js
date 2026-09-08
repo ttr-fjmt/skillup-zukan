@@ -106,3 +106,46 @@ test('ブラウザ用bundleに塊分けが入っている', () => {
     assert.ok(bundle.includes(key), `assets/wizard.js に ${key} が無い（作り直していない）`);
   }
 });
+
+test('同じ講座を複数の塊に重ねて出さない', () => {
+  // 複数ジャンルの講座が1画面に2度3度出ると、掲載が重複しているように見える
+  // （実際にトップの32枚のうち8枚が同じ講座の再掲になっていた）。
+  const multi = school({ id: 'multi', skill_genre: ['programming', 'webdesign'] });
+  const only = school({ id: 'only', skill_genre: ['webdesign'] });
+  const groups = groupByGenre([multi, only]);
+
+  const shown = groups.flatMap(g => g.preview.map(s => s.id));
+  assert.deepStrictEqual(shown, [...new Set(shown)], '同じ講座が2回出ている');
+  assert.deepStrictEqual(groups.find(g => g.genre === 'programming').preview.map(s => s.id), ['multi']);
+  assert.deepStrictEqual(groups.find(g => g.genre === 'webdesign').preview.map(s => s.id), ['only']);
+});
+
+test('件数は「そのジャンルを含むか」で数える（重ねて出さなくても変わらない）', () => {
+  // トップのジャンル別件数・ジャンル別ページと数え方を揃える。
+  const multi = school({ id: 'multi', skill_genre: ['programming', 'webdesign'] });
+  const groups = groupByGenre([multi, school({ id: 'only', skill_genre: ['webdesign'] })]);
+  assert.strictEqual(groups.find(g => g.genre === 'programming').items.length, 1);
+  assert.strictEqual(groups.find(g => g.genre === 'webdesign').items.length, 2);
+});
+
+test('全部が上の塊で出ていても、見出しだけの空の塊にはしない', () => {
+  const a = school({ id: 'a', skill_genre: ['programming', 'webdesign'] });
+  const groups = groupByGenre([a]);
+  const web = groups.find(g => g.genre === 'webdesign');
+  assert.strictEqual(web.preview.length, 1, '空の塊になっている');
+  assert.strictEqual(web.preview[0].id, 'a');
+});
+
+test('unique: false で従来どおり重複を許せる', () => {
+  const a = school({ id: 'a', skill_genre: ['programming', 'webdesign'] });
+  const groups = groupByGenre([a], { unique: false });
+  assert.strictEqual(groups.find(g => g.genre === 'programming').preview.length, 1);
+  assert.strictEqual(groups.find(g => g.genre === 'webdesign').preview.length, 1);
+});
+
+test('掲載中の実データで、トップに同じ講座が2度出ない', () => {
+  const list = readSchools().filter(s => s.status === 'active');
+  const shown = groupByGenre(list).flatMap(g => g.preview.map(s => s.id));
+  const dup = shown.filter((id, i) => shown.indexOf(id) !== i);
+  assert.deepStrictEqual(dup, [], `重複して出ている講座: ${dup.join('、')}`);
+});

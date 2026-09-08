@@ -6030,7 +6030,7 @@
   },
   {
     "id": "human-yakan",
-    "school_name": "ヒューマンアカデミー夜間スクール（Unity専門）",
+    "school_name": "ヒューマンアカデミー 夜間・週末講座",
     "official_name": null,
     "description": "平日夜間や土日に、週1回から学べるエンタメ・クリエイティブスクール。半年～1年のカリキュラムを自分で組み立てられ、Unityを含むゲームクリエイター・アニメーション系の講座を提供。プロ講師とキャリアコンシェルジュによるサポートが受講前から始まり、業界とのつながりが豊富。",
     "skill_genre": [
@@ -6089,7 +6089,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-human-yakan",
     "created_at": "2026-09-08T20:21:02.015Z",
-    "updated_at": "2026-09-08T20:21:02.015Z",
+    "updated_at": "2026-09-08T23:40:05.592Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
