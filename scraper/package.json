@@ -15,7 +15,9 @@
     "enrich-areas": "node enrich-areas.js",
     "recheck-guards": "node recheck-guards.js",
     "build-wizard": "node build-wizard-bundle.js",
-    "prerender": "node prerender.js"
+    "prerender": "node prerender.js",
+    "import-a8": "node import-a8.js",
+    "generate-a8-template": "node generate-a8-template.js"
   },
   "engines": {
     "node": ">=22.12.0"

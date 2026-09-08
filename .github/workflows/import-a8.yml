@@ -1,0 +1,96 @@
+name: Import affiliate schools
+
+# 運用手順: data/a8-import/アフィリエイト案件_スキルアップ図鑑.xlsx を更新して
+# コミット・pushしたあと、このワークフローを手動実行する（/import-a8 が自動化している）。
+# 取り込んだ行はExcelの「反映」列が自動でTRUEになり、schools.json と一緒にコミットされる。
+#
+# 【このサイト特有の注意】
+# Excelから取り込むのは提携リンクだけで、掲載内容は公式サイト本文から抽出・照合する。
+# そのため ANTHROPIC_API_KEY が必要で、日次の発見パイプラインと同じガードが通る。
+
+on:
+  workflow_dispatch:
+
+# run ブロックの既定シェルを bash に固定する。
+# 指定しない場合の既定は "bash -e {0}" で pipefail が無効なため、
+#   node script.js | tail -5
+# のようにパイプを書くと、左側が失敗しても終了コードが tail のもの(0)になり、
+# 失敗が握りつぶされてワークフローがグリーンのまま進んでしまう。
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write
+
+concurrency:
+  # data/schools.json をコミット・pushする。他の書き込み系ワークフローと衝突しないよう、
+  # 共通のグループ名を使う。
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      - name: Import affiliate schools into schools.json
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node import-a8.js
+
+      - name: Install Chrome for prerendering
+        run: npx --yes puppeteer browsers install chrome
+
+      - name: Prerender school and category pages
+        working-directory: scraper
+        run: node prerender.js
+
+      - name: Regenerate sitemap.xml and llms.txt
+        working-directory: scraper
+        run: node generate-sitemap.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/schools.json sitemap.xml llms.txt
+          # import-a8.js が「反映」列をTRUEに書き換えたExcel自体も一緒にコミットする。
+          git add data/a8-import
+          [ -d school ] && git add school
+          [ -d category ] && git add category
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "feat: import affiliate schools ($(date -u +%Y-%m-%d))"
+
+          max_retries=2
+          attempt=0
+          until git push; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -gt "$max_retries" ]; then
+              echo "::error::push failed after $max_retries retries"
+              exit 1
+            fi
+            echo "push failed (attempt $attempt/$max_retries) — pulling --rebase and retrying..."
+            git pull --rebase origin main
+          done
