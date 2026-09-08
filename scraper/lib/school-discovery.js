@@ -44,7 +44,7 @@ const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
 
 /** 1ジャンルあたりの検索呼び出しで、AIに提案させる候補数の上限（軽量な呼び出しに留めるため）。 */
-const PER_GENRE_SEARCH_LIMIT = 5;
+const PER_GENRE_SEARCH_LIMIT = 12;
 
 /** 構造化AIのプロンプトに渡すページ本文抽出テキストの上限文字数。 */
 const PAGE_TEXT_MAX_CHARS = 6000;
@@ -135,7 +135,7 @@ async function searchGenreCandidates(genre, excludeNames) {
   const response = await anthropic.messages.create({
     model: DISCOVERY_MODEL,
     max_tokens: 1500,
-    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }],
+    tools: [{ type: 'web_search_20250305', name: 'web_search', max_uses: 8 }],
     messages: [{
       role: 'user',
       content: [

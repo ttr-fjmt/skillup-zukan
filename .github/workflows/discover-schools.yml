@@ -66,9 +66,9 @@ jobs:
         working-directory: scraper
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # 日次cron実行時は全8ジャンルを対象にし、件数は10件のままに抑える。
+          # 日次cron実行時は全8ジャンルを対象にする。件数の上限は20件。
           DISCOVER_GENRES: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.genres || 'all' }}
-          DISCOVER_MAX_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_candidates || '10' }}
+          DISCOVER_MAX_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_candidates || '20' }}
         run: node discover-schools.js
 
       - name: Install Chrome for prerendering

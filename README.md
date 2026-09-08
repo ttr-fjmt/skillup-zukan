@@ -148,6 +148,22 @@ REVIEW_ONLY_SCHOOL_ID=<id> npm run summarize-reviews   # 1校だけ口コミ要�
 | `ANTHROPIC_DISCOVERY_MODEL` | `claude-sonnet-4-6` | 発見（web_search）用モデル |
 | `ANTHROPIC_MODEL` | `claude-haiku-4-5-20251001` | 構造化用モデル |
 
+### 発見クエリを増やす
+
+ジャンルごとの「検索の切り口」は `lib/discovery-queries.js`。1ジャンルにつき20〜30本を
+持たせ、`queriesForGenre()` が日付で8本ずつの窓をずらすので、日をまたいで全部が使われる。
+
+**切り口を足すだけでは件数は増えない。** 1回の呼び出しで実際に検索できる回数
+（`school-discovery.js` の `max_uses`）と、AIが返してよい候補数
+（`PER_GENRE_SEARCH_LIMIT`）の両方が上限になっているため、そちらも合わせて見ること。
+
+| 設定 | 場所 | 現在 |
+| --- | --- | --- |
+| 1ジャンルあたりの検索回数 | `school-discovery.js` `max_uses` | 8 |
+| 1ジャンルあたりの候補数 | `school-discovery.js` `PER_GENRE_SEARCH_LIMIT` | 12 |
+| 1日に新規掲載する上限 | `discover-schools.yml` `DISCOVER_MAX_PER_RUN` | 20 |
+| AIに見せる切り口の数 | `discovery-queries.js` `QUERY_WINDOW` | 8 |
+
 ## 収集パイプラインの原則
 
 **二段階検証。** AIの「実在する」という自己申告を無条件に信用しない。
@@ -374,7 +390,6 @@ curl -sI https://skillup-zukan.net/ | head -1      # 実際の応答
 
 ## 未確定・要判断事項
 
-- ジャンル別発見クエリの精度・ヒット数（少なければ `lib/discovery-queries.js` にクエリを追加する）
 - `skill_genre[]` 自動付与の精度（承認フェーズが無く直接公開されるため、`data/discovery-log/` の記録を手がかりに事後で確認する。誤判定が目立つ場合は `normalizeStructuredFields()` の丸め込みか抽出プロンプトを調整する）
 - 口コミ要約の品質（原文に寄りすぎる場合は `lib/review-summary.js` のプロンプトを調整する）
 - A8インポート（`cta_url` / `cta_type: "affiliate"` の流し込み）は提携が取れてから。既存2サイトの `import-a8.js` を移植する想定

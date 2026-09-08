@@ -27,7 +27,7 @@ const {
   GENRE_PURPOSE_ORDER,
 } = require('../lib/schema');
 const { SCHEMA_PATH } = require('../lib/validate');
-const { DISCOVERY_QUERIES } = require('../lib/discovery-queries');
+const { DISCOVERY_QUERIES, QUERY_WINDOW, rotateQueries } = require('../lib/discovery-queries');
 
 const schema = JSON.parse(fs.readFileSync(SCHEMA_PATH, 'utf8'));
 
@@ -80,6 +80,41 @@ test('GENRE_PURPOSE_ORDER が全ジャンル分あり、各行が PURPOSE の全
 test('発見クエリが全ジャンル分あり、各3件以上ある', () => {
   assert.deepStrictEqual(Object.keys(DISCOVERY_QUERIES).sort(), [...GENRE].sort());
   for (const genre of GENRE) {
-    assert.ok(DISCOVERY_QUERIES[genre].length >= 3, `${genre} のクエリが3件未満`);
+    assert.ok(
+      DISCOVERY_QUERIES[genre].length >= QUERY_WINDOW,
+      `${genre} のクエリが${QUERY_WINDOW}件未満（現在 ${DISCOVERY_QUERIES[genre].length}件）`
+    );
+    // 同じ切り口が重複していると、その分だけ検索の幅が狭くなる。
+    assert.strictEqual(
+      new Set(DISCOVERY_QUERIES[genre]).size,
+      DISCOVERY_QUERIES[genre].length,
+      `${genre} のクエリに重複がある`
+    );
   }
+});
+
+test('検索の切り口は日付でずれ、日をまたいで全部が使われる', () => {
+  // 1回の呼び出しで実際に検索できる回数には上限があるため、切り口を増やしただけでは
+  // 上のほうしか使われない。日付でずらして一巡することをここで固定する。
+  const list = Array.from({ length: 26 }, (_, i) => 'q' + i);
+  const day0 = new Date(Date.UTC(2026, 0, 1, 0, 0, 0));
+
+  const first = rotateQueries(list, day0);
+  assert.strictEqual(first.length, QUERY_WINDOW);
+  assert.strictEqual(new Set(first).size, QUERY_WINDOW, '同じ日の窓に重複がある');
+
+  const second = rotateQueries(list, new Date(day0.getTime() + 86400000));
+  assert.notDeepStrictEqual(first, second, '日が変わっても切り口が同じ');
+
+  // 何日か回せば、すべての切り口が少なくとも1回は使われる。
+  const seen = new Set();
+  for (let d = 0; d < 60; d += 1) {
+    for (const q of rotateQueries(list, new Date(day0.getTime() + d * 86400000))) seen.add(q);
+  }
+  assert.strictEqual(seen.size, list.length, '一巡しても使われない切り口がある');
+});
+
+test('クエリが窓の数より少ないときは、そのまま全部返す', () => {
+  const few = ['a', 'b', 'c'];
+  assert.deepStrictEqual(rotateQueries(few), few);
 });
