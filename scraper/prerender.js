@@ -105,6 +105,25 @@ async function renderPage(browser, urlPath, outDir) {
   }
 }
 
+/**
+ * 掲載対象から外れたページのフォルダを消す。
+ * 対象は「このスクリプトが作る形（<dir>/<id>/index.html）」のものだけに限る。
+ */
+function pruneRemovedPages(dir, keepIds) {
+  if (!fs.existsSync(dir)) return 0;
+  const keep = new Set(keepIds);
+  let removed = 0;
+  for (const name of fs.readdirSync(dir)) {
+    if (keep.has(name)) continue;
+    const target = path.join(dir, name);
+    if (!fs.existsSync(path.join(target, 'index.html'))) continue;
+    fs.rmSync(target, { recursive: true, force: true });
+    console.log(`  掲載対象外のため削除: ${path.basename(dir)}/${name}/`);
+    removed += 1;
+  }
+  return removed;
+}
+
 async function main() {
   const schools = readSchools().filter(s => s.status === 'active');
   if (schools.length === 0) {
@@ -144,7 +163,16 @@ async function main() {
     await new Promise(resolve => server.close(resolve));
   }
 
-  console.log(`Prerender finished: ${written} page(s) written, ${failed} failed.`);
+  // 掲載を取り下げた講座・0件になったジャンルのページを消す。
+  // 残しておくと、サイトから辿れないのに古い内容が生き続け、
+  // 「掲載を取り下げた講座のページは404になる」という 404.html の説明とも食い違う。
+  const pruned = pruneRemovedPages(
+    path.join(ROOT, 'school'), schools.map(s => s.id)
+  ) + pruneRemovedPages(
+    path.join(ROOT, 'category'), genres
+  );
+
+  console.log(`Prerender finished: ${written} page(s) written, ${failed} failed, ${pruned} page(s) removed.`);
   // 1ページでも落ちたら気づけるように、終了コードを非ゼロにする
   // （静かに古いページが残り続けるのを避ける）。
   if (failed > 0) process.exitCode = 1;

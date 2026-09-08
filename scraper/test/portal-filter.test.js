@@ -15,8 +15,10 @@ process.env.SCRAPER_JITTER_MS = '0';
 
 const test = require('node:test');
 const assert = require('node:assert');
+const fs = require('fs');
+const path = require('path');
 
-const { looksLikePortal, portalMarkers, PORTAL_MARKERS } = require('../lib/portal-filter');
+const { looksLikePortal, portalMarkers, PORTAL_MARKERS, agencyScore, looksLikeAgency } = require("../lib/portal-filter");
 const discovery = require('../lib/school-discovery');
 
 const pageWith = (title, body) => `<html><head><title>${title}</title></head><body>${body}</body></html>`;
@@ -79,4 +81,33 @@ test('discoverCandidates: ポータルは実在照合を通ってもスキップ
 test('発見プロンプトにポータル除外の指示が含まれている', () => {
   // 指示と機械チェックの二重で守る（プロンプトだけでは守られなかった実例が複数ある）。
   assert.match(discovery.DISCOVERY_COMMON_RULES, /ポータル・講座検索サイト・マーケットプレイスは/);
+});
+
+test('本業が制作代行・コンサルの会社は、スクールとみなさない', () => {
+  // ポータル判定は「第三者が講座を出す場か」しか見ておらず、
+  // 「本業は代行で、傍らスクールもやっている会社」が素通りしていた。
+  const agencyPage = 'デジタルマーケティング支援会社です。' +
+    'コンサルティング'.repeat(60) + '運用代行'.repeat(40) + 'スクールも運営しています。受講できます。';
+  const score = agencyScore(agencyPage);
+  assert.ok(score.isAgency, `受注ビジネスと判定されるべき（${JSON.stringify(score)}）`);
+  assert.ok(looksLikeAgency(agencyPage));
+});
+
+test('受注語が多少あっても、スクール語が上回れば外さない', () => {
+  // 実在スクールでも制作実績や法人研修の記載で受注語は出る。
+  // 掲載中の実データで最も受注語が多かった2件（39/15、32/14）を模したもの。
+  for (const [school, agency] of [[39, 15], [32, 14], [17, 3]]) {
+    const page = 'スクール'.repeat(school) + '代行'.repeat(agency);
+    const score = agencyScore(page);
+    assert.ok(!score.isAgency, `外してはいけない（${JSON.stringify(score)}）`);
+  }
+});
+
+test('実データの掲載中レコードが、この判定で外れないこと', () => {
+  // 較正の前提が崩れていないかを、実際の説明文で軽く確認する。
+  const schools = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'schools.json'), 'utf8'));
+  for (const s of schools.filter(x => x.status === 'active')) {
+    const text = [s.description, ...(s.features || [])].join(' ');
+    assert.ok(!looksLikeAgency(text), `${s.id} が受注ビジネスと判定された`);
+  }
 });

@@ -52,4 +52,46 @@ function looksLikePortal(pageText) {
   return portalMarkers(pageText).length > 0;
 }
 
-module.exports = { PORTAL_MARKERS, portalMarkers, looksLikePortal };
+/**
+ * 受注ビジネス（制作代行・運用代行・コンサルティング）が本業の会社を外すための判定。
+ *
+ * 【なぜ必要か】
+ * ポータル判定は「第三者が講座を出す場か」しか見ていないため、
+ * 「本業は制作・運用の代行で、その傍らスクールもやっている会社」が素通りしていた。
+ * 実際に StockSun株式会社（デジタルマーケティング支援会社）が掲載され、
+ * トップページの語数は「代行・コンサルティング」198回に対し「スクール・受講」2回だった。
+ * 料金も特徴も講座のものではないため、比較の材料にならない。
+ *
+ * 【判定の考え方】
+ * 語の有無ではなく「どちらが主か」で見る。スクールも制作実績を載せることはあるので、
+ * 受注語が一定数あり、かつスクール語よりはっきり多い場合だけ外す。
+ *
+ * 【誤判定を避けるための較正】
+ * 掲載中の実データ43件で全件のスコアを実測して決めた。受注語が最も多かった実在スクールは
+ * SNSマーケター養成スクール(39/15)と Withマーケ(32/14) で、いずれもスクール語が上回る。
+ * 閾値（20件以上 かつ スクール語の3倍超）はこの実測値の外側に置いてある。
+ * 将来この判定で実在のスクールが弾かれた場合は、まずここの較正をやり直すこと。
+ */
+const SCHOOL_WORDS = ['スクール', '受講', '講座', 'カリキュラム', '受講生', '受講料', 'レッスン', '教室', '学べ', '養成'];
+const AGENCY_WORDS = ['制作代行', '運用代行', '代行', 'コンサルティング', '支援会社', '受託', 'お見積', '制作会社'];
+
+const AGENCY_MIN_HITS = 20;
+const AGENCY_RATIO = 3;
+
+function countWords(text, words) {
+  return words.reduce((n, w) => n + (text.split(w).length - 1), 0);
+}
+
+/** 受注ビジネスが主に見えるか。戻り値は判定に使ったスコア（判定結果は looksLikeAgency）。 */
+function agencyScore(pageText) {
+  const compact = String(pageText || '').replace(/[s　]+/g, '');
+  const school = countWords(compact, SCHOOL_WORDS);
+  const agency = countWords(compact, AGENCY_WORDS);
+  return { school, agency, isAgency: agency >= AGENCY_MIN_HITS && agency > school * AGENCY_RATIO };
+}
+
+function looksLikeAgency(pageText) {
+  return agencyScore(pageText).isAgency;
+}
+
+module.exports = { PORTAL_MARKERS, portalMarkers, looksLikePortal, SCHOOL_WORDS, AGENCY_WORDS, agencyScore, looksLikeAgency };

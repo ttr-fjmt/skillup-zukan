@@ -124,5 +124,12 @@
     "genre": "genai_dx",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-08T05:22:02.515Z"
+  },
+  "StockSun SEOラウンジPRO": {
+    "name": "StockSun SEOラウンジPRO",
+    "website": "https://stock-sun.com/",
+    "genre": "web_marketing",
+    "reason": "agency_not_school",
+    "checkedAt": "2026-09-08T05:45:26.000Z"
   }
 }

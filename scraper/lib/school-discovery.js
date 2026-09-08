@@ -38,7 +38,7 @@ const { queriesForGenre } = require('./discovery-queries');
 const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-detail');
 // 都道府県の照合ロジックは area フォールバックと共有する（同じ基準で判定するため）。
 const { verifyPrefectures, filterToCampusPrefectures } = require('./area-detail');
-const { portalMarkers } = require('./portal-filter');
+const { portalMarkers, agencyScore } = require('./portal-filter');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -342,6 +342,19 @@ async function collectVerifiedCandidates(rawCandidates, genre, excludeCores, max
           `school-discovery: [${GENRE_LABELS[genre] || genre}] ${candidate.name} は講座ポータル/マーケットプレイスとみなしてスキップします（該当語: ${markers.join('、')}）。`
         );
         skipped.push({ candidate, genre, reason: 'portal_or_marketplace' });
+        skippedInGenre += 1;
+        continue;
+      }
+
+      // 本業が制作代行・運用代行・コンサルティングの会社も外す。
+      // ポータル判定では素通りしていた（StockSun株式会社の例）。
+      const agency = agencyScore(verification.pageText);
+      if (agency.isAgency) {
+        console.log(
+          `school-discovery: [${GENRE_LABELS[genre] || genre}] ${candidate.name} は受注ビジネスが主とみなしてスキップします` +
+            `（スクール語 ${agency.school}回 / 受注語 ${agency.agency}回）。`
+        );
+        skipped.push({ candidate, genre, reason: 'agency_not_school' });
         skippedInGenre += 1;
         continue;
       }

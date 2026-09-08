@@ -2031,10 +2031,10 @@
     "cta_type": "direct",
     "click_tracking_id": "click-stock-sun",
     "created_at": "2026-09-08T05:23:43.546Z",
-    "updated_at": "2026-09-08T05:23:43.546Z",
-    "status": "active",
+    "updated_at": "2026-09-08T05:45:26.000Z",
+    "status": "skipped",
     "source": "ai-discovered",
-    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み 本業が制作・運用の代行およびコンサルティングのため掲載対象外（2026-09-08）。",
     "verified_url": "https://stock-sun.com/"
   },
   {
@@ -2710,6 +2710,7 @@
     "official_name": null,
     "description": "IELTS特化校として、IELTS対策講座、IELTS公式テストセンター（東京・名古屋）、留学手配を一括でサポート。TOEFL、TOEIC、英検など複数の資格試験対策も提供。受講生の要望や学習スタイルに応じてカリキュラムをカスタマイズしたプライベートレッスンを提供。",
     "skill_genre": [
+      "language",
       "certification"
     ],
     "purpose": [
@@ -2748,7 +2749,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-berkeleyhouse",
     "created_at": "2026-09-08T05:27:14.049Z",
-    "updated_at": "2026-09-08T05:27:14.049Z",
+    "updated_at": "2026-09-08T05:45:26.000Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
