@@ -22,6 +22,7 @@ scraper/lib/discovery-log.js  日次の実行記録の書き出し
 scraper/lib/review-summary.js 口コミ要約パイプラインの中核
 scraper/lib/match.js          診断ウィザードのスコアリング
 scraper/lib/branding.js       ロゴURL・ジャンルアイコン・色（画像まわりの方針）
+scraper/lib/recommend.js      おすすめ枠の選定（掲載情報の充実度）
 scraper/recheck-guards.js     全レコードへのガード再適用（AI呼び出しなし）
 index.html                    一覧・詳細・診断（1枚のSPA）
 assets/wizard.js              診断ロジックのブラウザ用バンドル（lib/から自動生成）
@@ -230,6 +231,46 @@ data/discovery-log/2026-09-07.json
 ### 巡回した詳細ページのURL
 
 `price_detail_url` と `area_detail_url` は用途別に分けてある。1つの `detail_page_url` を price と area で共有していた時期があり、後から走った area 巡回が price の出所（`/courses/career/`）を会社概要ページのURLで上書きしてしまった。`price.scope` はこの `price_detail_url` の有無から導出する。
+
+## 広告枠（Google AdSense）
+
+広告を出す「場所」だけ先に用意してある。**広告ユニットID（スロットID）が空のあいだは、
+枠ごと表示されない**（`.ad-slot:empty{display:none}`）ので、余白や枠線が残ることはない。
+AdSense のスクリプトも、IDが1つ以上設定されるまで読み込まない。
+
+枠の位置は4か所。
+
+| 場所 | 設定キー |
+| --- | --- |
+| 一覧の最上部 | `ADSENSE.slots.top` |
+| 一覧の途中（6件ごと） | `ADSENSE.slots.inFeed` |
+| 一覧の最下部 | `ADSENSE.slots.bottom` |
+| 講座の詳細ページ | `ADSENSE.slots.detail` |
+
+### 出せるようにする手順
+
+1. AdSense の管理画面で `skillup-zukan.net` をサイトとして追加し、審査を通す
+   （`client` は既存2サイトと同じ `ca-pub-5761092657360295`）
+2. 広告ユニットを作り、発行されたスロットID（数字の並び）を控える
+3. `index.html` 冒頭の `var ADSENSE = { ... }` の `slots` に書き写す。使わない場所は空のままでよい
+4. `cd scraper && node prerender.js` で静的ページを作り直し、コミットする
+
+静的化したHTMLには広告タグを入れない（`window.__PRERENDER__` で抑止している）。
+入れてしまうと、古い広告タグがHTMLに残り続けるため。この2点は
+`test/site-ui.test.js` が検査している。
+
+## おすすめ講座（トップの横スクロール）
+
+選び方は `lib/recommend.js`。**掲載情報の充実度**でスコアを付け、上位14件を候補にして、
+その中から最大10件をランダムな順で表示する。料金が確認できている講座を強く優遇し、
+`review_flags` に確認しきれなかった印が付いているものは差し引く。
+
+「当サイトが受講して評価した順」でも「広告費の順」でもない。この説明は `faq.html` にも
+書いてあるので、基準を変えるときは両方を直すこと（`test/recommend.test.js` が
+faq.html に説明があることを検査している）。
+
+表示順を毎回変えるのは、同じ講座だけが露出し続けるのを避けるため。ジャンル別ページでは
+出さない（他ジャンルの講座を勧めても利用者が混乱するため）。
 
 ## 診断ウィザード
 

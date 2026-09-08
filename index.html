@@ -214,6 +214,55 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
   .genre-nav a{font-size:11px;padding:10px 4px 8px}
   .detail-head h2{font-size:20px}
 }
+
+/* ── おすすめ講座（横スクロール） ─────────────────────── */
+.recommend{margin:22px 0 0}
+.rec-head{display:flex;align-items:center;gap:7px;margin:0 0 3px;font-size:15px;font-weight:800}
+.rec-head svg{width:18px;height:18px;color:var(--brand)}
+.rec-note{margin:0 0 12px;font-size:11.5px;color:var(--ink-faint)}
+.rec-scroll{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;margin:0 -2px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.rec-card{flex:0 0 auto;width:186px;cursor:pointer;background:var(--card);
+  border:1px solid var(--line);border-left:4px solid hsl(var(--h,30) 68% 62%);
+  border-radius:12px;padding:13px;display:flex;flex-direction:column;gap:9px;
+  transition:border-color .15s,box-shadow .15s}
+.rec-card:hover{border-color:var(--brand);box-shadow:var(--shadow)}
+.rec-top{display:flex;align-items:center;gap:9px;min-width:0}
+.rec-card h4{margin:0;font-size:13.5px;font-weight:800;line-height:1.4;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rec-price{font-size:15px;font-weight:800;color:var(--brand-dark);margin-top:auto}
+.rec-price.na{font-size:12px;font-weight:700;color:var(--ink-sub)}
+.rec-card .logo-tile{width:34px;height:34px;border-radius:9px}
+.rec-card .logo-tile img{width:22px;height:22px}
+.rec-card .logo-tile .mono{font-size:15px}
+
+/* ── 診断ボタン（右下に固定） ─────────────────────────── */
+.wizard-fab{position:fixed;bottom:20px;right:20px;z-index:30;
+  width:60px;height:60px;border-radius:50%;background:var(--brand);border:0;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(180,92,16,.4);transition:transform .15s,background .15s}
+.wizard-fab:hover{background:var(--brand-dark);transform:scale(1.06)}
+.wizard-fab svg{width:28px;height:28px;color:#fff}
+.fab-text{position:absolute;right:70px;white-space:nowrap;background:var(--ink);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 11px;border-radius:8px;
+  opacity:0;pointer-events:none;transition:opacity .15s}
+.wizard-fab:hover .fab-text,.wizard-fab:focus-visible .fab-text{opacity:1}
+
+/* ── 広告枠 ──────────────────────────────────────────
+   広告ユニットIDが未設定のあいだは中身を入れないので、枠線も余白も出ない。 */
+.ad-slot{position:relative;margin:26px 0}
+.ad-slot:empty{display:none;margin:0}
+.ad-slot .ad-label{position:absolute;top:-15px;left:2px;font-size:10px;color:var(--ink-faint);
+  letter-spacing:.04em}
+.ad-slot ins{display:block;width:100%}
+.ad-slot.in-feed{margin:2px 0}
+
+@media (max-width:560px){
+  .wizard-fab{width:54px;height:54px;bottom:16px;right:16px}
+  .wizard-fab svg{width:25px;height:25px}
+  .fab-text{display:none}
+  .rec-card{width:164px}
+}
 </style>
 </head>
 <body>
@@ -223,7 +272,6 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
     <h1 class="home-link" onclick="goHome()">スキルアップ<span class="mark">図鑑</span></h1>
     <span class="count-badge" id="countBadge"></span>
     <span class="header-spacer"></span>
-    <button class="header-cta" onclick="openWizard()">あなたに合う講座を診断</button>
   </div>
 </header>
 
@@ -237,6 +285,19 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
   </section>
 
   <div class="wrap">
+    <div class="ad-slot banner" id="adTop"></div>
+
+    <section class="recommend" id="recommendSection" hidden>
+      <h2 class="rec-head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M12 3.5l2.4 5.2 5.6.7-4.1 3.9 1.1 5.6L12 16.2 6.9 18.9 8 13.3 3.9 9.4l5.6-.7L12 3.5Z"/>
+        </svg>おすすめ講座
+      </h2>
+      <p class="rec-note">料金や特徴など、比べるための情報がそろっている講座です。順番は開くたびに変わります。</p>
+      <div class="rec-scroll" id="recScroll"></div>
+    </section>
+
     <div class="controls">
       <div class="search-row">
         <input type="text" id="searchInput" placeholder="スクール名・職種で検索" oninput="applyFilters()">
@@ -256,6 +317,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
     </div>
 
     <div class="ledger" id="ledger"></div>
+    <div class="ad-slot footer-ad" id="adBottom"></div>
   </div>
 </div>
 
@@ -264,6 +326,14 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
 <div class="wizard-backdrop" id="wizardBackdrop" onclick="if(event.target===this)closeWizard()">
   <div class="wizard" id="wizard"></div>
 </div>
+
+<button class="wizard-fab" onclick="openWizard()" aria-label="あなたに合う講座を診断">
+  <span class="fab-text" aria-hidden="true">あなたに合う講座を診断</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.1 5.1-5.1 2.1 2.1-5.1 5.1-2.1Z"/>
+  </svg>
+</button>
 
 <footer>
   <div class="wrap">
@@ -297,6 +367,9 @@ function init() {
       schools = data.filter(function (s) { return s.status === 'active'; });
       buildFilterOptions();
       buildGenreNav();
+      renderRecommend();
+      fillAdSlot(document.getElementById('adTop'), ADSENSE.slots.top);
+      fillAdSlot(document.getElementById('adBottom'), ADSENSE.slots.bottom);
       document.getElementById('countBadge').textContent = schools.length + '講座を掲載';
       route();
     })
@@ -339,6 +412,170 @@ function buildFilterOptions() {
 /* ロゴは掲載スクールの識別用に「ファビコン」だけを表示する。
    方針と理由（大きな共有画像を使わない理由）は scraper/lib/branding.js の冒頭に書いてある。
    読み込めなかったときは onerror で頭文字タイルに差し替え、穴が空かないようにする。 */
+/* ── 広告枠 ──────────────────────────────────────────
+   AdSense の「広告ユニットID（スロットID）」を下の slots に書き入れると表示される。
+   空のままなら枠ごと出さないので、空白や枠線だけが残ることはない。
+
+   使い始めるまでの手順:
+     1. AdSense の管理画面で skillup-zukan.net をサイトとして追加し、審査を通す
+     2. 広告ユニットを作り、発行されたスロットID（数字の並び）を控える
+     3. 下の slots に書き写す（使わない場所は空のままでよい）
+   client は既存2サイト（agent-zukan / freelance-anken-zukan）と同じアカウント。 */
+var ADSENSE = {
+  client: 'ca-pub-5761092657360295',
+  slots: {
+    top: '',      // 一覧の最上部
+    inFeed: '',   // 一覧の途中（6件ごと）
+    bottom: '',   // 一覧の最下部
+    detail: ''    // 講座の詳細ページ
+  }
+};
+
+function adsEnabled() {
+  // 静的化中は入れない。保存するHTMLに広告タグを焼き付けないため。
+  if (window.__PRERENDER__) return false;
+  var s = ADSENSE.slots;
+  return !!(ADSENSE.client && (s.top || s.inFeed || s.bottom || s.detail));
+}
+
+var adsScriptLoaded = false;
+function loadAdsScript() {
+  if (adsScriptLoaded || !adsEnabled()) return;
+  adsScriptLoaded = true;
+  var el = document.createElement('script');
+  el.async = true;
+  el.crossOrigin = 'anonymous';
+  el.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' +
+    encodeURIComponent(ADSENSE.client);
+  document.head.appendChild(el);
+}
+
+/** 広告枠を1つ埋める。スロットIDが空なら何もしない（枠は :empty で消える）。 */
+function fillAdSlot(el, slotId) {
+  if (!el || !slotId || !adsEnabled()) return;
+  loadAdsScript();
+  el.innerHTML = '<span class="ad-label">広告</span>' +
+    '<ins class="adsbygoogle" style="display:block" data-ad-client="' + esc(ADSENSE.client) + '" ' +
+    'data-ad-slot="' + esc(slotId) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+  // 広告が出せなくても本体の表示は止めない。
+  try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { /* noop */ }
+}
+
+/* ── おすすめ講座（横スクロール） ───────────────────────
+   選び方は lib/recommend.js（掲載情報の充実度で候補を決め、順番はランダム）。
+   基準は faq.html にも書いてあるので、変えるときは両方を直すこと。 */
+function recCardHtml(s) {
+  var price = s.price.min_yen === null
+    ? '<span class="rec-price na">要問い合わせ</span>'
+    : '<span class="rec-price">' + esc(s.price.display) + '</span>';
+  return '<article class="rec-card" style="--h:' + primaryHue(s) + '" ' +
+    'onclick="showDetail(\'' + esc(s.id) + '\')">' +
+    '<div class="rec-top">' + logoHtml(s) + '<h4>' + esc(s.school_name) + '</h4></div>' +
+    '<div class="tags">' + genreChips((s.skill_genre || []).slice(0, 1)) + '</div>' +
+    price + '</article>';
+}
+
+function renderRecommend() {
+  var sec = document.getElementById('recommendSection');
+  var scroll = document.getElementById('recScroll');
+  if (!sec || !scroll) return;
+  var list = Z.pickRecommended(schools);
+  if (!list.length) { sec.hidden = true; return; }
+
+  // 端まで来たときに継ぎ目なくつながるよう、同じ並びを2セット描く。
+  // 2セット目は中身が重複するので、読み上げ・キーボード操作からは隠す。
+  var first = list.map(recCardHtml).join('');
+  var second = list.map(function (s) {
+    return recCardHtml(s).replace('<article class="rec-card"',
+      '<article class="rec-card" aria-hidden="true" tabindex="-1"');
+  }).join('');
+  scroll.innerHTML = first + second;
+  watchLogos(scroll);
+  recAuto.position = 0;
+  scroll.scrollLeft = 0;
+  startRecAutoScroll();
+}
+
+var recAuto = { rafId: null, position: 0, paused: false, resumeTimer: null, direction: 1 };
+
+/**
+ * おすすめ枠をゆっくり自動で流す。触っている間は止め、離してしばらくすると再開する。
+ *
+ * scrollLeft は多くのブラウザで整数に丸められるため、少数のまま自前で位置を積算し、
+ * 毎フレームそれを代入する（丸めのせいで進まなくなるのを防ぐ）。
+ * カードが少なくて1セットが画面に収まる場合は継ぎ目なしループが成立しないので、
+ * 端で向きを反転する往復スクロールに切り替える。
+ */
+function startRecAutoScroll() {
+  var scroll = document.getElementById('recScroll');
+  if (!scroll || recAuto.rafId) return;
+  if (window.__PRERENDER__) return;
+  // 「動きを減らす」設定にしている人には自動で動かさない。
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var SPEED = 30; // 1秒あたりのピクセル数
+  var lastTime = null;
+
+  function step(now) {
+    if (lastTime === null) lastTime = now;
+    var dt = (now - lastTime) / 1000;
+    lastTime = now;
+    if (!recAuto.paused) {
+      var oneSet = scroll.scrollWidth / 2; // 2セット描いてあるので半分が1周ぶん
+      var delta = SPEED * dt;
+      if (oneSet > scroll.clientWidth) {
+        var next = recAuto.position + delta;
+        if (next >= oneSet) next -= oneSet;
+        recAuto.position = next;
+        scroll.scrollLeft = next;
+      } else {
+        var max = scroll.scrollWidth - scroll.clientWidth;
+        if (max > 0) {
+          var back = recAuto.position + delta * recAuto.direction;
+          if (back >= max) { back = max; recAuto.direction = -1; }
+          else if (back <= 0) { back = 0; recAuto.direction = 1; }
+          recAuto.position = back;
+          scroll.scrollLeft = back;
+        }
+      }
+    }
+    recAuto.rafId = requestAnimationFrame(step);
+  }
+  recAuto.rafId = requestAnimationFrame(step);
+
+  function pause() {
+    if (recAuto.resumeTimer) clearTimeout(recAuto.resumeTimer);
+    recAuto.paused = true;
+  }
+  function resumeLater() {
+    if (recAuto.resumeTimer) clearTimeout(recAuto.resumeTimer);
+    recAuto.resumeTimer = setTimeout(function () {
+      recAuto.position = scroll.scrollLeft; // 手で動かされた位置に合わせてから再開する
+      recAuto.paused = false;
+    }, 1800);
+  }
+  scroll.addEventListener('mouseenter', pause);
+  scroll.addEventListener('mouseleave', resumeLater);
+  scroll.addEventListener('touchstart', pause, { passive: true });
+  scroll.addEventListener('touchend', resumeLater, { passive: true });
+
+  // タブを裏に回している間は動かさない（戻ったときに一気に飛ばないように位置も合わせ直す）。
+  recAuto.paused = document.hidden;
+  document.addEventListener('visibilitychange', function () {
+    if (recAuto.resumeTimer) clearTimeout(recAuto.resumeTimer);
+    recAuto.paused = document.hidden;
+    if (!recAuto.paused) recAuto.position = scroll.scrollLeft;
+  });
+}
+
+/** おすすめ枠はトップだけに出す（ジャンル別ページで他ジャンルを勧めても混乱するため）。 */
+function showRecommend(visible) {
+  var sec = document.getElementById('recommendSection');
+  var scroll = document.getElementById('recScroll');
+  if (!sec || !scroll) return;
+  sec.hidden = !visible || !scroll.children.length;
+}
+
 function primaryHue(s) { return Z.genreHue((s.skill_genre || [])[0]); }
 
 function hostOf(url) {
@@ -464,10 +701,25 @@ function applyFilters() {
   });
 
   document.getElementById('resultCount').textContent = list.length + '件';
-  document.getElementById('ledger').innerHTML = list.length
-    ? list.map(cardHtml).join('')
-    : '<div class="empty">条件に合う講座が見つかりませんでした。条件をゆるめてお試しください。</div>';
-  watchLogos(document.getElementById('ledger'));
+  var ledger = document.getElementById('ledger');
+  if (!list.length) {
+    ledger.innerHTML = '<div class="empty">条件に合う講座が見つかりませんでした。条件をゆるめてお試しください。</div>';
+    return;
+  }
+
+  var parts = [];
+  list.forEach(function (s, i) {
+    parts.push(cardHtml(s));
+    // 一覧の途中に広告を挟む（広告ユニットIDが未設定なら挟まない）。
+    if (ADSENSE.slots.inFeed && (i + 1) % 6 === 0 && i < list.length - 1) {
+      parts.push('<div class="ad-slot in-feed" data-ad-feed="1"></div>');
+    }
+  });
+  ledger.innerHTML = parts.join('');
+  watchLogos(ledger);
+
+  var feeds = ledger.querySelectorAll('[data-ad-feed]');
+  for (var fi = 0; fi < feeds.length; fi += 1) fillAdSlot(feeds[fi], ADSENSE.slots.inFeed);
 }
 
 function resetFilters() {
@@ -546,10 +798,12 @@ function showDetail(id) {
         'data-click-id="' + esc(s.click_tracking_id) + '" onclick="trackClick(\'' + esc(s.click_tracking_id) + '\')">' +
         '公式サイトで詳しく見る</a>' +
       '<p class="cta-note">公式サイトへ移動します。最新の料金・開講状況は公式サイトでご確認ください。</p>' +
-    '</div></div>';
+    '</div>' +
+    '<div class="ad-slot" id="adDetail"></div></div>';
 
   document.getElementById('detailView').innerHTML = html;
   watchLogos(document.getElementById('detailView'));
+  fillAdSlot(document.getElementById('adDetail'), ADSENSE.slots.detail);
   document.getElementById('listView').style.display = 'none';
   document.getElementById('detailView').style.display = 'block';
   history.pushState({ id: s.id }, '', '/school/' + s.id + '/');
@@ -573,6 +827,7 @@ function goHome() {
     canonical: 'https://skillup-zukan.net/'
   });
   applyFilters();
+  showRecommend(true);
   markReady('home');
 }
 
@@ -604,6 +859,7 @@ function showCategory(genre) {
   document.getElementById('listView').style.display = 'block';
   document.getElementById('genreSelect').value = genre;
   applyFilters();
+  showRecommend(false);
 
   var label = Z.GENRE_LABELS[genre];
   var count = schools.filter(function (s) { return s.skill_genre.indexOf(genre) !== -1; }).length;
@@ -628,6 +884,7 @@ function route() {
   var category = location.pathname.match(/^\/category\/([^/]+)\/?$/);
   if (category) { showCategory(decodeURIComponent(category[1])); return; }
   applyFilters();
+  showRecommend(true);
   markReady('home');
 }
 window.addEventListener('popstate', route);
