@@ -8,9 +8,10 @@
  * 辿るのは無駄なリクエストになるため、「トップページから price を取得できなかった場合
  * だけ」詳細ページを1回だけ見に行くフォールバック方式にする。
  *
- * 【1校あたりHTTPリクエストは最大1回】
- * リンク候補が複数あってもAIに1つだけ選ばせ、選ばれたページから再帰的に辿ることはしない。
- * 「料金ページのリンクをたどったらまた一覧だった」というケースでも、そこで打ち切る。
+ * 【1校あたりHTTPリクエストは最大2回】
+ * リンク候補が複数あってもAIに1つだけ選ばせる。1階層目で金額が取れた場合はそこで終わり。
+ * 取れなかった場合だけ、そのページからもう1階層だけ辿る（「コース一覧 → 各コース詳細」
+ * という構造のサイトが多いため）。3階層目には進まない。
  * 取得できなければ price は null のまま確定させる（合成しない）。
  *
  * 【金額の裏取り】
@@ -413,6 +414,12 @@ async function extractPriceFromPage(schoolName, detailUrl, pageText, anthropic, 
   return { plans, price: buildPriceFromPlans(plans, scope) };
 }
 
+/** 詳細ページのHTMLをそのまま取得する（2階層目のリンク抽出に使う）。 */
+async function fetchDetailHtml(url) {
+  await politeDelay();
+  return module.exports.fetchWithVerifyUA(url);
+}
+
 /** 詳細ページを1回だけ取得する（HTTP検証と同じUA・ポライトウェイトを流用）。 */
 async function fetchDetailPage(url) {
   await politeDelay();
@@ -466,7 +473,80 @@ async function enrichPriceFromDetailPage(schoolName, html, verifiedUrl, anthropi
     return { price: null, plans: null, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
   }
 
+  if (extracted.price.min_yen !== null) {
+    return { price: extracted.price, plans: extracted.plans, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
+  }
+
+  // ここまでで金額が取れなかった場合だけ、選んだページの中からもう1階層だけ辿る。
+  //
+  // 「コース一覧 → 各コースの詳細」という構造のサイトが多く、1階層目は各コースへの
+  // リンク集で金額が載っていないことがある（techacademy の /course が実例）。
+  // 深追いは1回限りで打ち切る（2階層目でも取れなければ諦める）。
+  const second = await module.exports.enrichPriceFromSecondLevel(schoolName, chosen, anthropic);
+  if (second) return second;
+
   return { price: extracted.price, plans: extracted.plans, detailPageUrl: chosen.url, flags: ['detail_page_crawled'] };
+}
+
+/**
+ * 料金の詳細ページ（1階層目）から、さらに1回だけ下の階層を辿る。
+ *
+ * 1階層目のHTMLからリンクを抽出し直し、AIにコース詳細ページを1つ選ばせて取得する。
+ * 3階層目には進まない。取得も抽出も失敗したら null を返し、呼び出し側は1階層目の
+ * 結果（＝金額なし）をそのまま使う。
+ *
+ * 全校で無条件に走らせると1校あたりのリクエストが倍になるため、必ず
+ * 「1階層目で金額が取れなかった場合だけ」呼ぶこと。
+ */
+async function enrichPriceFromSecondLevel(schoolName, firstLevel, anthropic) {
+  let html;
+  try {
+    html = await module.exports.fetchDetailHtml(firstLevel.url);
+  } catch (err) {
+    console.warn(`  2階層目のためのHTML取得に失敗しました: ${err.message}`);
+    return null;
+  }
+
+  // 1階層目と同じページ・トップページには戻らないよう、自分自身は候補から外す。
+  const links = extractPageLinks(html, firstLevel.url).filter(l => l.url !== firstLevel.url);
+  if (links.length === 0) return null;
+
+  let chosen;
+  try {
+    chosen = await module.exports.choosePriceDetailLink(links, schoolName, anthropic);
+  } catch (err) {
+    console.warn(`  2階層目のページ選定に失敗しました: ${err.message}`);
+    return null;
+  }
+  if (!chosen) return null;
+
+  console.log(`  料金がまだ取れないため、もう1階層だけ辿ります: [${chosen.text}] ${chosen.url}`);
+
+  let pageText;
+  try {
+    pageText = await module.exports.fetchDetailPage(chosen.url);
+  } catch (err) {
+    console.warn(`  2階層目の取得に失敗しました（これ以上は辿りません）: ${err.message}`);
+    return null;
+  }
+
+  let extracted;
+  try {
+    extracted = await module.exports.extractPriceFromPage(schoolName, chosen.url, pageText, anthropic);
+  } catch (err) {
+    console.warn(`  2階層目からの料金抽出に失敗しました: ${err.message}`);
+    return null;
+  }
+
+  if (extracted.price.min_yen === null) return null;
+
+  console.log(`  2階層目で料金を取得しました: ${extracted.price.display}`);
+  return {
+    price: extracted.price,
+    plans: extracted.plans,
+    detailPageUrl: chosen.url,
+    flags: ['detail_page_crawled'],
+  };
 }
 
 module.exports = {
@@ -480,6 +560,8 @@ module.exports = {
   normalizePlans,
   extractPriceFromPage,
   fetchDetailPage,
+  fetchDetailHtml,
+  enrichPriceFromSecondLevel,
   fetchWithVerifyUA,
   enrichPriceFromDetailPage,
 };

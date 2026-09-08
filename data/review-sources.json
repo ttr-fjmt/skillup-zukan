@@ -5,35 +5,36 @@
     "人力で確認するまで enabled は false のままにすること。Claude Code はこの確認作業を代行していない。",
     "確認手順は README.md の「口コミ要約パイプラインを有効化する前に」を参照。",
     "enabled=true にする際は、robots_txt_ok / terms_ok / checked_by_human_at を必ず同時に埋めること",
-    "(3つが揃っていないホストへのリクエストは lib/review-sources.js が実行時に拒否する)。"
+    "(3つが揃っていないホストへのリクエストは lib/review-sources.js が実行時に拒否する)。",
+    "2026-09-08: 3サイトを調査した結果、いずれも有効化していない。コエテコはrobots.txtが口コミページを拒否、マナビットは規約が営利利用を禁止、リスキリング.jpは技術的には可能だが競合の中心コンテンツのため見送り推奨。判断はTatsuroさん。"
   ],
   "sources": [
     {
       "source_name": "コエテコキャンパス",
       "host": "coeteco.jp",
       "enabled": false,
-      "robots_txt_ok": null,
+      "robots_txt_ok": false,
       "terms_ok": null,
       "checked_by_human_at": null,
-      "note": "未確認。https://coeteco.jp/robots.txt と利用規約を人力で確認すること。"
+      "note": "2026-09-08 調査: robots.txt が Disallow: /campus/reviews/* を明示。口コミページが名指しで拒否されているため対象外。"
     },
     {
       "source_name": "マナビット",
       "host": "manab-it.com",
       "enabled": false,
-      "robots_txt_ok": null,
-      "terms_ok": null,
+      "robots_txt_ok": false,
+      "terms_ok": false,
       "checked_by_human_at": null,
-      "note": "未確認。https://manab-it.com/robots.txt と利用規約を人力で確認すること。"
+      "note": "2026-09-08 調査: robots.txt は緩いが、会員規約の禁止行為に「本サイトを利用した、営利を目的とした行為」「商業目的での利用・複製」が明記。当サイトは営利目的のため対象外。"
     },
     {
       "source_name": "リスキリング.jp",
       "host": "xn--nckgz9qc8c.jp",
       "enabled": false,
-      "robots_txt_ok": null,
+      "robots_txt_ok": true,
       "terms_ok": null,
       "checked_by_human_at": null,
-      "note": "未確認。https://xn--nckgz9qc8c.jp/robots.txt と利用規約を人力で確認すること。"
+      "note": "2026-09-08 調査: robots.txt に明示的な禁止なし、利用規約ページも見当たらず。ただし口コミは投稿者・運営者の著作物であり、同種の比較サイト（競合）の中心コンテンツにあたるため、規約の有無に関わらず見送りを推奨。"
     }
   ]
 }

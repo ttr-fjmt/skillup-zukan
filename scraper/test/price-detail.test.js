@@ -348,3 +348,96 @@ test('掲載中のレコードで、金額が無いものはすべて「要問�
     }
   }
 });
+
+// ---- 2階層目へのフォールバック ----
+
+test('1階層目で金額が取れれば、2階層目には進まない', async () => {
+  let secondLevelCalls = 0;
+  await withStubs(
+    {
+      choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金' }),
+      fetchDetailPage: async () => '受講料は298,000円です。',
+      extractPriceFromPage: async (name, url, pageText) => {
+        const plans = priceDetail.normalizePlans(
+          priceDetail.verifyPlans([{ label: '標準', amount: 298000, duration: null, kind: 'total' }], pageText)
+        );
+        return { plans, price: priceDetail.buildPriceFromPlans(plans, 'detail_page') };
+      },
+      enrichPriceFromSecondLevel: async () => { secondLevelCalls += 1; return null; },
+    },
+    async () => {
+      const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
+      assert.strictEqual(r.price.min_yen, 298000);
+      assert.strictEqual(secondLevelCalls, 0, '金額が取れているのに2階層目へ進んでいる');
+    }
+  );
+});
+
+test('1階層目が一覧ページで金額が無ければ、もう1階層だけ辿る', async () => {
+  await withStubs(
+    {
+      choosePriceDetailLink: async links =>
+        // 1回目はトップから料金ページ、2回目は一覧から各コースへ。
+        links.some(l => l.url.includes('/course/basic'))
+          ? { url: 'https://example.com/course/basic', text: '基礎コース' }
+          : { url: 'https://example.com/course', text: 'コース一覧' },
+      fetchDetailHtml: async () => '<a href="/course/basic">基礎コース</a>',
+      fetchDetailPage: async url =>
+        url.includes('/course/basic') ? '基礎コースの受講料は198,000円（税込）です。' : 'コース一覧です。各コースの詳細はこちら。',
+      extractPriceFromPage: async (name, url, pageText) => {
+        const found = pageText.includes('198,000');
+        const plans = found
+          ? priceDetail.normalizePlans(
+              priceDetail.verifyPlans([{ label: '基礎コース', amount: 198000, duration: null, kind: 'total' }], pageText)
+            )
+          : [];
+        return { plans, price: priceDetail.buildPriceFromPlans(plans, 'detail_page') };
+      },
+    },
+    async () => {
+      const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
+      assert.strictEqual(r.price.min_yen, 198000, '2階層目の金額を拾えていない');
+      assert.strictEqual(r.detailPageUrl, 'https://example.com/course/basic', '記録が1階層目のURLのまま');
+    }
+  );
+});
+
+test('2階層目でも取れなければ、3階層目には進まず「要問い合わせ」で確定する', async () => {
+  let fetchPageCalls = 0;
+  await withStubs(
+    {
+      choosePriceDetailLink: async () => ({ url: 'https://example.com/course', text: 'コース一覧' }),
+      fetchDetailHtml: async () => '<a href="/course/deeper">さらに詳しく</a>',
+      fetchDetailPage: async () => { fetchPageCalls += 1; return '金額の記載はありません。'; },
+      extractPriceFromPage: async () => ({ plans: [], price: priceDetail.buildPriceFromPlans([], 'detail_page') }),
+    },
+    async () => {
+      const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
+      assert.strictEqual(r.price.min_yen, null);
+      assert.strictEqual(r.price.display, '要問い合わせ');
+      // 1階層目と2階層目の2回だけ（3階層目には進まない）。
+      assert.strictEqual(fetchPageCalls, 2, '3階層目まで辿っている');
+    }
+  );
+});
+
+test('2階層目: 自分自身へのリンクは候補にしない（同じページを踏み直さない）', async () => {
+  const visited = [];
+  await withStubs(
+    {
+      choosePriceDetailLink: async links => {
+        visited.push(links.map(l => l.url));
+        return null; // 2回目は選ばせない
+      },
+      fetchDetailHtml: async () => '<a href="/course">コース一覧</a><a href="/other">その他</a>',
+      fetchDetailPage: async () => '金額なし',
+      extractPriceFromPage: async () => ({ plans: [], price: priceDetail.buildPriceFromPlans([], 'detail_page') }),
+    },
+    async () => {
+      // 1回目は null が返るので、そもそも1階層目にも進まない。
+      await priceDetail.enrichPriceFromSecondLevel('サンプル', { url: 'https://example.com/course', text: 'コース一覧' }, {});
+      const secondLevelCandidates = visited[visited.length - 1] || [];
+      assert.ok(!secondLevelCandidates.includes('https://example.com/course'), '1階層目自身が候補に入っている');
+    }
+  );
+});
