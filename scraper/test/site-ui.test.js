@@ -15,6 +15,11 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..', '..');
 const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 
+/** インラインの <script> を取り除く。中のJSソースを「描画されたHTML」と誤判定しないため。 */
+function withoutScripts(html) {
+  return html.replace(/<script[\s\S]*?<\/script>/gi, '');
+}
+
 function staticPages() {
   const dirs = [];
   for (const kind of ['school', 'category']) {
@@ -40,11 +45,22 @@ test('AdSense のスクリプトを静的に読み込んでいない', () => {
 test('静的化したページに広告タグが焼き付いていない', () => {
   // 静的化のときに広告を描画してしまうと、古い広告タグがHTMLに残り続ける。
   for (const file of staticPages()) {
-    const html = fs.readFileSync(file, 'utf8');
+    const html = withoutScripts(fs.readFileSync(file, 'utf8'));
     assert.ok(
       !/<ins[^>]+adsbygoogle/.test(html),
       `${path.relative(ROOT, file)} に広告タグが埋め込まれている`
     );
+  }
+});
+
+test('静的化したページの外部画像はロゴ（ファビコン）だけ', () => {
+  // 掲載スクールの画像はロゴ以外を使わない方針。実際に描画された状態で確かめる。
+  for (const file of staticPages()) {
+    const html = withoutScripts(fs.readFileSync(file, 'utf8'));
+    const external = html.match(/<img[^>]+src="https?:[^"]+"/gi) || [];
+    for (const tag of external) {
+      assert.match(tag, /google\.com\/s2\/favicons/, `${path.relative(ROOT, file)}: ${tag}`);
+    }
   }
 });
 
