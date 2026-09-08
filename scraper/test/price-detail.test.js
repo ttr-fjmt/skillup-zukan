@@ -13,10 +13,24 @@ process.env.SCRAPER_MIN_DELAY_MS = '0';
 process.env.SCRAPER_JITTER_MS = '0';
 
 const test = require('node:test');
+const { before, after } = require('node:test');
 const assert = require('node:assert');
 
 const priceDetail = require('../lib/price-detail');
 const { PRICE_NOT_DISCLOSED_TEXT } = require('../lib/schema');
+
+/**
+ * 検証中に出るログを、このファイルの間だけ止める。
+ *
+ * 巡回の様子を console.log で出す関数を多数呼ぶため、このファイルだけ出力が突出して多い。
+ * テストランナーは子プロセスの出力を親へ送るが、その受信が
+ * "Unable to deserialize cloned data" でまれに落ちる（Windowsで4回発生し、
+ * うち1回はテスト自体は全件通っているのにファイル単位で失敗扱いになった）。
+ * ログは合否に関係しないので、出力自体を止めて再発の芽を摘む。
+ */
+const originalLog = console.log;
+before(() => { console.log = () => {}; });
+after(() => { console.log = originalLog; });
 
 /** 元の実装を退避し、テストごとに差し替えて必ず戻す。 */
 function withStubs(stubs, fn) {
