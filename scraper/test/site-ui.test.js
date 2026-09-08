@@ -136,3 +136,13 @@ test('静的化のときにアクセス解析を動かさない', () => {
   const prerender = fs.readFileSync(path.join(ROOT, 'scraper', 'prerender.js'), 'utf8');
   assert.match(prerender, /googletagmanager/, '静的化中に解析を止める指定が無い');
 });
+
+test('ads.txt がサイト直下にあり、AdSense のパブリッシャーIDと一致している', () => {
+  // ads.txt が無いと AdSense 側で「収益に影響が出る」警告が出続ける。
+  // 姉妹サイト2つと同じ内容・同じ場所（サイト直下）に置く。
+  const adsTxt = fs.readFileSync(path.join(ROOT, 'ads.txt'), 'utf8').trim();
+  const client = indexHtml.match(/client=(ca-pub-\d+)/);
+  assert.ok(client, 'index.html に AdSense のクライアントIDが無い');
+  const publisher = client[1].replace('ca-', '');
+  assert.strictEqual(adsTxt, `google.com, ${publisher}, DIRECT, f08c47fec0942fa0`);
+});
