@@ -1,0 +1,28 @@
+# スキルアップ図鑑（skillup-zukan.net）
+
+社会人の学び直し・リスキリング講座を比較できるサイトです。
+プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、23件を掲載しています。
+
+## 掲載情報の作り方
+
+掲載内容は各スクールの公式サイトから自動収集しています。
+収集した値は、公式サイト本文に実際に書かれているかを機械的に照合してから掲載しており、
+確認できなかった項目は「要問い合わせ」「公式サイトで確認できず」と明示して、推測で埋めていません。
+料金・受講期間・給付金の対象可否は変更されることがあるため、最新の情報は各公式サイトでご確認ください。
+
+## ジャンル別の一覧
+
+- プログラミング・エンジニア（11件）: https://skillup-zukan.net/category/programming/
+- Webデザイン（9件）: https://skillup-zukan.net/category/webdesign/
+- UI/UXデザイン（4件）: https://skillup-zukan.net/category/uiux/
+- 動画編集（3件）: https://skillup-zukan.net/category/video_editing/
+- Webマーケティング（6件）: https://skillup-zukan.net/category/web_marketing/
+- 生成AI・DXリテラシー（6件）: https://skillup-zukan.net/category/genai_dx/
+- 語学（4件）: https://skillup-zukan.net/category/language/
+- 資格（4件）: https://skillup-zukan.net/category/certification/
+
+## 各講座のページ
+
+https://skillup-zukan.net/school/{id}/ の形式です。一覧は sitemap.xml を参照してください。
+
+Sitemap: https://skillup-zukan.net/sitemap.xml

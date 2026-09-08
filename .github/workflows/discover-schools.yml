@@ -71,11 +71,24 @@ jobs:
           DISCOVER_MAX_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_candidates || '10' }}
         run: node discover-schools.js
 
+      - name: Install Chrome for prerendering
+        run: npx --yes puppeteer browsers install chrome
+
+      - name: Prerender school and category pages
+        working-directory: scraper
+        run: node prerender.js
+
+      - name: Regenerate sitemap.xml and llms.txt
+        working-directory: scraper
+        run: node generate-sitemap.js
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/schools.json
+          git add data/schools.json sitemap.xml llms.txt
+          [ -d school ] && git add school
+          [ -d category ] && git add category
           [ -f data/school-discover-skip.json ] && git add data/school-discover-skip.json
           [ -d data/discovery-log ] && git add data/discovery-log
           if git diff --cached --quiet; then

@@ -19,6 +19,10 @@ scraper/lib/discovery-log.js  日次の実行記録の書き出し
 scraper/lib/review-summary.js 口コミ要約パイプラインの中核
 scraper/lib/match.js          診断ウィザードのスコアリング
 scraper/recheck-guards.js     全レコードへのガード再適用（AI呼び出しなし）
+index.html                    一覧・詳細・診断（1枚のSPA）
+assets/wizard.js              診断ロジックのブラウザ用バンドル（lib/から自動生成）
+scraper/prerender.js          Puppeteerでの静的化
+scraper/generate-sitemap.js   sitemap.xml と llms.txt の生成
 DATA_QUALITY_POLICY.md        データ品質ポリシー（判断基準）
 PROJECT_CONTEXT.md            プロジェクト共通コンテキスト（図鑑シリーズ）
 scraper/discover-schools.js   日次ディスカバリーのエントリーポイント
@@ -84,7 +88,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（283件）
+npm test                                   # ユニットテスト（287件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -92,6 +96,8 @@ node validate-schools.js ../data/mock/schools.mock.json
 DISCOVER_GENRES=programming npm run discover    # 1ジャンルだけ発見（既定も programming）
 DISCOVER_GENRES=all DISCOVER_MAX_PER_RUN=20 npm run discover
 
+npm run build-wizard                       # assets/wizard.js を lib/ から再生成
+npm run prerender                          # /school/{id}/ と /category/{genre}/ を静的化
 npm run recheck-guards                     # 全レコードにガードを再適用（ジャンル追加のたびに実行）
 npm run reverify-skips                     # スキップリストの再検証
 REVIEW_ONLY_SCHOOL_ID=<id> npm run summarize-reviews   # 1校だけ口コミ要約
@@ -209,7 +215,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（283件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（287件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

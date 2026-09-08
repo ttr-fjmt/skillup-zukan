@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
+<!DOCTYPE html><html lang="ja"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>スキルアップ図鑑｜学び直しの講座選びに、もう迷わない</title>
-<meta name="description" id="meta-description" content="スキルアップ図鑑は、プログラミング・Webデザイン・動画編集・語学・資格など、社会人の学び直し講座を比較できるサイトです。料金・受講期間・給付金対象・受講スタイルで絞り込み、あなたに合う講座を診断できます。">
+<title>Webマーケティングの講座・スクール比較｜スキルアップ図鑑</title>
+<meta name="description" id="meta-description" content="Webマーケティングを学べる講座・スクールを6件掲載。料金・受講期間・給付金対象・受講スタイルで比較できます。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="スキルアップ図鑑">
-<meta property="og:title" id="og-title" content="スキルアップ図鑑｜学び直しの講座選びに、もう迷わない">
-<meta property="og:description" id="og-description" content="社会人の学び直し講座を、料金・受講期間・給付金対象・受講スタイルで比較できます。">
-<meta property="og:url" id="og-url" content="https://skillup-zukan.net/">
+<meta property="og:title" id="og-title" content="Webマーケティングの講座・スクール比較｜スキルアップ図鑑">
+<meta property="og:description" id="og-description" content="Webマーケティングを学べる講座・スクールを6件掲載。料金・受講期間・給付金対象・受講スタイルで比較できます。">
+<meta property="og:url" id="og-url" content="https://skillup-zukan.net/category/web_marketing/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" id="twitter-title" content="スキルアップ図鑑｜学び直しの講座選びに、もう迷わない">
-<meta name="twitter:description" id="twitter-description" content="社会人の学び直し講座を、料金・受講期間・給付金対象・受講スタイルで比較できます。">
-<link rel="canonical" href="https://skillup-zukan.net/" id="canonical-link">
+<meta name="twitter:title" id="twitter-title" content="Webマーケティングの講座・スクール比較｜スキルアップ図鑑">
+<meta name="twitter:description" id="twitter-description" content="Webマーケティングを学べる講座・スクールを6件掲載。料金・受講期間・給付金対象・受講スタイルで比較できます。">
+<link rel="canonical" href="https://skillup-zukan.net/category/web_marketing/" id="canonical-link">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json" id="ld-json">{"@context":"https://schema.org","@type":"WebSite","name":"スキルアップ図鑑","url":"https://skillup-zukan.net/"}</script>
 <style>
@@ -143,18 +141,18 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
 }
 </style>
 </head>
-<body>
+<body >
 
 <header>
   <div class="header-inner">
     <h1 class="home-link" onclick="goHome()">スキルアップ<span class="mark">図鑑</span></h1>
-    <span class="count-badge" id="countBadge"></span>
+    <span class="count-badge" id="countBadge">23講座を掲載</span>
     <span class="header-spacer"></span>
     <button class="header-cta" onclick="openWizard()">あなたに合う講座を診断</button>
   </div>
 </header>
 
-<div id="listView">
+<div id="listView" style="display: block;">
   <section class="hero">
     <div class="wrap">
       <h2>学び直しの講座選びに、もう迷わない</h2>
@@ -168,20 +166,20 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
         <input type="text" id="searchInput" placeholder="スクール名・職種で検索" oninput="applyFilters()">
       </div>
       <div class="filters">
-        <div class="filter"><label for="genreSelect">ジャンル</label><select id="genreSelect" onchange="applyFilters()"></select></div>
-        <div class="filter"><label for="purposeSelect">目的</label><select id="purposeSelect" onchange="applyFilters()"></select></div>
-        <div class="filter"><label for="levelSelect">レベル</label><select id="levelSelect" onchange="applyFilters()"></select></div>
-        <div class="filter"><label for="formatSelect">受講スタイル</label><select id="formatSelect" onchange="applyFilters()"></select></div>
-        <div class="filter"><label for="prefectureSelect">通学エリア</label><select id="prefectureSelect" onchange="applyFilters()"></select></div>
+        <div class="filter"><label for="genreSelect">ジャンル</label><select id="genreSelect" onchange="applyFilters()"><option value="">すべて</option><option value="programming">プログラミング・エンジニア</option><option value="webdesign">Webデザイン</option><option value="uiux">UI/UXデザイン</option><option value="video_editing">動画編集</option><option value="web_marketing">Webマーケティング</option><option value="genai_dx">生成AI・DXリテラシー</option><option value="language">語学</option><option value="certification">資格</option></select></div>
+        <div class="filter"><label for="purposeSelect">目的</label><select id="purposeSelect" onchange="applyFilters()"><option value="">すべて</option><option value="career_change">転職・就職</option><option value="side_job">副業</option><option value="freelance">独立・フリーランス転向</option><option value="current_job_skillup">現職でのスキルアップ</option><option value="certification_itself">資格取得そのもの</option><option value="hobby">趣味・教養</option></select></div>
+        <div class="filter"><label for="levelSelect">レベル</label><select id="levelSelect" onchange="applyFilters()"><option value="">すべて</option><option value="beginner">未経験・入門</option><option value="novice">初心者〜基礎習得済み</option><option value="experienced">経験者・スキルアップ</option><option value="advanced">上級者・専門特化</option></select></div>
+        <div class="filter"><label for="formatSelect">受講スタイル</label><select id="formatSelect" onchange="applyFilters()"><option value="">すべて</option><option value="online">オンライン</option><option value="offline">通学</option><option value="both">オンライン・通学の併用可</option></select></div>
+        <div class="filter"><label for="prefectureSelect">通学エリア</label><select id="prefectureSelect" onchange="applyFilters()"><option value="">すべて</option><option value="北海道">北海道</option><option value="青森県">青森県</option><option value="宮城県">宮城県</option><option value="山形県">山形県</option><option value="福島県">福島県</option><option value="栃木県">栃木県</option><option value="埼玉県">埼玉県</option><option value="千葉県">千葉県</option><option value="東京都">東京都</option><option value="神奈川県">神奈川県</option><option value="新潟県">新潟県</option><option value="富山県">富山県</option><option value="福井県">福井県</option><option value="長野県">長野県</option><option value="岐阜県">岐阜県</option><option value="静岡県">静岡県</option><option value="愛知県">愛知県</option><option value="京都府">京都府</option><option value="大阪府">大阪府</option><option value="兵庫県">兵庫県</option><option value="和歌山県">和歌山県</option><option value="鳥取県">鳥取県</option><option value="岡山県">岡山県</option><option value="広島県">広島県</option><option value="香川県">香川県</option><option value="愛媛県">愛媛県</option><option value="福岡県">福岡県</option><option value="長崎県">長崎県</option><option value="熊本県">熊本県</option><option value="大分県">大分県</option><option value="沖縄県">沖縄県</option></select></div>
         <div class="filter"><label class="filter-check"><input type="checkbox" id="subsidyCheck" onchange="applyFilters()">給付金対象のみ</label></div>
       </div>
       <div class="result-count">
-        <span id="resultCount"></span>
+        <span id="resultCount">6件</span>
         <button class="reset-link" onclick="resetFilters()">条件をリセット</button>
       </div>
     </div>
 
-    <div class="ledger" id="ledger"></div>
+    <div class="ledger" id="ledger"><article class="card" onclick="showDetail('webmarks')"><div class="card-head"><div><h3>WEBMARKS</h3></div><div class="price-tag"><span class="amount">385,000円</span><span class="note">最安プラン（一部コース）</span></div></div><p class="desc">Webマーケティングとが中心のスクール。SEO、Web広告、GA4、データベース型SEOなど複数の講座を提供。個人向けスクールと法人向け研修の両方を展開。AI検索最適化やAI人材育成などの新サービスも展開。</p><div class="tags"><span class="tag">Webマーケティング</span><span class="tag">プログラミング・エンジニア</span><span class="tag plain">オンライン</span><span class="tag plain">未経験・入門</span><span class="tag ok">転職サポート</span></div></article><article class="card" onclick="showDetail('internetacademy')"><div class="card-head"><div><h3>インターネット・アカデミー</h3></div><div class="price-tag"><span class="amount">671,297円</span><span class="note">最安プラン</span></div></div><p class="desc">Web制作・開発会社のノウハウを活かし、プログラミング、Webデザイン、AI・データ分析、Webマーケティング等を幅広く提供。ライブ授業、マンツーマン授業、オンデマンド授業を自由に組み合わせて学習でき、プロの講師からの直接指導と充実したサポート体制で実践的スキル習得が可能。</p><div class="tags"><span class="tag">プログラミング・エンジニア</span><span class="tag">Webデザイン</span><span class="tag">UI/UXデザイン</span><span class="tag">Webマーケティング</span><span class="tag">生成AI・DXリテラシー</span><span class="tag plain">通学</span><span class="tag plain">未経験・入門</span><span class="tag ok">給付金対象</span><span class="tag ok">転職サポート</span></div></article><article class="card" onclick="showDetail('winschool')"><div class="card-head"><div><h3>Winスクール</h3></div><div class="price-tag"><span class="amount na">要問い合わせ</span></div></div><p class="desc">Winスクールは全国展開するパソコン教室で、プロの講師による個別指導を提供しています。講座数300以上で、初心者から経験者まで対応した豊富なカリキュラムを用意。教室での受講とオンライン受講の両形式に対応しており、就職・転職サポートや卒業後のアフターフォローも充実しています。</p><div class="tags"><span class="tag">プログラミング・エンジニア</span><span class="tag">Webデザイン</span><span class="tag">動画編集</span><span class="tag">Webマーケティング</span><span class="tag">生成AI・DXリテラシー</span><span class="tag">語学</span><span class="tag">資格</span><span class="tag plain">オンライン</span><span class="tag plain">未経験・入門</span><span class="tag ok">給付金対象</span><span class="tag ok">転職サポート</span></div></article><article class="card" onclick="showDetail('schoo')"><div class="card-head"><div><h3>Schoo</h3></div><div class="price-tag"><span class="amount na">要問い合わせ</span></div></div><p class="desc">生放送・双方向型のオンライン学習コミュニティ。9,000本以上の授業を19カテゴリで配信。生放送終了後30日間は無料視聴でき、コース第1回もすべて無料。クイズ形式や思考を問う授業設計が特徴。プログラミング、マーケティング、DX、ビジネススキルなど幅広いジャンルを網羅。</p><div class="tags"><span class="tag">プログラミング・エンジニア</span><span class="tag">Webデザイン</span><span class="tag">UI/UXデザイン</span><span class="tag">Webマーケティング</span><span class="tag">生成AI・DXリテラシー</span><span class="tag plain">オンライン</span><span class="tag plain">未経験・入門</span></div></article><article class="card" onclick="showDetail('shareway')"><div class="card-head"><div><h3>Wannabe Academy</h3></div><div class="price-tag"><span class="amount na">要問い合わせ</span></div></div><p class="desc">実務経験を積めるWebマーケティングスクール。未経験者を対象に、2ヶ月間の実在クライアントワークを含む実践的なカリキュラムを提供。週1回のオンライン授業と学習動画、マンツーマン補講受け放題で、基礎から実務スキルまでを習得。卒業後は約20,000件の求人情報から転職先紹介や副業案件紹介のサポートあり。</p><div class="tags"><span class="tag">Webマーケティング</span><span class="tag plain">オンライン</span><span class="tag plain">未経験・入門</span><span class="tag ok">転職サポート</span></div></article><article class="card" onclick="showDetail('with-marke')"><div class="card-head"><div><h3>Withマーケ</h3></div><div class="price-tag"><span class="amount na">要問い合わせ</span></div></div><p class="desc">実務型カリキュラムを通じて、現場で即活躍できるWebマーケティングスキルと仕事獲得に使える実績を習得できるスクール。SEOライター、SEOマーケター、インスタクリエイター、インスタ運用の4つのコースが用意されており、受講期間中に実際のマーケティング現場での経験を積める。全コース共通で500本の動画コンテンツが付帯し、受講後のアフターサポートと毎週の勉強会で継続的な成長を支援する。</p><div class="tags"><span class="tag">Webマーケティング</span><span class="tag plain">オンライン</span><span class="tag plain">未経験・入門</span><span class="tag ok">転職サポート</span></div></article></div>
   </div>
 </div>
 
@@ -203,7 +201,7 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
       料金・受講期間・給付金の対象可否は変更されることがあります。お申し込みの前に、必ず公式サイトで最新の情報をご確認ください。
       「要問い合わせ」と表示している項目は、公式サイト上で確認できなかったものです。
     </p>
-    <p class="disclaimer">&copy; 2026 スキルアップ図鑑</p>
+    <p class="disclaimer">© 2026 スキルアップ図鑑</p>
   </div>
 </footer>
 
@@ -560,5 +558,6 @@ function renderResults() {
 
 init();
 </script>
-</body>
-</html>
+
+
+</body></html>
