@@ -1351,5 +1351,173 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://www.progrit.co.jp/"
+  },
+  {
+    "id": "tac-school",
+    "school_name": "資格の学校TAC",
+    "official_name": null,
+    "description": "資格取得に向けた講座を幅広く展開するスクール。公認会計士、税理士、公務員試験、宅建士、建築士など40年以上の実績を持つ講座を提供。全国22拠点の教室講義、Web通信、オンラインライブ通信など複数の学習形式に対応し、試験傾向を分析したオリジナル教材ときめ細かい学習サポートで合格をサポートする。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "熊本県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "試験傾向を分析した毎年更新のオリジナル教材で試験に必要な知識と実践力をバランスよく習得できる",
+      "本試験合格者である講師による、受講生時代の経験に基づいた分かりやすい講義が特徴",
+      "全国22拠点の教室講義、Web通信講座、オンラインライブ通信など複数の学習形式に対応",
+      "質問サポートなど充実した学習サポート環境で合格を目指せる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.tac-school.co.jp/kouza_fp.html",
+    "official_url": "https://www.tac-school.co.jp/",
+    "cta_url": "https://www.tac-school.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tac-school",
+    "created_at": "2026-09-08T00:06:59.837Z",
+    "updated_at": "2026-09-08T00:06:59.837Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.tac-school.co.jp/"
+  },
+  {
+    "id": "o-hara",
+    "school_name": "資格の大原",
+    "official_name": null,
+    "description": "実績豊富な講師陣やオリジナル教材、充実の学習サポートで皆さんの合格をアシストします。公務員、会計、法律、ビジネス・経営、情報、医療・福祉・保育、就職・語学など幅広い資格取得講座を提供。教室通学、映像通学、Web通信、DVD通信、資料通信など多様な学習スタイルを用意しています。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "山形県",
+      "千葉県",
+      "東京都",
+      "新潟県",
+      "富山県",
+      "福井県",
+      "長野県",
+      "岐阜県",
+      "静岡県",
+      "京都府",
+      "大阪府",
+      "和歌山県",
+      "岡山県",
+      "広島県",
+      "愛媛県",
+      "福岡県",
+      "熊本県",
+      "大分県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "多様な学習スタイル（教室通学、映像通学、Web通信、DVD通信、資料通信）を用意",
+      "全国に多数の校舎を展開",
+      "公務員から医療・福祉・保育まで幅広い資格取得講座を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.o-hara.jp/course/list",
+    "official_url": "https://www.o-hara.jp/",
+    "cta_url": "https://www.o-hara.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-o-hara",
+    "created_at": "2026-09-08T00:07:14.568Z",
+    "updated_at": "2026-09-08T00:07:14.568Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.o-hara.jp/"
+  },
+  {
+    "id": "studying",
+    "school_name": "スタディング",
+    "official_name": null,
+    "description": "AI機能を活用した資格取得講座プラットフォーム。35以上の資格講座を提供し、ビジネス・経営、法律・労務、会計・金融、不動産・建築、IT、公務員、医療、福祉、語学などの分野に対応。AI学習プラン、AI問題復習、AI実力スコアなどのAI機能で個人別に最適な学習をサポート。スキマ時間でスマホ学習が可能で、社会人や学生に選ばれている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "AI学習プラン機能で個人別に最適な学習計画を作成",
+      "AI問題復習機能で最適なタイミングで問題を出題",
+      "AI実力スコア機能でリアルタイムに実力を確認できる",
+      "スマホで学習できるスキマ時間学習に対応",
+      "35以上の資格講座を提供（中小企業診断士、宅建士、税理士など）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://studying.jp/guide/kyufu.html",
+    "official_url": "https://studying.jp/",
+    "cta_url": "https://studying.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-studying",
+    "created_at": "2026-09-08T00:07:31.366Z",
+    "updated_at": "2026-09-08T00:07:31.366Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://studying.jp/"
   }
 ]
