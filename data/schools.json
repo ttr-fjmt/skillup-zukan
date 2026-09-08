@@ -284,11 +284,11 @@
     ],
     "price_detail_url": "https://school.dhw.co.jp/prospectus/",
     "official_url": "https://school.dhw.co.jp/",
-    "cta_url": "https://school.dhw.co.jp/",
-    "cta_type": "direct",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.11229.16043&dna=180892",
+    "cta_type": "affiliate",
     "click_tracking_id": "click-dhw",
     "created_at": "2026-09-07T16:02:45.061Z",
-    "updated_at": "2026-09-08T00:26:31.864Z",
+    "updated_at": "2026-09-08T12:21:28.206Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -939,11 +939,11 @@
     ],
     "price_detail_url": "https://shareway.jp/wannabe_web/curriculum/",
     "official_url": "https://shareway.jp/wannabe_web/",
-    "cta_url": "https://shareway.jp/wannabe_web/",
-    "cta_type": "direct",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+G995Z6+4NJO+5YJRM",
+    "cta_type": "affiliate",
     "click_tracking_id": "click-shareway",
     "created_at": "2026-09-07T23:52:22.673Z",
-    "updated_at": "2026-09-08T00:28:33.813Z",
+    "updated_at": "2026-09-08T12:28:54.998Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -3626,5 +3626,1232 @@
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
     "verified_url": "https://outcome-online.com/"
+  },
+  {
+    "id": "alpros",
+    "school_name": "アルプロス",
+    "official_name": null,
+    "description": "日本にいながら留学環境を体験できる短期集中型の総合英語学校。アメリカの大学付属英語学校がルーツで、海外の語学学校と同等の教育システムを採用。英語4技能を連動させた実践的なカリキュラムにより、ビジネス英語やアカデミック英語、各種国際試験対策に対応。ネイティブ講師と日本人バイリンガル講師による専門分野別指導で、受講生の目標達成をサポート。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "外資系企業への転職",
+      "海外赴任",
+      "海外大学進学",
+      "大学院進学"
+    ],
+    "price": {
+      "display": "11,000円〜",
+      "min_yen": 11000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "1ヵ月集中プログラム",
+        "amount": 517000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "1ヵ月集中プログラム",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "週末集中プログラム",
+        "amount": 323400,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "週末集中プログラム",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "エグゼクティブプログラム",
+        "amount": 297000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "エグゼクティブプログラム",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "プライベートレッスン（1レッスン）",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "プライベートレッスン（1レッスン）",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "短期集中型学習で毎月100時間以上のプログラム",
+      "英語4技能（話す・聞く・読む・書く）を組み合わせたカリキュラム",
+      "専門分野別の担任講師による指導",
+      "英語で思考するプロセスを習得可能",
+      "TOEFL iBT・IELTS等の国際試験対策専門"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.alpros.co.jp/price",
+    "official_url": "https://www.alpros.co.jp/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.10121.14462&dna=165904",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-alpros",
+    "created_at": "2026-09-08T12:18:32.474Z",
+    "updated_at": "2026-09-08T12:18:32.474Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.alpros.co.jp/"
+  },
+  {
+    "id": "lancul",
+    "school_name": "STAR'S UNIVERSITY",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://trial.lancul.com/stars",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.9653.15024&dna=171375",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-lancul",
+    "created_at": "2026-09-08T12:19:02.191Z",
+    "updated_at": "2026-09-08T12:19:02.191Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://trial.lancul.com/stars"
+  },
+  {
+    "id": "bytech-ad",
+    "school_name": "バイテックGEEK",
+    "official_name": null,
+    "description": "Claude Codeを使用したAI開発スキルを習得するオンラインコース。IT未経験者向けの基礎から実装まで一気通貫の学習プログラムで、Webアプリ開発・業務自動化ができるスキルを身につけられます。現役AIエンジニアによる月2回の個別カウンセリングと専属メンターによる伴走サポートが特徴です。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "現役AIエンジニアによる月2回の個別カウンセリング実施",
+      "5フェーズ44レッスンの段階的な学習カリキュラム",
+      "受講生限定AIコミュニティ『バイテックAIカレッジ』の提供（サポート期間終了後も利用可能）",
+      "専属メンターによる実務レベルの個別サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://g-re.bytech-ad.com/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.9654.16291&dna=182925",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-bytech-ad",
+    "created_at": "2026-09-08T12:19:19.738Z",
+    "updated_at": "2026-09-08T12:19:19.738Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://g-re.bytech-ad.com/"
+  },
+  {
+    "id": "up-on",
+    "school_name": "アップオンコンサルティング",
+    "official_name": "アップオンコンサルティング",
+    "description": "中小企業のAI導入・活用を主導する企業が提供する生成AI講座。従業員向けには業務用アプリの制作まで学ぶ「明日から使えるAI講座」、経営者向けには事業計画書をAIで作成しながら学ぶ講座、AI講師育成講座、講座販売方法を学ぶプログラムなどを提供。講座受講後のAI導入・継続コンサルティングサービスも実施。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ChatGPTなどのAIアプリケーション活用方法の習得",
+      "業務用AIアプリ制作スキルの習得",
+      "経営者向けの事業計画書作成支援",
+      "AI講師・コンサルタント育成プログラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://up-on.jp/ai-class/",
+    "official_url": "https://up-on.jp/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.10474.14977&dna=170571",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-up-on",
+    "created_at": "2026-09-08T12:20:35.996Z",
+    "updated_at": "2026-09-08T12:20:35.996Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://up-on.jp/"
+  },
+  {
+    "id": "thisiseikaiwa",
+    "school_name": "This is 英会話",
+    "official_name": null,
+    "description": "約150人のネイティブアメリカ人による日常会話を動画で学ぶオンライン英会話教材。初対面の会話、スモールトーク、レストランやホテルなど日常シーンの約330本の動画を通じて、実践的なリスニング力とスピーキング力を短期間で習得できるように設計されている。スマートフォン、タブレット、パソコンで時間と場所を選ばずにトレーニングが可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約150人のネイティブアメリカ人による実際の日常会話を約330本の動画で学習できる",
+      "日常英会話編と旅行英会話編の2つのカテゴリーで、初対面、スモールトーク、レストラン、ホテルなど実践的なシーンを網羅",
+      "リスニングとスピーキングの練習用に約160シーンの会話と、よく使われる単語・熟語・パターンを音声付きで紹介",
+      "スマートフォン、タブレット、パソコンで、いつでもどこでも空き時間を利用して学習可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.thisiseikaiwa.com/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.6310.9068&dna=114324",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-thisiseikaiwa",
+    "created_at": "2026-09-08T12:22:20.268Z",
+    "updated_at": "2026-09-08T12:22:20.268Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.thisiseikaiwa.com/"
+  },
+  {
+    "id": "gsacademy",
+    "school_name": "Global Step Academy",
+    "official_name": "Global Step Academy株式会社",
+    "description": "英語がはじめてのお子さまから、アルファベット・簡単な単語がわかるお子さま向けの基礎英語コース。フォニックスや語彙を学びながら、読む・書く力をていねいに育てます。25分の集中レッスンで、世界中から厳選された講師がお子さま一人ひとりの理解度に合わせ、音・文字・単語・短い文へと段階的に導きます。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額178円〜",
+      "min_yen": 178,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "BASIC",
+        "amount": 178,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "STANDARD",
+        "amount": 254,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "SILVER",
+        "amount": 319,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "GOLD",
+        "amount": 373,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "25分の集中レッスンで実感を得られる設計",
+      "予習・レッスン・復習・アウトプットの学習サイクル",
+      "国際基準Cognia®認証による世界基準のカリキュラム",
+      "講師による学習レポートとフィードバック体制"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.gsacademy.com/online/prices",
+    "area_detail_url": "https://www.gsacademy.com/about-gsa",
+    "official_url": "https://www.gsacademy.com/online",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FNTK76+477W+60H7M",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-gsacademy",
+    "created_at": "2026-09-08T12:23:48.238Z",
+    "updated_at": "2026-09-08T12:23:48.238Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.gsacademy.com/online"
+  },
+  {
+    "id": "nouryoku",
+    "school_name": "能セン",
+    "official_name": null,
+    "description": "電気主任技術者・施工管理技士など建設・電気系国家資格の合格を支援するオンライン講座。オンライン講座、通学講習会、出張講習などの形式で、資格試験対策を提供。電験三種オンライン講座にはAIティーチングアシスタント機能や勉強管理システムが搭載されている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "電験三種オンライン講座はAIティーチングアシスタント機能を搭載",
+      "勉強管理システムで学習進捗を管理でき、講師によるサポート体制が整備",
+      "オンライン講座と通学講習会の両方に対応",
+      "一般教育訓練給付制度の指定講座である電験三種講座が存在"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.nouryoku.com/benefits/",
+    "official_url": "https://www.nouryoku.com/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FH9SJM+5TS8+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-nouryoku",
+    "created_at": "2026-09-08T12:25:27.418Z",
+    "updated_at": "2026-09-08T12:25:27.418Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.nouryoku.com/"
+  },
+  {
+    "id": "avalon-works",
+    "school_name": "アバロンミュージックスクール",
+    "official_name": null,
+    "description": "マンツーマンレッスンで、ボーカル、作曲・DTM、ギター、ピアノなど様々な音楽スキルを習得できるスクール。無料レコーディング機能を備え、カラオケ上達から音楽デビューサポートまで幅広く対応。全国15校舎以上で、初心者からプロ志向者まで対応。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額8,470円〜",
+      "min_yen": 8470,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "ボーカルコース 60分 月2回",
+        "amount": 12980,
+        "duration": "月2回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 60分 月3回",
+        "amount": 18810,
+        "duration": "月3回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 60分 月4回",
+        "amount": 22880,
+        "duration": "月4回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 45分 月2回",
+        "amount": 11000,
+        "duration": "月2回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 45分 月3回",
+        "amount": 14850,
+        "duration": "月3回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 45分 月4回",
+        "amount": 17600,
+        "duration": "月4回",
+        "kind": "monthly"
+      },
+      {
+        "label": "ボーカルコース 30分 月2回",
+        "amount": 8470,
+        "duration": "月2回",
+        "kind": "monthly"
+      },
+      {
+        "label": "入学金",
+        "amount": 2200,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "千葉県",
+      "北海道",
+      "山形県",
+      "福岡県",
+      "静岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "マンツーマンレッスンで一人ひとりに寄り添った指導",
+      "レッスン中に無料でレコーディング可能",
+      "複数コース同時受講が可能（料金そのまま）",
+      "全国15校舎以上で駅から5分以内の立地",
+      "デビューサポートとオーディション情報提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.avalon-works.com/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FBWW3M+4FRO+5YRHE",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-avalon-works",
+    "created_at": "2026-09-08T12:25:48.765Z",
+    "updated_at": "2026-09-08T12:25:48.765Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.avalon-works.com/"
+  },
+  {
+    "id": "jdknet",
+    "school_name": "ハウジングインテリアカレッジ",
+    "official_name": "株式会社 住宅デザイン研究所",
+    "description": "インテリアコーディネーター、二級建築士、宅建士の資格取得に特化した通信教育専門校。スマートフォンで完結する動画講義と過去問徹底解説により、初心者や忙しい社会人向けの学習環境を提供。個別指導と充実の添削指導でサポート。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "46,200円〜",
+      "min_yen": 46200,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ライト一次二次総合通信講座",
+        "amount": 68200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "スタンダード一次二次総合完全攻略通信講座",
+        "amount": 93500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "コンプリート一次二次総合徹底サポート講座（二次試験LIVE授業付）",
+        "amount": 291500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ライト二次試験通信講座",
+        "amount": 46200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "スタンダード二次試験完全攻略通信講座",
+        "amount": 61600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "コンプリート二次試験LIVE授業講座",
+        "amount": 188100,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "広島県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "スマートフォンでいつでもどこでも学習できる動画講義eラーニングシステム",
+      "過去問を1問ずつ丁寧に解説する学習法",
+      "個別の学習スケジュール作成と個別指導",
+      "1日1問まで質問可能なサポート体制",
+      "充実の添削指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.jdknet.co.jp/interior",
+    "area_detail_url": "https://www.jdknet.co.jp/school",
+    "official_url": "https://www.jdknet.co.jp/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FAQ0W2+4O48+60H7M",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-jdknet",
+    "created_at": "2026-09-08T12:26:25.445Z",
+    "updated_at": "2026-09-08T12:26:25.445Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.jdknet.co.jp/"
+  },
+  {
+    "id": "brain-holdings",
+    "school_name": "Skill Hacks",
+    "official_name": null,
+    "description": "動画編集・ライティング・デザイン・プログラミングなど、一生もののスキルを学べるオンラインスクール。スキル習得から個人の収益化まで支援する伴走型サービスです。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://brain-holdings.com/skillhacks/services/skill-hacks/",
+    "official_url": "https://brain-holdings.com/skillhacks/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+DGMWQQ+4K3S+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-brain-holdings",
+    "created_at": "2026-09-08T12:27:15.170Z",
+    "updated_at": "2026-09-08T12:27:15.170Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://brain-holdings.com/skillhacks/"
+  },
+  {
+    "id": "vnts",
+    "school_name": "ヴィノテラス ワインスクール",
+    "official_name": null,
+    "description": "オンライン・生配信に特化したワインスクール。ワインの基礎から楽しく学ぶ講座、ソムリエ・ワインエキスパート試験対策、SAKE DIPLOMA試験対策など、業界トップクラスの講師によるさまざまな講座を提供。通学不要で好きな場所・時間に受講でき、受講できなかった場合は講義動画配信サービスで対応。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オンラインに特化し好きな場所で受講可能",
+      "受講できなかった場合は講義動画配信サービスで対応",
+      "業界トップクラスの講師による講座を提供",
+      "ソムリエ・ワインエキスパート試験対策など複数の試験対策コースを用意"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://school.vnts.jp/course",
+    "area_detail_url": "https://school.vnts.jp/contact",
+    "official_url": "https://school.vnts.jp/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+DE96BM+4X0S+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-vnts",
+    "created_at": "2026-09-08T12:28:02.953Z",
+    "updated_at": "2026-09-08T12:28:02.953Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://school.vnts.jp/"
+  },
+  {
+    "id": "webcoach",
+    "school_name": "WEBCOACH",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.webcoach.jp/a8/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC3YO+EHJRH6+5EVK+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-webcoach",
+    "created_at": "2026-09-08T12:28:49.908Z",
+    "updated_at": "2026-09-08T12:28:49.908Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.webcoach.jp/a8/"
+  },
+  {
+    "id": "shuoba",
+    "school_name": "ショーバ中国語センター",
+    "official_name": null,
+    "description": "日本人への中国語教育経験が豊富な講師による、オンライン専用のWebレッスンアプリを使用した中国語学習。識字力と会話力を同時に高める特徴があり、自動録画機能、マウス書き込み機能、e-learningシステムとの併用により、効率的な予習復習が可能。毎年改訂される教案で実用的な表現を習得できます。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "日本人向けの中国語教育に特化したオリジナルWebレッスンアプリを使用",
+      "レッスンの自動録画機能により、レッスン後の復習が可能",
+      "マウスでの書き込み機能で、漢字の書き方や語彙力の向上が図れる",
+      "e-learningシステムとの併用で、オンラインでも予習復習が効率的",
+      "毎年内容改訂される教案で、現在の中国文化に対応した実用的な表現を習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.shuoba.jp/course-information/",
+    "area_detail_url": "https://www.shuoba.jp/school-information/school01/",
+    "official_url": "https://www.shuoba.jp/weblesson/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+GFSXMQ+5WP8+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-shuoba",
+    "created_at": "2026-09-08T12:29:48.170Z",
+    "updated_at": "2026-09-08T12:29:48.170Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.shuoba.jp/weblesson/"
+  },
+  {
+    "id": "eiken-passport",
+    "school_name": "英論会",
+    "official_name": null,
+    "description": "英検対策専門のオンライン塾。英語の基礎学習を一つずつ少しずつ進められ、英語が苦手な人や初めて英検を受ける人も無理なく学習できる。目標級の合格に特化した実践型カリキュラムで、問題形式・出題傾向に合わせたスキルが身につく。プロ講師の担任制でマンツーマン授業を提供。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロ講師による担任制マンツーマン授業",
+      "目標級合格に特化した実践型カリキュラム",
+      "語彙力の徹底強化と毎回の語彙テスト",
+      "リーディング・リスニング・ライティング対策",
+      "試験タイミングに合わせた無駄のない授業"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.eiken-passport.com/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AZ+3KNYA+4NPS+BWVTE",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-eiken-passport",
+    "created_at": "2026-09-08T12:30:15.109Z",
+    "updated_at": "2026-09-08T12:30:15.109Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.eiken-passport.com/"
+  },
+  {
+    "id": "sukyojuku",
+    "school_name": "オンライン数学専門塾 数強塾",
+    "official_name": "株式会社数強塾",
+    "description": "数学が苦手な中高生を対象に、プロ講師によるマンツーマン指導を提供するオンライン数学専門塾。学校の授業補習から難関校・大学受験対策まで、中高一貫校の体系数学にも対応。授業で理解を確認し、個別課題演習と反復練習で成績向上へつなげる指導システムを展開。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "3,000円〜",
+      "min_yen": 3000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "入塾金",
+        "amount": 16500,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "ネットシステム維持費",
+        "amount": 8250,
+        "duration": "月",
+        "kind": "monthly"
+      },
+      {
+        "label": "振替対応費",
+        "amount": 3300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "体験授業",
+        "amount": 3000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマン指導で理解度を個別確認",
+      "個別課題演習で授業内容を定着させる",
+      "60名のプロ講師が在籍・学校教材に合わせた講師選定",
+      "自宅から受講可能なオンライン授業",
+      "中高一貫校の体系数学に完全対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://sukyojuku.com/system/",
+    "official_url": "https://sukyojuku.com/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AZ+2Z8CI+4NPS+5YRHE",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-sukyojuku",
+    "created_at": "2026-09-08T12:31:39.982Z",
+    "updated_at": "2026-09-08T12:31:39.982Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://sukyojuku.com/"
+  },
+  {
+    "id": "adv",
+    "school_name": "ワインスクール アカデミー・デュ・ヴァン",
+    "official_name": null,
+    "description": "パリ発祥・国内39年の歴史を誇るワインスクール。ワイン初心者からソムリエ資格取得者まで、趣味から資格取得、プロフェッショナル向けまで幅広い講座を提供。青山、銀座、大阪の3拠点で通学講座とオンライン講座をラインナップしており、充実した振替制度と駅近のアクセスが特徴。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ソムリエ",
+      "ワインエキスパート"
+    ],
+    "price": {
+      "display": "179,300円",
+      "min_yen": 179300,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ワイン総合コースStep-I",
+        "amount": 179300,
+        "duration": "全20回",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "青山校（表参道）・銀座校・大阪校の3拠点で展開",
+      "曜日変更や別校舎での振替が可能",
+      "すべての校舎が駅徒歩3～7分圏内",
+      "J.S.A.ソムリエ・ワインエキスパート試験対策講座を提供",
+      "WSET資格対応の講座を実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.adv.gr.jp/course/step1",
+    "official_url": "https://www.adv.gr.jp/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AZ+1SD4Y+4EDY+61RIA",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-adv",
+    "created_at": "2026-09-08T12:32:09.682Z",
+    "updated_at": "2026-09-08T12:32:09.682Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.adv.gr.jp/"
+  },
+  {
+    "id": "saraschool",
+    "school_name": "SARAスクール リンパケアセラピスト資格取得講座",
+    "official_name": null,
+    "description": "リンパケアに関する知識を習得し、リンパケアセラピスト資格とむくみ改善インストラクター資格の2つの資格取得を目指す講座。初心者向けの簡潔なテキストで、リンパの基礎から症状別のケア方法、日常生活への活用まで学べます。オンライン講座は最短1ヶ月、通常講座は最短2ヶ月での資格取得が可能です。プラチナコース修了時は試験免除で資格が認定されます。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "59,800円〜",
+      "min_yen": 59800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "通常講座 基本コース",
+        "amount": 59800,
+        "duration": "6ヶ月（最短2ヶ月）",
+        "kind": "total"
+      },
+      {
+        "label": "通常講座 プラチナコース",
+        "amount": 79800,
+        "duration": "6ヶ月（最短2ヶ月）",
+        "kind": "total"
+      },
+      {
+        "label": "オンライン講座 プラチナコースオンライン",
+        "amount": 79800,
+        "duration": "6ヶ月（最短1ヶ月）",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "質問無制限で対応、課題提出は何度でも再提出可能",
+      "卒業後はお仕事お役立ちブック、資格証明バナー、NOWSARA掲載などのサポート提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.saraschool.net/biyo/lymphcare/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+GI6O1U+4N6C+7925E",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-saraschool",
+    "created_at": "2026-09-08T12:32:37.011Z",
+    "updated_at": "2026-09-08T12:32:37.011Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.saraschool.net/biyo/lymphcare/"
+  },
+  {
+    "id": "onsuku",
+    "school_name": "行政書士TEPPAN通信講座",
+    "official_name": null,
+    "description": "2026年試験対応の行政書士試験対策講座。TAC出版の「スッキリわかる行政書士」テキストと約53時間のオンライン講義動画を併用し、試験の頻出論点を効率的に学習。過去7回分のオンライン過去問、422問の練習問題、学習管理機能を備える。スマホ対応で隙間学習に対応し、自宅や移動中でのライフスタイルに合わせた学習が可能。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "55,000円〜",
+      "min_yen": 55000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "テキスト＋過去問集付き（書籍２冊）",
+        "amount": 60500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "テキスト付き（書籍１冊）",
+        "amount": 58300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "書籍なし",
+        "amount": 55000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約53時間の講義動画とテキストの併用学習",
+      "過去7回分のオンライン過去問と詳細解説",
+      "422問の練習問題で理解度確認",
+      "スマホ対応レジュメと音声ダウンロード教材",
+      "学習進捗管理機能で試験日までの逆算計画"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://onsuku.jp/dlc/gyousei",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FXCHVM+408S+60WN6",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-onsuku",
+    "created_at": "2026-09-08T12:34:17.392Z",
+    "updated_at": "2026-09-08T12:34:58.785Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://onsuku.jp/dlc/gyousei"
+  },
+  {
+    "id": "hatchlinkjr",
+    "school_name": "ハッチリンク ジュニア",
+    "official_name": null,
+    "description": "幼児から中学生、大人まで受講できるオンライン英語スクール。探究学習型アプローチを採用し、文科省新学習指導要領ベースのカリキュラムを提供。英検・英検Jr.対策レッスンに対応し、イングリッシュキャンプやSpecial Eventなど定期的なプログラムを実施。ファミリーアカウント制度あり。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額3,800円〜",
+      "min_yen": 3800,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月4回",
+        "amount": 3800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月8回",
+        "amount": 5500,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月12回",
+        "amount": 7900,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月16回",
+        "amount": 10500,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月20回",
+        "amount": 12900,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月24回",
+        "amount": 14300,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月30回",
+        "amount": 16100,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "幼児から中学生対象でファミリーアカウント制度あり",
+      "探究学習型アプローチを採用",
+      "文科省新学習指導要領ベースのカリキュラム",
+      "英検・英検Jr.対策レッスンに対応",
+      "イングリッシュキャンプを定期開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.hatchlinkjr.com/jr-price-and-course",
+    "official_url": "https://www.hatchlinkjr.com/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FVK72A+3O9E+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-hatchlinkjr",
+    "created_at": "2026-09-08T12:34:52.320Z",
+    "updated_at": "2026-09-08T12:34:52.320Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.hatchlinkjr.com/"
   }
 ]
