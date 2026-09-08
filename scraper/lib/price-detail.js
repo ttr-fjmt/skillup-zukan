@@ -21,7 +21,7 @@
 
 const cheerio = require('cheerio');
 const { politeDelay, fetchWithVerifyUA } = require('./http');
-const { NOT_DISCLOSED_TEXT } = require('./schema');
+const { PRICE_NOT_DISCLOSED_TEXT } = require('./schema');
 
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
 
@@ -294,7 +294,7 @@ function buildPriceFromPlans(plans, scope = 'top_page') {
           `（種別: ${[...new Set(priced.map(p => p.kind))].join(', ')}）。`
       );
     }
-    return { display: NOT_DISCLOSED_TEXT, min_yen: null, scope, kind: null };
+    return { display: PRICE_NOT_DISCLOSED_TEXT, min_yen: null, scope, kind: null };
   }
 
   const min = Math.min(...usable.map(p => p.amount));

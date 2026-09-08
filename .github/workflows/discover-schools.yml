@@ -1,8 +1,9 @@
 name: Discover new schools (daily)
 
 # freelance-anken-zukan の discover-agents.yml を踏襲。
-# 既存2サイトの教訓に従い、日次実行は DISCOVER_GENRES を1ジャンルに絞る。
-# ジャンルを増やすのは、そのジャンルの結果を人力レビューして精度を確認してから。
+# 全8ジャンルの初回レビューが完了したため、日次実行の対象を all に広げた。
+# discover-schools.js 側でジャンルの並び順を日付で回転させ、上限件数で打ち切られても
+# どのジャンルにも定期的に順番が回るようにしている。
 
 on:
   schedule:
@@ -11,10 +12,10 @@ on:
   workflow_dispatch:
     inputs:
       genres:
-        description: "対象ジャンル（カンマ区切り、または all）。空欄なら programming のみ"
+        description: "対象ジャンル（カンマ区切り、または all）。空欄なら all（全8ジャンル）"
         required: false
         type: string
-        default: "programming"
+        default: "all"
       max_candidates:
         description: "1回の実行で新規発見を試みる候補数の上限。空欄なら20件（日次自動実行は常に10件）"
         required: false
@@ -65,8 +66,8 @@ jobs:
         working-directory: scraper
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # 日次cron実行時はコスト・品質管理のため常に programming の10件のまま。
-          DISCOVER_GENRES: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.genres || 'programming' }}
+          # 日次cron実行時は全8ジャンルを対象にし、件数は10件のままに抑える。
+          DISCOVER_GENRES: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.genres || 'all' }}
           DISCOVER_MAX_PER_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_candidates || '10' }}
         run: node discover-schools.js
 

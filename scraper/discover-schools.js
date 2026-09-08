@@ -18,7 +18,7 @@
  * ままなので、精度の確認はこのログを手がかりに事後で行う。
  *
  * 実行例:
- *   node discover-schools.js                       # DISCOVER_GENRES 未指定なら programming のみ
+ *   node discover-schools.js                       # DISCOVER_GENRES 未指定なら programming のみ（cronは all）
  *   DISCOVER_GENRES=programming,webdesign node discover-schools.js
  *   DISCOVER_GENRES=all DISCOVER_MAX_PER_RUN=20 node discover-schools.js
  */
@@ -49,12 +49,28 @@ const {
 const MAX_PER_RUN = Number(process.env.DISCOVER_MAX_PER_RUN || 10);
 
 /**
- * 対象ジャンル。既存2サイトの教訓（いきなり全件を回さず、まず1つで挙動を確かめてから
- * 増やす）に従い、既定は programming の1ジャンルのみ。"all" で全8ジャンル。
+ * "all" のときのジャンルの並び順を、日付で回転させる。
+ *
+ * discoverCandidates() は上限件数に達した時点で残りのジャンルを打ち切るため、毎回同じ順で
+ * 回すと先頭の programming ばかりが伸び、後ろの語学・資格には順番が回ってこない。
+ * 起点を日ごとにずらして、どのジャンルにも定期的に順番が来るようにする。
+ */
+function rotateGenres(genres, date = new Date()) {
+  // JSTの通算日を起点にする（実行はJST 5:00の日次cronのため、日付境界をJSTに合わせる）。
+  const jst = new Date(date.getTime() + 9 * 60 * 60 * 1000);
+  const dayOfYear = Math.floor((jst - Date.UTC(jst.getUTCFullYear(), 0, 0)) / 86400000);
+  const offset = dayOfYear % genres.length;
+  return [...genres.slice(offset), ...genres.slice(0, offset)];
+}
+
+/**
+ * 対象ジャンル。環境変数 DISCOVER_GENRES で指定する。"all" で全8ジャンル（並び順は日付で回転）。
+ * 既定を programming のままにしてあるのは、手元で1ジャンルだけ試すときの安全側の既定値として。
+ * 日次cronは workflow 側で明示的に "all" を渡す。
  */
 function targetGenres() {
   const raw = (process.env.DISCOVER_GENRES || 'programming').trim();
-  if (raw === 'all') return [...GENRE];
+  if (raw === 'all') return rotateGenres(GENRE);
 
   const requested = raw.split(',').map(s => s.trim()).filter(Boolean);
   const unknown = requested.filter(g => !GENRE.includes(g));
@@ -314,4 +330,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, assertApiKeyConfigured, targetGenres, assembleDiscoveredSchool, MAX_PER_RUN };
+module.exports = { main, assertApiKeyConfigured, targetGenres, rotateGenres, assembleDiscoveredSchool, MAX_PER_RUN };

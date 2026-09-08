@@ -16,7 +16,7 @@ const test = require('node:test');
 const assert = require('node:assert');
 
 const priceDetail = require('../lib/price-detail');
-const { NOT_DISCLOSED_TEXT } = require('../lib/schema');
+const { PRICE_NOT_DISCLOSED_TEXT } = require('../lib/schema');
 
 /** 元の実装を退避し、テストごとに差し替えて必ず戻す。 */
 function withStubs(stubs, fn) {
@@ -133,9 +133,9 @@ test('buildPriceFromPlans: プランが1件なら「〜」を付けない', () =
   assert.strictEqual(r.min_yen, 657800);
 });
 
-test('buildPriceFromPlans: プランが空なら定型文と null', () => {
+test('buildPriceFromPlans: プランが空なら「要問い合わせ」と null', () => {
   const r = priceDetail.buildPriceFromPlans([], 'top_page');
-  assert.deepStrictEqual(r, { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'top_page', kind: null });
+  assert.deepStrictEqual(r, { display: PRICE_NOT_DISCLOSED_TEXT, min_yen: null, scope: 'top_page', kind: null });
 });
 
 // ---- 割引価格の除外（回帰） ----
@@ -250,7 +250,7 @@ test('enrichPriceFromDetailPage: 詳細ページでも取れなければ null �
     {
       choosePriceDetailLink: async () => ({ url: 'https://example.com/price', text: '料金プラン' }),
       fetchDetailPage: async () => '料金は個別にご案内しています。',
-      extractPriceFromPage: async () => ({ plans: [], price: { display: NOT_DISCLOSED_TEXT, min_yen: null, scope: 'detail_page' } }),
+      extractPriceFromPage: async () => ({ plans: [], price: { display: PRICE_NOT_DISCLOSED_TEXT, min_yen: null, scope: 'detail_page' } }),
     },
     async () => {
       const r = await priceDetail.enrichPriceFromDetailPage('サンプル', HOMEPAGE_HTML, 'https://example.com/', {});
@@ -328,4 +328,23 @@ test('choosePriceDetailLink: リンク候補が空ならAIを呼ばない', asyn
   const anthropic = { messages: { create: async () => { called += 1; return { content: [] }; } } };
   assert.strictEqual(await priceDetail.choosePriceDetailLink([], 'サンプル', anthropic), null);
   assert.strictEqual(called, 0);
+});
+
+test('金額を確認できない場合の表示は「要問い合わせ」（説明文の定型文とは別扱い）', () => {
+  // 料金欄は一覧・詳細で金額と同じ場所に出るため、長い定型文ではなく短く出す。
+  const { PRICE_NOT_DISCLOSED_TEXT, NOT_DISCLOSED_TEXT } = require('../lib/schema');
+  assert.strictEqual(PRICE_NOT_DISCLOSED_TEXT, '要問い合わせ');
+  assert.notStrictEqual(PRICE_NOT_DISCLOSED_TEXT, NOT_DISCLOSED_TEXT, '説明文と同じ定型文になっている');
+  assert.strictEqual(priceDetail.buildPriceFromPlans([], 'top_page').display, '要問い合わせ');
+  // min_yen は null のままで、価格ソートの対象外であること。
+  assert.strictEqual(priceDetail.buildPriceFromPlans([], 'top_page').min_yen, null);
+});
+
+test('掲載中のレコードで、金額が無いものはすべて「要問い合わせ」表示', () => {
+  const schools = require('../../data/schools.json');
+  for (const school of schools) {
+    if (school.price.min_yen === null) {
+      assert.strictEqual(school.price.display, '要問い合わせ', `${school.id}: 料金表示が「要問い合わせ」でない`);
+    }
+  }
 });

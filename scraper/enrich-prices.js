@@ -31,7 +31,7 @@ const {
   DETAIL_TEXT_MAX_CHARS,
 } = require('./lib/price-detail');
 const { politeDelay } = require('./lib/http');
-const { NOT_DISCLOSED_TEXT } = require('./lib/schema');
+const { PRICE_NOT_DISCLOSED_TEXT } = require('./lib/schema');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
 
 const MAX_PER_RUN = Number(process.env.ENRICH_MAX_PER_RUN || 20);
@@ -194,7 +194,7 @@ async function main() {
     if (!Array.isArray(school.plans)) school.plans = [];
     if (school.price && school.price.scope && !('plans' in school.price)) continue;
     school.price = {
-      display: school.price ? school.price.display : NOT_DISCLOSED_TEXT,
+      display: school.price ? school.price.display : PRICE_NOT_DISCLOSED_TEXT,
       min_yen: school.price ? school.price.min_yen : null,
       // scope は price_detail_url の有無から導出する（1フィールド1責務にした結果、
       // 「どこまで見たか」は URL の有無そのもので表せる）。

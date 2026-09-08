@@ -86,7 +86,7 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 ```bash
 cd scraper
 
-npm test                                   # ユニットテスト（264件）
+npm test                                   # ユニットテスト（278件）
 npm run generate-mock                      # モックデータ40件を再生成
 npm run validate                           # data/schools.json をスキーマ検証
 node validate-schools.js ../data/mock/schools.mock.json
@@ -103,7 +103,7 @@ REVIEW_ONLY_SCHOOL_ID=<id> npm run summarize-reviews   # 1校だけ口コミ要�
 
 | 変数 | 既定 | 用途 |
 | --- | --- | --- |
-| `DISCOVER_GENRES` | `programming` | 対象ジャンル（カンマ区切り、`all` で全8ジャンル） |
+| `DISCOVER_GENRES` | `programming`（cronは `all`） | 対象ジャンル（カンマ区切り、`all` で全8ジャンル。`all` の並び順は日付で回転する） |
 | `DISCOVER_MAX_PER_RUN` | `10` | 1回の実行で照合を通す候補数の上限 |
 | `SCRAPER_MIN_DELAY_MS` | `3000` | 公式サイト巡回のポライトウェイト |
 | `REVIEW_MIN_DELAY_MS` | `2000` | 口コミサイト巡回の最低インターバル |
@@ -211,7 +211,7 @@ data/discovery-log/2026-09-07.json
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
-2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（264件）で通過済み
+2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（278件）で通過済み
 3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover

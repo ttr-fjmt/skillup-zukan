@@ -117,7 +117,7 @@
       "AIエンジニア"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -137,7 +137,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-09-07T23:38:51.413Z",
+    "updated_at": "2026-09-08T00:15:53.481Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -237,7 +237,7 @@
       "3DCGデザイナー"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -288,7 +288,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dhw",
     "created_at": "2026-09-07T16:02:45.061Z",
-    "updated_at": "2026-09-07T23:48:46.622Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -381,7 +381,7 @@
       "受託開発エンジニア"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -411,7 +411,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-runteq",
     "created_at": "2026-09-07T20:09:35.608Z",
-    "updated_at": "2026-09-07T23:48:57.876Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -500,7 +500,7 @@
       "Webエンジニア"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "top_page",
       "kind": null
@@ -526,7 +526,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-potepan",
     "created_at": "2026-09-07T20:09:59.175Z",
-    "updated_at": "2026-09-07T22:39:29.689Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -628,7 +628,7 @@
       "UI/UXデザイナー"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "top_page",
       "kind": null
@@ -655,7 +655,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-daily-trial",
     "created_at": "2026-09-07T23:34:53.003Z",
-    "updated_at": "2026-09-07T23:34:53.003Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -750,7 +750,7 @@
       "ブランディングディレクター"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -780,7 +780,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-09-07T23:49:31.602Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -808,7 +808,7 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -838,7 +838,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-09-07T23:49:39.050Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -862,7 +862,7 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "top_page",
       "kind": null
@@ -890,7 +890,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-schoo",
     "created_at": "2026-09-07T23:46:05.928Z",
-    "updated_at": "2026-09-07T23:46:05.928Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -914,7 +914,7 @@
       "Webマーケター"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -943,7 +943,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shareway",
     "created_at": "2026-09-07T23:52:22.673Z",
-    "updated_at": "2026-09-07T23:52:22.673Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -1033,7 +1033,7 @@
       "Webマーケター"
     ],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "top_page",
       "kind": null
@@ -1086,7 +1086,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-with-marke",
     "created_at": "2026-09-07T23:52:52.769Z",
-    "updated_at": "2026-09-07T23:52:52.769Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -1366,7 +1366,7 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -1396,7 +1396,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tac-school",
     "created_at": "2026-09-08T00:06:59.837Z",
-    "updated_at": "2026-09-08T00:06:59.837Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -1416,7 +1416,7 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -1464,7 +1464,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-o-hara",
     "created_at": "2026-09-08T00:07:14.568Z",
-    "updated_at": "2026-09-08T00:07:14.568Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -1484,7 +1484,7 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+      "display": "要問い合わせ",
       "min_yen": null,
       "scope": "detail_page",
       "kind": null
@@ -1514,7 +1514,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-studying",
     "created_at": "2026-09-08T00:07:31.366Z",
-    "updated_at": "2026-09-08T00:07:31.366Z",
+    "updated_at": "2026-09-08T00:15:53.487Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",

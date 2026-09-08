@@ -74,14 +74,14 @@ test('assembleDiscoveredSchool: 通学レコードも組み立て可能でスキ
   assert.deepStrictEqual(entry.area, ['東京都', '大阪府']);
 });
 
-test('targetGenres: 既定は programming の1ジャンルのみ（いきなり全ジャンルを回さない）', () => {
+test('targetGenres: 既定は programming の1ジャンルのみ（手元で1ジャンルだけ試すときの既定値）', () => {
   const original = process.env.DISCOVER_GENRES;
   try {
     delete process.env.DISCOVER_GENRES;
     assert.deepStrictEqual(targetGenres(), ['programming']);
 
     process.env.DISCOVER_GENRES = 'all';
-    assert.deepStrictEqual(targetGenres(), GENRE);
+    assert.deepStrictEqual([...targetGenres()].sort(), [...GENRE].sort());
 
     process.env.DISCOVER_GENRES = 'webdesign, uiux';
     assert.deepStrictEqual(targetGenres(), ['webdesign', 'uiux']);
@@ -91,6 +91,41 @@ test('targetGenres: 既定は programming の1ジャンルのみ（いきなり�
 
     process.env.DISCOVER_GENRES = '  ';
     assert.throws(() => targetGenres(), /空です/);
+  } finally {
+    if (original === undefined) delete process.env.DISCOVER_GENRES;
+    else process.env.DISCOVER_GENRES = original;
+  }
+});
+
+test('rotateGenres: 日付ごとに起点がずれ、どのジャンルにも順番が回る', () => {
+  const { rotateGenres } = require('../discover-schools');
+  const { GENRE } = require('../lib/schema');
+
+  // 上限件数で打ち切られても後ろのジャンルに順番が来るよう、日ごとに先頭を変える。
+  const day1 = rotateGenres(GENRE, new Date('2026-09-08T20:10:00Z'));
+  const day2 = rotateGenres(GENRE, new Date('2026-09-09T20:10:00Z'));
+  assert.notDeepStrictEqual(day1, day2, '日が変わっても並びが同じ');
+
+  // 並びが変わるだけで、8ジャンルすべてが必ず含まれること。
+  for (const rotated of [day1, day2]) {
+    assert.strictEqual(rotated.length, GENRE.length);
+    assert.deepStrictEqual([...rotated].sort(), [...GENRE].sort());
+  }
+
+  // 8日で一周し、どのジャンルも必ず先頭に来る。
+  const leaders = new Set();
+  for (let d = 0; d < 8; d += 1) {
+    leaders.add(rotateGenres(GENRE, new Date(Date.UTC(2026, 8, 8 + d, 20, 10)))[0]);
+  }
+  assert.strictEqual(leaders.size, 8, '8日回しても先頭に来ないジャンルがある');
+});
+
+test('targetGenres: "all" は全8ジャンルを返す（順序は回転する）', () => {
+  const original = process.env.DISCOVER_GENRES;
+  try {
+    process.env.DISCOVER_GENRES = 'all';
+    const { GENRE } = require('../lib/schema');
+    assert.deepStrictEqual([...targetGenres()].sort(), [...GENRE].sort());
   } finally {
     if (original === undefined) delete process.env.DISCOVER_GENRES;
     else process.env.DISCOVER_GENRES = original;

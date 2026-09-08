@@ -142,6 +142,16 @@ const PREFECTURES = [
 const NOT_DISCLOSED_TEXT = '詳細情報が確認できませんでした。公式サイトでご確認ください。';
 
 /**
+ * 料金を確認できなかったときの price.display。
+ *
+ * 説明文（description）と違い、料金欄は一覧・詳細ページで金額と同じ場所に出る。
+ * そこに長い定型文が入ると読みづらく、「料金が無い」のか「調べきれていない」のかも
+ * 伝わらないため、料金欄だけは短く「要問い合わせ」とする。
+ * min_yen は引き続き null のままで、価格ソート・フィルターの対象外になる。
+ */
+const PRICE_NOT_DISCLOSED_TEXT = '要問い合わせ';
+
+/**
  * GENRE_PURPOSE_ORDER の逆引き。指定した purpose を「上位に置いているジャンル」から
  * 順に GENRE を並べ替えて返す（診断ウィザードQ2の選択肢の並び順に使う）。
  * 同順位のジャンルは GENRE の定義順で安定ソートする（実行のたびに順序が変わらないように）。
@@ -194,6 +204,7 @@ module.exports = {
   GENRE_PURPOSE_ORDER,
   PREFECTURES,
   NOT_DISCLOSED_TEXT,
+  PRICE_NOT_DISCLOSED_TEXT,
   genreOrderForPurpose,
   purposeOrderForGenres,
 };
