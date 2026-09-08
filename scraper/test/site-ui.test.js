@@ -119,3 +119,20 @@ test('配信されなかった広告枠は畳まれる', () => {
   // 在庫が無いときに「広告」の見出しと空白だけが残らないようにする。
   assert.match(indexHtml, /data-ad-status="unfilled"/, 'unfilled を見るCSSが無い');
 });
+
+test('アクセス解析のタグが全ページの <head> にある', () => {
+  // 静的化したページにも入っていないと、講座ページの閲覧が記録されない。
+  const pages = ['index.html', 'faq.html', 'privacy.html', '404.html']
+    .map(f => [f, fs.readFileSync(path.join(ROOT, f), 'utf8')])
+    .concat(staticPages().map(f => [path.relative(ROOT, f), fs.readFileSync(f, 'utf8')]));
+  for (const [name, html] of pages) {
+    const head = html.slice(0, html.indexOf('</head>'));
+    assert.match(head, /googletagmanager\.com\/gtag\/js\?id=G-[A-Z0-9]+/, `${name} の <head> に解析タグが無い`);
+  }
+});
+
+test('静的化のときにアクセス解析を動かさない', () => {
+  // 動かすと、ページを作るたびに閲覧が記録されて数字が汚れる。
+  const prerender = fs.readFileSync(path.join(ROOT, 'scraper', 'prerender.js'), 'utf8');
+  assert.match(prerender, /googletagmanager/, '静的化中に解析を止める指定が無い');
+});

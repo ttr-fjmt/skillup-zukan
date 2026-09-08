@@ -65,8 +65,13 @@ function startStaticServer() {
   });
 }
 
-/** 静的化のあいだ読み込ませない広告関連のホスト。 */
-const AD_HOST_PATTERN = /googlesyndication\.com|doubleclick\.net|googleadservices\.com|google\.com\/recaptcha/;
+/**
+ * 静的化のあいだ読み込ませないホスト。
+ * 広告配信スクリプトは、実行させると AdSense 自身が ins や iframe を差し込み、
+ * それが保存されたHTMLに残ってしまう。アクセス解析（gtag）も、ページを作るたびに
+ * 閲覧が記録されてしまうため、ここでは動かさない。
+ */
+const AD_HOST_PATTERN = /googlesyndication\.com|doubleclick\.net|googleadservices\.com|googletagmanager\.com|google-analytics\.com|google\.com\/recaptcha/;
 
 /** 1ページ分を描画して保存する。戻り値は保存したかどうか。 */
 async function renderPage(browser, urlPath, outDir) {
