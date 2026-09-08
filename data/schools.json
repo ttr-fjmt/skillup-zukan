@@ -3149,10 +3149,10 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-fxschool",
     "created_at": "2026-09-08T06:16:04.458Z",
-    "updated_at": "2026-09-08T06:16:04.458Z",
-    "status": "active",
+    "updated_at": "2026-09-08T06:25:50.727Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み FX投資のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
     "verified_url": "https://www.fxschool.or.jp/LP/brs/"
   },
   {
@@ -3393,10 +3393,10 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-peraichi",
     "created_at": "2026-09-08T06:17:21.174Z",
-    "updated_at": "2026-09-08T06:17:21.174Z",
-    "status": "active",
+    "updated_at": "2026-09-08T06:25:50.727Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 美容（ハーブピーリング）の施術講座で、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
     "verified_url": "https://revi-herb-peeling.hp.peraichi.com/"
   },
   {
@@ -3558,10 +3558,10 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-money-with",
     "created_at": "2026-09-08T06:18:49.905Z",
-    "updated_at": "2026-09-08T06:18:49.905Z",
-    "status": "active",
+    "updated_at": "2026-09-08T06:25:50.727Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 不動産投資系のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
     "verified_url": "https://money-with.jp/lp-rent01/"
   },
   {

@@ -39,6 +39,7 @@ const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-de
 // 都道府県の照合ロジックは area フォールバックと共有する（同じ基準で判定するため）。
 const { verifyPrefectures, filterToCampusPrefectures } = require('./area-detail');
 const { portalMarkers, agencyScore } = require('./portal-filter');
+const { verifyGenres, describeDropped } = require('./genre-verify');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -909,9 +910,21 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
     (Array.isArray(values) ? values : []).filter(v => allowed.includes(v));
 
   result.skill_genre = keepEnum(result.skill_genre, GENRE);
-  if (result.skill_genre.length === 0 && GENRE.includes(genreHint)) {
-    // 本文からジャンルを読み取れなかった場合のみ、発見時のクエリジャンルで補う
-    // （承認フェーズが無いぶん、補完したことは必ずログに残して事後に追えるようにする）。
+
+  // 本文で裏付けられないジャンルを落とす。当サイトの8ジャンルに当てはまらない講座を
+  // 渡すと、AIは近そうなものへ無理に当てはめる（ハーブピーリング教室が
+  // 「UI/UXデザイン」になった実例がある）。他の項目と同じく本文照合で確かめる。
+  const genreCheck = verifyGenres(result.skill_genre, pageText);
+  if (genreCheck.dropped.length > 0) {
+    console.warn(
+      `  skill_genre「${describeDropped(genreCheck.dropped)}」はページ本文に裏付けが無いため除外しました。`
+    );
+  }
+  result.skill_genre = genreCheck.genres;
+
+  if (result.skill_genre.length === 0 && GENRE.includes(genreHint) && !genreCheck.judged) {
+    // 本文が短すぎて判定できなかった場合にかぎり、発見時のクエリジャンルで補う。
+    // 判定できたうえで0件になった場合は補完しない（当サイトの守備範囲外だったということ）。
     console.warn(`  skill_genre が空だったため、発見時のジャンル "${genreHint}" で補完しました。`);
     result.skill_genre = [genreHint];
   }
