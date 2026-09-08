@@ -79,7 +79,11 @@ test('実データで、提携していない講座が混ざっていない', ()
 test('おすすめ枠に「PR」の表示が付いている', () => {
   // 提携している講座を選んで見せる枠なので、広告であることを隠すと景品表示法に触れる。
   const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-  assert.match(html, /class="pr-label"/, 'index.html に PR 表示が無い');
+  assert.match(html, /pr-label[^>]*">PR</, 'index.html に PR 表示が無い');
+  // 薄くしすぎて読めないと表示した意味が無い。背景の不透明度は 0.4 以上を保つ。
+  const alpha = html.match(/\.pr-label\{[^}]*rgba\([^)]*?,\s*([0-9.]+)\)/);
+  assert.ok(alpha && Number(alpha[1]) >= 0.4,
+    `PR表示の背景が薄すぎる（${alpha ? alpha[1] : '不明'}）`);
   assert.match(html, /isRecommendable|cta_type === 'affiliate'/,
     'PR表示の出し分けが提携の有無に結びついていない');
 });
