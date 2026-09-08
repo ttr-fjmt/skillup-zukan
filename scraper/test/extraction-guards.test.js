@@ -472,3 +472,38 @@ test('recheckSchool: 英語表記のみの official_name は本文が無くて�
   recheckSchool(school, 'トップページ本文');
   assert.strictEqual(school.official_name, null);
 });
+
+test('verifyPlans: 円の印が無い金額は採用しない（ドル建てを円として載せない）', () => {
+  const { verifyPlans } = require('../lib/price-detail');
+  // Global Step Academy の実例。公式サイトの表示は 月額 ¥18,700 からだが、
+  // ドル建ての 178 が「月額178円」として掲載されてしまった。
+  assert.deepStrictEqual(
+    verifyPlans([{ label: 'BASIC', amount: 178, duration: null, kind: 'monthly' }], 'BASIC $178 / month'),
+    []
+  );
+  assert.deepStrictEqual(
+    verifyPlans([{ label: 'BASIC', amount: 18700, duration: null, kind: 'monthly' }], 'BASIC 2回/週 月額 ¥18,700 800コイン'),
+    [{ label: 'BASIC', amount: 18700, duration: null, kind: 'monthly' }]
+  );
+});
+
+test('verifyPlans: 桁の一部が一致しただけの金額は採用しない', () => {
+  const { verifyPlans } = require('../lib/price-detail');
+  // 「17,800円」の中に 178 が含まれるため、単純な文字列一致では通ってしまっていた。
+  assert.deepStrictEqual(
+    verifyPlans([{ label: '入門', amount: 178, duration: null, kind: 'total' }], '入門コースは17,800円です'),
+    []
+  );
+  assert.deepStrictEqual(
+    verifyPlans([{ label: '入門', amount: 17800, duration: null, kind: 'total' }], '入門コースは17,800円です'),
+    [{ label: '入門', amount: 17800, duration: null, kind: 'total' }]
+  );
+});
+
+test('recheck-guards が金額とジャンルも照合し直す', () => {
+  // 照合を厳しくしても、既存レコードに掛からなければ意味が無い
+  // （実際にジャンルと金額の両方で、発見時にしか掛かっていなかった）。
+  const src = require('fs').readFileSync(require('path').join(__dirname, '..', 'recheck-guards.js'), 'utf8');
+  assert.match(src, /verifyPlans\(school\.plans, pageText\)/, '金額を照合し直していない');
+  assert.match(src, /verifyGenres\(beforeGenres, pageText\)/, 'ジャンルを照合し直していない');
+});

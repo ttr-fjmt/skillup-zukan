@@ -159,17 +159,54 @@ async function choosePriceDetailLink(links, schoolName, anthropic) {
  * 本文に見つからない金額は、そのプランごと落とす。AIが分割払いから割り算して作った
  * 月額のような「計算で出しただけで本文には無い数字」はここで消える。
  */
+/**
+ * 金額が「円建ての金額として」本文に書かれているかを確かめる。
+ *
+ * 【なぜ単純な文字列一致では足りないか】
+ * これまでは本文に数字が含まれるかだけを見ていた。そのため
+ *
+ *   - 「17,800円」の中の一部として 178 が一致してしまう（桁の途中でも通る）
+ *   - ドル表記（$178）でも通り、円として掲載されてしまう
+ *
+ * という取り違えが起きた。実際に Global Step Academy が「月額178円」として
+ * 掲載された（公式サイトの実際の表示は 月額 ¥18,700 から）。
+ *
+ * そこで、数字が「前後を数字に挟まれていない独立した数」であることに加えて、
+ * すぐ隣に円の印（円 / ¥ / ￥）があることを求める。
+ * 単位が確認できない金額は載せない（DATA_QUALITY_POLICY の「確認できない情報は埋めない」）。
+ *
+ * @param {string} text   桁区切りだけを除き、空白は1つに詰めたページ本文
+ * @param {number} amount  確かめたい金額
+ */
+function amountAppearsAsYen(text, amount) {
+  const digits = String(amount);
+  const pattern = new RegExp('(?<![0-9])' + digits + '(?![0-9])', 'g');
+  let match;
+  while ((match = pattern.exec(text)) !== null) {
+    const before = text.slice(Math.max(0, match.index - 2), match.index);
+    const after = text.slice(match.index + digits.length, match.index + digits.length + 3);
+    if (/[¥￥] ?$/.test(before)) return true;
+    if (/^ ?(円|税込|税抜)/.test(after)) return true;
+  }
+  return false;
+}
+
 function verifyPlans(plans, pageText) {
   const strip = str => String(str).replace(/[,，\s　]/g, '');
   const compact = strip(pageText || '');
+  // 金額の照合だけは空白を残す。空白まで詰めると「¥18,700 800コイン」が
+  // 「¥18700800」になり、数字の切れ目が分からなくなるため。
+  const spaced = String(pageText || '')
+    .replace(/(?<=[0-9])[,，](?=[0-9])/g, '')
+    .replace(/\s+/g, ' ');
 
   return (Array.isArray(plans) ? plans : []).flatMap(plan => {
     if (!plan || typeof plan.label !== 'string' || !plan.label.trim()) return [];
 
     // 金額は「記載が無い」こともあるため null を許す。非nullなら本文に実在すること。
     let amount = Number.isInteger(plan.amount) && plan.amount >= 0 ? plan.amount : null;
-    if (amount !== null && !compact.includes(String(amount))) {
-      console.warn(`  プラン「${plan.label}」の ${amount}円 はページ本文に見当たらないため除外しました。`);
+    if (amount !== null && !amountAppearsAsYen(spaced, amount)) {
+      console.warn(`  プラン「${plan.label}」の ${amount}円 は円建ての金額としてページ本文に見当たらないため除外しました。`);
       amount = null;
     }
 
@@ -564,6 +601,7 @@ async function enrichPriceFromSecondLevel(schoolName, firstLevel, anthropic, hom
 }
 
 module.exports = {
+  amountAppearsAsYen,
   MAX_LINK_CANDIDATES,
   PRICE_LINK_HINTS,
   DETAIL_TEXT_MAX_CHARS,

@@ -744,8 +744,7 @@
     "target_level": "beginner",
     "career_paths": [
       "グラフィックデザイナー",
-      "空間デザイナー",
-      "UX/UIデザイナー"
+      "空間デザイナー"
     ],
     "price": {
       "display": "要問い合わせ",
@@ -778,7 +777,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-09-08T12:45:19.964Z",
+    "updated_at": "2026-09-08T13:10:31.156Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -965,19 +964,12 @@
       "Webマーケター"
     ],
     "price": {
-      "display": "385,000円",
-      "min_yen": 385000,
+      "display": "要問い合わせ",
+      "min_yen": null,
       "scope": "detail_page",
-      "kind": "total"
+      "kind": null
     },
-    "plans": [
-      {
-        "label": "講座",
-        "amount": 385000,
-        "duration": null,
-        "kind": "total"
-      }
-    ],
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -1002,7 +994,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-webmarks",
     "created_at": "2026-09-07T23:52:38.253Z",
-    "updated_at": "2026-09-07T23:52:38.253Z",
+    "updated_at": "2026-09-08T13:11:00.375Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -3391,7 +3383,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-peraichi",
     "created_at": "2026-09-08T06:17:21.174Z",
-    "updated_at": "2026-09-08T12:50:02.062Z",
+    "updated_at": "2026-09-08T13:15:11.999Z",
     "status": "skipped",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 美容（ハーブピーリング）の施術講座で、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
@@ -3557,7 +3549,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-money-with",
     "created_at": "2026-09-08T06:18:49.905Z",
-    "updated_at": "2026-09-08T12:50:14.114Z",
+    "updated_at": "2026-09-08T13:15:25.141Z",
     "status": "skipped",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 不動産投資系のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
@@ -3937,37 +3929,12 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "月額178円〜",
-      "min_yen": 178,
+      "display": "要問い合わせ",
+      "min_yen": null,
       "scope": "detail_page",
-      "kind": "monthly"
+      "kind": null
     },
-    "plans": [
-      {
-        "label": "BASIC",
-        "amount": 178,
-        "duration": null,
-        "kind": "monthly"
-      },
-      {
-        "label": "STANDARD",
-        "amount": 254,
-        "duration": null,
-        "kind": "monthly"
-      },
-      {
-        "label": "SILVER",
-        "amount": 319,
-        "duration": null,
-        "kind": "monthly"
-      },
-      {
-        "label": "GOLD",
-        "amount": 373,
-        "duration": null,
-        "kind": "monthly"
-      }
-    ],
+    "plans": [],
     "format": "online",
     "area": [],
     "area_source": "detail_page",
@@ -3993,7 +3960,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-gsacademy",
     "created_at": "2026-09-08T12:23:48.238Z",
-    "updated_at": "2026-09-08T12:23:48.238Z",
+    "updated_at": "2026-09-08T13:16:16.586Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4148,7 +4115,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-avalon-works",
     "created_at": "2026-09-08T12:25:48.765Z",
-    "updated_at": "2026-09-08T12:51:17.419Z",
+    "updated_at": "2026-09-08T13:16:29.196Z",
     "status": "skipped",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 音楽（ボーカル・作曲・楽器）のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",

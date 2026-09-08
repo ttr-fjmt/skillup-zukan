@@ -73,7 +73,7 @@
 | `verifyOfficialName()` | 運営会社名（本文照合＋英語表記のみを排除） |
 | `verifyCareerPaths()` | 職種名 |
 | `verifyPrefectures()` / `filterToCampusPrefectures()` | 都道府県（本文照合＋通学拠点の根拠） |
-| `verifyPlans()` | 金額・期間 |
+| `verifyPlans()` / `amountAppearsAsYen()` | 金額・期間（円の印があること・桁の一部一致を排除） |
 | `dropDiscountedDuplicates()` | 割引価格の混入 |
 | `buildPriceFromPlans()` | 種別をまたぐ金額比較の防止 |
 | `verifySubsidyClaim()` | 給付金対象 |

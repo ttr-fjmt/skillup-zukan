@@ -23,7 +23,7 @@ const cheerio = require('cheerio');
 
 const { verifyOfficialName, verifyCareerPaths } = require('./lib/school-discovery');
 const { verifyPrefectures, filterToCampusPrefectures } = require('./lib/area-detail');
-const { normalizePlans, buildPriceFromPlans, fetchWithVerifyUA, DETAIL_TEXT_MAX_CHARS } = require('./lib/price-detail');
+const { normalizePlans, verifyPlans, buildPriceFromPlans, fetchWithVerifyUA, DETAIL_TEXT_MAX_CHARS } = require('./lib/price-detail');
 const { verifyGenres } = require('./lib/genre-verify');
 const { politeDelay } = require('./lib/http');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
@@ -123,6 +123,14 @@ function recheckSchool(school, pageText) {
 
   if (school.plans.length > 0) {
     const beforePrice = JSON.stringify(school.price);
+    const beforePlans = school.plans.length;
+    // 金額もページ本文と突き合わせ直す。発見時にしか掛かっていなかったため、
+    // 照合を厳しくしても既存レコードには反映されなかった
+    // （ドル建ての金額が「月額178円」として残っていた）。
+    school.plans = verifyPlans(school.plans, pageText);
+    if (school.plans.length !== beforePlans) {
+      changes.push(`plans ${beforePlans}→${school.plans.length}件（本文で確認できない金額を除外）`);
+    }
     school.plans = normalizePlans(school.plans.map(p => ({ ...p, kind: p.kind || inferKind(p.amount, compact) })));
     school.price = buildPriceFromPlans(school.plans, school.price.scope);
     if (JSON.stringify(school.price) !== beforePrice) {
