@@ -21,6 +21,7 @@ scraper/lib/school-discovery.js 二段階検証パイプラインの中核
 scraper/lib/discovery-log.js  日次の実行記録の書き出し
 scraper/lib/review-summary.js 口コミ要約パイプラインの中核
 scraper/lib/match.js          診断ウィザードのスコアリング
+scraper/lib/branding.js       ロゴURL・ジャンルアイコン・色（画像まわりの方針）
 scraper/recheck-guards.js     全レコードへのガード再適用（AI呼び出しなし）
 index.html                    一覧・詳細・診断（1枚のSPA）
 assets/wizard.js              診断ロジックのブラウザ用バンドル（lib/から自動生成）
@@ -85,6 +86,33 @@ UIに出すスクールの名称は、**必ず `school_name`（サービス名�
 3. 要約文には必ず `sources[]`（出典名・URL・取得日時）が付く。`review_summary.sources` が空のレコードは JSON Schema が弾く
 
 フロントエンドは「評判のポイント（出典：{source_name}）」＋出典への直リンクとセットでのみ表示する。要約の単独表示は禁止。
+
+### 掲載スクールの画像の扱い
+
+**ロゴ（ファビコン）だけを表示し、それ以外の画像は使わない。**
+
+| 使うもの | 使わないもの |
+| --- | --- |
+| ロゴ（ファビコン）。Googleのアイコン配信サービス（`https://www.google.com/s2/favicons`）経由 | 各スクールが作った共有用の大きな画像（`og:image`）、講座紹介の写真・図版 |
+
+ロゴを使う理由は「どのスクールかを見分けるため」の識別用途で、既存2サイト
+（agent-zukan / freelance-anken-zukan）も同じ方式を取っている。画像を当サイトの
+サーバーに複製せず、サイズも小さい。
+
+`og:image` を使わない理由は3つある。
+
+1. 著作権が各スクールにあり、営利サイトへの無断掲載は許諾の範囲外になりうる
+2. 相手のサーバーから直接読み込む（ホットリンク）ため、相手の通信量を使うことになる
+3. 相手が画像を差し替える・参照を拒否すると、こちらの表示が勝手に壊れる
+
+当サイトは各スクールから掲載許諾を得ているわけではなく、公開情報をもとに勝手に
+掲載している立場なので、相手の負担になる取り方はしない。
+
+代わりに、ジャンルのアイコンとロゴの代替タイルは当サイトで描き起こしている
+（`lib/branding.js` の `GENRE_ICONS` / `monogram()`）。この方針は
+`test/branding.test.js` が機械的に検査していて、index.html に
+`google.com/s2/favicons` 以外の外部画像が混ざるとテストが落ちる。
+
 
 ## 実行
 
