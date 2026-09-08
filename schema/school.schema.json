@@ -382,14 +382,15 @@
     },
     "review_flags": {
       "type": "array",
-      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=フォールバックで詳細ページを1回巡回した（price_detail_url / area_detail_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。 area_unconfirmed=校舎ページまで見たが、都道府県も「オンライン専用」の明記も確認できなかった。",
+      "description": "自動抽出の確度が低い箇所・追加で巡回した箇所の目印（社内参考情報。UI表示には使用しない）。承認フェーズを持たないため、「掲載はするが人が見た方がよい」点をここに残す。format_unconfirmed=受講形式をページ本文で確定できなかった。detail_page_crawled=フォールバックで詳細ページを1回巡回した（price_detail_url / area_detail_url を参照）。 price_scope_limited=価格が詳細ページ1枚から取得されており、他コースにより安いプランが存在しうる。 area_unconfirmed=校舎ページまで見たが、都道府県も「オンライン専用」の明記も確認できなかった。 genre_unverified=付与されたジャンルが公式サイト本文で1つも裏付けられなかった（掲載可否は人が判断する）。",
       "items": {
         "type": "string",
         "enum": [
           "format_unconfirmed",
           "detail_page_crawled",
           "price_scope_limited",
-          "area_unconfirmed"
+          "area_unconfirmed",
+          "genre_unverified"
         ]
       },
       "uniqueItems": true

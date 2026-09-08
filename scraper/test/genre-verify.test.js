@@ -65,6 +65,11 @@ test('掲載中の実データで、付与済みジャンルが説明文から�
     // （判定できないものを落とすと、実在のスクールを消してしまう）。
     if (s.description === NOT_DISCLOSED_TEXT && (s.features || []).length === 0) continue;
     const text = pad([s.school_name, s.description, ...(s.features || []), ...(s.career_paths || [])].join(' '));
+    // 説明文がどのジャンルの語も含まない（例:「全国展開するパソコン教室」のような
+    // 汎用的な紹介文）レコードは、この代用テキストでは判定しようがない。
+    // 本番の照合はページ本文に対して行う（発見時と recheck-guards）。
+    const informative = GENRE.some(g => (GENRE_EVIDENCE[g] || []).some(w => text.includes(w)));
+    if (!informative) continue;
     const { dropped } = verifyGenres(s.skill_genre, text);
     // 説明文は本文の要約なので、すべてのジャンルが裏付けられるとは限らない。
     // 「1つも裏付けられない」レコードだけを問題とみなす。

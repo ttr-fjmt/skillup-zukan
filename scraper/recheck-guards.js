@@ -24,6 +24,7 @@ const cheerio = require('cheerio');
 const { verifyOfficialName, verifyCareerPaths } = require('./lib/school-discovery');
 const { verifyPrefectures, filterToCampusPrefectures } = require('./lib/area-detail');
 const { normalizePlans, buildPriceFromPlans, fetchWithVerifyUA, DETAIL_TEXT_MAX_CHARS } = require('./lib/price-detail');
+const { verifyGenres } = require('./lib/genre-verify');
 const { politeDelay } = require('./lib/http');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
 
@@ -85,6 +86,23 @@ function recheckSchool(school, pageText) {
   const beforeName = school.official_name;
   school.official_name = verifyOfficialName(school.official_name, null);
   if (beforeName !== school.official_name) changes.push(`official_name ${JSON.stringify(beforeName)} → null（英語表記のみ）`);
+
+  // ジャンルの照合。発見時にしか掛かっていなかったため、あとから裏付け語を
+  // 見直しても既存レコードに反映されなかった（音楽スクールが「生成AI・DX」のまま残った）。
+  //
+  // 全部落ちる場合だけは、値を消さずに印を付けて残す。ジャンルは1件以上が必須で、
+  // ここで空にするとレコードごと掲載できなくなる。掲載を止めるかどうかは人が決める。
+  const beforeGenres = [...(school.skill_genre || [])];
+  const genreCheck = verifyGenres(beforeGenres, pageText);
+  if (genreCheck.judged && genreCheck.dropped.length) {
+    if (genreCheck.genres.length > 0) {
+      school.skill_genre = genreCheck.genres;
+      changes.push(`skill_genre ${beforeGenres.length}→${school.skill_genre.length}件（除外: ${genreCheck.dropped.join('、')}）`);
+    } else {
+      school.review_flags = [...new Set([...(school.review_flags || []), 'genre_unverified'])];
+      changes.push(`skill_genre 本文で裏付けられません（${beforeGenres.join('、')}）— 掲載可否を要確認`);
+    }
+  }
 
   const beforePaths = [...school.career_paths];
   school.career_paths = verifyCareerPaths(school.career_paths, pageText);

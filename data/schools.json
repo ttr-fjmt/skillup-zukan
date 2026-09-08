@@ -744,10 +744,8 @@
     "target_level": "beginner",
     "career_paths": [
       "グラフィックデザイナー",
-      "Webデザイナー",
       "空間デザイナー",
-      "UX/UIデザイナー",
-      "ブランディングディレクター"
+      "UX/UIデザイナー"
     ],
     "price": {
       "display": "要問い合わせ",
@@ -780,7 +778,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-09-08T00:27:34.580Z",
+    "updated_at": "2026-09-08T12:45:19.964Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -798,7 +796,6 @@
       "video_editing",
       "web_marketing",
       "genai_dx",
-      "language",
       "certification"
     ],
     "purpose": [
@@ -838,7 +835,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-09-08T00:28:03.412Z",
+    "updated_at": "2026-09-08T12:45:27.495Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -3386,14 +3383,15 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "genre_unverified"
     ],
     "official_url": "https://revi-herb-peeling.hp.peraichi.com/",
     "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.9035.13709&dna=158916",
     "cta_type": "affiliate",
     "click_tracking_id": "click-peraichi",
     "created_at": "2026-09-08T06:17:21.174Z",
-    "updated_at": "2026-09-08T06:25:50.727Z",
+    "updated_at": "2026-09-08T12:50:02.062Z",
     "status": "skipped",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 美容（ハーブピーリング）の施術講座で、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
@@ -3551,14 +3549,15 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "genre_unverified"
     ],
     "official_url": "https://money-with.jp/lp-rent01/",
     "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.10163.14513&dna=166370",
     "cta_type": "affiliate",
     "click_tracking_id": "click-money-with",
     "created_at": "2026-09-08T06:18:49.905Z",
-    "updated_at": "2026-09-08T06:25:50.727Z",
+    "updated_at": "2026-09-08T12:50:14.114Z",
     "status": "skipped",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 不動産投資系のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
@@ -3770,10 +3769,10 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-lancul",
     "created_at": "2026-09-08T12:19:02.191Z",
-    "updated_at": "2026-09-08T12:19:02.191Z",
-    "status": "active",
+    "updated_at": "2026-09-08T12:40:17.548Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 公式サイト本文を取得できず、掲載内容を照合できなかった。付与されたジャンルも本文で裏付けられない（2026-09-08）。",
     "verified_url": "https://trial.lancul.com/stars"
   },
   {
@@ -4141,16 +4140,18 @@
     ],
     "review_summary": null,
     "review_source_urls": [],
-    "review_flags": [],
+    "review_flags": [
+      "genre_unverified"
+    ],
     "official_url": "https://www.avalon-works.com/",
     "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FBWW3M+4FRO+5YRHE",
     "cta_type": "affiliate",
     "click_tracking_id": "click-avalon-works",
     "created_at": "2026-09-08T12:25:48.765Z",
-    "updated_at": "2026-09-08T12:25:48.765Z",
-    "status": "active",
+    "updated_at": "2026-09-08T12:51:17.419Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 音楽（ボーカル・作曲・楽器）のスクールで、当サイトの8ジャンルに当てはまらない（2026-09-08）。",
     "verified_url": "https://www.avalon-works.com/"
   },
   {
@@ -4377,10 +4378,10 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-webcoach",
     "created_at": "2026-09-08T12:28:49.908Z",
-    "updated_at": "2026-09-08T12:28:49.908Z",
-    "status": "active",
+    "updated_at": "2026-09-08T12:40:17.564Z",
+    "status": "skipped",
     "source": "a8",
-    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み 公式サイト本文を取得できず、掲載内容を照合できなかった。付与されたジャンルも本文で裏付けられない（2026-09-08）。",
     "verified_url": "https://www.webcoach.jp/a8/"
   },
   {
@@ -4442,7 +4443,7 @@
     "official_name": null,
     "description": "英検対策専門のオンライン塾。英語の基礎学習を一つずつ少しずつ進められ、英語が苦手な人や初めて英検を受ける人も無理なく学習できる。目標級の合格に特化した実践型カリキュラムで、問題形式・出題傾向に合わせたスキルが身につく。プロ講師の担任制でマンツーマン授業を提供。",
     "skill_genre": [
-      "certification"
+      "language"
     ],
     "purpose": [
       "certification_itself"
@@ -4478,7 +4479,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-eiken-passport",
     "created_at": "2026-09-08T12:30:15.109Z",
-    "updated_at": "2026-09-08T12:30:15.109Z",
+    "updated_at": "2026-09-08T12:43:18.696Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
