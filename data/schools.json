@@ -2968,5 +2968,663 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://www.simulacademy.com/"
+  },
+  {
+    "id": "startai",
+    "school_name": "自分専属AI育成ウェブセミナー",
+    "official_name": null,
+    "description": "ChatGPTなどの生成AIを「たまごっち化」し、自分専属の相棒として育てる方法を学ぶウェブセミナー。AIの脳となる情報の保管場所を作ることで、毎回の説明を省き、会話を重ねるほど自分好みに成長するAIの育て方、AIエージェントの基礎知識、安全設定、最新AI活用法などを習得できます。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "12冊の電子書籍教材を無料プレゼント（プロンプト大百科、AI安全設定マニュアル、AIエージェント入門など）",
+      "AIの脳作りから安全設定まで幅広いテーマをカバー",
+      "初心者向けに基本から実践的な活用法まで習得できる内容",
+      "資料作成、動画生成、ウェブサイト作成などAIツール実践例を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://startai.jp/html/salp/common/service",
+    "official_url": "https://startai.jp/html/salp/seminar/intro/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.11278.16104&dna=181443",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-startai",
+    "created_at": "2026-09-08T06:15:29.258Z",
+    "updated_at": "2026-09-08T06:15:29.258Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://startai.jp/html/salp/seminar/intro/"
+  },
+  {
+    "id": "pam-inc",
+    "school_name": "Enjoy Tech!",
+    "official_name": null,
+    "description": "マンツーマン専属講師による徹底的な学習管理で、プログラミング初心者の挫折を防ぐスクール。日割りの学習計画作成、週次のオンラインレッスン、24時間チャット質問対応で「学習迷子」「キャリア迷子」を解決。卒業後は案件紹介・営業手法レクチャーで実務経験獲得をサポート。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア",
+      "Webデザイナー"
+    ],
+    "price": {
+      "display": "385,000円〜",
+      "min_yen": 385000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "3ヶ月コース",
+        "amount": 385000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月コース",
+        "amount": 594000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "サブスク型",
+        "amount": 242000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "サブスク型月額",
+        "amount": 16500,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "入学から卒業まで同じ専属講師が担当するマンツーマン体制",
+      "日割りでの学習計画作成と学習進捗管理",
+      "週1回のオンラインレッスン（曜日・時間固定、振替受講可能）",
+      "24時間チャットによる質問対応",
+      "営業手法レクチャーによる案件取得サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://pam-inc.co.jp/enjoy-tech/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.9193.13070&dna=152743",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-pam-inc",
+    "created_at": "2026-09-08T06:15:47.894Z",
+    "updated_at": "2026-09-08T06:15:47.894Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://pam-inc.co.jp/enjoy-tech/"
+  },
+  {
+    "id": "fxschool",
+    "school_name": "タケルFXスクール",
+    "official_name": "一般社団法人 日本FX教育機構",
+    "description": "金融庁投資助言代理業登録（金商2816号）のスクール。1日10分の簡単なFX取引ルール「タケルベーシックルール®」を教授するベーシック通信コースを提供。難しい計算やテクニック不要で、講師が提示するエントリー情報に基づいて実践的に学ぶ。3ヶ月間の通信講義（約1～2週間に1回のzoom講義、実習3回以上）と、タケル掲示板による1日5回のエントリーチャンス情報配信がセットになっている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "side_job",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "ベーシック通信コース",
+        "amount": null,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1日10分の短時間トレード実践が可能",
+      "マンツーマン指導で個別のトレード内容を評価・指導",
+      "専用掲示板で講師による1日5回のエントリー情報配信",
+      "金融庁投資助言代理業登録により具体的な売買指導が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.fxschool.or.jp/LP/brs/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.5510.8517&dna=109363",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-fxschool",
+    "created_at": "2026-09-08T06:16:04.458Z",
+    "updated_at": "2026-09-08T06:16:04.458Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.fxschool.or.jp/LP/brs/"
+  },
+  {
+    "id": "seo-house",
+    "school_name": "SEO HOUSE",
+    "official_name": "株式会社４DE",
+    "description": "未経験からSEOディレクターを目指す、コンテンツSEOに特化したマーケティングスクール。3ヶ月で、キーワード選定から記事構成、制作、効果検証、運用まで一貫したSEOノウハウを実践形式で習得できます。動画コンテンツ見放題と週1回の講師面談によるハイブリッド学習で、上流工程への支援領域拡大と報酬単価アップを実現します。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "SEOディレクター",
+      "コンテンツディレクター"
+    ],
+    "price": {
+      "display": "330,000円",
+      "min_yen": 330000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "フリーランスプラン",
+        "amount": 330000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "法人向けベーシックプラン",
+        "amount": null,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "動画コンテンツ見放題＋週1回の講師面談によるハイブリッド型学習",
+      "全10章のSEO専門カリキュラム（基礎から運用まで網羅的）",
+      "設計・見出し・記事添削などの実践的課題サポート",
+      "チャットツールでの質問応答サポート",
+      "ランサーズ修了認定バッジの付与による案件獲得支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://seo-house.jp/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.11344.16183&dna=182064",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-seo-house",
+    "created_at": "2026-09-08T06:16:27.056Z",
+    "updated_at": "2026-09-08T06:16:27.056Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://seo-house.jp/"
+  },
+  {
+    "id": "dt30",
+    "school_name": "無料PHPスクール",
+    "official_name": null,
+    "description": "23日間の短期集中型プログラミングスクール。未経験からPHP・ECサイト構築スキルを習得し、最低2社以上の内定獲得を目指す。入学金・授業料・教材費は無料（デポジット5万円の預託制）。8名限定の少人数制で、オブジェクト指向・MVC式のフルスクラッチ開発を学ぶ。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webプログラマー",
+      "フルスタックエンジニア"
+    ],
+    "price": {
+      "display": "0円",
+      "min_yen": 0,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "無料PHPスクール（デポジット制）",
+        "amount": 0,
+        "duration": "23日間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "毎期8名限定の少人数制で濃厚な学習環境",
+      "オブジェクト指向とMVC式をフレームワークを使わずフルスクラッチで習得",
+      "お問合せフォーム・掲示板・会員登録サイト・ECサイト等の成果物開発",
+      "24時間以内の質問対応と6ヶ月以内なら再受講可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "area_detail_url": "https://dt30.net/phpschool/school",
+    "official_url": "https://www.dt30.net/phpschool/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.4067.6096&dna=84778",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-dt30",
+    "created_at": "2026-09-08T06:16:50.828Z",
+    "updated_at": "2026-09-08T06:16:50.828Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.dt30.net/phpschool/"
+  },
+  {
+    "id": "progym",
+    "school_name": "プロジム",
+    "official_name": "株式会社フィットクルー",
+    "description": "パーソナルトレーナー養成スクール。完全対面授業により、解剖学・生理学・バイオメカニクス・栄養学といった科学的知識と、実践的なトレーニング指導技術を習得できます。現役スペシャリスト講師24名から指導を受け、NSCA資格取得および転職・独立開業サポートが充実している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "パーソナルトレーナー"
+    ],
+    "price": {
+      "display": "627,000円",
+      "min_yen": 627000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "基礎養成ハイブリッドコース",
+        "amount": 627000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "愛知県",
+      "大阪府",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役スペシャリスト講師24名による指導",
+      "完全対面授業で実践力を習得",
+      "マンツーマンのキャリアカウンセラーによる転職サポート",
+      "全国40店舗超の直営ジムとの連携で即戦力育成"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.progym.jp/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.2375.6336&dna=86742",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-progym",
+    "created_at": "2026-09-08T06:17:03.626Z",
+    "updated_at": "2026-09-08T06:17:03.626Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.progym.jp/"
+  },
+  {
+    "id": "peraichi",
+    "school_name": "ハーブピーリング教室",
+    "official_name": null,
+    "description": "剥けないハーブピーリング「REVI陶肌トリートメント」を自宅で学べるスターターキット講座。忙しい方向けに、2〜3日間の短期研修でプロ仕様のハーブピーリング技術を習得できます。自宅やホームサロンでエステサロンと同等の施術が可能になり、家族や友人への施術もできます。研修後は追加料金なしの勉強会に参加でき、スキンケア知識が深まります。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "side_job",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "33,000円",
+      "min_yen": 33000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "スターターキット講座",
+        "amount": 33000,
+        "duration": "2〜3日間（1日6時間）",
+        "kind": "total"
+      },
+      {
+        "label": "スターターキット商材",
+        "amount": 198000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "プロ仕様の商材を使用したエステサロン級の施術技術習得",
+      "2〜3日間の短期集中研修で習得可能",
+      "研修後はディプロマ（修了証）を発行",
+      "追加料金なしの勉強会・復習会・交流会に参加可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://revi-herb-peeling.hp.peraichi.com/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.9035.13709&dna=158916",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-peraichi",
+    "created_at": "2026-09-08T06:17:21.174Z",
+    "updated_at": "2026-09-08T06:17:21.174Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://revi-herb-peeling.hp.peraichi.com/"
+  },
+  {
+    "id": "last-style",
+    "school_name": "ラスタイルアカデミー",
+    "official_name": null,
+    "description": "パーソナルトレーナー育成に特化した完全マンツーマン指導のアカデミー。NESTA認定アカデミーとして、運動生理学や機能解剖学などの理論から実践的なセッション指導まで、幅広いカリキュラムを提供。ピラティスや栄養学も習得でき、資格取得から就職・独立開業まで包括的にサポート。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "パーソナルトレーナー"
+    ],
+    "price": {
+      "display": "495,000円〜",
+      "min_yen": 495000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "マンツーマンコース（ライト）",
+        "amount": 495000,
+        "duration": "2ヶ月〜4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンコース",
+        "amount": 715000,
+        "duration": "2ヶ月〜6ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "完全マンツーマン指導による個別対応",
+      "NESTA-PFT資格受験費用をアカデミーが負担",
+      "実際のお客様を指導する現場体験型実習を提供",
+      "就職・転職のためのキャリアサポート（履歴書添削・模擬面接等）",
+      "卒業後の独立開業支援とフランチャイズ制度"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.last-style.com/academy/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.3584.8925&dna=113234",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-last-style",
+    "created_at": "2026-09-08T06:17:40.013Z",
+    "updated_at": "2026-09-08T06:17:40.013Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.last-style.com/academy/"
+  },
+  {
+    "id": "kadode-group",
+    "school_name": "KADODE Academy",
+    "official_name": "株式会社KADODE",
+    "description": "WEBエンジニアコースとDXスペシャリストコースを提供するオンライン講座。完全オンラインで完結し、メンター制度、オリジナル動画、現役講師による擬似プロジェクト・リアルタイム質問会などを備えている。IT業界未経験者も対象で、平均6ヶ月程度での卒業を想定。転職希望者は卒業後1～3ヶ月での就業事例が多い。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "WEBエンジニア"
+    ],
+    "price": {
+      "display": "月額30,000円",
+      "min_yen": 30000,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月額受講",
+        "amount": 30000,
+        "duration": "平均6ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "メンター制度による学習支援",
+      "オリジナル動画コンテンツ",
+      "現役講師による擬似プロジェクト実施",
+      "リアルタイム質問会で講師に相談可能",
+      "バーチャルオフィスでリアルタイムコミュニケーション"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://academy.kadode-group.co.jp/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.10289.14695&dna=167998",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-kadode-group",
+    "created_at": "2026-09-08T06:18:10.993Z",
+    "updated_at": "2026-09-08T06:18:10.993Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://academy.kadode-group.co.jp/"
+  },
+  {
+    "id": "money-with",
+    "school_name": "MoneyWith",
+    "official_name": null,
+    "description": "「学んで終わり」ではなく、「収入につなげるまでを支援する」ことを特徴とするスクール。カリキュラムと受講後のサポートを提供し、学習から収入獲得までの一貫した支援を行う。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オンライン個別説明会は60分間無料で開催",
+      "学習から収入獲得までの一貫したサポート体制"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://money-with.jp/lp-rent01/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.10163.14513&dna=166370",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-money-with",
+    "created_at": "2026-09-08T06:18:49.905Z",
+    "updated_at": "2026-09-08T06:18:49.905Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://money-with.jp/lp-rent01/"
+  },
+  {
+    "id": "outcome-online",
+    "school_name": "オンライン英語塾OUTCOME",
+    "official_name": null,
+    "description": "高校生の英検・大学受験を対象としたオンライン英語専門塾。感覚に頼らず「ルール」に基づいた独自のロジカル読解メソッドで、英文法や長文リーディングを個別指導。週2回の授業で高2までに英語を得意にし、大学合格に向けた戦略的学習をサポート。英検準2級～準1級対策にも対応。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額39,600円",
+      "min_yen": 39600,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "入塾金",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "授業料（月額）",
+        "amount": 39600,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ロジカルな読解メソッド（感覚ではなくルールに基づいた英文読解）",
+      "個別カリキュラム設計（生徒の目標と実力に合わせた最適な学習プラン）",
+      "無料体験授業3回で指導法を試す機会提供",
+      "定期的なテストと面談で課題・成長を明確化"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://outcome-online.com/",
+    "cta_url": "https://www.rentracks.jp/adx/r.html?idx=0.75317.387295.8593.12169&dna=143609",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-outcome-online",
+    "created_at": "2026-09-08T06:19:09.598Z",
+    "updated_at": "2026-09-08T06:19:09.598Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://outcome-online.com/"
   }
 ]
