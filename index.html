@@ -256,8 +256,11 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
    そのままだと「広告」の見出しと空白だけが残るので、枠ごと消す。 */
 .ad-slot:has(ins[data-ad-status="unfilled"]){display:none;margin:0}
 ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important}
+/* 「広告」の見出しは、実際に広告が入ったときだけ出す。
+   中身が無いまま見出しだけ浮いていると、壊れているように見えるため。 */
 .ad-slot .ad-label{position:absolute;top:-15px;left:2px;font-size:10px;color:var(--ink-faint);
-  letter-spacing:.04em}
+  letter-spacing:.04em;display:none}
+.ad-slot:has(ins[data-ad-status="filled"]) .ad-label{display:block}
 .ad-slot ins{display:block;width:100%}
 .ad-slot.in-feed{margin:2px 0}
 
