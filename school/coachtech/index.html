@@ -250,6 +250,10 @@ footer nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
    広告ユニットIDが未設定のあいだは中身を入れないので、枠線も余白も出ない。 */
 .ad-slot{position:relative;margin:26px 0}
 .ad-slot:empty{display:none;margin:0}
+/* 広告が配信されなかったとき、AdSense は ins に data-ad-status="unfilled" を付ける。
+   そのままだと「広告」の見出しと空白だけが残るので、枠ごと消す。 */
+.ad-slot:has(ins[data-ad-status="unfilled"]){display:none;margin:0}
+ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important}
 .ad-slot .ad-label{position:absolute;top:-15px;left:2px;font-size:10px;color:var(--ink-faint);
   letter-spacing:.04em}
 .ad-slot ins{display:block;width:100%}
@@ -429,21 +433,27 @@ function buildFilterOptions() {
    方針と理由（大きな共有画像を使わない理由）は scraper/lib/branding.js の冒頭に書いてある。
    読み込めなかったときは onerror で頭文字タイルに差し替え、穴が空かないようにする。 */
 /* ── 広告枠 ──────────────────────────────────────────
-   AdSense の「広告ユニットID（スロットID）」を下の slots に書き入れると表示される。
-   空のままなら枠ごと出さないので、空白や枠線だけが残ることはない。
+   client も広告ユニットID（スロットID）も、既存2サイト
+   （agent-zukan / freelance-anken-zukan）と同じものを流用している。
+   AdSense の広告ユニットはアカウントに属していて、複数のサイトで使い回せる。
 
-   使い始めるまでの手順:
-     1. AdSense の管理画面で skillup-zukan.net をサイトとして追加し、審査を通す
-     2. 広告ユニットを作り、発行されたスロットID（数字の並び）を控える
-     3. 下の slots に書き写す（使わない場所は空のままでよい）
-   client は既存2サイト（agent-zukan / freelance-anken-zukan）と同じアカウント。 */
+   【流用したことによる制約】
+   ユニット単位のレポートが3サイト分まとまってしまう。
+   どの場所がこのサイトでいくら稼いだかを分けて見たくなったら、AdSense で
+   このサイト専用の広告ユニットを作り、下の slots を差し替えること。
+   （サイト単位の売上は、AdSense のサイト別レポートで分けて見られる）
+
+   【表示されないときは】
+   AdSense の管理画面で skillup-zukan.net が「サイト」として追加され、
+   審査を通っているかを確認する。未登録のうちは、IDが正しくても広告は出ない。
+   空欄が残らないよう、配信されなかった枠は自動で消える（下の CSS を参照）。 */
 var ADSENSE = {
   client: 'ca-pub-5761092657360295',
   slots: {
-    top: '',      // 一覧の最上部
-    inFeed: '',   // 一覧の途中（6件ごと）
-    bottom: '',   // 一覧の最下部
-    detail: ''    // 講座の詳細ページ
+    top: '1771024424',     // 一覧の最上部（既存2サイトの banner と同じ）
+    inFeed: '5518697744',  // 一覧の途中（6件ごと）
+    bottom: '1620805016',  // 一覧の最下部（既存2サイトの footer-ad と同じ）
+    detail: '7953289398'   // 講座の詳細ページ
   }
 };
 

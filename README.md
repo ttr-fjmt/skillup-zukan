@@ -234,30 +234,40 @@ data/discovery-log/2026-09-07.json
 
 ## 広告枠（Google AdSense）
 
-広告を出す「場所」だけ先に用意してある。**広告ユニットID（スロットID）が空のあいだは、
-枠ごと表示されない**（`.ad-slot:empty{display:none}`）ので、余白や枠線が残ることはない。
-AdSense のスクリプトも、IDが1つ以上設定されるまで読み込まない。
+枠は4か所。設定は `index.html` の `var ADSENSE = { ... }` にまとまっている。
+`client` もスロットIDも**既存2サイトと同じものを流用**している
+（AdSense の広告ユニットはアカウントに属していて、複数サイトで使い回せる）。
 
-枠の位置は4か所。
+| 場所 | 設定キー | 現在のID |
+| --- | --- | --- |
+| 一覧の最上部 | `ADSENSE.slots.top` | `1771024424` |
+| 一覧の途中（6件ごと） | `ADSENSE.slots.inFeed` | `5518697744` |
+| 一覧の最下部 | `ADSENSE.slots.bottom` | `1620805016` |
+| 講座の詳細ページ | `ADSENSE.slots.detail` | `7953289398` |
 
-| 場所 | 設定キー |
-| --- | --- |
-| 一覧の最上部 | `ADSENSE.slots.top` |
-| 一覧の途中（6件ごと） | `ADSENSE.slots.inFeed` |
-| 一覧の最下部 | `ADSENSE.slots.bottom` |
-| 講座の詳細ページ | `ADSENSE.slots.detail` |
+### 流用したことによる制約
 
-### 出せるようにする手順
+ユニット単位のレポートが3サイト分まとまってしまう。どの場所がこのサイトでいくら
+稼いだかを分けて見たくなったら、AdSense でこのサイト専用の広告ユニットを作って
+`slots` を差し替える。サイト単位の売上は AdSense のサイト別レポートで分けて見られる。
 
-1. AdSense の管理画面で `skillup-zukan.net` をサイトとして追加し、審査を通す
-   （`client` は既存2サイトと同じ `ca-pub-5761092657360295`）
-2. 広告ユニットを作り、発行されたスロットID（数字の並び）を控える
-3. `index.html` 冒頭の `var ADSENSE = { ... }` の `slots` に書き写す。使わない場所は空のままでよい
-4. `cd scraper && node prerender.js` で静的ページを作り直し、コミットする
+### 広告が出ないとき
 
-静的化したHTMLには広告タグを入れない（`window.__PRERENDER__` で抑止している）。
-入れてしまうと、古い広告タグがHTMLに残り続けるため。この2点は
-`test/site-ui.test.js` が検査している。
+AdSense の管理画面で `skillup-zukan.net` が「サイト」として追加され、審査を通って
+いるかを確認する。**未登録のうちは、IDが正しくても配信されない。**
+
+配信されなかった枠は自動で消える（AdSense が `ins` に付ける
+`data-ad-status="unfilled"` を見て、`.ad-slot` ごと非表示にしている）ので、
+「広告」の見出しと空白だけが残ることはない。
+
+### 触るときの注意
+
+- `slots` を変えたら `cd scraper && node prerender.js` で静的ページを作り直す
+- 静的化したHTMLには広告タグを入れない（`window.__PRERENDER__` で抑止）。
+  入れてしまうと古い広告タグがHTMLに残り続ける
+- AdSense のスクリプトは `<head>` に直接書かず、IDが設定されているときだけJSから読み込む
+
+これらは `test/site-ui.test.js` が検査している。
 
 ## おすすめ講座（トップの横スクロール）
 
