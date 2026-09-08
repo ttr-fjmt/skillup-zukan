@@ -13,7 +13,8 @@
     "generate-mock": "node generate-mock-schools.js",
     "enrich-prices": "node enrich-prices.js",
     "enrich-areas": "node enrich-areas.js",
-    "recheck-guards": "node recheck-guards.js"
+    "recheck-guards": "node recheck-guards.js",
+    "build-wizard": "node build-wizard-bundle.js"
   },
   "engines": {
     "node": ">=22.12.0"
