@@ -4821,5 +4821,1278 @@
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
     "verified_url": "https://www.hatchlinkjr.com/"
+  },
+  {
+    "id": "waca",
+    "school_name": "ウェブ解析士協会",
+    "official_name": "一般社団法人ウェブ解析士協会",
+    "description": "デジタルマーケティングの専門家を養成する協会。ウェブ解析を軸としたアクセス解析の知識から実務的なスキルまで、体系的に学べる認定資格を提供。SNS・広告・顧客行動など専門領域を深く学ぶ講座も揃っている。全国1万人の会員が学び交流できるコミュニティと、資格取得後の仕事紹介・マッチングサービスも特徴。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ウェブ解析士",
+      "SNSマネージャー",
+      "ウェブ広告マネージャー",
+      "顧客行動デザイナー",
+      "マーケティングテクノロジスト"
+    ],
+    "price": {
+      "display": "4,400円〜",
+      "min_yen": 4400,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "公式テキスト",
+        "amount": 4400,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ウェブ解析士認定講座",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験費用（認定費用込）",
+        "amount": 17600,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "ウェブ解析を軸にしたデータ分析スキルの習得",
+      "SNS・Web広告・顧客行動分析など専門領域別講座",
+      "認定講師154人による体系的な教育",
+      "会員交流・ビジネスマッチング機会の提供",
+      "WACAコンサルティング・求人紹介による仕事サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.waca.or.jp/course/wac/",
+    "area_detail_url": "https://www.waca.or.jp/qanda/43316/",
+    "official_url": "https://www.waca.or.jp/",
+    "cta_url": "https://www.waca.or.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-waca",
+    "created_at": "2026-09-08T20:14:47.612Z",
+    "updated_at": "2026-09-08T20:14:47.612Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.waca.or.jp/"
+  },
+  {
+    "id": "nikkei",
+    "school_name": "NBS公開講座",
+    "official_name": "日本経済新聞社",
+    "description": "日本経済新聞社が提供する実務的なビジネススキル講座です。マネジメント・リーダーシップ、経営戦略、マーケティング、営業、DX、数字力、法務など、多様なテーマの講座を提供しており、管理職層から次世代リーダー候補まで、幅広い層を対象としています。オンデマンド講座の提供もあり、自分のペースで学習できます。",
+    "skill_genre": [
+      "web_marketing",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "8,800円〜",
+      "min_yen": 8800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "図解思考講座",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "管理会計入門講座",
+        "amount": 35200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マーケティング実践講座",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "利益モデル構築講座",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AIと経営判断力講座",
+        "amount": 66000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "営業・マーケティング戦略講座",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "DXリテラシー講座",
+        "amount": 16500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Excel VBA・マクロ基礎講座",
+        "amount": 8800,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マネジメント・リーダーシップから営業・マーケティング、数字力、法務まで多様なテーマの講座を提供",
+      "管理職層から次世代リーダー候補まで、幅広い階層を対象とした実務的な学習内容",
+      "オンデマンド講座により、自分のペースで学習が可能",
+      "日本経済新聞社の記者経験者などの実務経験者が講師を務める講座もある"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://school.nikkei.co.jp/",
+    "cta_url": "https://school.nikkei.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nikkei",
+    "created_at": "2026-09-08T20:15:25.924Z",
+    "updated_at": "2026-09-08T20:15:25.924Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://school.nikkei.co.jp/"
+  },
+  {
+    "id": "u-can",
+    "school_name": "ユーキャン",
+    "official_name": "ユーキャン",
+    "description": "ユーキャンは、長年のノウハウを集約したサポートで、受講生が「？」を残さず学び続けられる環境を提供しています。豊富な講座数から選べ、理解が進む教材セットと添削・質問サービスにより、身についた知識を自信に変えられる通信講座です。",
+    "skill_genre": [
+      "certification",
+      "webdesign"
+    ],
+    "purpose": [
+      "certification_itself",
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "添削・質問サービスで学習をサポート",
+      "理解が進む教材セット",
+      "豊富な講座数から選択可能",
+      "教育訓練給付金対象講座あり"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.u-can.co.jp/topics/lp/LP_00392/",
+    "official_url": "https://www.u-can.co.jp/",
+    "cta_url": "https://www.u-can.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-u-can",
+    "created_at": "2026-09-08T20:15:51.209Z",
+    "updated_at": "2026-09-08T20:15:51.209Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.u-can.co.jp/"
+  },
+  {
+    "id": "c-c-j",
+    "school_name": "資格のキャリカレ",
+    "official_name": null,
+    "description": "150講座以上を提供する通信教育の資格講座サービス。心理学、医療事務、保育士、行政書士など多岐にわたる講座を扱っており、初心者向けのわかりやすい教材と添削サポート、質問対応などの充実したサポート体制が特徴。効率的なカリキュラムでスキマ時間に学習でき、修了後のホームページ制作支援など開業支援も用意されている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "やさしい表現と適度な文章量の教材でわかりやすく解説",
+      "イラスト・図解が豊富に掲載されている",
+      "添削サポートと講師への質問対応で学習をサポート",
+      "スキマ時間で効率よく学べるカリキュラム設計",
+      "修了後のホームページ制作支援など開業支援が用意されている"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.c-c-j.com/",
+    "cta_url": "https://www.c-c-j.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-c-c-j",
+    "created_at": "2026-09-08T20:16:00.980Z",
+    "updated_at": "2026-09-08T20:16:00.980Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.c-c-j.com/"
+  },
+  {
+    "id": "athuman",
+    "school_name": "ヒューマンアカデミー通信講座",
+    "official_name": null,
+    "description": "多彩なスキルアップ・資格取得に対応した通信講座です。プログラミングや生成AI、Web・動画制作、ネイル、心理・メンタルケア、保育、日本語教師、ペット関連、ビジネススキルなど、幅広いジャンルの講座を提供しています。eラーニングと教材のセット形式で学習でき、自宅での学習に対応しています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "359,000円",
+      "min_yen": 359000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ネイル123級・初中上級トップネイリストコース",
+        "amount": 359000,
+        "duration": "12ヶ月～",
+        "kind": "total"
+      },
+      {
+        "label": "ネイル123級・初中上級トップネイリストコース",
+        "amount": 11300,
+        "duration": "12ヶ月～",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "複数のジャンルから講座を選択可能",
+      "eラーニングと教材を組み合わせた学習形式",
+      "自宅での学習に対応",
+      "LINEクーポンなどのキャンペーン実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://haec.athuman.com/shop/g/g1251T083/",
+    "official_url": "https://haec.athuman.com/",
+    "cta_url": "https://haec.athuman.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-athuman",
+    "created_at": "2026-09-08T20:16:32.897Z",
+    "updated_at": "2026-09-08T20:16:32.897Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://haec.athuman.com/"
+  },
+  {
+    "id": "yotsuyagakuin-tsushin",
+    "school_name": "四谷学院通信講座",
+    "official_name": null,
+    "description": "四谷学院が運営する通信講座サービス。「誰でも才能を持っている」をモットーに、資格取得から趣味・実用講座まで幅広い講座を提供。独自の「55段階プログラム」を特徴とし、わかりやすいテキスト、映像解説、質問制度などの充実したサポートを備えている。",
+    "skill_genre": [
+      "certification",
+      "language"
+    ],
+    "purpose": [
+      "certification_itself",
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "独自の55段階プログラムで段階的に学習を進める",
+      "オリジナルテキストが図やイラストを豊富に活用した構成",
+      "DVDによる映像解説とパソコンでのトレーニングを提供",
+      "専任の担任による相談窓口とサポート体制",
+      "質問制度でいつでも気軽に相談可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://yotsuyagakuin-tsushin.com/guide/",
+    "official_url": "https://yotsuyagakuin-tsushin.com/",
+    "cta_url": "https://yotsuyagakuin-tsushin.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-yotsuyagakuin-tsushin",
+    "created_at": "2026-09-08T20:17:00.276Z",
+    "updated_at": "2026-09-08T20:17:00.276Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://yotsuyagakuin-tsushin.com/"
+  },
+  {
+    "id": "solasto-learning",
+    "school_name": "ソラスト教育サービス",
+    "official_name": null,
+    "description": "医療事務、調剤薬局事務、医師事務作業補助者、介護事務など医療・介護業界向けの講座教材を提供。資格試験対策の模擬問題集やテキスト、求人紹介サービスも展開している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "11,000円〜",
+      "min_yen": 11000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "医療事務講座 マスターコース",
+        "amount": 18700,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "医療事務講座スタンダードコース",
+        "amount": 14300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "調剤薬局事務講座",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "医師事務作業補助者養成講座",
+        "amount": 13200,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "医療・介護業界向けの資格対応講座を提供",
+      "問題集やテキストなど教材を販売",
+      "パート・正社員求人の紹介サービスあり"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://solasto-learning.com/",
+    "cta_url": "https://solasto-learning.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-solasto-learning",
+    "created_at": "2026-09-08T20:17:08.603Z",
+    "updated_at": "2026-09-08T20:17:08.603Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://solasto-learning.com/"
+  },
+  {
+    "id": "nipponmanpower",
+    "school_name": "キャリアコンサルタント養成講座",
+    "official_name": null,
+    "description": "厚生労働大臣認定講習として、国家資格キャリアコンサルタントの受験資格取得を目的とした講座。通信教育（eラーニング）と実践的なスクーリング（グループワークやロールプレイ）を組み合わせて、キャリアコンサルタントとして必要な専門知識と能力を習得する。有資格者講師による実践的指導が特徴。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "396,000円",
+      "min_yen": 396000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "一般受講料",
+        "amount": 396000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "1999年の開講以来、累計受講者5万人以上の実績",
+      "通学とオンラインを自由に選択・組み合わせで学習できる",
+      "充実した振替受講制度で欠席時の対応が可能",
+      "現場経験を持つ有資格者講師による実践的指導",
+      "受講中から試験対策、資格取得後の活躍までをトータルでサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "area_detail_url": "https://www.nipponmanpower.co.jp/cc/briefing_session/",
+    "official_url": "https://www.nipponmanpower.co.jp/cc/",
+    "cta_url": "https://www.nipponmanpower.co.jp/cc/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nipponmanpower",
+    "created_at": "2026-09-08T20:17:22.927Z",
+    "updated_at": "2026-09-08T20:17:22.927Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.nipponmanpower.co.jp/cc/"
+  },
+  {
+    "id": "recurrent",
+    "school_name": "リカレントキャリアデザインスクール",
+    "official_name": "リカレント",
+    "description": "キャリアコンサルタントおよびメンタルヘルスカウンセラーの養成を行うスクール。キャリアカウンセリングとメンタルヘルス分野の専門的な知識とスキルを習得でき、国家資格キャリアコンサルタントやEAPメンタルヘルスカウンセラー（eMC®）資格の取得を目指せる。東日本から西日本まで複数の校舎とオンライン・ライブ通信での受講が可能。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "キャリアコンサルタント",
+      "メンタルヘルスカウンセラー",
+      "EAPコンサルタント",
+      "カウンセラー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "大阪府",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "経済産業省リスキリング支援事業の対象講座",
+      "複数の校舎とオンライン・ライブ通信に対応",
+      "国家資格キャリアコンサルタント資格取得対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.recurrent.co.jp/cc/",
+    "official_url": "https://www.recurrent.co.jp/",
+    "cta_url": "https://www.recurrent.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-recurrent",
+    "created_at": "2026-09-08T20:17:52.871Z",
+    "updated_at": "2026-09-08T20:17:52.871Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.recurrent.co.jp/"
+  },
+  {
+    "id": "counselor",
+    "school_name": "日本産業カウンセラー協会",
+    "official_name": null,
+    "description": "産業カウンセラーおよびキャリアコンサルタント資格取得を目指すための養成講座を提供する機関。産業カウンセラー養成講座、シニア産業カウンセラー育成講座、SNSカウンセラー養成講座、キャリアコンサルタント養成講習などのプログラムを実施。働く人の心の健康支援と職業人生の相談支援に関する教育を展開している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "352,000円",
+      "min_yen": 352000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "産業カウンセラー養成講座",
+        "amount": 352000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.counselor.or.jp/course/tabid/126/Default.aspx",
+    "official_url": "https://www.counselor.or.jp/",
+    "cta_url": "https://www.counselor.or.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-counselor",
+    "created_at": "2026-09-08T20:18:20.871Z",
+    "updated_at": "2026-09-08T20:18:20.871Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.counselor.or.jp/"
+  },
+  {
+    "id": "ijinet",
+    "school_name": "日本医療事務協会",
+    "official_name": "日本医療事務協会",
+    "description": "医療事務の資格取得と就職支援に特化した団体。医療保険制度、患者対応、医療費計算、請求事務など医療事務全般の基本的知識と技術を習得できます。未経験者が最初に担当する受付・会計業務を中心に学べる講座体系で、短期間での資格取得が可能。就職支援サービス「三幸医療エージェント」により、受講中から就業後のキャリアアップまで一貫したサポートを提供しています。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "医療事務",
+      "調剤薬局事務",
+      "介護事務",
+      "医師事務作業補助者"
+    ],
+    "price": {
+      "display": "32,780円〜",
+      "min_yen": 32780,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "医療事務講座（通学コース）",
+        "amount": 55000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "医療事務講座（通信コース）",
+        "amount": 34000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "調剤薬局事務講座",
+        "amount": 32780,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "介護事務講座",
+        "amount": 33000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "レセプトチェック講座",
+        "amount": 53900,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "医師事務作業補助者養成講座",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都",
+      "愛知県",
+      "大阪府"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "最短5日の通学コースで資格取得が可能",
+      "通学と通信から選べる受講形式",
+      "受講中から就職サポートを受けられる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://www.ijinet.com/access/",
+    "official_url": "https://www.ijinet.com/",
+    "cta_url": "https://www.ijinet.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ijinet",
+    "created_at": "2026-09-08T20:18:36.909Z",
+    "updated_at": "2026-09-08T20:18:36.909Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.ijinet.com/"
+  },
+  {
+    "id": "kws-cloud-tech",
+    "school_name": "CloudTech",
+    "official_name": null,
+    "description": "日本最大級のAWS学習プラットフォーム。320本以上の講義動画と13,000枚以上の試験解説画像で、全12種のAWS認定資格対応。AWS案件に強い専門キャリアアドバイザーによる無料転職相談も提供。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AWSエンジニア"
+    ],
+    "price": {
+      "display": "0円〜",
+      "min_yen": 0,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "フリーコース会員",
+        "amount": 0,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "資格会員",
+        "amount": 5480,
+        "duration": "90日間",
+        "kind": "total"
+      },
+      {
+        "label": "基本会員",
+        "amount": 14900,
+        "duration": "90日間",
+        "kind": "total"
+      },
+      {
+        "label": "永久会員",
+        "amount": 59800,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "320本以上の講義動画で1本5〜10分の濃密な内容",
+      "全12種のAWS資格に対応した試験問題",
+      "13,000枚以上の試験解説画像を順次追加",
+      "会員制コミュニティでの技術質問サポート",
+      "無料のキャリア相談と転職支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://kws-cloud-tech.com/",
+    "cta_url": "https://kws-cloud-tech.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kws-cloud-tech",
+    "created_at": "2026-09-08T20:18:44.009Z",
+    "updated_at": "2026-09-08T20:18:44.009Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://kws-cloud-tech.com/"
+  },
+  {
+    "id": "tech-sta",
+    "school_name": "TECH STADIUM",
+    "official_name": null,
+    "description": "プログラミングやゲーム制作を学べるオンラインスクール。Unity、UnrealEngine、3DCG、AI、VRなど、ゲーム業界で活躍するための技術習得が可能。第一線で活躍するプロのエンジニアやクリエイターから、完全オンライン形式で学習できる。各コースは約2ヵ月で修了し、修了後は就職・転職サポートが無料で受けられる。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ゲームプログラマー",
+      "ゲームエンジニア",
+      "ツールプログラマー"
+    ],
+    "price": {
+      "display": "99,000円〜",
+      "min_yen": 99000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Unity超入門コース",
+        "amount": 99000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "UE5超入門コース",
+        "amount": 99000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "動画教材と素材が用意され、自分のペースで学習可能",
+      "Slack上で講師への質問が無制限",
+      "プロのエンジニアやクリエイター3名体制による指導",
+      "修了後の就職・転職サポートが無料",
+      "オリジナルプロダクト開発プロジェクト参加制度あり"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://tech-sta.com/",
+    "cta_url": "https://tech-sta.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tech-sta",
+    "created_at": "2026-09-08T20:18:53.565Z",
+    "updated_at": "2026-09-08T20:18:53.565Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://tech-sta.com/"
+  },
+  {
+    "id": "raretech",
+    "school_name": "RareTECH",
+    "official_name": null,
+    "description": "AIで書いたコードを評価できる人材を育成する、希少型エンジニア育成専門ITスクール。2年間の長期学習で、基礎概念からチーム開発まで、即戦力となるための本質的なITスキルを習得。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額1,980円〜",
+      "min_yen": 1980,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "基本希少型プラン",
+        "amount": null,
+        "duration": "1年",
+        "kind": "total"
+      },
+      {
+        "label": "完全希少型プラン",
+        "amount": null,
+        "duration": "2年",
+        "kind": "total"
+      },
+      {
+        "label": "基本希少型プラン",
+        "amount": 81600,
+        "duration": "1年",
+        "kind": "monthly"
+      },
+      {
+        "label": "完全希少型プラン",
+        "amount": 112200,
+        "duration": "2年",
+        "kind": "monthly"
+      },
+      {
+        "label": "卒業生プラン",
+        "amount": 1980,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "2年間の長期学習プログラム",
+      "チーム開発・ハッカソンを最大8回実践",
+      "キャリアアドバイザーによるサポート",
+      "転職後のキャリア支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://raretech.site/price",
+    "official_url": "https://raretech.site/",
+    "cta_url": "https://raretech.site/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-raretech",
+    "created_at": "2026-09-08T20:19:08.545Z",
+    "updated_at": "2026-09-08T20:19:08.545Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://raretech.site/"
+  },
+  {
+    "id": "techis",
+    "school_name": "TECH I.S.（テックアイエス）",
+    "official_name": null,
+    "description": "現役Webエンジニア講師によるマンツーマン指導を特徴とするプログラミングスクール。5分以内の質問対応、チーム開発などの実践的なカリキュラム、6ヶ月の学習と6ヶ月のキャリアサポートを提供。転職、副業、フリーランス化を支援し、コミュニティイベントやコーチング、キャリア相談などで自立までをサポートしています。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webエンジニア",
+      "データサイエンティスト"
+    ],
+    "price": {
+      "display": "686,400円",
+      "min_yen": 686400,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "長期PROスキルコース",
+        "amount": 686400,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "長期PROスキルコース",
+        "amount": 28600,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "愛媛県",
+      "広島県",
+      "島根県",
+      "岡山県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役Webエンジニア講師によるマンツーマン指導",
+      "5分以内の質問対応",
+      "チーム開発などの実践的カリキュラム",
+      "6ヶ月の学習と6ヶ月のキャリアサポート",
+      "月1回のイベント開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://techis.jp/fee/",
+    "official_url": "https://techis.jp/",
+    "cta_url": "https://techis.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-techis",
+    "created_at": "2026-09-08T20:19:23.024Z",
+    "updated_at": "2026-09-08T20:19:23.024Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://techis.jp/"
+  },
+  {
+    "id": "raise-tech",
+    "school_name": "RaiseTech",
+    "official_name": null,
+    "description": "AWSコースとJavaコースを提供するオンラインプログラミングスクール。未経験や異業種からのエンジニア転職を支援する。講師による24時間以内の質問対応、キャリアアドバイザーの面接・書類サポート、オンラインコミュニティ（Discord、Gather）での学習支援が特徴。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "インフラエンジニア",
+      "バックエンドエンジニア",
+      "開発エンジニア",
+      "システムエンジニア",
+      "クラウドインフラエンジニア",
+      "サーバーサイドエンジニア",
+      "運用エンジニア"
+    ],
+    "price": {
+      "display": "398,000円〜",
+      "min_yen": 398000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "通常料金",
+        "amount": 798000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "学割",
+        "amount": 598000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "受け放題コース追加料金",
+        "amount": 398000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "24時間以内の質問対応",
+      "キャリアアドバイザーによる面接・書類作成サポート",
+      "Discord・Gatherのオンラインコミュニティ",
+      "講師による継続的なメンタリング",
+      "オンラインセミナーと受講生同士の交流会"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://raise-tech.net/fee/",
+    "official_url": "https://raise-tech.net/",
+    "cta_url": "https://raise-tech.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-raise-tech",
+    "created_at": "2026-09-08T20:19:39.774Z",
+    "updated_at": "2026-09-08T20:19:39.774Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://raise-tech.net/"
+  },
+  {
+    "id": "geekjob",
+    "school_name": "GEEK JOB フリーランス",
+    "official_name": "株式会社Sun terras",
+    "description": "東京を中心としたIT・web業界の業務委託求人案件を検索できるフリーランス向けサイト。プログラマー、システムエンジニア、デザイナーなど様々なポジションの案件を言語・報酬・分野・ポジションから検索でき、営業活動支援やスキルシート作成支援、案件マッチング等のサポートを提供している。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "freelance"
+    ],
+    "target_level": "experienced",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "業務委託求人案件の検索・紹介サービス",
+      "営業活動から案件マッチングまでの幅広いサポート",
+      "スキルシート・履歴書作成支援",
+      "フリーランス向けのお役立ち記事配信"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://geekjob.jp/",
+    "cta_url": "https://geekjob.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-geekjob",
+    "created_at": "2026-09-08T20:19:50.336Z",
+    "updated_at": "2026-09-08T20:19:50.336Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://geekjob.jp/"
+  },
+  {
+    "id": "sunabaco",
+    "school_name": "SUNABACO",
+    "official_name": "株式会社SUNABACO",
+    "description": "マーケティング、デザイン、組織運営、ビジネスに必要な技術を体系的に学べるビジネススクール。プログラミング、DX人材育成、AI人材育成、ロボット開発など多様なコースを提供し、全国展開の拠点でのサポートやオンライン勉強会を通じて、ビジネスコミュニティとして人材育成を支援しています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "プログラミング、DX人材育成、AI人材育成、ロボット開発、デザイン、マーケティングなど多様なコースを提供",
+      "全国7拠点での対面サポートと定期的なオンライン勉強会・トークイベント",
+      "起業創業支援やリカレント教育に対応したビジネス教育"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://sunabaco.com/schools/",
+    "area_detail_url": "https://sunabaco.com/region/",
+    "official_url": "https://sunabaco.com/",
+    "cta_url": "https://sunabaco.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sunabaco",
+    "created_at": "2026-09-08T20:20:34.782Z",
+    "updated_at": "2026-09-08T20:20:34.782Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://sunabaco.com/"
+  },
+  {
+    "id": "human-yakan",
+    "school_name": "ヒューマンアカデミー夜間スクール（Unity専門）",
+    "official_name": null,
+    "description": "平日夜間や土日に、週1回から学べるエンタメ・クリエイティブスクール。半年～1年のカリキュラムを自分で組み立てられ、Unityを含むゲームクリエイター・アニメーション系の講座を提供。プロ講師とキャリアコンシェルジュによるサポートが受講前から始まり、業界とのつながりが豊富。",
+    "skill_genre": [
+      "programming",
+      "video_editing"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "宮城県",
+      "埼玉県",
+      "千葉県",
+      "東京都",
+      "神奈川県",
+      "静岡県",
+      "愛知県",
+      "京都府",
+      "大阪府",
+      "兵庫県",
+      "広島県",
+      "福岡県",
+      "鹿児島県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "週1回から学べるスケジュール",
+      "プロ講師による指導",
+      "キャリアコンシェルジュによる受講前からのサポート",
+      "協力企業とのイベント・セミナーで業界体験が可能",
+      "全国17校舎で通学可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://human-yakan.com/admission/money/",
+    "official_url": "https://human-yakan.com/",
+    "cta_url": "https://human-yakan.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-human-yakan",
+    "created_at": "2026-09-08T20:21:02.015Z",
+    "updated_at": "2026-09-08T20:21:02.015Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://human-yakan.com/"
   }
 ]

@@ -152,5 +152,47 @@
     "genre": "programming",
     "reason": "genre_not_supported",
     "checkedAt": "2026-09-08T06:25:50.727Z"
+  },
+  "宣伝会議 教育講座": {
+    "name": "宣伝会議 教育講座",
+    "website": "https://www.sendenkaigi.com/class/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "EC-ConsultingJapan ecWorks": {
+    "name": "EC-ConsultingJapan ecWorks",
+    "website": "https://ec-consultingjapan.co.jp/service/06.html",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "三幸医療カレッジ": {
+    "name": "三幸医療カレッジ",
+    "website": "https://www.sanko-medical.jp",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "LEC東京リーガルマインド": {
+    "name": "LEC東京リーガルマインド",
+    "website": "https://www.lec-jp.com",
+    "genre": "certification",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "ヒューマンアカデミー（キャリアコンサルタント養成講座）": {
+    "name": "ヒューマンアカデミー（キャリアコンサルタント養成講座）",
+    "website": "https://haa.athuman.com/academy/career/",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "JMAマネジメントスクール（日本能率協会）": {
+    "name": "JMAマネジメントスクール（日本能率協会）",
+    "website": "https://school.jma.or.jp/",
+    "genre": "web_marketing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-08T20:14:11.306Z"
   }
 }

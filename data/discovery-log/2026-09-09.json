@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2026-09-09",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "waca",
+      "nikkei"
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "genre": "certification",
+    "new_school_ids": [
+      "u-can",
+      "c-c-j",
+      "athuman",
+      "yotsuyagakuin-tsushin",
+      "solasto-learning",
+      "nipponmanpower",
+      "recurrent",
+      "counselor",
+      "ijinet"
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "genre": "programming",
+    "new_school_ids": [
+      "kws-cloud-tech",
+      "tech-sta",
+      "raretech",
+      "techis",
+      "raise-tech",
+      "geekjob",
+      "sunabaco",
+      "human-yakan"
+    ]
+  }
+]
