@@ -274,6 +274,10 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important}
   font-size:10px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;
   white-space:nowrap}
 </style>
+<!-- Google AdSense。サイト所有権の確認（審査）には、このタグが <head> に
+     静的に書かれている必要がある。JSから動的に読み込む形にすると、
+     AdSense のクローラーが見つけられず「サイトを確認できませんでした」になる。 -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5761092657360295" crossorigin="anonymous"></script>
 </head>
 <body >
 
@@ -448,11 +452,11 @@ function buildFilterOptions() {
    審査を通っているかを確認する。未登録のうちは、IDが正しくても広告は出ない。
    空欄が残らないよう、配信されなかった枠は自動で消える（下の CSS を参照）。 */
 var ADSENSE = {
-  // ★ AdSense の管理画面で skillup-zukan.net の審査が通ったら true にする。
-  //    false のあいだは広告枠を一切描かない（AdSenseのスクリプトも読み込まない）。
-  //    未登録のままだと広告は1つも配信されず、枠の高さ（280px前後）だけが
-  //    空白として残ってしまうため、既定は false にしている。
-  enabled: false,
+  // 広告枠（<ins>）を描くかどうか。AdSense本体のスクリプトは、審査（サイト所有権の確認）
+  // のために <head> へ静的に置いてあり、このスイッチとは別に常に読み込まれる。
+  // 審査が通るまでは広告が配信されず、枠の高さぶんの空白が出るが、
+  // 審査に出すため、Tatsuroさんの了承のうえで true にしている。
+  enabled: true,
   client: 'ca-pub-5761092657360295',
   slots: {
     top: '1771024424',     // 一覧の最上部（既存2サイトの banner と同じ）
@@ -470,22 +474,10 @@ function adsEnabled() {
   return !!(ADSENSE.client && (s.top || s.inFeed || s.bottom || s.detail));
 }
 
-var adsScriptLoaded = false;
-function loadAdsScript() {
-  if (adsScriptLoaded || !adsEnabled()) return;
-  adsScriptLoaded = true;
-  var el = document.createElement('script');
-  el.async = true;
-  el.crossOrigin = 'anonymous';
-  el.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' +
-    encodeURIComponent(ADSENSE.client);
-  document.head.appendChild(el);
-}
-
-/** 広告枠を1つ埋める。スロットIDが空なら何もしない（枠は :empty で消える）。 */
+/** 広告枠を1つ埋める。スロットIDが空なら何もしない（枠は :empty で消える）。
+    AdSense本体のスクリプトは <head> に静的に置いてあるので、ここでは読み込まない。 */
 function fillAdSlot(el, slotId) {
   if (!el || !slotId || !adsEnabled()) return;
-  loadAdsScript();
   el.innerHTML = '<span class="ad-label">広告</span>' +
     '<ins class="adsbygoogle" style="display:block" data-ad-client="' + esc(ADSENSE.client) + '" ' +
     'data-ad-slot="' + esc(slotId) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>';

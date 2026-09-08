@@ -65,12 +65,26 @@ function startStaticServer() {
   });
 }
 
+/** 静的化のあいだ読み込ませない広告関連のホスト。 */
+const AD_HOST_PATTERN = /googlesyndication\.com|doubleclick\.net|googleadservices\.com|google\.com\/recaptcha/;
+
 /** 1ページ分を描画して保存する。戻り値は保存したかどうか。 */
 async function renderPage(browser, urlPath, outDir) {
   const page = await browser.newPage();
   // 静的化中であることをページ側に伝える。ロゴの読み込みを待ち切れずに
   // 代替タイルへ切り替える処理（watchLogos）を、保存対象のHTMLに固定させないため。
   await page.evaluateOnNewDocument(() => { window.__PRERENDER__ = true; });
+
+  // 広告配信スクリプトはここでは動かさない。
+  // <head> の AdSense タグ（サイト所有権の確認に必要）はHTMLに残したいが、
+  // 実行させると AdSense 自身が ins や iframe を差し込み、それが保存され続けてしまう
+  // （実際に31ページへ焼き付いた）。読み込み自体を止めれば、タグは残り中身は入らない。
+  await page.setRequestInterception(true);
+  page.on('request', req => {
+    if (AD_HOST_PATTERN.test(req.url())) req.abort().catch(() => {});
+    else req.continue().catch(() => {});
+  });
+
   try {
     await page.goto(`http://localhost:${PORT}${urlPath}`, { waitUntil: 'networkidle0', timeout: NAV_TIMEOUT });
     await page.waitForSelector('body[data-ssg-ready]', { timeout: READY_TIMEOUT });

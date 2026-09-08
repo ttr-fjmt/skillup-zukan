@@ -251,30 +251,34 @@ data/discovery-log/2026-09-07.json
 稼いだかを分けて見たくなったら、AdSense でこのサイト専用の広告ユニットを作って
 `slots` を差し替える。サイト単位の売上は AdSense のサイト別レポートで分けて見られる。
 
-### 出せるようにする手順（`enabled` を開ける）
+### サイト所有権の確認（審査）用のタグ
 
-`ADSENSE.enabled` は既定で **`false`**。この状態では広告枠を一切描かず、
-AdSense のスクリプトも読み込まない。
+AdSense本体のスクリプトは、`index.html` / `faq.html` / `privacy.html` / `404.html` の
+**`<head>` に静的に書いてある**。静的化した `school/` `category/` のページにも引き継がれる。
 
-`true` にするのは、**AdSense の管理画面で `skillup-zukan.net` を「サイト」として
-追加し、審査が通ってから**。未登録のまま `true` にすると、広告は1件も配信されない一方で
-枠の高さ（280px前後）だけが確保され、一覧の途中と最下部に空白が残る
-（公開直後に実際に発生した。`data-ad-status="unfilled"` の印すら付かない枠があり、
-CSSでは畳めなかった）。
+JSから動的に読み込む形にすると、AdSense のクローラーがタグを見つけられず
+「お客様のサイトは確認できませんでした」になる（実際になった）。
+`test/site-ui.test.js` が全ページの `<head>` にタグがあることを検査している。
 
-1. AdSense で `skillup-zukan.net` をサイトとして追加し、審査を通す
-2. `index.html` の `ADSENSE.enabled` を `true` にする
-3. `cd scraper && node prerender.js` で静的ページを作り直し、コミットする
+**静的化のときは、このスクリプトを読み込ませない。** 実行させると AdSense 自身が
+`ins` や iframe を差し込み、それが保存され続けてしまう（実際に31ページへ焼き付いた）。
+`prerender.js` が広告関連ホストへのリクエストを止めているので、
+`<head>` のタグは残り、中身だけ入らない。
+
+### 広告枠の入り切り
+
+`ADSENSE.enabled` で `<ins>`（広告枠そのもの）を描くかどうかを切り替える。
+`<head>` のタグはこのスイッチとは無関係に常に読み込まれる（審査に必要なため）。
+
+**審査が通るまでは広告が1件も配信されず、枠の高さ（280px前後）ぶんの空白が出る。**
+それでも審査に出すため、Tatsuroさんの了承のうえで `true` にしている。
+空白が気になる場合は `false` にすれば枠を描かなくなる（審査用のタグは残る）。
 
 在庫が無くて配信されなかった枠は、AdSense が `ins` に付ける
 `data-ad-status="unfilled"` を見て `.ad-slot` ごと消している。
 
-### 触るときの注意
-
-- `slots` を変えたら `cd scraper && node prerender.js` で静的ページを作り直す
-- 静的化したHTMLには広告タグを入れない（`window.__PRERENDER__` で抑止）。
-  入れてしまうと古い広告タグがHTMLに残り続ける
-- AdSense のスクリプトは `<head>` に直接書かず、IDが設定されているときだけJSから読み込む
+`enabled` や `slots` を変えたら `cd scraper && node prerender.js` で静的ページを
+作り直してコミットする。
 
 これらは `test/site-ui.test.js` が検査している。
 

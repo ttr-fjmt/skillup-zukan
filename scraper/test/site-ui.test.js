@@ -33,24 +33,45 @@ function staticPages() {
   return dirs;
 }
 
-test('AdSense のスクリプトを静的に読み込んでいない', () => {
-  // 広告ユニットIDが未設定のうちからGoogleへ通信させないため、
-  // スクリプトは設定済みのときだけJSから読み込む。
-  assert.ok(
-    !/<script[^>]+pagead2\.googlesyndication\.com/.test(indexHtml),
-    'index.html が AdSense のスクリプトを直接読み込んでいる'
-  );
+test('AdSense のスクリプトが全ページの <head> に静的に置かれている', () => {
+  // サイト所有権の確認（審査）は、このタグがHTMLに直接書かれているかを見る。
+  // JSから動的に読み込む形にすると、クローラーが見つけられず確認に失敗する
+  // （実際に「お客様のサイトは確認できませんでした」になった）。
+  const pages = ['index.html', 'faq.html', 'privacy.html', '404.html']
+    .map(f => [f, fs.readFileSync(path.join(ROOT, f), 'utf8')])
+    .concat(staticPages().map(f => [path.relative(ROOT, f), fs.readFileSync(f, 'utf8')]));
+
+  for (const [name, html] of pages) {
+    const head = html.slice(0, html.indexOf('</head>'));
+    assert.match(
+      head,
+      /<script[^>]+pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-\d+/,
+      `${name} の <head> に AdSense のタグが無い`
+    );
+  }
 });
 
 test('静的化したページに広告タグが焼き付いていない', () => {
-  // 静的化のときに広告を描画してしまうと、古い広告タグがHTMLに残り続ける。
+  // 静的化のときに AdSense を動かすと、AdSense 自身が ins や iframe を差し込み、
+  // それが保存され続けてしまう（実際に31ページへ焼き付いた）。
+  // prerender.js が広告関連ホストの読み込みを止めているので、ここで見張る。
   for (const file of staticPages()) {
     const html = withoutScripts(fs.readFileSync(file, 'utf8'));
     assert.ok(
       !/<ins[^>]+adsbygoogle/.test(html),
       `${path.relative(ROOT, file)} に広告タグが埋め込まれている`
     );
+    assert.ok(
+      !/<iframe[^>]+(doubleclick|googlesyndication|googleads)/i.test(html),
+      `${path.relative(ROOT, file)} に広告配信のiframeが埋め込まれている`
+    );
   }
+});
+
+test('静的化のときに広告配信スクリプトを読み込まない', () => {
+  const prerender = fs.readFileSync(path.join(ROOT, 'scraper', 'prerender.js'), 'utf8');
+  assert.match(prerender, /setRequestInterception\(true\)/, 'リクエストを止める設定が無い');
+  assert.match(prerender, /googlesyndication/, '広告ホストの指定が無い');
 });
 
 test('静的化したページの外部画像はロゴ（ファビコン）だけ', () => {
@@ -87,9 +108,8 @@ test('自動スクロールは「動きを減らす」設定を尊重する', ()
   assert.match(indexHtml, /prefers-reduced-motion: reduce/);
 });
 
-test('広告は enabled スイッチが true のときだけ描かれる', () => {
-  // AdSense にサイト登録するまでは1件も配信されず、枠の高さ（280px前後）だけが
-  // 空白として残ってしまう。既定を false にして、審査が通ってから開ける。
+test('広告枠を描くかどうかが1か所のスイッチで決まる', () => {
+  // 審査前は配信されず枠の高さぶんの空白が出るため、止めたいときはここだけ変える。
   assert.match(indexHtml, /enabled: (true|false),/, '広告の有効/無効スイッチが無い');
   assert.match(indexHtml, /if \(!ADSENSE\.enabled\) return false;/,
     'adsEnabled() がスイッチを見ていない');
