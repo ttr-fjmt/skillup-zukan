@@ -33,7 +33,7 @@ const EXPORTS = [
   'matchSchools', 'scoreSchool', 'filterCandidates', 'MAX_RESULTS',
   'buildQuestions', 'validateAnswers', 'MAX_GENRES',
   'buildFaviconUrl', 'genreIconSvg', 'genreHue', 'monogram', 'GENRE_ICONS', 'GENRE_HUES',
-  'recommendScore', 'pickRecommended',
+  'isRecommendable', 'pickRecommended',
 ];
 
 function buildBundle() {

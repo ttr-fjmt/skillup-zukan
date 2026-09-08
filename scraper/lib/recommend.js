@@ -4,39 +4,23 @@
  * トップの「おすすめ講座」カルーセルに出す講座の選び方。
  *
  * 【方針】
- * 「おすすめ」といっても、当サイトは各スクールを実際に受講して評価しているわけではないし、
- * 広告費で順番を変えることもしない。ここで言うおすすめは
- * 「公式サイトから確認できた情報が充実していて、比較の材料がそろっている講座」のこと。
- * 料金が分からない講座を上位に出しても、利用者は比較のしようがないため。
+ * ここに出すのは、提携（アフィリエイト）している講座だけ。`cta_type === 'affiliate'`
+ * が目印で、A8などの提携データを取り込むときに立つ。
+ * agent-zukan / freelance-anken-zukan の featured 枠と同じ考え方。
  *
- * 掲載情報の充実度でスコアをつけて上位を候補に取り、その中から表示順をランダムに決める。
- * 順位を固定しないのは、同じ講座ばかりが露出し続けるのを避けるため。
- * この基準は faq.html にも書いてあるので、変えるときは両方を直すこと。
+ * 【表示するときの約束】
+ * この枠は商業的な理由で選んでいるため、必ず「PR」の表示を添えること
+ * （2023年10月からのステマ規制で、広告であることを隠すのは景品表示法違反になる）。
+ * 一覧そのものの並び順は提携の有無で変えない。変えているのはこの枠だけ。
+ * 説明は faq.html と privacy.html にも書いてあるので、変えるときは合わせて直すこと。
+ *
+ * 提携が1件も無いあいだは空配列を返す。呼び出し側は枠ごと隠すこと
+ * （提携していない講座を「おすすめ」として出すと、この枠の意味と説明が食い違うため）。
  */
 
-/** 情報の充実度。掲載順の優劣ではなく「比較材料がどれだけあるか」を測る。 */
-function recommendScore(school) {
-  if (!school) return 0;
-  let score = 0;
-
-  // 料金が分かることの価値が一番大きい（比較サイトの中心的な情報のため）。
-  if (school.price && school.price.min_yen !== null && school.price.min_yen !== undefined) score += 4;
-  if (Array.isArray(school.plans) && school.plans.length >= 2) score += 1;
-
-  score += Math.min((school.features || []).length, 3);
-  if ((school.career_paths || []).length > 0) score += 1;
-  if ((school.area || []).length > 0) score += 1;
-  if (school.subsidy_eligible) score += 1;
-  if (school.career_support) score += 1;
-  if (typeof school.description === 'string' && school.description.length >= 60) score += 1;
-
-  // 確認しきれなかった項目がある場合は、その分だけ差し引く。
-  const flags = school.review_flags || [];
-  if (flags.indexOf('price_scope_limited') !== -1) score -= 1;
-  if (flags.indexOf('area_unconfirmed') !== -1) score -= 1;
-  if (flags.indexOf('format_unconfirmed') !== -1) score -= 1;
-
-  return score;
+/** おすすめ枠に出してよい講座か。掲載中かつ提携済みのものだけ。 */
+function isRecommendable(school) {
+  return !!school && school.status === 'active' && school.cta_type === 'affiliate';
 }
 
 /** Fisher-Yates。rng は 0以上1未満を返す関数（テストから差し替えられるように引数にする）。 */
@@ -54,22 +38,13 @@ function shuffle(list, rng) {
 
 /**
  * おすすめ枠に出す講座を選ぶ。
- * スコア上位 poolSize 件を候補にして、その中から limit 件をランダムな順で返す。
- * 同点の並びは id 順に固定する（実行のたびに候補の顔ぶれが変わらないようにするため）。
+ * 提携済みの講座から、ランダムな順で最大 limit 件を返す。
+ * 順番を固定しないのは、特定の1社だけが常に先頭になるのを避けるため。
  */
 function pickRecommended(schools, options) {
   const opts = options || {};
   const limit = opts.limit || 10;
-  const poolSize = opts.poolSize || 14;
-
-  const active = (schools || []).filter(s => s && s.status === 'active');
-  const ranked = active
-    .map(s => ({ school: s, score: recommendScore(s) }))
-    .sort((a, b) => (b.score - a.score) || String(a.school.id).localeCompare(String(b.school.id)))
-    .slice(0, poolSize)
-    .map(x => x.school);
-
-  return shuffle(ranked, opts.rng).slice(0, limit);
+  return shuffle((schools || []).filter(isRecommendable), opts.rng).slice(0, limit);
 }
 
-module.exports = { recommendScore, pickRecommended, shuffle };
+module.exports = { isRecommendable, pickRecommended, shuffle };
