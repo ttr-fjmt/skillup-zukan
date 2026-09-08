@@ -1,6 +1,9 @@
-# スキルアップ図鑑（skillup-zukan.net）— Phase 1
+# スキルアップ図鑑（skillup-zukan.net）
 
-講座・スクールの比較図鑑サイト。Phase 1 は**スキーマ・収集パイプライン・口コミ要約パイプライン・診断ウィザードのロジック**までを実装する範囲で、ドメイン取得とデプロイは含まない。フロントエンド（HTML/カテゴリーページ/詳細ページ）も Phase 2 以降。
+講座・スクールの比較図鑑サイト。**公開中**（https://skillup-zukan.net/）。
+
+- Phase 1: スキーマ・収集パイプライン・口コミ要約パイプライン・診断ウィザードのロジック（完了）
+- Phase 2: フロントエンド（一覧・詳細・診断）、静的ページ生成、独自ドメインでの公開（完了）
 
 共通ロジックは [agent-zukan](https://github.com/ttr-fjmt/agent-zukan) / [freelance-anken-zukan](https://github.com/ttr-fjmt/freelance-anken-zukan) の二段階検証方式・日次ディスカバリー・プロンプトキャッシュの構造をそのまま踏襲している。
 
@@ -212,21 +215,55 @@ data/discovery-log/2026-09-07.json
 
 「口コミ件数」は口コミ原文を保存しない設計のため、`review_summary.sources[]` の件数を指標として使っている。
 
+## 公開とデプロイ
+
+GitHub Pages（`main` ブランチのルート）＋ Cloudflare DNS。既存2サイトと同じ構成。
+
+| 項目 | 設定 |
+| --- | --- |
+| ホスティング | GitHub Pages / source = `main` ブランチの `/`（build_type: legacy） |
+| 独自ドメイン | `CNAME` ファイル（`skillup-zukan.net`、末尾改行なし・apexのみ） |
+| DNS | Cloudflare。apex に GitHub Pages の A レコード4件（185.199.108-111.153） |
+| プロキシ | **DNS only（グレーの雲）**。オレンジの雲にすると Pages の証明書発行が通らない |
+| SSL/TLS | Cloudflare 側 `Full` |
+| HTTPS | GitHub Pages 側で Enforce HTTPS 有効（http → https は 301） |
+
+デプロイは push で自動。`main` が更新されると Pages が再ビルドする。
+日次ディスカバリーのワークフローは `data/schools.json` の更新後に `prerender.js` と
+`generate-sitemap.js` を回して `school/` `category/` `sitemap.xml` `llms.txt` まで
+コミットするため、収集結果がそのまま公開ページに反映される。
+
+`404.html` は Pages が自動で使う。掲載を取り下げたスクールの静的ページは
+`school/<id>/` ごと消えるため、そのURLは 404 に落ちる。
+
+サブドメイン `www` は未設定（apex のみ）。必要になったら Cloudflare に
+`www` → `ttr-fjmt.github.io` の CNAME（DNS only）を足す。
+
+### 状態を確認する
+
+```bash
+gh api repos/ttr-fjmt/skillup-zukan/pages          # ビルド状況・証明書・HTTPS強制
+curl -sI https://skillup-zukan.net/ | head -1      # 実際の応答
+```
+
 ## 動作確認の進め方
 
 1. ~~モックデータ40件のスキーマ検証~~ → `npm run generate-mock` で生成し全件通過済み
 2. ~~診断ウィザードのスコアリングのユニットテスト~~ → `npm test`（287件）で通過済み
-3. **発見パイプラインを1ジャンルのみ実行**（`ANTHROPIC_API_KEY` が必要 / 未実施）
+3. ~~発見パイプラインを1ジャンルのみ実行~~ → programming から始めて全8ジャンルの初回実行が完了。
+   日次 cron の対象も `all` に広げてある
    ```bash
    DISCOVER_GENRES=programming DISCOVER_MAX_PER_RUN=3 npm run discover
    ```
    確認する点: 二段階検証が機能しているか（`name_mismatch` / `fetch_failed` がスキップリストに落ちているか）、`skill_genre[]` の自動付与が妥当か、`[ai:cache]` の `cache_read` が2件目以降で増えているか、`data/discovery-log/YYYY-MM-DD.json` に新規IDが記録されているか。承認フェーズが無く即時公開されるため、この回で入った分は必ず目視で確認すること
-4. **口コミ要約パイプラインを1校のみで実行**（上記の人力確認が完了してから / 未実施）
+4. **口コミ要約パイプラインは当面動かさない**（`data/review-sources.json` は全件 `enabled: false`）。
+   3サイトを調査した結果、robots.txt または利用規約の理由で見送っている
    ```bash
    REVIEW_ONLY_SCHOOL_ID=<id> npm run summarize-reviews
    ```
    確認する点: 出力された要約文が原文の構成をなぞっていないか（**人力確認**）
-5. 3と4が問題なければ、ジャンルを1つずつ増やしながら本番相当のデータ収集へ
+5. ジャンルを増やしたあとは `npm run recheck-guards` を全レコードに流し、
+   `npm run validate` が通ることを確認する
 
 ## 未確定・要判断事項
 
