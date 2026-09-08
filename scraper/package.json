@@ -17,7 +17,8 @@
     "build-wizard": "node build-wizard-bundle.js",
     "prerender": "node prerender.js",
     "import-a8": "node import-a8.js",
-    "generate-a8-template": "node generate-a8-template.js"
+    "generate-a8-template": "node generate-a8-template.js",
+    "build-faq": "node build-faq-jsonld.js"
   },
   "engines": {
     "node": ">=22.12.0"

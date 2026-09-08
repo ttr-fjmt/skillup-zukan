@@ -79,6 +79,10 @@
 | `verifySubsidyClaim()` | 給付金対象 |
 | `filterFeatures()` / `stripExaggeratedSentences()` | 誇張・実績訴求 |
 | `classifyFormat()` | 受講形式 |
+| `verifyGenres()` | ジャンル（本文に根拠があるか） |
+| `portalMarkers()` / `agencyScore()` | 掲載対象（ポータル・代行会社の除外） |
+| `buildSchoolLd()` ほか（`lib/structured-data.js`） | 構造化データ（レコードに無い値・月額を一括料金として出さない） |
+| `buildFaqLd()`（`build-faq-jsonld.js`） | よくある質問の構造化データ（本文から生成） |
 
 ## 人間に確認すること
 

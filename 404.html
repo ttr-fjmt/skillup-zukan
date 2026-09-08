@@ -16,11 +16,11 @@ body{margin:0;background:var(--bg);color:var(--ink);line-height:1.8;min-height:1
 a{color:var(--brand-dark)}
 header{background:var(--card);border-bottom:1px solid var(--line)}
 .header-inner{max-width:760px;margin:0 auto;padding:12px 16px}
-h1{margin:0;font-size:19px;font-weight:800}
-h1 a{text-decoration:none;color:inherit}
-h1 .mark{color:var(--brand)}
+.site-name{margin:0;font-size:19px;font-weight:800}
+.site-name a{text-decoration:none;color:inherit}
+.site-name .mark{color:var(--brand)}
 main{flex:1;max-width:760px;margin:0 auto;padding:64px 16px;text-align:center}
-main h2{font-size:24px;margin:0 0 12px}
+main h1{font-size:24px;margin:0 0 12px}
 main p{color:var(--ink-sub);margin:0 0 28px}
 .home{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;
   padding:13px 32px;border-radius:999px}
@@ -77,10 +77,10 @@ main p{color:var(--ink-sub);margin:0 0 28px}
 </head>
 <body>
 <header><div class="header-inner">
-  <h1><a href="/">スキルアップ<span class="mark">図鑑</span></a></h1>
+  <p class="site-name"><a href="/">スキルアップ<span class="mark">図鑑</span></a></p>
 </div></header>
 <main>
-  <h2>ページが見つかりません</h2>
+  <h1>ページが見つかりません</h1>
   <p>お探しのページは削除されたか、URLが変更された可能性があります。<br>掲載を取り下げた講座のページも、こちらに表示されます。</p>
   <a class="home" href="/">講座一覧を見る</a>
 </main>

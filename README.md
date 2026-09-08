@@ -129,6 +129,7 @@ DISCOVER_GENRES=programming npm run discover    # 1ジャンルだけ発見（�
 DISCOVER_GENRES=all DISCOVER_MAX_PER_RUN=20 npm run discover
 
 npm run build-wizard                       # assets/wizard.js を lib/ から再生成
+npm run build-faq                          # faq.html の本文から FAQPage 構造化データを再生成
 npm run prerender                          # /school/{id}/ と /category/{genre}/ を静的化
 npm run recheck-guards                     # 全レコードにガードを再適用（ジャンル追加のたびに実行）
 npm run reverify-skips                     # スキップリストの再検証

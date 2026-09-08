@@ -23,7 +23,7 @@ const ROOT = path.join(__dirname, '..');
 const OUT_PATH = path.join(ROOT, 'assets', 'wizard.js');
 
 /** 束ねる対象。依存の順に並べる（後のものが前のものを require する）。 */
-const MODULES = ['lib/schema.js', 'lib/branding.js', 'lib/recommend.js', 'lib/match.js', 'lib/wizard-questions.js'];
+const MODULES = ['lib/schema.js', 'lib/branding.js', 'lib/recommend.js', 'lib/match.js', 'lib/wizard-questions.js', 'lib/structured-data.js'];
 
 /** 公開するAPI。index.html からはこれだけを使う。 */
 const EXPORTS = [
@@ -34,6 +34,7 @@ const EXPORTS = [
   'buildQuestions', 'validateAnswers', 'MAX_GENRES',
   'buildFaviconUrl', 'genreIconSvg', 'genreHue', 'monogram', 'GENRE_ICONS', 'GENRE_HUES',
   'isRecommendable', 'pickRecommended',
+  'buildHomeLd', 'buildCategoryLd', 'buildSchoolLd',
 ];
 
 function buildBundle() {
@@ -71,7 +72,7 @@ function buildBundle() {
 ${parts.join('\n\n')}
 
   var api = {};
-  var sources = [require('./schema'), require('./branding'), require('./recommend'), require('./match'), require('./wizard-questions')];
+  var sources = [require('./schema'), require('./branding'), require('./recommend'), require('./match'), require('./wizard-questions'), require('./structured-data')];
   ${JSON.stringify(EXPORTS)}.forEach(function (key) {
     for (var i = 0; i < sources.length; i += 1) {
       if (sources[i][key] !== undefined) { api[key] = sources[i][key]; return; }
