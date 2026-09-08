@@ -63,6 +63,7 @@ const COLUMNS = {
   link: 'リンク',
   officialUrl: '公式サイトURL',
   genre: 'ジャンル',
+  note: '備考',
 };
 
 function findWorkbookPath() {
@@ -136,9 +137,49 @@ function readRows(sheet) {
       link: String(line[idx.link] || '').trim(),
       officialUrl: String(line[idx.officialUrl] || '').trim(),
       genreHint: parseGenreHint(line[idx.genre]),
+      note: String(line[idx.note] || ''),
     });
   }
   return { rows, idx };
+}
+
+/**
+ * 取り込みの結果を「備考」に書き戻すときの目印。
+ * この行だけを毎回書き換え、人が書いた文章には触らない。
+ */
+const AUTO_PREFIX = '[自動]';
+
+/**
+ * 備考欄に、今回の判定結果を1行だけ残す。
+ *
+ * シートを見ただけで「なぜ載らなかったのか」が分かるようにするため。
+ * これが無いと、取り込んで初めて対象外と分かる行が残り続け、
+ * 実行のたびに同じ確認を繰り返すことになる（実際に10件たまった）。
+ *
+ * 人が書いた備考は消さない。過去に自動で書いた行だけを差し替える。
+ */
+function mergeNote(existing, message) {
+  const manual = String(existing || '')
+    .split(/\r?\n/)
+    .filter(line => !line.trim().startsWith(AUTO_PREFIX))
+    .join('\n')
+    .replace(/\s+$/, '');
+  const auto = `${AUTO_PREFIX} ${new Date().toISOString().slice(0, 10)} ${message}`;
+  return manual ? `${manual}\n${auto}` : auto;
+}
+
+/** 失敗の理由を、Excelを見る人に分かる言葉に直す。 */
+function describeFailure(message) {
+  if (message.includes('掲載条件を満たしません')) {
+    return '掲載対象外: 当サイトの8ジャンル（プログラミング／Webデザイン／UI・UX／動画編集／Webマーケティング／生成AI・DX／語学／資格）に当てはまりませんでした';
+  }
+  if (message.includes('name_mismatch')) {
+    return '未掲載: 公式サイトの本文にスクール名が見当たりませんでした（表記が違う可能性。次回また試します）';
+  }
+  if (message.includes('fetch_failed')) {
+    return '未掲載: 公式サイトを取得できませんでした（次回また試します）';
+  }
+  return `未掲載: ${message}`;
 }
 
 /** セルの値を書き換える（列幅などの書式は保ったまま）。 */
@@ -282,6 +323,7 @@ async function main() {
   let added = 0;
   let failed = 0;
   const reflectedRows = [];
+  const noteRows = [];
 
   for (const row of targets) {
     try {
@@ -304,6 +346,7 @@ async function main() {
         console.log('[update] ' + existing.school_name + ' (id=' + existing.id + ')');
         updated += 1;
         reflectedRows.push(row.sheetRow);
+        noteRows.push({ sheetRow: row.sheetRow, note: row.note, message: `掲載中の講座に提携リンクを設定しました（id=${existing.id}）` });
         continue;
       }
 
@@ -322,9 +365,15 @@ async function main() {
       );
       added += 1;
       reflectedRows.push(row.sheetRow);
+      noteRows.push({
+        sheetRow: row.sheetRow,
+        note: row.note,
+        message: `掲載しました（id=${school.id}、ジャンル=${school.skill_genre.map(g => GENRE_LABELS[g] || g).join('、')}）`,
+      });
     } catch (err) {
       console.warn('[skip]   ' + row.name + ': processing failed (' + err.message + ')');
       failed += 1;
+      noteRows.push({ sheetRow: row.sheetRow, note: row.note, message: describeFailure(err.message) });
     }
   }
 
@@ -333,6 +382,8 @@ async function main() {
   } else {
     if (updated + added > 0) writeSchools(schools);
     for (const r of reflectedRows) setCell(sheet, r, idx.reflected, true);
+    // 判定の理由を備考に残す。これはうまくいかなかった行にも書く。
+    for (const n of noteRows) setCell(sheet, n.sheetRow, idx.note, mergeNote(n.note, n.message));
     XLSX.writeFile(wb, workbookPath, { cellStyles: true });
     console.log(
       'Marked ' + reflectedRows.length + ' row(s) as reflected (反映=TRUE) in ' +
@@ -354,4 +405,7 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, extractAffiliateUrl, parseGenreHint, readRows, findWorkbookPath, setCell };
+module.exports = {
+  main, extractAffiliateUrl, parseGenreHint, readRows, findWorkbookPath, setCell,
+  mergeNote, describeFailure,
+};

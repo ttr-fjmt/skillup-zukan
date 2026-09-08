@@ -90,3 +90,58 @@ test('取り込んだ講座の status も、スキーマの許容値になって
     assert.ok(schema.properties.status.enum.includes(value), `status: '${value}' は許容値でない`);
   }
 });
+
+test('mergeNote: 人が書いた備考は消さず、自動の1行だけを差し替える', () => {
+  const { mergeNote } = require('../import-a8');
+  const first = mergeNote('写真素材 https://example.com/photos', '掲載対象外');
+  assert.ok(first.startsWith('写真素材 https://example.com/photos\n'), '人が書いた文が消えている');
+  assert.match(first, /\[自動\] \d{4}-\d{2}-\d{2} 掲載対象外$/);
+
+  // 2回目の取り込みでも、自動の行が積み上がらない。
+  const second = mergeNote(first, '掲載しました（id=abc）');
+  assert.strictEqual((second.match(/\[自動\]/g) || []).length, 1);
+  assert.ok(second.includes('写真素材 https://example.com/photos'));
+  assert.ok(second.includes('掲載しました（id=abc）'));
+  assert.ok(!second.includes('掲載対象外'));
+});
+
+test('mergeNote: 備考が空でも自動の行だけを書く', () => {
+  const { mergeNote } = require('../import-a8');
+  assert.match(mergeNote('', '掲載しました'), /^\[自動\] \d{4}-\d{2}-\d{2} 掲載しました$/);
+  assert.match(mergeNote(undefined, '掲載しました'), /^\[自動\]/);
+});
+
+test('describeFailure: エラーをExcelを見る人に分かる言葉にする', () => {
+  const { describeFailure } = require('../import-a8');
+  assert.match(describeFailure('掲載条件を満たしません: /skill_genre must NOT have fewer than 1 items'), /掲載対象外/);
+  assert.match(describeFailure('実在照合に失敗しました（name_mismatch）'), /スクール名が見当たりません/);
+  assert.match(describeFailure('実在照合に失敗しました（fetch_failed）'), /取得できませんでした/);
+  // 想定外のエラーは、内容をそのまま残す（握りつぶさない）。
+  assert.match(describeFailure('ECONNRESET'), /ECONNRESET/);
+});
+
+test('import-a8 は「備考」列を読み書きする', () => {
+  const src = require('fs').readFileSync(require('path').join(__dirname, '..', 'import-a8.js'), 'utf8');
+  assert.match(src, /note: '備考'/, '備考列を見ていない');
+  assert.match(src, /setCell\(sheet, n\.sheetRow, idx\.note, mergeNote/, '備考に書き戻していない');
+});
+
+test('備考は正しい列に書き込まれる（列の並びが変わっても）', () => {
+  const XLSX = require('xlsx');
+  const { readRows, setCell, mergeNote } = require('../import-a8');
+  // わざと並びを変えた見出しで、列名から引けていることを確かめる。
+  const sheet = XLSX.utils.aoa_to_sheet([
+    ['スクール名', '備考', '反映', 'リンク', '公式サイトURL', 'ジャンル'],
+    ['テストスクール', '人が書いたメモ', '', '<a href="x">', '', ''],
+  ]);
+  const { rows, idx } = readRows(sheet);
+  assert.strictEqual(idx.note, 1);
+  assert.strictEqual(rows[0].note, '人が書いたメモ');
+
+  setCell(sheet, rows[0].sheetRow, idx.note, mergeNote(rows[0].note, '掲載対象外'));
+  const written = XLSX.utils.sheet_to_json(sheet, { defval: '' })[0]['備考'];
+  assert.ok(written.startsWith('人が書いたメモ\n'));
+  assert.match(written, /\[自動\] \d{4}-\d{2}-\d{2} 掲載対象外$/);
+  // 他の列を壊していない。
+  assert.strictEqual(XLSX.utils.sheet_to_json(sheet, { defval: '' })[0]['スクール名'], 'テストスクール');
+});
