@@ -1091,5 +1091,265 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
     "verified_url": "https://with-marke.com/"
+  },
+  {
+    "id": "bizmates",
+    "school_name": "Bizmates（ビズメイツ）",
+    "official_name": null,
+    "description": "ビジネス英語に特化したオンライン英会話サービス。トレーナー全員がビジネス経験者で、ビジネス成果を出すために必要な「5つの素養」（言語力、人間性、リーダーシップ、異文化理解、コミュニケーション）を独自カリキュラムで体系化。マンツーマンレッスンで、実務直結の教材と1対1の対話を通じて実践的な英語力を習得できます。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額14,850円〜",
+      "min_yen": 14850,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "毎日１レッスン",
+        "amount": 14850,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "毎日２レッスン",
+        "amount": 21450,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "毎月15回まとめてレッスン",
+        "amount": 14850,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "コーチング15分+毎日1レッスンプラン",
+        "amount": 34650,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "コーチング15分+毎日2レッスンプラン",
+        "amount": 41250,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "コーチング30分+毎日1レッスンプラン",
+        "amount": 54450,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "コーチング30分+毎日2レッスンプラン",
+        "amount": 61050,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "毎日3レッスンプラン",
+        "amount": 31350,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "毎日4レッスンプラン",
+        "amount": 41250,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "トレーナーは全員ビジネス経験者で厳選採用",
+      "マンツーマンレッスン形式",
+      "受講可能時間5:00～25:00で忙しいビジネスパーソン対応",
+      "レッスン録画機能で復習可能",
+      "初心者向けの中学レベルから学べるオリジナル教材"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.bizmates.jp/price/",
+    "official_url": "https://www.bizmates.jp/",
+    "cta_url": "https://www.bizmates.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-bizmates",
+    "created_at": "2026-09-08T00:04:37.204Z",
+    "updated_at": "2026-09-08T00:04:37.204Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.bizmates.jp/"
+  },
+  {
+    "id": "rarejob",
+    "school_name": "レアジョブ英会話",
+    "official_name": null,
+    "description": "オンラインでのマンツーマン英会話レッスンサービス。朝6時～深夜1時まで毎日開校し、5,000以上の教材から目的に合わせて学習できます。初心者から上級者まで対応しており、日本語サポートも充実しているため、英語初心者でも安心して始められます。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額7,980円〜",
+      "min_yen": 7980,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "日常英会話コース 毎日25分",
+        "amount": 7980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "ビジネス英会話コース 毎日25分",
+        "amount": 12980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "日常英会話コース 毎日25分 + ネイティブパス",
+        "amount": 15980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "ビジネス英会話コース 毎日25分 + ネイティブパス",
+        "amount": 20980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "朝6時～深夜1時まで毎日レッスン可能",
+      "5,000以上の教材から目的に合わせて選択可能",
+      "日本人講師による学習相談・サポート",
+      "スマートフォンアプリで受講可能",
+      "自動録音機能で復習に対応（一部講師のみ）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.rarejob.com/",
+    "cta_url": "https://www.rarejob.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-rarejob",
+    "created_at": "2026-09-08T00:04:49.800Z",
+    "updated_at": "2026-09-08T00:04:49.800Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.rarejob.com/"
+  },
+  {
+    "id": "progrit",
+    "school_name": "PROGRIT",
+    "official_name": null,
+    "description": "科学的な学習メソッドと緻密な計画・実績管理により、短期間での英語力向上を支援。ビジネス英会話、初級者向け、TOEIC、TOEFL/IELTS等の複数コースを提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "457,600円〜",
+      "min_yen": 457600,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ビジネス英会話コース",
+        "amount": 457600,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "初級者コース",
+        "amount": 457600,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEIC L&R TESTコース",
+        "amount": 457600,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEFL iBT TEST / IELTSコース",
+        "amount": 665500,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "愛知県",
+      "大阪府",
+      "京都府",
+      "兵庫県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "第二言語習得論に基づいた英会話の5ステップメソッド",
+      "行動経済学に基づいた学習習慣化の3ステップ",
+      "専用アプリMyProgritで学習の見える化と進捗管理",
+      "3つのAIが24時間英会話練習・質疑応答・発音分析を支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://www.progrit.co.jp/school/",
+    "official_url": "https://www.progrit.co.jp/",
+    "cta_url": "https://www.progrit.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-progrit",
+    "created_at": "2026-09-08T00:05:05.656Z",
+    "updated_at": "2026-09-08T00:05:05.656Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.progrit.co.jp/"
   }
 ]

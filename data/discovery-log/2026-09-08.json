@@ -51,5 +51,14 @@
       "ipa",
       "street-academy"
     ]
+  },
+  {
+    "date": "2026-09-08",
+    "genre": "language",
+    "new_school_ids": [
+      "bizmates",
+      "rarejob",
+      "progrit"
+    ]
   }
 ]
