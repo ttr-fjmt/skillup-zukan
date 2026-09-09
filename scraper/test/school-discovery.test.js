@@ -241,7 +241,16 @@ test('discoverCandidates: 検索呼び出しが例外を投げても、そのジ
     async () => {
       const { verified, perGenre } = await discovery.discoverCandidates(['programming', 'webdesign'], [], 10);
       assert.deepStrictEqual(verified.map(v => v.candidate.name), ['デザインスクール']);
-      assert.deepStrictEqual(perGenre[0], { genre: 'programming', label: 'プログラミング・エンジニア', found: 0, listed: 0, skipped: 0 });
+      // error: true が付く。「0件だった」ではなく「実行できなかった」の目印で、
+      // lib/genre-cooldown.js がこの回を収穫逓減の判定から除外するために使う。
+      assert.deepStrictEqual(perGenre[0], {
+        genre: 'programming',
+        label: 'プログラミング・エンジニア',
+        found: 0,
+        listed: 0,
+        skipped: 0,
+        error: true,
+      });
     }
   );
 });

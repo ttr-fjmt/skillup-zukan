@@ -40,6 +40,7 @@ const { verifyPlans, buildPriceFromPlans, normalizePlans } = require('./price-de
 const { verifyPrefectures, filterToCampusPrefectures } = require('./area-detail');
 const { portalMarkers, agencyScore } = require('./portal-filter');
 const { verifyGenres, describeDropped } = require('./genre-verify');
+const { instrumentClient, getDefaultRecorder, installExitFlush } = require('./usage-log');
 
 const DISCOVERY_MODEL = process.env.ANTHROPIC_DISCOVERY_MODEL || 'claude-sonnet-4-6';
 const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001';
@@ -62,7 +63,13 @@ function getAnthropicClient() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error('ANTHROPIC_API_KEY is not set');
   const Anthropic = require('@anthropic-ai/sdk');
-  return new Anthropic({ apiKey });
+
+  // API消費量の記録は、クライアントを作るこの1箇所だけで仕掛ける。
+  // これで discover-schools / enrich-prices / enrich-areas / summarize-reviews /
+  // import-a8 のすべてが、呼び出し側に何も書き足さずに測定対象になる
+  // （lib/usage-log.js。プロセス終了時に data/usage-log/YYYY-MM.json へ自動で書き出す）。
+  installExitFlush();
+  return instrumentClient(new Anthropic({ apiKey }), getDefaultRecorder());
 }
 
 /**
@@ -414,7 +421,10 @@ async function discoverCandidates(genres, excludeNames, maxCandidates, excludeUr
       rawCandidates = await module.exports.searchGenreCandidates(genre, [...excludeCores]);
     } catch (err) {
       console.warn(`school-discovery: [${genre}] Web検索呼び出しに失敗しました: ${err.message}`);
-      perGenre.push({ genre, label: GENRE_LABELS[genre] || genre, found: 0, listed: 0, skipped: 0 });
+      // error: true は「0件だった」ではなく「実行できなかった」の目印。
+      // lib/genre-cooldown.js がこの回を収穫逓減の判定から除外するために使う
+      // （APIの一時的な失敗を「もう出てこないジャンル」と誤解しないため）。
+      perGenre.push({ genre, label: GENRE_LABELS[genre] || genre, found: 0, listed: 0, skipped: 0, error: true });
       continue;
     }
 

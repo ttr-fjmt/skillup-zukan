@@ -51,4 +51,17 @@ for (const file of workflows) {
     assert.ok(!/\|\|\s*true\b/.test(source), '|| true でコマンドの失敗を無視している');
     assert.ok(!/continue-on-error:\s*true/.test(source), 'continue-on-error: true が付いている');
   });
+
+  // Claude API を呼ぶワークフローは、消費量の記録も必ずコミットする。
+  // ここを忘れると、実行のたびに費用は発生しているのに data/usage-log/ が更新されず、
+  // 「どこにいくらかかっているか」を後から追えなくなる（記録が無いことに気づけない）。
+  if (/ANTHROPIC_API_KEY:/.test(source)) {
+    test(`${file}: API消費量の記録(data/usage-log)をコミットしている`, () => {
+      assert.match(
+        source,
+        /git add data\/usage-log/,
+        'Claude API を呼ぶのに data/usage-log をコミットしていない'
+      );
+    });
+  }
 }

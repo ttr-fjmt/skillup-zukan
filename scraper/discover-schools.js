@@ -34,6 +34,7 @@ const { GENRE, GENRE_LABELS } = require('./lib/schema');
 const { buildSchoolId, buildClickTrackingId } = require('./lib/school-id');
 const { validateSchool } = require('./lib/validate');
 const { writeDiscoveryLog } = require('./lib/discovery-log');
+const { selectGenres, describeDeferred, recordRuns } = require('./lib/genre-cooldown');
 const { enrichPriceFromDetailPage } = require('./lib/price-detail');
 const { enrichAreaFromDetailPage, needsAreaEnrichment } = require('./lib/area-detail');
 const {
@@ -135,6 +136,22 @@ function assembleDiscoveredSchool(candidate, ai, id, verifiedUrl, genre) {
 }
 
 /**
+ * 収穫逓減で頭打ちになったジャンルを、今日の対象から外す（lib/genre-cooldown.js）。
+ *
+ * 効かせるのは日次cronの "all" 実行だけ。人がジャンルを名指しして手動実行したときは、
+ * 指定どおり必ず実行する（名指ししたものを黙って飛ばさないため）。
+ * DISCOVER_IGNORE_COOLDOWN=1 で一時的に無効化できる。
+ */
+function withCooldownApplied(genres) {
+  const isAllRun = (process.env.DISCOVER_GENRES || '').trim() === 'all';
+  if (!isAllRun || process.env.DISCOVER_IGNORE_COOLDOWN === '1') return genres;
+
+  const { run, deferred } = selectGenres(genres);
+  for (const line of describeDeferred(deferred)) console.log(`見送り: ${line}`);
+  return run;
+}
+
+/**
  * 実行開始時点で1回だけ、ANTHROPIC_API_KEY の設定を確認する。
  *
  * discoverCandidates() はジャンル単位で例外を握りつぶす（1ジャンルの一時的な失敗で
@@ -166,7 +183,12 @@ function assertApiKeyConfigured() {
 async function main() {
   assertApiKeyConfigured();
 
-  const genres = targetGenres();
+  const genres = withCooldownApplied(targetGenres());
+  if (genres.length === 0) {
+    console.log('対象ジャンルがありません（すべて収穫逓減のクールダウン中）。今日は検索を行いません。');
+    return;
+  }
+
   const schools = readSchools();
   const skipList = readSkipList();
 
@@ -183,6 +205,12 @@ async function main() {
 
   const excludeUrls = schools.map(s => s.official_url).filter(Boolean);
   const { verified, skipped, perGenre } = await discoverCandidates(genres, excludeNames, MAX_PER_RUN, excludeUrls);
+
+  // 検索を実行した時点で費用は発生しているので、この後の工程が失敗しても記録は残す
+  // （次回のクールダウン判定はこの履歴だけを根拠にする）。
+  const runsPath = recordRuns(perGenre);
+  if (runsPath) console.log(`Recorded ${perGenre.length} genre run(s) in ${path.relative(process.cwd(), runsPath)}.`);
+
   const totalFound = perGenre.reduce((sum, g) => sum + g.found, 0);
   console.log(
     `AI proposed ${totalFound} candidate(s) via web_search across ${perGenre.length} genre(s), ` +

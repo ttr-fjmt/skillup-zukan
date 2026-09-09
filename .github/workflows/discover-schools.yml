@@ -91,6 +91,10 @@ jobs:
           [ -d category ] && git add category
           [ -f data/school-discover-skip.json ] && git add data/school-discover-skip.json
           [ -d data/discovery-log ] && git add data/discovery-log
+          # 収穫逓減の判定材料（次回どのジャンルを回すかはこの履歴だけを根拠にする）。
+          [ -f data/discovery-runs.json ] && git add data/discovery-runs.json
+          # API消費量の記録。掲載が0件だった日も、費用は発生しているのでコミットする。
+          [ -d data/usage-log ] && git add data/usage-log
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

@@ -16,9 +16,13 @@ data/school-discover-skip.json 実在照合に失敗した候補のスキップ�
 data/review-sources.json      口コミサイトの許可リスト（既定は全件 enabled=false）
 data/mock/schools.mock.json   動作確認用の架空データ40件（自動生成）
 data/discovery-log/           日次で新規 active 化されたIDの記録（YYYY-MM-DD.json）
+data/discovery-runs.json      ジャンル別の実行実績（収穫逓減スロットルの判定材料）
+data/usage-log/               Claude API の消費量と概算費用の記録（YYYY-MM.json）
 scraper/lib/schema.js         GENRE / PURPOSE / LEVEL / GENRE_PURPOSE_ORDER 等のマスタ
 scraper/lib/school-discovery.js 二段階検証パイプラインの中核
 scraper/lib/discovery-log.js  日次の実行記録の書き出し
+scraper/lib/genre-cooldown.js 頭打ちジャンルの実行頻度を自動で落とす（収穫逓減スロットル）
+scraper/lib/usage-log.js      API消費量の記録（getAnthropicClient() が全スクリプトに自動適用）
 scraper/lib/review-summary.js 口コミ要約パイプラインの中核
 scraper/lib/match.js          診断ウィザードのスコアリング
 scraper/lib/branding.js       ロゴURL・ジャンルアイコン・色（画像まわりの方針）
@@ -148,6 +152,31 @@ REVIEW_ONLY_SCHOOL_ID=<id> npm run summarize-reviews   # 1校だけ口コミ要�
 | `REVIEW_ONLY_SCHOOL_ID` | — | 口コミ要約を1校だけ実行 |
 | `ANTHROPIC_DISCOVERY_MODEL` | `claude-sonnet-4-6` | 発見（web_search）用モデル |
 | `ANTHROPIC_MODEL` | `claude-haiku-4-5-20251001` | 構造化用モデル |
+| `DISCOVER_IGNORE_COOLDOWN` | — | `1` で収穫逓減スロットルを一時的に無効化し、全ジャンルを実行する |
+
+### API費用の記録と、頭打ちジャンルの間引き
+
+日次の発見は、1ジャンルにつき Sonnet + web_search を1回呼ぶ。費用の大半はここで、
+構造化（Haiku）や enrich は誤差の範囲に収まっている。掲載が伸びているうちは1件あたりの
+費用が安いので毎日回す価値があるが、母集団は有限なので、いずれジャンルごとに新規が
+出なくなる。そこから先は同じ費用で「新規0件」を毎日確認するだけになる。
+
+そのため次の2つを入れてある。
+
+**消費量の記録（`lib/usage-log.js`）** — `getAnthropicClient()` が返すクライアントを
+1箇所で包んでいるので、`discover-schools` / `enrich-prices` / `enrich-areas` /
+`summarize-reviews` / `import-a8` は何も書かなくても測定対象になる。プロセス終了時に
+`data/usage-log/YYYY-MM.json` へ (日付 × スクリプト × モデル) で追記される。
+`estimated_usd` は公開価格からの概算であって請求額ではない。価格表
+（`MODEL_PRICING`）に無いモデルを使うと `estimated_usd: null` と `unpriced: true` に
+なるので、モデルを差し替えたら価格表も更新すること。
+
+**収穫逓減スロットル（`lib/genre-cooldown.js`）** — `data/discovery-runs.json` に
+ジャンル別の実行実績を残し、**3回続けて新規0件だったジャンルだけ**、日次の対象から外して
+週1回に落とす。伸びているジャンルの頻度は下げない。1件でも照合を通れば即座に毎日へ戻る。
+どれだけ0件が続いても7日ごとに必ず再挑戦するので、恒久的に止まることはない
+（新しいスクールは後から生まれるため）。効くのは cron の `all` 実行だけで、ジャンルを
+名指しした手動実行は指定どおり必ず走る。
 
 ### 発見クエリを増やす
 

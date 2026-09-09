@@ -75,6 +75,8 @@ jobs:
           git add data/schools.json sitemap.xml llms.txt
           # import-a8.js が「反映」列をTRUEに書き換えたExcel自体も一緒にコミットする。
           git add data/a8-import
+          # API消費量の記録（scraper/lib/usage-log.js）。掲載データが変わらない日も費用は発生している。
+          [ -d data/usage-log ] && git add data/usage-log
           [ -d school ] && git add school
           [ -d category ] && git add category
           if git diff --cached --quiet; then
