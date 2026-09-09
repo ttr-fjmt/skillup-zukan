@@ -6094,5 +6094,1109 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://human-yakan.com/"
+  },
+  {
+    "id": "dmm",
+    "school_name": "DMM 生成AI CAMP 学び放題",
+    "official_name": null,
+    "description": "全職種・全ツールが月額制×学び放題で、生成AI時代に稼げるスキルが身につくオンラインスクール。約1,000レッスンで、生成AIエンジニアコース、生成AI動画クリエイターコース、生成AIデザインコース、マーケティングコース、営業コース、人事コース等、職種別の基礎から応用・実践レベルまでを最短距離で習得できます。",
+    "skill_genre": [
+      "programming",
+      "video_editing",
+      "webdesign",
+      "genai_dx",
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "生成AIエンジニア",
+      "生成AI動画クリエイター",
+      "プロンプトエンジニア",
+      "Webデザイナー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約1,000レッスンが学び放題",
+      "生成AIエンジニア、動画クリエイター、デザイナーなど職種別のカリキュラム",
+      "Python、ChatGPT API、大規模言語モデル開発の習得が可能",
+      "Adobe Premiere、Suno AI、動画生成AIツール等を実践的に学習",
+      "Dify、Claude Code、Codexなど最新のAIツール習得コース"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://genai.dmm.com/",
+    "cta_url": "https://genai.dmm.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dmm",
+    "created_at": "2026-09-09T20:15:13.796Z",
+    "updated_at": "2026-09-09T20:15:13.796Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://genai.dmm.com/"
+  },
+  {
+    "id": "avilen",
+    "school_name": "AVILEN（AI・DX研修）",
+    "official_name": null,
+    "description": "AIとDXの戦略コンサルティングから人材育成まで、一気通貫で支援するサービス。AI人材育成研修では、DXリテラシー研修、生成AI研修、データサイエンティスト研修、機械学習講座など、基礎リテラシー獲得から実務応用まで多様なラインナップを提供。ビジネスパーソン向けとエンジニア向けの両方の研修を実施。",
+    "skill_genre": [
+      "genai_dx",
+      "programming",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "AI人材育成研修として多様なラインナップを提供",
+      "DXリテラシー研修、生成AI研修、データサイエンティスト研修、機械学習講座などを実施",
+      "ビジネスパーソン向けとエンジニア向けの両方の研修を用意"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://avilen.co.jp/org/training-business/",
+    "official_url": "https://avilen.co.jp/",
+    "cta_url": "https://avilen.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-avilen",
+    "created_at": "2026-09-09T20:15:29.363Z",
+    "updated_at": "2026-09-09T20:15:29.363Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://avilen.co.jp/"
+  },
+  {
+    "id": "kikagaku",
+    "school_name": "キカガク",
+    "official_name": null,
+    "description": "AI・データサイエンスに特化した社会人向けオンラインスクール。プロフェッショナル講師による1on1サポートを通じて、実務で活躍できるスキルを習得できます。DX・AI人材育成を軸に、個人の活躍と企業のDX・AI推進を実現します。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロフェッショナル講師による1on1サポート",
+      "AI・データサイエンスの実務スキル習得",
+      "DX・AI人材育成に特化したカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.kikagaku.co.jp/personal",
+    "official_url": "https://www.kikagaku.co.jp/",
+    "cta_url": "https://www.kikagaku.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kikagaku",
+    "created_at": "2026-09-09T20:15:49.157Z",
+    "updated_at": "2026-09-09T20:15:49.157Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.kikagaku.co.jp/"
+  },
+  {
+    "id": "crowdworks",
+    "school_name": "クラウドワークス アカデミー",
+    "official_name": "株式会社クラウドワークス",
+    "description": "クラウドワークスが運営する副業・フリーランス向けオンラインスクール。動画編集、Webライティング、Webデザイン、Webサイト制作、ビジネススキル、仕事獲得、生成AIなど約30のスキルアップ講座を提供。現役メンターによる手厚いサポート、同期生限定のコミュニティ、24時間いつでも学習可能な環境が特徴。",
+    "skill_genre": [
+      "video_editing",
+      "web_marketing",
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "フリーランス"
+    ],
+    "price": {
+      "display": "39,600円",
+      "min_yen": 39600,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "講座",
+        "amount": 39600,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役メンターによる個別サポートと何度でも質問・相談可能",
+      "同期生限定のチャットグループによるコミュニティ型学習環境",
+      "クラウドワークスのデータに基づくカリキュラムで副業・フリーランスが稼ぐことに特化",
+      "個別面談でキャリア支援を実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://academy.crowdworks.jp/",
+    "cta_url": "https://academy.crowdworks.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-crowdworks",
+    "created_at": "2026-09-09T20:16:15.493Z",
+    "updated_at": "2026-09-09T20:16:15.493Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://academy.crowdworks.jp/"
+  },
+  {
+    "id": "ksknet",
+    "school_name": "日建学院",
+    "official_name": "株式会社建築資料研究社",
+    "description": "建築・不動産・建設・税務・ビジネス・介護福祉など、多数の資格取得講座を提供する総合教育機関。建築士、宅建、施工管理技士など業界標準の資格を中心に、50年以上の合格実績を有する。全国47都道府県に学校を展開し、通学・オンラインの双方に対応。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "建築士・宅建・施工管理技士等、業界標準の資格を網羅",
+      "全国47都道府県に学校を展開",
+      "通学とオンラインの双方に対応",
+      "50年以上の合格実績"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.ksknet.co.jp/nikken/guidance/index.aspx",
+    "official_url": "https://www.ksknet.co.jp/nikken/",
+    "cta_url": "https://www.ksknet.co.jp/nikken/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ksknet",
+    "created_at": "2026-09-09T20:16:42.160Z",
+    "updated_at": "2026-09-09T20:16:42.160Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.ksknet.co.jp/nikken/"
+  },
+  {
+    "id": "shikaku",
+    "school_name": "総合資格学院",
+    "official_name": null,
+    "description": "建築系資格（1級建築士、2級建築士、構造設計1級建築士等）、施工管理系資格（建築施工管理技士、土木施工管理技士等）、不動産系資格（宅建士、賃貸不動産経営管理士）、インテリア系資格（インテリアコーディネーター）等の対面指導講座を提供する。プロの講師陣による対面指導、オリジナル教材、設計製図指導、受講生サポートが特徴。全国に教室を展開している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "北海道",
+      "熊本県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "対面指導による講座提供",
+      "プロの講師陣による指導",
+      "オリジナル教材を使用",
+      "設計製図指導が充実",
+      "全国に教室展開"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.shikaku.co.jp/course/",
+    "official_url": "https://www.shikaku.co.jp/",
+    "cta_url": "https://www.shikaku.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shikaku",
+    "created_at": "2026-09-09T20:17:10.763Z",
+    "updated_at": "2026-09-09T20:17:10.763Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.shikaku.co.jp/"
+  },
+  {
+    "id": "foresight",
+    "school_name": "フォーサイト",
+    "official_name": null,
+    "description": "行政書士、宅建、社労士などの法律系・ビジネス系・会計・金融・IT系資格試験対策講座を提供するeラーニング企業。スマホで利用可能な講義・テキスト・問題集と、合格点に絞った効率的なカリキュラムが特徴。45万人以上が受講している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "41,360円〜",
+      "min_yen": 41360,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "宅建士（宅地建物取引士）講座バリューセット1",
+        "amount": 57530,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "簿記2級・3級講座バリューセット2",
+        "amount": 41360,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンション管理士・管理業務主任者講座バリューセット1",
+        "amount": 56320,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "スマートフォンでテキスト・講義・問題集が全て利用可能",
+      "膨大な試験範囲から合格点に必要な知識に絞った学習内容",
+      "経験豊富な講師陣によるサポート体制",
+      "ダブルライセンス割引制度で最大10,000円の割引"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.foresight.jp/biz/price/",
+    "official_url": "https://www.foresight.jp/",
+    "cta_url": "https://www.foresight.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-foresight",
+    "created_at": "2026-09-09T20:17:27.562Z",
+    "updated_at": "2026-09-09T20:17:27.562Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.foresight.jp/"
+  },
+  {
+    "id": "crear-ac",
+    "school_name": "クレアール",
+    "official_name": null,
+    "description": "資格指導歴57年のWeb通信専用スクール。学習範囲を絞り効率的に勉強できる「非常識合格法」を採用し、短期合格を実現。公認会計士、税理士、簿記検定、司法書士、公務員、社会保険労務士、行政書士、中小企業診断士、宅地建物取引士、ファイナンシャルプランナー、情報処理など多数の資格講座を開講。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "Web通信専用で自分のペースで学習できる",
+      "非常識合格法による効率的な学習",
+      "HDI格付ベンチマーク2部門で最高評価を獲得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.crear-ac.co.jp/cpa/",
+    "official_url": "https://www.crear-ac.co.jp/",
+    "cta_url": "https://www.crear-ac.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-crear-ac",
+    "created_at": "2026-09-09T20:17:55.911Z",
+    "updated_at": "2026-09-09T20:17:55.911Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.crear-ac.co.jp/"
+  },
+  {
+    "id": "my-hp",
+    "school_name": "TOP宅建学院",
+    "official_name": "一般社団法人 日本就職支援協会",
+    "description": "宅建士資格取得を目指す通学講座。知識ゼロから短期間での一発合格を掲げており、プロ講師による生講義、個別指導、少人数クラス（5～20名）、Web学び放題などの学習環境を提供。振替授業対応やアクセス複数校舎。合格後の登録実務講習もサポート。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "宅地建物取引士"
+    ],
+    "price": {
+      "display": "160,000円〜",
+      "min_yen": 160000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "一発合格！宅建攻略コース",
+        "amount": 160000,
+        "duration": "全42回～",
+        "kind": "total"
+      },
+      {
+        "label": "ゼロから合格！完璧マスターコース",
+        "amount": 260000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ゼロから合格！栄冠パーフェクトコース",
+        "amount": 260000,
+        "duration": "全63回～",
+        "kind": "total"
+      },
+      {
+        "label": "ゼロから合格！プレミアム個別コース",
+        "amount": 330000,
+        "duration": "全68回～",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "プロ講師による生講義の実施",
+      "個別指導対応で知識ゼロからの学習サポート",
+      "少人数クラス編成（5～20名）",
+      "欠席時の振替授業対応",
+      "Web学習コンテンツで繰り返し学習可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.my-hp.jp/top/",
+    "cta_url": "https://www.my-hp.jp/top/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-my-hp",
+    "created_at": "2026-09-09T20:18:03.954Z",
+    "updated_at": "2026-09-09T20:18:03.954Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.my-hp.jp/top/"
+  },
+  {
+    "id": "shikaku-square",
+    "school_name": "資格スクエア",
+    "official_name": null,
+    "description": "法律系難関資格を中心としたオンライン学習サービス。合格者からの学習法ヒアリングと脳科学を組み合わせた「合格するための正しい学習」をシステム化。最速で問題演習に進める学習設計が特徴。24時間対応の質問・相談環境と個別学習サポートを提供する。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "スマートフォンでいつでもどこでも講義を視聴できる",
+      "24時間対応の質問・相談環境を完備",
+      "合格に必要な内容に絞った効率的なカリキュラム",
+      "難関試験合格者からのヒアリングに基づいた学習法設計"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.shikaku-square.com/mypage/price_lists",
+    "official_url": "https://www.shikaku-square.com/",
+    "cta_url": "https://www.shikaku-square.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shikaku-square",
+    "created_at": "2026-09-09T20:18:27.732Z",
+    "updated_at": "2026-09-09T20:18:27.732Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.shikaku-square.com/"
+  },
+  {
+    "id": "ms-engineer",
+    "school_name": "Ms.Engineer",
+    "official_name": null,
+    "description": "女性向けのAI・ITスキルブートキャンプ。未経験から最短8ヶ月でAIエンジニア、PM/PMO、ITサポートなどの職種を目指せる。リモートワーク対応で、基礎学習・ライブ授業・チーム開発ワークショップの3ステップで実務スキルを習得。経産省認定の高度IT人材育成プログラムで、最大64万円の給付金対象。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AIエンジニア",
+      "PM",
+      "PMO",
+      "ITサポート"
+    ],
+    "price": {
+      "display": "654,500円〜",
+      "min_yen": 654500,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "AIコーディングブートキャンプ超集中コース",
+        "amount": 654500,
+        "duration": "6ヶ月以内",
+        "kind": "total"
+      },
+      {
+        "label": "AIコーディングブートキャンプ集中コース",
+        "amount": 748000,
+        "duration": "9ヶ月以内",
+        "kind": "total"
+      },
+      {
+        "label": "AIコーディングブートキャンプスタンダードコース",
+        "amount": 858000,
+        "duration": "12ヶ月以内",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "受講生の約9割が完全未経験からスタート",
+      "ライブ授業で不明点をその場で解消し、チーム開発ワークショップで実務スキルを習得",
+      "実践型AI開発チーム「DAIVE」に所属可能で、在宅でAI・ITプロジェクトに参画",
+      "入会金55,000円、給付金で実質13〜21万円まで負担軽減"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://ms-engineer.jp/",
+    "cta_url": "https://ms-engineer.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ms-engineer",
+    "created_at": "2026-09-09T20:18:36.536Z",
+    "updated_at": "2026-09-09T20:18:36.536Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://ms-engineer.jp/"
+  },
+  {
+    "id": "programmercollege",
+    "school_name": "プログラマカレッジ",
+    "official_name": null,
+    "description": "20代向けの無料オンラインプログラミングスクール。未経験から最短60日間でITエンジニアとしての就職を目指す。プログラマーコースとクラウドエンジニアコースを提供。元エンジニアの講師とキャリアアドバイザーが3ヶ月間学習と就職活動をサポート。企業からの協賛金により完全無料で運営。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "0円〜",
+      "min_yen": 0,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "プログラマーコース",
+        "amount": 0,
+        "duration": "最短60日間",
+        "kind": "total"
+      },
+      {
+        "label": "クラウドエンジニアコース",
+        "amount": 0,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "元エンジニアの講師が全員在籍し、チャットやQ&A掲示板で質問対応",
+      "キャリアアドバイザーが3ヶ月間伴走して学習と就職活動をサポート",
+      "4000社以上の就職先企業を保有しており就職機会が豊富",
+      "Oracle Java資格取得の受験料は負担（取得後の就職内定時）",
+      "プログラマーコースではHTML/CSS、JavaScript、PHP、Java、Rubyなど基礎から実践まで学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "area_detail_url": "https://programmercollege.jp/access",
+    "official_url": "https://programmercollege.jp/",
+    "cta_url": "https://programmercollege.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-programmercollege",
+    "created_at": "2026-09-09T20:18:52.637Z",
+    "updated_at": "2026-09-09T20:18:52.637Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://programmercollege.jp/"
+  },
+  {
+    "id": "uzuz-college",
+    "school_name": "ウズウズカレッジ",
+    "official_name": null,
+    "description": "IT/AIスキルの学習とキャリアサポートを提供するサービス。個人向けではIT転職エージェントとITスクール（CCNA、LinuC、AWS、Javaなどのコース）を、法人向けではグループ研修、1on1研修、人材紹介サービスを展開。未経験からのエンジニア転職や実践的なITスキル習得をサポートしている。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "IT転職エージェントによる就職・転職サポート",
+      "CCNA、LinuC、AWS、Javaなど複数の認定資格コース",
+      "1,500以上の教材コンテンツを提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://uzuz-college.jp/cus/",
+    "official_url": "https://uzuz-college.jp/",
+    "cta_url": "https://uzuz-college.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-uzuz-college",
+    "created_at": "2026-09-09T20:19:20.639Z",
+    "updated_at": "2026-09-09T20:19:20.639Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://uzuz-college.jp/"
+  },
+  {
+    "id": "tech-boost",
+    "school_name": "tech boost",
+    "official_name": "株式会社Branding Career",
+    "description": "未経験からフリーランスエンジニアを目指すための完全オンラインのプログラミングスクール。現役エンジニアがメンターとして指導し、オリジナルのWebアプリケーション作成を通じて実践的なスキルを習得。転職支援だけでなく、独立支援サービスとの連携により卒業後のキャリアアップまでサポート。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "フリーランスエンジニア",
+      "CTO",
+      "PM"
+    ],
+    "price": {
+      "display": "625,020円〜",
+      "min_yen": 625020,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ブーストコース (Ruby・PHP)",
+        "amount": 625020,
+        "duration": "最大6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ブーストコース (Java)",
+        "amount": 1083720,
+        "duration": "最大10ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ブーストコース (JavaScript＋PHP)",
+        "amount": 916630,
+        "duration": "9ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役エンジニアによるメンター指導",
+      "オリジナルのWebアプリケーション作成",
+      "受講生コミュニティと勉強会の実施",
+      "独立支援サービスとの連携"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://tech-boost.jp/",
+    "cta_url": "https://tech-boost.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tech-boost",
+    "created_at": "2026-09-09T20:19:32.492Z",
+    "updated_at": "2026-09-09T20:19:32.492Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://tech-boost.jp/"
+  },
+  {
+    "id": "gsacademy-2",
+    "school_name": "G's ACADEMY（ジーズアカデミー）",
+    "official_name": null,
+    "description": "プロダクトのリリースを卒業要件とする、6ヶ月間の起業家養成エンジニア学校。テクノロジーを武器に、自分たちが作りたい未来や課題解決のプロダクトを世に出すまでを学ぶ。AIを使い倒しながら、メンターとともに高速で試行錯誤を繰り返し、身体でテクノロジーを理解する実践的な学習が特徴。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア",
+      "フロントエンドエンジニア",
+      "起業家",
+      "PdM"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロダクトリリースが卒業要件",
+      "AIを活用した実践的な学習",
+      "メンターによるプロフェッショナルなサポート",
+      "東京・福岡での通学またはリモート受講が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://gsacademy.jp/course/",
+    "official_url": "https://gsacademy.jp/",
+    "cta_url": "https://gsacademy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-gsacademy-2",
+    "created_at": "2026-09-09T20:19:43.966Z",
+    "updated_at": "2026-09-09T20:19:43.966Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://gsacademy.jp/"
+  },
+  {
+    "id": "japan-design",
+    "school_name": "日本デザインスクール",
+    "official_name": null,
+    "description": "未経験から最短45日でプロレベルのWEBデザインスキルが身につくオンラインスクール。現場で使えるスキルに特化したカリキュラムで、Photoshopの基本からホームページ制作までを学ぶ。全10レッスンを通じて、バナー制作、写真加工、オリジナルHP制作などの実務スキルを習得。受講生の約8割は未経験からのスタート。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "WEBデザイナー",
+      "インハウスデザイナー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役デザイナーによるZOOM添削が受けられる",
+      "チャットサポーターによる質問対応と励ましのサポート",
+      "全国の受講生とチーム制度で週1回以上の交流会・勉強会に参加できる",
+      "卒業後はゼロイチクラブコミュニティで就職・転職・案件獲得の勉強会に参加可能",
+      "実務案件紹介サービス「ANKENの木」で初心者でもスキルや実績を積める"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://japan-design.jp/lp/dsfe_2k/",
+    "official_url": "https://japan-design.jp/no1-design-school/",
+    "cta_url": "https://japan-design.jp/no1-design-school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-japan-design",
+    "created_at": "2026-09-09T20:20:09.467Z",
+    "updated_at": "2026-09-09T20:20:09.467Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://japan-design.jp/no1-design-school/"
+  },
+  {
+    "id": "nests",
+    "school_name": "nests",
+    "official_name": null,
+    "description": "制作会社がプロデュースするAI×デザイン実践スクール。Claude等の生成AIを使いこなすデザイン実務を、実案件を扱うチームから学べます。AI時代のデザイン力をスキルアップしたい現役・準現役向けのスクールです。",
+    "skill_genre": [
+      "webdesign",
+      "uiux",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "novice",
+    "career_paths": [
+      "Webディレクター"
+    ],
+    "price": {
+      "display": "75,000円",
+      "min_yen": 75000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "オンデマンド",
+        "amount": 4980,
+        "duration": null,
+        "kind": null
+      },
+      {
+        "label": "サポートコース",
+        "amount": 9800,
+        "duration": "1年",
+        "kind": "monthly"
+      },
+      {
+        "label": "サポートコース（月契約）",
+        "amount": 12800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "パーソナルコース",
+        "amount": 75000,
+        "duration": "全5回",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "実案件を扱うチームによる現場での学び",
+      "Claude等の生成AIをデザイン実務で活かす方法を習得",
+      "月2回の面談と随時のチャットサポート（サポートコース）",
+      "1対1のマンツーマン指導（パーソナルコース）",
+      "転職・案件相談に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://nests.jp/access/",
+    "official_url": "https://nests.jp/",
+    "cta_url": "https://nests.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nests",
+    "created_at": "2026-09-09T20:20:26.397Z",
+    "updated_at": "2026-09-09T20:20:26.397Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://nests.jp/"
+  },
+  {
+    "id": "honmachi-seisakusyo",
+    "school_name": "本町デザインスクール",
+    "official_name": "株式会社大阪本町制作所",
+    "description": "デザイン事務所が設立し運営するデザインスクール。業界経歴25年目の代表による完全マンツーマン指導。グラフィックデザイン・Webデザインの基礎から応用まで、論理的なデザイン教育を提供。卒業後も無期限のサポート対応。",
+    "skill_genre": [
+      "webdesign",
+      "uiux"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "グラフィックデザイナー"
+    ],
+    "price": {
+      "display": "136,800円〜",
+      "min_yen": 136800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Web & グラフィックデザインコース",
+        "amount": 378000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "グラフィックデザイナーコース",
+        "amount": 217600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Webデザイナーコース",
+        "amount": 345600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Webデザイナーコース（Webコーディングなし）",
+        "amount": 243200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "プロデザイナー特別コース",
+        "amount": 136800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "月8回プラン",
+        "amount": 22800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月4回プラン",
+        "amount": 16500,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "完全マンツーマンの個別授業で45分または90分の講義",
+      "オンラインと教室での受講が選択可能",
+      "実務想定の課題制作と添削を通じたデザイン力習得",
+      "卒業後も無期限のサポートで添削・質問・相談に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://school.honmachi-seisakusyo.com/",
+    "cta_url": "https://school.honmachi-seisakusyo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-honmachi-seisakusyo",
+    "created_at": "2026-09-09T20:20:35.021Z",
+    "updated_at": "2026-09-09T20:20:35.021Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://school.honmachi-seisakusyo.com/"
   }
 ]

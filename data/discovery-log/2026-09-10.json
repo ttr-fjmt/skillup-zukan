@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-09-10",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "dmm",
+      "avilen",
+      "kikagaku",
+      "crowdworks"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "genre": "certification",
+    "new_school_ids": [
+      "ksknet",
+      "shikaku",
+      "foresight",
+      "crear-ac",
+      "my-hp",
+      "shikaku-square"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "genre": "programming",
+    "new_school_ids": [
+      "ms-engineer",
+      "programmercollege",
+      "uzuz-college",
+      "tech-boost",
+      "gsacademy-2"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "japan-design",
+      "nests",
+      "honmachi-seisakusyo"
+    ]
+  }
+]

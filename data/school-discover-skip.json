@@ -194,5 +194,75 @@
     "genre": "web_marketing",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-08T20:14:11.306Z"
+  },
+  "DMM 生成AI CAMP DX研修（法人向け）": {
+    "name": "DMM 生成AI CAMP DX研修（法人向け）",
+    "website": "https://business.web-camp.io/",
+    "genre": "genai_dx",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "STANDARD DXリテラシー講座": {
+    "name": "STANDARD DXリテラシー講座",
+    "website": "https://standard-dx.com/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "資格スクール大栄": {
+    "name": "資格スクール大栄",
+    "website": "https://www.daiei-ed.co.jp/",
+    "genre": "certification",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "Famm（ファム）WEBデザインスクール": {
+    "name": "Famm（ファム）WEBデザインスクール",
+    "website": "https://famm.us/ja/school",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "DPro（ディープロ）": {
+    "name": "DPro（ディープロ）",
+    "website": "https://dpro.co.jp",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "ZERUQ ACADEMY（ゼルクアカデミー）": {
+    "name": "ZERUQ ACADEMY（ゼルクアカデミー）",
+    "website": "https://zeruq.jp",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "ネットビジョンアカデミー": {
+    "name": "ネットビジョンアカデミー",
+    "website": "https://netvision-ac.com",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "Campus（キャンパス）Webデザインスクール": {
+    "name": "Campus（キャンパス）Webデザインスクール",
+    "website": "https://campus-corp.co.jp/service/school/",
+    "genre": "webdesign",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "商工会議所パソコン教室（AIビジネス活用講座）": {
+    "name": "商工会議所パソコン教室（AIビジネス活用講座）",
+    "website": "https://www.pcci-school.com/",
+    "genre": "genai_dx",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "ZeroPlus（ゼロプラス）": {
+    "name": "ZeroPlus（ゼロプラス）",
+    "website": "https://zeroplus.co.jp",
+    "genre": "programming",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-09T20:15:01.814Z"
   }
 }
