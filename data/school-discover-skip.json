@@ -264,5 +264,33 @@
     "genre": "programming",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-09T20:15:01.814Z"
+  },
+  "日米会話学院": {
+    "name": "日米会話学院",
+    "website": "https://www.nichibei.ac.jp",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-10T20:15:36.776Z"
+  },
+  "NHK国際研修室 通訳・翻訳者養成講座": {
+    "name": "NHK国際研修室 通訳・翻訳者養成講座",
+    "website": "https://www.a.nhk-g.co.jp/kenshu/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-10T20:15:36.776Z"
+  },
+  "KENスクール": {
+    "name": "KENスクール",
+    "website": "https://www.kenschool.jp/webdesign/",
+    "genre": "webdesign",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-10T20:15:36.776Z"
+  },
+  "LINEヤフーテックアカデミー": {
+    "name": "LINEヤフーテックアカデミー",
+    "website": "https://ly-academy.yahoo.co.jp/tech/",
+    "genre": "programming",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-10T20:15:36.776Z"
   }
 }

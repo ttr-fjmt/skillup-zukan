@@ -1,0 +1,63 @@
+[
+  {
+    "date": "2026-09-11",
+    "genre": "language",
+    "new_school_ids": [
+      "berlitz",
+      "nova",
+      "interschool",
+      "issnet",
+      "ensemblefr",
+      "cle-ecole"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "certification",
+    "new_school_ids": [
+      "tokyo-ac",
+      "itojuku"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "programming",
+    "new_school_ids": [
+      "techgym"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "softcampus",
+      "matisse",
+      "fullme",
+      "dezasuta",
+      "webgui"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "uiux",
+    "new_school_ids": [
+      "bo-no"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "sizebook",
+      "digi-make",
+      "dhw-2"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "aijobcolle"
+    ]
+  }
+]

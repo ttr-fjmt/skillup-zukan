@@ -7198,5 +7198,1335 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
     "verified_url": "https://school.honmachi-seisakusyo.com/"
+  },
+  {
+    "id": "berlitz",
+    "school_name": "ベルリッツ",
+    "official_name": null,
+    "description": "140年以上の実績を持つベルリッツ・メソッド®に基づき、日本語を使わず学習言語のみでレッスンを実施。発話とフィードバックを繰り返す実践練習で、実際の場面を想定したカスタマイズレッスンを提供。厳しいトレーニングを通過したプロ教師による高品質なレッスンと、学習目的やレベル別に特化した豊富な教材で、目標達成をサポートする英会話・語学スクール。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "200,000円〜",
+      "min_yen": 200000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "夏の短期集中プラン マンツーマンレッスン（教室／オンライン自由選択）40レッスン 平日昼間時間帯",
+        "amount": 280000,
+        "duration": "2ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "夏の短期集中プラン マンツーマンレッスン（教室／オンライン自由選択）80レッスン 平日昼間時間帯",
+        "amount": 528000,
+        "duration": "4ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "夏の短期集中プラン マンツーマンレッスン（教室／オンライン自由選択）40レッスン 全時間帯",
+        "amount": 320000,
+        "duration": "2ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "夏の短期集中プラン マンツーマンレッスン（教室／オンライン自由選択）80レッスン 全時間帯",
+        "amount": 552000,
+        "duration": "4ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "10日間！超短期集中プラン マンツーマンレッスン（教室／オンライン自由選択）40レッスン 平日昼間時間帯",
+        "amount": 200000,
+        "duration": "2週間",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "埼玉県",
+      "千葉県",
+      "静岡県",
+      "愛知県",
+      "大阪府",
+      "京都府",
+      "兵庫県",
+      "広島県",
+      "岡山県",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "日本語を使わない学習言語のみのレッスン",
+      "ベルリッツ・メソッド®に基づく実践練習",
+      "目指すゴールに応じたレッスンのカスタマイズ",
+      "実際に話すシーンを再現した会話練習",
+      "厳しいトレーニングを通過したプロ教師による指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.berlitz.com/ja-jp/adults/pricing/campaign",
+    "official_url": "https://www.berlitz.com/ja-jp",
+    "cta_url": "https://www.berlitz.com/ja-jp",
+    "cta_type": "direct",
+    "click_tracking_id": "click-berlitz",
+    "created_at": "2026-09-10T20:16:07.921Z",
+    "updated_at": "2026-09-10T20:16:07.921Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.berlitz.com/ja-jp"
+  },
+  {
+    "id": "nova",
+    "school_name": "駅前留学NOVA",
+    "official_name": null,
+    "description": "外国人講師による英会話スクール。通学（296校）、オンライン、ライブ配信、学習アプリの4つの学習方法を組み合わせて提供。初心者から上級者まで対応し、ビジネス、旅行、こども向けなど多様なニーズに対応した英会話教育を展開している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額1,100円〜",
+      "min_yen": 1100,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月謝制",
+        "amount": 11000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "グループレッスン フリープラン 月4回",
+        "amount": 13750,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "NOVA LIVE STATION",
+        "amount": 13200,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "NOVAの英語アプリ",
+        "amount": 1100,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "北海道",
+      "宮城県",
+      "岐阜県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "経験豊富な外国人講師によるレッスン",
+      "レベル別のオリジナル教材",
+      "通学・オンライン・ライブ配信・アプリから選択可能",
+      "4つのレッスン形態を組み合わせて学習効率をアップ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.nova.co.jp/price/",
+    "official_url": "https://www.nova.co.jp/",
+    "cta_url": "https://www.nova.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nova",
+    "created_at": "2026-09-10T20:16:25.906Z",
+    "updated_at": "2026-09-10T20:16:25.906Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.nova.co.jp/"
+  },
+  {
+    "id": "interschool",
+    "school_name": "インタースクール",
+    "official_name": null,
+    "description": "1966年の創設以来、通訳者・翻訳者の育成に特化したスクール。通訳・翻訳エージェンシーのインターグループが運営しており、実務経験豊富なプロフェッショナルを講師として配置。英語・中国語・フランス語・韓国語の複数言語に対応し、通訳・翻訳職人養成から実務スキル習得まで幅広いコースを提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "通訳・翻訳エージェンシーのインターグループによる運営",
+      "実務経験豊富なプロフェッショナルが講師",
+      "複数言語対応（英語・中国語・フランス語・韓国語）",
+      "修了生が政府官公庁・国際機関・メディア・民間企業で活躍"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.interschool.jp/archives/course",
+    "official_url": "https://www.interschool.jp/",
+    "cta_url": "https://www.interschool.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-interschool",
+    "created_at": "2026-09-10T20:16:56.106Z",
+    "updated_at": "2026-09-10T20:16:56.106Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.interschool.jp/"
+  },
+  {
+    "id": "issnet",
+    "school_name": "ISSインスティテュート",
+    "official_name": null,
+    "description": "通訳・翻訳養成学校で、キャリアにつながるプロの語学力を養成しています。英語・中国語の通訳者および翻訳者養成コース、中国語ビジネスコミュニケーションコースを提供。レギュラーコース（4～5ヵ月）、短期集中コース（最短1日から）、eラーニングコースから選択可能。講師からの指導と学習サポート、キャリアサポートを備えています。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "通訳者",
+      "翻訳者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "英語・中国語の通訳者養成コースを提供",
+      "英語・中国語の翻訳者養成コースを提供",
+      "最短1日から受講可能な短期集中コース",
+      "自宅で受講できるeラーニングコース",
+      "キャリアサポートとOJT体験を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.issnet.co.jp/work/system.html",
+    "official_url": "https://www.issnet.co.jp/",
+    "cta_url": "https://www.issnet.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-issnet",
+    "created_at": "2026-09-10T20:17:26.217Z",
+    "updated_at": "2026-09-10T20:17:26.217Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.issnet.co.jp/"
+  },
+  {
+    "id": "ensemblefr",
+    "school_name": "アンサンブル アン フランセ",
+    "official_name": null,
+    "description": "2010年2月開校。日本人のフランス語学習者に特化した教授法を用いたオンラインフランス語スクール。Zoomを使ったマンツーマンレッスンを24時間365日提供。日本人講師と日本語堪能なネイティブ講師が在籍しており、初心者から上級者まで、各種試験対策もサポート。オリジナル教材300以上、ビデオ講座、Podcast配信など充実したサービスを提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "1,500円〜",
+      "min_yen": 1500,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "フランス語集中コース",
+        "amount": 2400,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "通常コース",
+        "amount": 2500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "子供フランス語教室コース",
+        "amount": 3750,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "フランス語会話30分レッスン",
+        "amount": 1500,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマンレッスン（Zoom無料プラン使用）で24時間365日受講可能",
+      "日本人講師と日本語堪能なネイティブ講師が多数在籍",
+      "300以上のオリジナル教材を無料で提供",
+      "DELF・DALFなどの試験対策に対応",
+      "オンラインでの無料カウンセリング・学習サポート提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://ensemblefr.com/course/",
+    "area_detail_url": "https://ensemblefr.com/school/",
+    "official_url": "https://ensemblefr.com/",
+    "cta_url": "https://ensemblefr.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ensemblefr",
+    "created_at": "2026-09-10T20:17:47.053Z",
+    "updated_at": "2026-09-10T20:17:47.053Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://ensemblefr.com/"
+  },
+  {
+    "id": "cle-ecole",
+    "school_name": "クレエコール外国語スクール",
+    "official_name": "Cle Ecole Language School",
+    "description": "神戸・三ノ宮で英語・フランス語・イタリア語・スペイン語・ドイツ語・ロシア語・ポルトガル語・アラビア語・中国語・韓国語・タイ語・ベトナム語・インドネシア語・日本語の全14ヶ国語を学べる外国語スクール。日本語も話すネイティブスピーカーの講師が指導し、初心者から上級者まで対応。グループレッスン・マンツーマンレッスン・各種チケット制など多彩なコースを用意している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "2,915円〜",
+      "min_yen": 2915,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "グループレッスン月謝制（アジア言語）",
+        "amount": 8800,
+        "duration": "60分4回/月",
+        "kind": "monthly"
+      },
+      {
+        "label": "グループレッスン月謝制（欧米言語）",
+        "amount": 10340,
+        "duration": "60分4回/月",
+        "kind": "monthly"
+      },
+      {
+        "label": "グループレッスンチケット制（アジア言語）",
+        "amount": 26950,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "グループレッスンチケット制（欧米言語）",
+        "amount": 30800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "グループレッスンワンパス（アジア言語）",
+        "amount": 2915,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "グループレッスンワンパス（欧米言語）",
+        "amount": 3300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスン月謝制（アジア言語）",
+        "amount": 13090,
+        "duration": "40分4回/月",
+        "kind": "monthly"
+      },
+      {
+        "label": "マンツーマンレッスン月謝制（欧米言語）",
+        "amount": 16060,
+        "duration": "40分4回/月",
+        "kind": "monthly"
+      },
+      {
+        "label": "マンツーマンレッスンチケット制（アジア言語）",
+        "amount": 40810,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスンチケット制（欧米言語）",
+        "amount": 50380,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスンワンパス（アジア言語）",
+        "amount": 3520,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスンワンパス（欧米言語）",
+        "amount": 4290,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "兵庫県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "完全個室の落ち着いた環境でレッスン",
+      "日本語も話すネイティブスピーカーの講師が指導",
+      "入会金無料で1回から受講可能",
+      "グループレッスンは2～4名のセミプライベート",
+      "各線三ノ宮駅から徒歩3分の好立地"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.cle-ecole.com/",
+    "cta_url": "https://www.cle-ecole.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-cle-ecole",
+    "created_at": "2026-09-10T20:17:58.387Z",
+    "updated_at": "2026-09-10T20:17:58.387Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.cle-ecole.com/"
+  },
+  {
+    "id": "tokyo-ac",
+    "school_name": "東京アカデミー",
+    "official_name": null,
+    "description": "公務員試験、教員採用試験、看護師・保健師・助産師などの国家試験対策講座を提供する予備校。講義だけでなく質問対応・個別相談・模試後の振り返り・面接対策など、合格までの学習支援を総合的に実施しています。対面とオンラインの両形式で、同じ目標の仲間との学習空間を提供しています。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "東京都",
+      "熊本県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.tokyo-ac.jp/courses/",
+    "official_url": "https://www.tokyo-ac.jp/",
+    "cta_url": "https://www.tokyo-ac.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tokyo-ac",
+    "created_at": "2026-09-10T20:18:18.005Z",
+    "updated_at": "2026-09-10T20:18:18.005Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.tokyo-ac.jp/"
+  },
+  {
+    "id": "itojuku",
+    "school_name": "伊藤塾",
+    "official_name": "株式会社 法学館",
+    "description": "司法試験、司法書士試験、行政書士試験、公務員試験、宅建士試験、社労士試験、中小企業診断士試験など複数の法律系資格試験対策講座を提供する。合格実績に基づいた教育メソッドを特徴とし、校舎での通学講座およびWEB講座形式で1995年より展開している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.itojuku.co.jp/apply/campaign/index.html",
+    "area_detail_url": "https://www.itojuku.co.jp/itojuku/school/index.html",
+    "official_url": "https://www.itojuku.co.jp/",
+    "cta_url": "https://www.itojuku.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-itojuku",
+    "created_at": "2026-09-10T20:18:42.948Z",
+    "updated_at": "2026-09-10T20:18:42.948Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.itojuku.co.jp/"
+  },
+  {
+    "id": "techgym",
+    "school_name": "テックジム",
+    "official_name": null,
+    "description": "対面・通学型のプログラミングスクール。月額22,000円（入会金33,000円）の定額制で通い放題。自習型のプログラミング学習法を採用し、現役エンジニアのサポートを受けながら教室で実践的に学習できます。200時間でビジネスで使えるプログラミングスキルを習得可能。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "プログラマー"
+    ],
+    "price": {
+      "display": "月額22,000円",
+      "min_yen": 22000,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "通常入会",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "月額制",
+        "amount": 22000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都",
+      "大阪府",
+      "鹿児島県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "自習型のプログラミング学習法で挫折しにくい設計",
+      "現役エンジニアによるマンツーマンサポート",
+      "通い放題・コース取り放題の定額制",
+      "個人の目的に応じた学習ルートを提供",
+      "初心者向けの無料対面講座を毎週開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://techgym.jp/",
+    "cta_url": "https://techgym.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-techgym",
+    "created_at": "2026-09-10T20:18:58.172Z",
+    "updated_at": "2026-09-10T20:18:58.172Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://techgym.jp/"
+  },
+  {
+    "id": "softcampus",
+    "school_name": "パソコンスクール ソフトキャンパス",
+    "official_name": null,
+    "description": "DTPデザインの基礎から実践までを学べるマンツーマン講座。Photoshop、Illustrator、Indesignなどのグラフィックソフトの操作スキルだけでなく、フォント・レイアウト・デザインセンスといった実務的なグラフィックデザインスキルを習得できます。通学とオンラインの両形式に対応しており、初心者から仕事でスキルアップが必要な経験者まで幅広い受講層に対応しています。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "DTPデザイナー",
+      "DTPオペレーター"
+    ],
+    "price": {
+      "display": "97,900円〜",
+      "min_yen": 97900,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Canva講座",
+        "amount": 97900,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Photoshop基本講座",
+        "amount": 97900,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Photoshop応用講座",
+        "amount": 100100,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator基礎講座",
+        "amount": 97900,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator応用講座",
+        "amount": 100100,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Indesign講座",
+        "amount": 97900,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "ロゴ制作演習",
+        "amount": 104500,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "広告制作演習",
+        "amount": 104500,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "フォント・レイアウト演習",
+        "amount": 104500,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "バナー制作演習",
+        "amount": 104500,
+        "duration": "約1ヶ月（10コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe認定プロフェッショナル資格取得コース",
+        "amount": 147620,
+        "duration": "約4ヶ月（16コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Photoshopエキスパート資格取得コース",
+        "amount": 151140,
+        "duration": "約4ヶ月（16コマ）",
+        "kind": "total"
+      },
+      {
+        "label": "Illustratorエキスパート資格取得コース",
+        "amount": 151140,
+        "duration": "約4ヶ月（16コマ）",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "宮城県",
+      "青森県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "マンツーマン授業で講師を独り占めできるため質の高い作品制作が可能",
+      "通学・オンライン・職場など複数の受講形式に対応し時間の融通が利く",
+      "デザイン理論とDTPソフトスキルの両方を学べるカリキュラム",
+      "実務で困っている場合は仕事のデータをサポート材料にして学習できる",
+      "就職や転職に向けたポートフォリオ制作や資格対策に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://softcampus.co.jp/map/",
+    "official_url": "https://softcampus.co.jp/purpose-dtp/",
+    "cta_url": "https://softcampus.co.jp/purpose-dtp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-softcampus",
+    "created_at": "2026-09-10T20:19:21.474Z",
+    "updated_at": "2026-09-10T20:19:21.474Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://softcampus.co.jp/purpose-dtp/"
+  },
+  {
+    "id": "matisse",
+    "school_name": "マチスアカデミー",
+    "official_name": null,
+    "description": "CADやWeb、DTP、ITなどのビジネスパソコンスクール。Word、Excel、PowerPoint等のビジネスオフィス業務向けプログラムから、機械CADや建築CAD、ウェブデザイン、ウェブプログラミング、Java、C、PHPなどのプログラミング言語まで、幅広いスキル習得が可能です。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ビジネスオフィス向けカリキュラム（Word、Excel、PowerPoint、Access、VBA対応）",
+      "機械CADと建築CADの両方を提供",
+      "ウェブデザインとウェブプログラミングの学習",
+      "Java、C、PHPなどのプログラミング言語スキル習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "area_detail_url": "http://academy.matisse.co.jp/map/akihabara.html",
+    "official_url": "http://academy.matisse.co.jp/",
+    "cta_url": "http://academy.matisse.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-matisse",
+    "created_at": "2026-09-10T20:19:34.123Z",
+    "updated_at": "2026-09-10T20:19:34.123Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "http://academy.matisse.co.jp/"
+  },
+  {
+    "id": "fullme",
+    "school_name": "Fullme（フルミー）",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://fullme.jp/",
+    "cta_url": "https://fullme.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-fullme",
+    "created_at": "2026-09-10T20:19:36.802Z",
+    "updated_at": "2026-09-10T20:19:36.802Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://fullme.jp/"
+  },
+  {
+    "id": "dezasuta",
+    "school_name": "デザスタ",
+    "official_name": null,
+    "description": "Webデザイン・コーディングとグラフィックデザインが学べるオンラインスクール。3～8名の少人数制で現役講師によるマンツーマンサポートを提供。即座にアウトプットする実践型カリキュラムで、バナーから企業サイト、ロゴやチラシまで制作できるスキルを習得できます。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "フリーランス",
+      "Webデザイナー",
+      "マーケター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "3～8名の少人数制オンライン授業により講師の丁寧な指導が可能",
+      "チャットとZoomによる24時間対応のマンツーマンサポートで質問回数に制限がない",
+      "現役かつ実務経験豊富な講師陣による最新の情報・技術の提供",
+      "各講義後の課題を通じた即座のアウトプットによる実践的な学習環境"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://dezasuta.com/course.php",
+    "official_url": "https://dezasuta.com/",
+    "cta_url": "https://dezasuta.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dezasuta",
+    "created_at": "2026-09-10T20:20:04.133Z",
+    "updated_at": "2026-09-10T20:20:04.133Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://dezasuta.com/"
+  },
+  {
+    "id": "webgui",
+    "school_name": "WEB食いオンラインスクール",
+    "official_name": "株式会社田舎でIT",
+    "description": "デザインとコーディングの両方をビュッフェ形式で学べるオンラインスクール。現場経験豊富なプロ講師による回数無制限の質問・添削サポートが特徴。バナー作成からWebデザイン、HTML/CSS/JavaScript、WordPress制作、案件獲得支援まで、実務的なスキルをマルチに習得できます。",
+    "skill_genre": [
+      "webdesign",
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額11,000円",
+      "min_yen": 11000,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "WEB食いオンラインスクール",
+        "amount": 69800,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "月額費用",
+        "amount": 11000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "回数無制限の質問・添削サポート",
+      "個人専用ルームで他の受講生を気にせず学習",
+      "ココナラやクラウドワークスなどでの案件獲得支援",
+      "ポートフォリオ制作のアドバイス",
+      "テキスト・動画教材による自己学習スタイル"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://webgui.jp/lp-school/",
+    "cta_url": "https://webgui.jp/lp-school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-webgui",
+    "created_at": "2026-09-10T20:20:13.435Z",
+    "updated_at": "2026-09-10T20:20:13.435Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://webgui.jp/lp-school/"
+  },
+  {
+    "id": "bo-no",
+    "school_name": "BONO",
+    "official_name": null,
+    "description": "転職実績のある実践的なコースカリキュラムを提供するデザイン学習サービス。UI/UXの3つの基礎を身につけ、ポートフォリオ作成を目指します。未経験からUI/UXデザイナーへの転職ロードマップが用意されており、オンライン形式で自分のペースで学習できるコミュニティ型プラットフォーム。",
+    "skill_genre": [
+      "uiux",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "UI/UXデザイナー"
+    ],
+    "price": {
+      "display": "14,800円〜",
+      "min_yen": 14800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "スタンダード",
+        "amount": 6800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "スタンダード（3ヶ月継続）",
+        "amount": 5800,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "フィードバック",
+        "amount": 13800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "フィードバック（3ヶ月継続）",
+        "amount": 13800,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "単発フィードバック",
+        "amount": 14800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "フィードバック&メンタリングβ",
+        "amount": 32800,
+        "duration": "1ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "UI/UXの転職実績あり",
+      "コミュニティ参加と質問・相談が無制限",
+      "プロのフィードバックとポートフォリオ添削に対応",
+      "月1回の勉強会に参加可能",
+      "Figmaなどのデザインツール学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.bo-no.design/",
+    "cta_url": "https://www.bo-no.design/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-bo-no",
+    "created_at": "2026-09-10T20:20:24.025Z",
+    "updated_at": "2026-09-10T20:20:24.025Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.bo-no.design/"
+  },
+  {
+    "id": "sizebook",
+    "school_name": "Global Marketing Academy（GMA）",
+    "official_name": null,
+    "description": "Webマーケティング業界未経験者向けの実践的なカリキュラムを提供するスクール。現役のWebマーケターが指導し、即戦力として活躍できるスキルと知識の習得を目指す。充実した転職支援が特徴で、基礎講座から実践講座まで複数コースが用意されている。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "528,000円〜",
+      "min_yen": 528000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "実践コース",
+        "amount": 528000,
+        "duration": "2～3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "総合実践コース",
+        "amount": 638000,
+        "duration": "3～6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Proコース",
+        "amount": 858000,
+        "duration": "4～6ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役Webマーケターによる指導",
+      "基礎講座と実践講座の提供",
+      "1対1の個別講座対応",
+      "チャットでの質問し放題",
+      "転職サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://gma.sizebook.co.jp/",
+    "cta_url": "https://gma.sizebook.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sizebook",
+    "created_at": "2026-09-10T20:20:31.575Z",
+    "updated_at": "2026-09-10T20:20:31.575Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://gma.sizebook.co.jp/"
+  },
+  {
+    "id": "digi-make",
+    "school_name": "デジマケスクール",
+    "official_name": null,
+    "description": "現役Webマーケターによる監修で、SEO対策、リスティング広告、SNS運用、コンテンツマーケティング、アナリティクス解析などWebマーケティングの主要分野を網羅。1動画15分以内で学習でき、Google広告認定資格などの試験対策も可能。未経験からでも実務レベルのスキルが身につく月額制のオンライン講座です。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "月額2,980円",
+      "min_yen": 2980,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 2980,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役Webマーケターによる監修カリキュラム",
+      "Google広告認定資格などの試験対策を提供",
+      "1動画15分以内で移動時間でも学習可能",
+      "確認テスト実施により学習成果を確認"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://digi-make.jp/",
+    "cta_url": "https://digi-make.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-digi-make",
+    "created_at": "2026-09-10T20:20:38.969Z",
+    "updated_at": "2026-09-10T20:20:38.969Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://digi-make.jp/"
+  },
+  {
+    "id": "dhw-2",
+    "school_name": "デジハリ・オンラインスクール Webマーケティング講座",
+    "official_name": null,
+    "description": "SEO対策、リスティング広告、アクセス解析など、Webサイトに人を集めるための具体的な手法を学ぶ講座。Web担当者に必要な知識と、PDCAを回すための制作スキルまでをオンラインで習得できます。「企業のWeb担当を任されたが何から始めればいいかわからない」という方や、広告代理店・制作会社と渡り合える基礎知識を効率的に学びたい方に最適です。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "11,000円〜",
+      "min_yen": 11000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Web担当者 養成講座",
+        "amount": 203500,
+        "duration": "全6カ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webライティング講座",
+        "amount": 41800,
+        "duration": "全2カ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webマーケティング基礎講座",
+        "amount": 11000,
+        "duration": "全1カ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webディレクター講座",
+        "amount": 53900,
+        "duration": "全2カ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "講義形式のカリキュラムが中心でスキマ時間での学習が可能",
+      "通常の講座内容や受講期間のカスタマイズに対応可能（法人向け）",
+      "リモート勤務や一般企業のマーケティング部門など活躍の場が多い",
+      "受講中だけでなく受講後のキャリアサポート体制がある"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://online.dhw.co.jp/course/web_marketing_top/",
+    "cta_url": "https://online.dhw.co.jp/course/web_marketing_top/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dhw-2",
+    "created_at": "2026-09-10T20:20:47.715Z",
+    "updated_at": "2026-09-10T20:20:47.715Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://online.dhw.co.jp/course/web_marketing_top/"
+  },
+  {
+    "id": "aijobcolle",
+    "school_name": "AIジョブカレ",
+    "official_name": null,
+    "description": "AI（人工知能）活用に必要なプログラミング（Python）をはじめ、データの前処理やアルゴリズム、パラメーターチューニングなどを現役AIエンジニア・データサイエンティストから体系的に学べるAI技術専門の教育講座。JDLA E資格取得に向けた講座を提供。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "229,900円",
+      "min_yen": 229900,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "E資格対応パッケージプラン",
+        "amount": 229900,
+        "duration": "6ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "CTOクラスの現役データサイエンティストが講師",
+      "エンジニア未経験から学べる充実したカリキュラム",
+      "日本ディープラーニング協会認定講座"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.aijobcolle.com/",
+    "cta_url": "https://www.aijobcolle.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-aijobcolle",
+    "created_at": "2026-09-10T20:20:55.774Z",
+    "updated_at": "2026-09-10T20:20:55.774Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.aijobcolle.com/"
   }
 ]
