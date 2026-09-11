@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2026-09-12",
+    "genre": "certification",
+    "new_school_ids": [
+      "sat-co",
+      "sanko-fukushi",
+      "ias"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "genre": "programming",
+    "new_school_ids": [
+      "tokyoitschool",
+      "recurrent-2",
+      "it-skill-academy"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "mirainnove",
+      "dotabis",
+      "camp-skill"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "shift-ai",
+      "lifeshiftlab",
+      "horiemon",
+      "netlearning"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "genre": "language",
+    "new_school_ids": [
+      "gaba",
+      "strail-english",
+      "englishcompany",
+      "toraiz",
+      "eigosapuri",
+      "aeonet"
+    ]
+  }
+]

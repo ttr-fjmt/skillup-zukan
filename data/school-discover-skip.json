@@ -292,5 +292,47 @@
     "genre": "programming",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-10T20:15:36.776Z"
+  },
+  "日本エネルギー管理センター": {
+    "name": "日本エネルギー管理センター",
+    "website": "https://www.japan-ems.jp",
+    "genre": "certification",
+    "reason": "portal_or_marketplace",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "studio US（スタジオアス）": {
+    "name": "studio US（スタジオアス）",
+    "website": "https://studio-us.jp/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "アイザック TOEIC対策スクール": {
+    "name": "アイザック TOEIC対策スクール",
+    "website": "https://isaac-education.co.jp/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "スパルタ英会話": {
+    "name": "スパルタ英会話",
+    "website": "https://sparta-english.jp/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "日米英語学院": {
+    "name": "日米英語学院",
+    "website": "https://www.nichibeieigo.jp/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "JCKアカデミー語学教室": {
+    "name": "JCKアカデミー語学教室",
+    "website": "http://www.jck-academy.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-11T20:16:47.814Z"
   }
 }

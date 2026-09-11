@@ -8528,5 +8528,1349 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
     "verified_url": "https://www.aijobcolle.com/"
+  },
+  {
+    "id": "sat-co",
+    "school_name": "SAT",
+    "official_name": null,
+    "description": "現場・技術系資格の専門スクール。建築物環境衛生管理技術者、危険物取扱者などの設備系資格、建築施工管理技士などの施工管理系資格、電験3種などの電気系資格、職長・安全衛生責任者などの安全衛生教育、およびスキルアップ講座を幅広く提供。Eラーニング形式での通信講座が中心。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.sat-co.info/ec/files/corp-courses_HP.pdf",
+    "official_url": "https://www.sat-co.info/",
+    "cta_url": "https://www.sat-co.info/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sat-co",
+    "created_at": "2026-09-11T20:17:12.556Z",
+    "updated_at": "2026-09-11T20:17:12.556Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.sat-co.info/"
+  },
+  {
+    "id": "sanko-fukushi",
+    "school_name": "三幸福祉カレッジ",
+    "official_name": null,
+    "description": "2000年開校以来、介護職員初任者研修・実務者研修など介護関連の資格取得講座を提供しているスクール。全国520教室で開講しており、働きながら学びやすい環境を整備。介護福祉士、看護師の現場経験が豊富な講師720名以上が専門的な内容を指導。修了生向けに無料の就職サポートを実施し、キャリアアドバイザーによる求人紹介や面接サポートを提供。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "介護職員",
+      "ケアマネジャー"
+    ],
+    "price": {
+      "display": "109,670円",
+      "min_yen": 109670,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "初任者研修",
+        "amount": null,
+        "duration": "1～4か月",
+        "kind": "total"
+      },
+      {
+        "label": "実務者研修",
+        "amount": 109670,
+        "duration": "4～6か月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "北海道",
+      "宮城県",
+      "富山県",
+      "石川県",
+      "福井県",
+      "岐阜県",
+      "静岡県",
+      "愛知県",
+      "三重県",
+      "大阪府",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "全国520教室で開講、駅チカや事業所など通学しやすい環境",
+      "無料の就職支援部が専任キャリアアドバイザーによる求人紹介から面接サポートを実施",
+      "通信と通学を組み合わせた学習形式で働きながら学べる環境を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.sanko-fukushi.com/",
+    "cta_url": "https://www.sanko-fukushi.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sanko-fukushi",
+    "created_at": "2026-09-11T20:17:21.869Z",
+    "updated_at": "2026-09-11T20:17:21.869Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.sanko-fukushi.com/"
+  },
+  {
+    "id": "ias",
+    "school_name": "地域開発研究所",
+    "official_name": null,
+    "description": "昭和40年に建設省（現国土交通省）より財団法人として認可されたスクール。施工管理技士試験（土木、建築、管工事、電気工事、電気通信工事）の受検講習会と参考書の提供を行っており、頻出ポイントを厳選した講習会で効率的な合格をサポートしています。Web講座と会場講座の選択が可能で、組み合わせも可能な受講形態を提供しています。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "4,290円〜",
+      "min_yen": 4290,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "土木 1級（一次）Webコース",
+        "amount": 38500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "土木 1級（一次）Webコース 一括申込割引",
+        "amount": 36300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "土木 1級（一次）Webコース 再受講料",
+        "amount": 34100,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "土木施工管理技術テキスト(2冊函入) 改訂第4版",
+        "amount": 7920,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "1級土木施工管理 第一次検定 問題解説集 2026年版",
+        "amount": 4290,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Web講座と会場講座から選択可能で、両者の組み合わせ受講も可能",
+      "施工経験記述添削指導サービスが提供されている",
+      "土木・建築・管工事・電気工事・電気通信工事の5分野に対応している参考書と講習会を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.ias.or.jp/jyuken/jyukenList.php?group=1&id=01&coursename1=W",
+    "area_detail_url": "https://www.ias.or.jp/jyuken/jyukenList.php?group=1&id=01&coursename1=A",
+    "official_url": "https://www.ias.or.jp/",
+    "cta_url": "https://www.ias.or.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ias",
+    "created_at": "2026-09-11T20:17:48.015Z",
+    "updated_at": "2026-09-11T20:17:48.015Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.ias.or.jp/"
+  },
+  {
+    "id": "tokyoitschool",
+    "school_name": "東京ITスクール",
+    "official_name": null,
+    "description": "採用支援とIT研修を提供する企業向けサービス。未経験エンジニアの育成から既存社員のDX教育まで、採用後のキャリアパス形成をトータルでサポート。システム開発企業が提供する実践的な研修で、生成AI・クラウド・プログラミング言語など多くの技術と幅広い期間のカリキュラムが特徴。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "JavaやPython、インフラなど複数の言語・技術に対応した新人エンジニア研修",
+      "1～3ヶ月のカリキュラムでプログラミングやAIスキルを習得するeラーニング",
+      "LMS（eラーニングシステム）を活用した社内大学サービス提供",
+      "受講後にスキルシートに実務経験として記載可能な超実践型研修"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://tokyoitschool.jp/contact-document/executive/input/",
+    "official_url": "https://tokyoitschool.jp/",
+    "cta_url": "https://tokyoitschool.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tokyoitschool",
+    "created_at": "2026-09-11T20:18:14.332Z",
+    "updated_at": "2026-09-11T20:18:14.332Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://tokyoitschool.jp/"
+  },
+  {
+    "id": "recurrent-2",
+    "school_name": "リスキル",
+    "official_name": null,
+    "description": "1094種類の豊富な研修を提供する企業研修・社員研修サービス。一社研修、公開講座、動画講座の3つの形式で、階層別・テーマ別・職種別・業界別・IT研修など幅広いカリキュラムを備えている。講師評価は5段階で平均4.79と高い水準を維持している。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "一社研修",
+        "amount": 15000,
+        "duration": null,
+        "kind": null
+      },
+      {
+        "label": "公開講座",
+        "amount": 950,
+        "duration": null,
+        "kind": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1094種類の豊富な研修カテゴリを提供",
+      "講師評価が5段階平均4.79の高水準",
+      "一社研修は何人でも料金一律設定",
+      "公開講座は1名1講座950円で利用可能",
+      "階層別・テーマ別・職種別・業界別・IT研修など幅広いカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.recurrent.jp/static/feature/feature03",
+    "official_url": "https://www.recurrent.jp/",
+    "cta_url": "https://www.recurrent.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-recurrent-2",
+    "created_at": "2026-09-11T20:18:40.359Z",
+    "updated_at": "2026-09-11T20:18:40.359Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://www.recurrent.jp/"
+  },
+  {
+    "id": "it-skill-academy",
+    "school_name": "ITスキルアカデミー",
+    "official_name": "株式会社クロノス",
+    "description": "開発経験豊富な講師による法人向けIT研修。新入社員から中途社員、AI研修まで100種類以上のカリキュラムを展開。企業の課題に合わせてカスタマイズ可能で、人材開発支援助成金の申請サポートも提供。実践的なチーム開発演習やビジネスマインド育成を含み、修了評価レポートで現場配属をサポート。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "開発経験10年以上の講師による直接指導",
+      "1名から大人数まで柔軟に対応可能",
+      "企業の課題に合わせたカリキュラムのカスタマイズ対応",
+      "専用ポータルでの進捗管理と週次レポート提供",
+      "修了評価レポートによる現場配属支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://it-skill-academy.jp/",
+    "cta_url": "https://it-skill-academy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-it-skill-academy",
+    "created_at": "2026-09-11T20:18:49.568Z",
+    "updated_at": "2026-09-11T20:18:49.568Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://it-skill-academy.jp/"
+  },
+  {
+    "id": "mirainnove",
+    "school_name": "MOVA（動画制作スクール）",
+    "official_name": "ミライノベ",
+    "description": "フリーランスの動画クリエイターを目指す人向けのスクール。編集・撮影スキルだけでなく、企画構成から投稿まで映像制作の全工程と案件獲得スキルを学べます。実戦型カリキュラムで、課題動画制作やチーム撮影を通じて実践的なスキルを習得できます。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "企画構成から撮影・編集までの全工程を学習",
+      "課題動画制作やチーム撮影などの実践的なカリキュラム",
+      "案件獲得スキルの習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://mirainnove.jp/school/",
+    "cta_url": "https://mirainnove.jp/school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-mirainnove",
+    "created_at": "2026-09-11T20:18:57.291Z",
+    "updated_at": "2026-09-11T20:18:57.291Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://mirainnove.jp/school/"
+  },
+  {
+    "id": "dotabis",
+    "school_name": "どう旅",
+    "official_name": null,
+    "description": "中高年以上に特化した動画編集スクール。短期集中ではなく長期型のモデルを採用しており、パソコンに不慣れな方や仕事が忙しい方など様々なニーズに対応。月2回・月4回・月6回の選択可能なコースで、気軽に本格的な動画編集スキルが身に付く。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額6,600円〜",
+      "min_yen": 6600,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月2回コース",
+        "amount": 6600,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月4回コース",
+        "amount": 11000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月6回コース",
+        "amount": 16500,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "中高年層を対象とした動画編集スクール",
+      "月単位の通いやすい長期型モデルを採用",
+      "1枠50分の短時間レッスン設定",
+      "入会金無料"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.dotabis.com/",
+    "cta_url": "https://www.dotabis.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dotabis",
+    "created_at": "2026-09-11T20:19:01.666Z",
+    "updated_at": "2026-09-11T20:19:01.666Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://www.dotabis.com/"
+  },
+  {
+    "id": "camp-skill",
+    "school_name": "動画編集CAMP",
+    "official_name": null,
+    "description": "スキルCAMPが提供する短期集中型講座の一つ。業界の権威が監修し、実践的なスキルを学べます。土日の2日間で完結し、オンライン教材での事前学習と対面での実践的演習を組み合わせたカリキュラムを提供しています。忙しい社会人も受講しやすい設計となっています。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "業界の権威や専門家が講座を監修し、実務に直結するスキルを習得できる",
+      "土日の2日間で完結する短期集中型講座",
+      "オンライン教材での事前学習と対面での実践的演習を組み合わせたカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://camp-skill.com/",
+    "cta_url": "https://camp-skill.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-camp-skill",
+    "created_at": "2026-09-11T20:19:06.716Z",
+    "updated_at": "2026-09-11T20:19:06.716Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://camp-skill.com/"
+  },
+  {
+    "id": "shift-ai",
+    "school_name": "SHIFT AI",
+    "official_name": "株式会社SHIFT AI",
+    "description": "110コース以上の動画講座やウェビナー、リアルイベント、専任コンサルタントによるサポートなど、学習から実践・キャリアアップまで一貫して支援。基礎から実務まで体系的に学べる環境を提供しています。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "3つのコース（基礎・副業コース、業務改善コース、AIツールコース）で目的別に選択可能",
+      "業界トップ講師による実務直結のウェビナー・セミナー提供",
+      "会員限定のオンライン・オフラインイベントでメンバーとの交流機会が豊富",
+      "AIの実践事例やノウハウが日々アップデートされるプラットフォーム",
+      "個別相談による無理のない進め方の具体化と無料キャリアサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://service.shift-ai.co.jp/",
+    "cta_url": "https://service.shift-ai.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shift-ai",
+    "created_at": "2026-09-11T20:19:13.449Z",
+    "updated_at": "2026-09-11T20:19:13.449Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://service.shift-ai.co.jp/"
+  },
+  {
+    "id": "lifeshiftlab",
+    "school_name": "ライフシフトラボ AIコース",
+    "official_name": "株式会社ライフシフトラボ",
+    "description": "40～60代に特化した3ヶ月の短期集中AIスクール。知識ゼロから生成AIの使い方だけでなく稼ぎ方を学び、受講期間中に月+10万円の収入を目指す実践的カリキュラム。専属のキャリアトレーナーによる個別伴走で、複業や独立起業など個人に合わせた稼ぎ方の実現をサポート。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AI実業家",
+      "生成AIエキスパート",
+      "AI/DXコンサルタント",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "40～60代に特化した設計で質問は無制限",
+      "3ヶ月間で全10回のグループレッスン（各2時間）と個人課題",
+      "完全オンライン形式で毎週土曜日または日曜日開催、録画アーカイブ視聴可能",
+      "専属キャリアトレーナーによる個別伴走で理想のキャリア実現をサポート",
+      "生成AIを活用した複業案件習得に特化した実践的カリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://lifeshiftlab.jp/tenshoku",
+    "official_url": "https://lifeshiftlab.jp/ai",
+    "cta_url": "https://lifeshiftlab.jp/ai",
+    "cta_type": "direct",
+    "click_tracking_id": "click-lifeshiftlab",
+    "created_at": "2026-09-11T20:19:34.402Z",
+    "updated_at": "2026-09-11T20:19:34.402Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://lifeshiftlab.jp/ai"
+  },
+  {
+    "id": "horiemon",
+    "school_name": "ホリエモンAI学校",
+    "official_name": "ホリエモンAI学校株式会社",
+    "description": "AIスキルをゼロから学べる個人向けAIスクール。生成AI、Claude Code、AIエージェント構築など、実践的なAI活用スキルを習得し、副業収入獲得・転職・業務効率化を実現することを目指す。複数の講座形式（個人プラン、1日Camp、2dayscamp等）から選択可能。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額16,280円",
+      "min_yen": 16280,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "個人プラン",
+        "amount": 16280,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "個人プラン",
+        "amount": 162800,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ITの知識ゼロから始められる",
+      "Claude Codeの実践習得",
+      "AIエージェント構築まで学べる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://horiemon.ai/school/personal-plan/",
+    "official_url": "https://horiemon.ai/",
+    "cta_url": "https://horiemon.ai/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-horiemon",
+    "created_at": "2026-09-11T20:19:48.350Z",
+    "updated_at": "2026-09-11T20:19:48.350Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://horiemon.ai/"
+  },
+  {
+    "id": "netlearning",
+    "school_name": "ネットラーニング",
+    "official_name": null,
+    "description": "AIを学ぶと同時にAIで学ぶことができるeラーニングプラットform。AIの基礎理解から実務での活用まで段階的に学べる講座を提供。企業のAI時代の人材育成を支援するDXリテラシー標準講座も含まれる。",
+    "skill_genre": [
+      "genai_dx",
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "600,000円〜",
+      "min_yen": 600000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "P200プラン",
+        "amount": 600000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "P500プラン",
+        "amount": 1400000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "P1000プラン",
+        "amount": 2600000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "P2000プラン",
+        "amount": 4500000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "AI基礎から実務活用まで段階的に学べる講座構成",
+      "生成AI・ChatGPT・Microsoft 365 Copilot等の実務的なテーマを扱う",
+      "AI教材自動生成・AI採点・AIチャットボット・AIレコメンド等のAI機能搭載",
+      "オープンバッジで学習成果を可視化・証明できる",
+      "法人向け以外に学校・教育機関向けと個人向けサービスも提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.netlearning.co.jp/service/cafeteria_plan/",
+    "official_url": "https://www.netlearning.co.jp/",
+    "cta_url": "https://www.netlearning.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-netlearning",
+    "created_at": "2026-09-11T20:20:18.567Z",
+    "updated_at": "2026-09-11T20:20:18.567Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.netlearning.co.jp/"
+  },
+  {
+    "id": "gaba",
+    "school_name": "Gabaマンツーマン英会話",
+    "official_name": null,
+    "description": "1995年の創業以来、マンツーマンに特化したレッスンを提供する英会話スクール。レッスン日時や講師を自由に選べ、一人ひとりに合ったレッスンで上達を実感できる。質の高い多彩なインストラクター、効率的学習をサポートする教材・ツール、定期的なカウンセリングによるサポート、柔軟な予約システムが特徴。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "223,608円",
+      "min_yen": 223608,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "一括プラン 30回コース",
+        "amount": 223608,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "月謝プラン 月4回",
+        "amount": 29920,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "お試しコース 月4回",
+        "amount": 22000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "千葉県",
+      "埼玉県",
+      "愛知県",
+      "大阪府",
+      "京都府",
+      "兵庫県",
+      "奈良県",
+      "広島県",
+      "福岡県",
+      "鹿児島県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "マンツーマンレッスンで会話量が多い",
+      "講師を毎回自由に選べる当日予約も可能",
+      "定期的なカウンセリングで挫折をサポート",
+      "スキマ時間で利用できる専用学習サイト",
+      "多様なアクセント・文化背景を持つ講師陣"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.gaba.co.jp/",
+    "cta_url": "https://www.gaba.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-gaba",
+    "created_at": "2026-09-11T20:20:26.484Z",
+    "updated_at": "2026-09-11T20:20:26.484Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.gaba.co.jp/"
+  },
+  {
+    "id": "strail-english",
+    "school_name": "STRAIL",
+    "official_name": null,
+    "description": "1日1.5時間の効率重視学習で、専属コンサルタントが科学的根拠に基づいて課題を分析し、個別最適化された学習プランをサポート。ビジネス英語とTOEIC®L&Rに特化したコース、独自の課題発見型英会話で実践的な会話力も強化。オンラインと通学のハイブリッド受講に対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "336,600円〜",
+      "min_yen": 336600,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ビジネス英語コース（3ヶ月）",
+        "amount": 336600,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ビジネス英語コース（3ヶ月）",
+        "amount": 30250,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "ビジネス英語コース",
+        "amount": 55000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "TOEIC®L&R TESTコース（3ヶ月）",
+        "amount": 336600,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEIC®L&R TESTコース（3ヶ月）",
+        "amount": 30250,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "TOEIC®L&R TESTコース",
+        "amount": 55000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "ウィークリー英会話ブースト",
+        "amount": 14960,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "専属コンサルタントによる科学的根拠に基づいた課題分析と個別最適化された学習プラン",
+      "1日1.5時間の効率重視学習",
+      "課題発見型の英会話ブースト（ウィークリー英会話ブースト）で実践的な会話力を強化",
+      "オンラインと通学をハイブリッドで受講可能、平日午前の受講にも対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://strail-english.jp/service/",
+    "official_url": "https://strail-english.jp/",
+    "cta_url": "https://strail-english.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-strail-english",
+    "created_at": "2026-09-11T20:20:42.747Z",
+    "updated_at": "2026-09-11T20:20:42.747Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://strail-english.jp/"
+  },
+  {
+    "id": "englishcompany",
+    "school_name": "ENGLISH COMPANY",
+    "official_name": null,
+    "description": "第二言語習得の科学的知見に基づき、個別課題を緻密に分析して専用カリキュラムを組むマンツーマンパーソナルトレーニング。日本人トレーナーによる学習プランニングと、外国人トレーナーによる課題発見型英会話レッスンで、ビジネス英語力を効率的に短期間で鍛える。自主学習は1日1.5時間で、一般的なコーチングの半分の時間で成果を実現。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "231,000円〜",
+      "min_yen": 231000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "パーソナルトレーニングコース",
+        "amount": 561000,
+        "duration": "3ヶ月/6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "初級セミパーソナルコース",
+        "amount": 264000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "中級セミパーソナルコース",
+        "amount": 231000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "上級セミパーソナルコース",
+        "amount": 242000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "忙しい方向け週60分高密度コーチング",
+        "amount": 336600,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "日本人トレーナーと外国人トレーナーのダブルサポート体制",
+      "科学的知見に基づいた個別課題の分析と専用カリキュラム",
+      "自主学習は1日1.5時間という短時間での効率的学習",
+      "英会話での弱点を日本人トレーナーに連携した多角的分析"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://englishcompany.jp/course/list/",
+    "area_detail_url": "https://englishcompany.jp/studios/",
+    "official_url": "https://englishcompany.jp/",
+    "cta_url": "https://englishcompany.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-englishcompany",
+    "created_at": "2026-09-11T20:21:07.042Z",
+    "updated_at": "2026-09-11T20:21:07.042Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://englishcompany.jp/"
+  },
+  {
+    "id": "toraiz",
+    "school_name": "トライズ（TORAIZ）",
+    "official_name": null,
+    "description": "専属コンサルタントと専属ネイティブコーチがオーダーメイドの教材・レッスン・学習プランで英語習得をサポート。1日3時間、1年で1,000時間の学習を通じて、初心者でも12ヶ月でビジネスで通用する英語を習得することを目指す。音と意味の紐づけや脳の自動化に注力し、実戦的なロールプレイやディスカッションで実践力を養成する。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "340,800円〜",
+      "min_yen": 340800,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "スキルアップコース",
+        "amount": 502120,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "スピーキング本科コース",
+        "amount": 874000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEIC対策専用コース",
+        "amount": 340800,
+        "duration": "2ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "専属ネイティブコーチによる週3回・年間144回のプライベートレッスン",
+      "あなただけの教材・レッスン・学習プランをオーダーメイド作成",
+      "専属コンサルタントによるPDCAサイクルの日々の学習管理",
+      "第二言語習得の専門家が監修した科学的なインプット学習法"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://toraiz.jp/price/",
+    "official_url": "https://toraiz.jp/",
+    "cta_url": "https://toraiz.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-toraiz",
+    "created_at": "2026-09-11T20:21:20.681Z",
+    "updated_at": "2026-09-11T20:21:20.681Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://toraiz.jp/"
+  },
+  {
+    "id": "eigosapuri",
+    "school_name": "スタディサプリENGLISH",
+    "official_name": null,
+    "description": "英語学習アプリ。TOEIC® L&R TEST対策、新日常英会話、ビジネス英語の3つのコースを提供。1回3分からのスキマ時間学習で、ディクテーション・シャドーイングなどの実戦トレーニングとインプット学習をアプリで完結。初回1週間無料で利用可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額2,178円〜",
+      "min_yen": 2178,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "新日常英会話コース ベーシックプラン",
+        "amount": 2178,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "新日常英会話コース 英会話セットプラン",
+        "amount": 6028,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ビジネス英語コース ベーシックプラン",
+        "amount": 3278,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ビジネス英語コース 英会話セットプラン",
+        "amount": 7128,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "TOEIC® L&R TEST対策コース ベーシックプラン",
+        "amount": 3278,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1回3分からのスキマ時間学習が可能",
+      "ディクテーション・シャドーイングなどの実戦トレーニングでリスニング力と語彙力を強化",
+      "全1,680レッスンの日常英会話コンテンツが全コース無料で付帯",
+      "スマートフォンアプリとパソコンの両方に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://eigosapuri.jp/",
+    "cta_url": "https://eigosapuri.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-eigosapuri",
+    "created_at": "2026-09-11T20:21:30.807Z",
+    "updated_at": "2026-09-11T20:21:30.807Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://eigosapuri.jp/"
+  },
+  {
+    "id": "aeonet",
+    "school_name": "英会話イーオン",
+    "official_name": null,
+    "description": "50年以上の英語指導経験をもとに作られたレッスンで、外国人講師と日本人講師による個別カウンセリング対応の英会話スクール。Acquisitionレッスン、Lightレッスン、プライベートレッスンの通学型と、オンライン型レッスンを提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "47,190円〜",
+      "min_yen": 47190,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Acquisitionレッスン",
+        "amount": 23925,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Lightレッスン",
+        "amount": 13200,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "プライベートレッスン",
+        "amount": 12100,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "TOEIC® L&Rテスト対策コース 3カ月",
+        "amount": 47190,
+        "duration": "3カ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEIC® L&Rテスト対策コース 6カ月",
+        "amount": 87120,
+        "duration": "6カ月",
+        "kind": "total"
+      },
+      {
+        "label": "英検®対策コース（準2級・2級）",
+        "amount": 13200,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "英検®対策コース（準1級）",
+        "amount": 16500,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Acquisitionパック（月2回オンラインプライベート付）",
+        "amount": 28050,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Acquisitionパック（月4回オンラインプライベート付）",
+        "amount": 32175,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Lightパック（月2回オンラインプライベート付）",
+        "amount": 17325,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Lightパック（月4回オンラインプライベート付）",
+        "amount": 21450,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "北海道",
+      "岩手県",
+      "宮城県",
+      "秋田県",
+      "福島県",
+      "茨城県",
+      "栃木県",
+      "群馬県",
+      "埼玉県",
+      "千葉県",
+      "東京都",
+      "神奈川県",
+      "新潟県",
+      "富山県",
+      "石川県",
+      "福井県",
+      "山梨県",
+      "長野県",
+      "岐阜県",
+      "静岡県",
+      "愛知県",
+      "三重県",
+      "滋賀県",
+      "京都府",
+      "大阪府",
+      "兵庫県",
+      "奈良県",
+      "和歌山県",
+      "鳥取県",
+      "島根県",
+      "岡山県",
+      "広島県",
+      "山口県",
+      "徳島県",
+      "香川県",
+      "愛媛県",
+      "高知県",
+      "福岡県",
+      "佐賀県",
+      "長崎県",
+      "熊本県",
+      "大分県",
+      "宮崎県",
+      "鹿児島県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "外国人講師と日本人講師による指導",
+      "個別カウンセリング対応",
+      "振替システムで柔軟にスケジュール調整可能",
+      "初心者向けオリジナルテキスト使用"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.aeonet.co.jp/",
+    "cta_url": "https://www.aeonet.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-aeonet",
+    "created_at": "2026-09-11T20:21:39.552Z",
+    "updated_at": "2026-09-11T20:21:39.552Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.aeonet.co.jp/"
   }
 ]
