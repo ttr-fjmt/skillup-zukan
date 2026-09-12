@@ -334,5 +334,54 @@
     "genre": "language",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-11T20:16:47.814Z"
+  },
+  "LIG Figma講座": {
+    "name": "LIG Figma講座",
+    "website": "https://liginc.co.jp/625824",
+    "genre": "uiux",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "Be Marketer": {
+    "name": "Be Marketer",
+    "website": "https://be-marketer.com/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "東京大学エクステンション データサイエンス本格養成プログラム": {
+    "name": "東京大学エクステンション データサイエンス本格養成プログラム",
+    "website": "https://www.utokyo-ext.co.jp/news/dss",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "パナソニック DXリテラシースキルアップコース": {
+    "name": "パナソニック DXリテラシースキルアップコース",
+    "website": "https://www.panasonic.com/jp/business/its/hrd/engineer/dx-literacy01.html",
+    "genre": "genai_dx",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "イングリッシュイノベーションズ": {
+    "name": "イングリッシュイノベーションズ",
+    "website": "https://online.english-innovations.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "フルーエント中国語学院": {
+    "name": "フルーエント中国語学院",
+    "website": "https://cn-fluent.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "ハオ中国語アカデミー": {
+    "name": "ハオ中国語アカデミー",
+    "website": "https://hao-chineseacademy.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-12T20:16:07.198Z"
   }
 }

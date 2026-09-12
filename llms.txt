@@ -1,7 +1,7 @@
 # スキルアップ図鑑（skillup-zukan.net）
 
 社会人の学び直し・リスキリング講座を比較できるサイトです。
-プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、141件を掲載しています。
+プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、158件を掲載しています。
 
 ## 掲載情報の作り方
 
@@ -12,14 +12,14 @@
 
 ## ジャンル別の一覧
 
-- プログラミング・エンジニア（43件）: https://skillup-zukan.net/category/programming/
-- Webデザイン（29件）: https://skillup-zukan.net/category/webdesign/
-- UI/UXデザイン（7件）: https://skillup-zukan.net/category/uiux/
-- 動画編集（18件）: https://skillup-zukan.net/category/video_editing/
-- Webマーケティング（17件）: https://skillup-zukan.net/category/web_marketing/
-- 生成AI・DXリテラシー（34件）: https://skillup-zukan.net/category/genai_dx/
-- 語学（27件）: https://skillup-zukan.net/category/language/
-- 資格（42件）: https://skillup-zukan.net/category/certification/
+- プログラミング・エンジニア（48件）: https://skillup-zukan.net/category/programming/
+- Webデザイン（32件）: https://skillup-zukan.net/category/webdesign/
+- UI/UXデザイン（8件）: https://skillup-zukan.net/category/uiux/
+- 動画編集（19件）: https://skillup-zukan.net/category/video_editing/
+- Webマーケティング（20件）: https://skillup-zukan.net/category/web_marketing/
+- 生成AI・DXリテラシー（36件）: https://skillup-zukan.net/category/genai_dx/
+- 語学（31件）: https://skillup-zukan.net/category/language/
+- 資格（47件）: https://skillup-zukan.net/category/certification/
 
 ## 学び直しガイド
 

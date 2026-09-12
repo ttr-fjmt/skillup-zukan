@@ -9872,5 +9872,1127 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://www.aeonet.co.jp/"
+  },
+  {
+    "id": "ninjacode",
+    "school_name": "忍者CODE",
+    "official_name": null,
+    "description": "Web制作・Webデザイン・プログラミング・動画編集などを学べるオンラインスクール。未経験から稼げるクリエイターを目指すため、基礎知識から実践的な課題制作まで、プロジェクト方式のカリキュラムを採用。現役クリエイターがメンターとなり、チャットサポートや個別キャリア相談など充実したサポート体制を提供。AI活用方法も学習に組み込まれている。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Web制作者",
+      "Webデザイナー",
+      "システムエンジニア",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "98,000円〜",
+      "min_yen": 98000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "転職支援プランWeb制作&デザインコース",
+        "amount": 162909,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "転職支援プランRubyコース",
+        "amount": 162909,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "転職支援プランPythonコース",
+        "amount": 162909,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "転職支援プランJavaコース",
+        "amount": 162909,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "フリーランス特化型プランWeb制作&デザインコース",
+        "amount": 588000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "副業・案件保証プランWeb制作&デザインコース",
+        "amount": 488000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "副業・案件保証プランWeb制作コース",
+        "amount": 488000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "副業・案件保証プランWebデザインコース",
+        "amount": 488000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "独学プランWeb制作&デザインコース",
+        "amount": 98000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "独学プランWeb制作コース",
+        "amount": 98000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "独学プランWebデザインコース",
+        "amount": 98000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役クリエイターがメンターとして指導",
+      "チャットサポート・個別キャリア相談が充実",
+      "実践的なプロジェクト方式カリキュラム",
+      "ポートフォリオ作成・職務経歴書作成サポート",
+      "AI活用方法の学習（Claude Code・Codex等）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://ninjacode.work/",
+    "cta_url": "https://ninjacode.work/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ninjacode",
+    "created_at": "2026-09-12T20:16:20.104Z",
+    "updated_at": "2026-09-12T20:16:20.104Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://ninjacode.work/"
+  },
+  {
+    "id": "geek-salon",
+    "school_name": "GeekSalon",
+    "official_name": null,
+    "description": "大学生限定のコミュニティ型プログラミングスクール。自分で企画したアプリを3ヶ月の短期集中で開発・公開することを目標とします。未経験者向けで、同世代の専属メンターが24時間対応。Web・ゲーム・AI等複数のコース展開。一般的なスクールの3分の1程度の価格。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "宮城県",
+      "東京都",
+      "愛知県",
+      "京都府",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "大学生・大学院生限定のコミュニティ環境",
+      "同世代のメンターによる専属サポート24時間対応",
+      "オリジナルアプリ開発とAppStore等への公開",
+      "3ヶ月の短期集中型カリキュラム",
+      "卒業後も教室・質問チャンネル利用可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://geek-salon.com/",
+    "cta_url": "https://geek-salon.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-geek-salon",
+    "created_at": "2026-09-12T20:16:27.839Z",
+    "updated_at": "2026-09-12T20:16:27.839Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://geek-salon.com/"
+  },
+  {
+    "id": "zero-school",
+    "school_name": "ゼロスク",
+    "official_name": null,
+    "description": "現役エンジニアが実際に現場で実装した開発プロセスをカリキュラムの基盤としており、実践力が身に付く。IT業界の人材不足が進む中で、未経験からエンジニアを目指す方を支援。卒業生のほとんどが企業から内定を得ている。短期間集中でプログラミングを学べるスクール。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役エンジニアが実際に現場で実装した開発プロセスが土台のカリキュラム",
+      "短期間集中型のプログラミング学習",
+      "プログラミング未経験者向けに講師が丁寧にサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://zero-school.com/curriculum",
+    "official_url": "https://zero-school.com/",
+    "cta_url": "https://zero-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-zero-school",
+    "created_at": "2026-09-12T20:16:48.507Z",
+    "updated_at": "2026-09-12T20:16:48.507Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://zero-school.com/"
+  },
+  {
+    "id": "findme-school",
+    "school_name": "Find me!",
+    "official_name": null,
+    "description": "Webデザインを月額制で学べるオンライン講座。デザインのトレンド情報を定期的に反映し、常に最新のコンテンツを提供している。カウンセリングは入会必須ではなく、勧誘も行わないとしている。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "月額制で段階的にスキル習得が可能",
+      "デザイントレンド情報を定期的に更新",
+      "定期的にコンテンツをアップデート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://findme-school.com/cplan/",
+    "official_url": "https://findme-school.com/",
+    "cta_url": "https://findme-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-findme-school",
+    "created_at": "2026-09-12T20:17:09.185Z",
+    "updated_at": "2026-09-12T20:17:09.185Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://findme-school.com/"
+  },
+  {
+    "id": "xdesign-academy",
+    "school_name": "Xデザイン学校",
+    "official_name": null,
+    "description": "社会をよくするデザインの学びと研究する楽しさを追求する、社会人のための「未来の学校体験」。人間中心設計、UXデザイン、デザイン思考、ビジネスデザイン、ビジョンデザインなどを基礎としながら、デザインを活用する社会に向けての学びと研究を推進。既に1000人以上の社会人が学んでいる。オンラインで自宅から全国から受講でき、デザイン教育を受けていない人でも受講できる。",
+    "skill_genre": [
+      "uiux"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "UXデザイナー",
+      "プロダクトマネージャー",
+      "デザインリーダー",
+      "サービスデザイナー",
+      "ビジョンデザイナー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "複数のレベル別コース展開（ビギナー、ベーシック、マスター、アドバンス）",
+      "実践型ワークショップと演習を通じた学習",
+      "優れた実践者・研究者による指導",
+      "受講者同士の学びあいを重視したコミュニティ",
+      "入学選考なし、先着順での申し込み"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.xdesign-academy.com/beginner",
+    "official_url": "https://www.xdesign-academy.com/",
+    "cta_url": "https://www.xdesign-academy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-xdesign-academy",
+    "created_at": "2026-09-12T20:17:30.269Z",
+    "updated_at": "2026-09-12T20:17:30.269Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.xdesign-academy.com/"
+  },
+  {
+    "id": "i-learning",
+    "school_name": "アイ・ラーニング",
+    "official_name": null,
+    "description": "IT研修、DX研修、プロジェクトマネジメント研修、新入社員研修、ビジネススキル研修など幅広い領域の約1,000コースを提供する企業研修サービス。実践重視の設計で、課題や人材像に合わせた最適な研修を提供し、企業の人材育成を支援。AI時代に対応した「真のITプロフェッショナル」育成や、アジャイル人材育成、営業人材育成など、多角的なアプローチで組織の成長を支援。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "385,000円",
+      "min_yen": 385000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ABAPプログラム基礎セミナー(実機操作付オンデマンド型コース)",
+        "amount": 385000,
+        "duration": "30日間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約1,000のコース提供で幅広い研修領域に対応",
+      "オープン研修とプライベート研修の両形態に対応",
+      "e-ラーニングと講師主導型の複数の学習形式を用意",
+      "5年連続200社以上の利用企業実績"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.i-learning.jp/products/detail.php?course_code=62E06",
+    "area_detail_url": "https://www.i-learning.jp/guide/location/list/",
+    "official_url": "https://www.i-learning.jp/",
+    "cta_url": "https://www.i-learning.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-i-learning",
+    "created_at": "2026-09-12T20:17:49.782Z",
+    "updated_at": "2026-09-12T20:17:49.782Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.i-learning.jp/"
+  },
+  {
+    "id": "famm",
+    "school_name": "Fammママ専用スクール",
+    "official_name": null,
+    "description": "育休中のスキルアップやキャリアチェンジ、在宅ワークを始めたいママ向けの、1ヶ月完結型のスクール。子連れOKで、Webデザイナーを目指せるカリキュラムを提供。子育てをしながら学習を進められる。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "子連れOK対応で子育てママが通学可能",
+      "1ヶ月完結型のカリキュラム",
+      "Webデザイナーを目指せるスクール"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://famm.us/ja/school",
+    "area_detail_url": "https://famm.us/ja/school",
+    "official_url": "https://famm.us/",
+    "cta_url": "https://famm.us/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-famm",
+    "created_at": "2026-09-12T20:18:16.658Z",
+    "updated_at": "2026-09-12T20:18:16.658Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://famm.us/"
+  },
+  {
+    "id": "dxup",
+    "school_name": "DXアップ",
+    "official_name": null,
+    "description": "AI×Webマーケティングを実践形式で学べるオンライン講座。未経験から実務レベルのマーケティングスキルを習得でき、実クライアント案件のプロジェクトに参加して実務経験が積める。生成AI活用を含むWebマーケティング5カテゴリ（戦略・広告・SNS運用・SEO・デザイン）を体系的に学べます。",
+    "skill_genre": [
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター",
+      "SNSマーケター",
+      "Webディレクター",
+      "ECサイト Webマーケティング職",
+      "Web担当者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "実クライアント案件のプロジェクトに参加して実務経験が積める",
+      "Google広告管理画面やヒートマップツールなど現場で使用するツールが学べる",
+      "現役Webマーケター講師による個別サポートとチャットでの質問無制限",
+      "国家資格保有のキャリアコンサルタントによる転職支援と面接対策",
+      "3ヶ月間のアウトプット中心の体系的なカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://dxup.jp/curriculum/",
+    "official_url": "https://dxup.jp/",
+    "cta_url": "https://dxup.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dxup",
+    "created_at": "2026-09-12T20:18:39.214Z",
+    "updated_at": "2026-09-12T20:18:39.214Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://dxup.jp/"
+  },
+  {
+    "id": "merc-education",
+    "school_name": "マーケティング戦略講座",
+    "official_name": "株式会社MERC",
+    "description": "マーケティング戦略の実務的な活用を学ぶ講座。STPP分析、ペインとニーズ、ギャップ分析、ブランドステートメント、マーケティングミックス、カスタマージャーニー等のフレームワークを体系的に習得。コンサルティングの現場で培ってきた手法を、個人ワーク・グループワークを組み合わせたワークショップを通じて学び、実務で即活用できる内容。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "327,800円",
+      "min_yen": 327800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "入学金",
+        "amount": 33000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "受講料",
+        "amount": 327800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "受講料分割払い（24回払い）",
+        "amount": 13658,
+        "duration": "24回払い",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "講義とワークショップ、宿題フィードバック、質疑応答で構成される基本的な2時間30分の授業形式",
+      "卒業後も月1度の無料講座とマーケティングコミュニティへのアクセスが継続される",
+      "講師は福田正義（株式会社MERC代表取締役社長）であり、ヤフー株式会社での実務経験を持つ",
+      "キャリアサポートにより現在と10年後のキャリア形成に向き合う支援が提供される"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.merc-education.jp/",
+    "cta_url": "https://www.merc-education.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-merc-education",
+    "created_at": "2026-09-12T20:18:48.271Z",
+    "updated_at": "2026-09-12T20:18:48.271Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.merc-education.jp/"
+  },
+  {
+    "id": "datamix",
+    "school_name": "datamix（データミックス）",
+    "official_name": null,
+    "description": "データサイエンス教育を専門とするスクール。2017年から国内で先駆けて事業を展開し、10,000名以上のビジネスパーソンが対面型授業を受講。データリテラシー向上と実践的な演習を重視し、問題発見・課題設定からデータ活用の本質を学べる。オンラインと通学の両方に対応し、平日夜と土曜日に開講。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "データサイエンティスト",
+      "DXコンサルタント",
+      "データアナリスト",
+      "データエンジニア"
+    ],
+    "price": {
+      "display": "742,500円",
+      "min_yen": 742500,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "データサイエンティスト育成講座",
+        "amount": 742500,
+        "duration": "約7ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "体系的に統計・機械学習・Pythonなどを学習できるカリキュラム",
+      "卒業プロジェクトで実践的なデータ分析課題に取り組む"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://datamix.co.jp/school/data-scientist/",
+    "official_url": "https://datamix.co.jp/",
+    "cta_url": "https://datamix.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-datamix",
+    "created_at": "2026-09-12T20:19:18.024Z",
+    "updated_at": "2026-09-12T20:19:18.024Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://datamix.co.jp/"
+  },
+  {
+    "id": "agos",
+    "school_name": "アゴス・ジャパン",
+    "official_name": null,
+    "description": "TOEFL・IELTS・GMAT・GRE・SATなどの留学試験対策とMBA・LLM・大学院・大学留学出願対策を専門とする指導校。海外トップスクールへの合格実績に基づき、短期間でのスコアアップと戦略的な出願サポートを提供します。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "TOEFL・IELTS・GMAT・GRE・SAT対策など複数の留学試験に対応",
+      "MBA・LLM・大学院・大学留学の出願書類対策を実施",
+      "ライブ配信授業・ビデオ授業・通学での授業から選択可能",
+      "海外トップスクールへの合格実績を掲載"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.agos.co.jp/program/",
+    "official_url": "https://www.agos.co.jp/",
+    "cta_url": "https://www.agos.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-agos",
+    "created_at": "2026-09-12T20:19:42.502Z",
+    "updated_at": "2026-09-12T20:19:42.502Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.agos.co.jp/"
+  },
+  {
+    "id": "shane",
+    "school_name": "シェーン英会話",
+    "official_name": null,
+    "description": "シェーン英会話は全国167校（首都圏151校）を展開する英会話スクール。個人レッスンと少人数レッスンから選択可能で、初心者向けと経験者向けのコースを提供。ビジネス英語、日常英会話、資格対策など目的に応じたレッスンが利用でき、2才から中学生向けのコースもある。無料体験レッスン（20分）を実施しており、ネイティブ講師によるマンツーマンのインタビュー形式のレッスンを受けられる。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "埼玉県",
+      "千葉県",
+      "茨城県",
+      "愛知県",
+      "静岡県",
+      "大阪府",
+      "京都府",
+      "兵庫県",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "全国167校を展開し、利便性の高い教室配置",
+      "ネイティブ講師によるマンツーマンレッスン形式",
+      "個人レッスンと少人数レッスンの選択可能",
+      "ビジネス英語、日常英会話、資格対策など多様な目的に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.shane.co.jp/lesson/price/",
+    "official_url": "https://www.shane.co.jp/",
+    "cta_url": "https://www.shane.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shane",
+    "created_at": "2026-09-12T20:20:10.628Z",
+    "updated_at": "2026-09-12T20:20:10.628Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.shane.co.jp/"
+  },
+  {
+    "id": "eiken-academy",
+    "school_name": "英検アカデミー",
+    "official_name": null,
+    "description": "英検合格に特化した英語専門塾。完全マンツーマン指導により、英検1級から5級まで対応。英検面接対策、ライティング対策、リスニング対策など、英検合格に必要な全領域をカバー。対面・オンライン両対応で、全国各地に教室展開。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "青森県",
+      "岩手県",
+      "秋田県",
+      "山形県",
+      "宮城県",
+      "福島県",
+      "東京都",
+      "神奈川県",
+      "埼玉県",
+      "千葉県",
+      "栃木県",
+      "群馬県",
+      "茨城県",
+      "愛知県",
+      "新潟県",
+      "石川県",
+      "長野県",
+      "山梨県",
+      "静岡県",
+      "富山県",
+      "岐阜県",
+      "三重県",
+      "福井県",
+      "大阪府",
+      "兵庫県",
+      "京都府",
+      "奈良県",
+      "滋賀県",
+      "和歌山県",
+      "広島県",
+      "岡山県",
+      "山口県",
+      "愛媛県",
+      "香川県",
+      "福岡県",
+      "佐賀県",
+      "熊本県",
+      "大分県",
+      "長崎県",
+      "宮崎県",
+      "鹿児島県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "完全マンツーマンの英検対策指導",
+      "開校20年の蓄積ノウハウと独自の絶対合格プラン",
+      "英検1級から5級まで全レベル対応",
+      "英検面接・ライティング・リスニング対策を完備",
+      "講師変更が可能で生徒に合わせた指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://eiken-academy.com/course/",
+    "official_url": "https://eiken-academy.com/",
+    "cta_url": "https://eiken-academy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-eiken-academy",
+    "created_at": "2026-09-12T20:20:38.784Z",
+    "updated_at": "2026-09-12T20:20:38.784Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://eiken-academy.com/"
+  },
+  {
+    "id": "bitex-cn",
+    "school_name": "BitEx中国語",
+    "official_name": null,
+    "description": "オンラインと対面の中国語スクール。担任制講師による個別レッスン、独自の学習メソッド「スマチュ」を使用した学習に対応。会話、リスニング、文法、歌詞などの豊富な教材を提供し、初心者から上級者まで対応。全国に名古屋校、池袋校があり、上海校、杭州校でプチ留学も実施。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "担任制講師による個別対応",
+      "スマチュなどのeラーニング教材を完備",
+      "毎週無料添削サービス",
+      "HSK検定対策コース"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://bitex-cn.com/?m=studyonline&a=price",
+    "area_detail_url": "https://bitex-cn.com/?m=studyabroad",
+    "official_url": "https://bitex-cn.com/",
+    "cta_url": "https://bitex-cn.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-bitex-cn",
+    "created_at": "2026-09-12T20:21:11.328Z",
+    "updated_at": "2026-09-12T20:21:11.328Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://bitex-cn.com/"
+  },
+  {
+    "id": "net-school",
+    "school_name": "ネットスクール",
+    "official_name": null,
+    "description": "インターネットを利用したWEB講座を提供する学習プラットフォーム。簿記、税理士試験、建設業経理士などの資格試験合格を目指す講座が中心。質問しやすい環境と徹底したサポート体制で合格へと導くことを特徴としている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "インターネットで受講するWEB講座形式",
+      "質問しやすい環境と徹底したサポート体制",
+      "資格試験合格を目指すカリキュラム構成"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.net-school.co.jp/licence/",
+    "official_url": "https://www.net-school.co.jp/",
+    "cta_url": "https://www.net-school.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-net-school",
+    "created_at": "2026-09-12T20:21:30.487Z",
+    "updated_at": "2026-09-12T20:21:30.487Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.net-school.co.jp/"
+  },
+  {
+    "id": "e-nichii",
+    "school_name": "ニチイまなびネット",
+    "official_name": null,
+    "description": "医療・介護分野に特化した資格講座を提供。医療事務講座や介護職員初任者研修など複数の講座を展開しており、全国約300ヵ所の教室で通学またはオンラインでの学習に対応。通信・通学・ライブ配信など多様な学び方が可能です。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "医療事務",
+      "介護職員",
+      "介護福祉士",
+      "ケアマネジャー"
+    ],
+    "price": {
+      "display": "47,850円〜",
+      "min_yen": 47850,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "通学コース",
+        "amount": 64000,
+        "duration": "3ヵ月 ※最短1.5ヵ月～",
+        "kind": "total"
+      },
+      {
+        "label": "通信コース",
+        "amount": 47850,
+        "duration": "3ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "ライブ配信コース",
+        "amount": 56000,
+        "duration": "4ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "医科コンピュータセットコース",
+        "amount": 96000,
+        "duration": "3～4ヵ月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "北海道",
+      "青森県",
+      "岩手県",
+      "宮城県",
+      "秋田県",
+      "山形県",
+      "福島県",
+      "茨城県",
+      "栃木県",
+      "群馬県",
+      "埼玉県",
+      "千葉県",
+      "東京都",
+      "神奈川県",
+      "山梨県",
+      "新潟県",
+      "富山県",
+      "石川県",
+      "福井県",
+      "長野県",
+      "岐阜県",
+      "静岡県",
+      "愛知県",
+      "三重県",
+      "滋賀県",
+      "京都府",
+      "大阪府",
+      "兵庫県",
+      "奈良県",
+      "和歌山県",
+      "鳥取県",
+      "島根県",
+      "岡山県",
+      "広島県",
+      "山口県",
+      "香川県",
+      "徳島県",
+      "愛媛県",
+      "高知県",
+      "福岡県",
+      "佐賀県",
+      "長崎県",
+      "熊本県",
+      "大分県",
+      "宮崎県",
+      "鹿児島県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "全国約300ヵ所の教室で学習が可能",
+      "通信・通学・ライブ配信など複数の学習形式に対応",
+      "修了生による実績のある就職支援体制"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.e-nichii.net/iryo/iryojimu/course/",
+    "official_url": "https://www.e-nichii.net/",
+    "cta_url": "https://www.e-nichii.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-e-nichii",
+    "created_at": "2026-09-12T20:21:43.062Z",
+    "updated_at": "2026-09-12T20:21:43.062Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.e-nichii.net/"
+  },
+  {
+    "id": "idear",
+    "school_name": "アイディアヒューマンサポートアカデミー",
+    "official_name": "アイディアヒューマンサポートサービス",
+    "description": "心理カウンセリングとメンタルトレーニングを提供する機関。メンタルトレーニング基礎コース、プロコース、カウンセリング、プロ資格取得パックコースを開講。個々に合わせたカウンセリングとメンタルスキルの習得が特徴。企業のメンタルヘルス研修にも対応。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "308,000円",
+      "min_yen": 308000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "メンタルトレーニング基礎コース（アイディア生）",
+        "amount": 308000,
+        "duration": "最短3ヶ月〜3年間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "メンタルトレーニング基礎コースとプロコースを提供",
+      "心理カウンセラー・メンタルトレーナーの資格取得パックコースあり",
+      "企業研修向けメンタルトレーニングプログラムを実施",
+      "個別カウンセリングとプチセラピーを提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.idear.co.jp/mentaltrainer/mentaltrainer-base/",
+    "official_url": "https://www.idear.co.jp/",
+    "cta_url": "https://www.idear.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-idear",
+    "created_at": "2026-09-12T20:22:16.745Z",
+    "updated_at": "2026-09-12T20:22:16.745Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.idear.co.jp/"
   }
 ]

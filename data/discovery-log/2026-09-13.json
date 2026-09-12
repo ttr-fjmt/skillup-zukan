@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2026-09-13",
+    "genre": "programming",
+    "new_school_ids": [
+      "ninjacode",
+      "geek-salon",
+      "zero-school"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "findme-school"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "uiux",
+    "new_school_ids": [
+      "xdesign-academy",
+      "i-learning"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "famm"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "dxup",
+      "merc-education"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "datamix"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "language",
+    "new_school_ids": [
+      "agos",
+      "shane",
+      "eiken-academy",
+      "bitex-cn"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "genre": "certification",
+    "new_school_ids": [
+      "net-school",
+      "e-nichii",
+      "idear"
+    ]
+  }
+]
