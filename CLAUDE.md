@@ -35,6 +35,21 @@ npm run recheck-guards   # 全レコードにガードを再適用（ジャン�
 データ収集・口コミ要約は GitHub Actions（`workflow_dispatch`）から実行する。
 `ANTHROPIC_API_KEY` はリポジトリの Actions secrets に設定済み。
 
+## クラウド（Claude Code on the web）で作業するとき
+
+パソコンを起動していなくても、スマホや claude.ai/code からクラウドのセッションで作業できる。
+パソコンでの作業とは次の点が違うので、前提として押さえておくこと。
+
+- **読めるのは、このリポジトリにコミットされているファイルだけ。** パソコン側の設定・メモ・未コミットのファイルは引き継がれない。
+  方針は `CLAUDE.md`・`PROJECT_CONTEXT.md`・`DATA_QUALITY_POLICY.md` に書いてあるものがすべて
+- **`git push` はセッションの作業ブランチにしかできない。** 変更は PR にまとめ、Tatsuroさんがマージして初めて公開される。
+  PR には「何のための変更か」を平易な言葉で一言書く
+- **通信できるのは、クラウド環境の設定で許可したドメインだけ。** 公開サイトの確認や公式ページの参照ができないときは、
+  失敗を推測で埋めずに「許可リストに無いため確認できなかった」と報告する
+- **`ANTHROPIC_API_KEY` を使う収集・抽出は GitHub Actions で動かす。** クラウドのセッションに API キーを置かない。
+  必要なら `gh workflow run <ワークフロー>` で起動し、結果は `gh run view` で確認する
+- `data/a8-import/` の Excel は読めるが、Tatsuroさんが Excel を編集するのはパソコン側
+
 ## 作業を終えるときの確認
 
 - `npm test` が通っているか
