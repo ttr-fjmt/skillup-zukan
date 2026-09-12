@@ -1,12 +1,14 @@
 # CLAUDE.md
 
 このリポジトリ（skillup-zukan.net / スキルアップ図鑑）で作業するときは、
-**まず次の2つを必ず読むこと。** 方針判断・実装判断はこの2つに従う。
+**まず次の3つを必ず読むこと。** 方針判断・実装判断はこれらに従う。
 
 1. **[PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)** — 図鑑シリーズ3サイト共通の背景、運営者
    （Tatsuroさん）について、Tatsuroさんに確認すべきこと／不要なこと、コミュニケーションのスタイル
 2. **[DATA_QUALITY_POLICY.md](DATA_QUALITY_POLICY.md)** — データ品質の大原則、確認できない
    場合の扱い、代表値を選ぶときの注意、新しいフィールドを扱う手順、現在のガード一覧
+3. **[DECISIONS.md](DECISIONS.md)** — Tatsuroさんがこれまでに決めたことと、現在の状況（AdSense など）。
+   **ここにある判断を覆す提案をする前に、理由と「見直す条件」を必ず読むこと**
 
 ## 特に外してはいけない点
 
@@ -30,6 +32,7 @@ cd scraper
 npm test                 # ユニットテスト
 npm run validate         # data/schools.json をスキーマ検証
 npm run recheck-guards   # 全レコードにガードを再適用（ジャンル追加のたびに実行）
+npm run verify-live      # 公開サイトがリポジトリどおりか確認（main への反映が終わったあと）
 ```
 
 データ収集・口コミ要約は GitHub Actions（`workflow_dispatch`）から実行する。
@@ -41,11 +44,11 @@ npm run recheck-guards   # 全レコードにガードを再適用（ジャン�
 パソコンでの作業とは次の点が違うので、前提として押さえておくこと。
 
 - **読めるのは、このリポジトリにコミットされているファイルだけ。** パソコン側の設定・メモ・未コミットのファイルは引き継がれない。
-  方針は `CLAUDE.md`・`PROJECT_CONTEXT.md`・`DATA_QUALITY_POLICY.md` に書いてあるものがすべて
+  方針と判断は `CLAUDE.md`・`PROJECT_CONTEXT.md`・`DATA_QUALITY_POLICY.md`・`DECISIONS.md` に書いてあるものがすべて
 - **`git push` はセッションの作業ブランチにしかできない。** 変更は PR にまとめ、Tatsuroさんがマージして初めて公開される。
   PR には「何のための変更か」を平易な言葉で一言書く
 - **通信できるのは、クラウド環境の設定で許可したドメインだけ。** 公開サイトの確認や公式ページの参照ができないときは、
-  失敗を推測で埋めずに「許可リストに無いため確認できなかった」と報告する
+  失敗を推測で埋めずに「許可リストに無いため確認できなかった」と報告する（許可しているドメインは DECISIONS.md に記載）
 - **`ANTHROPIC_API_KEY` を使う収集・抽出は GitHub Actions で動かす。** クラウドのセッションに API キーを置かない。
   必要なら `gh workflow run <ワークフロー>` で起動し、結果は `gh run view` で確認する
 - `data/a8-import/` の Excel は読めるが、Tatsuroさんが Excel を編集するのはパソコン側
@@ -56,3 +59,5 @@ npm run recheck-guards   # 全レコードにガードを再適用（ジャン�
 - `npm run validate` が通っているか（スキーマ検証は書き込み時にも自動で走る）
 - 新しいフィールドを足したなら、本文照合のガードとテストも足したか
 - 新しいジャンルを追加したなら、`npm run recheck-guards` を全レコードに流したか
+- main に反映したら、`npm run verify-live` で公開サイトを確認したか（反映直後に失敗したら数分おいて再実行）
+- Tatsuroさんが新しく判断したことがあれば、`DECISIONS.md` に日付つきで追記したか
