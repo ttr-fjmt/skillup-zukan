@@ -83,6 +83,8 @@
 | `portalMarkers()` / `agencyScore()` | 掲載対象（ポータル・代行会社の除外） |
 | `buildSchoolLd()` ほか（`lib/structured-data.js`） | 構造化データ（レコードに無い値・月額を一括料金として出さない） |
 | `buildFaqLd()`（`build-faq-jsonld.js`） | よくある質問の構造化データ（本文から生成） |
+| `isIndexableSchool()` / `isIndexableGenre()`（`lib/indexing.js`） | 検索対象（中身を確認できなかった講座を noindex・サイトマップ除外） |
+| `generate-guide-pages.js` ＋ `test/guides.test.js` | 学び直しガイドの記事（公式情報で確認した数字だけ・出典必須） |
 
 ## 人間に確認すること
 

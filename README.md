@@ -368,6 +368,32 @@ PR表示の有無を検査している。
 
 「口コミ件数」は口コミ原文を保存しない設計のため、`review_summary.sources[]` の件数を指標として使っている。
 
+## 検索エンジンに公開する範囲
+
+姉妹サイトの転職エージェント図鑑が AdSense の審査で「有用性の低いコンテンツ」と判定された（2026-09-12）ため、
+このサイトでも中身が確認できていないページを検索対象から外しています。
+線引きは [scraper/lib/indexing.js](scraper/lib/indexing.js) の1か所で決めています。
+
+- **説明文を公式サイトの本文から確認できなかった講座**（`description` が `NOT_DISCLOSED_TEXT` のまま）は検索対象外。
+  サイトには残しますが、`<meta name="robots" content="noindex,follow">` を入れ、サイトマップにも載せません
+  （2026-09 時点で掲載中141件のうち2件）
+- **ジャンル別ページは、検索対象の講座が1件でも含まれるときだけ検索対象**
+- `llms.txt` の件数は、利用者が見られる掲載件数（全件）のままにしています
+
+`prerender.js`（`renderPage` の `noindex` オプション）と `generate-sitemap.js` の2か所で同じ線引きを使っています。
+`scraper/test/indexing.test.js` が、両方が揃っていることを確かめます。
+
+## 学び直しガイド（/guide/）
+
+`scraper/generate-guide-pages.js` が `guide/` 以下の記事ページを書き出します（`cd scraper && node generate-guide-pages.js`）。
+書き出したあとは `node generate-sitemap.js` でサイトマップと `llms.txt` にも反映してください。
+
+- 制度・支給率・上限額・日付など事実に当たる記述は、**厚生労働省の公式ページで確認できたものだけ**を書き、
+  記事末尾に出典を載せます（[DATA_QUALITY_POLICY.md](DATA_QUALITY_POLICY.md) の「確認できないことは書かない」を記事にも適用）。
+  受給要件の細目（雇用保険の加入期間など）は公式ページの本文で確認しきれなかったため書かず、ハローワークで確認するよう案内しています
+- `scraper/test/guides.test.js` が、出典が公式ドメインであること、割合・金額・日付が確認済みのものだけであること、
+  見出しの約束（h1 はひとつ、サイト名は見出しにしない）を確かめます。新しい数字を書くときは、出典を確認してから許可リストに足してください
+
 ## 公開とデプロイ
 
 GitHub Pages（`main` ブランチのルート）＋ Cloudflare DNS。既存2サイトと同じ構成。

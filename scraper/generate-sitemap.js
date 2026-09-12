@@ -14,6 +14,7 @@ const path = require('path');
 
 const { GENRE, GENRE_LABELS } = require('./lib/schema');
 const { readSchools } = require('./lib/schools-store');
+const { isIndexableSchool, isIndexableGenre } = require('./lib/indexing');
 
 const ROOT = path.join(__dirname, '..');
 const SITE = 'https://skillup-zukan.net';
@@ -24,6 +25,26 @@ function lastmod(school) {
   return new Date(Number.isNaN(t) ? Date.now() : t).toISOString().slice(0, 10);
 }
 
+/**
+ * 学び直しガイド（/guide/ 以下）の記事ページ。独自に書いた記事で、Google に評価してほしいページの中心。
+ * generate-guide-pages.js が書き出したものだけを載せる（無いページのURLを送らないため）。
+ */
+function guidePages() {
+  const dir = path.join(ROOT, 'guide');
+  if (!fs.existsSync(path.join(dir, 'index.html'))) return [];
+  let titles = {};
+  try {
+    titles = Object.fromEntries(require('./generate-guide-pages').GUIDES.map(g => [g.slug, g.title]));
+  } catch (e) {
+    titles = {};
+  }
+  const pages = [{ path: '/guide/', title: '学び直しガイド' }];
+  for (const name of fs.readdirSync(dir).sort()) {
+    if (fs.existsSync(path.join(dir, name, 'index.html'))) pages.push({ path: `/guide/${name}/`, title: titles[name] || name });
+  }
+  return pages;
+}
+
 function buildSitemap(schools, genres) {
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
@@ -32,6 +53,7 @@ function buildSitemap(schools, genres) {
     ...schools.map(s => ({ loc: `${SITE}/school/${s.id}/`, lastmod: lastmod(s), priority: '0.7', changefreq: 'weekly' })),
     { loc: `${SITE}/faq.html`, lastmod: today, priority: '0.3', changefreq: 'monthly' },
     { loc: `${SITE}/privacy.html`, lastmod: today, priority: '0.3', changefreq: 'yearly' },
+    ...guidePages().map(p => ({ loc: `${SITE}${p.path}`, lastmod: today, priority: '0.7', changefreq: 'monthly' })),
   ];
 
   return '<?xml version="1.0" encoding="UTF-8"?>\n' +
@@ -70,6 +92,9 @@ function buildLlmsTxt(schools, genres) {
     '',
     ...byGenre,
     '',
+    ...(guidePages().length
+      ? ['## 学び直しガイド', '', ...guidePages().map(p => `- ${p.title}: ${SITE}${p.path}`), '']
+      : []),
     '## 各講座のページ',
     '',
     `${SITE}/school/{id}/ の形式です。一覧は sitemap.xml を参照してください。`,
@@ -83,10 +108,13 @@ function main() {
   const schools = readSchools().filter(s => s.status === 'active');
   const genres = GENRE.filter(g => schools.some(s => s.skill_genre.includes(g)));
 
-  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), buildSitemap(schools, genres), 'utf8');
+  // 中身が確認できていない講座のページは noindex にしているので、サイトマップにも載せない（lib/indexing.js）。
+  // llms.txt の件数は、利用者が見られる掲載件数（全件）のまま。
+  const sitemap = buildSitemap(schools.filter(isIndexableSchool), genres.filter(g => isIndexableGenre(schools, g)));
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap, 'utf8');
   fs.writeFileSync(path.join(ROOT, 'llms.txt'), buildLlmsTxt(schools, genres), 'utf8');
 
-  console.log(`Wrote sitemap.xml (${schools.length + genres.length + 3} URLs) and llms.txt`);
+  console.log(`Wrote sitemap.xml (${(sitemap.match(/<url>/g) || []).length} URLs) and llms.txt`);
 }
 
 if (require.main === module) {

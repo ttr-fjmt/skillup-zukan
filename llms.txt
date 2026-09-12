@@ -21,6 +21,13 @@
 - 語学（27件）: https://skillup-zukan.net/category/language/
 - 資格（42件）: https://skillup-zukan.net/category/certification/
 
+## 学び直しガイド
+
+- 学び直しガイド: https://skillup-zukan.net/guide/
+- 社会人の講座選びで確認したい4つのポイント: https://skillup-zukan.net/guide/choose-course/
+- 教育訓練給付金とは？3つの種類と、対象講座の探し方: https://skillup-zukan.net/guide/kyufukin/
+- オンライン講座と通学、どちらを選ぶ？: https://skillup-zukan.net/guide/online-or-offline/
+
 ## 各講座のページ
 
 https://skillup-zukan.net/school/{id}/ の形式です。一覧は sitemap.xml を参照してください。

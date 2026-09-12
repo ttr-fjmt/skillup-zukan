@@ -26,6 +26,7 @@ const path = require('path');
 
 const { GENRE } = require('./lib/schema');
 const { readSchools } = require('./lib/schools-store');
+const { isIndexableSchool, isIndexableGenre, withRobotsNoindex } = require('./lib/indexing');
 
 const ROOT = path.join(__dirname, '..');
 const PORT = Number(process.env.PRERENDER_PORT || 8936);
@@ -97,7 +98,7 @@ function writeFileWithRetry(dirPath, filePath, data, attempts = 8) {
 }
 
 /** 1ページ分を描画して保存する。戻り値は保存したかどうか。 */
-async function renderPage(browser, urlPath, outDir) {
+async function renderPage(browser, urlPath, outDir, options = {}) {
   const page = await browser.newPage();
   // 静的化中であることをページ側に伝える。ロゴの読み込みを待ち切れずに
   // 代替タイルへ切り替える処理（watchLogos）を、保存対象のHTMLに固定させないため。
@@ -121,6 +122,8 @@ async function renderPage(browser, urlPath, outDir) {
     // 静的HTMLを直接開いた場合、JSが同じ内容をもう一度描画する。二重描画自体は
     // 実害が無いが、クローラーに見せたいのは保存時点の中身なのでそのまま保存する。
     html = html.replace(/<body([^>]*)data-ssg-ready="[^"]*"/, '<body$1');
+    // 中身が確認できていない講座のページは検索対象から外す（lib/indexing.js）。サイトには残す。
+    if (options.noindex) html = withRobotsNoindex(html);
 
     writeFileWithRetry(outDir, path.join(outDir, 'index.html'), html);
     return true;
@@ -178,11 +181,13 @@ async function main() {
 
   try {
     for (const school of schools) {
-      const ok = await renderPage(browser, `/school/${school.id}/`, path.join(ROOT, 'school', school.id));
+      const ok = await renderPage(browser, `/school/${school.id}/`, path.join(ROOT, 'school', school.id),
+        { noindex: !isIndexableSchool(school) });
       if (ok) written += 1; else failed += 1;
     }
     for (const genre of genres) {
-      const ok = await renderPage(browser, `/category/${genre}/`, path.join(ROOT, 'category', genre));
+      const ok = await renderPage(browser, `/category/${genre}/`, path.join(ROOT, 'category', genre),
+        { noindex: !isIndexableGenre(schools, genre) });
       if (ok) written += 1; else failed += 1;
     }
   } finally {
