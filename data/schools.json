@@ -10994,5 +10994,828 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
     "verified_url": "https://www.idear.co.jp/"
+  },
+  {
+    "id": "noa-wa",
+    "school_name": "noa",
+    "official_name": null,
+    "description": "大阪・兵庫に校舎を持つスクール。WEB、DTP、パソコン・資格、プログラミング、ビジネス、コミュニケーションなど幅広い講座・コースを提供。対面指導とWEB対面指導から選択でき、フリー予約制で仕事の都合に合わせた受講が可能。自習室の利用も可能。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "Webプログラマー",
+      "グラフィックデザイナー",
+      "マーケター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "フリー予約制で仕事の都合に合わせて受講可能",
+      "自習室が利用でき専用ソフトがなくても学習可能",
+      "通学に便利な立地（徒歩5分以内）",
+      "元・人事による転職・就職サポート",
+      "卒業生や受講生との交流イベントを開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://noa-wa.co.jp/types/",
+    "official_url": "https://noa-wa.co.jp/",
+    "cta_url": "https://noa-wa.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-noa-wa",
+    "created_at": "2026-09-13T20:16:10.269Z",
+    "updated_at": "2026-09-13T20:16:10.269Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://noa-wa.co.jp/"
+  },
+  {
+    "id": "creators-factory",
+    "school_name": "クリエイターズファクトリー",
+    "official_name": null,
+    "description": "未経験からWebクリエイティブスキルを習得し、転職・副業に直結する実績作りまでサポートするWebスクール。現役プロの指導、卒業なしで期間制限なく学び続けられる環境、1on1相談や個別キャリア支援など、充実したサポート体制が特徴。",
+    "skill_genre": [
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "Webコーダー",
+      "グラフィックデザイナー",
+      "Webディレクター"
+    ],
+    "price": {
+      "display": "186,000円〜",
+      "min_yen": 186000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Webクリエイティブコース",
+        "amount": 360000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webクリエイティブコース",
+        "amount": 15000,
+        "duration": "6ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "Web副業スタートコース",
+        "amount": 186000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Web副業スタートコース",
+        "amount": 6875,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役プロの直接指導による実践的な学習内容",
+      "通学・オンライン・動画教材の組み合わせで柔軟に学習可能",
+      "セッション録画のアーカイブで何度でも復習可能",
+      "チャット質問・個別相談・レビュー添削が回数制限なし",
+      "実案件を想定した制作研修とポートフォリオ作成サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://creators-factory.com/course_list/",
+    "official_url": "https://creators-factory.com/",
+    "cta_url": "https://creators-factory.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-creators-factory",
+    "created_at": "2026-09-13T20:16:26.208Z",
+    "updated_at": "2026-09-13T20:16:26.208Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://creators-factory.com/"
+  },
+  {
+    "id": "kiml",
+    "school_name": "デジタルハリウッドSTUDIO福岡",
+    "official_name": "九州インターメディア研究所",
+    "description": "Webデザイナーと映像クリエイターのプロフェッショナルを育てるスクール。20年を超える実績と8500名を超える卒業生を持つ。オンライン映像教材と通学型スタジオでのマンツーマン指導を組み合わせたハイブリッド学習が特徴。現役クリエイターによる無制限の添削指導、集合型ライブ授業、スケジュール管理サポートを提供。就転職支援やフリーランスマッチング支援も実施。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "フロントエンドエンジニア",
+      "Webディレクター",
+      "Web担当",
+      "Webマーケティング担当",
+      "動画編集",
+      "映像制作",
+      "グラフィックデザイナー"
+    ],
+    "price": {
+      "display": "64,900円〜",
+      "min_yen": 64900,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Webデザイナー専攻",
+        "amount": 572000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "動画クリエイター専攻",
+        "amount": 445500,
+        "duration": "4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webデザイナー専攻超実践型就職・転職プラン",
+        "amount": 668800,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Webデザイナー専攻＋動画クリエイター専攻セット割",
+        "amount": 957000,
+        "duration": "10ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "バナー制作実践講座",
+        "amount": 64900,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WordPress講座",
+        "amount": 105600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "PHP講座",
+        "amount": 105600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WordPress講座＋PHP講座",
+        "amount": 189200,
+        "duration": "4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "動画編集マスター講座",
+        "amount": 64900,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役クリエイターによるマンツーマン指導（質問・添削回数無制限）",
+      "オンライン映像教材は受講期間見放題",
+      "福岡校独自のライブ授業と東京スタジオの配信授業を提供",
+      "制作会社が併設されており実務現場が身近",
+      "卒業後も永久的に就転職サポートとフリーランス支援を利用可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://school.kiml.co.jp/dhfukuoka/",
+    "cta_url": "https://school.kiml.co.jp/dhfukuoka/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kiml",
+    "created_at": "2026-09-13T20:16:35.071Z",
+    "updated_at": "2026-09-13T20:16:35.071Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://school.kiml.co.jp/dhfukuoka/"
+  },
+  {
+    "id": "advan-online",
+    "school_name": "アドバンスクールオンライン",
+    "official_name": null,
+    "description": "Adobe・WEBデザイン・DTP等の通信講座を提供するオンラインスクール。指導経験と実務経験が豊富なスタッフによるオリジナル講座で、学習システムを通じて何度でも学習できます。受講生向けに学割やキャンペーン情報の提供も行っています。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "5,720円〜",
+      "min_yen": 5720,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Adobe基礎コース(Adobe CC 学生・教職員個人版 1年間プラン付)",
+        "amount": 65360,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "Firefly 1年間 通信講座3ヶ月",
+        "amount": 14980,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "フォントワークス新「LETS」1年間",
+        "amount": 48290,
+        "duration": "1年間",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe基礎コース+新LETS1年間(Adobe CC 1年間プラン付)",
+        "amount": 116820,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "DynaSmart V 1年間",
+        "amount": 27500,
+        "duration": "1年間",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe Certified Professional対策テキスト+通信講座6ヶ月(Adobe CC 1年間プラン付)",
+        "amount": 98120,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "通信講座のみ",
+        "amount": 17600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Adobe Certified Professional対策コース",
+        "amount": 5720,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン・DTP通信講座セット",
+        "amount": 102300,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "全講座セット",
+        "amount": 173300,
+        "duration": "6ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "指導経験と実務経験が豊富なスタッフによるオリジナルの通信講座",
+      "学習システムを通じて何度でも学習可能",
+      "受講生限定で学割利用可能",
+      "全講座チュータリング付き",
+      "月次でキャンペーン情報や得な情報を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://advan-online.jp/",
+    "cta_url": "https://advan-online.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-advan-online",
+    "created_at": "2026-09-13T20:16:45.343Z",
+    "updated_at": "2026-09-13T20:16:45.343Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://advan-online.jp/"
+  },
+  {
+    "id": "creators-jp",
+    "school_name": "クリエイターズジャパン",
+    "official_name": null,
+    "description": "Adobe Premiere Proを中心とした動画編集の基礎から応用まで、1ヶ月で習得できるスクール。初心者向けに動画編集の学習方法から案件獲得までをサポート。受講生数は6,400名を超える。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "79,800円〜",
+      "min_yen": 79800,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ベーシックプラン",
+        "amount": 79800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ベーシックプラン",
+        "amount": 3325,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "マスタープラン",
+        "amount": 159600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マスタープラン",
+        "amount": 6234,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Premiere Pro魔法のレシピ」という書籍を出版",
+      "雑誌「日経WOMAN」や「anan」に掲載実績",
+      "複数の情報サイト・メディアで紹介・評判記事の多数掲載"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://creators-jp.com/videoeditor/profile/",
+    "official_url": "https://creators-jp.com/",
+    "cta_url": "https://creators-jp.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-creators-jp",
+    "created_at": "2026-09-13T20:17:00.509Z",
+    "updated_at": "2026-09-13T20:17:00.509Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://creators-jp.com/"
+  },
+  {
+    "id": "skill-hacks",
+    "school_name": "Movie Hacks",
+    "official_name": null,
+    "description": "動画編集の基礎・応用、サムネイル作成を網羅的に学び、わずか1週間程度で動画編集スキルを習得できるYouTube特化型オンライン講座。クリックされやすいサムネイルの作り方や伸びる動画のポイントなども学び、ビジネススキルの向上を目指す。受講期間は無制限で24時間質問し放題。サムネイル作成やマーケティング要素も含まれており、動画編集スキルだけでなく実務的な知識を習得できる。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "side_job",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画編集者",
+      "動画編集ディレクター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "受講期間無制限で学習できる",
+      "24時間質問し放題サポート",
+      "案件獲得コンサルコースあり",
+      "サムネイル作成やマーケティング知識も習得",
+      "大学生から未経験者向けカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://skill-hacks.co.jp/movie-hacks/",
+    "cta_url": "https://skill-hacks.co.jp/movie-hacks/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-skill-hacks",
+    "created_at": "2026-09-13T20:17:09.750Z",
+    "updated_at": "2026-09-13T20:17:09.750Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://skill-hacks.co.jp/movie-hacks/"
+  },
+  {
+    "id": "gls-vietnam",
+    "school_name": "ゴーウェルベトナム語スクール",
+    "official_name": "ゴーウェル株式会社",
+    "description": "銀座駅徒歩2分のベトナム語スクール。会話中心のマンツーマンレッスンを中心に、オンラインレッスン、赴任前短期研修コースを提供。ネイティブ講師が常時在籍し、オリジナルテキストを使用した初級向け教材が充実。講師の指名予約が可能で、9時から23時まで毎日開講。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "来校マンツーマン",
+        "amount": 3200,
+        "duration": "50分",
+        "kind": null
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "銀座駅徒歩2分、アクセス至便な立地",
+      "講師の指名予約が可能",
+      "オリジナルテキスト5種類で初級段階をカバー",
+      "9時から23時まで毎日開講"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://gls-vietnam.com/start/price/",
+    "official_url": "https://gls-vietnam.com/",
+    "cta_url": "https://gls-vietnam.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-gls-vietnam",
+    "created_at": "2026-09-13T20:17:37.761Z",
+    "updated_at": "2026-09-13T20:17:37.761Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://gls-vietnam.com/"
+  },
+  {
+    "id": "sss-education",
+    "school_name": "スリーエス・エデュケーション",
+    "official_name": null,
+    "description": "東京都飯田橋に所在するアジア系言語専門教室。タイ語の発音と会話に特化した指導が特徴で、ネイティブに通じる正確な発音習得を重視しています。日本人講師とネイティブ講師双方の視点で開発したオリジナルカリキュラム「スリーエスメソッド」を採用。グループレッスン（2～5名の少人数制）とマンツーマンレッスン、オンラインレッスンに対応しており、初心者から上級者まで対応可能です。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "入学金",
+        "amount": 11000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマン発音レッスンはグループレッスン料金で受講可能",
+      "欠席時はDVDやCD録音による復習サポートと振り替えレッスンが無料で利用できる",
+      "入門1カリキュラムではマンツーマンで発音指導、入門2以降は少人数グループレッスン",
+      "タイ語、韓国語、ベトナム語、インドネシア語、中国語に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://sss-education.com/price/",
+    "official_url": "https://sss-education.com/",
+    "cta_url": "https://sss-education.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sss-education",
+    "created_at": "2026-09-13T20:18:11.995Z",
+    "updated_at": "2026-09-13T20:18:11.995Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://sss-education.com/"
+  },
+  {
+    "id": "fij",
+    "school_name": "欧米・アジア語学センター",
+    "official_name": null,
+    "description": "英語をはじめ40言語以上に対応するマンツーマン語学スクール。200名以上のネイティブ講師によるプロフェッショナルなレッスンを提供。担任制を採用し、目標設計から達成まで同じ講師がサポート。オンライン・通学から選択可能で、海外赴任者向けコースや教育訓練給付金コース、法人向けサービスも展開している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "200名以上のネイティブ・プロフェッショナル講師が在籍",
+      "担任制による継続的なサポート体制",
+      "マンツーマン、グループ、セミプライベートなど多様なコース形式",
+      "英語から40言語以上に対応可能",
+      "オンライン・通学の両形式に対応し柔軟なスケジュール調整が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://fij.tokyo/fee/",
+    "area_detail_url": "https://fij.tokyo/about/",
+    "official_url": "https://fij.tokyo/",
+    "cta_url": "https://fij.tokyo/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-fij",
+    "created_at": "2026-09-13T20:18:47.457Z",
+    "updated_at": "2026-09-13T20:18:47.457Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://fij.tokyo/"
+  },
+  {
+    "id": "ebatokyo",
+    "school_name": "EBA中小企業診断士スクール",
+    "official_name": null,
+    "description": "過去問や再現答案等の様々なデータ分析に基づき、中小企業診断士試験合格に向けたカリキュラムを提供しています。1次試験では科目別難易度を予測した当年度特化のカリキュラムで、2次試験では理論の応用能力を段階的な事例演習により培います。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "200,000円〜",
+      "min_yen": 200000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "EBA合格コース 通学",
+        "amount": 350000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "EBA合格コース 通学（2次強化オプション付き）",
+        "amount": 365000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "EBA合格コース ライブ",
+        "amount": 330000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "EBA合格コース ライブ（2次強化オプション付き）",
+        "amount": 345000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "EBA合格コース 通信",
+        "amount": 310000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "EBA合格コース 通信（2次強化オプション付き）",
+        "amount": 325000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2次集中コース 通学",
+        "amount": 240000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2次集中コース ライブ",
+        "amount": 220000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2次集中コース 通信",
+        "amount": 200000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1次試験は科目別難易度の傾向を分析して当年度の難易度を予測し、必要な学習教材を提供",
+      "パワーポイントのアニメーション方式講義で1講義あたり平均1000枚のスライドを使用",
+      "講義スライドと過去問解説がセットのワンストップ学習設計",
+      "2次試験では過去問と出題の趣旨・試験委員の著書論文に基づく理論マスター講義を実施",
+      "段階的な事例演習により応用能力を鍛え、答案はすべて添削して返却"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.ebatokyo.com/index/course/saijuko",
+    "official_url": "https://www.ebatokyo.com/",
+    "cta_url": "https://www.ebatokyo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ebatokyo",
+    "created_at": "2026-09-13T20:19:44.503Z",
+    "updated_at": "2026-09-13T20:19:44.503Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.ebatokyo.com/"
+  },
+  {
+    "id": "engineercollege",
+    "school_name": "エンジニアカレッジ",
+    "official_name": null,
+    "description": "未経験からITエンジニアへの就職をサポートする無料スクール。サーバやデータベース、ネットワークの知識から実務的な開発手法まで、実際の開発現場で使えるカリキュラムを提供。マンツーマン質問対応で基礎から始めサーバー構築までスキルアップできる。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "インフラエンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "マンツーマン形式の質問対応環境",
+      "経験豊富な講師陣とキャリアアドバイザーによるサポート",
+      "コンピュータ基礎からサーバー構築まで段階的に習得",
+      "大手企業レベルのビジネスマナー研修を実施",
+      "3500社以上の紹介先企業から就職先を紹介"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://engineercollege.jp/curriculum",
+    "official_url": "https://engineercollege.jp/",
+    "cta_url": "https://engineercollege.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-engineercollege",
+    "created_at": "2026-09-13T20:20:09.687Z",
+    "updated_at": "2026-09-13T20:20:09.687Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://engineercollege.jp/"
   }
 ]

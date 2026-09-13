@@ -383,5 +383,75 @@
     "genre": "language",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-12T20:16:07.198Z"
+  },
+  "マーケプラス（MARKE＋）": {
+    "name": "マーケプラス（MARKE＋）",
+    "website": "https://www.marke.plus/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "ジッセン！オンライン": {
+    "name": "ジッセン！オンライン",
+    "website": "https://jissen.me/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "インプレスアカデミー（Web担当者の学校）": {
+    "name": "インプレスアカデミー（Web担当者の学校）",
+    "website": "https://webtan.impress.co.jp/school/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "リンプレス DXリテラシー研修": {
+    "name": "リンプレス DXリテラシー研修",
+    "website": "https://www.linpress.co.jp/service/dx-literacy",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "SCSK CELF ITキャンパス（社会人向け無料IT講座）": {
+    "name": "SCSK CELF ITキャンパス（社会人向け無料IT講座）",
+    "website": "https://www.celf.biz/assistance/celf_campus/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "ハミングバード by ロゼッタストーン・ラーニングセンター": {
+    "name": "ハミングバード by ロゼッタストーン・ラーニングセンター",
+    "website": "https://www.rosettastone.co.jp/hummingbird/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "JEGS International 日本語教師養成420時間通信講座": {
+    "name": "JEGS International 日本語教師養成420時間通信講座",
+    "website": "https://www.jegsi.com/420h",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "AAS中小企業診断士2次試験対策専門校": {
+    "name": "AAS中小企業診断士2次試験対策専門校",
+    "website": "https://www.aas-clover.com/",
+    "genre": "certification",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "GEEK JOB（ギークジョブ）": {
+    "name": "GEEK JOB（ギークジョブ）",
+    "website": "https://camp.geekjob.jp/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "公務員試験予備校EYE": {
+    "name": "公務員試験予備校EYE",
+    "website": "https://globaleye.co.jp/koumuin/",
+    "genre": "certification",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-13T20:15:44.684Z"
   }
 }
