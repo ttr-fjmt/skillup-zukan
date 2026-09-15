@@ -40,6 +40,25 @@ test('裏付けのあるジャンルは残す', () => {
   assert.deepStrictEqual(dropped, ['uiux']);
 });
 
+test('資格名だけで書かれた資格スクールも裏付けられる', () => {
+  // 実際に起きた取りこぼし: EBA中小企業診断士スクールの紹介文は「中小企業診断士試験」
+  // とは書くが「資格」「検定」とは書かず、裏付けゼロになって日次ワークフローが止まった。
+  const page = pad('過去問や再現答案等のデータ分析に基づき、中小企業診断士試験合格に向けたカリキュラムを提供しています。');
+  const { genres, dropped } = verifyGenres(['certification'], page);
+  assert.deepStrictEqual(genres, ['certification']);
+  assert.deepStrictEqual(dropped, []);
+});
+
+test('塾でも出る言葉だけでは資格とみなさない', () => {
+  // 「試験」「合格」「講座」「受験」「過去問」を裏付けにすると、中高生向けの学習塾が
+  // 「資格」として通ってしまう。資格名が無いものは落とし続ける。
+  const page = pad('中学生・高校生向けの学習塾。志望校合格に向けた受験指導と、過去問演習の講座を行っています。');
+  const { genres, dropped, judged } = verifyGenres(['certification'], page);
+  assert.ok(judged);
+  assert.deepStrictEqual(genres, []);
+  assert.deepStrictEqual(dropped, ['certification']);
+});
+
 test('本文が短すぎるときは何も落とさない', () => {
   // JavaScriptで描画するサイトは本文がほとんど取れない。そこで落とすと、
   // 実在のスクール（SHElikes）が掲載できなくなる。
