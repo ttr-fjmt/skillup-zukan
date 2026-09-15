@@ -453,5 +453,40 @@
     "genre": "certification",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-13T20:15:44.684Z"
+  },
+  "バンタンデザイン研究所 キャリアカレッジ 映像クリエイターコース": {
+    "name": "バンタンデザイン研究所 キャリアカレッジ 映像クリエイターコース",
+    "website": "https://www.vantan-career.com/faculty/movie/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-15T20:18:00.156Z"
+  },
+  "e-JINZAI": {
+    "name": "e-JINZAI",
+    "website": "https://www.ejinzai.jp/",
+    "genre": "genai_dx",
+    "reason": "portal_or_marketplace",
+    "checkedAt": "2026-09-15T20:18:00.156Z"
+  },
+  "ブリティッシュ・カウンシル（英語講座・研修）": {
+    "name": "ブリティッシュ・カウンシル（英語講座・研修）",
+    "website": "https://www.britishcouncil.jp/english-courses",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-15T20:18:00.156Z"
+  },
+  "大和学園 京都製菓（製菓衛生師通信教育）": {
+    "name": "大和学園 京都製菓（製菓衛生師通信教育）",
+    "website": "https://www.taiwa.ac.jp/",
+    "genre": "certification",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-15T20:18:00.156Z"
+  },
+  "AIIT東京都立産業技術大学院大学（人間中心デザインプログラム）": {
+    "name": "AIIT東京都立産業技術大学院大学（人間中心デザインプログラム）",
+    "website": "https://aiit.ac.jp/master_program/certification_program/hcd/",
+    "genre": "uiux",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-15T20:18:00.156Z"
   }
 }

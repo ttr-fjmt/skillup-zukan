@@ -12177,5 +12177,1207 @@
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
     "verified_url": "https://winner.winschool.jp/python/"
+  },
+  {
+    "id": "tf-tms",
+    "school_name": "TMS 東京映画映像学校",
+    "official_name": null,
+    "description": "1997年創立。映画・映像業界への就職を目的とした1年制の学校。プロの撮影現場での実務経験（年間600本以上の現場参加）を通じて「実績」と「人脈」を習得し、業界への就職を実現するカリキュラム。学生のうちから有償インターンとして現場でギャラを得ながら学ぶ。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "カメラマン",
+      "編集マン",
+      "美術"
+    ],
+    "price": {
+      "display": "100,000円〜",
+      "min_yen": 100000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ジョブトレーニングコース（1年制）",
+        "amount": null,
+        "duration": "1年",
+        "kind": "total"
+      },
+      {
+        "label": "入学金",
+        "amount": 250000,
+        "duration": "1年",
+        "kind": "enrollment"
+      },
+      {
+        "label": "授業料",
+        "amount": 990000,
+        "duration": "1年",
+        "kind": "total"
+      },
+      {
+        "label": "設備維持費",
+        "amount": 260000,
+        "duration": "1年",
+        "kind": "total"
+      },
+      {
+        "label": "実習費",
+        "amount": 100000,
+        "duration": "1年",
+        "kind": "total"
+      },
+      {
+        "label": "撮影機材費",
+        "amount": 150000,
+        "duration": "1年",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "1年間で映画・ドラマ・MVなどプロの撮影現場に年間600本以上参加できる",
+      "在学中から有償インターンで現場ギャラを受け取り実質負担を軽減できる",
+      "映画・ドラマ制作の実績が作品エンドロールに名前掲載される",
+      "プロの現場で業界人脈を構築でき卒業後の就職につながる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://tf-tms.jp/guide",
+    "official_url": "https://tf-tms.jp/",
+    "cta_url": "https://tf-tms.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tf-tms",
+    "created_at": "2026-09-15T20:18:15.071Z",
+    "updated_at": "2026-09-15T20:18:15.071Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://tf-tms.jp/"
+  },
+  {
+    "id": "creatoracademy-career",
+    "school_name": "バンタンクリエイターアカデミー キャリアカレッジ",
+    "official_name": "株式会社バンタン",
+    "description": "動画クリエイター・動画エディターのための社会人向けスクール。VTuberコース、動画クリエイターコースの各スタンダード・マスターコースを提供。現役クリエイター講師による完全オフラインの少人数制授業で、キャリアチェンジを支援する。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "現役クリエイター講師が全員対応",
+      "完全オフラインの通学型授業",
+      "少人数制クラスでの徹底サポート",
+      "受講生コミュニティの提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://creatoracademy-career.jp/applicants/tuition/",
+    "official_url": "https://creatoracademy-career.jp/",
+    "cta_url": "https://creatoracademy-career.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-creatoracademy-career",
+    "created_at": "2026-09-15T20:18:42.336Z",
+    "updated_at": "2026-09-15T20:18:42.336Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://creatoracademy-career.jp/"
+  },
+  {
+    "id": "tapas-academy",
+    "school_name": "TAPASオンラインスクール",
+    "official_name": null,
+    "description": "未経験者向けの動画編集スクール。テレビ局協力で制作された完全オリジナルカリキュラムを採用し、マンツーマンサポートで基礎から応用まで体系的に学習できます。転職や副業に特化した実践的な内容で、卒業生には案件獲得サポート制度があります。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "映像制作"
+    ],
+    "price": {
+      "display": "98,000円〜",
+      "min_yen": 98000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ベーシック",
+        "amount": 98000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "アドバンス",
+        "amount": 190000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マスター",
+        "amount": 250000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "テレビ局監修のカリキュラム",
+      "マンツーマン授業による個別対応",
+      "卒業後の案件紹介サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://tapas-academy.com/plan/",
+    "official_url": "https://tapas-academy.com/",
+    "cta_url": "https://tapas-academy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tapas-academy",
+    "created_at": "2026-09-15T20:18:54.567Z",
+    "updated_at": "2026-09-15T20:18:54.567Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://tapas-academy.com/"
+  },
+  {
+    "id": "ulucus",
+    "school_name": "ウルクスWEBマーケタープログラム",
+    "official_name": "株式会社ウルクス",
+    "description": "WEB・広告業界が未経験者でも最短4週間でWeb広告の運用スキルが身に付き、転職も目指せる完全オンラインの短期集中学習プログラム。現役のWebマーケター講師による実践的カリキュラムで、Google広告やFacebook広告など、現場で即座に使える広告運用スキルを体系的に習得できます。パーソナルメンター付きで挫折させず、転職サポートも受けられます。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "パーソナルメンター付きで学習進捗を管理し挫折させない",
+      "現役Webマーケター講師がZOOMでマンツーマン質問対応",
+      "動画視聴・テスト・課題作成・個別質問をセットにした実践的カリキュラム",
+      "卒業後も交流会や勉強会を通じたコミュニティへの継続参加が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://ulucus.co.jp/lp/",
+    "cta_url": "https://ulucus.co.jp/lp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ulucus",
+    "created_at": "2026-09-15T20:19:04.227Z",
+    "updated_at": "2026-09-15T20:19:04.227Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://ulucus.co.jp/lp/"
+  },
+  {
+    "id": "trainocate",
+    "school_name": "トレノケート",
+    "official_name": null,
+    "description": "人材育成専門30年の企業が提供するITトレーニングとビジネス研修。プログラミング、クラウド、セキュリティ、データ分析などのIT技術から、プロジェクトマネジメント、ビジネススキルなど幅広い分野で、新入社員から経営層まで全層を対象とした研修を実施。集合研修とeラーニングの両形態に対応し、個別のニーズに合わせた一社向け研修も提供している。",
+    "skill_genre": [
+      "programming",
+      "web_marketing",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "新宿・大阪・名古屋の3会場で駅から徒歩5分圏内の立地",
+      "約1,600以上のコース数を提供",
+      "集合研修とeラーニング教材の両形態に対応",
+      "1日未満から複数日の研修まで幅広い期間を用意",
+      "AWS、Microsoft、Cisco等の主要ベンダートレーニングに対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.trainocate.co.jp/reference/course_guide_IT.html",
+    "official_url": "https://www.trainocate.co.jp/",
+    "cta_url": "https://www.trainocate.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-trainocate",
+    "created_at": "2026-09-15T20:19:31.828Z",
+    "updated_at": "2026-09-15T20:19:31.828Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.trainocate.co.jp/"
+  },
+  {
+    "id": "tofl",
+    "school_name": "トフルゼミナール",
+    "official_name": null,
+    "description": "国内大学受験対策、海外進学・留学支援、英語資格試験対策（TOEFL、IELTS、英検、SAT等）に対応する総合教育機関。総合型選抜・学校推薦型選抜から一般選抜、海外帰国生対応まで幅広い受験形式に対応。全国複数校舎でオンライン・通学の両形式で講座を提供。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "北海道",
+      "東京都",
+      "京都府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "総合型選抜・学校推薦型選抜対策講座を提供",
+      "TOEFL・IELTS・英検・SAT等の英語資格試験対策",
+      "海外大学進学支援と奨学金申請サポート",
+      "海外帰国生向けのコース設置",
+      "オンライン個別相談対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://tofl.jp/juken/campaign.php",
+    "official_url": "https://tofl.jp/",
+    "cta_url": "https://tofl.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tofl",
+    "created_at": "2026-09-15T20:19:50.468Z",
+    "updated_at": "2026-09-15T20:19:50.468Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://tofl.jp/"
+  },
+  {
+    "id": "blast-english",
+    "school_name": "ブラスト英語学院",
+    "official_name": null,
+    "description": "英検®・TOEIC®・TOEFL®・IELTS™・TEAP対策の専門塾。英検1級やTOEIC990満点等を保有するハイレベルな講師が担当し、高得点を狙う学習者にも対応。小学生から70代までの幅広い年齢層が参加。無料の個別相談で学習スケジュール提案と最適なコース提案を実施。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "advanced",
+    "career_paths": [],
+    "price": {
+      "display": "8,800円〜",
+      "min_yen": 8800,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "入会金",
+        "amount": 22000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "マンツーマン英会話コース（4回パッケージ）",
+        "amount": 35200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "追加レッスン料金",
+        "amount": 8800,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "英検1級やTOEIC990満点等を保有するハイレベルな講師が担当",
+      "各教育機関や大学での講師経験を持つ講師",
+      "小学生から70代までの幅広い年齢層に対応",
+      "無料個別相談で目的目標に合わせた学習スケジュール提案"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://blast-english.com/english-conversation-course/",
+    "official_url": "https://blast-english.com/",
+    "cta_url": "https://blast-english.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-blast-english",
+    "created_at": "2026-09-15T20:20:22.939Z",
+    "updated_at": "2026-09-15T20:20:22.939Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://blast-english.com/"
+  },
+  {
+    "id": "sankei",
+    "school_name": "産経オンライン英会話Plus",
+    "official_name": null,
+    "description": "フィリピン人講師・ネイティブ講師・日本人講師によるオンライン英会話サービス。日常英会話からビジネス英会話、TOEIC対策、英検二次試験対策など2,800種類以上の教材を提供。コイン制で柔軟に受講でき、朝5時～深夜25時に対応。家族でアカウント共有可能で月額4,620円から。AI英語日記「えいログ」やリスニング学習アプリ「レシピー」の追加も可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額4,620円〜",
+      "min_yen": 4620,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "プラン200",
+        "amount": 4620,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "プラン620",
+        "amount": 6380,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "プラン1240",
+        "amount": 12100,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "カスタマイズプラン",
+        "amount": 6380,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "2,800種類以上の無料教材が利用可能",
+      "朝5時～深夜25時に受講可能で5分前から7日先まで予約可能",
+      "家族最大4人で1アカウント共有可能で1人当たり月額1,595円から",
+      "AI英語日記「えいログ」でライティング学習が可能",
+      "リスニング学習アプリ「レシピー」で復習対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://human.sankei.co.jp/",
+    "cta_url": "https://human.sankei.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sankei",
+    "created_at": "2026-09-15T20:20:33.863Z",
+    "updated_at": "2026-09-15T20:20:33.863Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://human.sankei.co.jp/"
+  },
+  {
+    "id": "alc-education",
+    "school_name": "アルク（法人向け英語研修）",
+    "official_name": "株式会社アルク",
+    "description": "ビジネス英語研修、英語学習ツール、海外研修、異文化理解力、グローバルリーダーシップ育成など幅広い法人向けサービスを提供。研修前後のサポート体制やWEBシステムによる受講生管理、評価アンケート実施など充実した研修運営を特徴とする。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "研修前から研修後まで一貫したトータルサポート体制",
+      "WEBシステムによる受講生管理と進捗確認",
+      "研修終了後のアンケート実施と成果評価"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.alc-education.co.jp/business/",
+    "cta_url": "https://www.alc-education.co.jp/business/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-alc-education",
+    "created_at": "2026-09-15T20:20:44.966Z",
+    "updated_at": "2026-09-15T20:20:44.966Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.alc-education.co.jp/business/"
+  },
+  {
+    "id": "toritsu-gk",
+    "school_name": "東立学院",
+    "official_name": "有限会社東立学院",
+    "description": "国家資格の受験準備講習会を提供するスクール。危険物取扱者、ボイラー技士、衛生管理者、消防設備士、毒物劇物取扱者、安全管理者選任時研修、冷凍機械責任者などの資格取得講習を開催。25年の伝統と実績を持ち、親切・丁寧な対応をモットーとしている。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "東武東上線成増駅から徒歩3分の通学便利な立地",
+      "9:00～22:00の受付時間で柔軟な対応",
+      "危険物取扱者・ボイラー技士・衛生管理者など9種類以上の国家資格に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.toritsu-gk.co.jp/category/1367854.html",
+    "official_url": "https://www.toritsu-gk.co.jp/",
+    "cta_url": "https://www.toritsu-gk.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-toritsu-gk",
+    "created_at": "2026-09-15T20:21:08.189Z",
+    "updated_at": "2026-09-15T20:21:08.189Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.toritsu-gk.co.jp/"
+  },
+  {
+    "id": "jtc-web",
+    "school_name": "日本心理カウンセラー養成学院",
+    "official_name": null,
+    "description": "心理カウンセラー養成教育専門機関として約20年の実績を持つ学院。NPO法人日本カウンセリング普及協会の指定学院。心理学の知識と実践的なカウンセリング技術を、少人数制・実践カリキュラムで習得できます。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "70,000円〜",
+      "min_yen": 70000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "心理学基礎ブロックのみ受講",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "心理学基礎ブロックのみ受講",
+        "amount": 70000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "心理学応用ブロックのみ受講",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "心理学応用ブロックのみ受講",
+        "amount": 90000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "カウンセリング基礎ブロックのみ受講",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "カウンセリング基礎ブロックのみ受講",
+        "amount": 70000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "カウンセリング応用ブロックのみ受講",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "カウンセリング応用ブロックのみ受講",
+        "amount": 90000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "滋賀県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "少人数制での実践的なカリキュラム",
+      "プロの心理カウンセラーによる臨床経験を交えた講義",
+      "心理カウンセラー養成講座、スキルアップ講座、通信講座など多様な講座を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "http://jtc-web.jp/counselor/price.html",
+    "official_url": "https://jtc-web.jp/",
+    "cta_url": "https://jtc-web.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-jtc-web",
+    "created_at": "2026-09-15T20:21:25.303Z",
+    "updated_at": "2026-09-15T20:21:25.303Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://jtc-web.jp/"
+  },
+  {
+    "id": "chorishi",
+    "school_name": "日本調理師協会（通信教育）",
+    "official_name": "日本調理師協会",
+    "description": "45年の伝統と実績を持つ通信教育講座。調理師国家試験受験対策から、スーパーや外食産業での食品取扱い実務まで、複数の講座を提供。テキスト・問題集の一括配本、専任講師による添削指導、修了証授与など体系的な学習サポートを実施。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "19,800円〜",
+      "min_yen": 19800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "調理師受験通信講座",
+        "amount": 30450,
+        "duration": "6ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "鮮魚取扱者実務通信講座",
+        "amount": 28800,
+        "duration": "6ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "食肉取扱者実務通信講座",
+        "amount": 19800,
+        "duration": "4ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "青果取扱者実務通信講座",
+        "amount": 19800,
+        "duration": "4ヵ月",
+        "kind": "total"
+      },
+      {
+        "label": "惣菜取扱者実務通信講座",
+        "amount": 19800,
+        "duration": "4ヵ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "テキスト・問題集の一括配本による自学学習",
+      "専任講師による個別の添削指導",
+      "修了証および優秀修了証の授与",
+      "グループ学習による効果的な学習環境"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "http://chorishi.net/correspondence/",
+    "cta_url": "http://chorishi.net/correspondence/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-chorishi",
+    "created_at": "2026-09-15T20:21:32.505Z",
+    "updated_at": "2026-09-15T20:21:32.505Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "http://chorishi.net/correspondence/"
+  },
+  {
+    "id": "suishin",
+    "school_name": "広島酔心調理製菓専門学校 通信課程 製菓衛生師科",
+    "official_name": null,
+    "description": "中学校卒業以上を対象とした1年間の通信制課程。修了と同時に製菓衛生師の国家試験受験資格を取得できます。スクーリングとレポート添削は本校教員が担当し、広島での受講が可能。仕事や学校、家事と両立しながら自宅でマイペースに学習できる制度です。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "250,000円",
+      "min_yen": 250000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "通信課程 製菓衛生師科",
+        "amount": 250000,
+        "duration": "1年",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "広島県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "修了と同時に製菓衛生師受験資格を取得",
+      "本校教員によるスクーリングとレポート添削",
+      "アクセスの良い広島でスクーリング受講",
+      "自宅でマイペースに学習可能",
+      "仕事や学校と両立して学習できる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.suishin.ac.jp/confectionery/correspondense-course",
+    "cta_url": "https://www.suishin.ac.jp/confectionery/correspondense-course",
+    "cta_type": "direct",
+    "click_tracking_id": "click-suishin",
+    "created_at": "2026-09-15T20:21:38.866Z",
+    "updated_at": "2026-09-15T20:21:38.866Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.suishin.ac.jp/confectionery/correspondense-course"
+  },
+  {
+    "id": "prog-8",
+    "school_name": "Progate",
+    "official_name": null,
+    "description": "イラスト中心のスライド学習を採用したオンラインプログラミング学習サービス。HTML/CSS、JavaScript、Python、Java、Ruby、PHPなど15以上の言語・技術を学べます。ブラウザ上でコードを書きながら実践できる環境を提供し、初心者から実務レベルまでの学習に対応しています。アプリ版でも学習可能です。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "プラスプラン",
+        "amount": null,
+        "duration": "12ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ブラウザ上でコードを書きながら学習できる実践的な環境",
+      "イラスト中心のスライド学習で初心者も理解しやすい",
+      "スマートフォンアプリ版で自分のペースで学習可能",
+      "HTML/CSS、JavaScript、Python、Java、Ruby、PHP、Node.js、Go、Javaなど15以上の言語に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://prog-8.com/plans/for_users",
+    "official_url": "https://prog-8.com/",
+    "cta_url": "https://prog-8.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-prog-8",
+    "created_at": "2026-09-15T20:22:06.584Z",
+    "updated_at": "2026-09-15T20:22:06.584Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://prog-8.com/"
+  },
+  {
+    "id": "paiza",
+    "school_name": "paizaラーニング",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://paiza.jp/works",
+    "cta_url": "https://paiza.jp/works",
+    "cta_type": "direct",
+    "click_tracking_id": "click-paiza",
+    "created_at": "2026-09-15T20:22:11.470Z",
+    "updated_at": "2026-09-15T20:22:11.470Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://paiza.jp/works"
+  },
+  {
+    "id": "dotinstall",
+    "school_name": "ドットインストール",
+    "official_name": null,
+    "description": "3分の短い動画レッスンでプログラミングを学べるサービス。全578レッスン、8,635本の動画を提供。ホームページやWebサービス制作、ゲーム制作、データ分析、機械学習/AIなど幅広い分野をカバー。無料レッスンとプレミアムプランがあり、プレミアムではミニクイズや問題集などのアウトプット機会と現役エンジニアへの質問サポートが利用できます。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額1,080円〜",
+      "min_yen": 1080,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "プレミアム 月々払い",
+        "amount": 1480,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プレミアム 一括払い（6ヶ月）",
+        "amount": null,
+        "duration": "6ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "プレミアム 一括払い（12ヶ月）",
+        "amount": 1080,
+        "duration": "12ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "プレミアム 法人向け",
+        "amount": 2680,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "3分以内の短動画で学習できる",
+      "スマートフォンから視聴可能",
+      "578レッスン・8,635本の動画を提供",
+      "プレミアムで現役エンジニアへの質問ができる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://dotinstall.com/premium",
+    "official_url": "https://dotinstall.com/",
+    "cta_url": "https://dotinstall.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dotinstall",
+    "created_at": "2026-09-15T20:22:25.596Z",
+    "updated_at": "2026-09-15T20:22:25.596Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://dotinstall.com/"
+  },
+  {
+    "id": "withcode",
+    "school_name": "WithCode",
+    "official_name": "株式会社Losta",
+    "description": "制作会社が運営するWeb制作スクール。デザインからコーディングまで一貫して学べ、学習から実案件への対応、稼ぐところまでを目指したカリキュラム。副業やフリーランス、転職まで複数の目標に対応。実案件サポート（WithFree）、就転職サポート（WithCareer）等の関連サービスを提供。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "99,800円",
+      "min_yen": 99800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "基礎コース",
+        "amount": 99800,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "実案件を通じた実践的な学習",
+      "デザインからコーディングまで一貫したカリキュラム",
+      "制作会社の現場ノウハウを学べる",
+      "実案件サポート（WithFree）と就転職サポート（WithCareer）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://withcode.tech/",
+    "cta_url": "https://withcode.tech/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-withcode",
+    "created_at": "2026-09-15T20:22:33.437Z",
+    "updated_at": "2026-09-15T20:22:33.437Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://withcode.tech/"
+  },
+  {
+    "id": "isa-school",
+    "school_name": "パソコン教室アイエスエイ",
+    "official_name": null,
+    "description": "40年以上の信頼と実績を持つパソコン教室。個別指導による未経験者から対応した講座を提供し、Office関連（Excel、Word、PowerPoint、Access、VBA）、Web・DTP・映像デザイン、プログラミング（Python、Java、JavaScript等）、IT・ネットワーク関連の資格取得講座を展開。通学とオンラインの選べる受講スタイルで、駅前教室を含む首都圏9校で展開。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "千葉県",
+      "埼玉県",
+      "神奈川県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "個別指導による未経験者対応",
+      "自由予約通学制で時間帯を選択可能",
+      "通学とオンライン学習を選べる受講スタイル",
+      "オリジナル教材と豊富な演習課題を用意",
+      "専任アドバイザーによる入学から卒業までの支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.isa-school.net/isainfo/benefit/",
+    "official_url": "https://www.isa-school.net/",
+    "cta_url": "https://www.isa-school.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-isa-school",
+    "created_at": "2026-09-15T20:22:54.575Z",
+    "updated_at": "2026-09-15T20:22:54.575Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://www.isa-school.net/"
+  },
+  {
+    "id": "knowledgewing",
+    "school_name": "富士通ラーニングメディア",
+    "official_name": null,
+    "description": "UXライティングについて、ユーザー中心の考え方や実践的なテクニックを学ぶ講座です。効果を上げた最新事例をもとにライティングを体験し、センスに頼らない技術によって「良いUXライティング」と「悪いライティング」の判断基準を身につけ、日常業務で実践できることを目指します。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "55,000円",
+      "min_yen": 55000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "【集合】言葉の力でユーザー体験を向上させる UXライティング講座",
+        "amount": 55000,
+        "duration": "1日間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "1日間の集合研修形式で、ユーザー中心のライティング手法を実践的に学習できます",
+      "マーケティング担当、サイト制作担当、Webデザイナー・Webライターなど多職種が対象です",
+      "東京での開催スケジュールが複数設定されています（2026年10月、12月、2027年2月）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.kcc.knowledgewing.com/icm/srv/course-application/init-detail?cd=FLM&pcd=FLMC&cscd=UJS93L",
+    "cta_url": "https://www.kcc.knowledgewing.com/icm/srv/course-application/init-detail?cd=FLM&pcd=FLMC&cscd=UJS93L",
+    "cta_type": "direct",
+    "click_tracking_id": "click-knowledgewing",
+    "created_at": "2026-09-15T20:23:33.553Z",
+    "updated_at": "2026-09-15T20:23:33.553Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.kcc.knowledgewing.com/icm/srv/course-application/init-detail?cd=FLM&pcd=FLMC&cscd=UJS93L"
   }
 ]

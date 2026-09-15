@@ -1,0 +1,63 @@
+[
+  {
+    "date": "2026-09-16",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "tf-tms",
+      "creatoracademy-career",
+      "tapas-academy"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "ulucus"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "trainocate"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "language",
+    "new_school_ids": [
+      "tofl",
+      "blast-english",
+      "sankei",
+      "alc-education"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "certification",
+    "new_school_ids": [
+      "toritsu-gk",
+      "jtc-web",
+      "chorishi",
+      "suishin"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "programming",
+    "new_school_ids": [
+      "prog-8",
+      "paiza",
+      "dotinstall",
+      "withcode",
+      "isa-school"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "genre": "uiux",
+    "new_school_ids": [
+      "knowledgewing"
+    ]
+  }
+]
