@@ -830,11 +830,11 @@
     ],
     "price_detail_url": "https://www.winschool.jp/info/payment.html",
     "official_url": "https://www.winschool.jp/",
-    "cta_url": "https://www.winschool.jp/",
-    "cta_type": "direct",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+DDNQPU+529E+BX3J6",
+    "cta_type": "affiliate",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-09-08T12:45:27.495Z",
+    "updated_at": "2026-09-15T09:39:15.174Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -4520,11 +4520,11 @@
     ],
     "price_detail_url": "https://sukyojuku.com/system/",
     "official_url": "https://sukyojuku.com/",
-    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AZ+2Z8CI+4NPS+5YRHE",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AZ+463K2+4NPS+HVFKY",
     "cta_type": "affiliate",
     "click_tracking_id": "click-sukyojuku",
     "created_at": "2026-09-08T12:31:39.982Z",
-    "updated_at": "2026-09-08T12:31:39.982Z",
+    "updated_at": "2026-09-15T09:36:51.137Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -5400,11 +5400,11 @@
     ],
     "price_detail_url": "https://www.recurrent.co.jp/cc/",
     "official_url": "https://www.recurrent.co.jp/",
-    "cta_url": "https://www.recurrent.co.jp/",
-    "cta_type": "direct",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FSL11E+5BEA+BWVTE",
+    "cta_type": "affiliate",
     "click_tracking_id": "click-recurrent",
     "created_at": "2026-09-08T20:17:52.871Z",
-    "updated_at": "2026-09-08T20:17:52.871Z",
+    "updated_at": "2026-09-15T09:38:06.563Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -7365,11 +7365,11 @@
     ],
     "price_detail_url": "https://www.nova.co.jp/price/",
     "official_url": "https://www.nova.co.jp/",
-    "cta_url": "https://www.nova.co.jp/",
-    "cta_type": "direct",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FMMOZM+320A+62ENM",
+    "cta_type": "affiliate",
     "click_tracking_id": "click-nova",
     "created_at": "2026-09-10T20:16:25.906Z",
-    "updated_at": "2026-09-10T20:16:25.906Z",
+    "updated_at": "2026-09-15T09:38:00.365Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -11817,5 +11817,365 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://engineercollege.jp/"
+  },
+  {
+    "id": "esports-english",
+    "school_name": "eスポーツ英会話eスピ！",
+    "official_name": null,
+    "description": "eスポーツをテーマにしたオンライン英会話スクール。フォートナイト、マインクラフト、ロブロックスなどのゲームを使用しながら、英語での即時応答力や「英語脳」を養成する。初級から上級まで段階的に習得でき、中学英語対応カリキュラムも用意されている。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額10,890円",
+      "min_yen": 10890,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月4回コース",
+        "amount": 10890,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "フォートナイト・マインクラフト・ロブロックスなどのeスポーツを題材にしたレッスン",
+      "1レッスン80分以上、平日16～22時、土日10～22時に対応",
+      "3～4名のグループレッスン形式",
+      "初級・中級・上級の段階別カリキュラムに加え中学英語準備・中学英語コースを提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://esports-english.jp/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+G3ATXE+5LPE+5YJRM",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-esports-english",
+    "created_at": "2026-09-15T09:37:21.331Z",
+    "updated_at": "2026-09-15T09:37:21.331Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://esports-english.jp/"
+  },
+  {
+    "id": "b-cafe",
+    "school_name": "b わたしの英会話",
+    "official_name": null,
+    "description": "女性限定・初心者専門のマンツーマン英会話スクール。英語をはじめて学ぶ大人女性（主に30歳以上）を特化対象とし、中学・高校以来英語から遠ざかっていた超初心者が安心して学べる環境を提供。オリジナルテキスト「Photo Journal」を使用し、学生時代の学習をベースに実生活で使える表現を習得。9割以上の講師は日本語対応可能で、日本人専任コンシェルジュがサポート。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "149,667円〜",
+      "min_yen": 149667,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "マイ・レッスン・プラン40",
+        "amount": 220000,
+        "duration": "10ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "マイ・レッスン・プラン40",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "マイ・レッスン・プラン20",
+        "amount": 149667,
+        "duration": "5ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "マイ・レッスン・プラン20",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "Tea Time プラン",
+        "amount": 28000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Tea Time プラン",
+        "amount": 30000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "女性限定・初心者専門のマンツーマンレッスン",
+      "9割以上の講師が日本語対応可能で安心",
+      "日本人専任コンシェルジュによるサポート体制",
+      "オリジナルテキスト『Photo Journal』で実生活で使える表現を習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.b-cafe.net/price?grid=gnSub",
+    "official_url": "https://www.b-cafe.net/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FG2XC2+27TW+62U36",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-b-cafe",
+    "created_at": "2026-09-15T09:37:54.439Z",
+    "updated_at": "2026-09-15T09:37:54.439Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.b-cafe.net/"
+  },
+  {
+    "id": "amgakuin",
+    "school_name": "アミューズメントメディア総合学院",
+    "official_name": null,
+    "description": "声優、ゲーム、アニメーション、キャラクターデザイン分野の教育を行う専門学校。昼間部本科2年制と夜間・日曜専科6ヶ月～の講座を提供。プロの現場で学ぶ産学共同・現場実践教育が特徴。卒業生が業界の第一線で活躍している。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ゲームプログラマー",
+      "ゲームプランナー",
+      "アニメーター",
+      "キャラクターデザイナー",
+      "声優",
+      "アニメーションプロデューサー"
+    ],
+    "price": {
+      "display": "月額3,500円",
+      "min_yen": 3500,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "声優学科 初年度",
+        "amount": null,
+        "duration": "初年度",
+        "kind": "total"
+      },
+      {
+        "label": "声優学科 2年次",
+        "amount": null,
+        "duration": "2年次",
+        "kind": "total"
+      },
+      {
+        "label": "声優学科 初年度諸経費",
+        "amount": null,
+        "duration": "初年度",
+        "kind": "total"
+      },
+      {
+        "label": "声優学科 2年次諸経費",
+        "amount": null,
+        "duration": "2年次",
+        "kind": "total"
+      },
+      {
+        "label": "国の教育ローン（パターンB）",
+        "amount": 3500,
+        "duration": "在学中2年間",
+        "kind": "monthly"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "プロの現場で学ぶ産学共同・現場実践教育",
+      "現役プロ講師による指導",
+      "複数の専攻コース（昼間部2年制と夜間・日曜専科）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.amgakuin.co.jp/school/tuition",
+    "area_detail_url": "https://www.amgakuin.co.jp/company/access",
+    "official_url": "https://www.amgakuin.co.jp/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+GGED8I+3OAI+5YRHE",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-amgakuin",
+    "created_at": "2026-09-15T09:38:43.628Z",
+    "updated_at": "2026-09-15T09:38:43.628Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://www.amgakuin.co.jp/"
+  },
+  {
+    "id": "yosca",
+    "school_name": "あなたのライターキャリア講座",
+    "official_name": null,
+    "description": "記事作成代行会社YOSCAが提供するライター養成講座。思考力を磨くオリジナルカリキュラム「LOPREQ」を採用し、4つの基礎思考力（LOGIC、PLOT、REACTION、QUESTION）を体系的に学習。プロの編集スタッフによる5回の添削課題と1年間のLINEサポートを通じて、未経験からライターの実践スキルを習得できます。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ライター",
+      "副業ライター",
+      "メディア担当者"
+    ],
+    "price": {
+      "display": "49,800円〜",
+      "min_yen": 49800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "セルフコース",
+        "amount": 49800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンコース",
+        "amount": 185000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "プロ編集スタッフによる5回の添削課題で思考力を習得",
+      "1年間LINEで講師に相談し放題のサポート",
+      "現役ライター講師との1on1キャリア相談を実施",
+      "修了後にUdemyの5つの有料講座（約34,000円分）を無料で提供",
+      "修了生への案件紹介により実績を重ねるチャンを提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://yosca.jp/school/career/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC3YO+EKIXI2+4XF8+5ZEMQ",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-yosca",
+    "created_at": "2026-09-15T09:39:09.583Z",
+    "updated_at": "2026-09-15T09:39:09.583Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://yosca.jp/school/career/"
+  },
+  {
+    "id": "winschool-2",
+    "school_name": "Python Winner",
+    "official_name": null,
+    "description": "テクノプロ・グループの技術者育成ノウハウを凝縮したオンラインスクール。未経験からでも「現場で通用する」Pythonプログラミング、AI・機械学習、データ分析スキルを習得可能。マンツーマン指導による実践的なカリキュラムで、就職・転職やスキルアップを支援。クラウド環境（AWS Cloud9）での実習と動画教材を組み合わせた学習形態。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AIエンジニア",
+      "データアナリスト"
+    ],
+    "price": {
+      "display": "297,000円",
+      "min_yen": 297000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Pythonマスター",
+        "amount": 297000,
+        "duration": "3ケ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "マンツーマンレッスン（30分/回）による実践的指導",
+      "クラウドベース開発環境（AWS Cloud9）での実習",
+      "業界大手転職エージェントとの連携による就職・転職支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://winner.winschool.jp/python/p_master/",
+    "official_url": "https://winner.winschool.jp/python/",
+    "cta_url": "https://px.a8.net/svt/ejp?a8mat=4BC6AY+FEAMIQ+529E+HV7V6",
+    "cta_type": "affiliate",
+    "click_tracking_id": "click-winschool-2",
+    "created_at": "2026-09-15T09:39:51.021Z",
+    "updated_at": "2026-09-15T09:39:51.021Z",
+    "status": "active",
+    "source": "a8",
+    "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
+    "verified_url": "https://winner.winschool.jp/python/"
   }
 ]
