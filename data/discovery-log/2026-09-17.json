@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-09-17",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "digimabootcamp"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "deepsquare",
+      "autobahn"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "genre": "language",
+    "new_school_ids": [
+      "spani-simo",
+      "spanish-online",
+      "ecolesympa",
+      "fellow-academy"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "genre": "certification",
+    "new_school_ids": [
+      "designlearn"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "genre": "programming",
+    "new_school_ids": [
+      "techtrain"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "genre": "uiux",
+    "new_school_ids": [
+      "globis"
+    ]
+  }
+]

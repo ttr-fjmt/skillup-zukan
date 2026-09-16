@@ -13379,5 +13379,724 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
     "verified_url": "https://www.kcc.knowledgewing.com/icm/srv/course-application/init-detail?cd=FLM&pcd=FLMC&cscd=UJS93L"
+  },
+  {
+    "id": "digimabootcamp",
+    "school_name": "デジマブートキャンプ",
+    "official_name": "株式会社デジタルアイデンティティ",
+    "description": "デジタルアイデンティティが運営する実務特化型のWEBマーケティングスクール。7年で上場を果たした広告代理店が社内で活用するWEBマーケター育成カリキュラムを公開。基礎知識、応用実践、実務チャレンジの3段構成で、未経験から最短で即戦力のWEBマーケターを目指す。現役トップマーケターがマンツーマン指導し、実際の広告案件を活用した学習が特徴。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "WEBマーケター"
+    ],
+    "price": {
+      "display": "400,000円〜",
+      "min_yen": 400000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "premiumプレミアムコース",
+        "amount": 700000,
+        "duration": "6~8ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "standardスタンダードコース",
+        "amount": 400000,
+        "duration": "3~4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "practical specialization実務特化コース",
+        "amount": 450000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "入学金",
+        "amount": 50000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "マンツーマン指導で不明点をその場で解決",
+      "実広告アカウントを活用した実践的な学習",
+      "広告代理店の実務経験が積める",
+      "平日夜や土曜日など働きながら通いやすい時間設定",
+      "無制限補講制度で確実な知識を蓄積"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://digimabootcamp.jp/course/",
+    "official_url": "https://digimabootcamp.jp/",
+    "cta_url": "https://digimabootcamp.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-digimabootcamp",
+    "created_at": "2026-09-16T20:16:24.309Z",
+    "updated_at": "2026-09-16T20:16:24.309Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://digimabootcamp.jp/"
+  },
+  {
+    "id": "deepsquare",
+    "school_name": "DeepSquare",
+    "official_name": "デロイト トーマツ ディープスクエア株式会社",
+    "description": "AIエンジニア育成を中心に、E資格・G検定・生成AI講座など複数のAI関連講座を提供しているスクール。経験を持つAIエンジニア講師による実践的な講義と、確認問題15問、コード演習40問、コード課題4問、E資格対策400問などの豊富な演習により学習効果を向上させている。未経験者向けから実務者向けまで幅広い講座ラインアップを用意。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "AIエンジニア",
+      "AI実務者"
+    ],
+    "price": {
+      "display": "16,280円〜",
+      "min_yen": 16280,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "E資格講座",
+        "amount": 89100,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ゼロから始める AIエンジニア講座セット",
+        "amount": 140800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "G検定講座",
+        "amount": 19580,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AIビジネス講座",
+        "amount": 16280,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "経験のあるAIエンジニア講師による実践的講義",
+      "豊富な演習問題（確認問題、コード演習、E資格対策問題など）",
+      "翔泳社による問題集の出版・販売",
+      "未経験者向けサポートの充実"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://ai-edu.deepsquare.jp/",
+    "cta_url": "https://ai-edu.deepsquare.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-deepsquare",
+    "created_at": "2026-09-16T20:16:34.887Z",
+    "updated_at": "2026-09-16T20:16:34.887Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://ai-edu.deepsquare.jp/"
+  },
+  {
+    "id": "autobahn",
+    "school_name": "アウトバーン",
+    "official_name": "株式会社アウトバーン",
+    "description": "DXとAI教育で企業の人材育成を支援する法人向けIT教育研修サービス。未経験から現場で通用する人材を育成することを目標とし、業務の棚卸から始めて実務に直結するスキル習得を支援。Python・AI研修、AI駆動開発研修、業務改善ワークショップなどのパッケージ研修を提供。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "チャットサポート付きの研修パッケージ",
+      "Python・AIから業務改善ワークショップまで複数の研修カリキュラムを用意",
+      "講師が御社に伺う対面研修およびオンライン研修（ZoomやTeams）に対応",
+      "社内の実務に基づいた業務の棚卸しから始める実践的な設計",
+      "オンラインセミナーや無料体験会を随時開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://service.autobahn.education/education_curriculum/python%e3%83%bbai%e7%a0%94%e4%bf%ae/",
+    "official_url": "https://service.autobahn.education/",
+    "cta_url": "https://service.autobahn.education/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-autobahn",
+    "created_at": "2026-09-16T20:17:04.638Z",
+    "updated_at": "2026-09-16T20:17:04.638Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://service.autobahn.education/"
+  },
+  {
+    "id": "spani-simo",
+    "school_name": "スパニッシモ",
+    "official_name": null,
+    "description": "スペイン語専門のオンライン会話教室。50分のマンツーマンレッスンを提供しており、初級から上級まで対応。グアテマラの現地で活躍するプロ講師が50名以上在籍。スパニッシモアカデミーコース（文法中心）、フリーセッションコース、トラベルコースの3つから選択可能。毎レッスン後に講師からフィードバックが届く。入会金・教材費不要。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額9,360円",
+      "min_yen": 9360,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "プラン詳細なし",
+        "amount": 9360,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマンレッスンで初級から上級まで対応",
+      "グアテマラの現地プロ講師が50名以上在籍",
+      "毎レッスン後に講師からコメント・フィードバック",
+      "スパニッシモアカデミー・フリーセッション・トラベルの3コース"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.spani-simo.com/",
+    "cta_url": "https://www.spani-simo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-spani-simo",
+    "created_at": "2026-09-16T20:17:12.769Z",
+    "updated_at": "2026-09-16T20:17:12.769Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.spani-simo.com/"
+  },
+  {
+    "id": "spanish-online",
+    "school_name": "スパニッシュ・オンライン",
+    "official_name": null,
+    "description": "スペイン語のマンツーマンオンラインレッスン。世界中から厳選採用した講師により、生徒のレベルとニーズに合わせたレッスンを提供。Google Chatを使用した25分単位のレッスンで、早朝5時から深夜1時まで対応。年間400回以上のアクティビティで来日旅行客とスペイン語での交流が可能。生徒向けコミュニティと年2回の懇親会により学習ノウハウ共有。年中無休のサポートで初心者から上級者まで対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額4,125円〜",
+      "min_yen": 4125,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "50ポイントコース",
+        "amount": 4125,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "100ポイントコース",
+        "amount": 6600,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "200ポイントコース",
+        "amount": 11000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Google Chatを使用したビデオ通話とチャット機能",
+      "25分単位で自由に組み合わせ可能（最大75分まで連続受講可能）",
+      "レッスン開始10分前までの予約が可能",
+      "スペイン語圏からの旅行者との無料アクティビティに年間400回以上参加可能",
+      "専用のオンライン・コミュニティで学習ノウハウを共有"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://spanish-online.jp/",
+    "cta_url": "https://spanish-online.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-spanish-online",
+    "created_at": "2026-09-16T20:17:22.062Z",
+    "updated_at": "2026-09-16T20:17:22.062Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://spanish-online.jp/"
+  },
+  {
+    "id": "ecolesympa",
+    "school_name": "フランス語学校エコールサンパ",
+    "official_name": null,
+    "description": "1994年創立のフランス語会話教室。東京に複数教室を持ち、会話に特化したレッスンを提供。日本人へのフランス語教育に精通した講師が独自開発したメソッドで、実用的なフランス語を学べます。少人数グループレッスンとプライベートレッスンがあり、オンラインにも対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "3,520円",
+      "min_yen": 3520,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "グループレッスン（都内教室）",
+        "amount": 3575,
+        "duration": "週1回60分のレッスン（月4回）",
+        "kind": "monthly"
+      },
+      {
+        "label": "プライベートレッスン（都内教室）",
+        "amount": 7139,
+        "duration": "1回60分のレッスン",
+        "kind": "monthly"
+      },
+      {
+        "label": "会話道場（都内教室）",
+        "amount": 3190,
+        "duration": "1回60分の会話レッスン",
+        "kind": "monthly"
+      },
+      {
+        "label": "オンライングループレッスン",
+        "amount": 3575,
+        "duration": "週1回60分のレッスン（月4回）",
+        "kind": "monthly"
+      },
+      {
+        "label": "オンラインプライベートレッスン",
+        "amount": 4840,
+        "duration": "1回40分のレッスン",
+        "kind": "monthly"
+      },
+      {
+        "label": "入会金",
+        "amount": 11000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "オリジナル教材『C'est Sympa !』",
+        "amount": 3520,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "会話に特化したレッスン内容",
+      "フランス人講師による指導",
+      "独自開発の教材を使用",
+      "複数の小規模教室での少人数制",
+      "イベント・パーティーによる学習環境の充実"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://ecolesympa.com/nos-tarifs/",
+    "official_url": "https://ecolesympa.com/",
+    "cta_url": "https://ecolesympa.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ecolesympa",
+    "created_at": "2026-09-16T20:17:36.920Z",
+    "updated_at": "2026-09-16T20:17:36.920Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://ecolesympa.com/"
+  },
+  {
+    "id": "fellow-academy",
+    "school_name": "フェロー・アカデミー",
+    "official_name": null,
+    "description": "半世紀以上の教育実績と業界ネットワークを持つ翻訳スクール。実務・出版・映像の三大分野の翻訳講座をラインナップしており、現役プロの翻訳者が講師を務める。オンライン・通学・通信など複数の受講形態から選択可能で、翻訳者ネットワーク「アメリア」を併設し仕事獲得をサポート。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "freelance",
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役プロの翻訳者が講師を務める",
+      "実務・出版・映像の三大分野に対応",
+      "翻訳者ネットワーク「アメリア」で年間1,000件以上の求人をサポート",
+      "ライブ配信・通学・通信・録画配信から選択可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.fellow-academy.com/discount/",
+    "official_url": "https://www.fellow-academy.com/",
+    "cta_url": "https://www.fellow-academy.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-fellow-academy",
+    "created_at": "2026-09-16T20:18:05.648Z",
+    "updated_at": "2026-09-16T20:18:05.648Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.fellow-academy.com/"
+  },
+  {
+    "id": "designlearn",
+    "school_name": "諒設計アーキテクトラーニング",
+    "official_name": null,
+    "description": "心理・食育・美容・住まいなど、280種類以上の資格講座から選べる通信教育スクール。自宅にいながら経験豊富な講師の指導が受けられます。基本コースとプラチナコースで、資格試験受験または試験免除での資格取得が選べます。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "心理カウンセラー・食育・美容・整体など280種類以上の資格講座",
+      "1つの講座で2つの資格を同時取得できる講座も多数",
+      "質問は24時間無料で何回でも対応",
+      "課題は何度でも再提出可能",
+      "卒業生向けにお仕事お役立ちブック・NOWSARA掲載などのサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.designlearn.co.jp/about/payment/",
+    "area_detail_url": "https://www.designlearn.co.jp/about/",
+    "official_url": "https://www.designlearn.co.jp/",
+    "cta_url": "https://www.designlearn.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-designlearn",
+    "created_at": "2026-09-16T20:18:34.216Z",
+    "updated_at": "2026-09-16T20:18:34.216Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.designlearn.co.jp/"
+  },
+  {
+    "id": "techtrain",
+    "school_name": "TechTrain",
+    "official_name": "株式会社TechBowl",
+    "description": "大手ベンチャーや成長企業に在籍する現役エンジニア監修のカリキュラムにより、企業が求める水準の技術を習得できるスキルアッププログラム。HTMLやJavaScript、React.js、Laravel、PHPなど17分野200問以上の実践型ドリルで学習でき、一定レベルに達した学生はトップエンジニアとの1on1面談や就活サポートを受けられる。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア"
+    ],
+    "price": {
+      "display": "月額3,300円〜",
+      "min_yen": 3300,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "基本料金（運営支援）",
+        "amount": 30000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "システム利用料",
+        "amount": 50000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "学習支援",
+        "amount": 4400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "就職活動支援",
+        "amount": 3300,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "60社120名の業界トップエンジニアが監修カリキュラムを提供",
+      "17分野200問以上の実践型ドリルで学習可能",
+      "一定レベル達成後、トップエンジニアとの1on1面談が可能",
+      "ポートフォリオアドバイスと実務スキルの習得支援",
+      "学習から就活まで年間を通したフルサポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://education.techtrain.dev/",
+    "cta_url": "https://education.techtrain.dev/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-techtrain",
+    "created_at": "2026-09-16T20:18:41.398Z",
+    "updated_at": "2026-09-16T20:18:41.398Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://education.techtrain.dev/"
+  },
+  {
+    "id": "globis",
+    "school_name": "グロービス経営大学院",
+    "official_name": "株式会社グロービス",
+    "description": "人間中心的な発想からテクノロジーを活用し、顧客の体験価値を一新するようなイノベーションの事例について、ケースを通じた議論で理解を深めます。Day1でグループを組成し、3ヶ月間継続的にプロジェクトワークをしながら、デザイン思考の手法とビジネスへの生かし方を学ぶ。グループプロジェクト発表は第6回で実施されます。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "experienced",
+    "career_paths": [],
+    "price": {
+      "display": "128,000円〜",
+      "min_yen": 128000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "単科入学金",
+        "amount": 23000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "受講料",
+        "amount": 128000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "本科入学金",
+        "amount": 80000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "1年目 第1期",
+        "amount": 862500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "1年目 第2期",
+        "amount": 862500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2年目 第3期",
+        "amount": 862500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2年目 第4期",
+        "amount": 862500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "標準修業年限2年間受講料合計",
+        "amount": 3450000,
+        "duration": "2年間",
+        "kind": "total"
+      },
+      {
+        "label": "3年目以降毎年度 長期履修に関する受講料",
+        "amount": 310000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府",
+      "福岡県",
+      "茨城県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "全6回のセッション構成で、ケースメソッドによる議論を実施",
+      "3ヶ月間の継続的なグループプロジェクトワークを実施",
+      "デザイン思考のプロセス学習（情報収集、構造化、アイディエーション、ストーリーテリング）",
+      "レゴ・ブロックを用いたワークショップを含む実践的手法",
+      "クラスは35名の編成で、講師による直接指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://mba.globis.ac.jp/admissions/entry/expences.html",
+    "official_url": "https://mba.globis.ac.jp/curriculum/detail/dtu/",
+    "cta_url": "https://mba.globis.ac.jp/curriculum/detail/dtu/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-globis",
+    "created_at": "2026-09-16T20:19:00.261Z",
+    "updated_at": "2026-09-16T20:19:00.261Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://mba.globis.ac.jp/curriculum/detail/dtu/"
   }
 ]

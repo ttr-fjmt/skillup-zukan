@@ -488,5 +488,54 @@
     "genre": "uiux",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-15T20:18:00.156Z"
+  },
+  "GLOBIS学び放題（生成AI・DX・AIビジネス活用コース）": {
+    "name": "GLOBIS学び放題（生成AI・DX・AIビジネス活用コース）",
+    "website": "https://unlimited.globis.co.jp/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "早稲田大学スマートエスイー（DXコース・IoT/AIコース）": {
+    "name": "早稲田大学スマートエスイー（DXコース・IoT/AIコース）",
+    "website": "https://www.waseda.jp/inst/smartse/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "総務省統計局 データサイエンス・スクール（社会人向けデータサイエンス入門・演習）": {
+    "name": "総務省統計局 データサイエンス・スクール（社会人向けデータサイエンス入門・演習）",
+    "website": "https://www.stat.go.jp/dss/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "公務員のライト": {
+    "name": "公務員のライト",
+    "website": "https://koumuin-light.jp/",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "MOOCRES（ムークリ）": {
+    "name": "MOOCRES（ムークリ）",
+    "website": "https://moocres.com/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "動画編集ゼミ": {
+    "name": "動画編集ゼミ",
+    "website": "https://www.movie-tech-seminar.com/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "縦型動画LABO": {
+    "name": "縦型動画LABO",
+    "website": "https://funtecinc.com/",
+    "genre": "video_editing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-16T20:16:07.728Z"
   }
 }
