@@ -14098,5 +14098,871 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
     "verified_url": "https://mba.globis.ac.jp/curriculum/detail/dtu/"
+  },
+  {
+    "id": "oneup",
+    "school_name": "ワンナップ英会話",
+    "official_name": null,
+    "description": "ネイティブ講師によるマンツーマンレッスン(50分)とTOEIC900点以上のアドバイザーによるカウンセリング・学習サポートを組み合わせた英会話スクール。挫折を防ぎ、継続をサポートする環境を提供。4技能を伸ばすワークショップやオプションの英語コーチングも利用可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "ネイティブ講師による50分のマンツーマンレッスン",
+      "TOEIC900点以上のアドバイザーによる学習サポート",
+      "英文法・長文読解・リスニング等のワークショップ",
+      "オンラインと対面の両方に対応",
+      "英語コーチング(オプション)で習慣化を支援"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://oneup.jp/lesson_price/",
+    "area_detail_url": "https://oneup.jp/access/",
+    "official_url": "https://www.oneup.jp/",
+    "cta_url": "https://www.oneup.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-oneup",
+    "created_at": "2026-09-17T20:18:18.661Z",
+    "updated_at": "2026-09-17T20:18:18.661Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.oneup.jp/"
+  },
+  {
+    "id": "englead",
+    "school_name": "ENGLEAD（イングリード）",
+    "official_name": null,
+    "description": "目標・レベル・生活スタイルに合わせて43万通り以上の組み合わせからカリキュラムを設計し、毎週のオンラインカウンセリングとLINEを使った日々のコーチングで効率的な学習をサポートします。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額106,467円〜",
+      "min_yen": 106467,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "オンライン英語コーチングコース",
+        "amount": 106467,
+        "duration": "2ヶ月〜",
+        "kind": "monthly"
+      },
+      {
+        "label": "オンラインTOEIC点数保証コーチングコース",
+        "amount": 139800,
+        "duration": "3ヶ月〜",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "第二言語習得論に基づいた科学的カリキュラム設計",
+      "毎週のオンラインウィークリーカウンセリング",
+      "LINEを使った日々のデイリーコーチング",
+      "プログレスチェックテストで学習進度を可視化"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://englead.jp/",
+    "cta_url": "https://englead.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-englead",
+    "created_at": "2026-09-17T20:18:25.923Z",
+    "updated_at": "2026-09-17T20:18:25.923Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://englead.jp/"
+  },
+  {
+    "id": "90english",
+    "school_name": "90 English",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://90english.com/",
+    "cta_url": "https://90english.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-90english",
+    "created_at": "2026-09-17T20:18:28.624Z",
+    "updated_at": "2026-09-17T20:18:28.624Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://90english.com/"
+  },
+  {
+    "id": "rizap-english",
+    "school_name": "RIZAP ENGLISH",
+    "official_name": null,
+    "description": "マンツーマン指導による英語スピーキング中心のコース。専属トレーナーによるオーダーメイド学習設計と日々のコーチングを実施。アウトプット重視型プログラムで、英語脳養成とネイティブ講師との実践スピーキングを提供。完全個室のレッスンルームで全レッスンオンライン受講が可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマン指導による専属トレーナーのコーチング",
+      "完全個室のレッスンルーム完備",
+      "全レッスンオンライン受講対応",
+      "英会話コースとTOEIC L&R スコアアップコースを提供",
+      "英語脳養成トレーニングとネイティブ講師との実践スピーキング"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.rizap-english.jp/plan",
+    "area_detail_url": "https://www.rizap-english.jp/schools",
+    "official_url": "https://www.rizap-english.jp/",
+    "cta_url": "https://www.rizap-english.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-rizap-english",
+    "created_at": "2026-09-17T20:19:08.994Z",
+    "updated_at": "2026-09-17T20:19:08.994Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.rizap-english.jp/"
+  },
+  {
+    "id": "rizhong",
+    "school_name": "日中学院",
+    "official_name": null,
+    "description": "中国語専門教育を70年にわたって提供している学院。入門から通訳まで様々なレベルに対応した中国語別科（週1～2回の講座選択制）、全日制の中国語本科・研究科、企業内研修など、多様な学習形態を提供。発音重視の授業が特徴。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "入門から通訳まで60以上の講座から選択可能",
+      "発音重視の授業",
+      "通学とオンラインの両方に対応",
+      "聴講・編入随時可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.rizhong.org/tuition",
+    "official_url": "https://www.rizhong.org/",
+    "cta_url": "https://www.rizhong.org/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-rizhong",
+    "created_at": "2026-09-17T20:19:33.286Z",
+    "updated_at": "2026-09-17T20:19:33.286Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.rizhong.org/"
+  },
+  {
+    "id": "language-institute-of-tokyo",
+    "school_name": "東京語學堂",
+    "official_name": null,
+    "description": "「語学」を通じて「つながる」という理念を掲げた言語学習教室。少人数制のクラス（最大6名程度）で、個々の学習目標に合わせた指導をおこなっている。文化体験や交流イベントの機会も設けている。自由が丘本校と東大本郷校がある。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "少人数制クラス（最大6名程度）での指導",
+      "個々の学習目標に合わせたカリキュラム",
+      "韓国語、英語、日本語、中国語、セルビア語などの多言語対応",
+      "文化体験や交流イベントの実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.language-institute-of-tokyo.com/tutor-fee",
+    "official_url": "https://www.language-institute-of-tokyo.com/",
+    "cta_url": "https://www.language-institute-of-tokyo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-language-institute-of-tokyo",
+    "created_at": "2026-09-17T20:19:59.858Z",
+    "updated_at": "2026-09-17T20:19:59.858Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.language-institute-of-tokyo.com/"
+  },
+  {
+    "id": "rebo-success",
+    "school_name": "診断士ゼミナール",
+    "official_name": "株式会社レボ",
+    "description": "中小企業診断士試験の合格を目指す講座。フルカラーテキスト、アニメーションを使った映像講義（約270時間）、過去問題集7年分、二次試験の添削指導、回数無制限の質問フォロー制度を備える。スマートフォン・タブレット対応で隙間時間の学習が可能。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "27,280円〜",
+      "min_yen": 27280,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "1次2次試験プレミアムフルコース",
+        "amount": 59780,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "1次試験コース",
+        "amount": 51200,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "2次試験コース",
+        "amount": 27280,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "フルカラーテキストに図やイラストを多用",
+      "アニメーションを活用した映像講義で約270時間の学習コンテンツ",
+      "過去問題集7年分に詳しい解説を掲載",
+      "スマートフォン・タブレットでの視聴に対応",
+      "経験豊富な講師による二次試験の添削指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.rebo-success.co.jp/price.html",
+    "official_url": "https://www.rebo-success.co.jp/",
+    "cta_url": "https://www.rebo-success.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-rebo-success",
+    "created_at": "2026-09-17T20:20:13.896Z",
+    "updated_at": "2026-09-17T20:20:13.896Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.rebo-success.co.jp/"
+  },
+  {
+    "id": "cpa-net",
+    "school_name": "CPA会計学院",
+    "official_name": null,
+    "description": "公認会計士試験、米国公認会計士(USCPA)試験、米国公認管理会計士(USCMA)試験の合格を目指す講座を提供するスクール。個別サポートと分かりやすい講義・教材、デジタル学習コンテンツが特徴。校舎での受講、オンラインでの学習スタイルに対応し、初学者から受験経験者向けまで複数のコースを用意している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "個別サポート体制で学習から合格まで支援",
+      "デジタル学習コンテンツで時間場所を問わず学習可能",
+      "複数の受講スタイルから選択可能（校舎・オンライン対応）",
+      "初学者から受験経験者向けまで複数のコースを用意"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://cpa-net.jp/course/cpa/info/",
+    "official_url": "https://cpa-net.jp/",
+    "cta_url": "https://cpa-net.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-cpa-net",
+    "created_at": "2026-09-17T20:20:41.516Z",
+    "updated_at": "2026-09-17T20:20:41.516Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://cpa-net.jp/"
+  },
+  {
+    "id": "tech-teacher",
+    "school_name": "Tech Teacher",
+    "official_name": "株式会社トモノカイ",
+    "description": "生徒一人ひとりの学習目標に合わせて、必要なITスキルを持つ家庭教師がマンツーマン指導を行うサービス。担任教師が最適な学習計画を作成し、データサイエンス、学校課題サポート、マインクラフトなど様々な内容に対応。オンライン受講または対面受講（自宅・カフェなど）を選択できます。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額3,960円〜",
+      "min_yen": 3960,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "学生教師コース",
+        "amount": 3960,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "社会人教師コース",
+        "amount": 4400,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "東大生を含む難関大学の理系学生・院生・博士が教師として在籍",
+      "生徒の学習状況・目標に合わせたフルオーダーメイドカリキュラム",
+      "初回体験授業は無料（教師交通費も不要）",
+      "受けた分だけ後払いの従量課金制で初期費用は入会金22,000円のみ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "area_detail_url": "https://tech-teacher.jp/lecture/area/",
+    "official_url": "https://tech-teacher.jp/",
+    "cta_url": "https://tech-teacher.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tech-teacher",
+    "created_at": "2026-09-17T20:20:55.559Z",
+    "updated_at": "2026-09-17T20:20:55.559Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://tech-teacher.jp/"
+  },
+  {
+    "id": "proclass",
+    "school_name": "PROCLASS",
+    "official_name": null,
+    "description": "社会人向けのWeb制作・プログラミング教室。現役のプロが作るカリキュラムで、ホームページ制作、プログラミング、Webデザイン、ITスキルアップなど、社会で役立つ実践的なスキルを身につけることができます。マンツーマンレッスンや企業研修なども提供しています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "3,000円",
+      "min_yen": 3000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "マンツーマンレッスン",
+        "amount": 12000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "有料サポートチケット",
+        "amount": 3000,
+        "duration": "30分",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "京都府"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "現役プロが作成したカリキュラム",
+      "マンツーマンレッスンに対応",
+      "企業研修・新入社員研修を提供",
+      "Web制作会社向けの研修プログラム有り"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://proclass.jp/school/price/",
+    "area_detail_url": "https://proclass.jp/access/",
+    "official_url": "https://proclass.jp/",
+    "cta_url": "https://proclass.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-proclass",
+    "created_at": "2026-09-17T20:21:15.123Z",
+    "updated_at": "2026-09-17T20:21:15.123Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://proclass.jp/"
+  },
+  {
+    "id": "myweb-official",
+    "school_name": "マイウェブスクール",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://myweb-official.com/",
+    "cta_url": "https://myweb-official.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-myweb-official",
+    "created_at": "2026-09-17T20:21:30.460Z",
+    "updated_at": "2026-09-17T20:21:30.460Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://myweb-official.com/"
+  },
+  {
+    "id": "tribalmedia",
+    "school_name": "MARPS（マープス）by トライバルメディアハウス",
+    "official_name": "株式会社トライバルメディアハウス",
+    "description": "マーケティングの全体像を俯瞰しながら、様々な概念や施策、それぞれのつながりについて理解し、実践につなげることができるオンライン学習サービス。現役マーケター講師による理論に基づいた解決策や、外部講師を招いた対談イベント、マーケティング理論の解説記事などのコンテンツが無料で提供される。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マーケティング理論の体系的学習が可能",
+      "ライブ配信とアーカイブ動画で柔軟に学習",
+      "著名なゲスト講師による対談イベント"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://marps.tribalmedia.co.jp/",
+    "cta_url": "https://marps.tribalmedia.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tribalmedia",
+    "created_at": "2026-09-17T20:21:39.481Z",
+    "updated_at": "2026-09-17T20:21:39.481Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://marps.tribalmedia.co.jp/"
+  },
+  {
+    "id": "synergy-marketing",
+    "school_name": "Synergy!ACADEMY（シナジーアカデミー）",
+    "official_name": null,
+    "description": "実務で使えるCRMノウハウを学べるマーケティングセミナー・講座。プロのマーケターとの出会いや参加者同士の交流を通じて、最新のマーケティング知識や実用的ノウハウが身につきます。メールライティング、データ分析、Salesforce活用など各種講座を提供。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マーケティングセミナーは入門編から上級編まで座学やワークショップを織り交ぜた構成",
+      "メールライティング・データ分析・Salesforce活用など複数のテーマ別講座を提供",
+      "ツール初心者向けのユーザー様向けセミナーも定期開催",
+      "勉強会・交流会で他業種のマーケティング現場の事例を学べる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.synergy-marketing.co.jp/academy/",
+    "cta_url": "https://www.synergy-marketing.co.jp/academy/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-synergy-marketing",
+    "created_at": "2026-09-17T20:21:49.100Z",
+    "updated_at": "2026-09-17T20:21:49.100Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.synergy-marketing.co.jp/academy/"
+  },
+  {
+    "id": "brand-mgr",
+    "school_name": "ブランディング入門セミナーオンライン講座",
+    "official_name": "一般財団法人 ブランド・マネージャー認定協会",
+    "description": "ブランディングの基礎知識と構築の概要を学ぶ入門セミナーです。基本的な用語説明から始まり、ブランド構築に必要なステップを具体的に解説します。オンラインに最適化されたカリキュラムで、認定トレーナーによる明確な解説と少人数のグループディスカッションを通じて、実践への理解を深めることができます。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "6,600円",
+      "min_yen": 6600,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ブランディング入門セミナー",
+        "amount": 6600,
+        "duration": "2時間30分",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オンライン専用教材とツールを使用した分かりやすい解説",
+      "訓練を受けた認定トレーナーによる実践へのガイダンス",
+      "少人数グループでのディスカッションと意見交換",
+      "修了後のフォローアップサロンで継続的な学習機会を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.brand-mgr.org/school/trial-online.html",
+    "cta_url": "https://www.brand-mgr.org/school/trial-online.html",
+    "cta_type": "direct",
+    "click_tracking_id": "click-brand-mgr",
+    "created_at": "2026-09-17T20:21:57.102Z",
+    "updated_at": "2026-09-17T20:21:57.102Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.brand-mgr.org/school/trial-online.html"
+  },
+  {
+    "id": "marketing-job",
+    "school_name": "マーケジョブ",
+    "official_name": "株式会社ADrim",
+    "description": "株式会社ADrim監修のデジタルマーケティング人材養成スクール。1ヶ月間の教育期間で、動画教材による学習、実運用トレーニング、スキルスコアリングシステムによる客観的な能力評価を通じて、実践的なマーケティングスキルを習得。転職活動から転職後のアフターフォローまで一貫したサポートを提供。未経験者対象で、受講者からの費用は徴収しない。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "無償のADrim Marketing Workout動画教材を提供",
+      "独自のスキルスコアリングシステムで客観的に能力を可視化",
+      "実際の広告運用による実践的なトレーニング",
+      "転職後も独自コミュニティでアフターフォロー"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.marketing-job.jp/",
+    "cta_url": "https://www.marketing-job.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-marketing-job",
+    "created_at": "2026-09-17T20:22:05.942Z",
+    "updated_at": "2026-09-17T20:22:05.942Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.marketing-job.jp/"
+  },
+  {
+    "id": "d-m-a",
+    "school_name": "D-Marketing Academy",
+    "official_name": null,
+    "description": "デジタルマーケティングに関する約1,000の動画講座を提供するeラーニングサービス。未経験者向けの基礎から現場で実践できるレベルまで、体系的に学習できる。現役マーケターへの質問機能や理解度テストなどのアウトプット支援機能を備え、企業や個人のデジタルマーケティング研修に対応している。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額7,000円〜",
+      "min_yen": 7000,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "6ヶ月契約",
+        "amount": 10000,
+        "duration": "6ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "9ヶ月契約",
+        "amount": 7500,
+        "duration": "9ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "12ヶ月契約",
+        "amount": 7000,
+        "duration": "12ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約1,000の動画講座でデジタルマーケティングを網羅",
+      "10分弱の短編動画でスマートフォン・タブレット対応",
+      "現役マーケターへの質問機能が利用可能",
+      "理解度テストやワークショップなどのアウトプット支援機能搭載",
+      "進捗・理解度の可視化機能で学習管理が容易"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.d-m-a.jp/",
+    "cta_url": "https://www.d-m-a.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-d-m-a",
+    "created_at": "2026-09-17T20:22:13.612Z",
+    "updated_at": "2026-09-17T20:22:13.612Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.d-m-a.jp/"
   }
 ]

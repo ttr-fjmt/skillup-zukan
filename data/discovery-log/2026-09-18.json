@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-09-18",
+    "genre": "language",
+    "new_school_ids": [
+      "oneup",
+      "englead",
+      "90english",
+      "rizap-english",
+      "rizhong",
+      "language-institute-of-tokyo"
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "genre": "certification",
+    "new_school_ids": [
+      "rebo-success",
+      "cpa-net"
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "genre": "programming",
+    "new_school_ids": [
+      "tech-teacher",
+      "proclass"
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "myweb-official"
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "tribalmedia",
+      "synergy-marketing",
+      "brand-mgr",
+      "marketing-job",
+      "d-m-a"
+    ]
+  }
+]

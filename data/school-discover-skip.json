@@ -537,5 +537,61 @@
     "genre": "video_editing",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-16T20:16:07.728Z"
+  },
+  "MeRISE（ミライズ）英会話": {
+    "name": "MeRISE（ミライズ）英会話",
+    "website": "https://eikaiwa.merise.asia/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "LanCul（ランカル）英会話": {
+    "name": "LanCul（ランカル）英会話",
+    "website": "https://lancul.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "QQ English（QQイングリッシュ）": {
+    "name": "QQ English（QQイングリッシュ）",
+    "website": "https://www.qqenglish.ph/japanese/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "CODEGYM（コードジム）": {
+    "name": "CODEGYM（コードジム）",
+    "website": "https://codegym.jp/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "iOSアカデミア": {
+    "name": "iOSアカデミア",
+    "website": "https://iosacademia.net/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "0円スクール": {
+    "name": "0円スクール",
+    "website": "https://0en-school.com/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "マジデザ": {
+    "name": "マジデザ",
+    "website": "https://ma-jideza.com/",
+    "genre": "webdesign",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "Freeks（フリークス）": {
+    "name": "Freeks（フリークス）",
+    "website": "https://freeks.co.jp/",
+    "genre": "programming",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-17T20:17:42.081Z"
   }
 }
