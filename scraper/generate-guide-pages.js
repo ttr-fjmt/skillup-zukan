@@ -24,6 +24,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const GUIDE_DIR = path.join(ROOT, 'guide');
+const ARTICLES_DIR = path.join(ROOT, 'data', 'articles');
 const BASE_URL = 'https://skillup-zukan.net';
 const SITE_NAME = 'スキルアップ図鑑';
 const GUIDE_NAME = '学び直しガイド';
@@ -31,24 +32,16 @@ const PUBLISHED = '2026-09-12';
 const GA_ID = 'G-7EE8WZT75D';
 const ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5761092657360295" crossorigin="anonymous"></script>';
 
-const SOURCES = {
-  kyouiku: {
-    label: '厚生労働省「教育訓練給付金」',
-    url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku.html',
-  },
-  r0610: {
-    label: '厚生労働省「令和6年10月から教育訓練給付金を拡充します」',
-    url: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00042.html',
-  },
-  kensaku: {
-    label: '厚生労働省「教育訓練講座検索システム」',
-    url: 'https://www.kyufu.mhlw.go.jp/kensaku/',
-  },
-  hellowork: {
-    label: 'ハローワークインターネットサービス「教育訓練給付金」',
-    url: 'https://www.hellowork.mhlw.go.jp/insurance/insurance_education.html',
-  },
-};
+/**
+ * 出典。data/sources.json の1か所で決める（記事を自動で書く write-next-article.js も同じものを見る）。
+ * 公式ページの本文は data/raw/<id>.txt に保存してあり、引用がそこに実在するかを検査する。
+ */
+const SOURCES = Object.fromEntries(
+  JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'sources.json'), 'utf8')).map(s => [
+    s.id,
+    { label: s.label, url: s.url },
+  ])
+);
 
 const GUIDES = [
   {
@@ -286,6 +279,51 @@ ${analytics}
 </head>`;
 }
 
+/**
+ * 自動で書いた記事（data/articles/*.json）を、手で書いた記事と同じ形にそろえる。
+ *
+ * 手で書いた記事（上の GUIDES）は body に HTML を直接持っている。自動の記事は
+ * 「見出し・段落・引用」の形で保存されているので、ここで同じ HTML に組み立てる。
+ * これで、ページの書き出し・一覧・出典欄・サイトマップは両方に同じものが効く。
+ */
+function loadAutoGuides(dir = ARTICLES_DIR) {
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter(f => f.endsWith('.json'))
+    .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')))
+    .sort((a, b) => String(b.published_at).localeCompare(String(a.published_at)))
+    .map(article => ({
+      slug: article.id,
+      title: article.title,
+      description: article.description,
+      sources: article.sources,
+      published_at: article.published_at,
+      auto: true,
+      body: articleBody(article),
+    }));
+}
+
+/** 記事データから本文の HTML を組み立てる。 */
+function articleBody(article) {
+  const parts = [`<p class="lead">${escapeHtml(article.description)}</p>`];
+  for (const section of article.sections) {
+    parts.push(`<h2>${escapeHtml(section.heading)}</h2>`);
+    for (const paragraph of section.body) parts.push(`<p>${escapeHtml(paragraph)}</p>`);
+    for (const quote of section.quotes || []) {
+      const source = SOURCES[quote.source_id];
+      const cite = source ? `<br><span class="cite">${escapeHtml(source.label)}</span>` : '';
+      parts.push(`<blockquote>${escapeHtml(quote.text)}${cite}</blockquote>`);
+    }
+  }
+  return parts.join('\n');
+}
+
+/** 手で書いた記事と、自動で書いた記事を合わせたもの。 */
+function allGuides() {
+  return [...GUIDES, ...loadAutoGuides()];
+}
+
 function formatDate(iso) {
   const [y, m, d] = iso.split('-').map(Number);
   return `${y}年${m}月${d}日`;
@@ -315,8 +353,8 @@ function buildArticle(guide, analytics) {
         headline: guide.title,
         description: guide.description,
         inLanguage: 'ja',
-        datePublished: PUBLISHED,
-        dateModified: PUBLISHED,
+        datePublished: guide.published_at || PUBLISHED,
+        dateModified: guide.published_at || PUBLISHED,
         mainEntityOfPage: url,
         author: { '@type': 'Organization', name: SITE_NAME, url: `${BASE_URL}/` },
         publisher: { '@type': 'Organization', name: SITE_NAME, url: `${BASE_URL}/` },
@@ -336,7 +374,7 @@ ${HEADER}
 <main>
   <p class="crumbs"><a href="/">ホーム</a> ／ <a href="/guide/">${GUIDE_NAME}</a></p>
   <h1>${escapeHtml(guide.title)}</h1>
-  <p class="meta">公開日：${formatDate(PUBLISHED)}　／　${SITE_NAME}編集部</p>
+  <p class="meta">公開日：${formatDate(guide.published_at || PUBLISHED)}　／　${SITE_NAME}編集部</p>
 ${guide.body.trim()}
 
   <div class="sources">
@@ -350,7 +388,7 @@ ${sources}
   <div class="related">
     <h2>あわせて読みたい</h2>
     <ul class="guide-list">
-${cardList(GUIDES.filter(g => g.slug !== guide.slug))}
+${cardList(allGuides().filter(g => g.slug !== guide.slug).slice(0, 4))}
     </ul>
   </div>
 </main>
@@ -379,7 +417,7 @@ function buildIndex(analytics) {
         name: GUIDE_NAME,
         url,
         inLanguage: 'ja',
-        hasPart: GUIDES.map(g => ({ '@type': 'Article', headline: g.title, url: `${BASE_URL}/guide/${g.slug}/` })),
+        hasPart: allGuides().map(g => ({ '@type': 'Article', headline: g.title, url: `${BASE_URL}/guide/${g.slug}/` })),
       },
     ],
   };
@@ -393,7 +431,7 @@ ${HEADER}
   <p class="meta">学び直しの講座を選ぶ前に知っておきたいこと</p>
   <p class="lead">教育訓練給付金のしくみや、講座選びで確認したいポイントを解説しています。制度に関する記述は、厚生労働省の公式情報をもとにしています。</p>
   <ul class="guide-list">
-${cardList(GUIDES)}
+${cardList(allGuides())}
   </ul>
 </main>
 
@@ -406,14 +444,15 @@ ${FOOTER}
 function main() {
   const analytics = readAnalyticsBlock();
   fs.mkdirSync(GUIDE_DIR, { recursive: true });
-  const keep = new Set(GUIDES.map(g => g.slug));
+  const guides = allGuides();
+  const keep = new Set(guides.map(g => g.slug));
   for (const name of fs.readdirSync(GUIDE_DIR)) {
     const target = path.join(GUIDE_DIR, name);
     if (keep.has(name) || !fs.statSync(target).isDirectory()) continue;
     fs.rmSync(target, { recursive: true, force: true });
     console.log(`[guide] removed stale page: guide/${name}/`);
   }
-  for (const guide of GUIDES) {
+  for (const guide of guides) {
     const dir = path.join(GUIDE_DIR, guide.slug);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), buildArticle(guide, analytics), 'utf8');
@@ -425,4 +464,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { GUIDES, SOURCES, buildArticle, buildIndex };
+module.exports = { GUIDES, SOURCES, buildArticle, buildIndex, loadAutoGuides, allGuides, articleBody };

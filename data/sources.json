@@ -1,0 +1,32 @@
+[
+  {
+    "id": "kyouiku",
+    "label": "厚生労働省「教育訓練給付金」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku.html"
+  },
+  {
+    "id": "r0610",
+    "label": "厚生労働省「令和6年10月から教育訓練給付金を拡充します」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00042.html"
+  },
+  {
+    "id": "kensaku",
+    "label": "厚生労働省「教育訓練講座検索システム」",
+    "url": "https://www.kyufu.mhlw.go.jp/kensaku/"
+  },
+  {
+    "id": "hellowork",
+    "label": "ハローワークインターネットサービス「教育訓練給付金」",
+    "url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_education.html"
+  },
+  {
+    "id": "shikyuuShinsei",
+    "label": "厚生労働省「教育訓練給付金の支給申請手続について」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00044.html"
+  },
+  {
+    "id": "kouzaShitei",
+    "label": "厚生労働省「教育訓練給付の講座指定について」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku_00001.html"
+  }
+]
