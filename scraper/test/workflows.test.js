@@ -57,9 +57,9 @@ for (const file of workflows) {
   // 「どこにいくらかかっているか」を後から追えなくなる（記録が無いことに気づけない）。
   if (/ANTHROPIC_API_KEY:/.test(source)) {
     test(`${file}: API消費量の記録(data/usage-log)をコミットしている`, () => {
-      assert.match(
-        source,
-        /git add data\/usage-log/,
+      // data/usage-log を名指しするか、data ごと add していればよい。
+      assert.ok(
+        /git add [^\n]*data\/usage-log/.test(source) || /git add -A -- "\$target"/.test(source),
         'Claude API を呼ぶのに data/usage-log をコミットしていない'
       );
     });
