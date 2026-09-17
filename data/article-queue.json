@@ -1,0 +1,12 @@
+[
+  { "n": 1, "id": "kyouiku-kunren-3shurui", "title": "教育訓練給付金の3つの種類は、何が違うのか", "basis": "一般・特定一般・専門実践の区分", "sources": ["kyouiku", "hellowork"], "status": "pending", "note": "" },
+  { "n": 2, "id": "r0610-kakujuu", "title": "令和6年10月から変わった教育訓練給付金の中身", "basis": "拡充された内容", "sources": ["r0610"], "status": "pending", "note": "" },
+  { "n": 3, "id": "shikyuu-shinsei-nagare", "title": "教育訓練給付金を受け取るまでの手続きの流れ", "basis": "支給申請の手続き", "sources": ["shikyuuShinsei", "hellowork"], "status": "pending", "note": "" },
+  { "n": 4, "id": "taishou-kouza-sagashikata", "title": "給付金の対象になる講座の探し方", "basis": "講座指定のしくみと探し方", "sources": ["kouzaShitei", "kyouiku"], "status": "pending", "note": "" },
+  { "n": 5, "id": "senmon-jissen-toha", "title": "専門実践教育訓練とは、どんな講座が対象なのか", "basis": "専門実践教育訓練の対象と給付の考え方", "sources": ["kyouiku", "r0610"], "status": "pending", "note": "" },
+  { "n": 6, "id": "tokutei-ippan-toha", "title": "特定一般教育訓練とは、一般の教育訓練と何が違うのか", "basis": "特定一般教育訓練の位置づけ", "sources": ["kyouiku", "r0610"], "status": "pending", "note": "" },
+  { "n": 7, "id": "kouza-shitei-shikumi", "title": "講座が「給付金の対象」になるまでのしくみ", "basis": "教育訓練施設からの申請と指定", "sources": ["kouzaShitei"], "status": "pending", "note": "" },
+  { "n": 8, "id": "hellowork-de-kakunin", "title": "自分が対象になるかは、どこで確かめるのか", "basis": "ハローワークで確認することと、その理由", "sources": ["hellowork", "shikyuuShinsei"], "status": "pending", "note": "" },
+  { "n": 9, "id": "juukou-mae-ni-suru-koto", "title": "受講する前にしておくことがある", "basis": "受講前の手続き", "sources": ["shikyuuShinsei", "hellowork"], "status": "pending", "note": "" },
+  { "n": 10, "id": "kyufu-no-kangaekata", "title": "給付金はいくら戻るのか、その決まり方", "basis": "支給額の決まり方（公式に書かれている範囲で）", "sources": ["kyouiku", "r0610"], "status": "pending", "note": "" }
+]

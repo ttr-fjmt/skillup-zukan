@@ -38,6 +38,22 @@ npm run verify-live      # 公開サイトがリポジトリどおりか確認�
 データ収集・口コミ要約は GitHub Actions（`workflow_dispatch`）から実行する。
 `ANTHROPIC_API_KEY` はリポジトリの Actions secrets に設定済み。
 
+## 毎日動いている処理（記事）
+
+`.github/workflows/publish-article.yml` が毎日 JST 6:00 に、解説記事を1本書いて公開する。
+
+1. `write-next-article.js` — `data/article-queue.json` の次の題材を選び、`data/raw/` に保存した公式ページの
+   本文だけを材料に記事を書く。書いたその場で `lib/article-guards.js` の検査にかけ、通らなければ保存しない
+   （3回書き直して駄目なら印をつけて次の題材へ）
+2. `generate-guide-pages.js` → `generate-sitemap.js`
+
+公式ページの取得は `fetch-official.yml`（手動実行）。`data/sources.json` に出典を足してから動かす。
+記事には2種類ある。
+
+- **手で書いた記事**（`GUIDES`）：新しい数字を書くときは `test/guides.test.js` の許可リストにも足す
+- **自動で書く記事**（`data/articles/*.json`）：給付率や上限額も書けるが、**同じ節の引用にその表記が実在すること**を
+  機械的に確かめる。受給要件の細目のように公式ページで確認しきれないことは、引用が取れないので書けない
+
 ## クラウド（Claude Code on the web）で作業するとき
 
 パソコンを起動していなくても、スマホや claude.ai/code からクラウドのセッションで作業できる。
