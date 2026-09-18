@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2026-09-19",
+    "genre": "language",
+    "new_school_ids": [
+      "presence",
+      "career-bank",
+      "b-chinese"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "certification",
+    "new_school_ids": [
+      "itec",
+      "tsuji"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "japan-web-school",
+      "rimomo",
+      "notdesignschool",
+      "hello-pc"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "imacala"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "ctc-g",
+      "pasona-digitalacademy",
+      "ai-kenkyujo",
+      "code-college"
+    ]
+  }
+]

@@ -425,5 +425,61 @@
     "found": 5,
     "listed": 5,
     "skipped": 0
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "language",
+    "found": 5,
+    "listed": 3,
+    "skipped": 2
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "certification",
+    "found": 3,
+    "listed": 2,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "programming",
+    "found": 1,
+    "listed": 0,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "webdesign",
+    "found": 6,
+    "listed": 4,
+    "skipped": 2
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "uiux",
+    "found": 0,
+    "listed": 0,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "video_editing",
+    "found": 2,
+    "listed": 1,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "web_marketing",
+    "found": 2,
+    "listed": 1,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-19",
+    "genre": "genai_dx",
+    "found": 4,
+    "listed": 4,
+    "skipped": 0
   }
 ]

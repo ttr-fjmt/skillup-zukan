@@ -593,5 +593,68 @@
     "genre": "programming",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-17T20:17:42.081Z"
+  },
+  "Liberty English Academy（リバティ）": {
+    "name": "Liberty English Academy（リバティ）",
+    "website": "https://www.liberty-e.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "ECC法人向け語学研修": {
+    "name": "ECC法人向け語学研修",
+    "website": "https://www.biz.ecc.co.jp/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "JTEX（職業訓練法人日本技能教育開発センター）": {
+    "name": "JTEX（職業訓練法人日本技能教育開発センター）",
+    "website": "https://www.challenge-jtex.com/",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "GeekGirlLabo（ギークガールラボ）": {
+    "name": "GeekGirlLabo（ギークガールラボ）",
+    "website": "https://geekgirl-labo.com/",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "ミラデザ": {
+    "name": "ミラデザ",
+    "website": "https://www.miradeza-school.jp/",
+    "genre": "webdesign",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "WebTraining.jp": {
+    "name": "WebTraining.jp",
+    "website": "https://webtraining.jp/",
+    "genre": "webdesign",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "ジェイ動画 動画クリエイター養成塾": {
+    "name": "ジェイ動画 動画クリエイター養成塾",
+    "website": "https://www.jdoga.net",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "リスナビ": {
+    "name": "リスナビ",
+    "website": "https://resnavi.net/",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "BYND（バインド）": {
+    "name": "BYND（バインド）",
+    "website": "https://hlywd.co.jp/bynd",
+    "genre": "video_editing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-18T20:17:41.716Z"
   }
 }
