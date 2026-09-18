@@ -14964,5 +14964,908 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
     "verified_url": "https://www.d-m-a.jp/"
+  },
+  {
+    "id": "presence",
+    "school_name": "PRESENCE（プレゼンス）",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.presence.jp/",
+    "cta_url": "https://www.presence.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-presence",
+    "created_at": "2026-09-18T20:17:44.133Z",
+    "updated_at": "2026-09-18T20:17:44.133Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.presence.jp/"
+  },
+  {
+    "id": "career-bank",
+    "school_name": "TLI日本中国語センター",
+    "official_name": null,
+    "description": "約70年の歴史を持つビジネス中国語専門センター。赴任前後・派遣前後・自己啓発など様々なニーズに対応。東京・大阪に校舎を構え、オンラインも対応。講師は全員指導歴10年以上で、プライベートレッスン形式で受講生の時間や能力に合わせカスタマイズした学習計画を提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都",
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プライベートレッスン形式で個別カスタマイズ対応",
+      "講師は全員指導歴10年以上",
+      "東京・大阪の校舎またはオンラインで随時切り替え可能",
+      "平日8時～21時、土曜も対応で時間帯が豊富"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.career-bank.co.jp/tli/about/course/",
+    "official_url": "https://www.career-bank.co.jp/tli/",
+    "cta_url": "https://www.career-bank.co.jp/tli/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-career-bank",
+    "created_at": "2026-09-18T20:18:03.632Z",
+    "updated_at": "2026-09-18T20:18:03.632Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.career-bank.co.jp/tli/"
+  },
+  {
+    "id": "b-chinese",
+    "school_name": "B-Chinese（ビーチャイニーズ）",
+    "official_name": null,
+    "description": "2003年東京で創立された中国語専門教室。会話力重視の教育メソッドを採用し、文法よりも「会話先行」で「どんどん話せる」ようになることを目指している。ビジネスからエンタメまで幅広いニーズに対応し、マンツーマン、ペア、グループレッスンなど多様なコース設定がある。ネイティブ講師による指導で、教室レッスンとオンラインレッスンの両方に対応している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "4,840円〜",
+      "min_yen": 4840,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "マンツーマンレッスン",
+        "amount": 4840,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "復学手数料",
+        "amount": 4950,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "会話力重視の教育メソッドで録音可能",
+      "ネイティブ講師による指導",
+      "全校ターミナル駅から至近距離",
+      "週末も開講のフリー予約制",
+      "マンツーマン・ペア・グループなど多様なコース"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.b-chinese.com/flow/",
+    "official_url": "https://www.b-chinese.com/",
+    "cta_url": "https://www.b-chinese.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-b-chinese",
+    "created_at": "2026-09-18T20:18:15.034Z",
+    "updated_at": "2026-09-18T20:18:15.034Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.b-chinese.com/"
+  },
+  {
+    "id": "itec",
+    "school_name": "アイテック",
+    "official_name": null,
+    "description": "情報処理技術者試験（ITパスポート、基本情報技術者、応用情報技術者など）をはじめ、PMP®、各種IT資格試験の対策講座を提供する専門事業者。書籍とe-learningのハイブリッド学習が可能な通信教育、セミナー、模擬試験を展開。1983年より40年以上にわたり、法人約11,000団体、延べ130万人に人材育成サービスを提供している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "書籍とe-learningのハイブリッド学習が可能",
+      "テキストと問題集を豊富に用意",
+      "模擬試験による実力チェック",
+      "複数のIT資格試験対策に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.itec.co.jp/store/products/list.php?category_id=219",
+    "official_url": "https://www.itec.co.jp/",
+    "cta_url": "https://www.itec.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-itec",
+    "created_at": "2026-09-18T20:18:48.560Z",
+    "updated_at": "2026-09-18T20:18:48.560Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.itec.co.jp/"
+  },
+  {
+    "id": "tsuji",
+    "school_name": "辻調理師専門学校 別科 通信教育講座",
+    "official_name": null,
+    "description": "調理技術を動画教材とスクーリングで学ぶ通信教育講座。フランス料理・イタリア料理、日本料理、中国料理、洋菓子、製パン、和菓子の6講座から選択でき、先生の手元や技を映した動画により自宅にいながら実践的に習得できます。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "動画教材により先生の手元や技を正確に映し出す",
+      "スクーリングで実践的に学べる",
+      "6つの料理ジャンルから講座を選択可能",
+      "通信教育で自宅を教室に変えて学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.tsuji.ac.jp/tsushin/pc/tuition.html",
+    "area_detail_url": "https://www.tsuji.ac.jp/tsushin/pc/learning/schooling.html",
+    "official_url": "https://www.tsuji.ac.jp/tsushin/pc/",
+    "cta_url": "https://www.tsuji.ac.jp/tsushin/pc/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tsuji",
+    "created_at": "2026-09-18T20:19:22.839Z",
+    "updated_at": "2026-09-18T20:19:22.839Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.tsuji.ac.jp/tsushin/pc/"
+  },
+  {
+    "id": "japan-web-school",
+    "school_name": "日本webスクール",
+    "official_name": null,
+    "description": "未経験からPhotoshop・Illustratorを使ったWebデザインを学べるスクール。週3回1時間の授業で3ヶ月間、名刺・バナー・LP・Webサイトデザインを習得。少人数制（最大4名）またはマンツーマンレッスンで、わからないところをすぐ質問できる環境。コワーキングスペース利用可能、副業・転職・起業・フリーランス向けサポートあり。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "side_job",
+      "career_change",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ディレクター"
+    ],
+    "price": {
+      "display": "110,000円",
+      "min_yen": 110000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "デザインパック",
+        "amount": 110000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "埼玉県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "少人数制（最大4名）またはマンツーマンレッスン",
+      "授業時間以外の個別オンライン質問対応",
+      "コワーキングスペース毎日10時～19時無料利用",
+      "クラスグループチャットで仲間との相談・情報共有",
+      "現役デザイナーが講師"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://japan-web-school.com/",
+    "cta_url": "https://japan-web-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-japan-web-school",
+    "created_at": "2026-09-18T20:19:28.176Z",
+    "updated_at": "2026-09-18T20:19:28.176Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://japan-web-school.com/"
+  },
+  {
+    "id": "rimomo",
+    "school_name": "rimomo",
+    "official_name": "株式会社パルミー",
+    "description": "WEBデザイン・WEB制作を学べるオンライン講座。1チャプター15～20分の動画授業で、基礎知識から実践的なスキルまでを習得できます。添削制度により現役デザイナーから直接フィードバックを受けられ、ポートフォリオ制作にも対応しています。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "WEBデザイナー"
+    ],
+    "price": {
+      "display": "月額9,800円〜",
+      "min_yen": 9800,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "1ヶ月プラン",
+        "amount": 9800,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "2ヶ月プラン",
+        "amount": 12800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "3ヶ月プラン",
+        "amount": 19800,
+        "duration": "3ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "動画授業は何度でも繰り返し受講可能",
+      "現役デザイナーによるデザイン添削と課題添削",
+      "WEBデザインコースとWEB制作コースの両方を受講可能",
+      "ポートフォリオ制作の授業を含む"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://rimomo.jp/",
+    "cta_url": "https://rimomo.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-rimomo",
+    "created_at": "2026-09-18T20:19:34.970Z",
+    "updated_at": "2026-09-18T20:19:34.970Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://rimomo.jp/"
+  },
+  {
+    "id": "notdesignschool",
+    "school_name": "NOT DESIGN SCHOOL",
+    "official_name": null,
+    "description": "実務レベルのデザインスキルを習得するオンラインデザインスクール。上流設計を重視したカリキュラム、合格基準の厳密化、セッション形式のフィードバックを特徴とする。Webデザイン、UIデザイン、グラフィックデザインのコースや、Figma・Studio・Framer等のデザインツール講座、短期集中講座を提供。自ら学びに行く姿勢を重視し、実務レベルの自信を持つデザイナーを育てることを目的とする。",
+    "skill_genre": [
+      "webdesign",
+      "uiux"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "Webクリエイター"
+    ],
+    "price": {
+      "display": "6,600円〜",
+      "min_yen": 6600,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "パーソナライズ型デザインカリキュラム",
+        "amount": 33000,
+        "duration": "6ヶ月〜",
+        "kind": "monthly"
+      },
+      {
+        "label": "Figmaマスター講座",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator & Photoshopマスター講座",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Studioマスター講座",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Framerマスター講座",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "作字マスター講座",
+        "amount": 19800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Claude Code入門講座",
+        "amount": 6600,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "AI ✕ デザイン道場",
+        "amount": 44000,
+        "duration": "6回",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "セッション形式のフィードバックによる自主学習の促進",
+      "各分野の専門メンターによる担当制",
+      "合格基準を満たすまで何度でもブラッシュアップ可能",
+      "Webデザイン・UIデザイン・グラフィックデザインの3コース展開",
+      "上流設計を重視したカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://notdesignschool.jp/",
+    "cta_url": "https://notdesignschool.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-notdesignschool",
+    "created_at": "2026-09-18T20:19:44.515Z",
+    "updated_at": "2026-09-18T20:19:44.515Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://notdesignschool.jp/"
+  },
+  {
+    "id": "hello-pc",
+    "school_name": "ハロー！パソコン教室",
+    "official_name": null,
+    "description": "初心者向けのわかりやすいオリジナル教材を特徴とするパソコン教室。Excel、Word、PowerPointなどのMicrosoft Office系講座から、プログラミング、AI、動画編集など実践的なIT講座まで幅広いカリキュラムを提供。全国約170校で展開。",
+    "skill_genre": [
+      "programming",
+      "video_editing",
+      "web_marketing",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "事務職"
+    ],
+    "price": {
+      "display": "月額1,760円",
+      "min_yen": 1760,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "通常料金（1レッスン60分）",
+        "amount": 1760,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "個別学習で自分のペースで学習できる",
+      "初心者向けにこだわった分かりやすいオリジナル教材",
+      "急な予定変更に対応できる振替制度を用意",
+      "生徒一人一人に合わせたカウンセリングで学習計画を提案"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.hello-pc.net/",
+    "cta_url": "https://www.hello-pc.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-hello-pc",
+    "created_at": "2026-09-18T20:19:52.181Z",
+    "updated_at": "2026-09-18T20:19:52.181Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.hello-pc.net/"
+  },
+  {
+    "id": "imacala",
+    "school_name": "イマカラ",
+    "official_name": "カルテットコミュニケーションズ",
+    "description": "Web広告代行専門企業として10年以上の実績をもつカルテットコミュニケーションズが提供する、実践特化型Web広告運用者育成スクール。社内の新人研修カリキュラムをベースに開発され、1,000業種以上の運用実績から生まれた独自カリキュラムで、未経験者が即戦力のWeb広告運用者として実務に従事するための技術を習得することを目標としている。実際の広告媒体アカウントを使った指導により、超実践的な学習が可能。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "165,000円〜",
+      "min_yen": 165000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Google・Yahoo!・Microsoft（リスティング/ディスプレイ） 基礎",
+        "amount": 195000,
+        "duration": "13h",
+        "kind": "total"
+      },
+      {
+        "label": "Google・Yahoo!・Microsoft（リスティング/ディスプレイ） 運用",
+        "amount": 375000,
+        "duration": "25h",
+        "kind": "total"
+      },
+      {
+        "label": "SNS（Meta・X・LINE・TikTok） 基礎",
+        "amount": 165000,
+        "duration": "11h",
+        "kind": "total"
+      },
+      {
+        "label": "SNS（Meta・X・LINE・TikTok） 運用",
+        "amount": 225000,
+        "duration": "15h",
+        "kind": "total"
+      },
+      {
+        "label": "GA4 基礎",
+        "amount": 165000,
+        "duration": "11h",
+        "kind": "total"
+      },
+      {
+        "label": "GA4 運用",
+        "amount": 225000,
+        "duration": "15h",
+        "kind": "total"
+      },
+      {
+        "label": "単発レッスン",
+        "amount": 15000,
+        "duration": "1h",
+        "kind": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "実際の広告媒体アカウントを使った超実践的な指導",
+      "個別指導・OJT・1on1ミーティング・チャット質疑応答の手厚いサポート体制",
+      "社内新人研修と同等レベルのカリキュラム品質",
+      "未経験から即戦力運用者への育成が目標",
+      "体験型・ステップ式の明快な教育スタイル"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://imacala.com/",
+    "cta_url": "https://imacala.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-imacala",
+    "created_at": "2026-09-18T20:20:31.544Z",
+    "updated_at": "2026-09-18T20:20:31.544Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://imacala.com/"
+  },
+  {
+    "id": "ctc-g",
+    "school_name": "CTC教育サービス",
+    "official_name": null,
+    "description": "IT・技術分野の様々な研修コースを提供する教育サービス。AWS、Azure、VMware、Linux、クラウドネイティブ、DevOps、セキュリティなど多岐にわたるベンダー認定トレーニングと資格対応コースを用意。企業研修やスキルアップに対応し、オンラインと会場受講の選択肢がある。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "AWS、Azure、GCPなどクラウドプラットフォームの認定トレーニングに対応",
+      "VMware、Nutanixなど仮想化・ストレージベンダーの公式トレーニング",
+      "DevOps、コンテナ、CI/CDなどのクラウドネイティブ技術をカバー",
+      "Linux、データベース、セキュリティなど幅広いIT技術分野を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.school.ctc-g.co.jp/introduction/",
+    "official_url": "https://www.school.ctc-g.co.jp/",
+    "cta_url": "https://www.school.ctc-g.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ctc-g",
+    "created_at": "2026-09-18T20:20:54.995Z",
+    "updated_at": "2026-09-18T20:20:54.995Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.school.ctc-g.co.jp/"
+  },
+  {
+    "id": "pasona-digitalacademy",
+    "school_name": "Pasona Digital Academy",
+    "official_name": null,
+    "description": "DXを実現していく志を持った人材を育成するための研修プログラム。業界の垣根を越えて集まった仲間とともに、ワークショップを通じた実践的な学びを提供し、ビジネスと行動変容をデザインでき、チームで課題解決を導けるリーダー育成を目指している。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ワークショップを通じた実践的な学び",
+      "異なる業界の人材との相互交流",
+      "DXリーダーシップスキルの育成",
+      "組織内のDXマインド醸成"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://pasona-digitalacademy.jp/",
+    "cta_url": "https://pasona-digitalacademy.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-pasona-digitalacademy",
+    "created_at": "2026-09-18T20:21:02.388Z",
+    "updated_at": "2026-09-18T20:21:02.388Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://pasona-digitalacademy.jp/"
+  },
+  {
+    "id": "ai-kenkyujo",
+    "school_name": "AI研究所",
+    "official_name": null,
+    "description": "AIの基礎から実務応用まで、幅広いスキルを習得できる講座・セミナーを提供しているAI技術学習サービス。E資格やG検定などの資格対策から、生成AI、ChatGPT、Pythonなどの実践的なプログラミング技能、データサイエンス、DXビジネススキルまで、多様なコースを用意。最短2日間から最短4日間の短期集中講座で、初心者から経験者まで対応している。",
+    "skill_genre": [
+      "programming",
+      "genai_dx",
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "140,800円〜",
+      "min_yen": 140800,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "AIエンジニア育成講座 会場受講 2日間",
+        "amount": 162800,
+        "duration": "2日間",
+        "kind": "total"
+      },
+      {
+        "label": "AIエンジニア育成講座 ライブウェビナー 2日間",
+        "amount": 162800,
+        "duration": "2日間",
+        "kind": "total"
+      },
+      {
+        "label": "AIエンジニア育成講座 eラーニング",
+        "amount": 140800,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "E資格やG検定などの資格取得対策講座を提供",
+      "生成AI・ChatGPT・Gemini・Claudeなどの実践的なセミナー",
+      "Python基礎からAIエンジニア育成まで段階的な学習パス",
+      "会場受講・ウェビナー・eラーニングから選択可能な受講形式"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://ai-kenkyujo.com/course-engineer/",
+    "official_url": "https://ai-kenkyujo.com/",
+    "cta_url": "https://ai-kenkyujo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ai-kenkyujo",
+    "created_at": "2026-09-18T20:21:16.511Z",
+    "updated_at": "2026-09-18T20:21:16.511Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://ai-kenkyujo.com/"
+  },
+  {
+    "id": "code-college",
+    "school_name": "CodeCollege",
+    "official_name": "Alto Software株式会社",
+    "description": "現役エンジニアのサポートで未経験からPython・AI・データサイエンスなどのスキルを習得できるオンラインプログラミングスクール。1日1時間から自分のペースで学習でき、コードレビューなどの実務的なフィードバックも受けられる。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "プログラマー",
+      "エンジニア",
+      "データサイエンティスト"
+    ],
+    "price": {
+      "display": "71,400円〜",
+      "min_yen": 71400,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Pythonコース",
+        "amount": 71400,
+        "duration": "4週間",
+        "kind": "total"
+      },
+      {
+        "label": "AIコース",
+        "amount": 71400,
+        "duration": "4週間",
+        "kind": "total"
+      },
+      {
+        "label": "データサイエンスコース",
+        "amount": 71400,
+        "duration": "4週間",
+        "kind": "total"
+      },
+      {
+        "label": "Python＋AIコース",
+        "amount": 97200,
+        "duration": "8週間",
+        "kind": "total"
+      },
+      {
+        "label": "Python＋データサイエンスコース",
+        "amount": 97200,
+        "duration": "8週間",
+        "kind": "total"
+      },
+      {
+        "label": "Python＋AI＋データサイエンスコース",
+        "amount": 146700,
+        "duration": "8週間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "24時間いつでもチャットで質問可能で現役エンジニアが24時間以内に回答",
+      "現役エンジニアによるコードレビューで実務で通用するスキルを習得",
+      "最短1ヶ月から最長10ヶ月まで柔軟に学習期間を設定可能",
+      "OpenEDG Python Institute公式パートナー認定校でPCEP対策講座を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://code-college.jp/",
+    "cta_url": "https://code-college.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-code-college",
+    "created_at": "2026-09-18T20:21:25.085Z",
+    "updated_at": "2026-09-18T20:21:25.085Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://code-college.jp/"
   }
 ]
