@@ -656,5 +656,33 @@
     "genre": "video_editing",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-18T20:17:41.716Z"
+  },
+  "デイトラ": {
+    "name": "デイトラ",
+    "website": "https://www.daytra.net/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-19T20:14:59.673Z"
+  },
+  "JAGAT デザイナー養成講座": {
+    "name": "JAGAT デザイナー養成講座",
+    "website": "https://www.jagat.or.jp/",
+    "genre": "webdesign",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-19T20:14:59.673Z"
+  },
+  "東京日仏学院（Institut français du Japon - Tokyo）": {
+    "name": "東京日仏学院（Institut français du Japon - Tokyo）",
+    "website": "https://institutfrancais.jp/tokyo/french/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-19T20:14:59.673Z"
+  },
+  "KCP日本語教師養成講座": {
+    "name": "KCP日本語教師養成講座",
+    "website": "https://www.kcpyosei.com/",
+    "genre": "language",
+    "reason": "portal_or_marketplace",
+    "checkedAt": "2026-09-19T20:14:59.673Z"
   }
 }
