@@ -15867,5 +15867,577 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
     "verified_url": "https://code-college.jp/"
+  },
+  {
+    "id": "formie",
+    "school_name": "formie",
+    "official_name": null,
+    "description": "スマホで学べるオンライン資格取得サービス。心理学、食事、美容、子育てなど40種類以上の資格講座を提供。スキマ時間の5分で学習でき、テキスト・練習問題・本番試験・認定証発行の流れで資格取得ができます。サブスクプランは月3,980円で毎月1,000ポイント付与され、大手通信講座と比較して約1/7のお得さを実現しています。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額980円〜",
+      "min_yen": 980,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "サブスクプラン",
+        "amount": 3980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "サブスクプラン（初回）",
+        "amount": 980,
+        "duration": "7日間",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "スマホで学習できるオンライン講座",
+      "心理学・食事・美容など40種類以上の資格講座",
+      "スキマ時間の5分から学習可能",
+      "月3,980円で毎月1,000ポイント付与されるポイント制",
+      "いつでも解約可能で回数縛りなし"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://formie.net/",
+    "cta_url": "https://formie.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-formie",
+    "created_at": "2026-09-19T20:15:07.377Z",
+    "updated_at": "2026-09-19T20:15:07.377Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://formie.net/"
+  },
+  {
+    "id": "abitus",
+    "school_name": "アビタス",
+    "official_name": null,
+    "description": "国際資格の専門校。USCPA（米国公認会計士）、CIA（公認内部監査人）、CFE（公認不正検査士）、CISA®（公認情報システム監査人）、IFRS Certificate（国際会計基準検定）、UMass MBA、AAIA（AI監査）などの国際資格取得プログラムを提供。グローバル人材に必要なビジネス知識を英語で習得できます。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "転職エージェント"
+    ],
+    "price": {
+      "display": "624,800円",
+      "min_yen": 624800,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "USCPAコース",
+        "amount": 624800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "学費ローン（60回払い）",
+        "amount": 12200,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ライセンス継続教育（2年間）",
+        "amount": null,
+        "duration": "2年間",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "複数の国際資格プログラムを提供",
+      "英語でのビジネス知識習得",
+      "転職・キャリア支援サービスを併設"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.abitus.co.jp/uscpa/",
+    "official_url": "https://www.abitus.co.jp/",
+    "cta_url": "https://www.abitus.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-abitus",
+    "created_at": "2026-09-19T20:15:18.892Z",
+    "updated_at": "2026-09-19T20:15:18.892Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.abitus.co.jp/"
+  },
+  {
+    "id": "levtech",
+    "school_name": "レバテックカレッジ",
+    "official_name": null,
+    "description": "ITエンジニア専門の新卒就活支援サービス。カウンセリングから企業紹介、就活支援、内定までを完全無料で利用可能。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "システムエンジニア",
+      "webエンジニア",
+      "プロジェクトマネージャー",
+      "セキュリティエンジニア",
+      "データサイエンティスト",
+      "インフラエンジニア",
+      "ITコンサルタント"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "IT業界に精通したアドバイザーによるマンツーマンサポート",
+      "プロフィール登録による企業からのスカウト機能",
+      "IT業界トップ企業が集結する大規模イベント開催",
+      "完全無料サービス"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://rookie.levtech.jp/",
+    "cta_url": "https://rookie.levtech.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-levtech",
+    "created_at": "2026-09-19T20:15:28.426Z",
+    "updated_at": "2026-09-19T20:15:28.426Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://rookie.levtech.jp/"
+  },
+  {
+    "id": "fjord",
+    "school_name": "フィヨルドブートキャンプ",
+    "official_name": null,
+    "description": "現役ソフトウェアエンジニアが運営するオンラインプログラミングスクール。答えを与えるのではなく考える力を育てることを重視し、実務を想定したチーム開発や自作サービスのリリースを通じて、即戦力となるスキルを習得します。OSSコミュニティとの連携により、トップレベルの技術者との接触が可能。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "786,720円",
+      "min_yen": 786720,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Railsエンジニアコース",
+        "amount": 32780,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "フロントエンドエンジニアコース",
+        "amount": 32780,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "給付金対象Railsエンジニアコース",
+        "amount": 786720,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "現役ソフトウェアエンジニアがメンターとして学習をサポート",
+      "実務を想定したチーム開発を体験できる",
+      "自作サービスのリリースが最終課題で、ポートフォリオとして活用可能",
+      "OSSコミュニティへの参加を通じた学習",
+      "質問・雑談タイム等の複数の質問方法を用意"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://bootcamp.fjord.jp/",
+    "cta_url": "https://bootcamp.fjord.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-fjord",
+    "created_at": "2026-09-19T20:15:35.508Z",
+    "updated_at": "2026-09-19T20:15:35.508Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://bootcamp.fjord.jp/"
+  },
+  {
+    "id": "sejuku-2",
+    "school_name": "侍テラコヤ（SAMURAI TERAKOYA）",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://terakoya.sejuku.net/",
+    "cta_url": "https://terakoya.sejuku.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sejuku-2",
+    "created_at": "2026-09-19T20:15:37.230Z",
+    "updated_at": "2026-09-19T20:15:37.230Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://terakoya.sejuku.net/"
+  },
+  {
+    "id": "jagra",
+    "school_name": "ジャグラショートカット",
+    "official_name": "一般社団法人日本グラフィックサービス工業会",
+    "description": "一般社団法人日本グラフィックサービス工業会が運営するDTP・Web・ビデオ編集スクール。入学金不要、最新アプリケーション環境での実務的なカリキュラムを提供。最大10名までの少人数制指導で、1～2日間の短期完結型講習を開講。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "10,000円",
+      "min_yen": 10000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "短期講座",
+        "amount": 10000,
+        "duration": "2.5時間×1日",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "入学金無料で消費税・教材費を含んだリーズナブルな受講料",
+      "現場経験豊富な講師陣による実践的・実務的なカリキュラム",
+      "最大10名までの少人数制指導",
+      "最新アプリケーションがインストールされたWindows・Macの充実した環境"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.jagra.or.jp/school/",
+    "cta_url": "https://www.jagra.or.jp/school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-jagra",
+    "created_at": "2026-09-19T20:15:41.664Z",
+    "updated_at": "2026-09-19T20:15:41.664Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.jagra.or.jp/school/"
+  },
+  {
+    "id": "omodok",
+    "school_name": "オモドック・デザインスクール",
+    "official_name": null,
+    "description": "新宿新大久保駅徒歩1分にあるスクール。14歳〜70代対象の完全マンツーマン・完全自由予約制による通学制授業を中心としており、初心者向けに基礎をしっかり教える「アナログ的な教育」を貫く。3DCGソフト（Blender、3dsMax、Houdini、Maya、Rhinoceros）、ゲーム開発エンジン（Unity、UnrealEngine）、Adobeソフト、Web制作など幅広い講座を提供。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "完全マンツーマンの個別指導で自分のペースに合わせて学べる",
+      "完全自由予約制で決まった時間割がなく忙しい方にも対応",
+      "14歳〜70代まで年齢・経験問わず対応",
+      "オンライン受講も可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.omodok.co.jp/ds/ichiran.html",
+    "official_url": "https://www.omodok.co.jp/ds/",
+    "cta_url": "https://www.omodok.co.jp/ds/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-omodok",
+    "created_at": "2026-09-19T20:16:07.734Z",
+    "updated_at": "2026-09-19T20:16:07.734Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.omodok.co.jp/ds/"
+  },
+  {
+    "id": "musubi",
+    "school_name": "MoD｜デザインの学び舎",
+    "official_name": "株式会社MUSUBI",
+    "description": "社会人向けのデザイン塾。「はたらくすべての人に、デザインを。」をコンセプトに、一人ひとりの創造性を育みながら、社会への貢献を目指すデザイン教育を提供しています。株式会社MUSUBIが運営する事業の一つです。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://musubi.inc/",
+    "cta_url": "https://musubi.inc/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-musubi",
+    "created_at": "2026-09-19T20:16:14.235Z",
+    "updated_at": "2026-09-19T20:16:14.235Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://musubi.inc/"
+  },
+  {
+    "id": "centro-espanol",
+    "school_name": "日本スペイン語センター",
+    "official_name": "株式会社日本スペイン語センター",
+    "description": "1961年開校のスペイン語・ブラジルポルトガル語専門校。飯田橋駅より徒歩1分に位置し、ネイティブスピーカーや日系人の講師による生きた語学力を指導。グループレッスン、プライベートレッスン、セミプライベートレッスン、短期集中講座を提供。初心者から対応し、海外赴任・留学前の研修や検定試験対策も可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "3,000円〜",
+      "min_yen": 3000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "入会金",
+        "amount": 7000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "施設費",
+        "amount": 3000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "受講料（90分×11回、1ターム3ヶ月）",
+        "amount": 39500,
+        "duration": "1ターム3ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ネイティブスピーカーと日系人講師が在籍",
+      "グループ・プライベート・セミプライベートレッスンを提供",
+      "初心者向けに基礎文法と発音をしっかり指導",
+      "30分の無料聴講が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://centro-espanol.jp/lesson/%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%ac%e3%83%83%e3%82%b9%e3%83%b3-2-2-2-2-2/",
+    "area_detail_url": "https://centro-espanol.jp/access/",
+    "official_url": "https://centro-espanol.jp/",
+    "cta_url": "https://centro-espanol.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-centro-espanol",
+    "created_at": "2026-09-19T20:16:43.661Z",
+    "updated_at": "2026-09-19T20:16:43.661Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://centro-espanol.jp/"
+  },
+  {
+    "id": "k-kaiwa",
+    "school_name": "K-アカデミー",
+    "official_name": null,
+    "description": "オンライン韓国語マンツーマンレッスン。50名以上のプロ講師（ネイティブ講師・日本人講師）が在籍。初級～中上級向けの一般レッスンから、TOPIK・ハングル検定対策、韓国留学準備、ビジネス韓国語、K-POP・ドラマを用いた息抜きレッスン、ジュニア向けレッスンなど多彩なカリキュラムを提供。法人向けプランもあり。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "50名以上のプロ講師が在籍、日本語が堪能なネイティブ講師と経験豊富な日本人講師で構成",
+      "マンツーマンレッスンで自宅から受講可能",
+      "TOPIK・ハングル検定などの試験対策から韓国留学準備、ビジネス韓国語まで対応",
+      "K-POPやドラマなど趣味を活かしたレッスンも用意",
+      "無料体験レッスン2回と初回ガイダンスを提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://k-kaiwa.com/pricing-plan",
+    "official_url": "https://k-kaiwa.com/",
+    "cta_url": "https://k-kaiwa.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-k-kaiwa",
+    "created_at": "2026-09-19T20:17:07.831Z",
+    "updated_at": "2026-09-19T20:17:07.831Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://k-kaiwa.com/"
   }
 ]

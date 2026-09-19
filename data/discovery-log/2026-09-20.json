@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-09-20",
+    "genre": "certification",
+    "new_school_ids": [
+      "formie",
+      "abitus"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "genre": "programming",
+    "new_school_ids": [
+      "levtech",
+      "fjord",
+      "sejuku-2"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "jagra",
+      "omodok"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "genre": "uiux",
+    "new_school_ids": [
+      "musubi"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "genre": "language",
+    "new_school_ids": [
+      "centro-espanol",
+      "k-kaiwa"
+    ]
+  }
+]
