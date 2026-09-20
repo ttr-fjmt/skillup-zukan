@@ -16439,5 +16439,591 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://k-kaiwa.com/"
+  },
+  {
+    "id": "42tokyo",
+    "school_name": "42 Tokyo",
+    "official_name": "一般社団法人 42 Tokyo",
+    "description": "フランス発のエンジニア養成機関。世界30カ国以上に展開されており、AI時代の最前線で活躍する技術者を育成する。教師不在で学生同士が学び合い、コンピュータサイエンスの基礎からAIに対応できる問題解決力を養う。授業料は完全無料で、18歳以上なら経歴不問で入学可能。24時間365日開放されたキャンパスで、自由な時間配分で学習できる。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "教師不在の学生同志学習スタイル",
+      "C言語やアルゴリズムを駆使したコンピュータサイエンス基礎教育",
+      "AI時代に対応した革新的カリキュラム",
+      "24時間365日開放キャンパスで自由な時間割",
+      "入学金・授業料・教材費が完全無料"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://42tokyo.jp/requirements/",
+    "official_url": "https://42tokyo.jp/",
+    "cta_url": "https://42tokyo.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-42tokyo",
+    "created_at": "2026-09-20T20:14:14.622Z",
+    "updated_at": "2026-09-20T20:14:14.622Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://42tokyo.jp/"
+  },
+  {
+    "id": "withcomi",
+    "school_name": "WithComi",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://withcomi.com/",
+    "cta_url": "https://withcomi.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-withcomi",
+    "created_at": "2026-09-20T20:14:19.930Z",
+    "updated_at": "2026-09-20T20:14:19.930Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://withcomi.com/"
+  },
+  {
+    "id": "copen-college",
+    "school_name": "コペンカレッジ",
+    "official_name": null,
+    "description": "女性を対象とした在宅デザインスクール。グラフィックデザインからWebデザインまで、実務的なカリキュラムを提供。未経験者向けの基礎コースから専攻コースまで多様な講座を展開。卒業後はグループ会社からの案件紹介や先輩デザイナーから学べるコミュニティが用意されており、実践的なキャリア構築を支援している。",
+    "skill_genre": [
+      "webdesign"
+    ],
+    "purpose": [
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "グラフィックデザイナー",
+      "フリーランスデザイナー"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "実務テキスト・リング製本で学習を支援",
+      "講座間のフォローアップと専用SNSグループでの質問対応",
+      "卒業後のコミュニティと定期的な勉強会を提供",
+      "グループ会社からのデザイン案件紹介とレベル別指導"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://copen-college.com/course/",
+    "area_detail_url": "https://copen-college.com/contact/",
+    "official_url": "https://copen-college.com/",
+    "cta_url": "https://copen-college.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-copen-college",
+    "created_at": "2026-09-20T20:14:49.546Z",
+    "updated_at": "2026-09-20T20:14:49.546Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://copen-college.com/"
+  },
+  {
+    "id": "cshool",
+    "school_name": "cshool",
+    "official_name": null,
+    "description": "IT・Web業界に特化した教育サービスを提供する会社です。デザインとエンジニアリングの両分野を融合させたクリエイティブ人材の育成をモットーに、企業向け研修、教育コンテンツのデジタル化、システム開発、教育機関へのカリキュラム提供など、教育にまつわる事業をトータルでサポートしています。",
+    "skill_genre": [
+      "webdesign",
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://cshool.jp/",
+    "cta_url": "https://cshool.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-cshool",
+    "created_at": "2026-09-20T20:14:56.470Z",
+    "updated_at": "2026-09-20T20:14:56.470Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://cshool.jp/"
+  },
+  {
+    "id": "dga",
+    "school_name": "ディジタルグロースアカデミア",
+    "official_name": null,
+    "description": "DX人材育成に特化したプラットフォーム。研修・eラーニング・コンサルティングを通じて、組織のデジタル変革を支援。経験豊富な講師による独自プログラムで、知識習得から実践的な気付きと自己成長へ導く。業界特化型の教材開発が可能で、DXリテラシー標準に基づいた高鮮度の学習環境を提供。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "経験豊富な講師による独自の教育プログラム",
+      "業界特化型の専門的教材開発が全業界で可能",
+      "DXリテラシー標準（DSS-L）とデジタルスキル標準（DSS）に準拠",
+      "オンライン・対面の双方に対応",
+      "年間150社以上が活用"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.dga.co.jp/service/",
+    "official_url": "https://www.dga.co.jp/",
+    "cta_url": "https://www.dga.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dga",
+    "created_at": "2026-09-20T20:15:16.809Z",
+    "updated_at": "2026-09-20T20:15:16.809Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
+    "verified_url": "https://www.dga.co.jp/"
+  },
+  {
+    "id": "speaknow",
+    "school_name": "SpeakNow",
+    "official_name": null,
+    "description": "業界最安級の月額29,800円で、日本人コーチのマンツーマンサポートとネイティブ講師による添削アプリを組み合わせた英語コーチング。完全オンライン運営で初期費用ゼロ。あなたの趣味や生活スタイルに合わせた完全オーダーメイドの学習プランを提案し、習慣化と自走力の養成を支援する。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額29,800円",
+      "min_yen": 29800,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月額プラン",
+        "amount": 29800,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "あなたの趣味や生活スタイルに合わせた完全オーダーメイドの学習プランを提案",
+      "ネイティブ講師が英語を添削してくれるオリジナルアプリを提供",
+      "毎週の面談（6ヶ月間で24回）で学習進捗を確認し、プランをアップデート",
+      "チャット相談・質問で自己解決能力を習得",
+      "完全オンライン運営で初期費用ゼロ（入会金・教材費不要）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://speaknow.me/",
+    "cta_url": "https://speaknow.me/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-speaknow",
+    "created_at": "2026-09-20T20:15:24.036Z",
+    "updated_at": "2026-09-20T20:15:24.036Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://speaknow.me/"
+  },
+  {
+    "id": "kirihara",
+    "school_name": "KIRIHARA Online Academy",
+    "official_name": null,
+    "description": "桐原書店による英語資格対策のオンライン学習サービス。TOEIC・英検・IELTS・時事英語・小論文など複数の講座を提供。2ヶ月集中のカリキュラムと日本人講師によるマンツーマン指導が特徴。自宅からオンラインで受講でき、忙しい社会人や学生向けの短期集中型スクール。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "2ヶ月集中型カリキュラムで試験対策を進める",
+      "日本人講師によるマンツーマン指導でサポート",
+      "桐原書店の教材を活用した体系的な学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://academy.kirihara.co.jp/wte/plan",
+    "official_url": "https://academy.kirihara.co.jp/",
+    "cta_url": "https://academy.kirihara.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kirihara",
+    "created_at": "2026-09-20T20:15:51.201Z",
+    "updated_at": "2026-09-20T20:15:51.201Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://academy.kirihara.co.jp/"
+  },
+  {
+    "id": "tokyojpla",
+    "school_name": "東京言語学院",
+    "official_name": null,
+    "description": "5言語（中国語・韓国語・日本語・英語・スペイン語）に対応し、目的別コース（ゼロからスタート・日常会話・趣味旅行・ビジネス・試験対策・学生向け）を提供する総合語学教育機関。新宿校・浜松町校・オンラインでマンツーマン・セミプライベート・グループレッスンを実施。実践的なフィードバックと継続的な学習支援により、知識習得から実用的な会話力・ビジネス対応力・目標達成を目指します。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "4,290円〜",
+      "min_yen": 4290,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "中国語・韓国語・日本語 マンツーマン 58分",
+        "amount": 4290,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "英語・スペイン語 マンツーマン 58分",
+        "amount": 4730,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "5言語から言語を選択可能",
+      "6つの学習目的別コース設計",
+      "マンツーマン・少人数・グループ・オンラインから受講形式を選択",
+      "無料体験とレベルチェック実施",
+      "実践練習と具体的フィードバック重視"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://tokyojpla.com/pricing",
+    "official_url": "https://tokyojpla.com/",
+    "cta_url": "https://tokyojpla.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tokyojpla",
+    "created_at": "2026-09-20T20:16:04.282Z",
+    "updated_at": "2026-09-20T20:16:04.282Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://tokyojpla.com/"
+  },
+  {
+    "id": "asianetclub",
+    "school_name": "語学スクールANC",
+    "official_name": null,
+    "description": "大阪市北区にある多言語対応の語学スクール。22言語のマンツーマンプライベートレッスンを提供。2006年開校で約20年の実績。レッスンは2ヶ月4回単位で、日時を自由に選択でき、駅近（西中島南方駅徒歩1分）で通いやすい環境。講師派遣、翻訳、通訳などの法人向けサービスも展開。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "22言語に対応（英語、韓国語、中国語、スペイン語、フランス語、ドイツ語など）",
+      "ネイティブ講師と日本人講師による丁寧な指導",
+      "駅近で通いやすい立地（西中島南方駅徒歩1分）",
+      "予約制で日時を自由に選択可能",
+      "コピー代無料、ドリンク・お菓子サービス無料"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.asianetclub.jp/",
+    "cta_url": "https://www.asianetclub.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-asianetclub",
+    "created_at": "2026-09-20T20:16:12.211Z",
+    "updated_at": "2026-09-20T20:16:12.211Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.asianetclub.jp/"
+  },
+  {
+    "id": "gravity-koumuin",
+    "school_name": "Gravity",
+    "official_name": null,
+    "description": "公務員試験の「社会人採用（民間経験者採用）」に特化した予備校。講師は全員が元公務員で、複数の公務員試験合格者。社会人が仕事や家庭と両立させながら試験対策を進めるためのコーチング型指導を提供。論文・面接対策に注力し、具体的で分かりやすい指導が特徴。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "講師は全員が元公務員で複数の公務員試験合格者",
+      "TAC出身の実績豊富な講師による指導",
+      "社会人採用試験に特化した教材とカリキュラム",
+      "論文試験・面接試験対策に注力",
+      "受講生一人ひとりへのコーチング型サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://gravity-koumuin.com/23wards-offline-2026/",
+    "official_url": "https://gravity-koumuin.com/",
+    "cta_url": "https://gravity-koumuin.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-gravity-koumuin",
+    "created_at": "2026-09-20T20:16:35.586Z",
+    "updated_at": "2026-09-20T20:16:35.586Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://gravity-koumuin.com/"
+  },
+  {
+    "id": "miraicare",
+    "school_name": "未来ケアカレッジ",
+    "official_name": null,
+    "description": "年間受講者数約29,600人の介護専門スクール。介護職員初任者研修や実務者研修などの基礎資格から、ケアマネジャー試験対策や福祉用具専門相談員など多数の講座を開講。介護の資格取得からスキルアップ、就職支援まで、福祉介護の分野で活躍する人材育成を目指している。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "27,000円",
+      "min_yen": 27000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "介護職員初任者研修",
+        "amount": 27000,
+        "duration": "全15～16日間",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "埼玉県",
+      "千葉県",
+      "岐阜県",
+      "大阪府",
+      "兵庫県",
+      "京都府",
+      "滋賀県",
+      "奈良県",
+      "広島県",
+      "福岡県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "介護職員初任者研修など基礎資格から試験対策講座まで多数のコースを提供",
+      "就業支援を行い受講中・修了後の介護スタッフとしての就業をサポート",
+      "LINEで最新の求人情報を随時配信",
+      "教育訓練給付金・母子家庭自立支援給付金制度の対象講座"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.miraicare.jp/course/beginner.html",
+    "official_url": "https://www.miraicare.jp/",
+    "cta_url": "https://www.miraicare.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-miraicare",
+    "created_at": "2026-09-20T20:16:58.863Z",
+    "updated_at": "2026-09-20T20:16:58.863Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.miraicare.jp/"
   }
 ]
