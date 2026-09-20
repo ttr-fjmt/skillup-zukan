@@ -684,5 +684,26 @@
     "genre": "language",
     "reason": "portal_or_marketplace",
     "checkedAt": "2026-09-19T20:14:59.673Z"
+  },
+  "MdNデザインアカデミー": {
+    "name": "MdNデザインアカデミー",
+    "website": "https://academy.mdn.co.jp/",
+    "genre": "uiux",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-20T20:13:57.256Z"
+  },
+  "MOOV SCHOOL（ムーヴスクール）": {
+    "name": "MOOV SCHOOL（ムーヴスクール）",
+    "website": "https://school.rh-moov.jp/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-20T20:13:57.256Z"
+  },
+  "語学クラブ（樵雲学園）": {
+    "name": "語学クラブ（樵雲学園）",
+    "website": "https://www.gclub.jp",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-20T20:13:57.256Z"
   }
 }
