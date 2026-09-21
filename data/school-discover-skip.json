@@ -705,5 +705,33 @@
     "genre": "language",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-20T20:13:57.256Z"
+  },
+  "能勢広.映像塾": {
+    "name": "能勢広.映像塾",
+    "website": "https://jvsa.info",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-21T20:14:27.405Z"
+  },
+  "HERO'ZZ UNIVERSITY": {
+    "name": "HERO'ZZ UNIVERSITY",
+    "website": "https://herozz.co.jp/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-21T20:14:27.405Z"
+  },
+  "キーワードマーケティング 養成講座": {
+    "name": "キーワードマーケティング 養成講座",
+    "website": "https://www.kwm.co.jp/in-house/yosekoza/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-21T20:14:27.405Z"
+  },
+  "CodeShip": {
+    "name": "CodeShip",
+    "website": "https://code-ship.wemotion.co.jp/",
+    "genre": "programming",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-21T20:14:27.405Z"
   }
 }

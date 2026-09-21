@@ -17025,5 +17025,637 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
     "verified_url": "https://www.miraicare.jp/"
+  },
+  {
+    "id": "arbis",
+    "school_name": "あーとびデザインスクール",
+    "official_name": null,
+    "description": "京都のデザインスクール。少人数・プライベートレッスン形式で、Webデザイン・グラフィック・動画制作・デジタルイラスト・絵画など幅広く学べます。Photoshop、Illustrator、Premiere Pro、DaVinci Resolveといったデザインツールから、Claude CodeやChatGPT、Midjourneyなどの生成AIまで対応。デッサンや水彩、漫画・アニメーション等も併設の絵画教室で学習可能。フィボナッチデザインを取り入れた美しいレイアウト習得が特徴です。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額4,950円",
+      "min_yen": 4950,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "PCプライベートレッスン",
+        "amount": 4950,
+        "duration": "月4回",
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "京都府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "マンツーマン・少人数制（2名以下）プライベートレッスン",
+      "講座内容はWebデザイン・グラフィック・動画・生成AI・デジタルイラスト等多様",
+      "フィボナッチデザインで美しいレイアウト習得",
+      "Mac・Windows両対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://arbis.jp/",
+    "cta_url": "https://arbis.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-arbis",
+    "created_at": "2026-09-21T20:14:33.507Z",
+    "updated_at": "2026-09-21T20:14:33.507Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://arbis.jp/"
+  },
+  {
+    "id": "purepc",
+    "school_name": "ピュアパソコンスクール",
+    "official_name": null,
+    "description": "パソコン初心者からシニア、学生まで、わかりやすく楽しい授業を実施するパソコン教室。オフィス基礎講座、資格対策講座、Webデザイン、DTPデザイン、動画編集など、パソコン入門からクリエイター向けまで幅広い講座を提供しています。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "1,650円〜",
+      "min_yen": 1650,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "初心者コース",
+        "amount": 1650,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "オフィス資格対策コース",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "デザインコース",
+        "amount": 33000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "長野県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ワード、エクセル、パワーポイント等のオフィス基礎が習得できる",
+      "MOS等の資格取得に対応",
+      "Webサイト制作やDTPデザイン、動画編集のスキルが学べる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://purepc.jp/",
+    "cta_url": "https://purepc.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-purepc",
+    "created_at": "2026-09-21T20:14:39.928Z",
+    "updated_at": "2026-09-21T20:14:39.928Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://purepc.jp/"
+  },
+  {
+    "id": "vanfu-vts",
+    "school_name": "バンフートレーニングスクール",
+    "official_name": null,
+    "description": "印刷会社・帆風の研修部署が立ち上げたパソコンスクール。社員向け研修カリキュラムをベースに、短期間で現場で使える実践的なスキルを習得できる。Illustrator、Photoshop、InDesign、Web制作、Premiere Proの講座を提供。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "52,800円〜",
+      "min_yen": 52800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "イラストレーター講座",
+        "amount": 52800,
+        "duration": "3時間×4回",
+        "kind": "total"
+      },
+      {
+        "label": "フォトショップ講座",
+        "amount": 52800,
+        "duration": "3時間×4回",
+        "kind": "total"
+      },
+      {
+        "label": "インデザイン講座",
+        "amount": 52800,
+        "duration": "3時間×4回",
+        "kind": "total"
+      },
+      {
+        "label": "イラストレーター＆フォトショップ実践講座",
+        "amount": 52800,
+        "duration": "3時間×4回",
+        "kind": "total"
+      },
+      {
+        "label": "ホームページ制作講座",
+        "amount": 72600,
+        "duration": "3時間×6回",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe認定プロフェッショナル取得対策講座（イラストレーター）",
+        "amount": 59400,
+        "duration": "3時間×5回",
+        "kind": "total"
+      },
+      {
+        "label": "Adobe認定プロフェッショナル取得対策講座（フォトショップ）",
+        "amount": 59400,
+        "duration": "3時間×5回",
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator&Photoshop基礎パック",
+        "amount": 94600,
+        "duration": "3時間×8回",
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator&Photoshopマスターコース",
+        "amount": 136400,
+        "duration": "3時間×12回",
+        "kind": "total"
+      },
+      {
+        "label": "DTPマスターコース",
+        "amount": 178200,
+        "duration": "3時間×15回",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "印刷会社の研修部署が立ち上げたスクール",
+      "最短2日間で4回のレッスンを修了可能",
+      "卒業後1年間のアフターサポート付き",
+      "再受講制度あり",
+      "入学金・教材費不要"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.vanfu-vts.jp/",
+    "cta_url": "https://www.vanfu-vts.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-vanfu-vts",
+    "created_at": "2026-09-21T20:14:46.208Z",
+    "updated_at": "2026-09-21T20:14:46.208Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://www.vanfu-vts.jp/"
+  },
+  {
+    "id": "future-shop",
+    "school_name": "フューチャーショップアカデミー",
+    "official_name": null,
+    "description": "自社ECサイトの売上アップを目指す、少人数制の実践型カリキュラム。戦略設計、集客強化、機能活用、コンバージョンアップ、分析・リピート強化など、テーマ別の講座を提供。futureshopの活用方法や成功事例を交えて、自社ECサイトの成長を支援する。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "売上アップのためのテーマ別講座を複数提供",
+      "futureshopの機能活用に特化した実践型講座",
+      "成功事例を交えた講座内容",
+      "初心者向けから上級者向けまで複数レベルの講座"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.future-shop.jp/plan/standard.html",
+    "official_url": "https://www.future-shop.jp/academy/",
+    "cta_url": "https://www.future-shop.jp/academy/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-future-shop",
+    "created_at": "2026-09-21T20:15:15.650Z",
+    "updated_at": "2026-09-21T20:15:15.650Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.future-shop.jp/academy/"
+  },
+  {
+    "id": "nativecamp",
+    "school_name": "ネイティブキャンプ",
+    "official_name": null,
+    "description": "オンライン英会話スクール。24時間365日レッスン回数無制限で英会話が学べる。予約不要で「今すぐレッスン」が可能。世界140ヵ国以上の講師が在籍。スマートフォン・パソコン・タブレットから受講可能。初心者向けから上級者向けまで32,000以上の教材を提供。カランメソッド、TOEIC・英検対策、キッズ向けコースなど多様な学習オプションがある。AIスピーキングテスト・AIスピーキングトレーニングも無料で利用可能。日本人カウンセラーによる無料学習相談も受け付けている。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額1,980円〜",
+      "min_yen": 1980,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "プレミアムプラン",
+        "amount": 7480,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ファミリープラン",
+        "amount": 1980,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ネイティブ受け放題オプション",
+        "amount": 9800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "カラン受け放題オプション",
+        "amount": 4900,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "24時間365日いつでもレッスン受講可能",
+      "レッスン回数制限なし",
+      "世界140ヵ国以上の講師が在籍",
+      "32,000以上の豊富な教材",
+      "カランメソッド正式提携校"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://nativecamp.net/",
+    "cta_url": "https://nativecamp.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nativecamp",
+    "created_at": "2026-09-21T20:15:26.479Z",
+    "updated_at": "2026-09-21T20:15:26.479Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://nativecamp.net/"
+  },
+  {
+    "id": "dmm-2",
+    "school_name": "DMM英会話",
+    "official_name": null,
+    "description": "世界130カ国以上の講師によるオンライン英会話サービス。24時間いつでもレッスンを受講でき、1万以上の無料教材が使い放題。初心者向けに日本人講師も在籍し、日本語でのサポートが可能。スタンダードプランからネイティブ講師対応のプラスネイティブプランまで複数の料金プランがある。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額4,880円〜",
+      "min_yen": 4880,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "スタンダードプラン 毎月8回",
+        "amount": 4880,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "スタンダードプラン 1日1回",
+        "amount": 6980,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プラスネイティブプラン 毎月8回",
+        "amount": 12980,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プラスネイティブプラン 1日1回",
+        "amount": 22880,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "世界130カ国以上の講師が在籍、経歴や専門が様々",
+      "24時間いつでもレッスンを受講可能",
+      "1万以上の教材が追加料金なしで使い放題",
+      "日本人講師による日本語でのサポートに対応",
+      "入会金・教材費は一切不要"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://eikaiwa.dmm.com/",
+    "cta_url": "https://eikaiwa.dmm.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dmm-2",
+    "created_at": "2026-09-21T20:15:35.921Z",
+    "updated_at": "2026-09-21T20:15:35.921Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://eikaiwa.dmm.com/"
+  },
+  {
+    "id": "evinet",
+    "school_name": "やりなおし英語JUKU",
+    "official_name": null,
+    "description": "英文法を「話すため」に再構築することで、\"知っている英語\"を\"使える英語\"へ変えるレッスンを提供。文法が苦手でも大丈夫で、基礎の基礎から学び直すことができる。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Mr.Evine監修の英語学習メソッド",
+      "個別カウンセリングと無料体験レッスン（約30分）",
+      "対面・オンライン両対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.evinet.biz/courses",
+    "official_url": "https://www.evinet.biz/",
+    "cta_url": "https://www.evinet.biz/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-evinet",
+    "created_at": "2026-09-21T20:16:01.372Z",
+    "updated_at": "2026-09-21T20:16:01.372Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.evinet.biz/"
+  },
+  {
+    "id": "cclesson",
+    "school_name": "CCレッスン",
+    "official_name": "学研CCレッスン",
+    "description": "学研グループが運営するオンライン中国語会話スクール。約500人の講師が常時在籍しており、1レッスン（25分）232円から受講可能。HSK認定校として団体受験割引や、豊富な教材、動画、AIテストなどの学習コンテンツを提供。定額プラン受講者はGakkenブックアップで2,000冊以上の電子書籍が無料で利用できる。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "1,000円",
+      "min_yen": 1000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ポイントプラン",
+        "amount": 1000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "約500人の講師が常時在籍し、好きな時間にレッスンを予約可能",
+      "1レッスン（25分）最安232円から受講できる",
+      "豊富な教材、動画教材、AI先生の診断テストが利用可能",
+      "定額レッスンプラン受講者はGakkenブックアップで書籍2,000冊以上が無料"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.cclesson.com/",
+    "cta_url": "https://www.cclesson.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-cclesson",
+    "created_at": "2026-09-21T20:16:10.016Z",
+    "updated_at": "2026-09-21T20:16:10.016Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.cclesson.com/"
+  },
+  {
+    "id": "cic-ct",
+    "school_name": "CIC日本建設情報センター",
+    "official_name": null,
+    "description": "建設業向けの受験対策講座および安全衛生教育を提供する講習機関。施工管理技士（建築・土木・電気工事・管工事・電気通信・造園）の各級対策講座のほか、特別教育や安全衛生教育、技能講習など多岐にわたる講座を開講。Web講座および通学講座の両形式に対応し、個人から企業研修まで幅広く対応。開設27年の実績を持つ。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Web講座と通学講座の両形式に対応",
+      "施工管理技士から安全衛生教育まで多岐にわたる講座を開講",
+      "厚生労働省登録講習機関として認定",
+      "27年の運営実績を持つ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.cic-ct.co.jp/course/",
+    "area_detail_url": "https://www.cic-ct.co.jp/upcoming/",
+    "official_url": "https://www.cic-ct.co.jp/",
+    "cta_url": "https://www.cic-ct.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-cic-ct",
+    "created_at": "2026-09-21T20:16:50.156Z",
+    "updated_at": "2026-09-21T20:16:50.156Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.cic-ct.co.jp/"
+  },
+  {
+    "id": "asial",
+    "school_name": "Monaca Education",
+    "official_name": "アシアル株式会社",
+    "description": "学校教育用の国産プログラミング学習環境として、PBL（課題解決型学習）によるアプリ制作を強みとしています。プログラミング入門から応用まで対応でき、おみくじアプリやぷよぷよプログラミングなどの教材を備えており、小中高校および大学・専門学校で広く活用されています。低速ネットワークでも快適に動作し、iPad・Chromebook対応です。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Web公開機能・共同編集・データベース機能を搭載",
+      "ぷよぷよなど国民的ゲームを題材とした教材がある",
+      "iPad・Chromebook対応で低速ネットワーク環境でも動作"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.asial.co.jp/school/",
+    "cta_url": "https://www.asial.co.jp/school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-asial",
+    "created_at": "2026-09-21T20:16:58.205Z",
+    "updated_at": "2026-09-21T20:16:58.205Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://www.asial.co.jp/school/"
   }
 ]
