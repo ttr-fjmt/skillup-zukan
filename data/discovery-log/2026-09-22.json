@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2026-09-22",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "arbis",
+      "purepc"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "vanfu-vts"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "future-shop"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "genre": "language",
+    "new_school_ids": [
+      "nativecamp",
+      "dmm-2",
+      "evinet",
+      "cclesson"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "genre": "certification",
+    "new_school_ids": [
+      "cic-ct"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "genre": "programming",
+    "new_school_ids": [
+      "asial"
+    ]
+  }
+]
