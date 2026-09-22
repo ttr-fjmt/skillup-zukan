@@ -122,5 +122,122 @@
     ],
     "status": "pending",
     "note": ""
+  },
+  {
+    "n": 11,
+    "id": "shien-kyufukin",
+    "title": "働きながらではなく、仕事を辞めて学ぶときの支援",
+    "basis": "教育訓練支援給付金のしくみ（公式に書かれている範囲で）",
+    "sources": [
+      "kyouiku",
+      "hellowork"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 12,
+    "id": "kyuuka-kyufukin",
+    "title": "休暇をとって学ぶときの給付金",
+    "basis": "教育訓練休暇給付金のしくみ",
+    "sources": [
+      "hellowork"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 13,
+    "id": "shikyuu-youken-shoukai",
+    "title": "自分が対象か、申し込む前に確かめる方法がある",
+    "basis": "支給要件照会のしくみと使い方",
+    "sources": [
+      "hellowork",
+      "shikyuuShinsei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 14,
+    "id": "career-consulting",
+    "title": "キャリアコンサルティングを受けるという選択肢",
+    "basis": "キャリアコンサルティングの位置づけと、給付との関係",
+    "sources": [
+      "hellowork"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 15,
+    "id": "job-card",
+    "title": "ジョブ・カードとは何に使うものか",
+    "basis": "ジョブ・カードの役割",
+    "sources": [
+      "hellowork"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 16,
+    "id": "denshi-shinsei",
+    "title": "手続きはオンラインでもできる",
+    "basis": "電子申請・マイナポータルでの手続き",
+    "sources": [
+      "shikyuuShinsei",
+      "hellowork"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 17,
+    "id": "kensaku-system-tsukaikata",
+    "title": "教育訓練講座検索システムの使い方",
+    "basis": "講座検索システムで何が調べられるか",
+    "sources": [
+      "kyouiku",
+      "kouzaShitei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 18,
+    "id": "shitei-kijun",
+    "title": "どんな講座が「指定」されるのか",
+    "basis": "講座の指定基準の考え方",
+    "sources": [
+      "kouzaShitei",
+      "kyouiku"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 19,
+    "id": "shuuryou-nintei",
+    "title": "「修了」と認められないと給付は受けられない",
+    "basis": "修了認定の考え方と、受講証明",
+    "sources": [
+      "kyouiku",
+      "shikyuuShinsei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 20,
+    "id": "hellowork-de-suru-koto",
+    "title": "ハローワークでする手続きの一覧",
+    "basis": "受講前・受講後にハローワークで行う手続き",
+    "sources": [
+      "hellowork",
+      "shikyuuShinsei"
+    ],
+    "status": "pending",
+    "note": ""
   }
 ]
