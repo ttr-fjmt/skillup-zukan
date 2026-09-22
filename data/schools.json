@@ -17657,5 +17657,311 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://www.asial.co.jp/school/"
+  },
+  {
+    "id": "coloso",
+    "school_name": "Coloso",
+    "official_name": null,
+    "description": "Colosoは、イラスト、映像デザイン、視覚デザイン、ゲーム制作、クッキング、開発、音楽、クリエイティブ、ビジネスなど多様なジャンルのオンライン講座を提供するプラットフォーム。プロのクリエイターによる講座が豊富で、入門から応用レベルまで幅広い講座を揃えています。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "uiux",
+      "video_editing"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロクリエイターによる多様なジャンルの講座を提供",
+      "入門から応用レベルまで段階的に学習可能",
+      "タイムセール・クーポン・早割など割引機会が豊富",
+      "期間限定の特別イベント企画を常時開催",
+      "LINE友だち限定特典やVIPクーポンなど会員向け特典が充実"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://coloso.jp/",
+    "cta_url": "https://coloso.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-coloso",
+    "created_at": "2026-09-22T20:13:31.140Z",
+    "updated_at": "2026-09-22T20:13:31.140Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://coloso.jp/"
+  },
+  {
+    "id": "nikkeibp",
+    "school_name": "実践！儲かるBtoBマーケ講座",
+    "official_name": null,
+    "description": "BtoBマーケティングの実務者向け4回連続講座。マーケティング戦略、デマンドジェネレーション、ナーチャリング、リードジェネレーションなど、BtoBマーケティングの全体像を学ぶ。メイン講師はBtoBマーケティングの第一人者で、事業会社講師による実践事例やワークショップを通じて、理論と現場のノウハウを習得できる。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "novice",
+    "career_paths": [],
+    "price": {
+      "display": "275,000円〜",
+      "min_yen": 275000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "1名様",
+        "amount": 275000,
+        "duration": "全4回",
+        "kind": "total"
+      },
+      {
+        "label": "2名様",
+        "amount": 495000,
+        "duration": "全4回",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "メイン講師は約600社の企業支援経験を持つBtoBマーケティングの第一人者",
+      "理論と実践の事例を同時に学べる構成",
+      "ワークショップとグループディスカッションで異業種マーケターとの人脈形成",
+      "東京神田の駅近会場で開催"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://info.nikkeibp.co.jp/nxr/campaign/toppajuku/btob/",
+    "cta_url": "https://info.nikkeibp.co.jp/nxr/campaign/toppajuku/btob/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nikkeibp",
+    "created_at": "2026-09-22T20:13:41.738Z",
+    "updated_at": "2026-09-22T20:13:41.738Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://info.nikkeibp.co.jp/nxr/campaign/toppajuku/btob/"
+  },
+  {
+    "id": "shin-gogaku",
+    "school_name": "新大久保語学院",
+    "official_name": null,
+    "description": "東京都内に複数校舎を展開する韓国語専門学校。初心者から上級者向けまで、通学・オンライン・動画講座など多様な学習形式を提供。グループレッスンではマンツーマンレッスンと組み合わせることでアウトプット強化に注力している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "オリジナル教材「できる韓国語」シリーズ使用",
+      "通学・オンライン・動画講座から選択可能",
+      "グループレッスンとマンツーマンレッスンの組み合わせ",
+      "無料レベルテストと無料体験レッスンを実施",
+      "TOPIK対策講座を開講"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.shin-gogaku.com/shinokubo/study-01.html",
+    "official_url": "https://www.shin-gogaku.com/",
+    "cta_url": "https://www.shin-gogaku.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shin-gogaku",
+    "created_at": "2026-09-22T20:14:06.595Z",
+    "updated_at": "2026-09-22T20:14:06.595Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.shin-gogaku.com/"
+  },
+  {
+    "id": "s-koreanschool",
+    "school_name": "ソウルメイト韓国語学校",
+    "official_name": "一般社団法人日本韓国語教育協会",
+    "description": "新宿・新大久保にある韓国語教室。全員韓国人で韓国語教員国家資格保有者を含む言語のプロが講師として在籍。グループレッスン、プライベートレッスン、オンラインレッスンから選択可能。初級から上級まで対応し、会話中心で発話機会が豊富。オンラインレッスンは1回20分から受講可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "全講師が韓国人で韓国語教員国家資格保有者を含む言語のプロ",
+      "グループ・プライベート・オンラインの3つのレッスン形式から選択可能",
+      "オンラインレッスンは1回20分から受講可能",
+      "初級から上級まで対応し会話中心のカリキュラム",
+      "無料体験レッスンと無料のレベルチェックテストが利用可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://s-koreanschool.com/course/fee/",
+    "area_detail_url": "https://s-koreanschool.com/about/access/",
+    "official_url": "https://s-koreanschool.com/",
+    "cta_url": "https://s-koreanschool.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-s-koreanschool",
+    "created_at": "2026-09-22T20:14:44.644Z",
+    "updated_at": "2026-09-22T20:14:44.644Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://s-koreanschool.com/"
+  },
+  {
+    "id": "jin-korean",
+    "school_name": "Jin韓国語学院",
+    "official_name": null,
+    "description": "西武新宿駅から徒歩1分の好立地に位置する韓国語学院。韓国語で聞いて話す能力を最重視し、70分授業で徹底指導。韓国の大学語学堂で使用されている教材を用いた体系的学習と、経験豊富な講師による少人数制授業が特徴。初心者向けの無料入門コースから韓国大学留学コースまで幅広く対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額15,400円〜",
+      "min_yen": 15400,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "グループレッスン",
+        "amount": 15400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "個人レッスン",
+        "amount": 28600,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "短期集中コース 8回/月",
+        "amount": 44000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "短期集中コース 12回/月",
+        "amount": 66000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "短期集中コース 16回/月",
+        "amount": 88000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "短期集中コース 20回/月",
+        "amount": 110000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "70分間の充実した授業時間",
+      "少人数制で授業効率を重視",
+      "韓国語で聞く・話す能力を第一目標",
+      "韓国の大学語学堂で実際に使用される教材を使用",
+      "日本で6年以上の講師経歴を持つ熱血講師"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "http://www.jin-korean.com/jin/aca/jinTuition.do",
+    "official_url": "http://www.jin-korean.com/",
+    "cta_url": "http://www.jin-korean.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-jin-korean",
+    "created_at": "2026-09-22T20:14:56.193Z",
+    "updated_at": "2026-09-22T20:14:56.193Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "http://www.jin-korean.com/"
   }
 ]

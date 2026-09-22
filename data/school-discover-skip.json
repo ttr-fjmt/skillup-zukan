@@ -733,5 +733,33 @@
     "genre": "programming",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-21T20:14:27.405Z"
+  },
+  "amps（アンプス）アニメゼミ": {
+    "name": "amps（アンプス）アニメゼミ",
+    "website": "https://amps-web.biz/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-22T20:13:22.587Z"
+  },
+  "ADREX MARKETING ACADEMY": {
+    "name": "ADREX MARKETING ACADEMY",
+    "website": "https://adrex-academy.com/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-22T20:13:22.587Z"
+  },
+  "WASEDA NEO B2Bマーケティング総合講座": {
+    "name": "WASEDA NEO B2Bマーケティング総合講座",
+    "website": "https://wasedaneo.jp/service/btob-marketing/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-22T20:13:22.587Z"
+  },
+  "Anitoon Academia": {
+    "name": "Anitoon Academia",
+    "website": "https://www.anitoon.jp/",
+    "genre": "video_editing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-22T20:13:22.587Z"
   }
 }
