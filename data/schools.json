@@ -17963,5 +17963,487 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "http://www.jin-korean.com/"
+  },
+  {
+    "id": "wonderful-wife",
+    "school_name": "ワンダフルムービー",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://wonderful-wife.net/w_movie/",
+    "cta_url": "https://wonderful-wife.net/w_movie/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-wonderful-wife",
+    "created_at": "2026-09-23T20:14:33.948Z",
+    "updated_at": "2026-09-23T20:14:33.948Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://wonderful-wife.net/w_movie/"
+  },
+  {
+    "id": "winningfield",
+    "school_name": "コンバジョニスタ ベーシック",
+    "official_name": "株式会社ウィニングフィールド",
+    "description": "Web広告代理事業の始め方とクライアント獲得術を学ぶ実践型スクール。未経験から安定収益を実現することを目指しており、クライアント獲得からその後の広告運用まで一貫して学べます。受講期間中にクライアントを獲得し、報酬を得ながら実務経験を積むことが可能な実践重視のカリキュラムが特徴です。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "freelance",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Web広告代理事業",
+      "Webマーケター",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "コンバジョニスタ ベーシック",
+        "amount": 7800,
+        "duration": null,
+        "kind": null
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "クライアント獲得スキルを徹底的に磨く実践カリキュラム",
+      "受講期間中にクライアント獲得と広告運用を同時実践",
+      "受講者に合わせたオーダーメイド式学習スケジュール作成",
+      "週1回のオンライングループコンサルティング（少人数制）",
+      "現役マーケターによるチャットサポートと個別サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://winningfield.net/cvnista_basic02/",
+    "cta_url": "https://winningfield.net/cvnista_basic02/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-winningfield",
+    "created_at": "2026-09-23T20:14:43.209Z",
+    "updated_at": "2026-09-23T20:14:43.209Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://winningfield.net/cvnista_basic02/"
+  },
+  {
+    "id": "hers-net",
+    "school_name": "WEBST",
+    "official_name": null,
+    "description": "未経験者が転職・副業・フリーランスとして活躍できるスキルを習得するオンライン完結型Webスクール。Webマーケティング、Webデザイン、ライティングなど幅広いスキルを学べます。卒業後も案件提供によるビジネスパートナーとしての継続支援を行います。",
+    "skill_genre": [
+      "web_marketing",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター",
+      "Instagram広告マーケティング",
+      "Web広告運用",
+      "Webマーケティングコンサル",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "547,800円〜",
+      "min_yen": 547800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ライトコース",
+        "amount": 547800,
+        "duration": "12ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ベーシックコース",
+        "amount": 822800,
+        "duration": "12ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "コンサルコース",
+        "amount": 1086800,
+        "duration": "12ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役プロ講師によるマンツーマンサポート",
+      "7時～24時の好きな時間にマンツーマンレッスン予約可能",
+      "24時間いつでも利用可能なチャットサポート（1営業日以内に返信）",
+      "卒業後も案件提供によるビジネスパートナーとしての支援",
+      "PC無料レンタルサポート（条件あり）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://hers-net.co.jp/webst/",
+    "cta_url": "https://hers-net.co.jp/webst/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-hers-net",
+    "created_at": "2026-09-23T20:14:50.965Z",
+    "updated_at": "2026-09-23T20:14:50.965Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://hers-net.co.jp/webst/"
+  },
+  {
+    "id": "archi-voice",
+    "school_name": "アーキ・ヴォイス外国語スクール",
+    "official_name": "株式会社アーキ・ヴォイス",
+    "description": "中国語、韓国語、ベトナム語、タイ語などの外国語を学べるオンラインスクール。ネイティブ講師による実践的な会話レッスンが特徴。初心者から日常会話・ビジネス利用まで対応。マンツーマンとグループレッスンを提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "980円〜",
+      "min_yen": 980,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "グループレッスン",
+        "amount": 980,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マンツーマンレッスン",
+        "amount": 1375,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "初心者入門レッスン",
+        "amount": 4400,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "京都府"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ネイティブ講師による実践的な会話レッスン",
+      "月～土曜日・祝日毎日開講、夜22時まで予約可能",
+      "マンツーマンレッスンは完全自由予約制で24時間前までキャンセル可能",
+      "入学前のカウンセリングで個別対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://www.archi-voice.info/map/",
+    "official_url": "https://www.archi-voice.info/",
+    "cta_url": "https://www.archi-voice.info/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-archi-voice",
+    "created_at": "2026-09-23T20:15:04.907Z",
+    "updated_at": "2026-09-23T20:15:04.907Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.archi-voice.info/"
+  },
+  {
+    "id": "shikakupass",
+    "school_name": "Shikaku Pass（学研のオンライン資格講座）",
+    "official_name": null,
+    "description": "学研が運営するオンライン資格学習サービス。教育工学に基づく学習設計と人気講師の監修により、スマホ1台で「動画を見る→問題を解く」を繰り返す学習形式。短い動画で要点を絞った解説、デジタルテキスト、厳選された問題演習により、スキマ時間での効率的な学習が可能です。",
+    "skill_genre": [
+      "certification",
+      "programming",
+      "language"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "スマートフォン1台で学習が完結する",
+      "教育工学に基づいた学習カリキュラム設計",
+      "人気講師による動画講義の監修",
+      "スキマ時間での学習に特化した短い動画コンテンツ",
+      "デジタルテキストで場所を選ばない学習"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://shikakupass.com/list",
+    "official_url": "https://shikakupass.com/",
+    "cta_url": "https://shikakupass.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-shikakupass",
+    "created_at": "2026-09-23T20:15:26.579Z",
+    "updated_at": "2026-09-23T20:15:26.579Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://shikakupass.com/"
+  },
+  {
+    "id": "romoeigo",
+    "school_name": "リノキア英語スクール",
+    "official_name": null,
+    "description": "東京・千代田区のTOEIC対策に特化した個別指導塾。TOEIC満点講師によるマンツーマンレッスンを提供。社会人・大学生を中心にスコアアップ実績が豊富で、宿題管理と復習指導を通じた継続的な学習支援が特徴。入塾金0円で手頃な価格設定。通学とオンライン併用に対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "54,000円〜",
+      "min_yen": 54000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "社会人TOEICコース",
+        "amount": 63000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "学生TOEICコース",
+        "amount": 62000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "英検コース",
+        "amount": 54000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "TOEIC満点講師による個別指導・マンツーマンレッスン",
+      "毎回の宿題出題と完成度チェック、復習頻度の具体的管理",
+      "LINEでの学習報告・質問対応、講師による詳細レッスンノート記録",
+      "通学・オンライン併用可、夜間や土祝日対応で予約時間帯が柔軟",
+      "入塾金0円で分割払いにも対応、手数料なし"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.romoeigo.com/",
+    "cta_url": "https://www.romoeigo.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-romoeigo",
+    "created_at": "2026-09-23T20:15:33.286Z",
+    "updated_at": "2026-09-23T20:15:33.286Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.romoeigo.com/"
+  },
+  {
+    "id": "w-seminar",
+    "school_name": "Wセミナー（早稲田セミナー）",
+    "official_name": null,
+    "description": "司法書士、国家総合職、外務専門職（外交官）の3つの難関資格・試験対策を提供する法律・公務員資格専門スクール。合格実績に基づいた指導ノウハウと充実したサポート体制で、難関試験への一発合格や短期合格を目指す。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself"
+    ],
+    "target_level": "advanced",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "司法書士、国家総合職、外務専門職の3つの難関資格・試験に対応",
+      "蓄積された指導経験に基づく合格ノウハウ",
+      "資料請求と無料講座説明会を実施",
+      "複数の申込方法に対応（窓口・インターネット・郵送・代理店）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.w-seminar.co.jp/seikyu/seikyu.html",
+    "area_detail_url": "https://www.w-seminar.co.jp/tacmap.html",
+    "official_url": "https://www.w-seminar.co.jp/",
+    "cta_url": "https://www.w-seminar.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-w-seminar",
+    "created_at": "2026-09-23T20:15:48.590Z",
+    "updated_at": "2026-09-23T20:15:48.590Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://www.w-seminar.co.jp/"
+  },
+  {
+    "id": "teracam",
+    "school_name": "テラキャン プログラミング",
+    "official_name": null,
+    "description": "未経験者向けのプログラミングエンジニア転職講座。現役エンジニアで構成されたメンター陣による学習支援、AI質問アプリ、無制限質問対応などの充実した学習環境を提供。補助金制度を活用することで大幅な費用削減が可能。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "ITエンジニア"
+    ],
+    "price": {
+      "display": "690,800円〜",
+      "min_yen": 690800,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "短期集中コース",
+        "amount": 690800,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "就業両立コース",
+        "amount": 889350,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "専門技術コース",
+        "amount": 910800,
+        "duration": "4ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "AI質問アプリによる24時間いつでも質問可能な学習環境"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://teracam.jp/",
+    "cta_url": "https://teracam.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-teracam",
+    "created_at": "2026-09-23T20:15:57.441Z",
+    "updated_at": "2026-09-23T20:15:57.441Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://teracam.jp/"
   }
 ]

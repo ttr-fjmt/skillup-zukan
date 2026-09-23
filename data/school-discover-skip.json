@@ -761,5 +761,19 @@
     "genre": "video_editing",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-22T20:13:22.587Z"
+  },
+  "フラミンゴ・オンラインコーチング": {
+    "name": "フラミンゴ・オンラインコーチング",
+    "website": "https://coaching.app-flamingo.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-23T20:14:32.009Z"
+  },
+  "CREATOR'SHIVE": {
+    "name": "CREATOR'SHIVE",
+    "website": "https://creator-hive.co.jp/",
+    "genre": "webdesign",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-23T20:14:32.009Z"
   }
 }

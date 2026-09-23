@@ -698,5 +698,54 @@
     "found": 0,
     "listed": 0,
     "skipped": 0
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "video_editing",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "web_marketing",
+    "found": 2,
+    "listed": 2,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "language",
+    "found": 4,
+    "listed": 3,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "certification",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "programming",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "webdesign",
+    "found": 1,
+    "listed": 0,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-24",
+    "genre": "uiux",
+    "found": 0,
+    "listed": 0,
+    "skipped": 0
   }
 ]
