@@ -97,8 +97,9 @@
       "hellowork",
       "shikyuuShinsei"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-24"
   },
   {
     "n": 9,
