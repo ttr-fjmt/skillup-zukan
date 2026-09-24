@@ -775,5 +775,47 @@
     "genre": "webdesign",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-23T20:14:32.009Z"
+  },
+  "才流（サイル）BtoBマーケティング研修": {
+    "name": "才流（サイル）BtoBマーケティング研修",
+    "website": "https://sairu.co.jp/service/training/btob-marketing-training/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "ネットチャイナ中国語": {
+    "name": "ネットチャイナ中国語",
+    "website": "https://netchina.jp/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "Work&Joy（ワクジョイ）動画編集スクール": {
+    "name": "Work&Joy（ワクジョイ）動画編集スクール",
+    "website": "https://workjoy-official.com/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "バズカレッジ（BuzzCollege）": {
+    "name": "バズカレッジ（BuzzCollege）",
+    "website": "https://buzz-college.com/",
+    "genre": "web_marketing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "ウィザーディア": {
+    "name": "ウィザーディア",
+    "website": "https://wizardia.co.jp/",
+    "genre": "programming",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "AnimationAid": {
+    "name": "AnimationAid",
+    "website": "https://animationaid.com/",
+    "genre": "video_editing",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-24T20:14:00.275Z"
   }
 }

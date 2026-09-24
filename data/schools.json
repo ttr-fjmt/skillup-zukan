@@ -18445,5 +18445,359 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
     "verified_url": "https://teracam.jp/"
+  },
+  {
+    "id": "hanaso",
+    "school_name": "HanasoBiz",
+    "official_name": null,
+    "description": "ビジネスパーソン向けのオンライン英会話スクール。関正生先生監修の「HanasoBizメソッド」による復習システムと、AIが発話の正確性・完全度・流暢さなどを総合評価する反復学習により、ビジネスシーンで即活用できる実践的な英会話を学習できます。7つのカテゴリーから自分のレベルに合わせてカリキュラムを選択可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額4,730円〜",
+      "min_yen": 4730,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "月4回プラン",
+        "amount": 4730,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月8回プラン",
+        "amount": 8360,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月12回プラン",
+        "amount": 11990,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月16回プラン",
+        "amount": 15730,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "毎日25分プラン",
+        "amount": 15730,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "フィリピンの有名大学の学生・卒業生を中心とした講師による個別ペース対応レッスン",
+      "AIが発話を総合評価し改善点のフィードバックが受けられる",
+      "システムが復習時期と頻度を管理する効率的な学習メソッド",
+      "ビジネスシーンをヒアリングして作成した実践的なカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://biz.hanaso.jp/",
+    "cta_url": "https://biz.hanaso.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-hanaso",
+    "created_at": "2026-09-24T20:14:30.030Z",
+    "updated_at": "2026-09-24T20:14:30.030Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://biz.hanaso.jp/"
+  },
+  {
+    "id": "osakaymca",
+    "school_name": "大阪YMCAランゲージセンター",
+    "official_name": null,
+    "description": "大阪の天王寺・土佐堀にある語学教育機関。2歳児から成人まで、年齢を問わず英語・英会話が学べる幅広いカリキュラムを提供。個人のレベルや目的に合わせて選べる受講クラスと充実のアクティビティやイベントが特徴。担任制のグループレッスンと安心サポート、リーズナブルな学費、お得な割引制度を提供。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "大阪府"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "2歳児から成人まで年齢を問わず学べる幅広いカリキュラム",
+      "一人ひとりのレベルや目的に合わせて選べる受講クラス",
+      "担任制のグループレッスン",
+      "充実のアクティビティやイベント"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://osakaymca.ac.jp/languagecenter/course/index.html",
+    "official_url": "https://osakaymca.ac.jp/languagecenter/",
+    "cta_url": "https://osakaymca.ac.jp/languagecenter/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-osakaymca",
+    "created_at": "2026-09-24T20:14:52.434Z",
+    "updated_at": "2026-09-24T20:14:52.434Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://osakaymca.ac.jp/languagecenter/"
+  },
+  {
+    "id": "nippon-programming-school",
+    "school_name": "日本プログラミングスクール",
+    "official_name": null,
+    "description": "1998年開校の完全個別指導プログラミングスクール。生成AI時代に対応できる技術者育成を目的とし、単なるコード作成ではなく「理解する力」「設計力」「デバッグ力」の養成に重点を置く。C言語の基礎から複数言語（Java、C#、Python等）まで学習可能。実務経験豊富な講師による1対1指導とコードレビューを実施。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "エンジニア"
+    ],
+    "price": {
+      "display": "72,050円〜",
+      "min_yen": 72050,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "3日間合宿C言語コース",
+        "amount": 74800,
+        "duration": "3日間",
+        "kind": "total"
+      },
+      {
+        "label": "3日間合宿Javaコース",
+        "amount": 72050,
+        "duration": "3日間",
+        "kind": "total"
+      },
+      {
+        "label": "3日間合宿C# or VB.Netコース",
+        "amount": 73700,
+        "duration": "3日間",
+        "kind": "total"
+      },
+      {
+        "label": "3日間合宿Pythonコース",
+        "amount": 72050,
+        "duration": "3日間",
+        "kind": "total"
+      },
+      {
+        "label": "3日間合宿C⁺⁺コース",
+        "amount": 73700,
+        "duration": "3日間",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "千葉県",
+      "愛知県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "完全個別指導による1対1のコードレビュー",
+      "実務経験豊富な講師による指導",
+      "生成AI時代対応の基礎教育カリキュラム",
+      "オンライン・通学の両方に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "area_detail_url": "https://nippon-programming-school.com/school/",
+    "official_url": "https://nippon-programming-school.com/",
+    "cta_url": "https://nippon-programming-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-nippon-programming-school",
+    "created_at": "2026-09-24T20:15:07.412Z",
+    "updated_at": "2026-09-24T20:15:07.412Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://nippon-programming-school.com/"
+  },
+  {
+    "id": "kanda-it-school",
+    "school_name": "神田ITスクール",
+    "official_name": "株式会社FusionOne",
+    "description": "自走できるエンジニア育成を目指す法人研修機関。アクティブ・ラーニングを通じて主体性・対話力・深い理解を伴う学びを提供。Java・SAP ABAP・AWS・インフラ・生成AI等の実践的なプログラミング研修を展開。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "297,000円〜",
+      "min_yen": 297000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Java入門・基礎",
+        "amount": 297000,
+        "duration": "1ヶ月 (約20日)",
+        "kind": "total"
+      },
+      {
+        "label": "Java総合 2ヶ月",
+        "amount": 495000,
+        "duration": "2ヶ月 (約40日)",
+        "kind": "total"
+      },
+      {
+        "label": "Java総合 3ヶ月",
+        "amount": 726000,
+        "duration": "3ヶ月 (約60日)",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "アクティブ・ラーニングによる主体的学習",
+      "個別伴走による丁寧な指導と理解度に応じた柔軟な対応",
+      "ハンズオン演習による実務直結の実践型カリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://kanda-it-school.com/course/java/",
+    "official_url": "https://kanda-it-school.com/",
+    "cta_url": "https://kanda-it-school.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kanda-it-school",
+    "created_at": "2026-09-24T20:15:34.332Z",
+    "updated_at": "2026-09-24T20:15:34.332Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://kanda-it-school.com/"
+  },
+  {
+    "id": "base-webschool",
+    "school_name": "BASE Webスクール",
+    "official_name": "株式会社宝塚デザイン",
+    "description": "Web制作会社の株式会社宝塚デザインが運営する実践型Webスクール。現役のWebデザイナー・エンジニアが直接指導し、実際の仕事で役立つ実践的な技術を学べます。少人数制で対面とオンラインの両方に対応し、コワーキングスペース「BASE宝塚」で質問し放題のサポートが特徴。",
+    "skill_genre": [
+      "webdesign",
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "コーダー",
+      "フロントエンジニア"
+    ],
+    "price": {
+      "display": "385,000円",
+      "min_yen": 385000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "実践型Webデザイナー・コーダー養成コース",
+        "amount": 385000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "オンラインサポート",
+        "amount": 33000,
+        "duration": "3ケ月～",
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "兵庫県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "少人数制で親身なサポート体制",
+      "対面とオンラインの両方に対応",
+      "コワーキングスペースが使い放題で質問し放題",
+      "現役のWebデザイナー・エンジニアによる直接指導",
+      "卒業後も課題をビジネスに活用可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://base-webschool.work/course/webdesigner-corder-course",
+    "official_url": "https://base-webschool.work/",
+    "cta_url": "https://base-webschool.work/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-base-webschool",
+    "created_at": "2026-09-24T20:15:57.763Z",
+    "updated_at": "2026-09-24T20:15:57.763Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://base-webschool.work/"
   }
 ]
