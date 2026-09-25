@@ -18799,5 +18799,669 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
     "verified_url": "https://base-webschool.work/"
+  },
+  {
+    "id": "kaisei-group",
+    "school_name": "開成アカデミー韓国語学校",
+    "official_name": null,
+    "description": "韓国語学習の課題を分析し、正しい学習法で目標達成を支援するスクール。ネイティブ講師による直接教授法で、発音・イントネーション矯正からビジネスレベルの会話力習得まで対応。レベルと目的に合わせたカスタマイズ授業、4技能のアウトプット、成長度の見える化を特徴とする。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "10,000円",
+      "min_yen": 10000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "体験入学コース",
+        "amount": 10000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "月額プラン",
+        "amount": 5610,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "直接教授法で授業はすべて韓国語。韓国語で聞く・話す脳へシフト",
+      "発音・イントネーションを顔や口のトレーニングにより基礎から矯正",
+      "レベルと目的に合ったオリジナル授業でカスタマイズ。苦手項目や好きな分野に集中学習",
+      "初回受講前と一定期間受講後の成長度を検証する実力の見える化",
+      "4技能マルチにアウトプット。ネイティブとの会話、ドラマ聴解、ビジネス交渉などに対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.kaisei-group.co.jp/koreanlanguageschool/",
+    "cta_url": "https://www.kaisei-group.co.jp/koreanlanguageschool/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kaisei-group",
+    "created_at": "2026-09-25T20:12:51.587Z",
+    "updated_at": "2026-09-25T20:12:51.587Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.kaisei-group.co.jp/koreanlanguageschool/"
+  },
+  {
+    "id": "k-class",
+    "school_name": "韓国語クラス",
+    "official_name": null,
+    "description": "韓国語学習を目指す忙しい社会人のための学習サービス。専属コーチによる毎日のサポート、個別カリキュラム、スキマ時間での効率的な学習が特徴。初心者からの学習に対応し、科学的な学習メソッドを用いて着実な成長をサポートします。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "専属コーチによる毎日のサポート体制",
+      "個人のスケジュールに合わせたカスタマイズカリキュラム",
+      "スキマ時間を活用した効率的な学習プラン",
+      "科学的なメソッドに基づいた学習アプローチ"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://k-class.jp/",
+    "cta_url": "https://k-class.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-k-class",
+    "created_at": "2026-09-25T20:12:55.563Z",
+    "updated_at": "2026-09-25T20:12:55.563Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://k-class.jp/"
+  },
+  {
+    "id": "littleeurope",
+    "school_name": "語楽塾リトルヨーロッパ",
+    "official_name": "有限会社リトルヨーロッパ",
+    "description": "大船・鎌倉・横浜を拠点としたフランス語、イタリア語、ドイツ語、スペイン語の語学学校。各言語の文化背景を学びながら実践的な語学スキルを習得できます。グループレッスンと体験レッスン、オンラインレッスンチケットなどを提供しています。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "神奈川県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "フランス語、イタリア語、ドイツ語、スペイン語の4言語に対応",
+      "大船駅東口、横浜駅南西口の通学しやすい拠点",
+      "体験レッスン（有料）を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.littleeurope.jp/lesson",
+    "official_url": "https://www.littleeurope.jp/",
+    "cta_url": "https://www.littleeurope.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-littleeurope",
+    "created_at": "2026-09-25T20:13:19.921Z",
+    "updated_at": "2026-09-25T20:13:19.921Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.littleeurope.jp/"
+  },
+  {
+    "id": "littleasia",
+    "school_name": "語楽塾リトルアジア",
+    "official_name": null,
+    "description": "鎌倉駅前に所在するアジア言語の語学学校。韓国語、中国語、日本語の3言語を中心に、伝統工芸や食文化といった文化的背景を含めた学習を提供している。初心者から対応し、グループレッスンやプライベートレッスン、オンラインレッスンチケットなど複数の受講形式を用意している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "hobby",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "神奈川県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "韓国語、中国語、日本語の3言語に対応",
+      "グループレッスンとプライベートレッスンの両形式を提供",
+      "オンラインレッスンチケットでの受講が可能",
+      "鎌倉駅東口から徒歩2分の立地"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.littleasia.jp/onlinecourse",
+    "official_url": "https://www.littleasia.jp/",
+    "cta_url": "https://www.littleasia.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-littleasia",
+    "created_at": "2026-09-25T20:13:44.027Z",
+    "updated_at": "2026-09-25T20:13:44.027Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.littleasia.jp/"
+  },
+  {
+    "id": "discoveringsounds",
+    "school_name": "Discovering Sounds",
+    "official_name": null,
+    "description": "英語発音矯正に特化したスクール。ネイティブ筋エクササイズ、体系化されたカリキュラム、充実した教材を3つの特徴とし、アメリカ英語・イギリス英語・ビジネス英語など複数のプログラムを提供。ドラマ・映画アテレコプロジェクトなどの卒業プロジェクトも実施。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "ネイティブ筋エクササイズで発音に必要な舌・唇や口周りの筋肉を鍛える",
+      "5つのプログラム（アメリカ英語・イギリス英語・ビジネス英語・弱点強化・フォニックス）を展開",
+      "全プログラムで完全オリジナル教材を使用",
+      "実際のドラマ・映画を利用したアテレコプロジェクトで感情表現を習得"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://discoveringsounds.com/price2/",
+    "official_url": "https://discoveringsounds.com/",
+    "cta_url": "https://discoveringsounds.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-discoveringsounds",
+    "created_at": "2026-09-25T20:14:17.846Z",
+    "updated_at": "2026-09-25T20:14:17.846Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://discoveringsounds.com/"
+  },
+  {
+    "id": "jvta",
+    "school_name": "日本映像翻訳アカデミー",
+    "official_name": null,
+    "description": "映像翻訳の専門スクール。東京校とロサンゼルス校があり、字幕翻訳、吹き替え翻訳、ボイスオーバー翻訳などを学べます。受発注部門が併設されており、修了生のプロデビューをサポート。映像翻訳VODプログラムでは、オンデマンド授業と個別サポートにより、プロ翻訳者を目指すことができます。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "映像翻訳者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "受発注部門との併設により修了生のプロデビューをサポート",
+      "東京校とロサンゼルス校で通学・リモート受講に対応",
+      "個別説明会・セミナーを随時開催",
+      "修了生の実績紹介・インタビュー掲載"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.jvta.net/",
+    "cta_url": "https://www.jvta.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-jvta",
+    "created_at": "2026-09-25T20:14:25.983Z",
+    "updated_at": "2026-09-25T20:14:25.983Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.jvta.net/"
+  },
+  {
+    "id": "sunflare",
+    "school_name": "サン・フレア アカデミー",
+    "official_name": null,
+    "description": "国内最大級の翻訳会社サン・フレア直営の翻訳スクール。第一線で活躍する現役翻訳者が講師を担当し、実務経験に基づいた翻訳スキルを指導。英文法・翻訳技法から医学・薬学、IT、特許など約70タイトルの講座を提供。翻訳実務検定TQEに合格すると「翻訳実務士」として翻訳会社に登録可能。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "翻訳者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役翻訳者による実務型指導と個別添削指導",
+      "約70タイトルの講座から学習できる体系的なカリキュラム",
+      "翻訳実務検定TQE合格者は翻訳会社サン・フレアに登録可能",
+      "基礎講座から医学・IT・特許など10の産業分野に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.sunflare.com/academy/price.php",
+    "area_detail_url": "https://www.sunflare.com/academy/about.php",
+    "official_url": "https://www.sunflare.com/academy/",
+    "cta_url": "https://www.sunflare.com/academy/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-sunflare",
+    "created_at": "2026-09-25T20:14:59.762Z",
+    "updated_at": "2026-09-25T20:14:59.762Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.sunflare.com/academy/"
+  },
+  {
+    "id": "100-year-career",
+    "school_name": "生涯キャリア支援協会",
+    "official_name": null,
+    "description": "国家資格キャリアコンサルタント養成講習を提供する厚生労働省指定・認定機関。オンライン双方向型で5.5か月で国家試験合格を目指すプログラム。30回以上のロープレ実践、論述個別添削、模擬試験など充実の試験対策を実施。専門実践教育訓練給付金対象講座。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "キャリアコンサルタント",
+      "独立・起業"
+    ],
+    "price": {
+      "display": "11,000円〜",
+      "min_yen": 11000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "養成講習",
+        "amount": 385000,
+        "duration": "5.5か月",
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（学科+実技フルコース）パソナ修了者",
+        "amount": 55000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（学科+実技フルコース）一般受講者",
+        "amount": 110000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（学科のみ）パソナ修了者",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（学科のみ）一般受講者",
+        "amount": 22000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（実技のみ）パソナ修了者",
+        "amount": 44000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "試験対策講座（実技のみ）一般受講者",
+        "amount": 88000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "オンライン双方向型講義",
+      "30回以上のロープレ実践演習",
+      "論述試験の個別添削指導",
+      "本番さながらの学科模擬試験",
+      "マイページでのeラーニング対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://100-year-career.net/",
+    "cta_url": "https://100-year-career.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-100-year-career",
+    "created_at": "2026-09-25T20:15:10.843Z",
+    "updated_at": "2026-09-25T20:15:10.843Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://100-year-career.net/"
+  },
+  {
+    "id": "careerjp",
+    "school_name": "キャリアコンサルタント養成講習",
+    "official_name": "一般社団法人地域連携プラットフォーム",
+    "description": "厚生労働大臣認可の10日間講習。国家資格キャリアコンサルタント取得を目指す方向けの実践的なプログラム。経験豊富な講師がキャリアコンサルティング基礎から応用まで指導。ロールプレイングや事例検討など実践的カリキュラムで現場即戦力となるスキルを習得できる。オンライン（Zoom）と通学の両方に対応。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "certification_itself",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "キャリアコンサルタント"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "国家資格キャリアコンサルタント養成講習",
+        "amount": null,
+        "duration": "10日間",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "埼玉県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "10日間の厚生労働大臣認可講習",
+      "Zoomで実施可能、教室通学も可能",
+      "受験対策講座に何度でも無料参加できる",
+      "最大7割の給付金（実践教育訓練給付金）対象"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://careerjp.work/",
+    "cta_url": "https://careerjp.work/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-careerjp",
+    "created_at": "2026-09-25T20:15:18.653Z",
+    "updated_at": "2026-09-25T20:15:18.653Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://careerjp.work/"
+  },
+  {
+    "id": "haru-idea",
+    "school_name": "haruプログラミング教室",
+    "official_name": null,
+    "description": "アイデアをシステムやアプリとして形にする楽しさを学べるプログラミング教室。Java、Python、C#、JavaScript、C言語、PHP、SQLの7言語に対応し、経験豊かな講師から基礎を固める指導を受けられます。大規模システムの設計経験を持つ講師による、実践的な知識と経験に基づく指導が特徴です。",
+    "skill_genre": [
+      "programming"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Java、Python、C#、JavaScript、C言語、PHP、SQLの7言語コースを提供",
+      "大規模システム開発の25年の経験を持つ講師が指導",
+      "無料体験授業の実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://haru-idea.jp/courses",
+    "official_url": "https://haru-idea.jp/",
+    "cta_url": "https://haru-idea.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-haru-idea",
+    "created_at": "2026-09-25T20:15:39.476Z",
+    "updated_at": "2026-09-25T20:15:39.476Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://haru-idea.jp/"
+  },
+  {
+    "id": "allinmotions",
+    "school_name": "AIM Creators College",
+    "official_name": "株式会社 All in Motions",
+    "description": "結果が出ることにこだわった動画編集スクール。実践型カリキュラムと1,000回以上の月別フォローアップにより、未経験からフリーランスや副業での収入獲得を目指せます。1,300名を超える卒業生が交流するコミュニティに参加でき、毎月100件以上の案件流通がある案件募集グループへのアクセスが可能です。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "freelance",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画編集者"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "プロの講師による専属徹底サポート",
+      "1,300名を超えるスクール内限定コミュニティへのアクセス",
+      "毎月100件以上の案件が流通する案件募集グループへの参加が可能",
+      "グループLINEでの無制限質問対応",
+      "卒業後も半永久的にAIMグループメンバーとして在籍可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://allinmotions.co.jp/commit",
+    "official_url": "https://allinmotions.co.jp/",
+    "cta_url": "https://allinmotions.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-allinmotions",
+    "created_at": "2026-09-25T20:16:06.961Z",
+    "updated_at": "2026-09-25T20:16:06.961Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://allinmotions.co.jp/"
+  },
+  {
+    "id": "one-marke",
+    "school_name": "ONEマーケ",
+    "official_name": null,
+    "description": "フリーランス志望者向けのキャリアスクール。SNSマーケティング、Webデザイン、YouTube編集、プログラミング、データ分析など複数のフリーランススキルをオンラインで学べます。キャリアコーチによる伴走サポート、クリエイターによる実践課題の添削指導、コーチングセッションなど充実したサポート体制が特徴。「好き・得意」を活かした自由な働き方の実現を目指します。",
+    "skill_genre": [
+      "web_marketing",
+      "webdesign",
+      "video_editing",
+      "programming"
+    ],
+    "purpose": [
+      "freelance",
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "担当コーチによるキャリアプラン設計と伴走サポート",
+      "クリエイターによる実践課題の添削指導",
+      "いつでも質問できるサポート環境",
+      "定期的な交流会やセミナーなどのコミュニティイベント",
+      "小人数規模のコーチングセッション"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://one-marke.jp/support",
+    "official_url": "https://one-marke.jp/",
+    "cta_url": "https://one-marke.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-one-marke",
+    "created_at": "2026-09-25T20:16:35.271Z",
+    "updated_at": "2026-09-25T20:16:35.271Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://one-marke.jp/"
   }
 ]

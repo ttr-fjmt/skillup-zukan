@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-09-26",
+    "genre": "language",
+    "new_school_ids": [
+      "kaisei-group",
+      "k-class",
+      "littleeurope",
+      "littleasia",
+      "discoveringsounds",
+      "jvta",
+      "sunflare"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "genre": "certification",
+    "new_school_ids": [
+      "100-year-career",
+      "careerjp"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "genre": "programming",
+    "new_school_ids": [
+      "haru-idea"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "allinmotions"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "one-marke"
+    ]
+  }
+]

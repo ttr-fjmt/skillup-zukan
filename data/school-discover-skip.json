@@ -817,5 +817,26 @@
     "genre": "video_editing",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-24T20:14:00.275Z"
+  },
+  "千駄ヶ谷日本語教育研究所": {
+    "name": "千駄ヶ谷日本語教育研究所",
+    "website": "https://www.sdj.ac.jp/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-25T20:12:41.970Z"
+  },
+  "TERADA医療福祉カレッジ": {
+    "name": "TERADA医療福祉カレッジ",
+    "website": "https://www.terada-c.co.jp",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-25T20:12:41.970Z"
+  },
+  "Oneマーケティング（株式会社ワンチーム）": {
+    "name": "Oneマーケティング（株式会社ワンチーム）",
+    "website": "https://onemarketing.o-team.co.jp/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-25T20:12:41.970Z"
   }
 }
