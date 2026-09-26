@@ -394,5 +394,29 @@
     "output_tokens": 12183,
     "web_search_requests": 0,
     "estimated_usd": 0.288988
+  },
+  {
+    "date": "2026-09-27",
+    "script": "discover-schools",
+    "model": "claude-sonnet-4-6",
+    "calls": 6,
+    "input_tokens": 29292,
+    "cache_read_tokens": 521466,
+    "cache_write_tokens": 256193,
+    "output_tokens": 8243,
+    "web_search_requests": 41,
+    "estimated_usd": 1.738685
+  },
+  {
+    "date": "2026-09-27",
+    "script": "discover-schools",
+    "model": "claude-haiku-4-5-20251001",
+    "calls": 26,
+    "input_tokens": 125625,
+    "cache_read_tokens": 58060,
+    "cache_write_tokens": 11612,
+    "output_tokens": 6439,
+    "web_search_requests": 0,
+    "estimated_usd": 0.178141
   }
 ]

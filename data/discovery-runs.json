@@ -831,5 +831,47 @@
     "found": 2,
     "listed": 1,
     "skipped": 1
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "language",
+    "found": 3,
+    "listed": 3,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "certification",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "programming",
+    "found": 0,
+    "listed": 0,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "webdesign",
+    "found": 0,
+    "listed": 0,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "video_editing",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "web_marketing",
+    "found": 1,
+    "listed": 1,
+    "skipped": 0
   }
 ]

@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-09-27",
+    "genre": "language",
+    "new_school_ids": [
+      "globaleye",
+      "ryotoeikaiwa",
+      "veritas-english"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "certification",
+    "new_school_ids": [
+      "gakubun"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "looktone"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "surge"
+    ]
+  }
+]
