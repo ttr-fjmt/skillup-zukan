@@ -838,5 +838,40 @@
     "genre": "web_marketing",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-25T20:12:41.970Z"
+  },
+  "シンフォニーマーケティング B2Bマーケティング研修": {
+    "name": "シンフォニーマーケティング B2Bマーケティング研修",
+    "website": "https://www.symphony-marketing.co.jp/academy/marketing/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-27T20:14:24.385Z"
+  },
+  "メディアリーチ GA4セミナー・Webマーケティング講座": {
+    "name": "メディアリーチ GA4セミナー・Webマーケティング講座",
+    "website": "https://mediareach.co.jp/ga4-seminar",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-27T20:14:24.385Z"
+  },
+  "Hayakawa Webライター養成講座": {
+    "name": "Hayakawa Webライター養成講座",
+    "website": "https://webwriter-school.com/",
+    "genre": "web_marketing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-27T20:14:24.385Z"
+  },
+  "プラスワンポイント（PlusOnePoint）": {
+    "name": "プラスワンポイント（PlusOnePoint）",
+    "website": "https://ielts.jp/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-27T20:14:24.385Z"
+  },
+  "エイゴバ": {
+    "name": "エイゴバ",
+    "website": "https://eigoba.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-27T20:14:24.385Z"
   }
 }
