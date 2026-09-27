@@ -148,8 +148,9 @@
     "sources": [
       "hellowork"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-09-28"
   },
   {
     "n": 13,
