@@ -915,5 +915,47 @@
     "found": 4,
     "listed": 2,
     "skipped": 2
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "programming",
+    "found": 3,
+    "listed": 3,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "video_editing",
+    "found": 1,
+    "listed": 0,
+    "skipped": 1
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "web_marketing",
+    "found": 2,
+    "listed": 2,
+    "skipped": 0
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "genai_dx",
+    "found": 3,
+    "listed": 1,
+    "skipped": 2
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "language",
+    "found": 6,
+    "listed": 4,
+    "skipped": 2
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "certification",
+    "found": 2,
+    "listed": 1,
+    "skipped": 1
   }
 ]

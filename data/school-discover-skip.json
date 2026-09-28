@@ -873,5 +873,47 @@
     "genre": "language",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-27T20:14:24.385Z"
+  },
+  "DeBo（ディーボ）動画クリエイター養成講座": {
+    "name": "DeBo（ディーボ）動画クリエイター養成講座",
+    "website": "https://www.de-bo.jp/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "cocoe DXリテラシー基礎講座": {
+    "name": "cocoe DXリテラシー基礎講座",
+    "website": "https://www.cocoe.co.jp/dx-education/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "日経BP スタンフォード式 生成AI BootCamp": {
+    "name": "日経BP スタンフォード式 生成AI BootCamp",
+    "website": "https://www.nikkeibp.co.jp/seminar/nb/bootcamp/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "インターカルト日本語学校 日本語教員養成研究所": {
+    "name": "インターカルト日本語学校 日本語教員養成研究所",
+    "website": "https://www.incul.com/jp/yosei/tsushin.php",
+    "genre": "language",
+    "reason": "portal_or_marketplace",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "ユーロリンガル（EuroLingual）": {
+    "name": "ユーロリンガル（EuroLingual）",
+    "website": "https://www.euro-lingual.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "アイ・イーシー（IEC）通信教育講座": {
+    "name": "アイ・イーシー（IEC）通信教育講座",
+    "website": "https://learning.iec.co.jp/",
+    "genre": "certification",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-28T20:13:19.059Z"
   }
 }

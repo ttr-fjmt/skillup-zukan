@@ -1,0 +1,43 @@
+[
+  {
+    "date": "2026-09-29",
+    "genre": "programming",
+    "new_school_ids": [
+      "dotpro",
+      "tokyo",
+      "winlearning"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "funtre",
+      "brand-planner"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "raxus-ai-school"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "language",
+    "new_school_ids": [
+      "a-la-francaise",
+      "alpha",
+      "artlingual",
+      "interpreter"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "genre": "certification",
+    "new_school_ids": [
+      "tuusin"
+    ]
+  }
+]

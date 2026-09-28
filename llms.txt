@@ -1,7 +1,7 @@
 # スキルアップ図鑑（skillup-zukan.net）
 
 社会人の学び直し・リスキリング講座を比較できるサイトです。
-プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、303件を掲載しています。
+プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、314件を掲載しています。
 
 ## 掲載情報の作り方
 
@@ -12,14 +12,14 @@
 
 ## ジャンル別の一覧
 
-- プログラミング・エンジニア（82件）: https://skillup-zukan.net/category/programming/
-- Webデザイン（60件）: https://skillup-zukan.net/category/webdesign/
+- プログラミング・エンジニア（86件）: https://skillup-zukan.net/category/programming/
+- Webデザイン（61件）: https://skillup-zukan.net/category/webdesign/
 - UI/UXデザイン（10件）: https://skillup-zukan.net/category/uiux/
-- 動画編集（39件）: https://skillup-zukan.net/category/video_editing/
-- Webマーケティング（39件）: https://skillup-zukan.net/category/web_marketing/
-- 生成AI・DXリテラシー（51件）: https://skillup-zukan.net/category/genai_dx/
-- 語学（83件）: https://skillup-zukan.net/category/language/
-- 資格（76件）: https://skillup-zukan.net/category/certification/
+- 動画編集（40件）: https://skillup-zukan.net/category/video_editing/
+- Webマーケティング（43件）: https://skillup-zukan.net/category/web_marketing/
+- 生成AI・DXリテラシー（55件）: https://skillup-zukan.net/category/genai_dx/
+- 語学（87件）: https://skillup-zukan.net/category/language/
+- 資格（78件）: https://skillup-zukan.net/category/certification/
 
 ## 学び直しガイド
 
@@ -31,6 +31,7 @@
 - kyouiku-kunren-3shurui: https://skillup-zukan.net/guide/kyouiku-kunren-3shurui/
 - kyufu-no-kangaekata: https://skillup-zukan.net/guide/kyufu-no-kangaekata/
 - 教育訓練給付金とは？3つの種類と、対象講座の探し方: https://skillup-zukan.net/guide/kyufukin/
+- kyuuka-kyufukin: https://skillup-zukan.net/guide/kyuuka-kyufukin/
 - オンライン講座と通学、どちらを選ぶ？: https://skillup-zukan.net/guide/online-or-offline/
 - r0610-kakujuu: https://skillup-zukan.net/guide/r0610-kakujuu/
 - senmon-jissen-toha: https://skillup-zukan.net/guide/senmon-jissen-toha/

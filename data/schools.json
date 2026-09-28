@@ -19984,5 +19984,834 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://biz.worldtalk.jp/"
+  },
+  {
+    "id": "dotpro",
+    "school_name": ".Pro",
+    "official_name": null,
+    "description": "少人数特化型の対面プログラミングスクール。Python学習を6年以上提供してきた実績がある。生成AIを活用した学習環境で、プログラミングとAIスキルを同時に習得できる。講師と直接対話し、カリキュラムにはない実務的な情報も指導。生徒と講師でディスカッションしながら、ポートフォリオを0から制作する。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "228,000円〜",
+      "min_yen": 228000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "4ヶ月コース",
+        "amount": 228000,
+        "duration": "4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "5ヶ月コース",
+        "amount": 288000,
+        "duration": "5ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月コース",
+        "amount": 348000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "対面での講義形式で講師と直接対話できる",
+      "生成AIを学習中に活用しながらプログラミングを学習",
+      "講師が講師が複数体制で、一人に固執しない環境",
+      "要件定義から自分で考えて成果物として形にすることを重視",
+      "土曜日の講義で仕事と学習を両立可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://dotpro.net/information",
+    "official_url": "https://dotpro.net/",
+    "cta_url": "https://dotpro.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dotpro",
+    "created_at": "2026-09-28T20:13:33.862Z",
+    "updated_at": "2026-09-28T20:13:33.862Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://dotpro.net/"
+  },
+  {
+    "id": "tokyo",
+    "school_name": "デジカレTOKYO",
+    "official_name": null,
+    "description": "東京都が支援するデジタル人材育成支援事業。原則35歳以下で求職中または非正規雇用の方を対象に、未経験からIT正社員を目指すための職業訓練と就職支援を一体的に行う。現役エンジニア講師による基礎からの実践的な学習と、メンターによる伴走型の就職支援が特徴。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "開発エンジニア",
+      "インフラエンジニア"
+    ],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [
+      {
+        "label": "デジタル人材育成コース",
+        "amount": null,
+        "duration": "1.5か月",
+        "kind": "total"
+      },
+      {
+        "label": "インフラ・AWSコース",
+        "amount": null,
+        "duration": "2か月",
+        "kind": "total"
+      },
+      {
+        "label": "プログラミング・JAVAコース",
+        "amount": null,
+        "duration": "2か月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "現役エンジニア講師による実務ベースの授業",
+      "担当メンターが就職まで伴走し書類添削・面接対策を実施",
+      "毎週金曜日に未経験者積極採用の企業が参加する就職イベント",
+      "生成AIリテラシーを含むITの基礎知識から実践的なスキルまで習得",
+      "オンライン・通学問わず相談可能な柔軟なサポート体制"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://digital-tokyo.metro.tokyo.lg.jp/course/?course=course15",
+    "official_url": "https://digital-tokyo.metro.tokyo.lg.jp/",
+    "cta_url": "https://digital-tokyo.metro.tokyo.lg.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tokyo",
+    "created_at": "2026-09-28T20:13:59.694Z",
+    "updated_at": "2026-09-28T20:13:59.694Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://digital-tokyo.metro.tokyo.lg.jp/"
+  },
+  {
+    "id": "winlearning",
+    "school_name": "Winラーニング",
+    "official_name": "ピーシーアシスト株式会社",
+    "description": "法人向け人材育成サービス。プログラミング・システム開発、オフィスソフト・業務自動化、DX・業務効率化、CAD・設計、Webデザイン・クリエイティブ、ヒューマンスキルなど幅広い研修を提供。個人レッスン、集合研修・講師派遣、公開セミナー、eラーニングから選択可能で、全国40校以上で受講できる。",
+    "skill_genre": [
+      "programming",
+      "webdesign",
+      "video_editing",
+      "web_marketing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "244,860円",
+      "min_yen": 244860,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Python ライセンス",
+        "amount": 244860,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "offline",
+    "area": [
+      "千葉県",
+      "静岡県",
+      "岡山県"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "全国40校以上で受講可能",
+      "個人レッスン・集合研修・公開セミナー・eラーニングから選択可能",
+      "オンライン研修に対応、年間3,500人以上の実績"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.winlearning.jp/course/python-%e3%83%a9%e3%82%a4%e3%82%bb%e3%83%b3%e3%82%b9/",
+    "area_detail_url": "https://www.winlearning.jp/seminar/",
+    "official_url": "https://www.winlearning.jp/",
+    "cta_url": "https://www.winlearning.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-winlearning",
+    "created_at": "2026-09-28T20:14:36.650Z",
+    "updated_at": "2026-09-28T20:14:36.650Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
+    "verified_url": "https://www.winlearning.jp/"
+  },
+  {
+    "id": "funtre",
+    "school_name": "マーケティングカレッジ（MARC）",
+    "official_name": "FunTre株式会社",
+    "description": "FunTre株式会社が運営するマーケティング講座。YouTube学科を提供しており、YouTube基本戦略、動画シナリオ、チャンネル育成戦略、チャンネル設定、YouTubeアナリティクス、再生回数アップ改善方法などの動画講義と補足教材を用意している。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "YouTube動画を教材とした自習形式の講座",
+      "YouTube基本戦略からアナリティクス活用まで段階的に学習",
+      "ブランドチャンネル管理やコンテンツ移行に関する補足動画を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://funtre.co.jp/digital-marketing",
+    "area_detail_url": "https://funtre.co.jp/access",
+    "official_url": "https://funtre.co.jp/medias/marc",
+    "cta_url": "https://funtre.co.jp/medias/marc",
+    "cta_type": "direct",
+    "click_tracking_id": "click-funtre",
+    "created_at": "2026-09-28T20:15:02.105Z",
+    "updated_at": "2026-09-28T20:15:02.105Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://funtre.co.jp/medias/marc"
+  },
+  {
+    "id": "brand-planner",
+    "school_name": "ブランド・プランナー協会",
+    "official_name": "一般社団法人ブランド・プランナー協会",
+    "description": "企業のブランド戦略を立案し、言語化・視覚化・ディレクションといった実践的なスキルを学ぶ資格講座。ブランディングの基礎知識から体系化されたフレームワーク「ブランドファースト」の活用法まで、中小企業でも実践できる内容を提供。コンサルタント・クリエイター・経営者向けの技能資格。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "49,500円",
+      "min_yen": 49500,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ブランド・プランナー資格講座",
+        "amount": 49500,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "ブランド戦略・言語化・視覚化・ディレクションの実践的スキルを習得",
+      "ブランディング実務の体系化されたフレームワーク「ブランドファースト」を学べる",
+      "合格後もオンラインコンテンツと合格者限定の情報交換の場を提供",
+      "業務提携「hitch+」との連携により資格取得後の案件獲得支援が可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://www.brand-planner.org/",
+    "cta_url": "https://www.brand-planner.org/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-brand-planner",
+    "created_at": "2026-09-28T20:15:09.275Z",
+    "updated_at": "2026-09-28T20:15:09.275Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://www.brand-planner.org/"
+  },
+  {
+    "id": "raxus-ai-school",
+    "school_name": "RAXUS AIスクール",
+    "official_name": null,
+    "description": "生成AIを中心としたビジネススキル習得を目的としたオンラインスクール。初心者向けの基礎学習から、業務改善、マーケティング、プログラミング、データサイエンスまで8つのコースを提供。動画教材とメンター制度を活用した実務的なカリキュラムが特徴。",
+    "skill_genre": [
+      "genai_dx",
+      "programming",
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "side_job"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "生成AIエンジニア",
+      "マーケター"
+    ],
+    "price": {
+      "display": "148,500円〜",
+      "min_yen": 148500,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "生成AI入門コース 4週間プラン",
+        "amount": 148500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門コース 8週間プラン",
+        "amount": 198000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門コース 12週間プラン",
+        "amount": 247500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆ビジネス業務改善コース 6週間プラン",
+        "amount": 222750,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆ビジネス業務改善コース 10週間プラン",
+        "amount": 272250,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆ビジネス業務改善コース 14週間プラン",
+        "amount": 321750,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆マーケティングコース 6週間プラン",
+        "amount": 222750,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆マーケティングコース 10週間プラン",
+        "amount": 272250,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AI入門＆マーケティングコース 14週間プラン",
+        "amount": 321750,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ビジネス業務改善コース 4週間プラン",
+        "amount": 148500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ビジネス業務改善コース 8週間プラン",
+        "amount": 198000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ビジネス業務改善コース 12週間プラン",
+        "amount": 247500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マーケティングコース 4週間プラン",
+        "amount": 148500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マーケティングコース 8週間プラン",
+        "amount": 198000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "マーケティングコース 12週間プラン",
+        "amount": 247500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "生成AIエンジニアコース 8週間プラン",
+        "amount": 275000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "10~15分の短い動画教材でスキマ時間で学習可能",
+      "実務を想定したオリジナル課題で実践的なスキルを習得",
+      "無制限のチャットサポートで質問に対応",
+      "オンラインメンター制度で技術的質問とキャリア相談に対応",
+      "課題は合格まで何度でも添削フィードバック"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://raxus-ai-school.jp/",
+    "cta_url": "https://raxus-ai-school.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-raxus-ai-school",
+    "created_at": "2026-09-28T20:15:21.167Z",
+    "updated_at": "2026-09-28T20:15:21.167Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://raxus-ai-school.jp/"
+  },
+  {
+    "id": "a-la-francaise",
+    "school_name": "ア・ラ・フランセーズ フランス語学校",
+    "official_name": null,
+    "description": "2004年以来、恵比寿・代官山の地で学生～シニア層まで、オンラインまたは対面でフランス語を学べるスクール。2～4名の少人数クラスと発音指導に特化した日本語が分かるネイティブフランス人講師による口頭練習中心のレッスンが特徴。振替可能な月謝制で、プライベートレッスンやオンラインレッスンも提供している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額3,500円〜",
+      "min_yen": 3500,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "少人数クラス",
+        "amount": 3500,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プライベート通学・オンライン",
+        "amount": 6300,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "2～4名の少人数クラス制で、発音指導に特化したフランス人講師による指導",
+      "講師は日本語が理解できるネイティブフランス人で、文法説明時に日本語対応",
+      "口頭練習中心のレッスンで、生徒が話す時間を最大化する方針",
+      "グループレッスンは振替システムがあり、欠席時に他のレベルのクラスで代替可能",
+      "月謝制で高額な一括支払いが不要、いつでも開始・終了可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://www.a-la-francaise.com/",
+    "cta_url": "https://www.a-la-francaise.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-a-la-francaise",
+    "created_at": "2026-09-28T20:15:28.778Z",
+    "updated_at": "2026-09-28T20:15:28.778Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.a-la-francaise.com/"
+  },
+  {
+    "id": "alpha",
+    "school_name": "アルファ国際学院",
+    "official_name": null,
+    "description": "1987年開校の日本語教育専門校。登録日本語教員420時間講座（理論通信＋実践研修）を提供。理論科目はeラーニングで「いつでも」「どこでも」「何度でも」視聴でき、実践科目は通学（一部オンライン対応）。検定対策のノウハウが豊富で、抜群の検定合格実績を持つ。国内5校・海外5か国6拠点の日本語教育機関ネットワークを有する。",
+    "skill_genre": [
+      "language",
+      "certification"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "日本語教師"
+    ],
+    "price": {
+      "display": "22,500円〜",
+      "min_yen": 22500,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "実践集中講座 基本パック",
+        "amount": 234210,
+        "duration": "6~8ケ月",
+        "kind": "total"
+      },
+      {
+        "label": "実践集中講座 パックⅢ",
+        "amount": 51450,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "実践集中講座 パックA",
+        "amount": 22500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "実践集中講座 パックB",
+        "amount": 45000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "実践集中講座 パックC",
+        "amount": 67500,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "検定対策講座",
+        "amount": 198000,
+        "duration": "6~12ケ月",
+        "kind": "total"
+      },
+      {
+        "label": "検定直前対策講座",
+        "amount": 88000,
+        "duration": "3ケ月",
+        "kind": "total"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "神奈川県",
+      "大阪府",
+      "愛知県",
+      "福岡県",
+      "沖縄県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "最新のWeb学習システム（AOS）で「いつでも」「どこでも」「何度でも」学習可能",
+      "各分野の専門家講師陣による質の高い授業と検定合格実績",
+      "国内5校・海外5か国6拠点の就職先ネットワークと充実した求人情報",
+      "入学前から在学中も随時個別進路相談を実施"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://alpha.ac.jp/othercourses.html",
+    "official_url": "https://alpha.ac.jp/",
+    "cta_url": "https://alpha.ac.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-alpha",
+    "created_at": "2026-09-28T20:15:44.582Z",
+    "updated_at": "2026-09-28T20:15:44.582Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://alpha.ac.jp/"
+  },
+  {
+    "id": "artlingual",
+    "school_name": "アートリンガル外語学院",
+    "official_name": "Art Lingual Institute",
+    "description": "1992年開設の語学スクール。英会話、フランス語、スペイン語、イタリア語、ドイツ語を提供。250万人以上の生徒実績を持つ。ネイティブ外国人講師による5名までのグループレッスンで、会話力を伸ばす実践的な学習が特徴。月謝制で入りやすく続けやすい環境を整備。通学とオンラインの両方に対応。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額7,700円",
+      "min_yen": 7700,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "グループレッスン",
+        "amount": 7700,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都",
+      "愛知県",
+      "大阪府",
+      "広島県",
+      "福岡県",
+      "新潟県"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "ネイティブ外国人講師によるレッスン",
+      "5名までの少人数グループレッスン",
+      "月謝制で入会金11,000円",
+      "50分のレッスン時間",
+      "振替レッスン制度あり"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://artlingual.com/",
+    "cta_url": "https://artlingual.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-artlingual",
+    "created_at": "2026-09-28T20:15:49.358Z",
+    "updated_at": "2026-09-28T20:15:49.358Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://artlingual.com/"
+  },
+  {
+    "id": "interpreter",
+    "school_name": "イクサス通訳スクール",
+    "official_name": null,
+    "description": "通訳教育の専門家が直接指導し、理論と実践で通訳技能を伸ばすスクール。受講生ひとりひとりに対する責任を持った指導と、レッスンを継続しやすいシステムが特徴。マンツーマン授業と通訳訓練に加え、教養知識の習得にも力を入れている。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "experienced",
+    "career_paths": [],
+    "price": {
+      "display": "110,000円〜",
+      "min_yen": 110000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "90分コース",
+        "amount": 145000,
+        "duration": "10回",
+        "kind": "total"
+      },
+      {
+        "label": "60分コース",
+        "amount": 110000,
+        "duration": "10回",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "通訳経験30年のプロ会議通訳者によるプライベートレッスン",
+      "マンツーマン授業で受講生のレベルと目的に合わせた指導",
+      "オンラインレッスンで日本全国・海外在住の方も受講可能",
+      "通訳準備から同時通訳までの段階的トレーニング"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://ichthus.interpreter.co.jp/course/",
+    "official_url": "https://ichthus.interpreter.co.jp/",
+    "cta_url": "https://ichthus.interpreter.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-interpreter",
+    "created_at": "2026-09-28T20:16:02.546Z",
+    "updated_at": "2026-09-28T20:16:02.546Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://ichthus.interpreter.co.jp/"
+  },
+  {
+    "id": "tuusin",
+    "school_name": "日本通信教育学園",
+    "official_name": null,
+    "description": "昭和24年に文部省の認可を受けて設立された一般財団法人。文部科学省認定の「日商簿記検定講座」をはじめ、「社会福祉法人会計の実務」「法制執務基礎講座」などの通信教育講座、「自治体法務検定」「法制執務研修」「ソーシャル・マネジメント研修」などの検定・研修事業を提供。担任講師による赤ペン添削指導と受講期間延長制度で学習をサポート。自治体職員のキャリアアップに特に対応。",
+    "skill_genre": [
+      "certification"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "18,700円〜",
+      "min_yen": 18700,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "日商簿記検定講座3級コース",
+        "amount": 22000,
+        "duration": "4か月",
+        "kind": "total"
+      },
+      {
+        "label": "日商簿記検定講座3級コースWeb版",
+        "amount": 18700,
+        "duration": "4か月",
+        "kind": "total"
+      },
+      {
+        "label": "日商簿記検定講座2級コース",
+        "amount": 28600,
+        "duration": "6か月",
+        "kind": "total"
+      },
+      {
+        "label": "日商簿記検定講座3級・2級一貫コース",
+        "amount": 47300,
+        "duration": "12か月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "担任講師による赤ペン添削指導",
+      "無料の受講期間延長制度",
+      "文部科学省認定の通信教育講座",
+      "自治体職員向けの検定・研修も提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://tuusin.jp/boki/",
+    "official_url": "https://tuusin.jp/",
+    "cta_url": "https://tuusin.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-tuusin",
+    "created_at": "2026-09-28T20:16:17.823Z",
+    "updated_at": "2026-09-28T20:16:17.823Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
+    "verified_url": "https://tuusin.jp/"
   }
 ]
