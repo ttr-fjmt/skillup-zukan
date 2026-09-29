@@ -20813,5 +20813,204 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
     "verified_url": "https://tuusin.jp/"
+  },
+  {
+    "id": "linkconsul",
+    "school_name": "YouTubeの学校",
+    "official_name": "株式会社リンクコンサル",
+    "description": "YouTubeに特化した動画編集を学べる短期集中型スクール。現役YouTubeプロデューサーが講師を務め、Final Cut Proを使った動画制作の基礎知識、YouTubeチャンネル運営のビジネスノウハウを学べます。対面講座とオンライン受講の両方に対応しており、初心者から実務レベルまで対応したコース展開があります。",
+    "skill_genre": [
+      "video_editing"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "動画クリエイター",
+      "YouTubeプロデューサー",
+      "カメラマン"
+    ],
+    "price": {
+      "display": "98,000円〜",
+      "min_yen": 98000,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "短期間集中コース",
+        "amount": 98000,
+        "duration": "2日間",
+        "kind": "total"
+      },
+      {
+        "label": "スタートアップコース",
+        "amount": 128000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ビジネスコース",
+        "amount": 398000,
+        "duration": "全4回",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "Final Cut Pro Xの基礎・応用操作を講師から直接学べる",
+      "Mac初心者向けの初期設定・基本操作講座を開催",
+      "YouTubeチャンネル開設から運営まで基礎知識を習得できる",
+      "卒業後はオンラインサロンで継続学習が可能",
+      "不定期のリアル勉強会と月2回のオンライン勉強会に参加できる"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://linkconsul.jp/school/",
+    "cta_url": "https://linkconsul.jp/school/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-linkconsul",
+    "created_at": "2026-09-29T20:15:01.060Z",
+    "updated_at": "2026-09-29T20:15:01.060Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://linkconsul.jp/school/"
+  },
+  {
+    "id": "markenista",
+    "school_name": "MARKENISTA",
+    "official_name": "株式会社ウィニングフィールド",
+    "description": "Webマーケティング、動画制作、デザイン、生成AI・DX関連の動画視聴型オンライン学習サービス。16カテゴリ1,000レッスン以上が学び放題で、リーズナブルな価格で最新Webスキルがゼロから学べます。学習による報酬獲得システム「Learn to earn」、毎月無料のオンラインセミナー・ワーク会、質問無制限のサポートを提供するコミュニティ型学習プラットフォーム。",
+    "skill_genre": [
+      "web_marketing",
+      "video_editing",
+      "webdesign",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webマーケター",
+      "フリーランス",
+      "デザイナー"
+    ],
+    "price": {
+      "display": "21,890円〜",
+      "min_yen": 21890,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "年間プラン",
+        "amount": 39402,
+        "duration": "1年間",
+        "kind": "total"
+      },
+      {
+        "label": "半年プラン",
+        "amount": 21890,
+        "duration": "半年間",
+        "kind": "total"
+      },
+      {
+        "label": "月額プラン",
+        "amount": 4378,
+        "duration": "毎月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "16カテゴリ1,000レッスン以上が学び放題",
+      "学習による報酬獲得「Learn to earn」システム",
+      "毎月無料のオンラインセミナー・ワーク会",
+      "質問無制限のサポート",
+      "キャリアカウンセリング（希望者のみ）"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://markenista.com/",
+    "cta_url": "https://markenista.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-markenista",
+    "created_at": "2026-09-29T20:15:08.414Z",
+    "updated_at": "2026-09-29T20:15:08.414Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://markenista.com/"
+  },
+  {
+    "id": "ma-sonomama",
+    "school_name": "SONOMAMA",
+    "official_name": "株式会社メディアエイド",
+    "description": "SNS企業「メディアエイド」が運営。700社超のSNS支援実績から得たノウハウに基づき、未経験からSNSを活用した仕事につながるスキルを育成する講座。発信者コース、運用代行コース、集客コースの3プランから選択可能。週1回の個別面談と24時間チャットサポート、卒業後の案件紹介などで伴走支援を提供。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "700社超のSNS支援実績から得た成功パターン・最新トレンドを反映したカリキュラム",
+      "実践課題でスキル定着、ポートフォリオ作成、案件獲得ノウハウまで指導",
+      "現役インフルエンサーやSNS運用代行で実績を持つプロが週次でバックアップ",
+      "認知科学に基づいたグループコーチングでマインドセット醸成",
+      "オンライン・オフライン交流会やセミナー、卒業後の案件紹介で継続サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://ma-sonomama.com/",
+    "cta_url": "https://ma-sonomama.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ma-sonomama",
+    "created_at": "2026-09-29T20:15:18.188Z",
+    "updated_at": "2026-09-29T20:15:18.188Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://ma-sonomama.com/"
   }
 ]

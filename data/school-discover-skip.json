@@ -915,5 +915,26 @@
     "genre": "certification",
     "reason": "fetch_failed",
     "checkedAt": "2026-09-28T20:13:19.059Z"
+  },
+  "フリアカ（フリーランスアカデミア）": {
+    "name": "フリアカ（フリーランスアカデミア）",
+    "website": "https://furi-aka.com/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-29T20:14:51.296Z"
+  },
+  "VIDEO SALON カラーグレーディング・マスタークラス": {
+    "name": "VIDEO SALON カラーグレーディング・マスタークラス",
+    "website": "https://videosalon.jp/premium/colorgrading_masterclass/",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-29T20:14:51.296Z"
+  },
+  "mikimiki web スクール（Ririan & Co.）": {
+    "name": "mikimiki web スクール（Ririan & Co.）",
+    "website": "https://www.ririanschool.com",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-29T20:14:51.296Z"
   }
 }

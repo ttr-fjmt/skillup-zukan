@@ -1,7 +1,7 @@
 # スキルアップ図鑑（skillup-zukan.net）
 
 社会人の学び直し・リスキリング講座を比較できるサイトです。
-プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、314件を掲載しています。
+プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、317件を掲載しています。
 
 ## 掲載情報の作り方
 
@@ -13,11 +13,11 @@
 ## ジャンル別の一覧
 
 - プログラミング・エンジニア（86件）: https://skillup-zukan.net/category/programming/
-- Webデザイン（61件）: https://skillup-zukan.net/category/webdesign/
+- Webデザイン（62件）: https://skillup-zukan.net/category/webdesign/
 - UI/UXデザイン（10件）: https://skillup-zukan.net/category/uiux/
-- 動画編集（40件）: https://skillup-zukan.net/category/video_editing/
-- Webマーケティング（43件）: https://skillup-zukan.net/category/web_marketing/
-- 生成AI・DXリテラシー（55件）: https://skillup-zukan.net/category/genai_dx/
+- 動画編集（42件）: https://skillup-zukan.net/category/video_editing/
+- Webマーケティング（45件）: https://skillup-zukan.net/category/web_marketing/
+- 生成AI・DXリテラシー（56件）: https://skillup-zukan.net/category/genai_dx/
 - 語学（87件）: https://skillup-zukan.net/category/language/
 - 資格（78件）: https://skillup-zukan.net/category/certification/
 
@@ -37,6 +37,7 @@
 - senmon-jissen-toha: https://skillup-zukan.net/guide/senmon-jissen-toha/
 - shien-kyufukin: https://skillup-zukan.net/guide/shien-kyufukin/
 - shikyuu-shinsei-nagare: https://skillup-zukan.net/guide/shikyuu-shinsei-nagare/
+- shikyuu-youken-shoukai: https://skillup-zukan.net/guide/shikyuu-youken-shoukai/
 - taishou-kouza-sagashikata: https://skillup-zukan.net/guide/taishou-kouza-sagashikata/
 - tokutei-ippan-toha: https://skillup-zukan.net/guide/tokutei-ippan-toha/
 
