@@ -936,5 +936,82 @@
     "genre": "genai_dx",
     "reason": "name_mismatch",
     "checkedAt": "2026-09-29T20:14:51.296Z"
+  },
+  "FURWA（ふぅわ）動画編集スクール": {
+    "name": "FURWA（ふぅわ）動画編集スクール",
+    "website": "https://furwa.co.jp",
+    "genre": "video_editing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "Alchemy（アルケミー）オンライン3DCGスクール": {
+    "name": "Alchemy（アルケミー）オンライン3DCGスクール",
+    "website": "https://alchemyschool.com",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "日本マーケティング協会（JMAマーケティングスクール）": {
+    "name": "日本マーケティング協会（JMAマーケティングスクール）",
+    "website": "https://www.jma2-jp.org/education",
+    "genre": "web_marketing",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "バイテック生成AI": {
+    "name": "バイテック生成AI",
+    "website": "https://generative-ai.bytech.jp/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "ヒューマンアカデミー生成AIスクール": {
+    "name": "ヒューマンアカデミー生成AIスクール",
+    "website": "https://haa.athuman.com/ai/course/generative_ai/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "ビズアップ総研（生成AI講座）": {
+    "name": "ビズアップ総研（生成AI講座）",
+    "website": "https://www.biz-up.biz/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "LINGO L.L.C.": {
+    "name": "LINGO L.L.C.",
+    "website": "https://www.lingollc.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "アップルKランゲージ": {
+    "name": "アップルKランゲージ",
+    "website": "https://www.applek.com/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "ブレインウッズ英語研修": {
+    "name": "ブレインウッズ英語研修",
+    "website": "https://englishtraining.brainwoods.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "データビズラボ（Tableau・PowerBI研修）": {
+    "name": "データビズラボ（Tableau・PowerBI研修）",
+    "website": "https://data-viz-lab.com/dvltraining",
+    "genre": "genai_dx",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "リクルートマネジメントスクール（Power BI活用研修）": {
+    "name": "リクルートマネジメントスクール（Power BI活用研修）",
+    "website": "https://school.recruit-ms.co.jp/",
+    "genre": "genai_dx",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-09-30T20:16:12.088Z"
   }
 }
