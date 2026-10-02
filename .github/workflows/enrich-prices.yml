@@ -65,6 +65,11 @@ jobs:
         working-directory: scraper
         run: npm ci
 
+      # ブラウザで開いてから読む処理（scraper/lib/render.js）で使う。
+      # test/render.test.js もこれを使うので、テストより前に入れる。
+      - name: Install Chrome for rendering
+        run: npx --yes puppeteer browsers install chrome
+
       - name: Run unit tests
         working-directory: scraper
         run: npm test
