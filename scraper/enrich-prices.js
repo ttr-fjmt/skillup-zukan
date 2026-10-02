@@ -135,13 +135,21 @@ function bodyTextFrom(html) {
   return $('body').text().replace(/[ \t　]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim().slice(0, DETAIL_TEXT_MAX_CHARS);
 }
 
+/** 本文が上限で切られたかどうかを見えるようにする（静かな取りこぼしを防ぐため）。 */
+function reportLength(label, text) {
+  const cut = text.length >= DETAIL_TEXT_MAX_CHARS ? '（上限で切れています）' : '';
+  console.log(`  ${label}: 本文${text.length}文字${cut}／金額の表記${YEN_PATTERN.test(text) ? 'あり' : 'なし'}`);
+}
+
 async function fetchDetailPageWithRender(url) {
   const text = await fetchDetailPage(url);
+  reportLength('そのまま読んだ場合', text);
   if (!USE_RENDER || YEN_PATTERN.test(text)) return text;
 
   console.log('  本文に金額が見当たらないため、詳細ページをブラウザで開き直します。');
   try {
     const rendered = bodyTextFrom(await fetchRenderedHtml(url));
+    reportLength('ブラウザで開いた場合', rendered);
     if (YEN_PATTERN.test(rendered)) return rendered;
     return rendered.length > text.length ? rendered : text;
   } catch (err) {
