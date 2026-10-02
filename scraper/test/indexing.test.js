@@ -12,14 +12,24 @@ const fs = require('fs');
 const path = require('path');
 
 const { ROBOTS_NOINDEX, isIndexableSchool, isIndexableGenre, withRobotsNoindex } = require('../lib/indexing');
-const { NOT_DISCLOSED_TEXT } = require('../lib/schema');
+const { NOT_DISCLOSED_TEXT, PRICE_NOT_DISCLOSED_TEXT } = require('../lib/schema');
 const { buildSitemap } = require('../generate-sitemap');
 const { readSchools } = require('../lib/schools-store');
 
 const SCRAPER = path.join(__dirname, '..');
 
 function school(over) {
-  return Object.assign({ id: 'x', status: 'active', description: '説明文', skill_genre: ['programming'] }, over || {});
+  return Object.assign(
+    {
+      id: 'x',
+      status: 'active',
+      description: '説明文',
+      skill_genre: ['programming'],
+      features: ['特徴'],
+      price: { display: '100,000円' },
+    },
+    over || {}
+  );
 }
 
 test('説明文を確認できなかった講座は検索対象にしない', () => {
@@ -32,6 +42,29 @@ test('説明文を確認できた講座は検索対象にする', () => {
 
 test('掲載をやめた講座は検索対象にしない', () => {
   assert.strictEqual(isIndexableSchool(school({ status: 'skipped' })), false);
+});
+
+test('料金も特徴も確認できなかった講座は検索対象にしない', () => {
+  const bare = { features: [], price: { display: PRICE_NOT_DISCLOSED_TEXT } };
+  assert.strictEqual(isIndexableSchool(school(bare)), false);
+  assert.strictEqual(isIndexableSchool(school({ features: [], price: null })), false);
+});
+
+test('料金か特徴のどちらか一方でも確認できていれば検索対象にする', () => {
+  assert.strictEqual(
+    isIndexableSchool(school({ features: [], price: { display: '100,000円' } })),
+    true
+  );
+  assert.strictEqual(
+    isIndexableSchool(school({ features: ['特徴'], price: { display: PRICE_NOT_DISCLOSED_TEXT } })),
+    true
+  );
+});
+
+test('比べる材料が無いページは、説明文があっても検索対象から外れる', () => {
+  // 説明文だけあって料金も特徴も無い状態は、読者が比べる材料を何も持っていない。
+  const onlyDescription = school({ description: 'それらしい説明文', features: [], price: null });
+  assert.strictEqual(isIndexableSchool(onlyDescription), false);
 });
 
 test('中身のある講座が1件も無いジャンルは検索対象にしない', () => {
