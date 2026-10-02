@@ -42,6 +42,7 @@ const { fetchRenderedHtml, closeBrowser } = require('./lib/render');
 const { politeDelay } = require('./lib/http');
 const { NOT_DISCLOSED_TEXT } = require('./lib/schema');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
+const { validateSchool } = require('./lib/validate');
 
 const MAX_PER_RUN = Number(process.env.BACKFILL_MAX_PER_RUN || 20);
 const DRY_RUN = Boolean(process.env.BACKFILL_DRY_RUN);
@@ -49,6 +50,13 @@ const USE_RENDER = process.env.BACKFILL_RENDER !== '0';
 
 /** 本文がこの文字数に満たなければ、HTMLが組み上がっていないと見てブラウザで開き直す。 */
 const MIN_TEXT_BEFORE_RENDER = Number(process.env.BACKFILL_MIN_TEXT || 3000);
+
+/**
+ * この件数ごとに途中経過を書き出す。
+ * 2026-10-02、310件を読み直した最後の書き込みで1件が検証に落ち、全件分（$3.12）が
+ * 保存されずに終わった。途中で止まっても、そこまでの成果は残るようにする。
+ */
+const SAVE_EVERY = Number(process.env.BACKFILL_SAVE_EVERY || 25);
 
 /** 読み直す価値があるのは、何かしら空いているレコードだけ。 */
 function hasGaps(school) {
@@ -148,6 +156,27 @@ function fillGaps(school, fields) {
   return filled;
 }
 
+/**
+ * 空きを埋め、そのレコードがスキーマを満たすか確かめる。満たさなければ元に戻す。
+ *
+ * 書き込み時の検証（writeSchools）は1件でも不正があるとファイル全体を書かない。
+ * それ自体は正しい安全装置だが、読み直しのように何百件もまとめて書き換える処理では、
+ * 1件の不備（例：80文字を超える特徴）で全件分の成果と費用が失われる。
+ * そこで、不備はそのレコードだけ元に戻して先へ進む。
+ */
+function applyFill(schools, school, fields) {
+  const index = schools.indexOf(school);
+  const before = JSON.parse(JSON.stringify(school));
+  const filled = fillGaps(school, fields);
+  if (filled.length === 0) return { filled, reverted: false, errors: [] };
+
+  const { ok, errors } = validateSchool(school);
+  if (ok) return { filled, reverted: false, errors: [] };
+
+  schools[index] = before;
+  return { filled, reverted: true, errors };
+}
+
 async function main() {
   const schools = readSchools();
   const targets = selectTargets(schools);
@@ -189,14 +218,23 @@ async function main() {
       continue;
     }
 
-    const filled = fillGaps(school, fields);
+    const { filled, reverted, errors } = applyFill(schools, school, fields);
     if (filled.length === 0) {
       console.log('  埋まる項目はありませんでした（すでに入っている値は触りません）。');
+      continue;
+    }
+    if (reverted) {
+      console.warn(`  埋めた結果が掲載データの決まりを満たさないため、このレコードは元に戻しました: ${errors.join(' / ')}`);
       continue;
     }
     console.log(`  埋めました: ${filled.join(' / ')}`);
     school.updated_at = new Date().toISOString();
     updated += 1;
+
+    if (!DRY_RUN && updated % SAVE_EVERY === 0) {
+      writeSchools(schools);
+      console.log(`  （途中経過を保存しました: ${updated}件）`);
+    }
   }
 
   if (DRY_RUN) {
@@ -217,4 +255,4 @@ if (require.main === module) {
     .finally(() => closeBrowser());
 }
 
-module.exports = { main, selectTargets, hasGaps, fillGaps };
+module.exports = { main, selectTargets, hasGaps, fillGaps, applyFill };

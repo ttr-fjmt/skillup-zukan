@@ -111,3 +111,30 @@ test('掲載をやめたレコードは読み直さない', () => {
     .map(s => s.id);
   assert.deepStrictEqual(ids, ['live']);
 });
+
+test('埋めた結果が掲載データの決まりを満たさなければ、そのレコードだけ元に戻す', () => {
+  // 2026-10-02、310件を読み直した最後の書き込みで、1件の特徴が80文字を超えていたために
+  // ファイル全体の書き込みが中止され、全件分の成果（$3.12）が保存されなかった。
+  const { applyFill } = require('../backfill-fields');
+  const { readSchools } = require('../lib/schools-store');
+  const { validateSchool } = require('../lib/validate');
+
+  // 実データから、決まりを満たしている掲載中レコードを1件借りる。
+  const real = readSchools().find(s => s.status === 'active' && validateSchool(s).ok);
+  const school = JSON.parse(JSON.stringify(real));
+  school.features = [];
+  const original = JSON.parse(JSON.stringify(school));
+  const schools = [school];
+
+  const tooLong = 'あ'.repeat(120);
+  const result = applyFill(schools, school, { features: [tooLong] });
+
+  assert.strictEqual(result.reverted, true, '決まりを満たさない値を入れたまま進んでいる');
+  assert.deepStrictEqual(schools[0], original, '元の値に戻っていない');
+  assert.ok(validateSchool(schools[0]).ok, '戻したあとのレコードが決まりを満たしていない');
+
+  // 正しい値なら、そのまま埋まる。
+  const ok = applyFill(schools, schools[0], { features: ['80文字以内の特徴'] });
+  assert.strictEqual(ok.reverted, false);
+  assert.deepStrictEqual(schools[0].features, ['80文字以内の特徴']);
+});

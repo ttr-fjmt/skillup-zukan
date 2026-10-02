@@ -76,8 +76,10 @@ jobs:
           BACKFILL_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
         run: node backfill-fields.js
 
+      # 読み直しが途中で失敗しても、途中経過として保存した分と費用の記録は残す。
+      # schools.json は書き出すたびにスキーマ検証を通しているので、途中の状態でも壊れていない。
       - name: Commit and push changes
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ !cancelled() && github.event.inputs.dry_run != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
