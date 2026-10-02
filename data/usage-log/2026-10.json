@@ -39,12 +39,12 @@
     "date": "2026-10-02",
     "script": "enrich-prices",
     "model": "claude-haiku-4-5-20251001",
-    "calls": 85,
-    "input_tokens": 303954,
+    "calls": 111,
+    "input_tokens": 437960,
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
-    "output_tokens": 12564,
+    "output_tokens": 15579,
     "web_search_requests": 0,
-    "estimated_usd": 0.366774
+    "estimated_usd": 0.515855
   }
 ]
