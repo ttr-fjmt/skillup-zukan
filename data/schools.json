@@ -137,7 +137,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-techacademy",
     "created_at": "2026-09-07T14:44:30.601Z",
-    "updated_at": "2026-10-02T07:19:32.430Z",
+    "updated_at": "2026-10-02T07:25:18.263Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -288,7 +288,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-dhw",
     "created_at": "2026-09-07T16:02:45.061Z",
-    "updated_at": "2026-10-02T07:20:11.554Z",
+    "updated_at": "2026-10-02T07:25:55.105Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -381,12 +381,55 @@
       "受託開発エンジニア"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "470,000円〜",
+      "min_yen": 470000,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "Web開発スタンダードコース スキルアップ向け",
+        "amount": 470000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Web開発スタンダードコース 転職向け",
+        "amount": 550000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Web開発スタンダードコース 分割払い 24回",
+        "amount": 22600,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Web開発スタンダードコース 分割払い 12回",
+        "amount": 42200,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Web開発スタンダードコース 分割払い 10回",
+        "amount": 50000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Web開発スタンダードコース 分割払い 6回",
+        "amount": 81300,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Web開発スタンダードコース 分割払い 3回",
+        "amount": 159700,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -403,7 +446,8 @@
     "review_source_urls": [],
     "review_flags": [
       "detail_page_crawled",
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://runteq.jp/plan",
     "official_url": "https://runteq.jp/",
@@ -411,7 +455,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-runteq",
     "created_at": "2026-09-07T20:09:35.608Z",
-    "updated_at": "2026-10-02T07:20:40.493Z",
+    "updated_at": "2026-10-02T07:26:06.058Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -777,7 +821,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-10-02T07:21:25.932Z",
+    "updated_at": "2026-10-02T07:26:51.283Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -834,7 +878,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-10-02T07:21:57.626Z",
+    "updated_at": "2026-10-02T07:27:23.235Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -939,7 +983,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-shareway",
     "created_at": "2026-09-07T23:52:22.673Z",
-    "updated_at": "2026-10-02T07:23:21.691Z",
+    "updated_at": "2026-10-02T07:28:47.813Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -1398,13 +1442,13 @@
     "review_flags": [
       "detail_page_crawled"
     ],
-    "price_detail_url": "https://www.tac-school.co.jp/kouza_fp.html",
+    "price_detail_url": "https://www.tac-school.co.jp/kouza_kaikei.html",
     "official_url": "https://www.tac-school.co.jp/",
     "cta_url": "https://www.tac-school.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-tac-school",
     "created_at": "2026-09-08T00:06:59.837Z",
-    "updated_at": "2026-09-08T00:15:53.487Z",
+    "updated_at": "2026-10-02T07:29:31.527Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -1648,7 +1692,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-digital-hacks",
     "created_at": "2026-09-08T05:22:13.239Z",
-    "updated_at": "2026-10-02T06:57:12.560Z",
+    "updated_at": "2026-10-02T07:31:00.149Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -1795,7 +1839,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [
@@ -1845,18 +1889,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://movieru.jp/page/school/top/",
     "cta_url": "https://movieru.jp/page/school/top/",
     "cta_type": "direct",
     "click_tracking_id": "click-movieru",
     "created_at": "2026-09-08T05:22:50.605Z",
-    "updated_at": "2026-09-08T05:22:50.605Z",
+    "updated_at": "2026-10-02T07:31:32.617Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
-    "verified_url": "https://movieru.jp/page/school/top/"
+    "verified_url": "https://movieru.jp/page/school/top/",
+    "price_detail_url": "https://movieru.jp/page/school/lpc/2_9/"
   },
   {
     "id": "editor-camp",
@@ -2220,7 +2266,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-skillupai",
     "created_at": "2026-09-08T05:24:37.099Z",
-    "updated_at": "2026-09-08T05:24:37.099Z",
+    "updated_at": "2026-10-02T07:32:54.593Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -2376,7 +2422,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-mentor",
     "created_at": "2026-09-08T05:25:18.901Z",
-    "updated_at": "2026-09-08T05:25:18.901Z",
+    "updated_at": "2026-10-02T07:33:18.005Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -2550,7 +2596,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-study-ai",
     "created_at": "2026-09-08T05:26:08.821Z",
-    "updated_at": "2026-09-08T05:26:08.821Z",
+    "updated_at": "2026-10-02T07:33:54.863Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -2620,7 +2666,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ecc",
     "created_at": "2026-09-08T05:26:34.277Z",
-    "updated_at": "2026-09-08T05:26:34.277Z",
+    "updated_at": "2026-10-02T07:35:20.926Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -2729,12 +2775,67 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "1,650円〜",
+      "min_yen": 1650,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "プライベートレッスン",
+        "amount": 26400,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "学習動画「文法動画（初級・中級）」",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "IELTSライティング添削",
+        "amount": 11000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "単語帳",
+        "amount": 1650,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "入会金",
+        "amount": 22000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "OA0.5スコアアップ目標",
+        "amount": 330300,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "OA1.0スコアアップ目標",
+        "amount": 670360,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "OA1.5スコアアップ目標",
+        "amount": 999560,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "OA2.0スコアアップ目標",
+        "amount": 1318640,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都"
@@ -2751,7 +2852,8 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://berkeleyhouse.co.jp/countermeasure/ielts/ieltscourse/",
     "official_url": "https://berkeleyhouse.co.jp/",
@@ -2759,7 +2861,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-berkeleyhouse",
     "created_at": "2026-09-08T05:27:14.049Z",
-    "updated_at": "2026-09-08T05:45:26.000Z",
+    "updated_at": "2026-10-02T07:35:36.649Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -2888,12 +2990,19 @@
       "日本語教師"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "634,435円",
+      "min_yen": 634435,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "日本語教師養成講座420時間コース",
+        "amount": 634435,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都",
@@ -2913,15 +3022,16 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
-    "price_detail_url": "https://www.jpns.kec.ne.jp/jyugyouryou.html",
+    "price_detail_url": "https://www.jpns.kec.ne.jp/course420.html",
     "official_url": "https://www.jpns.kec.ne.jp/",
     "cta_url": "https://www.jpns.kec.ne.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-kec",
     "created_at": "2026-09-08T05:28:09.748Z",
-    "updated_at": "2026-09-08T05:28:09.748Z",
+    "updated_at": "2026-10-02T07:36:04.465Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -2973,7 +3083,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-simulacademy",
     "created_at": "2026-09-08T05:28:37.189Z",
-    "updated_at": "2026-09-08T05:28:37.189Z",
+    "updated_at": "2026-10-02T07:36:27.788Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -3024,7 +3134,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-startai",
     "created_at": "2026-09-08T06:15:29.258Z",
-    "updated_at": "2026-09-08T06:15:29.258Z",
+    "updated_at": "2026-10-02T07:36:42.881Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3882,7 +3992,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-up-on",
     "created_at": "2026-09-08T12:20:35.996Z",
-    "updated_at": "2026-09-08T12:20:35.996Z",
+    "updated_at": "2026-10-02T07:37:22.110Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3981,7 +4091,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-gsacademy",
     "created_at": "2026-09-08T12:23:48.238Z",
-    "updated_at": "2026-09-08T13:16:16.586Z",
+    "updated_at": "2026-10-02T07:38:01.485Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4030,7 +4140,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-nouryoku",
     "created_at": "2026-09-08T12:25:27.418Z",
-    "updated_at": "2026-09-08T12:25:27.418Z",
+    "updated_at": "2026-10-02T07:38:21.627Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4249,12 +4359,19 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "月額19,800円",
+      "min_yen": 19800,
       "scope": "detail_page",
-      "kind": null
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "スキルハックス",
+        "amount": 19800,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -4265,7 +4382,8 @@
     "review_source_urls": [],
     "review_flags": [
       "detail_page_crawled",
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://brain-holdings.com/skillhacks/services/skill-hacks/",
     "official_url": "https://brain-holdings.com/skillhacks/",
@@ -4273,7 +4391,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-brain-holdings",
     "created_at": "2026-09-08T12:27:15.170Z",
-    "updated_at": "2026-09-08T12:27:15.170Z",
+    "updated_at": "2026-10-02T07:38:34.468Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4324,7 +4442,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-vnts",
     "created_at": "2026-09-08T12:28:02.953Z",
-    "updated_at": "2026-09-08T12:28:02.953Z",
+    "updated_at": "2026-10-02T07:39:03.515Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4419,7 +4537,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-shuoba",
     "created_at": "2026-09-08T12:29:48.170Z",
-    "updated_at": "2026-09-08T12:29:48.170Z",
+    "updated_at": "2026-10-02T07:39:41.933Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -5066,7 +5184,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-u-can",
     "created_at": "2026-09-08T20:15:51.209Z",
-    "updated_at": "2026-09-08T20:15:51.209Z",
+    "updated_at": "2026-10-02T07:40:09.819Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -5117,7 +5235,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-c-c-j",
     "created_at": "2026-09-08T20:16:00.980Z",
-    "updated_at": "2026-10-02T06:58:21.736Z",
+    "updated_at": "2026-10-02T07:41:02.266Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -5241,7 +5359,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-yotsuyagakuin-tsushin",
     "created_at": "2026-09-08T20:17:00.276Z",
-    "updated_at": "2026-09-08T20:17:00.276Z",
+    "updated_at": "2026-10-02T07:41:21.874Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -5427,7 +5545,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-recurrent",
     "created_at": "2026-09-08T20:17:52.871Z",
-    "updated_at": "2026-09-15T09:38:06.563Z",
+    "updated_at": "2026-10-02T07:41:54.575Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -6112,7 +6230,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-human-yakan",
     "created_at": "2026-09-08T20:21:02.015Z",
-    "updated_at": "2026-09-08T23:40:05.592Z",
+    "updated_at": "2026-10-02T07:42:49.659Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -6222,7 +6340,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-avilen",
     "created_at": "2026-09-09T20:15:29.363Z",
-    "updated_at": "2026-09-09T20:15:29.363Z",
+    "updated_at": "2026-10-02T07:43:06.384Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -6271,7 +6389,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-kikagaku",
     "created_at": "2026-09-09T20:15:49.157Z",
-    "updated_at": "2026-09-09T20:15:49.157Z",
+    "updated_at": "2026-10-02T07:43:26.126Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -6384,7 +6502,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ksknet",
     "created_at": "2026-09-09T20:16:42.160Z",
-    "updated_at": "2026-09-09T20:16:42.160Z",
+    "updated_at": "2026-10-02T07:43:48.812Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -6437,7 +6555,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shikaku",
     "created_at": "2026-09-09T20:17:10.763Z",
-    "updated_at": "2026-09-09T20:17:10.763Z",
+    "updated_at": "2026-10-02T07:44:12.841Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -6679,7 +6797,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shikaku-square",
     "created_at": "2026-09-09T20:18:27.732Z",
-    "updated_at": "2026-09-09T20:18:27.732Z",
+    "updated_at": "2026-10-02T07:44:44.821Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -6835,12 +6953,37 @@
       "エンジニア"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "132,000円〜",
+      "min_yen": 132000,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "Javaコース",
+        "amount": 264000,
+        "duration": "約24週間",
+        "kind": "total"
+      },
+      {
+        "label": "CCNAコース",
+        "amount": 132000,
+        "duration": "約16週間",
+        "kind": "total"
+      },
+      {
+        "label": "LinuCコース",
+        "amount": 132000,
+        "duration": "約16週間",
+        "kind": "total"
+      },
+      {
+        "label": "AWSコース",
+        "amount": 440000,
+        "duration": "約16週間",
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -6855,15 +6998,16 @@
     "review_source_urls": [],
     "review_flags": [
       "detail_page_crawled",
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "price_scope_limited"
     ],
-    "price_detail_url": "https://uzuz-college.jp/cus/",
+    "price_detail_url": "https://uzuz-college.jp/ref/c/uzc_corp/reskilling/",
     "official_url": "https://uzuz-college.jp/",
     "cta_url": "https://uzuz-college.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-uzuz-college",
     "created_at": "2026-09-09T20:19:20.639Z",
-    "updated_at": "2026-09-09T20:19:20.639Z",
+    "updated_at": "2026-10-02T07:45:23.284Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -6990,7 +7134,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gsacademy-2",
     "created_at": "2026-09-09T20:19:43.966Z",
-    "updated_at": "2026-09-09T20:19:43.966Z",
+    "updated_at": "2026-10-02T07:45:38.233Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -7044,7 +7188,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-japan-design",
     "created_at": "2026-09-09T20:20:09.467Z",
-    "updated_at": "2026-09-09T20:20:09.467Z",
+    "updated_at": "2026-10-02T07:46:00.577Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -7444,7 +7588,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-interschool",
     "created_at": "2026-09-10T20:16:56.106Z",
-    "updated_at": "2026-09-10T20:16:56.106Z",
+    "updated_at": "2026-10-02T07:46:38.767Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -7498,7 +7642,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-issnet",
     "created_at": "2026-09-10T20:17:26.217Z",
-    "updated_at": "2026-09-10T20:17:26.217Z",
+    "updated_at": "2026-10-02T07:47:06.636Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -7744,7 +7888,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-ac",
     "created_at": "2026-09-10T20:18:18.005Z",
-    "updated_at": "2026-09-10T20:18:18.005Z",
+    "updated_at": "2026-10-02T07:47:29.317Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -7783,14 +7927,14 @@
     "review_flags": [
       "detail_page_crawled"
     ],
-    "price_detail_url": "https://www.itojuku.co.jp/apply/campaign/index.html",
+    "price_detail_url": "https://www.itojuku.co.jp/seikyu/top",
     "area_detail_url": "https://www.itojuku.co.jp/itojuku/school/index.html",
     "official_url": "https://www.itojuku.co.jp/",
     "cta_url": "https://www.itojuku.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-itojuku",
     "created_at": "2026-09-10T20:18:42.948Z",
-    "updated_at": "2026-09-10T20:18:42.948Z",
+    "updated_at": "2026-10-02T07:47:55.675Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -8139,7 +8283,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dezasuta",
     "created_at": "2026-09-10T20:20:04.133Z",
-    "updated_at": "2026-09-10T20:20:04.133Z",
+    "updated_at": "2026-10-02T07:48:39.647Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -8591,7 +8735,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sat-co",
     "created_at": "2026-09-11T20:17:12.556Z",
-    "updated_at": "2026-09-11T20:17:12.556Z",
+    "updated_at": "2026-10-02T07:49:04.469Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -8862,7 +9006,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-recurrent-2",
     "created_at": "2026-09-11T20:18:40.359Z",
-    "updated_at": "2026-09-11T20:18:40.359Z",
+    "updated_at": "2026-10-02T07:49:38.105Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -8934,7 +9078,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -8953,17 +9097,20 @@
     ],
     "review_summary": null,
     "review_source_urls": [],
-    "review_flags": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
     "official_url": "https://mirainnove.jp/school/",
     "cta_url": "https://mirainnove.jp/school/",
     "cta_type": "direct",
     "click_tracking_id": "click-mirainnove",
     "created_at": "2026-09-11T20:18:57.291Z",
-    "updated_at": "2026-09-11T20:18:57.291Z",
+    "updated_at": "2026-10-02T07:50:07.150Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
-    "verified_url": "https://mirainnove.jp/school/"
+    "verified_url": "https://mirainnove.jp/school/",
+    "price_detail_url": "https://mirainnove.jp/school"
   },
   {
     "id": "dotabis",
@@ -9180,7 +9327,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-lifeshiftlab",
     "created_at": "2026-09-11T20:19:34.402Z",
-    "updated_at": "2026-09-11T20:19:34.402Z",
+    "updated_at": "2026-10-02T07:51:45.916Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -10120,7 +10267,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-zero-school",
     "created_at": "2026-09-12T20:16:48.507Z",
-    "updated_at": "2026-09-12T20:16:48.507Z",
+    "updated_at": "2026-10-02T07:52:21.291Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -10168,7 +10315,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-findme-school",
     "created_at": "2026-09-12T20:17:09.185Z",
-    "updated_at": "2026-09-12T20:17:09.185Z",
+    "updated_at": "2026-10-02T07:52:40.094Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -10225,7 +10372,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-xdesign-academy",
     "created_at": "2026-09-12T20:17:30.269Z",
-    "updated_at": "2026-09-12T20:17:30.269Z",
+    "updated_at": "2026-10-02T07:53:03.145Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -10395,7 +10542,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dxup",
     "created_at": "2026-09-12T20:18:39.214Z",
-    "updated_at": "2026-09-12T20:18:39.214Z",
+    "updated_at": "2026-10-02T07:53:29.469Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -10573,7 +10720,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-agos",
     "created_at": "2026-09-12T20:19:42.502Z",
-    "updated_at": "2026-09-12T20:19:42.502Z",
+    "updated_at": "2026-10-02T07:53:57.100Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -10634,7 +10781,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shane",
     "created_at": "2026-09-12T20:20:10.628Z",
-    "updated_at": "2026-09-12T20:20:10.628Z",
+    "updated_at": "2026-10-02T07:54:41.498Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -10728,7 +10875,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-eiken-academy",
     "created_at": "2026-09-12T20:20:38.784Z",
-    "updated_at": "2026-09-12T20:20:38.784Z",
+    "updated_at": "2026-10-02T07:55:14.523Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -10772,14 +10919,14 @@
       "detail_page_crawled",
       "area_unconfirmed"
     ],
-    "price_detail_url": "https://bitex-cn.com/?m=studyonline&a=price",
+    "price_detail_url": "https://bitex-cn.com/?m=studyonline",
     "area_detail_url": "https://bitex-cn.com/?m=studyabroad",
     "official_url": "https://bitex-cn.com/",
     "cta_url": "https://bitex-cn.com/",
     "cta_type": "direct",
     "click_tracking_id": "click-bitex-cn",
     "created_at": "2026-09-12T20:21:11.328Z",
-    "updated_at": "2026-09-12T20:21:11.328Z",
+    "updated_at": "2026-10-02T07:55:40.552Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -10821,13 +10968,13 @@
       "detail_page_crawled",
       "area_unconfirmed"
     ],
-    "price_detail_url": "https://www.net-school.co.jp/licence/",
+    "price_detail_url": "https://www.net-school.co.jp/web-school/",
     "official_url": "https://www.net-school.co.jp/",
     "cta_url": "https://www.net-school.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-net-school",
     "created_at": "2026-09-12T20:21:30.487Z",
-    "updated_at": "2026-09-12T20:21:30.487Z",
+    "updated_at": "2026-10-02T07:57:03.385Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -11074,7 +11221,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-noa-wa",
     "created_at": "2026-09-13T20:16:10.269Z",
-    "updated_at": "2026-09-13T20:16:10.269Z",
+    "updated_at": "2026-10-02T07:57:49.047Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -11567,7 +11714,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gls-vietnam",
     "created_at": "2026-09-13T20:17:37.761Z",
-    "updated_at": "2026-09-13T20:17:37.761Z",
+    "updated_at": "2026-10-02T07:58:33.337Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -11625,7 +11772,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sss-education",
     "created_at": "2026-09-13T20:18:11.995Z",
-    "updated_at": "2026-09-13T20:18:11.995Z",
+    "updated_at": "2026-10-02T07:59:03.415Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -11677,7 +11824,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-fij",
     "created_at": "2026-09-13T20:18:47.457Z",
-    "updated_at": "2026-09-13T20:18:47.457Z",
+    "updated_at": "2026-10-02T07:59:32.993Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -11835,7 +11982,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-engineercollege",
     "created_at": "2026-09-13T20:20:09.687Z",
-    "updated_at": "2026-09-13T20:20:09.687Z",
+    "updated_at": "2026-10-02T07:59:58.628Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -12338,7 +12485,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-creatoracademy-career",
     "created_at": "2026-09-15T20:18:42.336Z",
-    "updated_at": "2026-09-15T20:18:42.336Z",
+    "updated_at": "2026-10-02T08:00:40.545Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -12512,7 +12659,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-trainocate",
     "created_at": "2026-09-15T20:19:31.828Z",
-    "updated_at": "2026-09-15T20:19:31.828Z",
+    "updated_at": "2026-10-02T08:01:19.419Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -12761,7 +12908,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-alc-education",
     "created_at": "2026-09-15T20:20:44.966Z",
-    "updated_at": "2026-10-02T06:59:47.622Z",
+    "updated_at": "2026-10-02T08:01:56.132Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -12805,13 +12952,13 @@
     "review_flags": [
       "detail_page_crawled"
     ],
-    "price_detail_url": "https://www.toritsu-gk.co.jp/category/1367854.html",
+    "price_detail_url": "https://www.toritsu-gk.co.jp/category/1367870.html",
     "official_url": "https://www.toritsu-gk.co.jp/",
     "cta_url": "https://www.toritsu-gk.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-toritsu-gk",
     "created_at": "2026-09-15T20:21:08.189Z",
-    "updated_at": "2026-09-15T20:21:08.189Z",
+    "updated_at": "2026-10-02T08:02:22.270Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -13072,17 +13219,41 @@
       "エンジニア"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "11,880円〜",
+      "min_yen": 11880,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
     "plans": [
       {
+        "label": "無料プラン",
+        "amount": 0,
+        "duration": null,
+        "kind": null
+      },
+      {
         "label": "プラスプラン",
-        "amount": null,
-        "duration": "12ヶ月",
+        "amount": 990,
+        "duration": null,
         "kind": "monthly"
+      },
+      {
+        "label": "プラスプラン",
+        "amount": 11880,
+        "duration": "12ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "プロプラン",
+        "amount": 2490,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プロプラン",
+        "amount": 29880,
+        "duration": "12ヶ月",
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -13100,7 +13271,8 @@
     "review_source_urls": [],
     "review_flags": [
       "detail_page_crawled",
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://prog-8.com/plans/for_users",
     "official_url": "https://prog-8.com/",
@@ -13108,7 +13280,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-prog-8",
     "created_at": "2026-09-15T20:22:06.584Z",
-    "updated_at": "2026-09-15T20:22:06.584Z",
+    "updated_at": "2026-10-02T08:02:37.687Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -13128,12 +13300,43 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "top_page",
-      "kind": null
+      "display": "1,490円〜",
+      "min_yen": 1490,
+      "scope": "detail_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "1ヶ月プラン",
+        "amount": 1490,
+        "duration": "1ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月プラン",
+        "amount": 7200,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月プラン",
+        "amount": 1200,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      },
+      {
+        "label": "12ヶ月プラン",
+        "amount": 11760,
+        "duration": "12ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "12ヶ月プラン",
+        "amount": 980,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -13143,18 +13346,21 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "official_url": "https://paiza.jp/works",
     "cta_url": "https://paiza.jp/works",
     "cta_type": "direct",
     "click_tracking_id": "click-paiza",
     "created_at": "2026-09-15T20:22:11.470Z",
-    "updated_at": "2026-09-15T20:22:11.470Z",
+    "updated_at": "2026-10-02T08:02:56.194Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
-    "verified_url": "https://paiza.jp/works"
+    "verified_url": "https://paiza.jp/works",
+    "price_detail_url": "https://paiza.jp/works/paid_plan_lp/settlement"
   },
   {
     "id": "dotinstall",
@@ -13346,7 +13552,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-isa-school",
     "created_at": "2026-09-15T20:22:54.575Z",
-    "updated_at": "2026-09-15T20:22:54.575Z",
+    "updated_at": "2026-10-02T08:03:20.902Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -13603,13 +13809,13 @@
       "detail_page_crawled",
       "area_unconfirmed"
     ],
-    "price_detail_url": "https://service.autobahn.education/education_curriculum/python%e3%83%bbai%e7%a0%94%e4%bf%ae/",
+    "price_detail_url": "https://service.autobahn.education/training",
     "official_url": "https://service.autobahn.education/",
     "cta_url": "https://service.autobahn.education/",
     "cta_type": "direct",
     "click_tracking_id": "click-autobahn",
     "created_at": "2026-09-16T20:17:04.638Z",
-    "updated_at": "2026-09-16T20:17:04.638Z",
+    "updated_at": "2026-10-02T08:03:56.163Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -13851,12 +14057,19 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "385,000円",
+      "min_yen": 385000,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "ベーシック３コース",
+        "amount": 385000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都"
@@ -13873,7 +14086,8 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://www.fellow-academy.com/discount/",
     "official_url": "https://www.fellow-academy.com/",
@@ -13881,7 +14095,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-fellow-academy",
     "created_at": "2026-09-16T20:18:05.648Z",
-    "updated_at": "2026-09-16T20:18:05.648Z",
+    "updated_at": "2026-10-02T08:04:09.083Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -13933,7 +14147,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-designlearn",
     "created_at": "2026-09-16T20:18:34.216Z",
-    "updated_at": "2026-09-16T20:18:34.216Z",
+    "updated_at": "2026-10-02T08:04:31.969Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -14171,7 +14385,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-oneup",
     "created_at": "2026-09-17T20:18:18.661Z",
-    "updated_at": "2026-09-17T20:18:18.661Z",
+    "updated_at": "2026-10-02T08:05:01.631Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14252,7 +14466,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -14265,18 +14479,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://90english.com/",
     "cta_url": "https://90english.com/",
     "cta_type": "direct",
     "click_tracking_id": "click-90english",
     "created_at": "2026-09-17T20:18:28.624Z",
-    "updated_at": "2026-09-17T20:18:28.624Z",
+    "updated_at": "2026-10-02T08:06:18.206Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
-    "verified_url": "https://90english.com/"
+    "verified_url": "https://90english.com/",
+    "price_detail_url": "https://90english.com/program"
   },
   {
     "id": "rizap-english",
@@ -14324,7 +14540,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-rizap-english",
     "created_at": "2026-09-17T20:19:08.994Z",
-    "updated_at": "2026-09-17T20:19:08.994Z",
+    "updated_at": "2026-10-02T08:06:48.044Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14375,7 +14591,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-rizhong",
     "created_at": "2026-09-17T20:19:33.286Z",
-    "updated_at": "2026-09-17T20:19:33.286Z",
+    "updated_at": "2026-10-02T08:07:15.814Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14426,7 +14642,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-language-institute-of-tokyo",
     "created_at": "2026-09-17T20:19:59.858Z",
-    "updated_at": "2026-09-17T20:19:59.858Z",
+    "updated_at": "2026-10-02T08:07:41.228Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14549,7 +14765,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-cpa-net",
     "created_at": "2026-09-17T20:20:41.516Z",
-    "updated_at": "2026-09-17T20:20:41.516Z",
+    "updated_at": "2026-10-02T08:08:38.538Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -15006,7 +15222,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -15019,18 +15235,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://www.presence.jp/",
     "cta_url": "https://www.presence.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-presence",
     "created_at": "2026-09-18T20:17:44.133Z",
-    "updated_at": "2026-09-18T20:17:44.133Z",
+    "updated_at": "2026-10-02T08:09:29.328Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
-    "verified_url": "https://www.presence.jp/"
+    "verified_url": "https://www.presence.jp/",
+    "price_detail_url": "https://www.presence.jp/service"
   },
   {
     "id": "career-bank",
@@ -15078,7 +15296,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-career-bank",
     "created_at": "2026-09-18T20:18:03.632Z",
-    "updated_at": "2026-09-18T20:18:03.632Z",
+    "updated_at": "2026-10-02T08:09:55.276Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -15186,13 +15404,13 @@
       "detail_page_crawled",
       "area_unconfirmed"
     ],
-    "price_detail_url": "https://www.itec.co.jp/store/products/list.php?category_id=219",
+    "price_detail_url": "https://www.itec.co.jp/howto/",
     "official_url": "https://www.itec.co.jp/",
     "cta_url": "https://www.itec.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-itec",
     "created_at": "2026-09-18T20:18:48.560Z",
-    "updated_at": "2026-09-18T20:18:48.560Z",
+    "updated_at": "2026-10-02T08:10:24.894Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -15243,7 +15461,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tsuji",
     "created_at": "2026-09-18T20:19:22.839Z",
-    "updated_at": "2026-09-18T20:19:22.839Z",
+    "updated_at": "2026-10-02T08:11:01.504Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -15680,7 +15898,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ctc-g",
     "created_at": "2026-09-18T20:20:54.995Z",
-    "updated_at": "2026-09-18T20:20:54.995Z",
+    "updated_at": "2026-10-02T08:11:32.664Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -16294,7 +16512,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-omodok",
     "created_at": "2026-09-19T20:16:07.734Z",
-    "updated_at": "2026-09-19T20:16:07.734Z",
+    "updated_at": "2026-10-02T08:12:20.024Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -16459,7 +16677,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-k-kaiwa",
     "created_at": "2026-09-19T20:17:07.831Z",
-    "updated_at": "2026-09-19T20:17:07.831Z",
+    "updated_at": "2026-10-02T08:12:45.895Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -16513,7 +16731,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-42tokyo",
     "created_at": "2026-09-20T20:14:14.622Z",
-    "updated_at": "2026-09-20T20:14:14.622Z",
+    "updated_at": "2026-10-02T08:13:11.051Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -16609,7 +16827,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-copen-college",
     "created_at": "2026-09-20T20:14:49.546Z",
-    "updated_at": "2026-09-20T20:14:49.546Z",
+    "updated_at": "2026-10-02T08:13:52.626Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -16703,7 +16921,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dga",
     "created_at": "2026-09-20T20:15:16.809Z",
-    "updated_at": "2026-09-20T20:15:16.809Z",
+    "updated_at": "2026-10-02T08:14:32.495Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -16780,12 +16998,37 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "38,500円〜",
+      "min_yen": 38500,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "TOEIC® L&Rテスト 500〜600点突破コース",
+        "amount": 38500,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "TOEIC® L&Rテスト 730点突破コース",
+        "amount": 38500,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "修了者向け定期コース 月2回コース",
+        "amount": 9900,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "修了者向け定期コース 月4回コース",
+        "amount": 19800,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -16800,15 +17043,16 @@
     "review_source_urls": [],
     "review_flags": [
       "detail_page_crawled",
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "price_scope_limited"
     ],
-    "price_detail_url": "https://academy.kirihara.co.jp/wte/plan",
+    "price_detail_url": "https://academy.kirihara.co.jp/wte/toeic",
     "official_url": "https://academy.kirihara.co.jp/",
     "cta_url": "https://academy.kirihara.co.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-kirihara",
     "created_at": "2026-09-20T20:15:51.201Z",
-    "updated_at": "2026-09-20T20:15:51.201Z",
+    "updated_at": "2026-10-02T08:15:03.295Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -16978,7 +17222,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gravity-koumuin",
     "created_at": "2026-09-20T20:16:35.586Z",
-    "updated_at": "2026-09-20T20:16:35.586Z",
+    "updated_at": "2026-10-02T08:15:49.224Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -17331,7 +17575,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-future-shop",
     "created_at": "2026-09-21T20:15:15.650Z",
-    "updated_at": "2026-09-21T20:15:15.650Z",
+    "updated_at": "2026-10-02T08:16:19.216Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -17529,7 +17773,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-evinet",
     "created_at": "2026-09-21T20:16:01.372Z",
-    "updated_at": "2026-09-21T20:16:01.372Z",
+    "updated_at": "2026-10-02T08:16:44.461Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -17634,7 +17878,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-cic-ct",
     "created_at": "2026-09-21T20:16:50.156Z",
-    "updated_at": "2026-09-21T20:16:50.156Z",
+    "updated_at": "2026-10-02T08:17:21.724Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -17844,7 +18088,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shin-gogaku",
     "created_at": "2026-09-22T20:14:06.595Z",
-    "updated_at": "2026-09-22T20:14:06.595Z",
+    "updated_at": "2026-10-02T08:18:15.622Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -17864,12 +18108,67 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "7,200円〜",
+      "min_yen": 7200,
       "scope": "detail_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "レギュラーコース",
+        "amount": 14500,
+        "duration": "4回",
+        "kind": "total"
+      },
+      {
+        "label": "会話中心コース",
+        "amount": 14500,
+        "duration": "4回",
+        "kind": "total"
+      },
+      {
+        "label": "昼コース",
+        "amount": 11600,
+        "duration": "4回",
+        "kind": "total"
+      },
+      {
+        "label": "プライベート",
+        "amount": 66000,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "パワフルプライベート",
+        "amount": 33900,
+        "duration": "5週間",
+        "kind": "total"
+      },
+      {
+        "label": "セミプライベート",
+        "amount": 14500,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "オンラインレッスンライト",
+        "amount": 7200,
+        "duration": "4回",
+        "kind": "total"
+      },
+      {
+        "label": "TOPIK試験対策",
+        "amount": 25000,
+        "duration": "4回～",
+        "kind": "total"
+      },
+      {
+        "label": "ハングル検定試験対策",
+        "amount": 25000,
+        "duration": "4回～",
+        "kind": "total"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都"
@@ -17887,7 +18186,8 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "detail_page_crawled"
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "price_detail_url": "https://s-koreanschool.com/course/fee/",
     "area_detail_url": "https://s-koreanschool.com/about/access/",
@@ -17896,7 +18196,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-s-koreanschool",
     "created_at": "2026-09-22T20:14:44.644Z",
-    "updated_at": "2026-09-22T20:14:44.644Z",
+    "updated_at": "2026-10-02T08:18:32.171Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -18006,12 +18306,61 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "top_page",
-      "kind": null
+      "display": "398,000円〜",
+      "min_yen": 398000,
+      "scope": "detail_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "ワンダフルAIコード",
+        "amount": 498000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフルステップ",
+        "amount": 880000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフル・プランナー",
+        "amount": 546700,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフル・アシスタント",
+        "amount": 398000,
+        "duration": "4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフル・セラー スタンダード",
+        "amount": 700000,
+        "duration": "8ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフル・セラー フルサポート",
+        "amount": 1000000,
+        "duration": "12ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "ワンダフル・プロモーター",
+        "amount": 498000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "ワンダフル・プロモーター",
+        "amount": 20000,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -18021,18 +18370,21 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled",
+      "price_scope_limited"
     ],
     "official_url": "https://wonderful-wife.net/w_movie/",
     "cta_url": "https://wonderful-wife.net/w_movie/",
     "cta_type": "direct",
     "click_tracking_id": "click-wonderful-wife",
     "created_at": "2026-09-23T20:14:33.948Z",
-    "updated_at": "2026-09-23T20:14:33.948Z",
+    "updated_at": "2026-10-02T08:19:04.582Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
-    "verified_url": "https://wonderful-wife.net/w_movie/"
+    "verified_url": "https://wonderful-wife.net/w_movie/",
+    "price_detail_url": "https://wonderful-wife.net/study/"
   },
   {
     "id": "winningfield",
@@ -18284,7 +18636,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shikakupass",
     "created_at": "2026-09-23T20:15:26.579Z",
-    "updated_at": "2026-09-23T20:15:26.579Z",
+    "updated_at": "2026-10-02T08:19:41.635Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -18403,7 +18755,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-w-seminar",
     "created_at": "2026-09-23T20:15:48.590Z",
-    "updated_at": "2026-09-23T20:15:48.590Z",
+    "updated_at": "2026-10-02T08:19:52.713Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -18597,7 +18949,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-osakaymca",
     "created_at": "2026-09-24T20:14:52.434Z",
-    "updated_at": "2026-09-24T20:14:52.434Z",
+    "updated_at": "2026-10-02T08:20:20.336Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -18978,7 +19330,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-littleeurope",
     "created_at": "2026-09-25T20:13:19.921Z",
-    "updated_at": "2026-09-25T20:13:19.921Z",
+    "updated_at": "2026-10-02T08:21:00.010Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -19029,7 +19381,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-littleasia",
     "created_at": "2026-09-25T20:13:44.027Z",
-    "updated_at": "2026-09-25T20:13:44.027Z",
+    "updated_at": "2026-10-02T08:21:28.869Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -19078,7 +19430,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-discoveringsounds",
     "created_at": "2026-09-25T20:14:17.846Z",
-    "updated_at": "2026-09-25T20:14:17.846Z",
+    "updated_at": "2026-10-02T08:22:06.218Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -19179,7 +19531,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sunflare",
     "created_at": "2026-09-25T20:14:59.762Z",
-    "updated_at": "2026-09-25T20:14:59.762Z",
+    "updated_at": "2026-10-02T08:22:39.100Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -19297,16 +19649,16 @@
       "キャリアコンサルタント"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "top_page",
-      "kind": null
+      "display": "297,000円",
+      "min_yen": 297000,
+      "scope": "detail_page",
+      "kind": "total"
     },
     "plans": [
       {
-        "label": "国家資格キャリアコンサルタント養成講習",
-        "amount": null,
-        "duration": "10日間",
+        "label": "キャリアコンサルタント養成講習",
+        "amount": 297000,
+        "duration": null,
         "kind": "total"
       }
     ],
@@ -19325,17 +19677,21 @@
     ],
     "review_summary": null,
     "review_source_urls": [],
-    "review_flags": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "price_scope_limited"
+    ],
     "official_url": "https://careerjp.work/",
     "cta_url": "https://careerjp.work/",
     "cta_type": "direct",
     "click_tracking_id": "click-careerjp",
     "created_at": "2026-09-25T20:15:18.653Z",
-    "updated_at": "2026-09-25T20:15:18.653Z",
+    "updated_at": "2026-10-02T08:22:51.753Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
-    "verified_url": "https://careerjp.work/"
+    "verified_url": "https://careerjp.work/",
+    "price_detail_url": "https://careerjp.work/cc1/"
   },
   {
     "id": "haru-idea",
@@ -19380,7 +19736,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-haru-idea",
     "created_at": "2026-09-25T20:15:39.476Z",
-    "updated_at": "2026-09-25T20:15:39.476Z",
+    "updated_at": "2026-10-02T08:23:17.236Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -19433,7 +19789,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-allinmotions",
     "created_at": "2026-09-25T20:16:06.961Z",
-    "updated_at": "2026-09-25T20:16:06.961Z",
+    "updated_at": "2026-10-02T08:23:55.252Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -19486,7 +19842,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-one-marke",
     "created_at": "2026-09-25T20:16:35.271Z",
-    "updated_at": "2026-09-25T20:16:35.271Z",
+    "updated_at": "2026-10-02T08:24:26.465Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -19584,7 +19940,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ryotoeikaiwa",
     "created_at": "2026-09-26T20:11:53.361Z",
-    "updated_at": "2026-09-26T20:11:53.361Z",
+    "updated_at": "2026-10-02T08:25:07.096Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -19690,7 +20046,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gakubun",
     "created_at": "2026-09-26T20:12:24.161Z",
-    "updated_at": "2026-09-26T20:12:24.161Z",
+    "updated_at": "2026-10-02T08:25:30.384Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -19740,7 +20096,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-looktone",
     "created_at": "2026-09-26T20:12:51.179Z",
-    "updated_at": "2026-09-26T20:12:51.179Z",
+    "updated_at": "2026-10-02T08:25:58.633Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -19789,7 +20145,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-surge",
     "created_at": "2026-09-26T20:13:12.232Z",
-    "updated_at": "2026-09-26T20:13:12.232Z",
+    "updated_at": "2026-10-02T08:26:31.479Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -19838,7 +20194,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-inspark",
     "created_at": "2026-09-27T20:14:44.517Z",
-    "updated_at": "2026-09-27T20:14:44.517Z",
+    "updated_at": "2026-10-02T08:26:52.607Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -20267,7 +20623,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-funtre",
     "created_at": "2026-09-28T20:15:02.105Z",
-    "updated_at": "2026-09-28T20:15:02.105Z",
+    "updated_at": "2026-10-02T08:27:30.993Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -21132,7 +21488,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-williesenglish",
     "created_at": "2026-09-30T20:17:19.969Z",
-    "updated_at": "2026-09-30T20:17:19.969Z",
+    "updated_at": "2026-10-02T08:28:17.232Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -21196,7 +21552,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -21209,17 +21565,19 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://www.eiken.or.jp/learning/personal/topics/pec/",
     "cta_url": "https://www.eiken.or.jp/learning/personal/topics/pec/",
     "cta_type": "direct",
     "click_tracking_id": "click-eiken",
     "created_at": "2026-09-30T20:17:24.371Z",
-    "updated_at": "2026-09-30T20:17:24.371Z",
+    "updated_at": "2026-10-02T08:28:59.163Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
-    "verified_url": "https://www.eiken.or.jp/learning/personal/topics/pec/"
+    "verified_url": "https://www.eiken.or.jp/learning/personal/topics/pec/",
+    "price_detail_url": "https://www.eiken.or.jp/learning/"
   }
 ]
