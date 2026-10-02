@@ -977,10 +977,55 @@ function normalizeStructuredFields(raw, genreHint, pageText) {
   result.official_name = verifyOfficialName(String(result.official_name || '').trim() || null, pageText);
   result.school_name = String(result.school_name || '').trim();
 
+  // 【保存する文章でも、もう一度ジャンルを確かめる】
+  // 上の照合は「公式ページ全体」に対して行う。ページに他の講座の案内が載っていると、
+  // そこの言葉で裏付けが取れてしまい、実際にはその講座と関係のないジャンルが残る
+  // （総務省統計局のデータサイエンス講座が、掲載元サイトの別講座の記述で「資格」と
+  //  判定された実例がある。2026-10-02）。
+  // 掲載するのは description と features なので、**その文章で裏付けが取れるか**まで見る。
+  result.skill_genre = reconcileGenresWithSavedText(result);
+
   return result;
 }
 
+/**
+ * 保存する文章（紹介文・特徴・めざせる職種）で裏付けが取れるジャンルだけを残す。
+ * すべて裏付けが取れなかったときは、その文章が示すジャンルに置き換える。
+ * 文章自体がどのジャンルの語も含まない場合は、判定できないので元のまま残す
+ * （判定できないことを理由に消すと、実在の講座を分類から外してしまう）。
+ */
+function reconcileGenresWithSavedText(record) {
+  const genres = Array.isArray(record.skill_genre) ? record.skill_genre : [];
+  if (genres.length === 0) return genres;
+
+  const savedText = [
+    record.school_name,
+    record.description,
+    ...(record.features || []),
+    ...(record.career_paths || []),
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const check = verifyGenres(genres, savedText);
+  if (check.genres.length > 0) return check.genres;
+
+  // 1つも裏付けが取れなかった。保存する文章が示すジャンルがあれば、それに置き換える。
+  const supported = GENRE.filter(g => verifyGenres([g], savedText).genres.length > 0);
+  if (supported.length > 0) {
+    console.warn(
+      `  skill_genre「${describeDropped(check.dropped)}」は紹介文で裏付けが取れないため、` +
+        `「${supported.join('、')}」に置き換えました。`
+    );
+    return supported;
+  }
+
+  // 紹介文がどのジャンルの語も含まない（汎用的な文章）。判定できないので元のまま。
+  return genres;
+}
+
 module.exports = {
+  reconcileGenresWithSavedText,
   PER_GENRE_SEARCH_LIMIT,
   PAGE_TEXT_MAX_CHARS,
   MIN_CONTENT_LENGTH,

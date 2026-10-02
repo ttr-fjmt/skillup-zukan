@@ -17,9 +17,9 @@
 - UI/UXデザイン（10件）: https://skillup-zukan.net/category/uiux/
 - 動画編集（42件）: https://skillup-zukan.net/category/video_editing/
 - Webマーケティング（45件）: https://skillup-zukan.net/category/web_marketing/
-- 生成AI・DXリテラシー（56件）: https://skillup-zukan.net/category/genai_dx/
+- 生成AI・DXリテラシー（57件）: https://skillup-zukan.net/category/genai_dx/
 - 語学（90件）: https://skillup-zukan.net/category/language/
-- 資格（79件）: https://skillup-zukan.net/category/certification/
+- 資格（78件）: https://skillup-zukan.net/category/certification/
 
 ## 学び直しガイド
 
