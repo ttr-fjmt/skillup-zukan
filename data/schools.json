@@ -782,7 +782,7 @@
   {
     "id": "tokyo-designplex",
     "school_name": "東京デザインプレックス研究所",
-    "official_name": null,
+    "official_name": "東京デザインプレックス研究所",
     "description": "次代のデザイナーを育成するコンテンポラリーデザインの複合型教育機関。デジタルアート、スペースデザイン、UX/UI、コミュニケーションデザインなど複数領域を開講。トップクリエイター・現役デザイナーを講師に迎え、少人数制・実践形式の専門教育を提供。デザイン業界で抜群の就転職実績を保有。",
     "skill_genre": [
       "webdesign",
@@ -828,7 +828,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-designplex",
     "created_at": "2026-09-07T23:45:37.773Z",
-    "updated_at": "2026-10-02T07:26:51.283Z",
+    "updated_at": "2026-10-02T13:58:52.263Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -853,7 +853,14 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Webデザイナー",
+      "Webエンジニア",
+      "グラフィックデザイナー",
+      "Pythonエンジニア",
+      "システム開発エンジニア",
+      "建築CADオペレータ"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -885,7 +892,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-winschool",
     "created_at": "2026-09-07T23:45:54.336Z",
-    "updated_at": "2026-10-02T07:27:23.235Z",
+    "updated_at": "2026-10-02T13:59:04.040Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -999,7 +1006,7 @@
   {
     "id": "webmarks",
     "school_name": "WEBMARKS",
-    "official_name": null,
+    "official_name": "株式会社WEBMARKS",
     "description": "Webマーケティングとが中心のスクール。SEO、Web広告、GA4、データベース型SEOなど複数の講座を提供。個人向けスクールと法人向け研修の両方を展開。AI検索最適化やAI人材育成などの新サービスも展開。",
     "skill_genre": [
       "web_marketing",
@@ -1043,7 +1050,7 @@
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
+    "subsidy_eligible": true,
     "career_support": true,
     "features": [
       "複数のWebマーケティング講座を提供（SEO、Web広告、GA4、案件獲得講座など）",
@@ -1064,7 +1071,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-webmarks",
     "created_at": "2026-09-07T23:52:38.253Z",
-    "updated_at": "2026-10-02T07:23:36.088Z",
+    "updated_at": "2026-10-02T13:59:35.267Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -1436,8 +1443,8 @@
       "熊本県"
     ],
     "area_source": "top_page",
-    "subsidy_eligible": false,
-    "career_support": false,
+    "subsidy_eligible": true,
+    "career_support": true,
     "features": [
       "試験傾向を分析した毎年更新のオリジナル教材で試験に必要な知識と実践力をバランスよく習得できる",
       "本試験合格者である講師による、受講生時代の経験に基づいた分かりやすい講義が特徴",
@@ -1455,7 +1462,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tac-school",
     "created_at": "2026-09-08T00:06:59.837Z",
-    "updated_at": "2026-10-02T07:29:31.527Z",
+    "updated_at": "2026-10-02T14:00:33.162Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -1627,8 +1634,8 @@
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
-    "career_support": false,
+    "subsidy_eligible": true,
+    "career_support": true,
     "features": [
       "AI学習プラン機能で個人別に最適な学習計画を作成",
       "AI問題復習機能で最適なタイミングで問題を出題",
@@ -1649,7 +1656,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-studying",
     "created_at": "2026-09-08T00:07:31.366Z",
-    "updated_at": "2026-09-08T00:29:41.733Z",
+    "updated_at": "2026-10-02T14:00:53.651Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -1669,7 +1676,11 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "動画編集者",
+      "フリーランス",
+      "副業パパ"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -1699,7 +1710,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-digital-hacks",
     "created_at": "2026-09-08T05:22:13.239Z",
-    "updated_at": "2026-10-02T07:31:00.149Z",
+    "updated_at": "2026-10-02T14:01:05.345Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -2014,7 +2025,7 @@
     "id": "shelikes",
     "school_name": "SHElikes",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "女性向けのオンラインキャリアスクール。50以上の職種スキルを定額で学び放題。Webデザイン、マーケティング、ライティング、動画編集、プログラミング等が対象。未経験から学べる基礎～応用カリキュラムと、キャリアカウンセラーによる転職支援、実践課題による実績構築をサポート。月15分程度のスキマ時間で受講可能。",
     "skill_genre": [
       "webdesign",
       "video_editing",
@@ -2025,20 +2036,57 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Webデザイナー",
+      "マーケター",
+      "ライター",
+      "動画クリエイター",
+      "エンジニア"
+    ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "月額10,780円〜",
+      "min_yen": 10780,
       "scope": "top_page",
-      "kind": null
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "レギュラープラン",
+        "amount": 88800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "レギュラープラン入会金",
+        "amount": 162800,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "スタンダードプラン",
+        "amount": 16280,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ライトプラン",
+        "amount": 10780,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
-    "career_support": false,
-    "features": [],
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "50以上の職種スキルを定額で学び放題",
+      "プロによる課題添削と月1回のコーチングセッション",
+      "キャリアカウンセラーによる1対1サポートと転職支援",
+      "実践課題による実績構築の機会が豊富",
+      "24時間の質問相談チャンネル（デザイン）"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -2049,7 +2097,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-shelikes",
     "created_at": "2026-09-08T05:23:15.329Z",
-    "updated_at": "2026-09-08T05:23:15.329Z",
+    "updated_at": "2026-10-02T14:01:57.258Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -2178,29 +2226,29 @@
       "Webマーケター"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "613,800円",
+      "min_yen": 613800,
       "scope": "top_page",
-      "kind": null
+      "kind": "total"
     },
     "plans": [
-      {
-        "label": "18週間コース",
-        "amount": null,
-        "duration": "18週間",
-        "kind": null
-      },
       {
         "label": "12週間コース",
         "amount": null,
         "duration": "12週間",
-        "kind": null
+        "kind": "total"
+      },
+      {
+        "label": "18週間コース",
+        "amount": 613800,
+        "duration": "18週間",
+        "kind": "total"
       },
       {
         "label": "24週間コース",
         "amount": null,
         "duration": "24週間",
-        "kind": null
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -2224,7 +2272,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-break-marketing-program",
     "created_at": "2026-09-08T05:24:04.248Z",
-    "updated_at": "2026-09-08T05:24:04.248Z",
+    "updated_at": "2026-10-02T14:02:28.818Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -2612,7 +2660,7 @@
   {
     "id": "ecc",
     "school_name": "ECC外語学院",
-    "official_name": null,
+    "official_name": "ECC外語学院",
     "description": "60年以上の語学教育実績を持つECC外語学院は、「発信する力」を引き出すオリジナルカリキュラムで、コミュニケーション力の向上を目指す英会話スクール。国内140校以上のスクール網で、様々なレベルと目的別コースを展開している。",
     "skill_genre": [
       "language"
@@ -2623,7 +2671,9 @@
       "certification_itself"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "海外営業"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -2654,8 +2704,8 @@
       "岡山県"
     ],
     "area_source": "top_page",
-    "subsidy_eligible": false,
-    "career_support": false,
+    "subsidy_eligible": true,
+    "career_support": true,
     "features": [
       "60年以上の語学教育実績に基づくオリジナルカリキュラム",
       "外国人講師とバイリンガル講師による目的別レッスン",
@@ -2673,7 +2723,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ecc",
     "created_at": "2026-09-08T05:26:34.277Z",
-    "updated_at": "2026-10-02T07:35:20.926Z",
+    "updated_at": "2026-10-02T14:03:37.281Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -2682,7 +2732,7 @@
   {
     "id": "kvillage",
     "school_name": "K Village 韓国語",
-    "official_name": null,
+    "official_name": "株式会社 K Village",
     "description": "全国35校でクラスレッスン、マンツーマンレッスン、ジュニア向けレッスン、オンラインレッスンなど複数の受講形式で韓国語を学べる教室。250名以上の日本語堪能な韓国語講師がおり、会話中心のレッスンを提供している。",
     "skill_genre": [
       "language"
@@ -2745,7 +2795,7 @@
     ],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "1レッスン550円から利用可能な安価なクラスレッスン",
       "マンツーマンレッスン4,400円で個別対応",
@@ -2761,7 +2811,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-kvillage",
     "created_at": "2026-09-08T05:26:43.088Z",
-    "updated_at": "2026-09-08T05:26:43.088Z",
+    "updated_at": "2026-10-02T14:03:49.116Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -3099,7 +3149,7 @@
   {
     "id": "startai",
     "school_name": "自分専属AI育成ウェブセミナー",
-    "official_name": null,
+    "official_name": "株式会社スケールエーアイ",
     "description": "ChatGPTなどの生成AIを「たまごっち化」し、自分専属の相棒として育てる方法を学ぶウェブセミナー。AIの脳となる情報の保管場所を作ることで、毎回の説明を省き、会話を重ねるほど自分好みに成長するAIの育て方、AIエージェントの基礎知識、安全設定、最新AI活用法などを習得できます。",
     "skill_genre": [
       "genai_dx"
@@ -3141,7 +3191,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-startai",
     "created_at": "2026-09-08T06:15:29.258Z",
-    "updated_at": "2026-10-02T07:36:42.881Z",
+    "updated_at": "2026-10-02T14:04:40.078Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3150,7 +3200,7 @@
   {
     "id": "pam-inc",
     "school_name": "Enjoy Tech!",
-    "official_name": null,
+    "official_name": "株式会社PAM",
     "description": "マンツーマン専属講師による徹底的な学習管理で、プログラミング初心者の挫折を防ぐスクール。日割りの学習計画作成、週次のオンラインレッスン、24時間チャット質問対応で「学習迷子」「キャリア迷子」を解決。卒業後は案件紹介・営業手法レクチャーで実務経験獲得をサポート。",
     "skill_genre": [
       "programming",
@@ -3221,7 +3271,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-pam-inc",
     "created_at": "2026-09-08T06:15:47.894Z",
-    "updated_at": "2026-09-08T06:15:47.894Z",
+    "updated_at": "2026-10-02T14:04:51.027Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3530,7 +3580,7 @@
   {
     "id": "last-style",
     "school_name": "ラスタイルアカデミー",
-    "official_name": null,
+    "official_name": "株式会社ラスタイル",
     "description": "パーソナルトレーナー育成に特化した完全マンツーマン指導のアカデミー。NESTA認定アカデミーとして、運動生理学や機能解剖学などの理論から実践的なセッション指導まで、幅広いカリキュラムを提供。ピラティスや栄養学も習得でき、資格取得から就職・独立開業まで包括的にサポート。",
     "skill_genre": [
       "certification"
@@ -3585,7 +3635,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-last-style",
     "created_at": "2026-09-08T06:17:40.013Z",
-    "updated_at": "2026-09-08T06:17:40.013Z",
+    "updated_at": "2026-10-02T14:05:11.001Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3908,7 +3958,7 @@
   {
     "id": "bytech-ad",
     "school_name": "バイテックGEEK",
-    "official_name": null,
+    "official_name": "株式会社AI棒",
     "description": "Claude Codeを使用したAI開発スキルを習得するオンラインコース。IT未経験者向けの基礎から実装まで一気通貫の学習プログラムで、Webアプリ開発・業務自動化ができるスキルを身につけられます。現役AIエンジニアによる月2回の個別カウンセリングと専属メンターによる伴走サポートが特徴です。",
     "skill_genre": [
       "programming",
@@ -3920,19 +3970,40 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "AIエンジニア"
+    ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "228,000円〜",
+      "min_yen": 228000,
       "scope": "top_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "2ヶ月プラン",
+        "amount": 228000,
+        "duration": "2ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "4ヶ月プラン",
+        "amount": 348000,
+        "duration": "4ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月プラン",
+        "amount": 438000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "現役AIエンジニアによる月2回の個別カウンセリング実施",
       "5フェーズ44レッスンの段階的な学習カリキュラム",
@@ -3949,7 +4020,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-bytech-ad",
     "created_at": "2026-09-08T12:19:19.738Z",
-    "updated_at": "2026-09-08T12:19:19.738Z",
+    "updated_at": "2026-10-02T14:05:39.478Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -3968,7 +4039,9 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "AI講師"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -3999,7 +4072,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-up-on",
     "created_at": "2026-09-08T12:20:35.996Z",
-    "updated_at": "2026-10-02T07:37:22.110Z",
+    "updated_at": "2026-10-02T14:05:52.642Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4116,7 +4189,11 @@
       "certification_itself"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "電気主任技術者",
+      "施工管理技士",
+      "電気工事士"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -4128,7 +4205,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "電験三種オンライン講座はAIティーチングアシスタント機能を搭載",
       "勉強管理システムで学習進捗を管理でき、講師によるサポート体制が整備",
@@ -4147,7 +4224,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-nouryoku",
     "created_at": "2026-09-08T12:25:27.418Z",
-    "updated_at": "2026-10-02T07:38:21.627Z",
+    "updated_at": "2026-10-02T14:06:21.514Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4384,7 +4461,12 @@
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "複数のスキルコース（Programming Hacks、Movie Hacks、Writing Hacks、Design Hacksなど）を提供",
+      "個人が収益化するまでサポートする伴走型サービス",
+      "案件獲得支援コース有り",
+      "マーケティング関連の講座（Xマーケティング、LINEマーケティング、Instagram運営など）を展開"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -4398,7 +4480,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-brain-holdings",
     "created_at": "2026-09-08T12:27:15.170Z",
-    "updated_at": "2026-10-02T07:38:34.468Z",
+    "updated_at": "2026-10-02T14:06:41.315Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4500,7 +4582,7 @@
   {
     "id": "shuoba",
     "school_name": "ショーバ中国語センター",
-    "official_name": null,
+    "official_name": "株式会社ジャパンスペース",
     "description": "日本人への中国語教育経験が豊富な講師による、オンライン専用のWebレッスンアプリを使用した中国語学習。識字力と会話力を同時に高める特徴があり、自動録画機能、マウス書き込み機能、e-learningシステムとの併用により、効率的な予習復習が可能。毎年改訂される教案で実用的な表現を習得できます。",
     "skill_genre": [
       "language"
@@ -4512,12 +4594,97 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "35,000円〜",
+      "min_yen": 35000,
+      "scope": "top_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "月謝（月4回）固定時間制",
+        "amount": 14400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月謝（月4回）自由予約制",
+        "amount": 15200,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "10コマプラン固定時間制",
+        "amount": 35000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "10コマプラン自由予約制",
+        "amount": 37000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "20コマプラン固定時間制",
+        "amount": 68000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "20コマプラン自由予約制",
+        "amount": 72000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "40コマプラン固定時間制",
+        "amount": 132000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "40コマプラン自由予約制",
+        "amount": 140000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "80コマプラン固定時間制",
+        "amount": 256000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "80コマプラン自由予約制",
+        "amount": 272000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "150コマプラン固定時間制",
+        "amount": 465000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "150コマプラン自由予約制",
+        "amount": 495000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "200コマプラン固定時間制",
+        "amount": 600000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "200コマプラン自由予約制",
+        "amount": 640000,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
     "format": "both",
     "area": [
       "東京都"
@@ -4544,7 +4711,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-shuoba",
     "created_at": "2026-09-08T12:29:48.170Z",
-    "updated_at": "2026-10-02T07:39:41.933Z",
+    "updated_at": "2026-10-02T14:07:11.190Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4553,7 +4720,7 @@
   {
     "id": "eiken-passport",
     "school_name": "英論会",
-    "official_name": null,
+    "official_name": "数強塾",
     "description": "英検対策専門のオンライン塾。英語の基礎学習を一つずつ少しずつ進められ、英語が苦手な人や初めて英検を受ける人も無理なく学習できる。目標級の合格に特化した実践型カリキュラムで、問題形式・出題傾向に合わせたスキルが身につく。プロ講師の担任制でマンツーマン授業を提供。",
     "skill_genre": [
       "language"
@@ -4564,12 +4731,31 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "月額30,250円〜",
+      "min_yen": 30250,
       "scope": "top_page",
-      "kind": null
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "週1回",
+        "amount": 30250,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "週2回",
+        "amount": 42350,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "週3回",
+        "amount": 54450,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -4592,7 +4778,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-eiken-passport",
     "created_at": "2026-09-08T12:30:15.109Z",
-    "updated_at": "2026-09-08T12:43:18.696Z",
+    "updated_at": "2026-10-02T14:07:22.017Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -4809,7 +4995,7 @@
   {
     "id": "onsuku",
     "school_name": "行政書士TEPPAN通信講座",
-    "official_name": null,
+    "official_name": "株式会社オンラインスクール",
     "description": "2026年試験対応の行政書士試験対策講座。TAC出版の「スッキリわかる行政書士」テキストと約53時間のオンライン講義動画を併用し、試験の頻出論点を効率的に学習。過去7回分のオンライン過去問、422問の練習問題、学習管理機能を備える。スマホ対応で隙間学習に対応し、自宅や移動中でのライフスタイルに合わせた学習が可能。",
     "skill_genre": [
       "certification"
@@ -4867,7 +5053,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-onsuku",
     "created_at": "2026-09-08T12:34:17.392Z",
-    "updated_at": "2026-09-08T12:34:58.785Z",
+    "updated_at": "2026-10-02T14:08:03.949Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -5061,7 +5247,10 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "ビジネスリーダー",
+      "マーケター"
+    ],
     "price": {
       "display": "8,800円〜",
       "min_yen": 8800,
@@ -5139,7 +5328,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-nikkei",
     "created_at": "2026-09-08T20:15:25.924Z",
-    "updated_at": "2026-09-08T20:15:25.924Z",
+    "updated_at": "2026-10-02T14:08:42.504Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -5252,7 +5441,7 @@
   {
     "id": "athuman",
     "school_name": "ヒューマンアカデミー通信講座",
-    "official_name": null,
+    "official_name": "ヒューマンアカデミー",
     "description": "多彩なスキルアップ・資格取得に対応した通信講座です。プログラミングや生成AI、Web・動画制作、ネイル、心理・メンタルケア、保育、日本語教師、ペット関連、ビジネススキルなど、幅広いジャンルの講座を提供しています。eラーニングと教材のセット形式で学習でき、自宅での学習に対応しています。",
     "skill_genre": [
       "programming",
@@ -5293,7 +5482,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "複数のジャンルから講座を選択可能",
       "eラーニングと教材を組み合わせた学習形式",
@@ -5313,7 +5502,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-athuman",
     "created_at": "2026-09-08T20:16:32.897Z",
-    "updated_at": "2026-09-08T20:16:32.897Z",
+    "updated_at": "2026-10-02T14:09:11.597Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -5446,7 +5635,7 @@
   {
     "id": "nipponmanpower",
     "school_name": "キャリアコンサルタント養成講座",
-    "official_name": null,
+    "official_name": "株式会社日本マンパワー",
     "description": "厚生労働大臣認定講習として、国家資格キャリアコンサルタントの受験資格取得を目的とした講座。通信教育（eラーニング）と実践的なスクーリング（グループワークやロールプレイ）を組み合わせて、キャリアコンサルタントとして必要な専門知識と能力を習得する。有資格者講師による実践的指導が特徴。",
     "skill_genre": [
       "certification"
@@ -5456,7 +5645,10 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "キャリアコンサルタント",
+      "企業内キャリアコンサルタント"
+    ],
     "price": {
       "display": "396,000円",
       "min_yen": 396000,
@@ -5475,7 +5667,7 @@
     "area": [],
     "area_source": "detail_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "1999年の開講以来、累計受講者5万人以上の実績",
       "通学とオンラインを自由に選択・組み合わせで学習できる",
@@ -5494,7 +5686,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-nipponmanpower",
     "created_at": "2026-09-08T20:17:22.927Z",
-    "updated_at": "2026-09-08T20:17:22.927Z",
+    "updated_at": "2026-10-02T14:09:45.723Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -5706,7 +5898,7 @@
   {
     "id": "kws-cloud-tech",
     "school_name": "CloudTech",
-    "official_name": null,
+    "official_name": "株式会社CloudTech",
     "description": "日本最大級のAWS学習プラットフォーム。320本以上の講義動画と13,000枚以上の試験解説画像で、全12種のAWS認定資格対応。AWS案件に強い専門キャリアアドバイザーによる無料転職相談も提供。",
     "skill_genre": [
       "programming"
@@ -5755,7 +5947,7 @@
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
+    "subsidy_eligible": true,
     "career_support": true,
     "features": [
       "320本以上の講義動画で1本5〜10分の濃密な内容",
@@ -5772,7 +5964,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-kws-cloud-tech",
     "created_at": "2026-09-08T20:18:44.009Z",
-    "updated_at": "2026-09-08T20:18:44.009Z",
+    "updated_at": "2026-10-02T14:10:24.121Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -5781,7 +5973,7 @@
   {
     "id": "tech-sta",
     "school_name": "TECH STADIUM",
-    "official_name": null,
+    "official_name": "株式会社LYUS",
     "description": "プログラミングやゲーム制作を学べるオンラインスクール。Unity、UnrealEngine、3DCG、AI、VRなど、ゲーム業界で活躍するための技術習得が可能。第一線で活躍するプロのエンジニアやクリエイターから、完全オンライン形式で学習できる。各コースは約2ヵ月で修了し、修了後は就職・転職サポートが無料で受けられる。",
     "skill_genre": [
       "programming"
@@ -5837,7 +6029,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tech-sta",
     "created_at": "2026-09-08T20:18:53.565Z",
-    "updated_at": "2026-09-08T20:18:53.565Z",
+    "updated_at": "2026-10-02T14:10:37.493Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -5856,7 +6048,9 @@
       "freelance"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "エンジニア"
+    ],
     "price": {
       "display": "月額1,980円〜",
       "min_yen": 1980,
@@ -5919,7 +6113,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-raretech",
     "created_at": "2026-09-08T20:19:08.545Z",
-    "updated_at": "2026-09-08T20:19:08.545Z",
+    "updated_at": "2026-10-02T14:10:49.530Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -6179,7 +6373,7 @@
   {
     "id": "human-yakan",
     "school_name": "ヒューマンアカデミー 夜間・週末講座",
-    "official_name": null,
+    "official_name": "総合学園ヒューマンアカデミー",
     "description": "平日夜間や土日に、週1回から学べるエンタメ・クリエイティブスクール。半年～1年のカリキュラムを自分で組み立てられ、Unityを含むゲームクリエイター・アニメーション系の講座を提供。プロ講師とキャリアコンシェルジュによるサポートが受講前から始まり、業界とのつながりが豊富。",
     "skill_genre": [
       "programming",
@@ -6190,7 +6384,15 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "声優",
+      "俳優",
+      "マンガ家",
+      "ゲームクリエイター",
+      "3DCGデザイナー",
+      "動画クリエイター",
+      "パーソナルトレーナー"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -6237,7 +6439,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-human-yakan",
     "created_at": "2026-09-08T20:21:02.015Z",
-    "updated_at": "2026-10-02T07:42:49.659Z",
+    "updated_at": "2026-10-02T14:12:09.834Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -6491,7 +6693,7 @@
     ],
     "area_source": "top_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "建築士・宅建・施工管理技士等、業界標準の資格を網羅",
       "全国47都道府県に学校を展開",
@@ -6509,7 +6711,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ksknet",
     "created_at": "2026-09-09T20:16:42.160Z",
-    "updated_at": "2026-10-02T07:43:48.812Z",
+    "updated_at": "2026-10-02T14:12:53.075Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -6892,7 +7094,11 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "プログラマー",
+      "ITエンジニア",
+      "クラウドエンジニア"
+    ],
     "price": {
       "display": "0円〜",
       "min_yen": 0,
@@ -6936,7 +7142,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-programmercollege",
     "created_at": "2026-09-09T20:18:52.637Z",
-    "updated_at": "2026-09-09T20:18:52.637Z",
+    "updated_at": "2026-10-02T14:14:02.935Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -7123,7 +7329,7 @@
     ],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "プロダクトリリースが卒業要件",
       "AIを活用した実践的な学習",
@@ -7141,7 +7347,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gsacademy-2",
     "created_at": "2026-09-09T20:19:43.966Z",
-    "updated_at": "2026-10-02T07:45:38.233Z",
+    "updated_at": "2026-10-02T14:14:27.855Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -7165,12 +7371,25 @@
       "インハウスデザイナー"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "月額64,990円〜",
+      "min_yen": 64990,
+      "scope": "top_page",
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "一般受講",
+        "amount": 74990,
+        "duration": "45日間",
+        "kind": "monthly"
+      },
+      {
+        "label": "モニター受講",
+        "amount": 64990,
+        "duration": "45日間",
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -7195,7 +7414,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-japan-design",
     "created_at": "2026-09-09T20:20:09.467Z",
-    "updated_at": "2026-10-02T07:46:00.577Z",
+    "updated_at": "2026-10-02T14:14:39.335Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -7561,7 +7780,10 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "通訳者",
+      "翻訳者"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -7595,7 +7817,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-interschool",
     "created_at": "2026-09-10T20:16:56.106Z",
-    "updated_at": "2026-10-02T07:46:38.767Z",
+    "updated_at": "2026-10-02T14:15:20.124Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -7604,7 +7826,7 @@
   {
     "id": "issnet",
     "school_name": "ISSインスティテュート",
-    "official_name": null,
+    "official_name": "アイ・エス・エス・インスティテュート",
     "description": "通訳・翻訳養成学校で、キャリアにつながるプロの語学力を養成しています。英語・中国語の通訳者および翻訳者養成コース、中国語ビジネスコミュニケーションコースを提供。レギュラーコース（4～5ヵ月）、短期集中コース（最短1日から）、eラーニングコースから選択可能。講師からの指導と学習サポート、キャリアサポートを備えています。",
     "skill_genre": [
       "language"
@@ -7649,7 +7871,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-issnet",
     "created_at": "2026-09-10T20:17:26.217Z",
-    "updated_at": "2026-10-02T07:47:06.636Z",
+    "updated_at": "2026-10-02T14:15:32.044Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -7882,8 +8104,14 @@
     ],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
-    "features": [],
+    "career_support": true,
+    "features": [
+      "質問対応・個別相談・模試後の振り返り・面接対策など、合格までの支援体制が整っている",
+      "同じ目標を持つ受講生同士が学習を通じて一緒に頑張れる学習空間が提供されている",
+      "対面・オンライン両方で講師に気軽に相談できる環境がある",
+      "教務スタッフによる試験情報や相談へのフォローアップが受けられる",
+      "公務員試験、教員採用試験、各種国家試験、学校受験など多様な試験対策講座を提供している"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -7895,7 +8123,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-tokyo-ac",
     "created_at": "2026-09-10T20:18:18.005Z",
-    "updated_at": "2026-10-02T07:47:29.317Z",
+    "updated_at": "2026-10-02T14:16:04.595Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -8203,7 +8431,7 @@
     "id": "fullme",
     "school_name": "Fullme（フルミー）",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "デザインに特化したオンラインスクール。プロのデザイナーの制作と思考を辿りながら学べる授業で、手を動かすことで自然と知識と技術が深まり、表現力だけでなく仕事に必要な思考力を身に付けられます。未経験からでも学習可能で、オンデマンド型の動画授業で自分のペースで学べます。",
     "skill_genre": [
       "webdesign"
     ],
@@ -8213,18 +8441,85 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "29,800円〜",
+      "min_yen": 29800,
       "scope": "top_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "はじめてのデザイン",
+        "amount": 29800,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 初級コース",
+        "amount": 55000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 中級コース",
+        "amount": 75000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 上級コース",
+        "amount": 85000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン セットコース",
+        "amount": 172000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 添削コース",
+        "amount": 120000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 添削コース ＜前半＞",
+        "amount": 66000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "WEBデザイン 添削コース＜後半＞",
+        "amount": 66000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Illustrator 初級コース",
+        "amount": 34000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "Photoshop 初級コース",
+        "amount": 39600,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
-    "features": [],
+    "career_support": true,
+    "features": [
+      "オンデマンド型動画授業で自分のペースで学習可能",
+      "現役デザイナーによる教材制作と課題添削",
+      "実務を想定した様々なトンマナの課題教材",
+      "受講生限定のセミナーやコンペを不定期開催",
+      "ポートフォリオ制作方法の学習で転職や営業に対応"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -8235,7 +8530,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-fullme",
     "created_at": "2026-09-10T20:19:36.802Z",
-    "updated_at": "2026-09-10T20:19:36.802Z",
+    "updated_at": "2026-10-02T14:17:07.667Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -8460,7 +8755,9 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Webマーケター"
+    ],
     "price": {
       "display": "528,000円〜",
       "min_yen": 528000,
@@ -8509,7 +8806,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sizebook",
     "created_at": "2026-09-10T20:20:31.575Z",
-    "updated_at": "2026-09-10T20:20:31.575Z",
+    "updated_at": "2026-10-02T14:17:52.308Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -8706,7 +9003,7 @@
   {
     "id": "sat-co",
     "school_name": "SAT",
-    "official_name": null,
+    "official_name": "SAT株式会社",
     "description": "現場・技術系資格の専門スクール。建築物環境衛生管理技術者、危険物取扱者などの設備系資格、建築施工管理技士などの施工管理系資格、電験3種などの電気系資格、職長・安全衛生責任者などの安全衛生教育、およびスキルアップ講座を幅広く提供。Eラーニング形式での通信講座が中心。",
     "skill_genre": [
       "certification"
@@ -8729,7 +9026,11 @@
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "フルカラーで薄いオリジナルテキスト（施工管理士の場合、他社より1/3のページ数）",
+      "細分化された単元ごとの講義動画（スマホ・パソコンでいつでも視聴可能）",
+      "メール対応24時間受付の無料講師サポート"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -8742,7 +9043,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sat-co",
     "created_at": "2026-09-11T20:17:12.556Z",
-    "updated_at": "2026-10-02T07:49:04.469Z",
+    "updated_at": "2026-10-02T14:18:38.737Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -8825,7 +9126,7 @@
   {
     "id": "ias",
     "school_name": "地域開発研究所",
-    "official_name": null,
+    "official_name": "一般財団法人 地域開発研究所",
     "description": "昭和40年に建設省（現国土交通省）より財団法人として認可されたスクール。施工管理技士試験（土木、建築、管工事、電気工事、電気通信工事）の受検講習会と参考書の提供を行っており、頻出ポイントを厳選した講習会で効率的な合格をサポートしています。Web講座と会場講座の選択が可能で、組み合わせも可能な受講形態を提供しています。",
     "skill_genre": [
       "certification"
@@ -8897,7 +9198,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ias",
     "created_at": "2026-09-11T20:17:48.015Z",
-    "updated_at": "2026-09-11T20:17:48.015Z",
+    "updated_at": "2026-10-02T14:18:59.988Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -8958,7 +9259,7 @@
   {
     "id": "recurrent-2",
     "school_name": "リスキル",
-    "official_name": null,
+    "official_name": "株式会社リスキル",
     "description": "1094種類の豊富な研修を提供する企業研修・社員研修サービス。一社研修、公開講座、動画講座の3つの形式で、階層別・テーマ別・職種別・業界別・IT研修など幅広いカリキュラムを備えている。講師評価は5段階で平均4.79と高い水準を維持している。",
     "skill_genre": [
       "programming",
@@ -8970,23 +9271,23 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "950円〜",
+      "min_yen": 950,
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
-        "label": "一社研修",
+        "label": "一社研修（ビジネス研修）",
         "amount": 15000,
         "duration": null,
-        "kind": null
+        "kind": "total"
       },
       {
         "label": "公開講座",
         "amount": 950,
         "duration": null,
-        "kind": null
+        "kind": "total"
       }
     ],
     "format": "online",
@@ -9013,7 +9314,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-recurrent-2",
     "created_at": "2026-09-11T20:18:40.359Z",
-    "updated_at": "2026-10-02T07:49:38.105Z",
+    "updated_at": "2026-10-02T14:19:20.105Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -9033,7 +9334,11 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Webディレクター",
+      "SEリーダー",
+      "SEマネージャー"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -9045,7 +9350,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "開発経験10年以上の講師による直接指導",
       "1名から大人数まで柔軟に対応可能",
@@ -9063,7 +9368,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-it-skill-academy",
     "created_at": "2026-09-11T20:18:49.568Z",
-    "updated_at": "2026-09-11T20:18:49.568Z",
+    "updated_at": "2026-10-02T14:19:28.637Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -9081,7 +9386,9 @@
       "freelance"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "動画クリエイター"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -9112,7 +9419,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-mirainnove",
     "created_at": "2026-09-11T20:18:57.291Z",
-    "updated_at": "2026-10-02T07:50:07.150Z",
+    "updated_at": "2026-10-02T14:19:40.482Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -9378,8 +9685,8 @@
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
-    "career_support": false,
+    "subsidy_eligible": true,
+    "career_support": true,
     "features": [
       "ITの知識ゼロから始められる",
       "Claude Codeの実践習得",
@@ -9398,7 +9705,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-horiemon",
     "created_at": "2026-09-11T20:19:48.350Z",
-    "updated_at": "2026-09-11T20:19:48.350Z",
+    "updated_at": "2026-10-02T14:21:06.263Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -9484,7 +9791,7 @@
   {
     "id": "gaba",
     "school_name": "Gabaマンツーマン英会話",
-    "official_name": null,
+    "official_name": "株式会社GABA",
     "description": "1995年の創業以来、マンツーマンに特化したレッスンを提供する英会話スクール。レッスン日時や講師を自由に選べ、一人ひとりに合ったレッスンで上達を実感できる。質の高い多彩なインストラクター、効率的学習をサポートする教材・ツール、定期的なカウンセリングによるサポート、柔軟な予約システムが特徴。",
     "skill_genre": [
       "language"
@@ -9554,7 +9861,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gaba",
     "created_at": "2026-09-11T20:20:26.484Z",
-    "updated_at": "2026-09-11T20:20:26.484Z",
+    "updated_at": "2026-10-02T14:21:26.966Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -9563,7 +9870,7 @@
   {
     "id": "strail-english",
     "school_name": "STRAIL",
-    "official_name": null,
+    "official_name": "株式会社スタディーハッカー",
     "description": "1日1.5時間の効率重視学習で、専属コンサルタントが科学的根拠に基づいて課題を分析し、個別最適化された学習プランをサポート。ビジネス英語とTOEIC®L&Rに特化したコース、独自の課題発見型英会話で実践的な会話力も強化。オンラインと通学のハイブリッド受講に対応。",
     "skill_genre": [
       "language"
@@ -9573,7 +9880,10 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "国際渉外担当",
+      "海外赴任"
+    ],
     "price": {
       "display": "336,600円〜",
       "min_yen": 336600,
@@ -9650,7 +9960,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-strail-english",
     "created_at": "2026-09-11T20:20:42.747Z",
-    "updated_at": "2026-09-11T20:20:42.747Z",
+    "updated_at": "2026-10-02T14:21:37.515Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -10053,7 +10363,7 @@
   {
     "id": "ninjacode",
     "school_name": "忍者CODE",
-    "official_name": null,
+    "official_name": "株式会社ラグザス・クリエイト",
     "description": "Web制作・Webデザイン・プログラミング・動画編集などを学べるオンラインスクール。未経験から稼げるクリエイターを目指すため、基礎知識から実践的な課題制作まで、プロジェクト方式のカリキュラムを採用。現役クリエイターがメンターとなり、チャットサポートや個別キャリア相談など充実したサポート体制を提供。AI活用方法も学習に組み込まれている。",
     "skill_genre": [
       "programming",
@@ -10169,7 +10479,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ninjacode",
     "created_at": "2026-09-12T20:16:20.104Z",
-    "updated_at": "2026-09-12T20:16:20.104Z",
+    "updated_at": "2026-10-02T14:22:41.220Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -10188,7 +10498,9 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "エンジニア"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -10223,7 +10535,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-geek-salon",
     "created_at": "2026-09-12T20:16:27.839Z",
-    "updated_at": "2026-09-12T20:16:27.839Z",
+    "updated_at": "2026-10-02T14:22:52.184Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -10232,7 +10544,7 @@
   {
     "id": "zero-school",
     "school_name": "ゼロスク",
-    "official_name": null,
+    "official_name": "Zeroen School",
     "description": "現役エンジニアが実際に現場で実装した開発プロセスをカリキュラムの基盤としており、実践力が身に付く。IT業界の人材不足が進む中で、未経験からエンジニアを目指す方を支援。卒業生のほとんどが企業から内定を得ている。短期間集中でプログラミングを学べるスクール。",
     "skill_genre": [
       "programming"
@@ -10241,7 +10553,10 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "プログラマー",
+      "ITエンジニア"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -10274,7 +10589,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-zero-school",
     "created_at": "2026-09-12T20:16:48.507Z",
-    "updated_at": "2026-10-02T07:52:21.291Z",
+    "updated_at": "2026-10-02T14:23:08.483Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -10331,7 +10646,7 @@
   {
     "id": "xdesign-academy",
     "school_name": "Xデザイン学校",
-    "official_name": null,
+    "official_name": "株式会社Xデザイン研究所",
     "description": "社会をよくするデザインの学びと研究する楽しさを追求する、社会人のための「未来の学校体験」。人間中心設計、UXデザイン、デザイン思考、ビジネスデザイン、ビジョンデザインなどを基礎としながら、デザインを活用する社会に向けての学びと研究を推進。既に1000人以上の社会人が学んでいる。オンラインで自宅から全国から受講でき、デザイン教育を受けていない人でも受講できる。",
     "skill_genre": [
       "uiux"
@@ -10379,7 +10694,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-xdesign-academy",
     "created_at": "2026-09-12T20:17:30.269Z",
-    "updated_at": "2026-10-02T07:53:03.145Z",
+    "updated_at": "2026-10-02T14:23:58.265Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -10472,7 +10787,7 @@
     "area": [],
     "area_source": "detail_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "子連れOK対応で子育てママが通学可能",
       "1ヶ月完結型のカリキュラム",
@@ -10490,7 +10805,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-famm",
     "created_at": "2026-09-12T20:18:16.658Z",
-    "updated_at": "2026-09-12T20:18:16.658Z",
+    "updated_at": "2026-10-02T14:24:22.595Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -10568,7 +10883,12 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "マーケティングディレクター",
+      "広告プランナー",
+      "商品企画",
+      "営業"
+    ],
     "price": {
       "display": "327,800円",
       "min_yen": 327800,
@@ -10616,7 +10936,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-merc-education",
     "created_at": "2026-09-12T20:18:48.271Z",
-    "updated_at": "2026-09-12T20:18:48.271Z",
+    "updated_at": "2026-10-02T14:24:45.190Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -11684,17 +12004,17 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "3,200円",
+      "min_yen": 3200,
+      "scope": "top_page",
+      "kind": "total"
     },
     "plans": [
       {
         "label": "来校マンツーマン",
         "amount": 3200,
         "duration": "50分",
-        "kind": null
+        "kind": "total"
       }
     ],
     "format": "both",
@@ -11721,7 +12041,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gls-vietnam",
     "created_at": "2026-09-13T20:17:37.761Z",
-    "updated_at": "2026-10-02T07:58:33.337Z",
+    "updated_at": "2026-10-02T14:28:05.175Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -11998,7 +12318,7 @@
   {
     "id": "esports-english",
     "school_name": "eスポーツ英会話eスピ！",
-    "official_name": null,
+    "official_name": "ゲシピ株式会社",
     "description": "eスポーツをテーマにしたオンライン英会話スクール。フォートナイト、マインクラフト、ロブロックスなどのゲームを使用しながら、英語での即時応答力や「英語脳」を養成する。初級から上級まで段階的に習得でき、中学英語対応カリキュラムも用意されている。",
     "skill_genre": [
       "language"
@@ -12044,7 +12364,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-esports-english",
     "created_at": "2026-09-15T09:37:21.331Z",
-    "updated_at": "2026-09-15T09:37:21.331Z",
+    "updated_at": "2026-10-02T14:28:57.597Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -12231,7 +12551,7 @@
   {
     "id": "yosca",
     "school_name": "あなたのライターキャリア講座",
-    "official_name": null,
+    "official_name": "株式会社YOSCA",
     "description": "記事作成代行会社YOSCAが提供するライター養成講座。思考力を磨くオリジナルカリキュラム「LOPREQ」を採用し、4つの基礎思考力（LOGIC、PLOT、REACTION、QUESTION）を体系的に学習。プロの編集スタッフによる5回の添削課題と1年間のLINEサポートを通じて、未経験からライターの実践スキルを習得できます。",
     "skill_genre": [
       "web_marketing"
@@ -12288,7 +12608,7 @@
     "cta_type": "affiliate",
     "click_tracking_id": "click-yosca",
     "created_at": "2026-09-15T09:39:09.583Z",
-    "updated_at": "2026-09-15T09:39:09.583Z",
+    "updated_at": "2026-10-02T14:29:31.020Z",
     "status": "active",
     "source": "a8",
     "source_note": "提携案件のExcelから取り込み。掲載内容は公式サイト本文から抽出・照合済み",
@@ -12587,12 +12907,25 @@
       "Webマーケター"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "165,000円",
+      "min_yen": 165000,
       "scope": "top_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "ウルクスWEBマーケタープログラム",
+        "amount": 165000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "入会金",
+        "amount": 55000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -12612,7 +12945,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ulucus",
     "created_at": "2026-09-15T20:19:04.227Z",
-    "updated_at": "2026-09-15T20:19:04.227Z",
+    "updated_at": "2026-10-02T14:30:35.878Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -12803,7 +13136,7 @@
   {
     "id": "sankei",
     "school_name": "産経オンライン英会話Plus",
-    "official_name": null,
+    "official_name": "産経ヒューマンラーニング株式会社",
     "description": "フィリピン人講師・ネイティブ講師・日本人講師によるオンライン英会話サービス。日常英会話からビジネス英会話、TOEIC対策、英検二次試験対策など2,800種類以上の教材を提供。コイン制で柔軟に受講でき、朝5時～深夜25時に対応。家族でアカウント共有可能で月額4,620円から。AI英語日記「えいログ」やリスニング学習アプリ「レシピー」の追加も可能。",
     "skill_genre": [
       "language"
@@ -12868,7 +13201,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sankei",
     "created_at": "2026-09-15T20:20:33.863Z",
-    "updated_at": "2026-09-15T20:20:33.863Z",
+    "updated_at": "2026-10-02T14:31:26.775Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -12974,7 +13307,7 @@
   {
     "id": "jtc-web",
     "school_name": "日本心理カウンセラー養成学院",
-    "official_name": null,
+    "official_name": "NPO法人(特定非営利活動法人)日本カウンセリング普及協会",
     "description": "心理カウンセラー養成教育専門機関として約20年の実績を持つ学院。NPO法人日本カウンセリング普及協会の指定学院。心理学の知識と実践的なカウンセリング技術を、少人数制・実践カリキュラムで習得できます。",
     "skill_genre": [
       "certification"
@@ -13068,7 +13401,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-jtc-web",
     "created_at": "2026-09-15T20:21:25.303Z",
-    "updated_at": "2026-09-15T20:21:25.303Z",
+    "updated_at": "2026-10-02T14:31:53.616Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -13267,7 +13600,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "ブラウザ上でコードを書きながら学習できる実践的な環境",
       "イラスト中心のスライド学習で初心者も理解しやすい",
@@ -13287,7 +13620,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-prog-8",
     "created_at": "2026-09-15T20:22:06.584Z",
-    "updated_at": "2026-10-02T08:02:37.687Z",
+    "updated_at": "2026-10-02T14:32:26.210Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -13297,7 +13630,7 @@
     "id": "paiza",
     "school_name": "paizaラーニング",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "動画と演習課題を通じて、Pythonなどのプログラミング言語やAI、Webサイト開発スキルを習得できるラーニングプラットフォーム。未経験から経験者まで多くの人に学ばれており、個人向けプランと法人向けプランが用意されています。",
     "skill_genre": [
       "programming"
     ],
@@ -13349,7 +13682,13 @@
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "動画と演習課題で段階的に学習できる",
+      "Python、Java、HTMLなど複数のプログラミング言語に対応",
+      "学習パスで目的に応じたカリキュラムを選択可能",
+      "一部講座は無料で利用可能",
+      "スキルランク判定機能を搭載"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -13362,7 +13701,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-paiza",
     "created_at": "2026-09-15T20:22:11.470Z",
-    "updated_at": "2026-10-02T08:02:56.194Z",
+    "updated_at": "2026-10-02T14:32:39.695Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -13568,7 +13907,7 @@
   {
     "id": "knowledgewing",
     "school_name": "富士通ラーニングメディア",
-    "official_name": null,
+    "official_name": "株式会社フジスマートワーク",
     "description": "UXライティングについて、ユーザー中心の考え方や実践的なテクニックを学ぶ講座です。効果を上げた最新事例をもとにライティングを体験し、センスに頼らない技術によって「良いUXライティング」と「悪いライティング」の判断基準を身につけ、日常業務で実践できることを目指します。",
     "skill_genre": [
       "webdesign"
@@ -13612,7 +13951,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-knowledgewing",
     "created_at": "2026-09-15T20:23:33.553Z",
-    "updated_at": "2026-09-15T20:23:33.553Z",
+    "updated_at": "2026-10-02T14:33:14.356Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -13897,7 +14236,9 @@
       "certification_itself"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "通訳案内士"
+    ],
     "price": {
       "display": "月額4,125円〜",
       "min_yen": 4125,
@@ -13946,7 +14287,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-spanish-online",
     "created_at": "2026-09-16T20:17:22.062Z",
-    "updated_at": "2026-09-16T20:17:22.062Z",
+    "updated_at": "2026-10-02T14:33:45.213Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14062,7 +14403,9 @@
       "career_change"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "翻訳者"
+    ],
     "price": {
       "display": "385,000円",
       "min_yen": 385000,
@@ -14102,7 +14445,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-fellow-academy",
     "created_at": "2026-09-16T20:18:05.648Z",
-    "updated_at": "2026-10-02T08:04:09.083Z",
+    "updated_at": "2026-10-02T14:34:33.633Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14401,7 +14744,7 @@
   {
     "id": "englead",
     "school_name": "ENGLEAD（イングリード）",
-    "official_name": null,
+    "official_name": "株式会社Morrow World",
     "description": "目標・レベル・生活スタイルに合わせて43万通り以上の組み合わせからカリキュラムを設計し、毎週のオンラインカウンセリングとLINEを使った日々のコーチングで効率的な学習をサポートします。",
     "skill_genre": [
       "language"
@@ -14451,7 +14794,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-englead",
     "created_at": "2026-09-17T20:18:25.923Z",
-    "updated_at": "2026-09-17T20:18:25.923Z",
+    "updated_at": "2026-10-02T14:35:43.044Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14461,7 +14804,7 @@
     "id": "90english",
     "school_name": "90 English",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "忙しいビジネスパーソン向けのオンライン英語スクール。専属の日本人コーチと週3回30分のレッスン、平日毎日のLINE添削、言語学に基づいた学習メソッドを特徴とする。6ヶ月の学習でVERSANT®️で着実なスコアアップを実現。",
     "skill_genre": [
       "language"
     ],
@@ -14471,18 +14814,37 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "660,000円〜",
+      "min_yen": 660000,
+      "scope": "top_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "6ヶ月プラン",
+        "amount": 660000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "1年プラン",
+        "amount": 1188000,
+        "duration": "1年",
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
-    "subsidy_eligible": false,
+    "subsidy_eligible": true,
     "career_support": false,
-    "features": [],
+    "features": [
+      "専属の日本人バイリンガルコーチによるマンツーマンレッスン（週3回30分）",
+      "平日毎日のLINE添削サービス（音声・英作文）",
+      "100本以上のオリジナル動画教材",
+      "言語学に基づく聴く・話す特化メソッド",
+      "習慣化をサポートする学習定着サポーター"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -14494,7 +14856,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-90english",
     "created_at": "2026-09-17T20:18:28.624Z",
-    "updated_at": "2026-10-02T08:06:18.206Z",
+    "updated_at": "2026-10-02T14:36:26.731Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -14912,7 +15274,7 @@
     "id": "myweb-official",
     "school_name": "マイウェブスクール",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "未経験からWEBデザイナーを目指す人向けのスクール。Illustrator、Photoshop、Figma、XDなどのデザインツールや、HTML・CSS・WordPress によるHP制作を学べる。制作会社が母体で、実案件の相談やデザイン添削、集客ノウハウの指導を含むサポートを提供。1対1の体験コンサルを実施し、Discord上で365日サポート対応。",
     "skill_genre": [
       "webdesign"
     ],
@@ -14920,7 +15282,9 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "WEBデザイナー"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -14932,8 +15296,14 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
-    "features": [],
+    "career_support": true,
+    "features": [
+      "制作会社8年分の集客ノウハウを学べる",
+      "Discord で専属サポーターによる365日サポート",
+      "1対1の体験コンサルで個別相談が可能",
+      "Figma、Photoshop、Illustratorなど複数のデザインツールを学習",
+      "実案件の相談とデザイン添削を受けられる"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -14944,7 +15314,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-myweb-official",
     "created_at": "2026-09-17T20:21:30.460Z",
-    "updated_at": "2026-09-17T20:21:30.460Z",
+    "updated_at": "2026-10-02T14:37:51.911Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -15217,7 +15587,7 @@
     "id": "presence",
     "school_name": "PRESENCE（プレゼンス）",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "マンツーマンコースとグループコーチングコースを提供。TOEIC、TOEFL、英会話、英検、中国語など複数のコース展開。",
     "skill_genre": [
       "language"
     ],
@@ -15238,7 +15608,12 @@
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "マンツーマンコースと少人数制グループコーチングコースの2つの受講形式",
+      "短期間(2ヶ月)での英語スコアアップに対応",
+      "英語コーチング・アワード2024年TOEIC部門大賞受賞",
+      "TOEIC、TOEFL、英会話、英検、中国語など複数の言語対応"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -15250,7 +15625,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-presence",
     "created_at": "2026-09-18T20:17:44.133Z",
-    "updated_at": "2026-10-02T08:09:29.328Z",
+    "updated_at": "2026-10-02T14:38:56.806Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -15780,7 +16155,9 @@
       "side_job"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Web広告運用者"
+    ],
     "price": {
       "display": "165,000円〜",
       "min_yen": 165000,
@@ -15853,7 +16230,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-imacala",
     "created_at": "2026-09-18T20:20:31.544Z",
-    "updated_at": "2026-09-18T20:20:31.544Z",
+    "updated_at": "2026-10-02T14:41:05.380Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -15961,7 +16338,7 @@
   {
     "id": "ai-kenkyujo",
     "school_name": "AI研究所",
-    "official_name": null,
+    "official_name": "株式会社VOST",
     "description": "AIの基礎から実務応用まで、幅広いスキルを習得できる講座・セミナーを提供しているAI技術学習サービス。E資格やG検定などの資格対策から、生成AI、ChatGPT、Pythonなどの実践的なプログラミング技能、データサイエンス、DXビジネススキルまで、多様なコースを用意。最短2日間から最短4日間の短期集中講座で、初心者から経験者まで対応している。",
     "skill_genre": [
       "programming",
@@ -15973,7 +16350,10 @@
       "certification_itself"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "AIエンジニア",
+      "データサイエンティスト"
+    ],
     "price": {
       "display": "140,800円〜",
       "min_yen": 140800,
@@ -16024,7 +16404,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ai-kenkyujo",
     "created_at": "2026-09-18T20:21:16.511Z",
-    "updated_at": "2026-09-18T20:21:16.511Z",
+    "updated_at": "2026-10-02T14:41:37.631Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -16319,7 +16699,12 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "バックエンドエンジニア",
+      "フロントエンドエンジニア",
+      "Railsエンジニア",
+      "Webエンジニア"
+    ],
     "price": {
       "display": "786,720円",
       "min_yen": 786720,
@@ -16350,7 +16735,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": true,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "現役ソフトウェアエンジニアがメンターとして学習をサポート",
       "実務を想定したチーム開発を体験できる",
@@ -16368,7 +16753,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-fjord",
     "created_at": "2026-09-19T20:15:35.508Z",
-    "updated_at": "2026-09-19T20:15:35.508Z",
+    "updated_at": "2026-10-02T14:42:20.197Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -16378,7 +16763,7 @@
     "id": "sejuku-2",
     "school_name": "侍テラコヤ（SAMURAI TERAKOYA）",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "プログラミングやWebサイト制作を学習できるオンラインスクール。未経験からエンジニア転職を目指すための学習環境を提供し、作りながら学べる実践的なカリキュラムで段階的にスキルを習得できます。",
     "skill_genre": [
       "programming"
     ],
@@ -16386,20 +16771,42 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "iOSエンジニア",
+      "XRエンジニア",
+      "フリーランスエンジニア"
+    ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "月額2,980円",
+      "min_yen": 2980,
       "scope": "top_page",
-      "kind": null
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "フリープラン",
+        "amount": 0,
+        "duration": null,
+        "kind": null
+      },
+      {
+        "label": "有料プラン",
+        "amount": 2980,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
-    "features": [],
+    "career_support": true,
+    "features": [
+      "200種類以上の実践型教材でプログラミング学習から実務的なWebアプリ開発まで対応",
+      "現役エンジニアとのマンツーマンレッスンを月1回以上無料で提供（チケット制で追加受講可能）",
+      "学習記録・課題機能でスキルを『わかる』から『できる』に定着させるアウトプット環境",
+      "エンジニア転職ガイダンス、職務経歴書作成サポート、面接対策サポートなど転職支援を実施（20～31歳対象）"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -16410,7 +16817,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-sejuku-2",
     "created_at": "2026-09-19T20:15:37.230Z",
-    "updated_at": "2026-09-19T20:15:37.230Z",
+    "updated_at": "2026-10-02T14:42:35.843Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -16887,7 +17294,7 @@
   {
     "id": "dga",
     "school_name": "ディジタルグロースアカデミア",
-    "official_name": null,
+    "official_name": "株式会社ディジタルグロースアカデミア",
     "description": "DX人材育成に特化したプラットフォーム。研修・eラーニング・コンサルティングを通じて、組織のデジタル変革を支援。経験豊富な講師による独自プログラムで、知識習得から実践的な気付きと自己成長へ導く。業界特化型の教材開発が可能で、DXリテラシー標準に基づいた高鮮度の学習環境を提供。",
     "skill_genre": [
       "genai_dx"
@@ -16928,7 +17335,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-dga",
     "created_at": "2026-09-20T20:15:16.809Z",
-    "updated_at": "2026-10-02T08:14:32.495Z",
+    "updated_at": "2026-10-02T14:44:27.494Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(UI/UXデザイン)で発見・実在照合済み",
@@ -17135,7 +17542,7 @@
   {
     "id": "asianetclub",
     "school_name": "語学スクールANC",
-    "official_name": null,
+    "official_name": "トランシールズジャパン株式会社",
     "description": "大阪市北区にある多言語対応の語学スクール。22言語のマンツーマンプライベートレッスンを提供。2006年開校で約20年の実績。レッスンは2ヶ月4回単位で、日時を自由に選択でき、駅近（西中島南方駅徒歩1分）で通いやすい環境。講師派遣、翻訳、通訳などの法人向けサービスも展開。",
     "skill_genre": [
       "language"
@@ -17177,7 +17584,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-asianetclub",
     "created_at": "2026-09-20T20:16:12.211Z",
-    "updated_at": "2026-10-02T07:01:43.482Z",
+    "updated_at": "2026-10-02T14:45:17.300Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -17187,7 +17594,7 @@
   {
     "id": "gravity-koumuin",
     "school_name": "Gravity",
-    "official_name": null,
+    "official_name": "公務員試験「社会人採用（民間経験者採用）」専門予備校Gravity",
     "description": "公務員試験の「社会人採用（民間経験者採用）」に特化した予備校。講師は全員が元公務員で、複数の公務員試験合格者。社会人が仕事や家庭と両立させながら試験対策を進めるためのコーチング型指導を提供。論文・面接対策に注力し、具体的で分かりやすい指導が特徴。",
     "skill_genre": [
       "certification"
@@ -17229,7 +17636,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-gravity-koumuin",
     "created_at": "2026-09-20T20:16:35.586Z",
-    "updated_at": "2026-10-02T08:15:49.224Z",
+    "updated_at": "2026-10-02T14:45:31.516Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
@@ -17308,7 +17715,7 @@
   {
     "id": "arbis",
     "school_name": "あーとびデザインスクール",
-    "official_name": null,
+    "official_name": "アービス株式会社",
     "description": "京都のデザインスクール。少人数・プライベートレッスン形式で、Webデザイン・グラフィック・動画制作・デジタルイラスト・絵画など幅広く学べます。Photoshop、Illustrator、Premiere Pro、DaVinci Resolveといったデザインツールから、Claude CodeやChatGPT、Midjourneyなどの生成AIまで対応。デッサンや水彩、漫画・アニメーション等も併設の絵画教室で学習可能。フィボナッチデザインを取り入れた美しいレイアウト習得が特徴です。",
     "skill_genre": [
       "webdesign",
@@ -17320,7 +17727,9 @@
       "hobby"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "Webデザイナー"
+    ],
     "price": {
       "display": "月額4,950円",
       "min_yen": 4950,
@@ -17356,7 +17765,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-arbis",
     "created_at": "2026-09-21T20:14:33.507Z",
-    "updated_at": "2026-09-21T20:14:33.507Z",
+    "updated_at": "2026-10-02T14:45:55.279Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -17516,7 +17925,7 @@
       "東京都"
     ],
     "area_source": "top_page",
-    "subsidy_eligible": false,
+    "subsidy_eligible": true,
     "career_support": false,
     "features": [
       "印刷会社の研修部署が立ち上げたスクール",
@@ -17533,7 +17942,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-vanfu-vts",
     "created_at": "2026-09-21T20:14:46.208Z",
-    "updated_at": "2026-09-21T20:14:46.208Z",
+    "updated_at": "2026-10-02T14:46:21.784Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -18303,7 +18712,7 @@
     "id": "wonderful-wife",
     "school_name": "ワンダフルムービー",
     "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "公式サイトでは「募集は終了しました」と表示されており、現在は講座を提供していません。詳細情報の掲載がないため、サービス内容を特定できません。",
     "skill_genre": [
       "video_editing"
     ],
@@ -18386,7 +18795,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-wonderful-wife",
     "created_at": "2026-09-23T20:14:33.948Z",
-    "updated_at": "2026-10-02T08:19:04.582Z",
+    "updated_at": "2026-10-02T14:52:10.184Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -18965,7 +19374,7 @@
   {
     "id": "nippon-programming-school",
     "school_name": "日本プログラミングスクール",
-    "official_name": null,
+    "official_name": "株式会社イーテクノロジー",
     "description": "1998年開校の完全個別指導プログラミングスクール。生成AI時代に対応できる技術者育成を目的とし、単なるコード作成ではなく「理解する力」「設計力」「デバッグ力」の養成に重点を置く。C言語の基礎から複数言語（Java、C#、Python等）まで学習可能。実務経験豊富な講師による1対1指導とコードレビューを実施。",
     "skill_genre": [
       "programming"
@@ -19039,7 +19448,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-nippon-programming-school",
     "created_at": "2026-09-24T20:15:07.412Z",
-    "updated_at": "2026-09-24T20:15:07.412Z",
+    "updated_at": "2026-10-02T14:54:19.051Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -19776,7 +20185,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "プロの講師による専属徹底サポート",
       "1,300名を超えるスクール内限定コミュニティへのアクセス",
@@ -19796,7 +20205,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-allinmotions",
     "created_at": "2026-09-25T20:16:06.961Z",
-    "updated_at": "2026-10-02T08:23:55.252Z",
+    "updated_at": "2026-10-02T14:56:25.600Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
@@ -19917,12 +20326,61 @@
     "target_level": "novice",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "149,800円〜",
+      "min_yen": 149800,
+      "scope": "top_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "50日集中",
+        "amount": 149800,
+        "duration": "50日",
+        "kind": "total"
+      },
+      {
+        "label": "3ヶ月集中",
+        "amount": 249800,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "6ヶ月集中",
+        "amount": 398000,
+        "duration": "6ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "月4回50分",
+        "amount": 16000,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月8回50分",
+        "amount": 30400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月12回50分",
+        "amount": 43200,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プレミアム伴走プラン",
+        "amount": 6800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "My音声ファイル（週1回レッスン）",
+        "amount": 990,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -19947,7 +20405,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ryotoeikaiwa",
     "created_at": "2026-09-26T20:11:53.361Z",
-    "updated_at": "2026-10-02T08:25:07.096Z",
+    "updated_at": "2026-10-02T14:56:59.312Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -20648,7 +21106,11 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "コンサルタント",
+      "クリエイター",
+      "経営者"
+    ],
     "price": {
       "display": "49,500円",
       "min_yen": 49500,
@@ -20684,7 +21146,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-brand-planner",
     "created_at": "2026-09-28T20:15:09.275Z",
-    "updated_at": "2026-09-28T20:15:09.275Z",
+    "updated_at": "2026-10-02T14:59:40.284Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -20693,7 +21155,7 @@
   {
     "id": "raxus-ai-school",
     "school_name": "RAXUS AIスクール",
-    "official_name": null,
+    "official_name": "株式会社ラグザス・クリエイト",
     "description": "生成AIを中心としたビジネススキル習得を目的としたオンラインスクール。初心者向けの基礎学習から、業務改善、マーケティング、プログラミング、データサイエンスまで8つのコースを提供。動画教材とメンター制度を活用した実務的なカリキュラムが特徴。",
     "skill_genre": [
       "genai_dx",
@@ -20836,7 +21298,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-raxus-ai-school",
     "created_at": "2026-09-28T20:15:21.167Z",
-    "updated_at": "2026-09-28T20:15:21.167Z",
+    "updated_at": "2026-10-02T14:59:58.488Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
@@ -21368,7 +21830,10 @@
       "current_job_skillup"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "SNS運用代行",
+      "インフルエンサー"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -21398,7 +21863,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-ma-sonomama",
     "created_at": "2026-09-29T20:15:18.188Z",
-    "updated_at": "2026-09-29T20:15:18.188Z",
+    "updated_at": "2026-10-02T15:01:08.696Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
@@ -21463,7 +21928,9 @@
       "certification_itself"
     ],
     "target_level": "beginner",
-    "career_paths": [],
+    "career_paths": [
+      "キャビンクルー"
+    ],
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
@@ -21495,7 +21962,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-williesenglish",
     "created_at": "2026-09-30T20:17:19.969Z",
-    "updated_at": "2026-10-02T08:28:17.232Z",
+    "updated_at": "2026-10-02T15:01:33.422Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -21504,8 +21971,8 @@
   {
     "id": "eikencoach",
     "school_name": "英検コーチ",
-    "official_name": null,
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "official_name": "株式会社スタディチェーン",
+    "description": "英検対策のオンライン個別コーチング。英検合格者である専属コンサルタントが、4技能の弱点を分析し、個別のカリキュラムを作成。ライティング添削、シャドーイング添削、毎日のフィードバック、週1回の面談により、短期間での英検合格を支援する。",
     "skill_genre": [
       "language"
     ],
@@ -21515,18 +21982,30 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "月額39,800円",
+      "min_yen": 39800,
       "scope": "top_page",
-      "kind": null
+      "kind": "monthly"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "ライトコース",
+        "amount": 39800,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "英検合格者の専属コンサルタントによるマンツーマン指導",
+      "ライティングとリスニングに重点を置いた個別カリキュラム",
+      "毎日のチャットフィードバックと質問対応",
+      "週1回のチェックテストと勉強法指導面談"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -21537,7 +22016,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-eikencoach",
     "created_at": "2026-09-30T20:17:22.217Z",
-    "updated_at": "2026-09-30T20:17:22.217Z",
+    "updated_at": "2026-10-02T15:01:48.028Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
@@ -21547,7 +22026,7 @@
     "id": "eiken",
     "school_name": "英検公式通信講座",
     "official_name": "公益財団法人日本英語検定協会",
-    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "description": "文部科学省認定社会通信教育の「実用英語講座」は、英語の基本4技能である「聞く、話す、読む、書く」力を1週間単位でまんべんなく学べる、3か月間の短期集中総合講座です。英検の級レベル別にクラスが分かれており、映像講義とテキスト、CDを使用した学習と3回の英作文添削指導が提供されます。",
     "skill_genre": [
       "language"
     ],
@@ -21557,18 +22036,60 @@
     "target_level": "beginner",
     "career_paths": [],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
-      "scope": "detail_page",
-      "kind": null
+      "display": "13,200円〜",
+      "min_yen": 13200,
+      "scope": "top_page",
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "実用英語講座 1級クラス",
+        "amount": 29700,
+        "duration": "3か月",
+        "kind": "total"
+      },
+      {
+        "label": "実用英語講座 準1級クラス",
+        "amount": 26400,
+        "duration": "3か月",
+        "kind": "total"
+      },
+      {
+        "label": "実用英語講座 2級クラス",
+        "amount": 23100,
+        "duration": "3か月",
+        "kind": "total"
+      },
+      {
+        "label": "実用英語講座 準2級クラス",
+        "amount": 19800,
+        "duration": "3か月",
+        "kind": "total"
+      },
+      {
+        "label": "実用英語講座 3級クラス",
+        "amount": 16500,
+        "duration": "3か月",
+        "kind": "total"
+      },
+      {
+        "label": "実用英語講座 4級クラス",
+        "amount": 13200,
+        "duration": "3か月",
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
     "career_support": false,
-    "features": [],
+    "features": [
+      "英語の4技能を総合的に養成する講座設計",
+      "レベルごとに細かく設定された学習目標",
+      "3回の英作文添削指導で個別アドバイス",
+      "PC上で利用可能な映像講義でテキスト学習をサポート"
+    ],
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
@@ -21580,7 +22101,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-eiken",
     "created_at": "2026-09-30T20:17:24.371Z",
-    "updated_at": "2026-10-02T08:28:59.163Z",
+    "updated_at": "2026-10-02T15:02:02.700Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",

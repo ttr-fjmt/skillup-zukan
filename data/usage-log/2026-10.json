@@ -51,12 +51,12 @@
     "date": "2026-10-02",
     "script": "backfill-fields",
     "model": "claude-haiku-4-5-20251001",
-    "calls": 10,
-    "input_tokens": 53862,
-    "cache_read_tokens": 104508,
+    "calls": 306,
+    "input_tokens": 1921529,
+    "cache_read_tokens": 3541660,
     "cache_write_tokens": 11612,
-    "output_tokens": 6315,
+    "output_tokens": 192906,
     "web_search_requests": 0,
-    "estimated_usd": 0.110403
+    "estimated_usd": 3.25474
   }
 ]
