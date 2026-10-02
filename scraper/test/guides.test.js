@@ -10,7 +10,7 @@ const assert = require('node:assert');
 const fs = require('fs');
 const path = require('path');
 
-const { GUIDES, SOURCES } = require('../generate-guide-pages');
+const { GUIDES, SOURCES, allGuides } = require('../generate-guide-pages');
 
 const ROOT = path.join(__dirname, '..', '..');
 const BASE = 'https://skillup-zukan.net';
@@ -93,5 +93,17 @@ test('サイトマップと llms.txt に記事が載っている', () => {
   for (const g of GUIDES) {
     assert.ok(sitemap.includes(`${BASE}/guide/${g.slug}/`), `${g.slug} がサイトマップに無い`);
     assert.ok(llms.includes(`${BASE}/guide/${g.slug}/`), `${g.slug} が llms.txt に無い`);
+  }
+});
+
+test('llms.txt は記事をスラッグではなく題名で並べる', () => {
+  // 自動で書いた記事（data/articles/*.json）の題名を拾えておらず、
+  // 「- job-card: https://...」のようにスラッグが出ていたため固定する。
+  const llms = read('llms.txt');
+  for (const g of allGuides()) {
+    assert.ok(
+      llms.includes(`- ${g.title}: ${BASE}/guide/${g.slug}/`),
+      `llms.txt に ${g.slug} の題名「${g.title}」が出ていない（node generate-sitemap.js を実行）`
+    );
   }
 });

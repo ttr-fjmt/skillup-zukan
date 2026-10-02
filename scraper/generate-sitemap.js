@@ -32,9 +32,11 @@ function lastmod(school) {
 function guidePages() {
   const dir = path.join(ROOT, 'guide');
   if (!fs.existsSync(path.join(dir, 'index.html'))) return [];
+  // 手で書いた記事（GUIDES）と自動で書いた記事（data/articles/*.json）の両方から題名を引く。
+  // allGuides() を使わないと自動記事が題名ではなくスラッグのまま並ぶ。
   let titles = {};
   try {
-    titles = Object.fromEntries(require('./generate-guide-pages').GUIDES.map(g => [g.slug, g.title]));
+    titles = Object.fromEntries(require('./generate-guide-pages').allGuides().map(g => [g.slug, g.title]));
   } catch (e) {
     titles = {};
   }
