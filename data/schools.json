@@ -501,7 +501,7 @@
     "area": [],
     "area_source": "top_page",
     "subsidy_eligible": false,
-    "career_support": false,
+    "career_support": true,
     "features": [
       "現役プロ講師によるマンツーマンレッスン形式の指導",
       "最新技術を反映したカリキュラムの継続アップデート",
@@ -522,7 +522,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-codecamp",
     "created_at": "2026-09-07T20:09:53.295Z",
-    "updated_at": "2026-09-07T23:49:05.090Z",
+    "updated_at": "2026-10-02T12:49:25.746Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(プログラミング・エンジニア)で発見・実在照合済み",
@@ -672,12 +672,19 @@
       "UI/UXデザイナー"
     ],
     "price": {
-      "display": "要問い合わせ",
-      "min_yen": null,
+      "display": "129,800円",
+      "min_yen": 129800,
       "scope": "top_page",
-      "kind": null
+      "kind": "total"
     },
-    "plans": [],
+    "plans": [
+      {
+        "label": "Webデザインコース",
+        "amount": 129800,
+        "duration": "約110日分の学習カリキュラム",
+        "kind": "total"
+      }
+    ],
     "format": "online",
     "area": [],
     "area_source": "top_page",
@@ -699,7 +706,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-daily-trial",
     "created_at": "2026-09-07T23:34:53.003Z",
-    "updated_at": "2026-09-08T00:15:53.487Z",
+    "updated_at": "2026-10-02T12:49:57.558Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
@@ -708,7 +715,7 @@
   {
     "id": "internetacademy",
     "school_name": "インターネット・アカデミー",
-    "official_name": null,
+    "official_name": "インターネット・アカデミー",
     "description": "Web制作・開発会社のノウハウを活かし、プログラミング、Webデザイン、AI・データ分析、Webマーケティング等を幅広く提供。ライブ授業、マンツーマン授業、オンデマンド授業を自由に組み合わせて学習でき、プロの講師からの直接指導と充実したサポート体制で実践的スキル習得が可能。",
     "skill_genre": [
       "programming",
@@ -766,7 +773,7 @@
     "cta_type": "direct",
     "click_tracking_id": "click-internetacademy",
     "created_at": "2026-09-07T23:35:29.751Z",
-    "updated_at": "2026-09-07T23:35:29.751Z",
+    "updated_at": "2026-10-02T12:50:08.531Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
