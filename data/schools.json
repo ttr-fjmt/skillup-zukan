@@ -1603,7 +1603,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -5071,7 +5071,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -12717,7 +12717,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],
@@ -16879,7 +16879,7 @@
     "price": {
       "display": "要問い合わせ",
       "min_yen": null,
-      "scope": "top_page",
+      "scope": "detail_page",
       "kind": null
     },
     "plans": [],

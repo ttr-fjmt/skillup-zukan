@@ -49,10 +49,25 @@ test('既定では、巡回して失敗済みのレコードを選び直さな�
     school({ id: 'crawled', review_flags: ['detail_page_crawled'] }),
     school({ id: 'fresh' }),
   ];
-  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
+  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_INCLUDE_CRAWLED: undefined, ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
     selectTargets(list).map(s => s.id)
   );
   assert.deepStrictEqual(ids, ['fresh']);
+});
+
+test('ENRICH_INCLUDE_CRAWLED=1 は、巡回済みも選ぶが、金額のあるレコードには触らない', () => {
+  // 取り方そのものを変えたときの再挑戦用。ENRICH_FORCE と違い、
+  // すでに取れている料金を上書きしないことを固定する。
+  const list = [
+    school({ id: 'crawled', review_flags: ['detail_page_crawled'] }),
+    school({ id: 'fresh' }),
+    school({ id: 'priced', price: { min_yen: 100000 }, plans: [{ label: 'A', amount: 100000 }] }),
+  ];
+  const ids = withEnv(
+    { ENRICH_FORCE: undefined, ENRICH_INCLUDE_CRAWLED: '1', ENRICH_ONLY_SCHOOL_ID: undefined },
+    () => selectTargets(list).map(s => s.id)
+  );
+  assert.deepStrictEqual(ids, ['crawled', 'fresh']);
 });
 
 test('ENRICH_FORCE=1 のときは、巡回済みのレコードも選び直す', () => {
@@ -60,7 +75,7 @@ test('ENRICH_FORCE=1 のときは、巡回済みのレコードも選び直す',
     school({ id: 'crawled', review_flags: ['detail_page_crawled'] }),
     school({ id: 'fresh' }),
   ];
-  const ids = withEnv({ ENRICH_FORCE: '1', ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
+  const ids = withEnv({ ENRICH_FORCE: '1', ENRICH_INCLUDE_CRAWLED: undefined, ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
     selectTargets(list).map(s => s.id)
   );
   assert.deepStrictEqual(ids, ['crawled', 'fresh']);
@@ -68,14 +83,14 @@ test('ENRICH_FORCE=1 のときは、巡回済みのレコードも選び直す',
 
 test('1校だけ指定したときは、巡回済みでもその1校を選ぶ', () => {
   const list = [school({ id: 'crawled', review_flags: ['detail_page_crawled'] }), school({ id: 'fresh' })];
-  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_ONLY_SCHOOL_ID: 'crawled' }, () =>
+  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_INCLUDE_CRAWLED: undefined, ENRICH_ONLY_SCHOOL_ID: 'crawled' }, () =>
     selectTargets(list).map(s => s.id)
   );
   assert.deepStrictEqual(ids, ['crawled']);
 });
 
 test('掲載をやめたレコードは選ばない', () => {
-  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
+  const ids = withEnv({ ENRICH_FORCE: undefined, ENRICH_INCLUDE_CRAWLED: undefined, ENRICH_ONLY_SCHOOL_ID: undefined }, () =>
     selectTargets([school({ id: 'gone', status: 'skipped' })]).map(s => s.id)
   );
   assert.deepStrictEqual(ids, []);
