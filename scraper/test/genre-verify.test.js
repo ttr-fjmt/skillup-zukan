@@ -142,3 +142,15 @@ test('どのジャンルの語も含まない紹介文では、判定せず元�
   };
   assert.deepStrictEqual(reconcileGenresWithSavedText(record), ['programming']);
 });
+
+test('公式サイトの本文は、上限まで切り詰めずに読む', () => {
+  // 2026-10-02、1ページあたりの中身が薄い原因が、本文を6,000文字で切っていたことだった。
+  // 説明文・特徴・料金・目指せる職種はすべてこの本文1つから取っているので、
+  // ここを戻すと静かに取りこぼしが増える。
+  const { PAGE_TEXT_MAX_CHARS } = require('../lib/school-discovery');
+  assert.ok(
+    PAGE_TEXT_MAX_CHARS >= 15000,
+    `公式サイトの本文の上限が ${PAGE_TEXT_MAX_CHARS} 文字しかない。日本語のスクールサイトは` +
+      'メニューだけで数千文字あり、これでは本題に入る前に切れる'
+  );
+});

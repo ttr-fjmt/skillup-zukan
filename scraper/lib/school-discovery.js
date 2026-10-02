@@ -48,8 +48,20 @@ const STRUCTURE_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-2025100
 /** 1ジャンルあたりの検索呼び出しで、AIに提案させる候補数の上限（軽量な呼び出しに留めるため）。 */
 const PER_GENRE_SEARCH_LIMIT = 12;
 
-/** 構造化AIのプロンプトに渡すページ本文抽出テキストの上限文字数。 */
-const PAGE_TEXT_MAX_CHARS = 6000;
+/**
+ * 構造化AIのプロンプトに渡すページ本文抽出テキストの上限文字数。
+ *
+ * 2026-10-02 に 6,000 から引き上げた。AdSense に「有用性の低いコンテンツ」と判定され、
+ * 1ページあたりの中身が薄い原因を調べたところ、料金の後追い補完で同じ形の取りこぼしが
+ * 実測できた（WEBMARKS は本文21,381文字で、8,000文字の上限で料金表が切り落とされていた。
+ * 上限を上げた途端に「660,000円〜」とプラン3件が取れた）。
+ *
+ * 説明文・特徴・料金・目指せる職種は、すべてこの本文1つから取っている。
+ * 日本語のスクールサイトはメニューやパンくずだけで数千文字あるので、6,000文字では
+ * 本題に入る前に切れていた。しかも切り詰めた分は本文照合にも渡らないため、
+ * 「ページに書いてあるのに取れない」という形で静かに失敗する。
+ */
+const PAGE_TEXT_MAX_CHARS = Number(process.env.PAGE_TEXT_MAX_CHARS || 18000);
 
 /**
  * pageTextの文字数がこれ未満の場合、実在照合自体はok:trueのまま thinContent:true を
@@ -217,11 +229,18 @@ function candidateRootUrls(website) {
 }
 
 function buildPageText(rawBodyText) {
-  return rawBodyText
+  const cleaned = rawBodyText
     .replace(/[ \t　]+/g, ' ')
     .replace(/\n\s*\n+/g, '\n')
-    .trim()
-    .slice(0, PAGE_TEXT_MAX_CHARS);
+    .trim();
+  // 切り詰めたことを見えるようにする。黙って切ると「ページに書いてあるのに取れない」
+  // という失敗が、原因の分からないまま積み上がる（2026-10-02 に実際そうなっていた）。
+  if (cleaned.length > PAGE_TEXT_MAX_CHARS) {
+    console.warn(
+      `  本文が${cleaned.length}文字あり、上限${PAGE_TEXT_MAX_CHARS}文字で切り詰めました（この先は読んでいません）。`
+    );
+  }
+  return cleaned.slice(0, PAGE_TEXT_MAX_CHARS);
 }
 
 /**
