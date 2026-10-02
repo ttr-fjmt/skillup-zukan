@@ -248,5 +248,126 @@
     ],
     "status": "pending",
     "note": ""
+  },
+  {
+    "n": 21,
+    "id": "hello-training-toha",
+    "title": "ハロートレーニングとは何か",
+    "basis": "公的な職業訓練の位置づけ",
+    "sources": [
+      "rishokusha"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 22,
+    "id": "rishokusha-kunren",
+    "title": "仕事を探しながら受けられる訓練",
+    "basis": "離職者訓練の対象と受け方",
+    "sources": [
+      "rishokusha"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 23,
+    "id": "kyushokusha-shien-kunren",
+    "title": "雇用保険が無くても受けられる訓練がある",
+    "basis": "求職者支援訓練のしくみ",
+    "sources": [
+      "rishokusha"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 24,
+    "id": "zaishokusha-kunren",
+    "title": "働きながら受けられる公的な訓練",
+    "basis": "在職者訓練の対象と内容",
+    "sources": [
+      "zaishokusha"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 25,
+    "id": "seisansei-kojo-kunren",
+    "title": "生産性向上支援訓練とは何か",
+    "basis": "生産性向上支援訓練の位置づけ",
+    "sources": [
+      "zaishokusha"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 26,
+    "id": "career-consultant-toha",
+    "title": "キャリアコンサルタントとはどんな人か",
+    "basis": "国家資格としてのキャリアコンサルタント",
+    "sources": [
+      "careerConsulting"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 27,
+    "id": "ginou-kentei-toha",
+    "title": "技能検定とはどんな制度か",
+    "basis": "技能検定の位置づけと等級",
+    "sources": [
+      "ginouKentei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 28,
+    "id": "shanai-kentei",
+    "title": "会社や業界団体がつくる検定もある",
+    "basis": "社内検定・団体等検定のしくみ",
+    "sources": [
+      "ginouKentei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 29,
+    "id": "shokugyou-nouryoku-hyouka",
+    "title": "仕事に必要な力を言葉にした基準がある",
+    "basis": "職業能力評価基準の使い方",
+    "sources": [
+      "ginouKentei"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 30,
+    "id": "minkan-kouza-mikata",
+    "title": "民間の講座の質は何で見分けるのか",
+    "basis": "職業訓練サービスガイドラインの考え方",
+    "sources": [
+      "minkanGuideline"
+    ],
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "n": 31,
+    "id": "nintei-shokugyou-kunren",
+    "title": "会社が行う訓練にも国の認定がある",
+    "basis": "認定職業訓練のしくみ",
+    "sources": [
+      "ninteiKunren"
+    ],
+    "status": "pending",
+    "note": ""
   }
 ]
