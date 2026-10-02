@@ -103,3 +103,42 @@ test('ジャンルの照合が発見パイプラインに組み込まれてい�
   // 判定できたうえで0件になったものを、発見時のジャンルで埋め戻してはいけない。
   assert.match(src, /!genreCheck\.judged/, '判定済みでも補完してしまう');
 });
+
+// ---- 2026-10-02 追加：保存する文章でもジャンルを確かめる ----
+
+const { reconcileGenresWithSavedText } = require('../lib/school-discovery');
+
+test('紹介文で裏付けが取れないジャンルは、紹介文が示すジャンルに置き換える', () => {
+  // 実例：総務省統計局のデータサイエンス講座が「資格」と判定された。
+  // 掲載元サイト（gacco）に資格講座の案内も載っていたため、ページ本文では裏付けが取れてしまう。
+  const record = {
+    school_name: '総務省統計局データサイエンス・オンライン講座',
+    description: '総務省統計局が提供するデータサイエンス入門講座。統計リテラシーの基礎から、データ分析に必要な統計学まで学ぶ。',
+    features: [pad('統計学専門講座。データの見方、グラフの選び方、時系列分析まで扱う')],
+    skill_genre: ['certification'],
+  };
+  assert.deepStrictEqual(reconcileGenresWithSavedText(record), ['genai_dx']);
+});
+
+test('1つでも裏付けが取れていれば、そのジャンルを残す', () => {
+  const record = {
+    school_name: 'プログラミングスクール',
+    description: pad('Javaを学ぶプログラミング講座。開発の基礎から実践まで。'),
+    features: [],
+    skill_genre: ['programming', 'video_editing'],
+  };
+  const kept = reconcileGenresWithSavedText(record);
+  assert.ok(kept.includes('programming'), '裏付けのあるジャンルが消えています');
+  assert.ok(!kept.includes('video_editing'), '裏付けの無いジャンルが残っています');
+});
+
+test('どのジャンルの語も含まない紹介文では、判定せず元のまま残す', () => {
+  // 判定できないことを理由に消すと、実在の講座を分類から外してしまう。
+  const record = {
+    school_name: '全国展開するスクール',
+    description: pad('全国に教室を構えています。'),
+    features: [],
+    skill_genre: ['programming'],
+  };
+  assert.deepStrictEqual(reconcileGenresWithSavedText(record), ['programming']);
+});

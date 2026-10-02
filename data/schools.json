@@ -21019,7 +21019,7 @@
     "official_name": null,
     "description": "総務省統計局が提供するデータサイエンス入門講座。統計リテラシーの基礎から、データ分析に必要な統計学、公的統計データの取得方法まで、4週間で段階的に学ぶ。",
     "skill_genre": [
-      "certification"
+      "genai_dx"
     ],
     "purpose": [
       "current_job_skillup"
