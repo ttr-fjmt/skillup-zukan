@@ -28,5 +28,35 @@
     "id": "kouzaShitei",
     "label": "厚生労働省「教育訓練給付の講座指定について」",
     "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku_00001.html"
+  },
+  {
+    "id": "rishokusha",
+    "label": "厚生労働省「ハロートレーニング（離職者訓練・求職者支援訓練）」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/rishokusha.html"
+  },
+  {
+    "id": "zaishokusha",
+    "label": "厚生労働省「ハロートレーニング（在職者訓練）・生産性向上支援訓練」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/zaishokusha.html"
+  },
+  {
+    "id": "careerConsulting",
+    "label": "厚生労働省「キャリアコンサルティング・キャリアコンサルタント」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/career_consulting.html"
+  },
+  {
+    "id": "ginouKentei",
+    "label": "厚生労働省「技能検定・団体等検定・社内検定・職業能力評価基準」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/ability_skill/index.html"
+  },
+  {
+    "id": "minkanGuideline",
+    "label": "厚生労働省「職業訓練サービスガイドライン」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/minkan_guideline.html"
+  },
+  {
+    "id": "ninteiKunren",
+    "label": "厚生労働省「認定職業訓練」",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/training_employer/nintei/index.html"
   }
 ]
