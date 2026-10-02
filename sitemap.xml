@@ -391,12 +391,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skillup-zukan.net/school/brain-holdings/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://skillup-zukan.net/school/vnts/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -703,18 +697,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skillup-zukan.net/school/tokyo-ac/</loc>
-    <lastmod>2026-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://skillup-zukan.net/school/itojuku/</loc>
-    <lastmod>2026-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://skillup-zukan.net/school/techgym/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -771,12 +753,6 @@
   <url>
     <loc>https://skillup-zukan.net/school/aijobcolle/</loc>
     <lastmod>2026-09-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://skillup-zukan.net/school/sat-co/</loc>
-    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1453,12 +1429,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skillup-zukan.net/school/musubi/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://skillup-zukan.net/school/centro-espanol/</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1478,12 +1448,6 @@
   </url>
   <url>
     <loc>https://skillup-zukan.net/school/copen-college/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://skillup-zukan.net/school/cshool/</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
