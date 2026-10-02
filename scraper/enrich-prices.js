@@ -74,10 +74,15 @@ function alreadyCrawled(school) {
 function selectTargets(schools) {
   const onlyId = (process.env.ENRICH_ONLY_SCHOOL_ID || '').trim();
   const force = Boolean(process.env.ENRICH_FORCE);
+  // ENRICH_INCLUDE_CRAWLED=1 は「巡回済みを除く」判定だけを外す。
+  // 取り方そのものを変えたとき（2026-10-02 のブラウザ対応など）に、過去に失敗した
+  // レコードへもう一度だけかけるための入口。ENRICH_FORCE と違い、
+  // すでに金額が入っているレコードには触らない（取れている料金を上書きしないため）。
+  const includeCrawled = force || Boolean(process.env.ENRICH_INCLUDE_CRAWLED);
   return schools
     .filter(s => s.status === 'active')
     .filter(s => force || needsEnrichment(s))
-    .filter(s => force || onlyId || !alreadyCrawled(s))
+    .filter(s => includeCrawled || onlyId || !alreadyCrawled(s))
     .filter(s => !onlyId || s.id === onlyId)
     .slice(0, MAX_PER_RUN);
 }
@@ -243,6 +248,11 @@ async function main() {
 
     if (enrichment.detailPageUrl) {
       school.price_detail_url = enrichment.detailPageUrl;
+      // scope は price_detail_url の有無から導出する約束なので、URLを入れたら必ず合わせる。
+      // 金額が取れなかったときは下の分岐で price を書き換えないため、ここで直さないと
+      // 「price_detail_url はあるのに scope は top_page」という食い違いが残る
+      // （2026-10-02、digital-hacks で実際に起き、掲載データのガードが止まった）。
+      if (school.price) school.price.scope = 'detail_page';
       const flags = new Set([...(school.review_flags || []), ...enrichment.flags]);
       school.review_flags = [...flags];
     }
@@ -277,6 +287,12 @@ async function main() {
   // 形だけは必ず新フォーマットに揃えてから書き込む（金額そのものは触らない）。
   for (const school of schools) {
     if (!Array.isArray(school.plans)) school.plans = [];
+    // scope は price_detail_url の有無から導出する、という約束を書き込み前に必ず通す。
+    // 1か所でも書き換え漏れがあると掲載データのガードが止まり、次の日の記事公開まで
+    // 巻き添えになるため、形を整えるこの段階で全件そろえる。
+    if (school.price && school.price.scope) {
+      school.price.scope = school.price_detail_url ? 'detail_page' : 'top_page';
+    }
     if (school.price && school.price.scope && !('plans' in school.price)) continue;
     school.price = {
       display: school.price ? school.price.display : PRICE_NOT_DISCLOSED_TEXT,
