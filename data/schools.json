@@ -1621,18 +1621,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://digital-hacks.jp/",
     "cta_url": "https://digital-hacks.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-digital-hacks",
     "created_at": "2026-09-08T05:22:13.239Z",
-    "updated_at": "2026-09-08T05:22:13.239Z",
+    "updated_at": "2026-10-02T06:57:12.560Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
-    "verified_url": "https://digital-hacks.jp/"
+    "verified_url": "https://digital-hacks.jp/",
+    "price_detail_url": "https://digital-hacks.jp//"
   },
   {
     "id": "studio-us",
@@ -5088,18 +5090,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://www.c-c-j.com/",
     "cta_url": "https://www.c-c-j.com/",
     "cta_type": "direct",
     "click_tracking_id": "click-c-c-j",
     "created_at": "2026-09-08T20:16:00.980Z",
-    "updated_at": "2026-09-08T20:16:00.980Z",
+    "updated_at": "2026-10-02T06:58:21.736Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(資格)で発見・実在照合済み",
-    "verified_url": "https://www.c-c-j.com/"
+    "verified_url": "https://www.c-c-j.com/",
+    "price_detail_url": "https://www.c-c-j.com/course/"
   },
   {
     "id": "athuman",
@@ -12730,18 +12734,20 @@
     "review_summary": null,
     "review_source_urls": [],
     "review_flags": [
-      "area_unconfirmed"
+      "area_unconfirmed",
+      "detail_page_crawled"
     ],
     "official_url": "https://www.alc-education.co.jp/business/",
     "cta_url": "https://www.alc-education.co.jp/business/",
     "cta_type": "direct",
     "click_tracking_id": "click-alc-education",
     "created_at": "2026-09-15T20:20:44.966Z",
-    "updated_at": "2026-09-15T20:20:44.966Z",
+    "updated_at": "2026-10-02T06:59:47.622Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
-    "verified_url": "https://www.alc-education.co.jp/business/"
+    "verified_url": "https://www.alc-education.co.jp/business/",
+    "price_detail_url": "https://www.alc-education.co.jp/business/class.html"
   },
   {
     "id": "toritsu-gk",
@@ -16893,17 +16899,20 @@
     ],
     "review_summary": null,
     "review_source_urls": [],
-    "review_flags": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
     "official_url": "https://www.asianetclub.jp/",
     "cta_url": "https://www.asianetclub.jp/",
     "cta_type": "direct",
     "click_tracking_id": "click-asianetclub",
     "created_at": "2026-09-20T20:16:12.211Z",
-    "updated_at": "2026-09-20T20:16:12.211Z",
+    "updated_at": "2026-10-02T07:01:43.482Z",
     "status": "active",
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
-    "verified_url": "https://www.asianetclub.jp/"
+    "verified_url": "https://www.asianetclub.jp/",
+    "price_detail_url": "https://www.asianetclub.jp/languages/"
   },
   {
     "id": "gravity-koumuin",
