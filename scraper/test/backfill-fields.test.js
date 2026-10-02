@@ -138,3 +138,19 @@ test('埋めた結果が掲載データの決まりを満たさなければ、�
   assert.strictEqual(ok.reverted, false);
   assert.deepStrictEqual(schools[0].features, ['80文字以内の特徴']);
 });
+
+test('トップページから料金を埋めたら、空振りした詳細ページの記録は外して scope と食い違わせない', () => {
+  // 2026-10-02、読み直しで料金を埋めた7件で「price_detail_url はあるのに scope は top_page」
+  // という食い違いが残り、掲載データのガードが止まった（翌朝の記事公開も止まるところだった）。
+  const school = full({
+    price: { display: '要問い合わせ', min_yen: null, scope: 'detail_page' },
+    price_detail_url: 'https://example.com/course/',
+    review_flags: ['detail_page_crawled', 'price_scope_limited'],
+  });
+  fillGaps(school, extracted);
+  assert.strictEqual(school.price.min_yen, 999999);
+  assert.strictEqual(school.price.scope, 'top_page');
+  assert.strictEqual(school.price_detail_url, undefined, '空振りした詳細ページの記録が残っている');
+  assert.ok(school.review_flags.includes('detail_page_crawled'), '巡回済みの印まで消えている');
+  assert.ok(!school.review_flags.includes('price_scope_limited'));
+});

@@ -140,7 +140,13 @@ function fillGaps(school, fields) {
     filled.push('対象レベル');
   }
   if ((!school.price || school.price.min_yen === null) && fields.price && fields.price.min_yen !== null) {
-    school.price = fields.price;
+    // ここで取れる料金はトップページの本文から読んだもの。過去に詳細ページを見に行って
+    // 空振りした記録（price_detail_url）が残っていると、「scope は price_detail_url の
+    // 有無から導出する」約束と食い違い、掲載データのガードが止まる（2026-10-02 に7件で発生）。
+    // 料金の出どころに合わせ、空振りした詳細ページの記録は外す（巡回済みの印は残す）。
+    school.price = { ...fields.price, scope: 'top_page' };
+    delete school.price_detail_url;
+    school.review_flags = (school.review_flags || []).filter(f => f !== 'price_scope_limited');
     if (Array.isArray(fields.plans)) school.plans = fields.plans;
     filled.push(`料金「${fields.price.display}」`);
   }
@@ -171,7 +177,10 @@ function applyFill(schools, school, fields) {
   if (filled.length === 0) return { filled, reverted: false, errors: [] };
 
   const { ok, errors } = validateSchool(school);
-  if (ok) return { filled, reverted: false, errors: [] };
+  // スキーマでは表せない約束も、ここで同じように確かめる（ガードのテストが止まる原因になるため）。
+  const scopeOk = !school.price || school.price.scope === (school.price_detail_url ? 'detail_page' : 'top_page');
+  if (ok && scopeOk) return { filled, reverted: false, errors: [] };
+  if (!scopeOk) errors.push('price.scope が price_detail_url の有無と食い違っている');
 
   schools[index] = before;
   return { filled, reverted: true, errors };
