@@ -23,13 +23,16 @@ const path = require('path');
 
 const { getAnthropicClient } = require('./lib/school-discovery');
 const cheerio = require('cheerio');
+const priceDetail = require('./lib/price-detail');
 const {
   enrichPriceFromDetailPage,
   fetchWithVerifyUA,
   fetchDetailPage,
+  extractPageLinks,
   extractPriceFromPage,
   DETAIL_TEXT_MAX_CHARS,
-} = require('./lib/price-detail');
+} = priceDetail;
+const { fetchRenderedHtml, closeBrowser } = require('./lib/render');
 const { politeDelay } = require('./lib/http');
 const { PRICE_NOT_DISCLOSED_TEXT } = require('./lib/schema');
 const { SCHOOLS_PATH, readSchools, writeSchools } = require('./lib/schools-store');
@@ -79,6 +82,69 @@ function selectTargets(schools) {
     .slice(0, MAX_PER_RUN);
 }
 
+/**
+ * ブラウザで開いてから読むかどうか。既定は有効。ENRICH_RENDER=0 で切れる。
+ *
+ * 2026-10-02、HTMLをそのまま読む方式で57校を試して料金が1件も取れなかった。
+ * メニューも料金表もJavaScriptで組み立てるサイトが多く、HTMLには
+ * 「プライバシーポリシー」「特定商取引法に基づく表記」しか入っていなかったため。
+ */
+const USE_RENDER = process.env.ENRICH_RENDER !== '0';
+
+/** リンクがこの数より少なければ、HTMLが組み上がっていないと見なしてブラウザで開き直す。 */
+const MIN_LINKS_BEFORE_RENDER = Number(process.env.ENRICH_MIN_LINKS || 8);
+
+/**
+ * トップページを取る。まずHTMLをそのまま読み、リンクが乏しければブラウザで開き直す。
+ * 速くて軽い方を先に試し、駄目なときだけブラウザを使う、という順番にしている。
+ */
+async function fetchHomepage(url) {
+  let html = await fetchWithVerifyUA(url);
+  if (!USE_RENDER) return html;
+
+  const links = extractPageLinks(html, url);
+  if (links.length >= MIN_LINKS_BEFORE_RENDER) return html;
+
+  console.log(`  リンクが${links.length}件しか無いため、ブラウザで開き直します。`);
+  try {
+    const rendered = await fetchRenderedHtml(url);
+    const after = extractPageLinks(rendered, url);
+    console.log(`  ブラウザで開いた結果、リンクは${after.length}件になりました。`);
+    if (after.length > links.length) return rendered;
+  } catch (err) {
+    console.warn(`  ブラウザでの取得に失敗しました（そのままのHTMLを使います）: ${err.message}`);
+  }
+  return html;
+}
+
+/**
+ * 詳細ページの本文を取る。HTMLをそのまま読んで金額らしき表記が無ければ、
+ * ブラウザで開き直す（料金表を描画してから出すサイトのため）。
+ * price-detail.js が module.exports 経由で呼ぶので、ここで差し替える。
+ */
+const YEN_PATTERN = /[0-9０-９][0-9０-９,，]*\s*円|[¥￥]\s*[0-9０-９]/;
+
+function bodyTextFrom(html) {
+  const $ = cheerio.load(html);
+  $('script, style, noscript').remove();
+  return $('body').text().replace(/[ \t　]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim().slice(0, DETAIL_TEXT_MAX_CHARS);
+}
+
+async function fetchDetailPageWithRender(url) {
+  const text = await fetchDetailPage(url);
+  if (!USE_RENDER || YEN_PATTERN.test(text)) return text;
+
+  console.log('  本文に金額が見当たらないため、詳細ページをブラウザで開き直します。');
+  try {
+    const rendered = bodyTextFrom(await fetchRenderedHtml(url));
+    if (YEN_PATTERN.test(rendered)) return rendered;
+    return rendered.length > text.length ? rendered : text;
+  } catch (err) {
+    console.warn(`  ブラウザでの取得に失敗しました（そのままの本文を使います）: ${err.message}`);
+    return text;
+  }
+}
+
 /** HTMLから本文テキストを取り出す（トップページからの再抽出用）。 */
 function pageTextFrom(html) {
   const $ = cheerio.load(html);
@@ -122,6 +188,10 @@ function applyScopeFlags(school, price) {
 }
 
 async function main() {
+  // price-detail.js は module.exports 経由で fetchDetailPage を呼ぶので、ここで
+  // ブラウザ版に差し替える。日次の発見処理は差し替えないので、速さは変わらない。
+  if (USE_RENDER) priceDetail.fetchDetailPage = fetchDetailPageWithRender;
+
   const schools = readSchools();
   const targets = selectTargets(schools);
 
@@ -140,7 +210,7 @@ async function main() {
     let html;
     try {
       await politeDelay();
-      html = await fetchWithVerifyUA(school.official_url);
+      html = await fetchHomepage(school.official_url);
     } catch (err) {
       console.warn(`  トップページの取得に失敗しました: ${err.message}`);
       continue;
@@ -223,10 +293,13 @@ async function main() {
 }
 
 if (require.main === module) {
-  main().catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+  main()
+    .catch(err => {
+      console.error(err);
+      process.exitCode = 1;
+    })
+    // 失敗しても必ずブラウザを閉じる。閉じ忘れると Actions のジョブが終わらない。
+    .finally(() => closeBrowser());
 }
 
-module.exports = { main, selectTargets, alreadyCrawled };
+module.exports = { main, selectTargets, alreadyCrawled, fetchHomepage, fetchDetailPageWithRender };
