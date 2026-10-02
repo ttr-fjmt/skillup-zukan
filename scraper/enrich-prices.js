@@ -50,8 +50,22 @@ function needsEnrichment(school) {
 }
 
 /**
- * ENRICH_FORCE=1 で needsEnrichment の判定を飛ばし、既に plans があるレコードも
- * 対象に含める。抽出プロンプトを直したあと、その結果を既存レコードに反映し直すために使う
+ * すでに料金ページを巡回したのに金額を取れなかったレコードか。
+ *
+ * 2026-10-02、料金が無い160件を埋めようとしたところ0件しか取れなかった。調べると、
+ * そのうち108件は過去に巡回して失敗済みで、同じコードで同じページを読み直していた。
+ * 公式サイトの作り（料金が画面表示時に読み込まれる・階層が深い）が理由なので、
+ * コードが変わらないかぎり結果も変わらない。既定では巡回済みを除き、まだ試していない
+ * レコードを先に処理する。プロンプトや抽出を直したあとの再適用は ENRICH_FORCE=1 で行う。
+ */
+function alreadyCrawled(school) {
+  return Array.isArray(school.review_flags) && school.review_flags.includes('detail_page_crawled');
+}
+
+/**
+ * ENRICH_FORCE=1 で needsEnrichment と「巡回済みを除く」判定の両方を飛ばし、
+ * 既に plans があるレコードも対象に含める。抽出プロンプトを直したあと、その結果を
+ * 既存レコードに反映し直すために使う
  * （プロンプト修正のたびに手でデータを消す、という運用を避けるため）。
  */
 function selectTargets(schools) {
@@ -60,6 +74,7 @@ function selectTargets(schools) {
   return schools
     .filter(s => s.status === 'active')
     .filter(s => force || needsEnrichment(s))
+    .filter(s => force || onlyId || !alreadyCrawled(s))
     .filter(s => !onlyId || s.id === onlyId)
     .slice(0, MAX_PER_RUN);
 }
@@ -214,4 +229,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main, selectTargets };
+module.exports = { main, selectTargets, alreadyCrawled };
