@@ -24,23 +24,24 @@
 ## 学び直しガイド
 
 - 学び直しガイド: https://skillup-zukan.net/guide/
-- career-consulting: https://skillup-zukan.net/guide/career-consulting/
+- キャリアコンサルティングを受けるという選択肢: https://skillup-zukan.net/guide/career-consulting/
 - 社会人の講座選びで確認したい4つのポイント: https://skillup-zukan.net/guide/choose-course/
-- hellowork-de-kakunin: https://skillup-zukan.net/guide/hellowork-de-kakunin/
-- juukou-mae-ni-suru-koto: https://skillup-zukan.net/guide/juukou-mae-ni-suru-koto/
-- kouza-shitei-shikumi: https://skillup-zukan.net/guide/kouza-shitei-shikumi/
-- kyouiku-kunren-3shurui: https://skillup-zukan.net/guide/kyouiku-kunren-3shurui/
-- kyufu-no-kangaekata: https://skillup-zukan.net/guide/kyufu-no-kangaekata/
+- 自分が対象になるかは、どこで確かめるのか: https://skillup-zukan.net/guide/hellowork-de-kakunin/
+- ジョブ・カードとは何に使うものか: https://skillup-zukan.net/guide/job-card/
+- 受講する前にしておくことがある: https://skillup-zukan.net/guide/juukou-mae-ni-suru-koto/
+- 講座が「給付金の対象」になるまでのしくみ: https://skillup-zukan.net/guide/kouza-shitei-shikumi/
+- 教育訓練給付金の3つの種類は、何が違うのか: https://skillup-zukan.net/guide/kyouiku-kunren-3shurui/
+- 給付金はいくら戻るのか、その決まり方: https://skillup-zukan.net/guide/kyufu-no-kangaekata/
 - 教育訓練給付金とは？3つの種類と、対象講座の探し方: https://skillup-zukan.net/guide/kyufukin/
-- kyuuka-kyufukin: https://skillup-zukan.net/guide/kyuuka-kyufukin/
+- 休暇をとって学ぶときの給付金: https://skillup-zukan.net/guide/kyuuka-kyufukin/
 - オンライン講座と通学、どちらを選ぶ？: https://skillup-zukan.net/guide/online-or-offline/
-- r0610-kakujuu: https://skillup-zukan.net/guide/r0610-kakujuu/
-- senmon-jissen-toha: https://skillup-zukan.net/guide/senmon-jissen-toha/
-- shien-kyufukin: https://skillup-zukan.net/guide/shien-kyufukin/
-- shikyuu-shinsei-nagare: https://skillup-zukan.net/guide/shikyuu-shinsei-nagare/
-- shikyuu-youken-shoukai: https://skillup-zukan.net/guide/shikyuu-youken-shoukai/
-- taishou-kouza-sagashikata: https://skillup-zukan.net/guide/taishou-kouza-sagashikata/
-- tokutei-ippan-toha: https://skillup-zukan.net/guide/tokutei-ippan-toha/
+- 令和6年10月から変わった教育訓練給付金の中身: https://skillup-zukan.net/guide/r0610-kakujuu/
+- 専門実践教育訓練とは、どんな講座が対象なのか: https://skillup-zukan.net/guide/senmon-jissen-toha/
+- 働きながらではなく、仕事を辞めて学ぶときの支援: https://skillup-zukan.net/guide/shien-kyufukin/
+- 教育訓練給付金を受け取るまでの手続きの流れ: https://skillup-zukan.net/guide/shikyuu-shinsei-nagare/
+- 自分が対象か、申し込む前に確かめる方法がある: https://skillup-zukan.net/guide/shikyuu-youken-shoukai/
+- 給付金の対象になる講座の探し方: https://skillup-zukan.net/guide/taishou-kouza-sagashikata/
+- 特定一般教育訓練とは、一般の教育訓練と何が違うのか: https://skillup-zukan.net/guide/tokutei-ippan-toha/
 
 ## 各講座のページ
 
