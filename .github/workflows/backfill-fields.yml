@@ -1,0 +1,92 @@
+name: Backfill fields from official pages (manual)
+
+# すでに掲載しているレコードを、新しい読み取り量（本文18,000文字）で公式サイトから
+# 読み直し、空いている項目だけを埋める。
+#
+# 2026-10-02、AdSense に「有用性の低いコンテンツ」と判定された。原因は、公式サイトの
+# 本文を6,000文字で打ち切ってから抽出していたこと。上限は引き上げたが、それが効くのは
+# これから見つかる講座だけなので、既存レコードはこのワークフローで読み直す。
+#
+# すでに入っている値は上書きしない（scraper/test/backfill-fields.test.js で固定）。
+# 日次で回すものではないため、schedule は設定せず手動実行のみとする。
+
+on:
+  workflow_dispatch:
+    inputs:
+      only_school_id:
+        description: "1校だけ試す場合のスクールID（空欄なら空きのある全件）"
+        required: false
+        type: string
+      max_per_run:
+        description: "1回の実行で処理する件数の上限（既定20）"
+        required: false
+        type: string
+        default: "20"
+      dry_run:
+        description: "true にすると書き込まず結果だけ表示する"
+        required: false
+        type: boolean
+        default: false
+
+# run ブロックの既定シェルを bash に固定する（pipefail を有効にするため）。
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-content-write
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install scraper dependencies
+        working-directory: scraper
+        run: npm ci
+
+      # ブラウザで開いてから読む処理（scraper/lib/render.js）で使う。
+      # test/render.test.js もこれを使うので、テストより前に入れる。
+      - name: Install Chrome for rendering
+        run: npx --yes puppeteer browsers install chrome
+
+      - name: Run unit tests
+        working-directory: scraper
+        run: npm test
+
+      - name: Backfill fields from official pages
+        working-directory: scraper
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BACKFILL_ONLY_SCHOOL_ID: ${{ github.event.inputs.only_school_id }}
+          BACKFILL_MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '20' }}
+          BACKFILL_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+        run: node backfill-fields.js
+
+      - name: Commit and push changes
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/schools.json
+          # API消費量の記録（scraper/lib/usage-log.js）。掲載データが変わらない日も費用は発生している。
+          [ -d data/usage-log ] && git add data/usage-log
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: backfill fields from official pages ($(date -u +%Y-%m-%d))"
+          git push

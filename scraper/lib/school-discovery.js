@@ -1045,6 +1045,7 @@ function reconcileGenresWithSavedText(record) {
 
 module.exports = {
   reconcileGenresWithSavedText,
+  buildPageText,
   PER_GENRE_SEARCH_LIMIT,
   PAGE_TEXT_MAX_CHARS,
   MIN_CONTENT_LENGTH,
