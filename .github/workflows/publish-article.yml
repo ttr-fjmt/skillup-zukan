@@ -107,7 +107,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # 記事が1本も書けていない日は data/articles がまだ無い。
           # 無いものを git add すると、そこで失敗して題材リストの印まで残らなくなる。
-          for target in data guide sitemap.xml; do
+          # generate-sitemap.js は sitemap.xml と llms.txt の両方を書き出すので、両方コミットする。
+          for target in data guide sitemap.xml llms.txt; do
             if [ -e "$target" ]; then git add -A -- "$target"; fi
           done
           if git diff --cached --quiet; then

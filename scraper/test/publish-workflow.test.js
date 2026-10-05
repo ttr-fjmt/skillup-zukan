@@ -23,6 +23,15 @@ test('記事を書いたあと、記事ページとサイトマップを作り�
   }
 });
 
+test('作り直したサイトマップと llms.txt を、どちらもコミットしている', () => {
+  // generate-sitemap.js は sitemap.xml と llms.txt の両方を書き出す。
+  // llms.txt だけ git add から漏れていて、翌日からすべての日次ワークフローのテストが落ちた（2026-10-03〜）。
+  const commitStep = publish.slice(publish.indexOf('Commit and push'));
+  for (const file of ['sitemap.xml', 'llms.txt']) {
+    assert.ok(commitStep.includes(file), `${file} をコミットしていません`);
+  }
+});
+
 test('公開する前に、もう一度テストを通している', () => {
   const afterWrite = publish.slice(publish.indexOf('Rebuild guide pages'));
   assert.ok(afterWrite.includes('npm test'), '作り直したあとの検査がありません');
