@@ -1,4 +1,4 @@
-name: Discover new schools (daily)
+name: Discover new schools (weekly)
 
 # freelance-anken-zukan の discover-agents.yml を踏襲。
 # 全8ジャンルの初回レビューが完了したため、日次実行の対象を all に広げた。
