@@ -1,7 +1,7 @@
 # スキルアップ図鑑（skillup-zukan.net）
 
 社会人の学び直し・リスキリング講座を比較できるサイトです。
-プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、321件を掲載しています。
+プログラミング、Webデザイン、UI/UX、動画編集、Webマーケティング、生成AI・DX、語学、資格の8ジャンル、332件を掲載しています。
 
 ## 掲載情報の作り方
 
@@ -12,13 +12,13 @@
 
 ## ジャンル別の一覧
 
-- プログラミング・エンジニア（86件）: https://skillup-zukan.net/category/programming/
-- Webデザイン（62件）: https://skillup-zukan.net/category/webdesign/
+- プログラミング・エンジニア（88件）: https://skillup-zukan.net/category/programming/
+- Webデザイン（64件）: https://skillup-zukan.net/category/webdesign/
 - UI/UXデザイン（10件）: https://skillup-zukan.net/category/uiux/
-- 動画編集（42件）: https://skillup-zukan.net/category/video_editing/
-- Webマーケティング（45件）: https://skillup-zukan.net/category/web_marketing/
-- 生成AI・DXリテラシー（57件）: https://skillup-zukan.net/category/genai_dx/
-- 語学（90件）: https://skillup-zukan.net/category/language/
+- 動画編集（43件）: https://skillup-zukan.net/category/video_editing/
+- Webマーケティング（47件）: https://skillup-zukan.net/category/web_marketing/
+- 生成AI・DXリテラシー（61件）: https://skillup-zukan.net/category/genai_dx/
+- 語学（94件）: https://skillup-zukan.net/category/language/
 - 資格（78件）: https://skillup-zukan.net/category/certification/
 
 ## 学び直しガイド
