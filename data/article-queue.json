@@ -224,8 +224,9 @@
       "kouzaShitei",
       "kyouiku"
     ],
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "published_at": "2026-10-07"
   },
   {
     "n": 19,
