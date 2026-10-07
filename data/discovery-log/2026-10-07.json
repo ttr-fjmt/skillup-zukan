@@ -1,0 +1,43 @@
+[
+  {
+    "date": "2026-10-07",
+    "genre": "webdesign",
+    "new_school_ids": [
+      "skillhub"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "genre": "video_editing",
+    "new_school_ids": [
+      "her-tech"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "genre": "web_marketing",
+    "new_school_ids": [
+      "marketing-careerlabo",
+      "dmu"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "genre": "genai_dx",
+    "new_school_ids": [
+      "ai-c",
+      "scaleai",
+      "edifist"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "genre": "language",
+    "new_school_ids": [
+      "beo",
+      "spaceenglishfk",
+      "liberty-e",
+      "kimini"
+    ]
+  }
+]

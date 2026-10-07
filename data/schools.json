@@ -22100,5 +22100,749 @@
     "source": "ai-discovered",
     "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
     "verified_url": "https://www.eiken.or.jp/learning/personal/topics/pec/"
+  },
+  {
+    "id": "skillhub",
+    "school_name": "Skillhub（スキルハブ）",
+    "official_name": null,
+    "description": "副業・フリーランス、起業、転職を目指す初心者向けのWebオンラインスクール。AIベースの学習システムにより、HTML、CSS、JavaScript、WordPress、Illustrator、Photoshop、Figmaなどを学べます。基本的なWeb制作スキルは無料で受講可能で、AI先生による質問対応も利用できます。",
+    "skill_genre": [
+      "programming",
+      "webdesign"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額16,800円〜",
+      "min_yen": 16800,
+      "scope": "detail_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "Webスキル学び放題 Premium",
+        "amount": 16800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "受講期間延長",
+        "amount": 79800,
+        "duration": "1ヶ月",
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "AIベースの効果的な学習システム",
+      "無料で7講座49レッスンが受け放題",
+      "YouTubeで1万人以上の登録者を持つわかりやすい動画講義",
+      "代表吉田によるプロフェッショナルなカリキュラム設計"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://skillhub.jp/premium_services",
+    "official_url": "https://skillhub.jp/",
+    "cta_url": "https://skillhub.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-skillhub",
+    "created_at": "2026-10-07T00:00:16.750Z",
+    "updated_at": "2026-10-07T00:00:16.750Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webデザイン)で発見・実在照合済み",
+    "verified_url": "https://skillhub.jp/"
+  },
+  {
+    "id": "her-tech",
+    "school_name": "HerTech",
+    "official_name": null,
+    "description": "女性限定のオンラインスクール。Webデザイン・動画編集・生成AIの3コースを提供。初心者でも最短3～4ヶ月でスキルを習得し、副業・転職・フリーランスを目指せる。動画講義と手厚いサポート（チャット質問、勉強会、マンツーマンコーチング）により、挫折を防ぎながら学習できる。実案件獲得サポートとポートフォリオ制作も提供。",
+    "skill_genre": [
+      "webdesign",
+      "video_editing",
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "side_job",
+      "freelance"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "Webデザイナー",
+      "動画編集者",
+      "フリーランス"
+    ],
+    "price": {
+      "display": "491,920円",
+      "min_yen": 491920,
+      "scope": "top_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "Webデザインコース・動画編集コース（24回払い）",
+        "amount": 20467,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "Webデザインコース・動画編集コース（一括払い）",
+        "amount": 491920,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "入会金",
+        "amount": 110000,
+        "duration": null,
+        "kind": "enrollment"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": true,
+    "features": [
+      "24時間チャットサポートで講師に質問可能",
+      "週6回の勉強会（1:1相談可）",
+      "毎月1回のマンツーマンコーチング",
+      "実案件獲得から納品までのサポート",
+      "ポートフォリオ制作・転職対策サポート"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [],
+    "official_url": "https://her-tech.jp/",
+    "cta_url": "https://her-tech.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-her-tech",
+    "created_at": "2026-10-07T00:00:23.818Z",
+    "updated_at": "2026-10-07T00:00:23.818Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(動画編集)で発見・実在照合済み",
+    "verified_url": "https://her-tech.jp/"
+  },
+  {
+    "id": "marketing-careerlabo",
+    "school_name": "マケキャリ（マーケティングキャリアラボ）",
+    "official_name": null,
+    "description": "詳細情報が確認できませんでした。公式サイトでご確認ください。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://marketing-careerlabo.jp/",
+    "cta_url": "https://marketing-careerlabo.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-marketing-careerlabo",
+    "created_at": "2026-10-07T00:00:26.300Z",
+    "updated_at": "2026-10-07T00:00:26.300Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://marketing-careerlabo.jp/"
+  },
+  {
+    "id": "dmu",
+    "school_name": "DMU（Digital Marketing Unit）",
+    "official_name": null,
+    "description": "デジタルマーケティングの知識を身に付け、キャリアを強化するためのオンラインスクール。ソーシャルメディア運用から事業戦略設計まで、体系的に学ぶことができる。現役マーケターが講師を務め、動画コンテンツは見放題。キャリアコンサルタントによる面談サポートと受講生コミュニティで、挫折しない学習環境を提供している。",
+    "skill_genre": [
+      "web_marketing"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "198,000円〜",
+      "min_yen": 198000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "デジタルマーケティングコース",
+        "amount": 330000,
+        "duration": "3ヶ月",
+        "kind": "total"
+      },
+      {
+        "label": "キャリアデザインコース",
+        "amount": 198000,
+        "duration": "2ヶ月",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "現役マーケターが講師",
+      "動画は40分以内で隙間時間での学習に対応",
+      "受講生限定コミュニティで交流会やもくもく会を実施",
+      "キャリアコンサルタントによる面談が2回無料で含まれる",
+      "実践型ワークショップ（リアルタイムオンライン）で実務的なアウトプットが可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://dmu.community/course1/",
+    "official_url": "https://dmu.community/",
+    "cta_url": "https://dmu.community/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-dmu",
+    "created_at": "2026-10-07T00:00:53.325Z",
+    "updated_at": "2026-10-07T00:00:53.325Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(Webマーケティング)で発見・実在照合済み",
+    "verified_url": "https://dmu.community/"
+  },
+  {
+    "id": "ai-c",
+    "school_name": "AI CONNECT",
+    "official_name": "株式会社D4cアカデミー",
+    "description": "経済産業省採択事業により、未経験からAIスキルを習得できるEラーニングサービス。AIの基礎から実践的なスキルまで、現職種・目指す職種別に14コースを提供。キャリアコンサルタントによる転職支援も充実しており、リスキリングと転職をセットで支援する。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": true,
+    "features": [
+      "Eラーニングで時間・場所を選ばない学習が可能",
+      "講師と1対1の専用チャットルームで質問対応",
+      "プロのキャリアコンサルタントによるキャリア相談・求人紹介・面接対策",
+      "セールス職・バックオフィス職・企画職・エンジニア/制作職など職種別の14コース"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://ai-c.net/curriculum/",
+    "official_url": "https://ai-c.net/",
+    "cta_url": "https://ai-c.net/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-ai-c",
+    "created_at": "2026-10-07T00:01:17.664Z",
+    "updated_at": "2026-10-07T00:01:17.664Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://ai-c.net/"
+  },
+  {
+    "id": "scaleai",
+    "school_name": "スタートAI",
+    "official_name": "株式会社スケールエーアイ",
+    "description": "生成AI技術を活用した実践育成型AIスクール。初心者向けのAI教育から企業向けソリューションまで幅広いニーズに対応。オンライン・対面のセミナーを通じて、様々な業界のプロフェッショナルのAIリテラシー向上を支援。経験豊富な専門家チームがAIの導入から運用まで継続的にサポートし、基礎から実践まで段階的なカリキュラムで成長をサポートしている。",
+    "skill_genre": [
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "top_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "初心者向けのAI教育から企業向けまで幅広いニーズに対応",
+      "経験豊富な専門家チームによる継続的なサポート体制",
+      "基礎から実践まで段階的なカリキュラム"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://scaleai.co.jp/",
+    "cta_url": "https://scaleai.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-scaleai",
+    "created_at": "2026-10-07T00:01:22.577Z",
+    "updated_at": "2026-10-07T00:01:22.577Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://scaleai.co.jp/"
+  },
+  {
+    "id": "edifist",
+    "school_name": "エディフィストラーニング",
+    "official_name": "エディフィストラーニング株式会社",
+    "description": "IT分野の研修を専門とする企業研修・人材育成サービス。Microsoftなどのベンダートレーニングから、システム設計、マネジメント、DX人材育成まで幅広いコースを提供。法人向けカスタマイズ研修や新入社員研修など、規模別・レベル別対応で総合的な人材育成を支援します。",
+    "skill_genre": [
+      "programming",
+      "genai_dx"
+    ],
+    "purpose": [
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "要問い合わせ",
+      "min_yen": null,
+      "scope": "detail_page",
+      "kind": null
+    },
+    "plans": [],
+    "format": "offline",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "detail_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "Microsoft・Oracle・Salesforceなどベンダーの公式トレーニング",
+      "オンラインライブ研修で自宅やオフィスから受講可能",
+      "1名から申し込める新入社員向けエンジニア研修",
+      "実践力・チームワーク・ビジネスマナーを含む総合的な社会人力を養成",
+      "PDU対象のプロジェクトマネジメント研修を提供"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.edifist.co.jp/courseguide/",
+    "area_detail_url": "https://www.edifist.co.jp/map/",
+    "official_url": "https://www.edifist.co.jp/",
+    "cta_url": "https://www.edifist.co.jp/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-edifist",
+    "created_at": "2026-10-07T00:01:54.749Z",
+    "updated_at": "2026-10-07T00:01:54.749Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(生成AI・DXリテラシー)で発見・実在照合済み",
+    "verified_url": "https://www.edifist.co.jp/"
+  },
+  {
+    "id": "beo",
+    "school_name": "beoカレッジ",
+    "official_name": null,
+    "description": "IELTS対策とアカデミック英語を中心とした留学準備スクール。イギリスのトップ大学への留学や英語圏主要国への留学をサポート。大学・大学院留学準備コース、IELTS対策講座、渡航前準備講座、オーダーメイドメニューなどを提供。経験豊富な講師とスタッフによるサポートで、留学先での充実した学業を支援する。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "360,000円",
+      "min_yen": 360000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "スタンダードサポート",
+        "amount": 360000,
+        "duration": "2年間",
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "IELTS対策・アカデミック英語指導経験が豊富な講師陣",
+      "経験豊富な講師、英語学習カウンセラー、留学カウンセラーによるトリプルサポート",
+      "対面・オンラインレッスンの両方で実施、遠方の受講生にも対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://beo.jp/services/support-standard/",
+    "official_url": "https://beo.jp/beocollege/",
+    "cta_url": "https://beo.jp/beocollege/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-beo",
+    "created_at": "2026-10-07T00:02:23.219Z",
+    "updated_at": "2026-10-07T00:02:23.219Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://beo.jp/beocollege/"
+  },
+  {
+    "id": "spaceenglishfk",
+    "school_name": "SPACE English",
+    "official_name": null,
+    "description": "0歳からシニアまでの英会話スクール。ネイティブ外国人講師による少人数制レッスンとオリジナルカリキュラムで、楽しみながら英語力を伸ばしています。子どもクラス、英検対策コース、大人クラスを提供。日本人スタッフが常駐しており、年齢や学習度に合わせた最適なクラスを提案。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "current_job_skillup",
+      "hobby"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "3,300円〜",
+      "min_yen": 3300,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "親子",
+        "amount": 7000,
+        "duration": "30分",
+        "kind": "monthly"
+      },
+      {
+        "label": "幼児",
+        "amount": 8500,
+        "duration": "40分",
+        "kind": "monthly"
+      },
+      {
+        "label": "小学生",
+        "amount": 9000,
+        "duration": "50分",
+        "kind": "monthly"
+      },
+      {
+        "label": "中高生",
+        "amount": 9500,
+        "duration": "60分",
+        "kind": "monthly"
+      },
+      {
+        "label": "大人月１回",
+        "amount": 3700,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "大人月２回",
+        "amount": 6800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "大人月３回",
+        "amount": 8700,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "大人月４回",
+        "amount": 10500,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "大人月５回",
+        "amount": 12500,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "プライベート１回50分",
+        "amount": 5100,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "プライベート１回60分",
+        "amount": 6000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "入会金",
+        "amount": 9900,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "年会費",
+        "amount": 3300,
+        "duration": null,
+        "kind": "total"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "detail_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "少人数制のレッスン",
+      "ネイティブ外国人講師による指導",
+      "オリジナルカリキュラム",
+      "細かいレベル分け",
+      "大人クラスは月の受講回数と曜日時間を選択可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled",
+      "area_unconfirmed"
+    ],
+    "price_detail_url": "https://www.spaceenglishfk.com/%E6%96%99%E9%87%91/",
+    "area_detail_url": "https://www.spaceenglishfk.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
+    "official_url": "https://www.spaceenglishfk.com/",
+    "cta_url": "https://www.spaceenglishfk.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-spaceenglishfk",
+    "created_at": "2026-10-07T00:02:43.624Z",
+    "updated_at": "2026-10-07T00:02:43.624Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.spaceenglishfk.com/"
+  },
+  {
+    "id": "liberty-e",
+    "school_name": "LIBERTY English Academy",
+    "official_name": "Liberty English Academy株式会社",
+    "description": "コーチング英語塾。Grammar Tableという独自メソッドを用いて、TOEIC・TOEFL・IELTS・英検・大学受験などの英語試験対策から、海外大学・大学院留学の英語対策まで対応。オンラインと通学の双方に対応し、現役受講者数1000人以上（2025年4月時点）。平均自習時間1.5時間/日で、最短1ヶ月から効果を発揮、平均4.5～6ヶ月で目標達成している。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "career_change",
+      "current_job_skillup",
+      "certification_itself"
+    ],
+    "target_level": "beginner",
+    "career_paths": [
+      "通訳"
+    ],
+    "price": {
+      "display": "576,000円",
+      "min_yen": 576000,
+      "scope": "detail_page",
+      "kind": "total"
+    },
+    "plans": [
+      {
+        "label": "ベーシックプラン（48回）",
+        "amount": 576000,
+        "duration": null,
+        "kind": "total"
+      },
+      {
+        "label": "ベーシックプラン（48回）",
+        "amount": 55000,
+        "duration": null,
+        "kind": "enrollment"
+      },
+      {
+        "label": "ベーシックプラン（48回）",
+        "amount": 52600,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "both",
+    "area": [
+      "東京都"
+    ],
+    "area_source": "top_page",
+    "subsidy_eligible": true,
+    "career_support": false,
+    "features": [
+      "Grammar Tableという独自メソッドで英語の構造・規則を体系的に習得",
+      "1回90分のグループレッスンと1日1.5時間程度の自習で目標達成",
+      "心理学に基づく米国式サクセスコーチングで定期的に面談・サポート",
+      "映像授業は平日夜間・土日も受講可能で、受講期間内なら何度でも視聴可能"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "price_scope_limited",
+      "detail_page_crawled"
+    ],
+    "price_detail_url": "https://www.liberty-e.com/kyufukin/",
+    "official_url": "https://www.liberty-e.com/",
+    "cta_url": "https://www.liberty-e.com/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-liberty-e",
+    "created_at": "2026-10-07T00:03:20.064Z",
+    "updated_at": "2026-10-07T00:03:20.064Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://www.liberty-e.com/"
+  },
+  {
+    "id": "kimini",
+    "school_name": "Kimini英会話",
+    "official_name": null,
+    "description": "学研グループのオンライン英会話。キッズから大人まで、初心者・英検・TOEIC対策など目的別の110以上のコースを提供。外国人講師とのレッスン、AI英会話、スキル別トレーニングを組み合わせて実践的な英語力を習得。スキル別学習、オンライン英会話、AI練習を循環させる学習設計が特徴。",
+    "skill_genre": [
+      "language"
+    ],
+    "purpose": [
+      "certification_itself",
+      "current_job_skillup"
+    ],
+    "target_level": "beginner",
+    "career_paths": [],
+    "price": {
+      "display": "月額3,300円〜",
+      "min_yen": 3300,
+      "scope": "top_page",
+      "kind": "monthly"
+    },
+    "plans": [
+      {
+        "label": "スタンダードPlus",
+        "amount": 6800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "スタンダード",
+        "amount": 5800,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ウィークデイPlus",
+        "amount": 5400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "ウィークデイ",
+        "amount": 4400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月8回プラン",
+        "amount": 4400,
+        "duration": null,
+        "kind": "monthly"
+      },
+      {
+        "label": "月6回プラン",
+        "amount": 3300,
+        "duration": null,
+        "kind": "monthly"
+      }
+    ],
+    "format": "online",
+    "area": [],
+    "area_source": "top_page",
+    "subsidy_eligible": false,
+    "career_support": false,
+    "features": [
+      "110以上のコース（目的・レベル別）を用意",
+      "スキル別トレーニング、Kimini AI、オンライン英会話を組み合わせた学習設計",
+      "講師2,000名以上が在籍",
+      "英検5級から準1級の対策に対応"
+    ],
+    "review_summary": null,
+    "review_source_urls": [],
+    "review_flags": [
+      "area_unconfirmed"
+    ],
+    "official_url": "https://kimini.online/",
+    "cta_url": "https://kimini.online/",
+    "cta_type": "direct",
+    "click_tracking_id": "click-kimini",
+    "created_at": "2026-10-07T00:03:29.845Z",
+    "updated_at": "2026-10-07T00:03:29.845Z",
+    "status": "active",
+    "source": "ai-discovered",
+    "source_note": "AIによるWeb検索(語学)で発見・実在照合済み",
+    "verified_url": "https://kimini.online/"
   }
 ]

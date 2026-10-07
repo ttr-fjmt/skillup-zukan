@@ -1013,5 +1013,82 @@
     "genre": "genai_dx",
     "reason": "schema_invalid",
     "checkedAt": "2026-09-30T20:16:12.088Z"
+  },
+  "リナックスアカデミー": {
+    "name": "リナックスアカデミー",
+    "website": "https://www.linuxacademy.ne.jp/",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "GeekLounge": {
+    "name": "GeekLounge",
+    "website": "https://geek-lounge.com/",
+    "genre": "programming",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "ドガポンマーケティング大学校": {
+    "name": "ドガポンマーケティング大学校",
+    "website": "https://dogapon.com/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "Uprise（アップライズ）動画編集コース": {
+    "name": "Uprise（アップライズ）動画編集コース",
+    "website": "https://www.dh-music.info/doga/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "アオの案件獲得スクール": {
+    "name": "アオの案件獲得スクール",
+    "website": "https://www.ao-school.com/",
+    "genre": "video_editing",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "早稲田大学 WASEDA NEO データサイエンス実践講座": {
+    "name": "早稲田大学 WASEDA NEO データサイエンス実践講座",
+    "website": "https://wasedaneo.jp/service/certificate-programs/datascience/",
+    "genre": "genai_dx",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "ケンジントン英会話": {
+    "name": "ケンジントン英会話",
+    "website": "https://www.kensington-english.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "ロゼッタストーン・ラーニングセンター": {
+    "name": "ロゼッタストーン・ラーニングセンター",
+    "website": "https://www.rosettastone.co.jp/lc/",
+    "genre": "language",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "ミライズ英会話": {
+    "name": "ミライズ英会話",
+    "website": "https://merise-english.com/",
+    "genre": "language",
+    "reason": "fetch_failed",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "資格試験のFIN": {
+    "name": "資格試験のFIN",
+    "website": "https://fin01school.com/",
+    "genre": "certification",
+    "reason": "name_mismatch",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
+  },
+  "TRAアカデミー": {
+    "name": "TRAアカデミー",
+    "website": "https://tra-academy.com/",
+    "genre": "language",
+    "reason": "schema_invalid",
+    "checkedAt": "2026-10-07T00:00:02.653Z"
   }
 }
