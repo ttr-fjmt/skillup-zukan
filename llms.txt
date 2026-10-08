@@ -43,6 +43,7 @@
 - 教育訓練給付金を受け取るまでの手続きの流れ: https://skillup-zukan.net/guide/shikyuu-shinsei-nagare/
 - 自分が対象か、申し込む前に確かめる方法がある: https://skillup-zukan.net/guide/shikyuu-youken-shoukai/
 - どんな講座が「指定」されるのか: https://skillup-zukan.net/guide/shitei-kijun/
+- 「修了」と認められないと給付は受けられない: https://skillup-zukan.net/guide/shuuryou-nintei/
 - 給付金の対象になる講座の探し方: https://skillup-zukan.net/guide/taishou-kouza-sagashikata/
 - 特定一般教育訓練とは、一般の教育訓練と何が違うのか: https://skillup-zukan.net/guide/tokutei-ippan-toha/
 
